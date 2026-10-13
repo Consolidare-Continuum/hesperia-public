@@ -1,0 +1,11 @@
+{
+  "coherence_empirical_weight": 0.0,
+  "engine_constants_key": "resolver.coherence_empirical_weight",
+  "wired_into_score_candidate": false,
+  "live_flip_requires": [
+    "OPENAI_API_KEY or accepted mock seal",
+    "Stage8-equivalent discipline",
+    "Ethan/operator gate"
+  ],
+  "note": "CORE-S2 offline: inert until live D-wire + Stage8 discipline; do not raise without gate"
+}

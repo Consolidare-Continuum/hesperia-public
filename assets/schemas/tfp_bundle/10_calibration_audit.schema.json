@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hesperia://schemas/tfp_bundle/10_calibration_audit.schema.json",
+  "title": "TFP calibration audit artifact",
+  "type": "object",
+  "required": [
+    "run",
+    "bundle_dir",
+    "consistency_score",
+    "plane_reliability_ranking",
+    "suspect_fields",
+    "alarms",
+    "plane_notes",
+    "operational_envelope"
+  ],
+  "properties": {
+    "run": { "type": "string" },
+    "bundle_dir": { "type": "string" },
+    "consistency_score": { "type": "number" },
+    "plane_reliability_ranking": { "type": "array" },
+    "suspect_fields": { "type": "array" },
+    "alarms": { "type": "array" },
+    "likely_breakpoint_stage": { "type": ["string", "null"] },
+    "plane_notes": { "type": "object" },
+    "operational_envelope": {
+      "type": "object",
+      "required": [
+        "status",
+        "anomaly_codes",
+        "severity",
+        "blocking",
+        "operator_message",
+        "recommended_next_check",
+        "taxonomy_version"
+      ]
+    }
+  }
+}

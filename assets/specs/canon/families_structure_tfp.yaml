@@ -1,0 +1,2883 @@
+version: 1
+domain: TFP_KERNBERG
+description: 'LEVEL 2 family structure: scope, observability, adjacency. 240 operational families.'
+families:
+- family_id: family_001
+  area_id: A1
+  family_name: Первичные аффективные системы
+  scope: Первичные аффективные системы
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_002
+  family_conflicts: []
+  family_complements: []
+- family_id: family_002
+  area_id: A1
+  family_name: Либидинозное стремление к объекту
+  scope: Либидинозное стремление к объекту
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_001
+  - family_003
+  family_conflicts: []
+  family_complements: []
+- family_id: family_003
+  area_id: A1
+  family_name: Агрессивные импульсы
+  scope: Агрессивные импульсы
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_002
+  - family_004
+  family_conflicts: []
+  family_complements: []
+- family_id: family_004
+  area_id: A1
+  family_name: Мотивация удовольствия
+  scope: Мотивация удовольствия
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_003
+  - family_005
+  family_conflicts: []
+  family_complements: []
+- family_id: family_005
+  area_id: A1
+  family_name: Реакции фрустрации
+  scope: Реакции фрустрации
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_004
+  - family_006
+  family_conflicts: []
+  family_complements: []
+- family_id: family_006
+  area_id: A1
+  family_name: Регуляция интенсивности аффекта
+  scope: Регуляция интенсивности аффекта
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_005
+  - family_007
+  family_conflicts: []
+  family_complements: []
+- family_id: family_007
+  area_id: A1
+  family_name: Дифференциация аффектов
+  scope: Дифференциация аффектов
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_006
+  - family_008
+  family_conflicts: []
+  family_complements: []
+- family_id: family_008
+  area_id: A1
+  family_name: Аффективное возбуждение
+  scope: Аффективное возбуждение
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_007
+  - family_009
+  family_conflicts: []
+  family_complements: []
+- family_id: family_009
+  area_id: A1
+  family_name: Желание и влечение к объекту
+  scope: Желание и влечение к объекту
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_008
+  - family_010
+  family_conflicts: []
+  family_complements: []
+- family_id: family_010
+  area_id: A1
+  family_name: Потребность в зависимости
+  scope: Потребность в зависимости
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_009
+  - family_011
+  family_conflicts: []
+  family_complements: []
+- family_id: family_011
+  area_id: A1
+  family_name: Импульсы привязанности
+  scope: Импульсы привязанности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_010
+  - family_012
+  family_conflicts: []
+  family_complements: []
+- family_id: family_012
+  area_id: A1
+  family_name: Сексуальное возбуждение
+  scope: Сексуальное возбуждение
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_011
+  - family_013
+  family_conflicts: []
+  family_complements: []
+- family_id: family_013
+  area_id: A1
+  family_name: Телесное удовольствие
+  scope: Телесное удовольствие
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_012
+  - family_014
+  family_conflicts: []
+  family_complements: []
+- family_id: family_014
+  area_id: A1
+  family_name: Конфликт либидо и агрессии
+  scope: Конфликт либидо и агрессии
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_013
+  - family_015
+  family_conflicts: []
+  family_complements: []
+- family_id: family_015
+  area_id: A1
+  family_name: Импульсивная разрядка
+  scope: Импульсивная разрядка
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_014
+  - family_016
+  family_conflicts: []
+  family_complements: []
+- family_id: family_016
+  area_id: A1
+  family_name: Торможение влечений
+  scope: Торможение влечений
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_015
+  - family_017
+  family_conflicts: []
+  family_complements: []
+- family_id: family_017
+  area_id: A1
+  family_name: Аффективная заразительность
+  scope: Аффективная заразительность
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_016
+  - family_018
+  family_conflicts: []
+  family_complements: []
+- family_id: family_018
+  area_id: A1
+  family_name: Усиление аффекта
+  scope: Усиление аффекта
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_017
+  - family_019
+  family_conflicts: []
+  family_complements: []
+- family_id: family_019
+  area_id: A1
+  family_name: Стыд и вина
+  scope: Стыд и вина
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_018
+  - family_020
+  family_conflicts: []
+  family_complements: []
+- family_id: family_020
+  area_id: A1
+  family_name: Зависть как аффект
+  scope: Зависть как аффект
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_019
+  - family_021
+  family_conflicts: []
+  family_complements: []
+- family_id: family_021
+  area_id: A1
+  family_name: Тревога и страх
+  scope: Тревога и страх
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_020
+  - family_022
+  family_conflicts: []
+  family_complements: []
+- family_id: family_022
+  area_id: A1
+  family_name: Предвосхищение и возбуждение
+  scope: Предвосхищение и возбуждение
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_021
+  - family_023
+  family_conflicts: []
+  family_complements: []
+- family_id: family_023
+  area_id: A1
+  family_name: Аффективная амбивалентность
+  scope: Аффективная амбивалентность
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_022
+  - family_024
+  family_conflicts: []
+  family_complements: []
+- family_id: family_024
+  area_id: A1
+  family_name: Иерархия мотивационных систем
+  scope: Иерархия мотивационных систем
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_023
+  - family_025
+  family_conflicts: []
+  family_complements: []
+- family_id: family_025
+  area_id: A2
+  family_name: Репрезентации Я
+  scope: Репрезентации Я
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_024
+  - family_026
+  family_conflicts: []
+  family_complements: []
+- family_id: family_026
+  area_id: A2
+  family_name: Репрезентации объекта
+  scope: Репрезентации объекта
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_025
+  - family_027
+  family_conflicts: []
+  family_complements: []
+- family_id: family_027
+  area_id: A2
+  family_name: Диада Я–Объект
+  scope: Диада Я–Объект
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_026
+  - family_028
+  family_conflicts: []
+  family_complements: []
+- family_id: family_028
+  area_id: A2
+  family_name: Аффективная связь внутри диады
+  scope: Аффективная связь внутри диады
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_027
+  - family_029
+  family_conflicts: []
+  family_complements: []
+- family_id: family_029
+  area_id: A2
+  family_name: Диффузия идентичности
+  scope: Диффузия идентичности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_028
+  - family_030
+  family_conflicts: []
+  family_complements: []
+- family_id: family_030
+  area_id: A2
+  family_name: Консолидация идентичности
+  scope: Консолидация идентичности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_029
+  - family_031
+  family_conflicts: []
+  family_complements: []
+- family_id: family_031
+  area_id: A2
+  family_name: Постоянство объекта
+  scope: Постоянство объекта
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_030
+  - family_032
+  family_conflicts: []
+  family_complements: []
+- family_id: family_032
+  area_id: A2
+  family_name: Интеграция хороших и плохих объектов
+  scope: Интеграция хороших и плохих объектов
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_031
+  - family_033
+  family_conflicts: []
+  family_complements: []
+- family_id: family_033
+  area_id: A2
+  family_name: Расщеплённые объектные представления
+  scope: Расщеплённые объектные представления
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_032
+  - family_034
+  family_conflicts: []
+  family_complements: []
+- family_id: family_034
+  area_id: A2
+  family_name: Идеализированные объекты
+  scope: Идеализированные объекты
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_033
+  - family_035
+  family_conflicts: []
+  family_complements: []
+- family_id: family_035
+  area_id: A2
+  family_name: Преследующие объекты
+  scope: Преследующие объекты
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_034
+  - family_036
+  family_conflicts: []
+  family_complements: []
+- family_id: family_036
+  area_id: A2
+  family_name: Амбивалентные объекты
+  scope: Амбивалентные объекты
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_035
+  - family_037
+  family_conflicts: []
+  family_complements: []
+- family_id: family_037
+  area_id: A2
+  family_name: Представления покинутости
+  scope: Представления покинутости
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_036
+  - family_038
+  family_conflicts: []
+  family_complements: []
+- family_id: family_038
+  area_id: A2
+  family_name: Представления зависимости
+  scope: Представления зависимости
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_037
+  - family_039
+  family_conflicts: []
+  family_complements: []
+- family_id: family_039
+  area_id: A2
+  family_name: Внутренние ролевые отношения
+  scope: Внутренние ролевые отношения
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_038
+  - family_040
+  family_conflicts: []
+  family_complements: []
+- family_id: family_040
+  area_id: A2
+  family_name: Интернализация отношений
+  scope: Интернализация отношений
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_039
+  - family_041
+  family_conflicts: []
+  family_complements: []
+- family_id: family_041
+  area_id: A2
+  family_name: Внутренние сценарии отношений
+  scope: Внутренние сценарии отношений
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_040
+  - family_042
+  family_conflicts: []
+  family_complements: []
+- family_id: family_042
+  area_id: A2
+  family_name: Эмпатическое понимание другого
+  scope: Эмпатическое понимание другого
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_041
+  - family_043
+  family_conflicts: []
+  family_complements: []
+- family_id: family_043
+  area_id: A2
+  family_name: Ментализация другого
+  scope: Ментализация другого
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_042
+  - family_044
+  family_conflicts: []
+  family_complements: []
+- family_id: family_044
+  area_id: A2
+  family_name: Границы Я и другого
+  scope: Границы Я и другого
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_043
+  - family_045
+  family_conflicts: []
+  family_complements: []
+- family_id: family_045
+  area_id: A2
+  family_name: Толерантность к близости
+  scope: Толерантность к близости
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_044
+  - family_046
+  family_conflicts: []
+  family_complements: []
+- family_id: family_046
+  area_id: A2
+  family_name: Ожидания взаимности
+  scope: Ожидания взаимности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_045
+  - family_047
+  family_conflicts: []
+  family_complements: []
+- family_id: family_047
+  area_id: A2
+  family_name: Стабильность отношений
+  scope: Стабильность отношений
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_046
+  - family_048
+  family_conflicts: []
+  family_complements: []
+- family_id: family_048
+  area_id: A2
+  family_name: Нарративная целостность идентичности
+  scope: Нарративная целостность идентичности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_047
+  - family_025
+  family_conflicts: []
+  family_complements: []
+- family_id: family_049
+  area_id: A3
+  family_name: Расщепление Я
+  scope: Расщепление Я
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_073
+  - family_050
+  family_conflicts: []
+  family_complements: []
+- family_id: family_050
+  area_id: A3
+  family_name: Расщепление объектов
+  scope: Расщепление объектов
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_049
+  - family_051
+  family_conflicts: []
+  family_complements: []
+- family_id: family_051
+  area_id: A3
+  family_name: Переключение идеализации и обесценивания
+  scope: Переключение идеализации и обесценивания
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_050
+  - family_052
+  family_conflicts: []
+  family_complements: []
+- family_id: family_052
+  area_id: A3
+  family_name: Аффективная диссоциация
+  scope: Аффективная диссоциация
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_051
+  - family_053
+  family_conflicts: []
+  family_complements: []
+- family_id: family_053
+  area_id: A3
+  family_name: Проекция
+  scope: Проекция
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_052
+  - family_054
+  family_conflicts: []
+  family_complements: []
+- family_id: family_054
+  area_id: A3
+  family_name: Проективная идентификация
+  scope: Проективная идентификация
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_053
+  - family_055
+  family_conflicts: []
+  family_complements: []
+- family_id: family_055
+  area_id: A3
+  family_name: Индукция ролей в отношениях
+  scope: Индукция ролей в отношениях
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_054
+  - family_056
+  family_conflicts: []
+  family_complements: []
+- family_id: family_056
+  area_id: A3
+  family_name: Проективное управление объектом
+  scope: Проективное управление объектом
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_055
+  - family_057
+  family_conflicts: []
+  family_complements: []
+- family_id: family_057
+  area_id: A3
+  family_name: Примитивная идеализация
+  scope: Примитивная идеализация
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_056
+  - family_058
+  family_conflicts: []
+  family_complements: []
+- family_id: family_058
+  area_id: A3
+  family_name: Примитивное обесценивание
+  scope: Примитивное обесценивание
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_057
+  - family_059
+  family_conflicts: []
+  family_complements: []
+- family_id: family_059
+  area_id: A3
+  family_name: Отрицание
+  scope: Отрицание
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_058
+  - family_060
+  family_conflicts: []
+  family_complements: []
+- family_id: family_060
+  area_id: A3
+  family_name: Всемогущество
+  scope: Всемогущество
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_059
+  - family_061
+  family_conflicts: []
+  family_complements: []
+- family_id: family_061
+  area_id: A3
+  family_name: Магическое мышление
+  scope: Магическое мышление
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_060
+  - family_062
+  family_conflicts: []
+  family_complements: []
+- family_id: family_062
+  area_id: A3
+  family_name: Вытеснение
+  scope: Вытеснение
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_061
+  - family_063
+  family_conflicts: []
+  family_complements: []
+- family_id: family_063
+  area_id: A3
+  family_name: Интеллектуализация
+  scope: Интеллектуализация
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_062
+  - family_064
+  family_conflicts: []
+  family_complements: []
+- family_id: family_064
+  area_id: A3
+  family_name: Рационализация
+  scope: Рационализация
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_063
+  - family_065
+  family_conflicts: []
+  family_complements: []
+- family_id: family_065
+  area_id: A3
+  family_name: Реактивные образования
+  scope: Реактивные образования
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_064
+  - family_066
+  family_conflicts: []
+  family_complements: []
+- family_id: family_066
+  area_id: A3
+  family_name: Изоляция аффекта
+  scope: Изоляция аффекта
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_065
+  - family_067
+  family_conflicts: []
+  family_complements: []
+- family_id: family_067
+  area_id: A3
+  family_name: Дистанцирование от аффекта
+  scope: Дистанцирование от аффекта
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_066
+  - family_068
+  family_conflicts: []
+  family_complements: []
+- family_id: family_068
+  area_id: A3
+  family_name: Защитное избегание
+  scope: Защитное избегание
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_067
+  - family_069
+  family_conflicts: []
+  family_complements: []
+- family_id: family_069
+  area_id: A3
+  family_name: Регрессия
+  scope: Регрессия
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_068
+  - family_070
+  family_conflicts: []
+  family_complements: []
+- family_id: family_070
+  area_id: A3
+  family_name: Фантазийное бегство
+  scope: Фантазийное бегство
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_069
+  - family_071
+  family_conflicts: []
+  family_complements: []
+- family_id: family_071
+  area_id: A3
+  family_name: Юмор как защита
+  scope: Юмор как защита
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_070
+  - family_072
+  family_conflicts: []
+  family_complements: []
+- family_id: family_072
+  area_id: A3
+  family_name: Интроективная идентификация
+  scope: Интроективная идентификация
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_071
+  - family_073
+  family_conflicts: []
+  family_complements: []
+- family_id: family_073
+  area_id: A4
+  family_name: Реакции ярости
+  scope: Реакции ярости
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_072
+  - family_074
+  family_conflicts: []
+  family_complements: []
+- family_id: family_074
+  area_id: A4
+  family_name: Хроническая враждебность
+  scope: Хроническая враждебность
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_073
+  - family_075
+  family_conflicts: []
+  family_complements: []
+- family_id: family_075
+  area_id: A4
+  family_name: Ненависть к объекту
+  scope: Ненависть к объекту
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_074
+  - family_076
+  family_conflicts: []
+  family_complements: []
+- family_id: family_076
+  area_id: A4
+  family_name: Контролирующая агрессия
+  scope: Контролирующая агрессия
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_075
+  - family_077
+  family_conflicts: []
+  family_complements: []
+- family_id: family_077
+  area_id: A4
+  family_name: Завистливая агрессия
+  scope: Завистливая агрессия
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_076
+  - family_078
+  family_conflicts: []
+  family_complements: []
+- family_id: family_078
+  area_id: A4
+  family_name: Мстительная агрессия
+  scope: Мстительная агрессия
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_077
+  - family_079
+  family_conflicts: []
+  family_complements: []
+- family_id: family_079
+  area_id: A4
+  family_name: Садистические импульсы
+  scope: Садистические импульсы
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_078
+  - family_080
+  family_conflicts: []
+  family_complements: []
+- family_id: family_080
+  area_id: A4
+  family_name: Унижение объекта
+  scope: Унижение объекта
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_079
+  - family_081
+  family_conflicts: []
+  family_complements: []
+- family_id: family_081
+  area_id: A4
+  family_name: Фантазии разрушения
+  scope: Фантазии разрушения
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_080
+  - family_082
+  family_conflicts: []
+  family_complements: []
+- family_id: family_082
+  area_id: A4
+  family_name: Агрессивная конкуренция
+  scope: Агрессивная конкуренция
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_081
+  - family_083
+  family_conflicts: []
+  family_complements: []
+- family_id: family_083
+  area_id: A4
+  family_name: Доминирующая агрессия
+  scope: Доминирующая агрессия
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_082
+  - family_084
+  family_conflicts: []
+  family_complements: []
+- family_id: family_084
+  area_id: A4
+  family_name: Пассивная агрессия
+  scope: Пассивная агрессия
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_083
+  - family_085
+  family_conflicts: []
+  family_complements: []
+- family_id: family_085
+  area_id: A4
+  family_name: Саморазрушительная агрессия
+  scope: Саморазрушительная агрессия
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_084
+  - family_086
+  family_conflicts: []
+  family_complements: []
+- family_id: family_086
+  area_id: A4
+  family_name: Аутоагрессивные импульсы
+  scope: Аутоагрессивные импульсы
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_085
+  - family_087
+  family_conflicts: []
+  family_complements: []
+- family_id: family_087
+  area_id: A4
+  family_name: Аффективная эскалация
+  scope: Аффективная эскалация
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_086
+  - family_088
+  family_conflicts: []
+  family_complements: []
+- family_id: family_088
+  area_id: A4
+  family_name: Унижение зависимости
+  scope: Унижение зависимости
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_087
+  - family_089
+  family_conflicts: []
+  family_complements: []
+- family_id: family_089
+  area_id: A4
+  family_name: Ненависть к уязвимости
+  scope: Ненависть к уязвимости
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_088
+  - family_090
+  family_conflicts: []
+  family_complements: []
+- family_id: family_090
+  area_id: A4
+  family_name: Агрессия против привязанности
+  scope: Агрессия против привязанности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_089
+  - family_091
+  family_conflicts: []
+  family_complements: []
+- family_id: family_091
+  area_id: A4
+  family_name: Аффективная жестокость
+  scope: Аффективная жестокость
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_090
+  - family_092
+  family_conflicts: []
+  family_complements: []
+- family_id: family_092
+  area_id: A4
+  family_name: Садистическое Супер-Эго
+  scope: Садистическое Супер-Эго
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_091
+  - family_093
+  family_conflicts: []
+  family_complements: []
+- family_id: family_093
+  area_id: A4
+  family_name: Вина и наказание
+  scope: Вина и наказание
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_092
+  - family_094
+  family_conflicts: []
+  family_complements: []
+- family_id: family_094
+  area_id: A4
+  family_name: Агрессия в отношениях
+  scope: Агрессия в отношениях
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_093
+  - family_095
+  family_conflicts: []
+  family_complements: []
+- family_id: family_095
+  area_id: A4
+  family_name: Регуляция агрессии
+  scope: Регуляция агрессии
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_094
+  - family_096
+  family_conflicts: []
+  family_complements: []
+- family_id: family_096
+  area_id: A4
+  family_name: Интеграция агрессии
+  scope: Интеграция агрессии
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_095
+  - family_097
+  family_conflicts: []
+  family_complements: []
+- family_id: family_097
+  area_id: A5
+  family_name: Эротизация агрессии
+  scope: Эротизация агрессии
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_096
+  - family_098
+  family_conflicts: []
+  family_complements: []
+- family_id: family_098
+  area_id: A5
+  family_name: Садистическая сексуальность
+  scope: Садистическая сексуальность
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_097
+  - family_099
+  family_conflicts: []
+  family_complements: []
+- family_id: family_099
+  area_id: A5
+  family_name: Масохистическая сексуальность
+  scope: Масохистическая сексуальность
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_098
+  - family_100
+  family_conflicts: []
+  family_complements: []
+- family_id: family_100
+  area_id: A5
+  family_name: Доминирование и подчинение
+  scope: Доминирование и подчинение
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_099
+  - family_101
+  family_conflicts: []
+  family_complements: []
+- family_id: family_101
+  area_id: A5
+  family_name: Фетишистские структуры
+  scope: Фетишистские структуры
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_100
+  - family_102
+  family_conflicts: []
+  family_complements: []
+- family_id: family_102
+  area_id: A5
+  family_name: Вуайеристские сценарии
+  scope: Вуайеристские сценарии
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_101
+  - family_103
+  family_conflicts: []
+  family_complements: []
+- family_id: family_103
+  area_id: A5
+  family_name: Экзибиционистские сценарии
+  scope: Экзибиционистские сценарии
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_102
+  - family_104
+  family_conflicts: []
+  family_complements: []
+- family_id: family_104
+  area_id: A5
+  family_name: Объектификация партнёра
+  scope: Объектификация партнёра
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_103
+  - family_105
+  family_conflicts: []
+  family_complements: []
+- family_id: family_105
+  area_id: A5
+  family_name: Сексуализированное унижение
+  scope: Сексуализированное унижение
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_104
+  - family_106
+  family_conflicts: []
+  family_complements: []
+- family_id: family_106
+  area_id: A5
+  family_name: Сексуализированный контроль
+  scope: Сексуализированный контроль
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_105
+  - family_107
+  family_conflicts: []
+  family_complements: []
+- family_id: family_107
+  area_id: A5
+  family_name: Фантазии господства
+  scope: Фантазии господства
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_106
+  - family_108
+  family_conflicts: []
+  family_complements: []
+- family_id: family_108
+  area_id: A5
+  family_name: Сексуальные компульсии
+  scope: Сексуальные компульсии
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_107
+  - family_109
+  family_conflicts: []
+  family_complements: []
+- family_id: family_109
+  area_id: A5
+  family_name: Диссоциация сексуальности
+  scope: Диссоциация сексуальности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_108
+  - family_110
+  family_conflicts: []
+  family_complements: []
+- family_id: family_110
+  area_id: A5
+  family_name: Избегание интимности
+  scope: Избегание интимности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_109
+  - family_111
+  family_conflicts: []
+  family_complements: []
+- family_id: family_111
+  area_id: A5
+  family_name: Сексуализированная зависимость
+  scope: Сексуализированная зависимость
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_110
+  - family_112
+  family_conflicts: []
+  family_complements: []
+- family_id: family_112
+  area_id: A5
+  family_name: Сексуализированная месть
+  scope: Сексуализированная месть
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_111
+  - family_113
+  family_conflicts: []
+  family_complements: []
+- family_id: family_113
+  area_id: A5
+  family_name: Нарушение границ
+  scope: Нарушение границ
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_112
+  - family_114
+  family_conflicts: []
+  family_complements: []
+- family_id: family_114
+  area_id: A5
+  family_name: Путаница ролей
+  scope: Путаница ролей
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_113
+  - family_115
+  family_conflicts: []
+  family_complements: []
+- family_id: family_115
+  area_id: A5
+  family_name: Перверсные сценарии отношений
+  scope: Перверсные сценарии отношений
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_114
+  - family_116
+  family_conflicts: []
+  family_complements: []
+- family_id: family_116
+  area_id: A5
+  family_name: Стыд сексуальности
+  scope: Стыд сексуальности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_115
+  - family_117
+  family_conflicts: []
+  family_complements: []
+- family_id: family_117
+  area_id: A5
+  family_name: Идентичность и сексуальность
+  scope: Идентичность и сексуальность
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_116
+  - family_118
+  family_conflicts: []
+  family_complements: []
+- family_id: family_118
+  area_id: A5
+  family_name: Фантазийная сексуальная власть
+  scope: Фантазийная сексуальная власть
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_117
+  - family_119
+  family_conflicts: []
+  family_complements: []
+- family_id: family_119
+  area_id: A5
+  family_name: Защитная сексуализация
+  scope: Защитная сексуализация
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_118
+  - family_120
+  family_conflicts: []
+  family_complements: []
+- family_id: family_120
+  area_id: A5
+  family_name: Неинтегрированная сексуальность
+  scope: Неинтегрированная сексуальность
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_119
+  - family_121
+  family_conflicts: []
+  family_complements: []
+- family_id: family_121
+  area_id: A6
+  family_name: Грандиозное Я
+  scope: Грандиозное Я
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_120
+  - family_122
+  family_conflicts: []
+  family_complements: []
+- family_id: family_122
+  area_id: A6
+  family_name: Самоидеализация
+  scope: Самоидеализация
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_121
+  - family_123
+  family_conflicts: []
+  family_complements: []
+- family_id: family_123
+  area_id: A6
+  family_name: Потребность в восхищении
+  scope: Потребность в восхищении
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_122
+  - family_124
+  family_conflicts: []
+  family_complements: []
+- family_id: family_124
+  area_id: A6
+  family_name: Чувство особого права
+  scope: Чувство особого права
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_123
+  - family_125
+  family_conflicts: []
+  family_complements: []
+- family_id: family_125
+  area_id: A6
+  family_name: Нарциссическая зависть
+  scope: Нарциссическая зависть
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_124
+  - family_126
+  family_conflicts: []
+  family_complements: []
+- family_id: family_126
+  area_id: A6
+  family_name: Нарциссическая ярость
+  scope: Нарциссическая ярость
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_125
+  - family_127
+  family_conflicts: []
+  family_complements: []
+- family_id: family_127
+  area_id: A6
+  family_name: Обесценивание объекта
+  scope: Обесценивание объекта
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_126
+  - family_128
+  family_conflicts: []
+  family_complements: []
+- family_id: family_128
+  area_id: A6
+  family_name: Отрицание зависимости
+  scope: Отрицание зависимости
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_127
+  - family_129
+  family_conflicts: []
+  family_complements: []
+- family_id: family_129
+  area_id: A6
+  family_name: Нарциссическая изоляция
+  scope: Нарциссическая изоляция
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_128
+  - family_130
+  family_conflicts: []
+  family_complements: []
+- family_id: family_130
+  area_id: A6
+  family_name: Чувствительность к унижению
+  scope: Чувствительность к унижению
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_129
+  - family_131
+  family_conflicts: []
+  family_complements: []
+- family_id: family_131
+  area_id: A6
+  family_name: Нарциссическая уязвимость
+  scope: Нарциссическая уязвимость
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_130
+  - family_132
+  family_conflicts: []
+  family_complements: []
+- family_id: family_132
+  area_id: A6
+  family_name: Нарциссическая пустота
+  scope: Нарциссическая пустота
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_131
+  - family_133
+  family_conflicts: []
+  family_complements: []
+- family_id: family_133
+  area_id: A6
+  family_name: Поддержание образа Я
+  scope: Поддержание образа Я
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_132
+  - family_134
+  family_conflicts: []
+  family_complements: []
+- family_id: family_134
+  area_id: A6
+  family_name: Нарциссическая конкуренция
+  scope: Нарциссическая конкуренция
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_133
+  - family_135
+  family_conflicts: []
+  family_complements: []
+- family_id: family_135
+  area_id: A6
+  family_name: Нарциссический контроль
+  scope: Нарциссический контроль
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_134
+  - family_136
+  family_conflicts: []
+  family_complements: []
+- family_id: family_136
+  area_id: A6
+  family_name: Перфекционизм
+  scope: Перфекционизм
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_135
+  - family_137
+  family_conflicts: []
+  family_complements: []
+- family_id: family_137
+  area_id: A6
+  family_name: Фантазии величия
+  scope: Фантазии величия
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_136
+  - family_138
+  family_conflicts: []
+  family_complements: []
+- family_id: family_138
+  area_id: A6
+  family_name: Нарциссическая эксплуатация
+  scope: Нарциссическая эксплуатация
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_137
+  - family_139
+  family_conflicts: []
+  family_complements: []
+- family_id: family_139
+  area_id: A6
+  family_name: Эмоциональная поверхностность
+  scope: Эмоциональная поверхностность
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_138
+  - family_140
+  family_conflicts: []
+  family_complements: []
+- family_id: family_140
+  area_id: A6
+  family_name: Фрагментация Я
+  scope: Фрагментация Я
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_139
+  - family_141
+  family_conflicts: []
+  family_complements: []
+- family_id: family_141
+  area_id: A6
+  family_name: Нарциссическое избегание
+  scope: Нарциссическое избегание
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_140
+  - family_142
+  family_conflicts: []
+  family_complements: []
+- family_id: family_142
+  area_id: A6
+  family_name: Нарциссическое очарование
+  scope: Нарциссическое очарование
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_141
+  - family_143
+  family_conflicts: []
+  family_complements: []
+- family_id: family_143
+  area_id: A6
+  family_name: Сексуализированный нарциссизм
+  scope: Сексуализированный нарциссизм
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_142
+  - family_144
+  family_conflicts: []
+  family_complements: []
+- family_id: family_144
+  area_id: A6
+  family_name: Злокачественный нарциссизм
+  scope: Злокачественный нарциссизм
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_143
+  - family_120
+  family_conflicts: []
+  family_complements: []
+- family_id: family_145
+  area_id: A7
+  family_name: Эмпатия
+  scope: Эмпатия
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_169
+  - family_146
+  family_conflicts: []
+  family_complements: []
+- family_id: family_146
+  area_id: A7
+  family_name: Сочувствие
+  scope: Сочувствие
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_145
+  - family_147
+  family_conflicts: []
+  family_complements: []
+- family_id: family_147
+  area_id: A7
+  family_name: Признание субъективности другого
+  scope: Признание субъективности другого
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_146
+  - family_148
+  family_conflicts: []
+  family_complements: []
+- family_id: family_148
+  area_id: A7
+  family_name: Эмоциональная взаимность
+  scope: Эмоциональная взаимность
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_147
+  - family_149
+  family_conflicts: []
+  family_complements: []
+- family_id: family_149
+  area_id: A7
+  family_name: Способность к близости
+  scope: Способность к близости
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_148
+  - family_150
+  family_conflicts: []
+  family_complements: []
+- family_id: family_150
+  area_id: A7
+  family_name: Доверие в отношениях
+  scope: Доверие в отношениях
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_149
+  - family_151
+  family_conflicts: []
+  family_complements: []
+- family_id: family_151
+  area_id: A7
+  family_name: Надёжная привязанность
+  scope: Надёжная привязанность
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_150
+  - family_152
+  family_conflicts: []
+  family_complements: []
+- family_id: family_152
+  area_id: A7
+  family_name: Стабильность отношений
+  scope: Стабильность отношений
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_151
+  - family_153
+  family_conflicts: []
+  family_complements: []
+- family_id: family_153
+  area_id: A7
+  family_name: Выражение нежности
+  scope: Выражение нежности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_152
+  - family_154
+  family_conflicts: []
+  family_complements: []
+- family_id: family_154
+  area_id: A7
+  family_name: Забота о другом
+  scope: Забота о другом
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_153
+  - family_155
+  family_conflicts: []
+  family_complements: []
+- family_id: family_155
+  area_id: A7
+  family_name: Интеграция нежности и эротизма
+  scope: Интеграция нежности и эротизма
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_154
+  - family_156
+  family_conflicts: []
+  family_complements: []
+- family_id: family_156
+  area_id: A7
+  family_name: Эмоциональная уязвимость
+  scope: Эмоциональная уязвимость
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_155
+  - family_157
+  family_conflicts: []
+  family_complements: []
+- family_id: family_157
+  area_id: A7
+  family_name: Принятие амбивалентности
+  scope: Принятие амбивалентности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_156
+  - family_158
+  family_conflicts: []
+  family_complements: []
+- family_id: family_158
+  area_id: A7
+  family_name: Разрешение конфликтов
+  scope: Разрешение конфликтов
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_157
+  - family_159
+  family_conflicts: []
+  family_complements: []
+- family_id: family_159
+  area_id: A7
+  family_name: Открытость чувств
+  scope: Открытость чувств
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_158
+  - family_160
+  family_conflicts: []
+  family_complements: []
+- family_id: family_160
+  area_id: A7
+  family_name: Верность отношениям
+  scope: Верность отношениям
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_159
+  - family_161
+  family_conflicts: []
+  family_complements: []
+- family_id: family_161
+  area_id: A7
+  family_name: Совместная идентичность
+  scope: Совместная идентичность
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_160
+  - family_162
+  family_conflicts: []
+  family_complements: []
+- family_id: family_162
+  area_id: A7
+  family_name: Устойчивость пары
+  scope: Устойчивость пары
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_161
+  - family_163
+  family_conflicts: []
+  family_complements: []
+- family_id: family_163
+  area_id: A7
+  family_name: Способность прощать
+  scope: Способность прощать
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_162
+  - family_164
+  family_conflicts: []
+  family_complements: []
+- family_id: family_164
+  area_id: A7
+  family_name: Благодарность
+  scope: Благодарность
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_163
+  - family_165
+  family_conflicts: []
+  family_complements: []
+- family_id: family_165
+  area_id: A7
+  family_name: Оплакивание утраты
+  scope: Оплакивание утраты
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_164
+  - family_166
+  family_conflicts: []
+  family_complements: []
+- family_id: family_166
+  area_id: A7
+  family_name: Ответственность за другого
+  scope: Ответственность за другого
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_165
+  - family_167
+  family_conflicts: []
+  family_complements: []
+- family_id: family_167
+  area_id: A7
+  family_name: Принятие зависимости
+  scope: Принятие зависимости
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_166
+  - family_168
+  family_conflicts: []
+  family_complements: []
+- family_id: family_168
+  area_id: A7
+  family_name: Интегрированная способность любить
+  scope: Интегрированная способность любить
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_167
+  - family_169
+  family_conflicts: []
+  family_complements: []
+- family_id: family_169
+  area_id: A8
+  family_name: Оценка тестирования реальности
+  scope: Оценка тестирования реальности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_168
+  - family_170
+  family_conflicts: []
+  family_complements: []
+- family_id: family_170
+  area_id: A8
+  family_name: Оценка идентичности
+  scope: Оценка идентичности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_169
+  - family_171
+  family_conflicts: []
+  family_complements: []
+- family_id: family_171
+  area_id: A8
+  family_name: Оценка защит
+  scope: Оценка защит
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_170
+  - family_172
+  family_conflicts: []
+  family_complements: []
+- family_id: family_172
+  area_id: A8
+  family_name: Оценка аффектов
+  scope: Оценка аффектов
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_171
+  - family_173
+  family_conflicts: []
+  family_complements: []
+- family_id: family_173
+  area_id: A8
+  family_name: Оценка объектных отношений
+  scope: Оценка объектных отношений
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_172
+  - family_174
+  family_conflicts: []
+  family_complements: []
+- family_id: family_174
+  area_id: A8
+  family_name: Оценка импульсного контроля
+  scope: Оценка импульсного контроля
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_173
+  - family_175
+  family_conflicts: []
+  family_complements: []
+- family_id: family_175
+  area_id: A8
+  family_name: Оценка агрессии
+  scope: Оценка агрессии
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_174
+  - family_176
+  family_conflicts: []
+  family_complements: []
+- family_id: family_176
+  area_id: A8
+  family_name: Оценка нарциссизма
+  scope: Оценка нарциссизма
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_175
+  - family_177
+  family_conflicts: []
+  family_complements: []
+- family_id: family_177
+  area_id: A8
+  family_name: Оценка эмпатии
+  scope: Оценка эмпатии
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_176
+  - family_178
+  family_conflicts: []
+  family_complements: []
+- family_id: family_178
+  area_id: A8
+  family_name: Оценка способности к любви
+  scope: Оценка способности к любви
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_177
+  - family_179
+  family_conflicts: []
+  family_complements: []
+- family_id: family_179
+  area_id: A8
+  family_name: Структурное интервью
+  scope: Структурное интервью
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_178
+  - family_180
+  family_conflicts: []
+  family_complements: []
+- family_id: family_180
+  area_id: A8
+  family_name: Прояснение
+  scope: Прояснение
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_179
+  - family_181
+  family_conflicts: []
+  family_complements: []
+- family_id: family_181
+  area_id: A8
+  family_name: Конфронтация
+  scope: Конфронтация
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_180
+  - family_182
+  family_conflicts: []
+  family_complements: []
+- family_id: family_182
+  area_id: A8
+  family_name: Интерпретация
+  scope: Интерпретация
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_181
+  - family_183
+  family_conflicts: []
+  family_complements: []
+- family_id: family_183
+  area_id: A8
+  family_name: Анализ переноса
+  scope: Анализ переноса
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_182
+  - family_184
+  family_conflicts: []
+  family_complements: []
+- family_id: family_184
+  area_id: A8
+  family_name: Наблюдение контрпереноса
+  scope: Наблюдение контрпереноса
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_183
+  - family_185
+  family_conflicts: []
+  family_complements: []
+- family_id: family_185
+  area_id: A8
+  family_name: Диагностические гипотезы
+  scope: Диагностические гипотезы
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_184
+  - family_186
+  family_conflicts: []
+  family_complements: []
+- family_id: family_186
+  area_id: A8
+  family_name: Классификация структуры личности
+  scope: Классификация структуры личности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_185
+  - family_187
+  family_conflicts: []
+  family_complements: []
+- family_id: family_187
+  area_id: A8
+  family_name: Дифференциальная диагностика
+  scope: Дифференциальная диагностика
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_186
+  - family_188
+  family_conflicts: []
+  family_complements: []
+- family_id: family_188
+  area_id: A8
+  family_name: Психометрические оценки
+  scope: Психометрические оценки
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_187
+  - family_189
+  family_conflicts: []
+  family_complements: []
+- family_id: family_189
+  area_id: A8
+  family_name: Диагностика риска
+  scope: Диагностика риска
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_188
+  - family_190
+  family_conflicts: []
+  family_complements: []
+- family_id: family_190
+  area_id: A8
+  family_name: Диагностика мотивации
+  scope: Диагностика мотивации
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_189
+  - family_191
+  family_conflicts: []
+  family_complements: []
+- family_id: family_191
+  area_id: A8
+  family_name: Пересмотр диагноза
+  scope: Пересмотр диагноза
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_190
+  - family_192
+  family_conflicts: []
+  family_complements: []
+- family_id: family_192
+  area_id: A8
+  family_name: Клиническое формулирование случая
+  scope: Клиническое формулирование случая
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_191
+  - family_193
+  family_conflicts: []
+  family_complements: []
+- family_id: family_193
+  area_id: A9
+  family_name: Работа с переносом
+  scope: Работа с переносом
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_192
+  - family_194
+  family_conflicts: []
+  family_complements: []
+- family_id: family_194
+  area_id: A9
+  family_name: Интерпретация переноса
+  scope: Интерпретация переноса
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_193
+  - family_195
+  family_conflicts: []
+  family_complements: []
+- family_id: family_195
+  area_id: A9
+  family_name: Анализ «здесь и сейчас»
+  scope: Анализ «здесь и сейчас»
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_194
+  - family_196
+  family_conflicts: []
+  family_complements: []
+- family_id: family_196
+  area_id: A9
+  family_name: Поддержание нейтральности
+  scope: Поддержание нейтральности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_195
+  - family_197
+  family_conflicts: []
+  family_complements: []
+- family_id: family_197
+  area_id: A9
+  family_name: Интерпретация защит
+  scope: Интерпретация защит
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_196
+  - family_198
+  family_conflicts: []
+  family_complements: []
+- family_id: family_198
+  area_id: A9
+  family_name: Интерпретация аффектов
+  scope: Интерпретация аффектов
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_197
+  - family_199
+  family_conflicts: []
+  family_complements: []
+- family_id: family_199
+  area_id: A9
+  family_name: Интерпретация отношений
+  scope: Интерпретация отношений
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_198
+  - family_200
+  family_conflicts: []
+  family_complements: []
+- family_id: family_200
+  area_id: A9
+  family_name: Интерпретация конфликтов
+  scope: Интерпретация конфликтов
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_199
+  - family_201
+  family_conflicts: []
+  family_complements: []
+- family_id: family_201
+  area_id: A9
+  family_name: Структурная интерпретация
+  scope: Структурная интерпретация
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_200
+  - family_202
+  family_conflicts: []
+  family_complements: []
+- family_id: family_202
+  area_id: A9
+  family_name: Работа с сопротивлением
+  scope: Работа с сопротивлением
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_201
+  - family_203
+  family_conflicts: []
+  family_complements: []
+- family_id: family_203
+  area_id: A9
+  family_name: Удержание рамки
+  scope: Удержание рамки
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_202
+  - family_204
+  family_conflicts: []
+  family_complements: []
+- family_id: family_204
+  area_id: A9
+  family_name: Управление границами
+  scope: Управление границами
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_203
+  - family_205
+  family_conflicts: []
+  family_complements: []
+- family_id: family_205
+  area_id: A9
+  family_name: Использование контрпереноса
+  scope: Использование контрпереноса
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_204
+  - family_206
+  family_conflicts: []
+  family_complements: []
+- family_id: family_206
+  area_id: A9
+  family_name: Контейнирование аффекта
+  scope: Контейнирование аффекта
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_205
+  - family_207
+  family_conflicts: []
+  family_complements: []
+- family_id: family_207
+  area_id: A9
+  family_name: Темп интервенций
+  scope: Темп интервенций
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_206
+  - family_208
+  family_conflicts: []
+  family_complements: []
+- family_id: family_208
+  area_id: A9
+  family_name: Последовательность интерпретаций
+  scope: Последовательность интерпретаций
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_207
+  - family_209
+  family_conflicts: []
+  family_complements: []
+- family_id: family_209
+  area_id: A9
+  family_name: Управление фокусом сессии
+  scope: Управление фокусом сессии
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_208
+  - family_210
+  family_conflicts: []
+  family_complements: []
+- family_id: family_210
+  area_id: A9
+  family_name: Репарация альянса
+  scope: Репарация альянса
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_209
+  - family_211
+  family_conflicts: []
+  family_complements: []
+- family_id: family_211
+  area_id: A9
+  family_name: Поддержка пациента
+  scope: Поддержка пациента
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_210
+  - family_212
+  family_conflicts: []
+  family_complements: []
+- family_id: family_212
+  area_id: A9
+  family_name: Баланс экспрессивности
+  scope: Баланс экспрессивности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_211
+  - family_213
+  family_conflicts: []
+  family_complements: []
+- family_id: family_213
+  area_id: A9
+  family_name: Интервенции кризиса
+  scope: Интервенции кризиса
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_212
+  - family_214
+  family_conflicts: []
+  family_complements: []
+- family_id: family_214
+  area_id: A9
+  family_name: Управление сессией
+  scope: Управление сессией
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_213
+  - family_215
+  family_conflicts: []
+  family_complements: []
+- family_id: family_215
+  area_id: A9
+  family_name: Самонаблюдение терапевта
+  scope: Самонаблюдение терапевта
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_214
+  - family_216
+  family_conflicts: []
+  family_complements: []
+- family_id: family_216
+  area_id: A9
+  family_name: Регуляция технической позиции
+  scope: Регуляция технической позиции
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_215
+  - family_208
+  family_conflicts: []
+  family_complements: []
+- family_id: family_217
+  area_id: A10
+  family_name: Терапевтический контракт
+  scope: Терапевтический контракт
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_216
+  - family_218
+  family_conflicts: []
+  family_complements: []
+- family_id: family_218
+  area_id: A10
+  family_name: Информированное согласие
+  scope: Информированное согласие
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_217
+  - family_219
+  family_conflicts: []
+  family_complements: []
+- family_id: family_219
+  area_id: A10
+  family_name: Установление сеттинга
+  scope: Установление сеттинга
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_218
+  - family_220
+  family_conflicts: []
+  family_complements: []
+- family_id: family_220
+  area_id: A10
+  family_name: Поддержание сеттинга
+  scope: Поддержание сеттинга
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_219
+  - family_221
+  family_conflicts: []
+  family_complements: []
+- family_id: family_221
+  area_id: A10
+  family_name: Контроль безопасности
+  scope: Контроль безопасности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_220
+  - family_222
+  family_conflicts: []
+  family_complements: []
+- family_id: family_222
+  area_id: A10
+  family_name: Управление суицидальным риском
+  scope: Управление суицидальным риском
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_221
+  - family_223
+  family_conflicts: []
+  family_complements: []
+- family_id: family_223
+  area_id: A10
+  family_name: Управление acting-out
+  scope: Управление acting-out
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_222
+  - family_224
+  family_conflicts: []
+  family_complements: []
+- family_id: family_224
+  area_id: A10
+  family_name: Кризисные интервенции
+  scope: Кризисные интервенции
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_223
+  - family_225
+  family_conflicts: []
+  family_complements: []
+- family_id: family_225
+  area_id: A10
+  family_name: Формирование альянса
+  scope: Формирование альянса
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_224
+  - family_226
+  family_conflicts: []
+  family_complements: []
+- family_id: family_226
+  area_id: A10
+  family_name: Разрывы альянса
+  scope: Разрывы альянса
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_225
+  - family_227
+  family_conflicts: []
+  family_complements: []
+- family_id: family_227
+  area_id: A10
+  family_name: Восстановление альянса
+  scope: Восстановление альянса
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_226
+  - family_228
+  family_conflicts: []
+  family_complements: []
+- family_id: family_228
+  area_id: A10
+  family_name: Сопротивление терапии
+  scope: Сопротивление терапии
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_227
+  - family_229
+  family_conflicts: []
+  family_complements: []
+- family_id: family_229
+  area_id: A10
+  family_name: Стагнация процесса
+  scope: Стагнация процесса
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_228
+  - family_230
+  family_conflicts: []
+  family_complements: []
+- family_id: family_230
+  area_id: A10
+  family_name: Прорывные изменения
+  scope: Прорывные изменения
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_229
+  - family_231
+  family_conflicts: []
+  family_complements: []
+- family_id: family_231
+  area_id: A10
+  family_name: Изменения поведения
+  scope: Изменения поведения
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_230
+  - family_232
+  family_conflicts: []
+  family_complements: []
+- family_id: family_232
+  area_id: A10
+  family_name: Изменения аффектов
+  scope: Изменения аффектов
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_231
+  - family_233
+  family_conflicts: []
+  family_complements: []
+- family_id: family_233
+  area_id: A10
+  family_name: Изменения отношений
+  scope: Изменения отношений
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_232
+  - family_234
+  family_conflicts: []
+  family_complements: []
+- family_id: family_234
+  area_id: A10
+  family_name: Структурные изменения личности
+  scope: Структурные изменения личности
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_233
+  - family_235
+  family_conflicts: []
+  family_complements: []
+- family_id: family_235
+  area_id: A10
+  family_name: Фазы терапии
+  scope: Фазы терапии
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_234
+  - family_236
+  family_conflicts: []
+  family_complements: []
+- family_id: family_236
+  area_id: A10
+  family_name: Подготовка завершения
+  scope: Подготовка завершения
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_235
+  - family_237
+  family_conflicts: []
+  family_complements: []
+- family_id: family_237
+  area_id: A10
+  family_name: Завершение терапии
+  scope: Завершение терапии
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_236
+  - family_238
+  family_conflicts: []
+  family_complements: []
+- family_id: family_238
+  area_id: A10
+  family_name: Оценка результата
+  scope: Оценка результата
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_237
+  - family_239
+  family_conflicts: []
+  family_complements: []
+- family_id: family_239
+  area_id: A10
+  family_name: Долгосрочное наблюдение
+  scope: Долгосрочное наблюдение
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_238
+  - family_240
+  family_conflicts: []
+  family_complements: []
+- family_id: family_240
+  area_id: A10
+  family_name: Интеграция изменений
+  scope: Интеграция изменений
+  included_phenomena: []
+  excluded_phenomena: []
+  observability: умеренный
+  family_neighbors:
+  - family_239
+  - family_218
+  family_conflicts: []
+  family_complements: []

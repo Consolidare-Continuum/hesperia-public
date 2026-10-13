@@ -1,0 +1,22 @@
+[
+  {
+    "input": "Identity diffusion and split defenses",
+    "canonical_text": "identity diffusion and split defenses",
+    "tokens": [
+      "identity",
+      "diffusion",
+      "and",
+      "split",
+      "defenses"
+    ]
+  },
+  {
+    "input": "I’m unstable.",
+    "canonical_text": "i'm unstable.",
+    "tokens": [
+      "i'm",
+      "unstable"
+    ]
+  }
+]
+

@@ -1,0 +1,4 @@
+# Hesperia calibration — fpf-thinking-map pin (FPF-V7-13)
+-r router.txt
+fpf-thinking-map==1.9.3
+openai==3.13.0  # tools/dict_calibration/normalize_llm.py, propose_llm.py — was missing, discovered CORE-S2-LIVE-02

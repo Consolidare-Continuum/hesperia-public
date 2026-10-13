@@ -1,0 +1,44 @@
+{
+  "benchmarks": [
+    {
+      "id": "policy_coherent_v1",
+      "corpus_dir": "corpus_policy_coherent",
+      "evaluator": "policy",
+      "expected_profile": {
+        "contradiction": "low",
+        "innovation": "medium",
+        "propagation": "stable"
+      }
+    },
+    {
+      "id": "policy_polarized_v1",
+      "corpus_dir": "corpus_policy_polarized",
+      "evaluator": "policy",
+      "expected_profile": {
+        "contradiction": "high",
+        "innovation": "medium",
+        "propagation": "fragmented"
+      }
+    },
+    {
+      "id": "innovation_sparse_v1",
+      "corpus_dir": "corpus_innovation_sparse",
+      "evaluator": "innovation",
+      "expected_profile": {
+        "contradiction": "low",
+        "innovation": "medium",
+        "propagation": "medium"
+      }
+    },
+    {
+      "id": "narrative_spillover_v1",
+      "corpus_dir": "corpus_narrative_spillover",
+      "evaluator": "narrative",
+      "expected_profile": {
+        "contradiction": "low",
+        "innovation": "medium",
+        "propagation": "stable"
+      }
+    }
+  ]
+}

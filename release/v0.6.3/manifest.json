@@ -1,0 +1,16 @@
+{
+  "version": "0.6.3",
+  "release_kind": "github_archive_no_prod_dicts",
+  "git_commit": "6df2695e06829bab8db84f623721e8d687abd7e8",
+  "build_timestamp": "2026-06-14T13:00:24Z",
+  "entry_points": ["analyze", "compare", "batch-analyze", "health", "shipping_api"],
+  "integration": {
+    "tersagor_ref": "0149120",
+    "spec": "docs/specs/0.6.3-IRC-TEACHER-RUN.md"
+  },
+  "excluded_from_archive": [
+    "assets/calibration/dicts/v0_*",
+    "hesperia/modules/tfp/data/corpus",
+    "hesperia/modules/tfp/data/tfp_v1/corpus"
+  ]
+}

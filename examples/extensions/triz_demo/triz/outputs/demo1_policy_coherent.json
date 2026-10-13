@@ -1,0 +1,19 @@
+{
+  "exports": {
+    "tension_hotspots": [],
+    "triz_resolution_classes": []
+  },
+  "product_metrics": {
+    "Policy Tension Score": 0.0
+  },
+  "report": {
+    "corpus_id": "policy_coherent_v1",
+    "dominant_triz_patterns": [],
+    "generated_at": "2026-03-18T08:03:03Z",
+    "global_tension_score": 0.0,
+    "summary_text": "Global tension score is 0.00. Top conflict cluster appears between n/a and n/a. Dominant solution pattern: parameter_change.",
+    "top_conflict_clusters": [],
+    "top_cross_domain_conflicts": []
+  },
+  "sku": "HSP-TRIZ-P1"
+}

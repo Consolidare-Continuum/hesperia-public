@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prichindel.com/hesperia/schemas/ksi_config_v01.schema.json",
+  "title": "KSI configuration v0.1",
+  "type": "object",
+  "required": [
+    "version",
+    "ksi_version",
+    "thresholds"
+  ],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^0\\.1"
+    },
+    "ksi_version": {
+      "const": "0.1"
+    },
+    "thresholds": {
+      "type": "object",
+      "required": [
+        "tau",
+        "tau_active",
+        "tau_dead",
+        "tau_expected",
+        "tau_explain",
+        "tau_mirror",
+        "tau_bridge",
+        "tau_teacher"
+      ],
+      "properties": {
+        "tau": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "tau_active": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "tau_dead": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "tau_expected": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "tau_explain": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "tau_mirror": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "tau_bridge": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "tau_teacher": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "tau_sandbox_delta": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "defaults": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

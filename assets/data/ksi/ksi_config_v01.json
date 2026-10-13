@@ -1,0 +1,22 @@
+{
+  "version": "0.1.0",
+  "ksi_version": "0.1",
+  "thresholds": {
+    "tau": 0.25,
+    "tau_active": 0.5,
+    "tau_dead": 0.1,
+    "tau_expected": 0.5,
+    "tau_explain": 0.15,
+    "tau_mirror": 0.4,
+    "tau_bridge": 0.55,
+    "tau_teacher": 0.65,
+    "tau_sandbox_delta": 0.25
+  },
+  "defaults": {
+    "q_default": 0.6,
+    "s_e_no_match": 0.4,
+    "s_e_secondary_area": 0.7,
+    "s_e_primary_area": 1.0,
+    "s_e_floor": 0.2
+  }
+}

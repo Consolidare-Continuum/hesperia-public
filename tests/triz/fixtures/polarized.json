@@ -1,0 +1,11 @@
+{
+  "label": "polarized",
+  "active_graph": {
+    "nodes": {"x": {"hitCount": 10}, "y": {"hitCount": 10}},
+    "edges": [{"source": "x", "target": "y", "type": "conflict"}]
+  },
+  "topology": {
+    "concept_to_area": {"x": 0, "y": 2},
+    "concept_to_family": {"x": 0, "y": 48}
+  }
+}

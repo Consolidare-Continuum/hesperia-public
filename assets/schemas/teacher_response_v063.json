@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prichindel.com/hesperia/schemas/teacher_response_v063.json",
+  "title": "Hesperia 0.6.3 Teacher response (values only)",
+  "type": "object",
+  "required": ["schema", "lang", "proposals"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": "hesperia.teacher_response.v063" },
+    "lang": { "type": "string", "enum": ["ru"] },
+    "proposals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["action", "confidence"],
+        "additionalProperties": false,
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": ["add_edge", "remove_edge", "update_edge_weight", "add_concept", "update_cd_field"]
+          },
+          "source": { "type": "string" },
+          "target": { "type": "string" },
+          "type": { "type": "string" },
+          "concept_id": { "type": "string" },
+          "field": { "type": "string" },
+          "W_e_current": { "type": "number", "minimum": 0, "maximum": 1 },
+          "W_e_proposed": { "type": "number", "minimum": 0, "maximum": 1 },
+          "value_current": { "type": "number" },
+          "value_proposed": { "type": "number" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      }
+    }
+  }
+}

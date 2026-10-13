@@ -1,0 +1,6 @@
+{
+  "concept_weights": { "B_TEST_1": 0.5 },
+  "evidence_counts": { "B_TEST_1": 2 },
+  "cd_phase": 1,
+  "note": "Hash post-CD in CI with HESPERIA_CD_ENABLED against pinned jsonl"
+}

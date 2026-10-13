@@ -1,0 +1,21 @@
+{
+  "active_graph": {
+    "nodes": {
+      "growth": {"hitCount": 8},
+      "stability": {"hitCount": 8},
+      "freedom": {"hitCount": 8},
+      "regulation": {"hitCount": 8},
+      "security": {"hitCount": 8},
+      "privacy": {"hitCount": 8}
+    },
+    "edges": [
+      {"source": "growth", "target": "stability", "type": "conflict"},
+      {"source": "freedom", "target": "regulation", "type": "negation"},
+      {"source": "security", "target": "privacy", "type": "opposition"}
+    ]
+  },
+  "topology": {
+    "concept_to_area": {"growth": 0, "stability": 2, "freedom": 1, "regulation": 3, "security": 4, "privacy": 6},
+    "concept_to_family": {"growth": 0, "stability": 48, "freedom": 24, "regulation": 72, "security": 96, "privacy": 144}
+  }
+}

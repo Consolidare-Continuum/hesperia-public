@@ -1,0 +1,14 @@
+{
+  "elapsed_s": 127.7,
+  "mode": "HESPERIA_CALIB_MOCK_OPENAI=1",
+  "openai_key": false,
+  "fixture_props": 12,
+  "full_props": 1077,
+  "anchored": 1041,
+  "rejected": 36,
+  "dict_a": 1041,
+  "dict_b": 288,
+  "dict_c": 1329,
+  "dict_d": 9076,
+  "coverage_x_of_288": 288
+}

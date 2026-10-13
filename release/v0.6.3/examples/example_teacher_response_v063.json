@@ -1,0 +1,23 @@
+{
+  "_comment": "OpenAI Teacher output — proposals only, no justification/message.",
+  "schema": "hesperia.teacher_response.v063",
+  "lang": "ru",
+  "proposals": [
+    {
+      "action": "update_edge_weight",
+      "source": "AGGRESSION",
+      "target": "SELF_REGULATION",
+      "W_e_current": 0.12,
+      "W_e_proposed": 0.58,
+      "confidence": 0.84
+    },
+    {
+      "action": "update_cd_field",
+      "concept_id": "SHAME",
+      "field": "expected_activation",
+      "value_current": 0.55,
+      "value_proposed": 0.48,
+      "confidence": 0.71
+    }
+  ]
+}

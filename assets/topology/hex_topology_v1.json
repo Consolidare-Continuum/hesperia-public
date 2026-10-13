@@ -1,0 +1,28 @@
+{
+  "version": "v1",
+  "authority": "docs/TOPOLOGY_INVARIANTS.md",
+  "invariant_catalog": "core.topology.invariant_catalog",
+  "hex_model": {
+    "total_hexes": 72000,
+    "n_families": 288,
+    "hexes_per_family": 250,
+    "layout": "288_disjoint_family_rings",
+    "cross_family_hex_edges": false,
+    "global_hex_id": {
+      "type": "linear",
+      "formula": "hex_id = family_id * hexes_per_family + local_hex_index",
+      "family_id_range": [0, 287],
+      "local_hex_index_range": [0, 249]
+    },
+    "local_adjacency": {
+      "graph": "simple_cycle",
+      "degree": 2,
+      "neighbors": "local_hex_index ± 1 mod hexes_per_family"
+    }
+  },
+  "laplacian": {
+    "operator": "unweighted_graph_laplacian",
+    "implementation": "hesperia.engine.hex_matrix_builders.build_ring_laplacian",
+    "note": "L_H is block-diagonal with identical ring Laplacian blocks; no runtime neighbor discovery."
+  }
+}

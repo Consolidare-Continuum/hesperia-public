@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hesperia://schemas/lexical_concept/definitions.json",
+  "title": "DLCR shared definitions",
+  "$defs": {
+    "semverish": {
+      "type": "string",
+      "description": "Version token (semver or repo pin label)"
+    },
+    "concept_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable concept identifier (Dict B)"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+# 0.6.3 GitHub archive — excludes prod dicts and corpus
+docs/internal/
+legacy/
+__pycache__/
+*.pyc
+.pytest_cache/
+.git/
+outputs/
+assets/calibration/dicts/v0_6_0_clr_v052_2/
+assets/calibration/dicts/v0_6_0_clr_v052_4/
+assets/calibration/dicts/v0_6_0_clr_v052_5/
+assets/calibration/dicts/v0_tfp_cal_wave_002/
+hesperia/modules/tfp/data/corpus/
+hesperia/modules/tfp/data/tfp_v1/corpus/
+hesperia/modules/tfp/data/normalization/

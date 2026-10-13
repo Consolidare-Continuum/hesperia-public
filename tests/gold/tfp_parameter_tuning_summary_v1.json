@@ -1,0 +1,70 @@
+{
+  "chosen_tau": 0.35,
+  "chosen_concept_cap": 5.5,
+  "chosen_hex_smoothing_alpha": 0.52,
+  "chosen_hex_decay": 0.02,
+  "chosen_momentum": {
+    "alpha1": 0.28,
+    "alpha2": 0.08
+  },
+  "major_inhibition_matrix_changes": [
+    {
+      "target_row": "A2",
+      "source_col": "A5",
+      "before": 0.16,
+      "after": 0.32
+    },
+    {
+      "target_row": "A5",
+      "source_col": "A2",
+      "before": 0.14,
+      "after": 0.1
+    },
+    {
+      "target_row": "A4",
+      "source_col": "A7",
+      "before": 0.28,
+      "after": 0.4
+    },
+    {
+      "target_row": "A7",
+      "source_col": "A4",
+      "before": 0.24,
+      "after": 0.12
+    },
+    {
+      "target_row": "A2",
+      "source_col": "A7",
+      "before": 0.1,
+      "after": 0.16
+    },
+    {
+      "target_row": "A5",
+      "source_col": "A7",
+      "before": 0.12,
+      "after": 0.18
+    }
+  ],
+  "baseline_metrics": {
+    "average_top1_top2_gap": 0.3246,
+    "average_hex_delta": 0.03302,
+    "median_hex_delta": 0.023301,
+    "max_hex_delta": 0.094437,
+    "same_density_length_delta": 0.006963,
+    "spike_reduction_metric": 0.267455
+  },
+  "final_metrics": {
+    "average_top1_top2_gap": 0.335145,
+    "average_hex_delta": 0.039717,
+    "median_hex_delta": 0.036518,
+    "max_hex_delta": 0.104321,
+    "same_density_length_delta": -0.005214,
+    "spike_reduction_metric": 0.278478,
+    "top2_family_or_area_order_change_fraction_post_hex": 0.0
+  },
+  "notes": [
+    "Tau was retained at 0.35 after the explored 0.55-1.20 grid reduced dominance clarity too aggressively.",
+    "Hex tuning increased score deltas materially without forcing ordering flips on the synthetic pack.",
+    "Momentum tuning reduced rupture-to-repair lag while keeping multi-step escalation monotonic."
+  ]
+}

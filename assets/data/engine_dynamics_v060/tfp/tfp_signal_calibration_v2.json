@@ -1,0 +1,63 @@
+{
+  "version": "tfp_signal_calibration_v2",
+  "date": "2026-03-21",
+  "invariant_path_id": "tfp_invariant_activation_v2",
+  "description": "Calibration-ready deterministic TFP activation path: markers -> stabilized concepts -> hex feedback -> area inhibition -> softmax.",
+  "area_ids": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A10",
+    "A11",
+    "A12"
+  ],
+  "area_softmax_temperature": 0.35,
+  "concept_cap": 5.5,
+  "log_normalization_enabled": true,
+  "segment_length_normalization": "inverse_sqrt_token_count",
+  "hex_decay": 0.02,
+  "hex_smoothing_alpha": 0.52,
+  "hex_feedback_required": true,
+  "apply_token_negation": true,
+  "negation_window": 2,
+  "negation_multiplier": 0.5,
+  "curve_smooth_alpha": null,
+  "curve_session_center": true,
+  "temporal_momentum": {
+    "alpha1": 0.28,
+    "alpha2": 0.08
+  },
+  "session_topology_defaults": {
+    "window_size": 80,
+    "normalize_scores": true,
+    "include_curve_projection_meta": true
+  },
+  "area_curve_map": {
+    "aggression": "A4",
+    "anxiety": "A2",
+    "shame": "A7",
+    "control": "A5",
+    "identity_diffusion": "A9"
+  },
+  "curve_calibration_reference": {
+    "low_tension": 0.2,
+    "conflict_active": 0.5,
+    "escalation": 0.8
+  },
+  "confidence_type_multiplier": {
+    "strong": 1.0,
+    "weak": 0.3
+  },
+  "inhibition_matrix_file": "area_inhibition_matrix_tfp.json",
+  "notes": [
+    "Final areas must come from one invariant path only.",
+    "areas_raw and areas_inhibited are diagnostics; areas and areas_final are authoritative.",
+    "Momentum smoothing is applied for topology-derived interpretation but raw segment curves are retained for audit."
+  ]
+}

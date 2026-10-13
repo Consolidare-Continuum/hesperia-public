@@ -1,0 +1,328 @@
+{
+  "matrices_provenance": "ontology",
+  "family_field_final": [
+    0.769843,
+    1.0,
+    0.71629,
+    0.491289
+  ],
+  "area_field_final": [
+    1.769843,
+    1.207579
+  ],
+  "steps": 25,
+  "timeline": {
+    "run": "e2e_semantic_field_truncated",
+    "steps_total": 25,
+    "head": [
+      {
+        "field_prev": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "field_next": [
+          0.244219,
+          0.563568,
+          0.24875,
+          0.245469
+        ],
+        "source_vector": [
+          0.0,
+          0.904837,
+          0.0,
+          0.0
+        ],
+        "pressure_vector": [
+          0.021875,
+          0.0,
+          0.0,
+          0.021875
+        ],
+        "delta_vector": [
+          -0.005781,
+          0.313568,
+          -0.00125,
+          -0.004531
+        ],
+        "energy_prev": -0.074876,
+        "energy_next": -0.160676,
+        "converged_numerical": false,
+        "converged_contradiction": false,
+        "observables": {
+          "propagation_velocity": 0.313657,
+          "contradiction_load": 0.041964,
+          "diffusion_load": 0.201105,
+          "resistance_load": 0.103544,
+          "source_alignment": 0.509938,
+          "stability_score": 0.761234,
+          "delta_norm_l2": 0.313657,
+          "pressure_norm_l1": 0.041964
+        },
+        "dt_effective": 1.0,
+        "n_dt_retries": 0,
+        "clip_fraction": 0.0,
+        "energy_descent_satisfied": true,
+        "step_index": 0
+      },
+      {
+        "field_prev": [
+          0.244219,
+          0.563568,
+          0.24875,
+          0.245469
+        ],
+        "field_next": [
+          0.276951,
+          0.797116,
+          0.284891,
+          0.241488
+        ],
+        "source_vector": [
+          0.0,
+          0.904837,
+          0.0,
+          0.0
+        ],
+        "pressure_vector": [
+          0.020982,
+          0.0,
+          0.0,
+          0.020982
+        ],
+        "delta_vector": [
+          0.032732,
+          0.233548,
+          0.036141,
+          -0.003981
+        ],
+        "energy_prev": -0.160676,
+        "energy_next": -0.212137,
+        "converged_numerical": false,
+        "converged_contradiction": false,
+        "observables": {
+          "propagation_velocity": 0.238617,
+          "contradiction_load": 0.046816,
+          "diffusion_load": 0.534831,
+          "resistance_load": 0.188137,
+          "source_alignment": 0.721261,
+          "stability_score": 0.807352,
+          "delta_norm_l2": 0.238617,
+          "pressure_norm_l1": 0.046816
+        },
+        "dt_effective": 1.0,
+        "n_dt_retries": 0,
+        "clip_fraction": 0.0,
+        "energy_descent_satisfied": true,
+        "step_index": 1
+      }
+    ],
+    "tail": [
+      {
+        "field_prev": [
+          0.768883,
+          1.0,
+          0.708381,
+          0.480691
+        ],
+        "field_next": [
+          0.769524,
+          1.0,
+          0.71251,
+          0.486207
+        ],
+        "source_vector": [
+          0.0,
+          0.904837,
+          0.0,
+          0.0
+        ],
+        "pressure_vector": [
+          0.129358,
+          0.0,
+          0.0,
+          0.129358
+        ],
+        "delta_vector": [
+          0.000641,
+          0.241465,
+          0.00413,
+          0.005516
+        ],
+        "energy_prev": -0.274833,
+        "energy_next": -0.27476,
+        "converged_numerical": false,
+        "converged_contradiction": false,
+        "observables": {
+          "propagation_velocity": 0.00692,
+          "contradiction_load": 0.261903,
+          "diffusion_load": 0.186983,
+          "resistance_load": 0.44284,
+          "source_alignment": 0.904837,
+          "stability_score": 0.993128,
+          "delta_norm_l2": 0.00692,
+          "pressure_norm_l1": 0.261903
+        },
+        "dt_effective": 1.0,
+        "n_dt_retries": 0,
+        "clip_fraction": 0.25,
+        "energy_descent_satisfied": true,
+        "step_index": 23
+      },
+      {
+        "field_prev": [
+          0.769524,
+          1.0,
+          0.71251,
+          0.486207
+        ],
+        "field_next": [
+          0.769843,
+          1.0,
+          0.71629,
+          0.491289
+        ],
+        "source_vector": [
+          0.0,
+          0.904837,
+          0.0,
+          0.0
+        ],
+        "pressure_vector": [
+          0.130952,
+          0.0,
+          0.0,
+          0.130952
+        ],
+        "delta_vector": [
+          0.000319,
+          0.242037,
+          0.00378,
+          0.005083
+        ],
+        "energy_prev": -0.27476,
+        "energy_next": -0.274692,
+        "converged_numerical": false,
+        "converged_contradiction": false,
+        "observables": {
+          "propagation_velocity": 0.006342,
+          "contradiction_load": 0.264751,
+          "diffusion_load": 0.184089,
+          "resistance_load": 0.443975,
+          "source_alignment": 0.904837,
+          "stability_score": 0.993698,
+          "delta_norm_l2": 0.006342,
+          "pressure_norm_l1": 0.264751
+        },
+        "dt_effective": 1.0,
+        "n_dt_retries": 0,
+        "clip_fraction": 0.25,
+        "energy_descent_satisfied": true,
+        "step_index": 24
+      }
+    ]
+  },
+  "energy_prev_trajectory": [
+    -0.074876,
+    -0.160676,
+    -0.212137,
+    -0.248849,
+    -0.259627,
+    -0.265039,
+    -0.26867,
+    -0.271121,
+    -0.27277,
+    -0.273864,
+    -0.274573,
+    -0.275015,
+    -0.275271,
+    -0.275402,
+    -0.275447,
+    -0.275438,
+    -0.275392,
+    -0.275325,
+    -0.275247,
+    -0.275162,
+    -0.275076,
+    -0.274992,
+    -0.274911,
+    -0.274833,
+    -0.27476
+  ],
+  "energy_next_trajectory": [
+    -0.160676,
+    -0.212137,
+    -0.248849,
+    -0.259627,
+    -0.265039,
+    -0.26867,
+    -0.271121,
+    -0.27277,
+    -0.273864,
+    -0.274573,
+    -0.275015,
+    -0.275271,
+    -0.275402,
+    -0.275447,
+    -0.275438,
+    -0.275392,
+    -0.275325,
+    -0.275247,
+    -0.275162,
+    -0.275076,
+    -0.274992,
+    -0.274911,
+    -0.274833,
+    -0.27476,
+    -0.274692
+  ],
+  "energy_trace": [
+    -0.074876,
+    -0.160676,
+    -0.212137,
+    -0.248849,
+    -0.259627,
+    -0.265039,
+    -0.26867,
+    -0.271121,
+    -0.27277,
+    -0.273864,
+    -0.274573,
+    -0.275015,
+    -0.275271,
+    -0.275402,
+    -0.275447,
+    -0.275438,
+    -0.275392,
+    -0.275325,
+    -0.275247,
+    -0.275162,
+    -0.275076,
+    -0.274992,
+    -0.274911,
+    -0.274833,
+    -0.27476,
+    -0.274692
+  ],
+  "convergence_flag": false,
+  "steps_to_convergence": 25,
+  "family_id_index": {
+    "A01": 0,
+    "A02": 1,
+    "A03": 2,
+    "A04": 3
+  },
+  "run": "e2e_semantic_field",
+  "system_version": "0.5.3",
+  "build_id": "hesperia_0.5.3_296581f37553_2026-03-26T11:26:15Z",
+  "schema_version": "v1",
+  "calibration_profile": "default_v1",
+  "run_id": "bd3411e9-9673-4139-80e6-fe9fd441e7f0",
+  "execution_flow_version": "e2e_v2",
+  "pipeline_version": "e2e_v2",
+  "orchestration_mode": "E2E_BATCH",
+  "modules_used": [
+    "runtime.semantic_field.run_semantic_field"
+  ]
+}

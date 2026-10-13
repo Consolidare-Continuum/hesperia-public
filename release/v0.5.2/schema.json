@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hesperia.local/schema/public_output.schema.json",
+  "title": "HESPERIA Public Output (projected)",
+  "description": "Public-facing output shape. Uses public vocabulary only. No internal geometry or topology.",
+  "schema_version": "1.1",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "system_version": { "type": "string", "description": "Matches VERSION.yaml system_version." },
+    "build_id": { "type": "string" },
+    "schema_version": { "type": "string", "description": "Public output schema id (e.g. v1) from VERSION.yaml." },
+    "calibration_profile": { "type": "string" },
+    "execution_flow_version": {
+      "type": "string",
+      "description": "Canonical execution flow build/version id."
+    },
+    "pipeline_version": {
+      "type": "string",
+      "description": "Legacy compatibility mirror of execution_flow_version."
+    },
+    "orchestration_mode": {
+      "type": "string",
+      "description": "Flow trigger mode (e.g. API_SYNC, CLI_SYNC, BATCH_SYNC)."
+    },
+    "run_id": { "type": "string" },
+    "modules_used": { "type": "array", "items": { "type": "string" } },
+    "payload": { "description": "List or object roots wrapped for tracing." },
+    "macro_domain_vector": {
+      "type": "array",
+      "description": "Structural emphasis over macro-domains (public count).",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": { "type": "number", "minimum": 0, "maximum": 1 }
+    },
+    "policy_family_counts": {
+      "type": "array",
+      "description": "Activation counts over policy families (public count).",
+      "minItems": 240,
+      "maxItems": 240,
+      "items": { "type": "number", "minimum": 0 }
+    },
+    "dominant_macro_domain": {
+      "type": "integer",
+      "description": "Index of dominant macro-domain (0-based, public range).",
+      "minimum": 0,
+      "maximum": 9
+    },
+    "dominant_policy_family": {
+      "type": "integer",
+      "description": "Index of dominant policy family (0-based, public range).",
+      "minimum": 0,
+      "maximum": 239
+    },
+    "propagated_macro_domain_vector": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": { "type": "number", "minimum": 0, "maximum": 1 }
+    },
+    "propagated_policy_family_counts": {
+      "type": "array",
+      "minItems": 240,
+      "maxItems": 240,
+      "items": { "type": "number", "minimum": 0 }
+    },
+    "entropy": { "type": "number" },
+    "coverage": { "type": "number" },
+    "tension": { "type": "number" },
+    "loopability": { "type": "number" },
+    "confidence": { "type": "number" },
+    "trust_tier": { "type": "string" },
+    "evidence": {
+      "type": "array",
+      "description": "Evidence entries: matched span, activated concept, confidence band. No internal coordinates.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "matched_span": { "type": "string" },
+          "concept_or_family_label": { "type": "string" },
+          "confidence_band": { "type": "string" },
+          "document_location": { "type": "string" }
+        }
+      }
+    }
+  }
+}

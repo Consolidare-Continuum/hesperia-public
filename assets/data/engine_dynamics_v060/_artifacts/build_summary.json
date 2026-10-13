@@ -1,0 +1,41 @@
+{
+  "raw_entries": 106065,
+  "tagged_entries": 106065,
+  "mapped_entries": 106065,
+  "core_entries": 119,
+  "variant_entries": 1632,
+  "speech_entries": 95,
+  "negative_entries": 6,
+  "concept_count": 283,
+  "avg_lexical_support_per_concept": 7.8551,
+  "_build_report_embed": {
+    "total_raw_entries": 106065,
+    "raw_unique_ngrams_ge_min_freq": 106065,
+    "raw_truncated": false,
+    "raw_max_entries": 300000,
+    "min_raw_frequency": 2,
+    "core_entries": 119,
+    "variant_entries": 1632,
+    "speech_entries": 95,
+    "negative_entries": 6,
+    "concept_count": 9,
+    "sentences_ingested": 18527,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  "_dict_b_expansion_embed": {
+    "existing_concepts": 268,
+    "new_candidates": 15,
+    "accepted_new_concepts": 15,
+    "merged_into_existing": 0,
+    "rejected_clusters": 4,
+    "_expansion_meta": {
+      "clusters_built_pre_filter": 19,
+      "generic_reject": 4,
+      "skipped_empty_signature": 0,
+      "skipped_cap": 0,
+      "stripped_prior_TFP_CLUSTER_rows": 15,
+      "max_new_cap": 45,
+      "version": "v0.6.0_tfp_expand"
+    }
+  }
+}

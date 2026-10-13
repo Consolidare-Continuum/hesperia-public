@@ -1,0 +1,7 @@
+# Hesperia output_views — Russian locale stub (T54). Run makemessages when adding strings.
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Session Inspector"
+msgstr ""

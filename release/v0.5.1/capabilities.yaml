@@ -1,0 +1,20 @@
+# HESPERIA — product vs internal capability flags (Task 4).
+# Override with env: HESPERIA_EXPOSE_TRIZ=0|1, HESPERIA_PRODUCT_SURFACE=0|1, etc.
+
+public:
+  analyze: true
+  compare: true
+  batch: true
+
+internal:
+  dynamics: true
+  triz: true
+  calibration: true
+
+# What may appear on external HTTP/CLI surfaces (product build).
+exposed:
+  dynamics: false
+  triz: false
+  calibration: false
+  # When HESPERIA_PRODUCT_SURFACE=0 (dev), /version is on if true. Strict product surface hides /version unless HESPERIA_EXPOSE_VERSION=1.
+  version_endpoint: true

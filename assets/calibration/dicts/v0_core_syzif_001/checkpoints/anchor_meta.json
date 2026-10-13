@@ -1,0 +1,9 @@
+{
+  "n_drafts": 1077,
+  "n_anchored": 1041,
+  "n_rejected": 36,
+  "accept_rate": 0.9666,
+  "reject_rate": 0.0334,
+  "min_score": 0.45,
+  "mode": "mock_openai"
+}

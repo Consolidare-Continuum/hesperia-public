@@ -1,0 +1,106 @@
+{
+  "registry_version": "1.0.0",
+  "description": "Cross-plane metric semantics for TFP file pipeline + structural bundle (v1 draft). Partial coverage by design — not every public JSON key is listed; see docs/governance/OUTPUT_METRIC_REGISTRY_PARTIAL_COVERAGE_v1.md.",
+  "artifacts": {
+    "structural_batch.L1": {
+      "ATTRIBUTED_TOKENS": {
+        "semantic_type": "count",
+        "range_min": 0,
+        "range_max": null,
+        "null_policy": "forbidden",
+        "zero_meaning": "no_signal_or_fallback_pending",
+        "display_precision": 0,
+        "sortable": true,
+        "comparable_across_runs": true
+      },
+      "COVERAGE_RATIO": {
+        "semantic_type": "probability",
+        "range_min": 0,
+        "range_max": 1,
+        "null_policy": "forbidden",
+        "zero_meaning": "no_signal_or_fallback_pending",
+        "display_precision": 4,
+        "sortable": true,
+        "comparable_across_runs": true
+      },
+      "CALIBRATION_FALLBACK_USED": {
+        "semantic_type": "enum_string",
+        "null_policy": "omit",
+        "zero_meaning": "context_dependent",
+        "display_precision": 0,
+        "sortable": false,
+        "comparable_across_runs": true
+      }
+    },
+    "structural_batch.diagnostics.calibration_status": {
+      "marker_concept_mass": {
+        "semantic_type": "normalized_mass",
+        "range_min": 0,
+        "range_max": null,
+        "null_policy": "explicit_null",
+        "zero_meaning": "no_lexicon_marker_hits",
+        "display_precision": 6,
+        "sortable": true,
+        "comparable_across_runs": true
+      },
+      "uniform_concept_prior_fallback_used": {
+        "semantic_type": "boolean",
+        "null_policy": "forbidden",
+        "display_precision": 0,
+        "sortable": false,
+        "comparable_across_runs": true
+      },
+      "l1_calibration_fallback": {
+        "semantic_type": "enum_string",
+        "null_policy": "omit",
+        "display_precision": 0,
+        "sortable": false,
+        "comparable_across_runs": true
+      }
+    },
+    "sealed.hex_activation_map": {
+      "total_mass": {
+        "semantic_type": "energy",
+        "range_min": 0,
+        "range_max": null,
+        "null_policy": "forbidden",
+        "zero_meaning": "aggregation_failure_or_annihilation",
+        "display_precision": 6,
+        "sortable": true,
+        "comparable_across_runs": false
+      }
+    },
+    "session_tfp_stages.areas_top": {
+      "*": {
+        "semantic_type": "normalized_activation",
+        "range_min": 0,
+        "range_max": 1,
+        "null_policy": "omit",
+        "display_precision": 4,
+        "sortable": false,
+        "comparable_across_runs": false,
+        "note": "Session NLP plane; not directly comparable to lexicon structural areas without alignment spec."
+      }
+    },
+    "product_analyze.result": {
+      "governance": {
+        "semantic_type": "index",
+        "range_min": 0,
+        "range_max": 1,
+        "display_precision": 2,
+        "sortable": true,
+        "comparable_across_runs": true
+      }
+    },
+    "kme.report.primitives": {
+      "*": {
+        "semantic_type": "scalar_metric",
+        "null_policy": "explicit_null",
+        "display_precision": 4,
+        "sortable": true,
+        "comparable_across_runs": true,
+        "note": "Per-primitive ranges to be split in registry v1.1."
+      }
+    }
+  }
+}

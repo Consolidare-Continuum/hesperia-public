@@ -1,0 +1,1200 @@
+area_id	A1
+family_id	family_001
+family_name	Первичные аффективные системы
+family_definition	Первичные аффективные системы
+
+area_id	A1
+family_id	family_002
+family_name	Либидинозное стремление к объекту
+family_definition	Либидинозное стремление к объекту
+
+area_id	A1
+family_id	family_003
+family_name	Агрессивные импульсы
+family_definition	Агрессивные импульсы
+
+area_id	A1
+family_id	family_004
+family_name	Мотивация удовольствия
+family_definition	Мотивация удовольствия
+
+area_id	A1
+family_id	family_005
+family_name	Реакции фрустрации
+family_definition	Реакции фрустрации
+
+area_id	A1
+family_id	family_006
+family_name	Регуляция интенсивности аффекта
+family_definition	Регуляция интенсивности аффекта
+
+area_id	A1
+family_id	family_007
+family_name	Дифференциация аффектов
+family_definition	Дифференциация аффектов
+
+area_id	A1
+family_id	family_008
+family_name	Аффективное возбуждение
+family_definition	Аффективное возбуждение
+
+area_id	A1
+family_id	family_009
+family_name	Желание и влечение к объекту
+family_definition	Желание и влечение к объекту
+
+area_id	A1
+family_id	family_010
+family_name	Потребность в зависимости
+family_definition	Потребность в зависимости
+
+area_id	A1
+family_id	family_011
+family_name	Импульсы привязанности
+family_definition	Импульсы привязанности
+
+area_id	A1
+family_id	family_012
+family_name	Сексуальное возбуждение
+family_definition	Сексуальное возбуждение
+
+area_id	A1
+family_id	family_013
+family_name	Телесное удовольствие
+family_definition	Телесное удовольствие
+
+area_id	A1
+family_id	family_014
+family_name	Конфликт либидо и агрессии
+family_definition	Конфликт либидо и агрессии
+
+area_id	A1
+family_id	family_015
+family_name	Импульсивная разрядка
+family_definition	Импульсивная разрядка
+
+area_id	A1
+family_id	family_016
+family_name	Торможение влечений
+family_definition	Торможение влечений
+
+area_id	A1
+family_id	family_017
+family_name	Аффективная заразительность
+family_definition	Аффективная заразительность
+
+area_id	A1
+family_id	family_018
+family_name	Усиление аффекта
+family_definition	Усиление аффекта
+
+area_id	A1
+family_id	family_019
+family_name	Стыд и вина
+family_definition	Стыд и вина
+
+area_id	A1
+family_id	family_020
+family_name	Зависть как аффект
+family_definition	Зависть как аффект
+
+area_id	A1
+family_id	family_021
+family_name	Тревога и страх
+family_definition	Тревога и страх
+
+area_id	A1
+family_id	family_022
+family_name	Предвосхищение и возбуждение
+family_definition	Предвосхищение и возбуждение
+
+area_id	A1
+family_id	family_023
+family_name	Аффективная амбивалентность
+family_definition	Аффективная амбивалентность
+
+area_id	A1
+family_id	family_024
+family_name	Иерархия мотивационных систем
+family_definition	Иерархия мотивационных систем
+
+area_id	A2
+family_id	family_025
+family_name	Репрезентации Я
+family_definition	Репрезентации Я
+
+area_id	A2
+family_id	family_026
+family_name	Репрезентации объекта
+family_definition	Репрезентации объекта
+
+area_id	A2
+family_id	family_027
+family_name	Диада Я–Объект
+family_definition	Диада Я–Объект
+
+area_id	A2
+family_id	family_028
+family_name	Аффективная связь внутри диады
+family_definition	Аффективная связь внутри диады
+
+area_id	A2
+family_id	family_029
+family_name	Диффузия идентичности
+family_definition	Диффузия идентичности
+
+area_id	A2
+family_id	family_030
+family_name	Консолидация идентичности
+family_definition	Консолидация идентичности
+
+area_id	A2
+family_id	family_031
+family_name	Постоянство объекта
+family_definition	Постоянство объекта
+
+area_id	A2
+family_id	family_032
+family_name	Интеграция хороших и плохих объектов
+family_definition	Интеграция хороших и плохих объектов
+
+area_id	A2
+family_id	family_033
+family_name	Расщеплённые объектные представления
+family_definition	Расщеплённые объектные представления
+
+area_id	A2
+family_id	family_034
+family_name	Идеализированные объекты
+family_definition	Идеализированные объекты
+
+area_id	A2
+family_id	family_035
+family_name	Преследующие объекты
+family_definition	Преследующие объекты
+
+area_id	A2
+family_id	family_036
+family_name	Амбивалентные объекты
+family_definition	Амбивалентные объекты
+
+area_id	A2
+family_id	family_037
+family_name	Представления покинутости
+family_definition	Представления покинутости
+
+area_id	A2
+family_id	family_038
+family_name	Представления зависимости
+family_definition	Представления зависимости
+
+area_id	A2
+family_id	family_039
+family_name	Внутренние ролевые отношения
+family_definition	Внутренние ролевые отношения
+
+area_id	A2
+family_id	family_040
+family_name	Интернализация отношений
+family_definition	Интернализация отношений
+
+area_id	A2
+family_id	family_041
+family_name	Внутренние сценарии отношений
+family_definition	Внутренние сценарии отношений
+
+area_id	A2
+family_id	family_042
+family_name	Эмпатическое понимание другого
+family_definition	Эмпатическое понимание другого
+
+area_id	A2
+family_id	family_043
+family_name	Ментализация другого
+family_definition	Ментализация другого
+
+area_id	A2
+family_id	family_044
+family_name	Границы Я и другого
+family_definition	Границы Я и другого
+
+area_id	A2
+family_id	family_045
+family_name	Толерантность к близости
+family_definition	Толерантность к близости
+
+area_id	A2
+family_id	family_046
+family_name	Ожидания взаимности
+family_definition	Ожидания взаимности
+
+area_id	A2
+family_id	family_047
+family_name	Стабильность отношений
+family_definition	Стабильность отношений
+
+area_id	A2
+family_id	family_048
+family_name	Нарративная целостность идентичности
+family_definition	Нарративная целостность идентичности
+
+area_id	A3
+family_id	family_049
+family_name	Расщепление Я
+family_definition	Расщепление Я
+
+area_id	A3
+family_id	family_050
+family_name	Расщепление объектов
+family_definition	Расщепление объектов
+
+area_id	A3
+family_id	family_051
+family_name	Переключение идеализации и обесценивания
+family_definition	Переключение идеализации и обесценивания
+
+area_id	A3
+family_id	family_052
+family_name	Аффективная диссоциация
+family_definition	Аффективная диссоциация
+
+area_id	A3
+family_id	family_053
+family_name	Проекция
+family_definition	Проекция
+
+area_id	A3
+family_id	family_054
+family_name	Проективная идентификация
+family_definition	Проективная идентификация
+
+area_id	A3
+family_id	family_055
+family_name	Индукция ролей в отношениях
+family_definition	Индукция ролей в отношениях
+
+area_id	A3
+family_id	family_056
+family_name	Проективное управление объектом
+family_definition	Проективное управление объектом
+
+area_id	A3
+family_id	family_057
+family_name	Примитивная идеализация
+family_definition	Примитивная идеализация
+
+area_id	A3
+family_id	family_058
+family_name	Примитивное обесценивание
+family_definition	Примитивное обесценивание
+
+area_id	A3
+family_id	family_059
+family_name	Отрицание
+family_definition	Отрицание
+
+area_id	A3
+family_id	family_060
+family_name	Всемогущество
+family_definition	Всемогущество
+
+area_id	A3
+family_id	family_061
+family_name	Магическое мышление
+family_definition	Магическое мышление
+
+area_id	A3
+family_id	family_062
+family_name	Вытеснение
+family_definition	Вытеснение
+
+area_id	A3
+family_id	family_063
+family_name	Интеллектуализация
+family_definition	Интеллектуализация
+
+area_id	A3
+family_id	family_064
+family_name	Рационализация
+family_definition	Рационализация
+
+area_id	A3
+family_id	family_065
+family_name	Реактивные образования
+family_definition	Реактивные образования
+
+area_id	A3
+family_id	family_066
+family_name	Изоляция аффекта
+family_definition	Изоляция аффекта
+
+area_id	A3
+family_id	family_067
+family_name	Дистанцирование от аффекта
+family_definition	Дистанцирование от аффекта
+
+area_id	A3
+family_id	family_068
+family_name	Защитное избегание
+family_definition	Защитное избегание
+
+area_id	A3
+family_id	family_069
+family_name	Регрессия
+family_definition	Регрессия
+
+area_id	A3
+family_id	family_070
+family_name	Фантазийное бегство
+family_definition	Фантазийное бегство
+
+area_id	A3
+family_id	family_071
+family_name	Юмор как защита
+family_definition	Юмор как защита
+
+area_id	A3
+family_id	family_072
+family_name	Интроективная идентификация
+family_definition	Интроективная идентификация
+
+area_id	A4
+family_id	family_073
+family_name	Реакции ярости
+family_definition	Реакции ярости
+
+area_id	A4
+family_id	family_074
+family_name	Хроническая враждебность
+family_definition	Хроническая враждебность
+
+area_id	A4
+family_id	family_075
+family_name	Ненависть к объекту
+family_definition	Ненависть к объекту
+
+area_id	A4
+family_id	family_076
+family_name	Контролирующая агрессия
+family_definition	Контролирующая агрессия
+
+area_id	A4
+family_id	family_077
+family_name	Завистливая агрессия
+family_definition	Завистливая агрессия
+
+area_id	A4
+family_id	family_078
+family_name	Мстительная агрессия
+family_definition	Мстительная агрессия
+
+area_id	A4
+family_id	family_079
+family_name	Садистические импульсы
+family_definition	Садистические импульсы
+
+area_id	A4
+family_id	family_080
+family_name	Унижение объекта
+family_definition	Унижение объекта
+
+area_id	A4
+family_id	family_081
+family_name	Фантазии разрушения
+family_definition	Фантазии разрушения
+
+area_id	A4
+family_id	family_082
+family_name	Агрессивная конкуренция
+family_definition	Агрессивная конкуренция
+
+area_id	A4
+family_id	family_083
+family_name	Доминирующая агрессия
+family_definition	Доминирующая агрессия
+
+area_id	A4
+family_id	family_084
+family_name	Пассивная агрессия
+family_definition	Пассивная агрессия
+
+area_id	A4
+family_id	family_085
+family_name	Саморазрушительная агрессия
+family_definition	Саморазрушительная агрессия
+
+area_id	A4
+family_id	family_086
+family_name	Аутоагрессивные импульсы
+family_definition	Аутоагрессивные импульсы
+
+area_id	A4
+family_id	family_087
+family_name	Аффективная эскалация
+family_definition	Аффективная эскалация
+
+area_id	A4
+family_id	family_088
+family_name	Унижение зависимости
+family_definition	Унижение зависимости
+
+area_id	A4
+family_id	family_089
+family_name	Ненависть к уязвимости
+family_definition	Ненависть к уязвимости
+
+area_id	A4
+family_id	family_090
+family_name	Агрессия против привязанности
+family_definition	Агрессия против привязанности
+
+area_id	A4
+family_id	family_091
+family_name	Аффективная жестокость
+family_definition	Аффективная жестокость
+
+area_id	A4
+family_id	family_092
+family_name	Садистическое Супер-Эго
+family_definition	Садистическое Супер-Эго
+
+area_id	A4
+family_id	family_093
+family_name	Вина и наказание
+family_definition	Вина и наказание
+
+area_id	A4
+family_id	family_094
+family_name	Агрессия в отношениях
+family_definition	Агрессия в отношениях
+
+area_id	A4
+family_id	family_095
+family_name	Регуляция агрессии
+family_definition	Регуляция агрессии
+
+area_id	A4
+family_id	family_096
+family_name	Интеграция агрессии
+family_definition	Интеграция агрессии
+
+area_id	A5
+family_id	family_097
+family_name	Эротизация агрессии
+family_definition	Эротизация агрессии
+
+area_id	A5
+family_id	family_098
+family_name	Садистическая сексуальность
+family_definition	Садистическая сексуальность
+
+area_id	A5
+family_id	family_099
+family_name	Масохистическая сексуальность
+family_definition	Масохистическая сексуальность
+
+area_id	A5
+family_id	family_100
+family_name	Доминирование и подчинение
+family_definition	Доминирование и подчинение
+
+area_id	A5
+family_id	family_101
+family_name	Фетишистские структуры
+family_definition	Фетишистские структуры
+
+area_id	A5
+family_id	family_102
+family_name	Вуайеристские сценарии
+family_definition	Вуайеристские сценарии
+
+area_id	A5
+family_id	family_103
+family_name	Экзибиционистские сценарии
+family_definition	Экзибиционистские сценарии
+
+area_id	A5
+family_id	family_104
+family_name	Объектификация партнёра
+family_definition	Объектификация партнёра
+
+area_id	A5
+family_id	family_105
+family_name	Сексуализированное унижение
+family_definition	Сексуализированное унижение
+
+area_id	A5
+family_id	family_106
+family_name	Сексуализированный контроль
+family_definition	Сексуализированный контроль
+
+area_id	A5
+family_id	family_107
+family_name	Фантазии господства
+family_definition	Фантазии господства
+
+area_id	A5
+family_id	family_108
+family_name	Сексуальные компульсии
+family_definition	Сексуальные компульсии
+
+area_id	A5
+family_id	family_109
+family_name	Диссоциация сексуальности
+family_definition	Диссоциация сексуальности
+
+area_id	A5
+family_id	family_110
+family_name	Избегание интимности
+family_definition	Избегание интимности
+
+area_id	A5
+family_id	family_111
+family_name	Сексуализированная зависимость
+family_definition	Сексуализированная зависимость
+
+area_id	A5
+family_id	family_112
+family_name	Сексуализированная месть
+family_definition	Сексуализированная месть
+
+area_id	A5
+family_id	family_113
+family_name	Нарушение границ
+family_definition	Нарушение границ
+
+area_id	A5
+family_id	family_114
+family_name	Путаница ролей
+family_definition	Путаница ролей
+
+area_id	A5
+family_id	family_115
+family_name	Перверсные сценарии отношений
+family_definition	Перверсные сценарии отношений
+
+area_id	A5
+family_id	family_116
+family_name	Стыд сексуальности
+family_definition	Стыд сексуальности
+
+area_id	A5
+family_id	family_117
+family_name	Идентичность и сексуальность
+family_definition	Идентичность и сексуальность
+
+area_id	A5
+family_id	family_118
+family_name	Фантазийная сексуальная власть
+family_definition	Фантазийная сексуальная власть
+
+area_id	A5
+family_id	family_119
+family_name	Защитная сексуализация
+family_definition	Защитная сексуализация
+
+area_id	A5
+family_id	family_120
+family_name	Неинтегрированная сексуальность
+family_definition	Неинтегрированная сексуальность
+
+area_id	A6
+family_id	family_121
+family_name	Грандиозное Я
+family_definition	Грандиозное Я
+
+area_id	A6
+family_id	family_122
+family_name	Самоидеализация
+family_definition	Самоидеализация
+
+area_id	A6
+family_id	family_123
+family_name	Потребность в восхищении
+family_definition	Потребность в восхищении
+
+area_id	A6
+family_id	family_124
+family_name	Чувство особого права
+family_definition	Чувство особого права
+
+area_id	A6
+family_id	family_125
+family_name	Нарциссическая зависть
+family_definition	Нарциссическая зависть
+
+area_id	A6
+family_id	family_126
+family_name	Нарциссическая ярость
+family_definition	Нарциссическая ярость
+
+area_id	A6
+family_id	family_127
+family_name	Обесценивание объекта
+family_definition	Обесценивание объекта
+
+area_id	A6
+family_id	family_128
+family_name	Отрицание зависимости
+family_definition	Отрицание зависимости
+
+area_id	A6
+family_id	family_129
+family_name	Нарциссическая изоляция
+family_definition	Нарциссическая изоляция
+
+area_id	A6
+family_id	family_130
+family_name	Чувствительность к унижению
+family_definition	Чувствительность к унижению
+
+area_id	A6
+family_id	family_131
+family_name	Нарциссическая уязвимость
+family_definition	Нарциссическая уязвимость
+
+area_id	A6
+family_id	family_132
+family_name	Нарциссическая пустота
+family_definition	Нарциссическая пустота
+
+area_id	A6
+family_id	family_133
+family_name	Поддержание образа Я
+family_definition	Поддержание образа Я
+
+area_id	A6
+family_id	family_134
+family_name	Нарциссическая конкуренция
+family_definition	Нарциссическая конкуренция
+
+area_id	A6
+family_id	family_135
+family_name	Нарциссический контроль
+family_definition	Нарциссический контроль
+
+area_id	A6
+family_id	family_136
+family_name	Перфекционизм
+family_definition	Перфекционизм
+
+area_id	A6
+family_id	family_137
+family_name	Фантазии величия
+family_definition	Фантазии величия
+
+area_id	A6
+family_id	family_138
+family_name	Нарциссическая эксплуатация
+family_definition	Нарциссическая эксплуатация
+
+area_id	A6
+family_id	family_139
+family_name	Эмоциональная поверхностность
+family_definition	Эмоциональная поверхностность
+
+area_id	A6
+family_id	family_140
+family_name	Фрагментация Я
+family_definition	Фрагментация Я
+
+area_id	A6
+family_id	family_141
+family_name	Нарциссическое избегание
+family_definition	Нарциссическое избегание
+
+area_id	A6
+family_id	family_142
+family_name	Нарциссическое очарование
+family_definition	Нарциссическое очарование
+
+area_id	A6
+family_id	family_143
+family_name	Сексуализированный нарциссизм
+family_definition	Сексуализированный нарциссизм
+
+area_id	A6
+family_id	family_144
+family_name	Злокачественный нарциссизм
+family_definition	Злокачественный нарциссизм
+
+area_id	A7
+family_id	family_145
+family_name	Эмпатия
+family_definition	Эмпатия
+
+area_id	A7
+family_id	family_146
+family_name	Сочувствие
+family_definition	Сочувствие
+
+area_id	A7
+family_id	family_147
+family_name	Признание субъективности другого
+family_definition	Признание субъективности другого
+
+area_id	A7
+family_id	family_148
+family_name	Эмоциональная взаимность
+family_definition	Эмоциональная взаимность
+
+area_id	A7
+family_id	family_149
+family_name	Способность к близости
+family_definition	Способность к близости
+
+area_id	A7
+family_id	family_150
+family_name	Доверие в отношениях
+family_definition	Доверие в отношениях
+
+area_id	A7
+family_id	family_151
+family_name	Надёжная привязанность
+family_definition	Надёжная привязанность
+
+area_id	A7
+family_id	family_152
+family_name	Стабильность отношений
+family_definition	Стабильность отношений
+
+area_id	A7
+family_id	family_153
+family_name	Выражение нежности
+family_definition	Выражение нежности
+
+area_id	A7
+family_id	family_154
+family_name	Забота о другом
+family_definition	Забота о другом
+
+area_id	A7
+family_id	family_155
+family_name	Интеграция нежности и эротизма
+family_definition	Интеграция нежности и эротизма
+
+area_id	A7
+family_id	family_156
+family_name	Эмоциональная уязвимость
+family_definition	Эмоциональная уязвимость
+
+area_id	A7
+family_id	family_157
+family_name	Принятие амбивалентности
+family_definition	Принятие амбивалентности
+
+area_id	A7
+family_id	family_158
+family_name	Разрешение конфликтов
+family_definition	Разрешение конфликтов
+
+area_id	A7
+family_id	family_159
+family_name	Открытость чувств
+family_definition	Открытость чувств
+
+area_id	A7
+family_id	family_160
+family_name	Верность отношениям
+family_definition	Верность отношениям
+
+area_id	A7
+family_id	family_161
+family_name	Совместная идентичность
+family_definition	Совместная идентичность
+
+area_id	A7
+family_id	family_162
+family_name	Устойчивость пары
+family_definition	Устойчивость пары
+
+area_id	A7
+family_id	family_163
+family_name	Способность прощать
+family_definition	Способность прощать
+
+area_id	A7
+family_id	family_164
+family_name	Благодарность
+family_definition	Благодарность
+
+area_id	A7
+family_id	family_165
+family_name	Оплакивание утраты
+family_definition	Оплакивание утраты
+
+area_id	A7
+family_id	family_166
+family_name	Ответственность за другого
+family_definition	Ответственность за другого
+
+area_id	A7
+family_id	family_167
+family_name	Принятие зависимости
+family_definition	Принятие зависимости
+
+area_id	A7
+family_id	family_168
+family_name	Интегрированная способность любить
+family_definition	Интегрированная способность любить
+
+area_id	A8
+family_id	family_169
+family_name	Оценка тестирования реальности
+family_definition	Оценка тестирования реальности
+
+area_id	A8
+family_id	family_170
+family_name	Оценка идентичности
+family_definition	Оценка идентичности
+
+area_id	A8
+family_id	family_171
+family_name	Оценка защит
+family_definition	Оценка защит
+
+area_id	A8
+family_id	family_172
+family_name	Оценка аффектов
+family_definition	Оценка аффектов
+
+area_id	A8
+family_id	family_173
+family_name	Оценка объектных отношений
+family_definition	Оценка объектных отношений
+
+area_id	A8
+family_id	family_174
+family_name	Оценка импульсного контроля
+family_definition	Оценка импульсного контроля
+
+area_id	A8
+family_id	family_175
+family_name	Оценка агрессии
+family_definition	Оценка агрессии
+
+area_id	A8
+family_id	family_176
+family_name	Оценка нарциссизма
+family_definition	Оценка нарциссизма
+
+area_id	A8
+family_id	family_177
+family_name	Оценка эмпатии
+family_definition	Оценка эмпатии
+
+area_id	A8
+family_id	family_178
+family_name	Оценка способности к любви
+family_definition	Оценка способности к любви
+
+area_id	A8
+family_id	family_179
+family_name	Структурное интервью
+family_definition	Структурное интервью
+
+area_id	A8
+family_id	family_180
+family_name	Прояснение
+family_definition	Прояснение
+
+area_id	A8
+family_id	family_181
+family_name	Конфронтация
+family_definition	Конфронтация
+
+area_id	A8
+family_id	family_182
+family_name	Интерпретация
+family_definition	Интерпретация
+
+area_id	A8
+family_id	family_183
+family_name	Анализ переноса
+family_definition	Анализ переноса
+
+area_id	A8
+family_id	family_184
+family_name	Наблюдение контрпереноса
+family_definition	Наблюдение контрпереноса
+
+area_id	A8
+family_id	family_185
+family_name	Диагностические гипотезы
+family_definition	Диагностические гипотезы
+
+area_id	A8
+family_id	family_186
+family_name	Классификация структуры личности
+family_definition	Классификация структуры личности
+
+area_id	A8
+family_id	family_187
+family_name	Дифференциальная диагностика
+family_definition	Дифференциальная диагностика
+
+area_id	A8
+family_id	family_188
+family_name	Психометрические оценки
+family_definition	Психометрические оценки
+
+area_id	A8
+family_id	family_189
+family_name	Диагностика риска
+family_definition	Диагностика риска
+
+area_id	A8
+family_id	family_190
+family_name	Диагностика мотивации
+family_definition	Диагностика мотивации
+
+area_id	A8
+family_id	family_191
+family_name	Пересмотр диагноза
+family_definition	Пересмотр диагноза
+
+area_id	A8
+family_id	family_192
+family_name	Клиническое формулирование случая
+family_definition	Клиническое формулирование случая
+
+area_id	A9
+family_id	family_193
+family_name	Работа с переносом
+family_definition	Работа с переносом
+
+area_id	A9
+family_id	family_194
+family_name	Интерпретация переноса
+family_definition	Интерпретация переноса
+
+area_id	A9
+family_id	family_195
+family_name	Анализ «здесь и сейчас»
+family_definition	Анализ «здесь и сейчас»
+
+area_id	A9
+family_id	family_196
+family_name	Поддержание нейтральности
+family_definition	Поддержание нейтральности
+
+area_id	A9
+family_id	family_197
+family_name	Интерпретация защит
+family_definition	Интерпретация защит
+
+area_id	A9
+family_id	family_198
+family_name	Интерпретация аффектов
+family_definition	Интерпретация аффектов
+
+area_id	A9
+family_id	family_199
+family_name	Интерпретация отношений
+family_definition	Интерпретация отношений
+
+area_id	A9
+family_id	family_200
+family_name	Интерпретация конфликтов
+family_definition	Интерпретация конфликтов
+
+area_id	A9
+family_id	family_201
+family_name	Структурная интерпретация
+family_definition	Структурная интерпретация
+
+area_id	A9
+family_id	family_202
+family_name	Работа с сопротивлением
+family_definition	Работа с сопротивлением
+
+area_id	A9
+family_id	family_203
+family_name	Удержание рамки
+family_definition	Удержание рамки
+
+area_id	A9
+family_id	family_204
+family_name	Управление границами
+family_definition	Управление границами
+
+area_id	A9
+family_id	family_205
+family_name	Использование контрпереноса
+family_definition	Использование контрпереноса
+
+area_id	A9
+family_id	family_206
+family_name	Контейнирование аффекта
+family_definition	Контейнирование аффекта
+
+area_id	A9
+family_id	family_207
+family_name	Темп интервенций
+family_definition	Темп интервенций
+
+area_id	A9
+family_id	family_208
+family_name	Последовательность интерпретаций
+family_definition	Последовательность интерпретаций
+
+area_id	A9
+family_id	family_209
+family_name	Управление фокусом сессии
+family_definition	Управление фокусом сессии
+
+area_id	A9
+family_id	family_210
+family_name	Репарация альянса
+family_definition	Репарация альянса
+
+area_id	A9
+family_id	family_211
+family_name	Поддержка пациента
+family_definition	Поддержка пациента
+
+area_id	A9
+family_id	family_212
+family_name	Баланс экспрессивности
+family_definition	Баланс экспрессивности
+
+area_id	A9
+family_id	family_213
+family_name	Интервенции кризиса
+family_definition	Интервенции кризиса
+
+area_id	A9
+family_id	family_214
+family_name	Управление сессией
+family_definition	Управление сессией
+
+area_id	A9
+family_id	family_215
+family_name	Самонаблюдение терапевта
+family_definition	Самонаблюдение терапевта
+
+area_id	A9
+family_id	family_216
+family_name	Регуляция технической позиции
+family_definition	Регуляция технической позиции
+
+area_id	A10
+family_id	family_217
+family_name	Терапевтический контракт
+family_definition	Терапевтический контракт
+
+area_id	A10
+family_id	family_218
+family_name	Информированное согласие
+family_definition	Информированное согласие
+
+area_id	A10
+family_id	family_219
+family_name	Установление сеттинга
+family_definition	Установление сеттинга
+
+area_id	A10
+family_id	family_220
+family_name	Поддержание сеттинга
+family_definition	Поддержание сеттинга
+
+area_id	A10
+family_id	family_221
+family_name	Контроль безопасности
+family_definition	Контроль безопасности
+
+area_id	A10
+family_id	family_222
+family_name	Управление суицидальным риском
+family_definition	Управление суицидальным риском
+
+area_id	A10
+family_id	family_223
+family_name	Управление acting-out
+family_definition	Управление acting-out
+
+area_id	A10
+family_id	family_224
+family_name	Кризисные интервенции
+family_definition	Кризисные интервенции
+
+area_id	A10
+family_id	family_225
+family_name	Формирование альянса
+family_definition	Формирование альянса
+
+area_id	A10
+family_id	family_226
+family_name	Разрывы альянса
+family_definition	Разрывы альянса
+
+area_id	A10
+family_id	family_227
+family_name	Восстановление альянса
+family_definition	Восстановление альянса
+
+area_id	A10
+family_id	family_228
+family_name	Сопротивление терапии
+family_definition	Сопротивление терапии
+
+area_id	A10
+family_id	family_229
+family_name	Стагнация процесса
+family_definition	Стагнация процесса
+
+area_id	A10
+family_id	family_230
+family_name	Прорывные изменения
+family_definition	Прорывные изменения
+
+area_id	A10
+family_id	family_231
+family_name	Изменения поведения
+family_definition	Изменения поведения
+
+area_id	A10
+family_id	family_232
+family_name	Изменения аффектов
+family_definition	Изменения аффектов
+
+area_id	A10
+family_id	family_233
+family_name	Изменения отношений
+family_definition	Изменения отношений
+
+area_id	A10
+family_id	family_234
+family_name	Структурные изменения личности
+family_definition	Структурные изменения личности
+
+area_id	A10
+family_id	family_235
+family_name	Фазы терапии
+family_definition	Фазы терапии
+
+area_id	A10
+family_id	family_236
+family_name	Подготовка завершения
+family_definition	Подготовка завершения
+
+area_id	A10
+family_id	family_237
+family_name	Завершение терапии
+family_definition	Завершение терапии
+
+area_id	A10
+family_id	family_238
+family_name	Оценка результата
+family_definition	Оценка результата
+
+area_id	A10
+family_id	family_239
+family_name	Долгосрочное наблюдение
+family_definition	Долгосрочное наблюдение
+
+area_id	A10
+family_id	family_240
+family_name	Интеграция изменений
+family_definition	Интеграция изменений
+

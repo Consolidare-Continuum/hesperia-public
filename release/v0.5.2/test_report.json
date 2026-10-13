@@ -1,0 +1,26 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "pytest",
+    "tests/test_runtime_spine_integrity.py",
+    "tests/test_semantic_output_signature.py",
+    "tests/test_release_version.py",
+    "tests/test_public_api_snapshot.py",
+    "tests/test_tool_contracts_locked.py",
+    "tests/test_release_v0_5_1_audit_package.py",
+    "tests/engine/test_projection_product_surface.py",
+    "tests/engine/test_sealed_multiscale.py",
+    "tests/test_reading_scales.py",
+    "-q",
+    "--tb=no"
+  ],
+  "exit_code": 0,
+  "summary_line": "",
+  "started_utc": "2026-03-26T08:50:16.902093+00:00",
+  "ended_utc": "2026-03-26T08:50:26.244658+00:00",
+  "stdout_tail": "............................................                             [100%]\n",
+  "quick_subset": false,
+  "scope_filter": "technical_full_profile_non_tfp",
+  "spec_compliance_reference": "audit_report.json \u2192 spec_compliance.tier1_specs"
+}

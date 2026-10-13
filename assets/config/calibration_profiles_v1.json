@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "profiles": {
+    "strict_raw": {
+      "description": "Minimal rounding; expose raw diagnostics; no band labels in machine output.",
+      "display_precision_default": 8,
+      "top_n_families": 96,
+      "suppression_floor": 0.0,
+      "show_fallback_flags": true
+    },
+    "balanced_readable": {
+      "description": "Default operator bundle; bands + moderate precision.",
+      "display_precision_default": 4,
+      "top_n_families": 48,
+      "suppression_floor": 1e-6,
+      "show_fallback_flags": true
+    },
+    "ui_executive": {
+      "description": "High-level: fewer families, stronger suppression of noise floor.",
+      "display_precision_default": 2,
+      "top_n_families": 12,
+      "suppression_floor": 1e-4,
+      "show_fallback_flags": false
+    },
+    "diagnostic_dense": {
+      "description": "Include calibration_status and trace-friendly fields in readout expansion.",
+      "display_precision_default": 6,
+      "top_n_families": 288,
+      "suppression_floor": 0.0,
+      "show_fallback_flags": true
+    }
+  }
+}

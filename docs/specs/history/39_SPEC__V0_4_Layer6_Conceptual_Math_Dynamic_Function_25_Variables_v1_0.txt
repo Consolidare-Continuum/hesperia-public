@@ -1,0 +1,233 @@
+39_SPEC__V0_4_Layer6_Conceptual_Math_Dynamic_Function_25_Variables_v1_0
+
+Project: HESPERIA
+Target: v0.4.x baseline (conceptual math & dynamic function metrics)
+Date: 2026-02-24
+Status: Canonical
+
+References: 34_SPEC (Layer-1), 35_SPEC (Layer-2); 00_GOVERNANCE_CHARTER__HESPERIA_v1_0. Aggregates: 40_SPEC (Layer-7).
+
+----------------------------------------------------------------------
+0. LAYER-6 CONTRACT (INVARIANT)
+----------------------------------------------------------------------
+
+  Layer-6 treats the engine as a function: input (e.g. token density / representation) → structural configuration (dominant family, coverage, entropy, hit vector, depth mass).
+
+  It answers: Is it stable? Near tipping points? Linear or curved? Chaotic sensitivity? Well-conditioned? In an attractor basin? Is propagation exponential, recursive, or diffusive?
+
+  This is real systems analysis. No semantic interpretation; only deterministic functional and geometric behavior.
+
+----------------------------------------------------------------------
+1. PREREQUISITES
+----------------------------------------------------------------------
+
+  x   = input to the engine (e.g. normalized token vector or query representation). Same type for all calls.
+  y(x)= output of the engine (e.g. hit vector of size F, or a scalar/metric). When scalar: e.g. dominance ratio, coverage, entropy.
+  E(x)= engine mapping: E(x) returns the structural output (dominant family, metrics, hit vector) for input x. So dominantFamily(x) = dominant family from E(x); coverage(x), entropy(x), dominance(x) = Layer-1-style metrics from E(x).
+
+  ε   = perturbation vector (same dimension as x). epsilonMagnitude = ||ε|| (norm of ε). For finite differences, use a small fixed scalar ε_small when computing (f(x+ε)-f(x))/||ε|| or central difference (f(x+ε)-f(x-ε))/(2||ε||).
+
+  mass_at_depth[d] = mass at BFS depth d (from Layer-2 or equivalent). depthMass = sequence mass_at_depth[0], mass_at_depth[1], ... for d = 0..maxDepth.
+
+  Covariance matrix: computed over hit vectors H from multiple runs (x, x+ε_1, x+ε_2, ...). Eigenvalues: from that covariance matrix (or from matrix of stacked H). rank(matrix): rank of matrix whose rows are H across small perturbations.
+
+  All derivatives and gradients use finite differences (deterministic). Norm = L2 unless stated.
+
+----------------------------------------------------------------------
+2. LAYER-6 CONCEPTUAL MATH & DYNAMIC FUNCTION METRICS (25)
+----------------------------------------------------------------------
+I. FUNCTIONAL RESPONSE (Derivatives / Sensitivity)
+----------------------------------------------------------------------
+
+ 1. INPUT_PERTURBATION_RESPONSE
+    double INPUT_PERTURBATION_RESPONSE = ||y(x+ε) - y(x)|| / (||ε|| + eps);
+    Measures sensitivity to minimal input change. y = output vector (e.g. hit vector). eps = 1e-12.
+
+ 2. DOMINANT_FAMILY_STABILITY
+    boolean DOMINANT_FAMILY_STABILITY = (dominantFamily(x) == dominantFamily(x+ε));
+    Decision robustness to micro-perturbation.
+
+ 3. COVERAGE_GRADIENT
+    double COVERAGE_GRADIENT = (coverage(x+ε) - coverage(x)) / (epsilonMagnitude + eps);
+    First-order derivative of coverage (finite difference).
+
+ 4. ENTROPY_GRADIENT
+    double ENTROPY_GRADIENT = (entropy(x+ε) - entropy(x)) / (epsilonMagnitude + eps);
+    Stability of distribution shape.
+
+ 5. STABILITY_RADIUS
+    double STABILITY_RADIUS = max { ||ε|| : dominantFamily(x) == dominantFamily(x+ε) } over a search (e.g. binary search on magnitude, fixed direction, or over a discrete set);
+    How much perturbation tolerated before classification flips. When no flip observed up to max tested radius, use that max as lower bound.
+
+II. SECOND-ORDER BEHAVIOR (Curvature / Acceleration)
+----------------------------------------------------------------------
+
+ 6. SECOND_ORDER_RESPONSE
+    double SECOND_ORDER_RESPONSE = (y(x+ε) - 2*y(x) + y(x-ε)) / (||ε||² + eps);
+    Scalar version: use a scalar output (e.g. dominance ratio). Vector: use norm of second-difference vector divided by ||ε||². Measures curvature (nonlinearity).
+
+ 7. DOMINANCE_CURVATURE
+    double DOMINANCE_CURVATURE = (dominance(x+ε) - 2*dominance(x) + dominance(x-ε)) / (||ε||² + eps);
+    Is dominance stable or near tipping point?
+
+ 8. ENTROPY_CURVATURE
+    double ENTROPY_CURVATURE = (entropy(x+ε) - 2*entropy(x) + entropy(x-ε)) / (||ε||² + eps);
+    Second derivative of entropy (finite difference). Detects phase-transition-like behavior.
+
+III. MATRIX STRUCTURE (Linear Algebra Behavior)
+----------------------------------------------------------------------
+
+  H = family hit vector (size F). Stack H from runs at x, x+ε_1, ..., x+ε_k into a matrix (rows = runs).
+
+ 9. HIT_VECTOR_RANK
+    int HIT_VECTOR_RANK = rank(matrixFromRuns(H across small perturbations));
+    Dimensionality of activation space. rank = number of linearly independent rows (numerical tolerance).
+
+10. PRINCIPAL_COMPONENT_ENERGY_RATIO
+    double PC1_ENERGY_RATIO = largestEigenvalue(covarianceMatrix(H)) / (sum of all eigenvalues + eps);
+    Whether system collapses into 1D axis. covarianceMatrix = covariance of H over perturbation runs.
+
+11. CONDITION_NUMBER
+    double CONDITION_NUMBER = maxEigenvalue / (minEigenvalue + eps);
+    Of covariance matrix (or of matrix of stacked H). Numerical stability of activation geometry.
+
+12. SPECTRAL_GAP
+    double SPECTRAL_GAP = eigenvalue_1 - eigenvalue_2 (largest minus second largest);
+    Dominance of first structural axis.
+
+IV. RECURSIVE / FIBONACCI-LIKE GROWTH PATTERNS
+----------------------------------------------------------------------
+
+  depthMass = mass_at_depth[0], mass_at_depth[1], ... (from Layer-2 or equivalent).
+
+13. DEPTH_GROWTH_RATIO
+    double DEPTH_GROWTH_RATIO = mass_at_depth[d+1] / (mass_at_depth[d] + eps);
+    At a chosen depth d (e.g. d where mass > 0). Or mean over d of mass[d+1]/mass[d]. If stable ratio ≈ φ (1.618…), interesting but rare.
+
+14. FIBONACCI_DEVIATION_SCORE
+    double FIBONACCI_DEVIATION_SCORE = |mass[d+2] - (mass[d+1] + mass[d])|;
+    For consecutive depths d, d+1, d+2. Use max over valid d or at a fixed d. Checks additive recursive pattern.
+
+15. EXPONENTIAL_FIT_ERROR
+    double EXPONENTIAL_FIT_ERROR = mse(fitExp(depthMass), actualDepthMass);
+    Fit model m(d) = a*exp(b*d) to (depth, mass); MSE of fit vs actual. Tests if propagation behaves exponentially.
+
+16. POWER_LAW_FIT_ERROR
+    double POWER_LAW_FIT_ERROR = mse(fitPowerLaw(depthMass), actualDepthMass);
+    Fit model m(d) = a*d^b (or a*(d+1)^b) to (depth, mass); MSE. Tests scale-free behavior.
+
+V. NEWTONIAN INTERPRETATION (Force / Potential Analogies)
+----------------------------------------------------------------------
+
+  Treat dominance as potential well.
+
+17. POTENTIAL_GRADIENT
+    double POTENTIAL_GRADIENT = dominance(x+ε) - dominance(x);
+    Local slope of structural attractor (finite difference along ε).
+
+18. ESCAPE_ENERGY_THRESHOLD
+    double ESCAPE_ENERGY_THRESHOLD = min { ||ε|| : dominantFamily(x+ε) != dominantFamily(x) } over search;
+    Minimum perturbation magnitude required to flip dominant family. When no flip found up to max tested, use that max (or +inf / sentinel).
+
+19. FORCE_ANALOG_MAGNITUDE
+    double FORCE_ANALOG_MAGNITUDE = ||gradientVector||;
+    gradientVector = finite-difference gradient of a scalar output (e.g. dominance) with respect to x; e.g. (dominance(x+ε_i)-dominance(x))/||ε_i|| for each direction. Magnitude = norm of that gradient. How strongly system reacts to perturbation.
+
+VI. FUNCTIONAL IMPLICATIONS
+----------------------------------------------------------------------
+
+20. MONOTONICITY_CHECK
+    boolean MONOTONICITY_CHECK = (for all pairs (x_i, x_j) in a sample where inputIntensity(x_i) < inputIntensity(x_j), dominance(x_i) <= dominance(x_j)) or (consistent non-increasing);
+    Ensures no reversal anomalies. Define inputIntensity e.g. as ||x|| or sum of token counts; "consistently" = one consistent direction over sample.
+
+21. FIXED_POINT_DETECTION
+    boolean FIXED_POINT = (E(E(x)) equals E(x) within tolerance);
+    Idempotence under self-application. E(x) must be in domain of E for E(E(x)); if not, define as false or N/A.
+
+22. CYCLE_DETECTION_FUNCTIONAL
+    boolean FUNCTIONAL_CYCLE = (E(E(E(x))) equals x within tolerance);
+    Detects period-3 oscillatory classification behavior.
+
+23. STRUCTURAL_LYAPUNOV_ESTIMATE
+    double LYAPUNOV_ESTIMATE = log((||y(x+ε)-y(x)|| + eps) / (||ε|| + eps));
+    Positive → chaotic sensitivity; negative → stable regime. Natural log.
+
+24. GLOBAL_STABILITY_SCORE
+    double GLOBAL_STABILITY_SCORE = 1.0 / (1.0 + CONDITION_NUMBER + |LYAPUNOV_ESTIMATE|);
+    Higher = more stable system. Bounded in (0, 1].
+
+25. CONCEPTUAL_COHERENCE_INDEX
+    double CONCEPTUAL_COHERENCE_INDEX = STABILITY_RADIUS * (1.0 - normalizedEntropy(x)) * GLOBAL_STABILITY_SCORE;
+    Composite structural coherence metric. normalizedEntropy from Layer-1 at x. Scale/clamp as needed for interpretability.
+
+----------------------------------------------------------------------
+3. WHAT LAYER-6 ACTUALLY DOES
+----------------------------------------------------------------------
+
+  It stops the engine from being treated as static classification.
+  It answers: Is it stable? Near tipping points? Linear or curved? Chaotic? Well-conditioned? In an attractor basin? Exponential, recursive, or diffusive propagation?
+  This is real systems analysis.
+
+----------------------------------------------------------------------
+4. AUXILIARY
+----------------------------------------------------------------------
+
+  rank(M): numerical rank (e.g. count of singular values > tolerance).
+  covarianceMatrix(H): rows = H vectors; compute sample covariance (or over runs).
+  mse(predicted, actual): mean squared error.
+  fitExp, fitPowerLaw: least-squares fit to depth–mass pairs; return predicted sequence for MSE.
+  Equality "within tolerance": e.g. for vectors, max component difference <= eps; for dominant family, equality of family id.
+
+----------------------------------------------------------------------
+5. RELATION TO LAYERS 1–2
+----------------------------------------------------------------------
+
+  Layer-6 uses Layer-1 metrics (coverage, entropy, dominance, normalizedEntropy) and Layer-2 depth mass as functions of input x (and perturbed x). It does not replace them; it analyzes their functional and dynamic behavior.
+
+----------------------------------------------------------------------
+6. JAVA-STYLE PSEUDOCODE (LAYER-6)
+----------------------------------------------------------------------
+
+// I. Functional response
+double[] yx = E(x), yxPlus = E(xPlusEps);
+double INPUT_PERTURBATION_RESPONSE = norm(diff(yxPlus, yx)) / (norm(eps) + 1e-12);
+boolean DOMINANT_FAMILY_STABILITY = (dominantFamily(x) == dominantFamily(xPlusEps));
+double COVERAGE_GRADIENT = (coverage(xPlusEps) - coverage(x)) / (epsilonMagnitude + 1e-12);
+double ENTROPY_GRADIENT = (entropy(xPlusEps) - entropy(x)) / (epsilonMagnitude + 1e-12);
+double STABILITY_RADIUS = binarySearchMaxEps(x, dominantFamily(x));  // max ||ε|| with same dominant
+
+// II. Second order
+double[] yxMinus = E(xMinusEps);
+double SECOND_ORDER_RESPONSE = norm(scale(diff(add(yxPlus, yxMinus), scale(yx, 2.0)), -1.0)) / (normEpsSq + 1e-12);
+double DOMINANCE_CURVATURE = (dominance(xPlusEps) - 2*dominance(x) + dominance(xMinusEps)) / (normEpsSq + 1e-12);
+double ENTROPY_CURVATURE = (entropy(xPlusEps) - 2*entropy(x) + entropy(xMinusEps)) / (normEpsSq + 1e-12);
+
+// III. Matrix structure
+double[][] cov = covarianceMatrix(hitVectorsFromPerturbations);
+double[] evals = eigenvalues(cov);
+int HIT_VECTOR_RANK = numericalRank(cov);
+double PC1_ENERGY_RATIO = evals[0] / (sum(evals) + 1e-12);
+double CONDITION_NUMBER = evals[0] / (evals[evals.length-1] + 1e-12);
+double SPECTRAL_GAP = (evals.length >= 2) ? (evals[0] - evals[1]) : 0.0;
+
+// IV. Depth growth
+double DEPTH_GROWTH_RATIO = massAtDepth[d+1] / (massAtDepth[d] + 1e-12);
+double FIBONACCI_DEVIATION_SCORE = Math.abs(massAtDepth[d+2] - (massAtDepth[d+1] + massAtDepth[d]));
+double EXPONENTIAL_FIT_ERROR = mse(fitExponential(depthMass), depthMass);
+double POWER_LAW_FIT_ERROR = mse(fitPowerLaw(depthMass), depthMass);
+
+// V. Newtonian
+double POTENTIAL_GRADIENT = dominance(xPlusEps) - dominance(x);
+double ESCAPE_ENERGY_THRESHOLD = searchMinEpsToFlip(x);
+double FORCE_ANALOG_MAGNITUDE = norm(gradientOfDominance(x));
+
+// VI. Functional
+boolean MONOTONICITY_CHECK = checkMonotonicityOverSample(sampleInputs);
+boolean FIXED_POINT = equalsWithinTolerance(E(E(x)), E(x));
+boolean FUNCTIONAL_CYCLE = equalsWithinTolerance(E(E(E(x))), x);
+double LYAPUNOV_ESTIMATE = Math.log((norm(diff(yxPlus, yx)) + 1e-12) / (norm(eps) + 1e-12));
+double GLOBAL_STABILITY_SCORE = 1.0 / (1.0 + CONDITION_NUMBER + Math.abs(LYAPUNOV_ESTIMATE));
+double CONCEPTUAL_COHERENCE_INDEX = STABILITY_RADIUS * (1.0 - normalizedEntropy(x)) * GLOBAL_STABILITY_SCORE;
+
+----------------------------------------------------------------------
+END 39_SPEC

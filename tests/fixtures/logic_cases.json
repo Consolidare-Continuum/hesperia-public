@@ -1,0 +1,6 @@
+{
+  "cases": [
+    { "entropy": 0.2, "expect_structural_monotony": true },
+    { "entropy": 0.5, "expect_structural_monotony": false }
+  ]
+}

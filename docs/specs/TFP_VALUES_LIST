@@ -1,0 +1,214 @@
+# TFP_VALUES_LIST
+
+Inventory of **values and artifacts** the TFP (Transference-Focused Psychotherapy–oriented) stack can emit in this repository: what each bundle contains, where operators consume it, prerequisites, and calibration touchpoints.  
+Canonical wiring: `runtime/pipeline/run_tfp_file_pipeline.py`, `tools/gena_tfp_bundle_run.py`, `docs/governance/working/ETHAN-TFP-RUNNABLE-DICT-WIRING.md`, `docs/specs/TFP_CALIBRATION_KNOBS_v0_1.md`.
+
+**Scope note:** TFP bundles are **research / testing grounds**, not the sealed v0.5.1 public product proof (`00_manifest.json` → `scope_note`).
+
+---
+
+## 0. One bundle directory — not multiple “canons”
+
+**Rule:** For a given run, **exactly one directory** (`--out-dir`) holds the **whole** file-pipeline artifact set (`00`–`09`, optional `12_*`, sidecars). That directory is the **only** place to look for that run’s outputs. Do not assume two different tools wrote to the same path unless you passed the **same** `--out-dir` / `-o`.
+
+**Why chats get wasted:** Different CLIs use **different default output roots**. None of them is “more canonical” than another — they are different wrappers. If you compare runs across sessions without noting **which tool** and **which out path**, you will open the wrong folder.
+
+| Entrypoint | Default output directory (if you omit `-o` / `--out-dir`) |
+|------------|---------------------------------------------------------------|
+| `python3 tools/gena_tfp_bundle_run.py -i <file>` | `<repo>/outputs/tfp/runs/tfp_gena_<input_stem>/` |
+| `python3 tools/tfp_pipeline_standard_run.py -i <file>` | `<repo>/outputs/tfp/runs/tfp_pipeline_run/<uuid>/` (new UUID each run) |
+| `python3 -m runtime.pipeline.run_tfp_file_pipeline …` | `<repo>/outputs/tfp/runs/tfp_pipeline_run/<run_id>/` |
+
+**On-disk layout under `outputs/` (see `outputs/README.md`):** TFP-named runs and smoke dirs live under **`outputs/tfp/`** — `tfp/runs/` (bundles, calibration passes, session experiments), `tfp/smoke/` (wiring / triz smoke), `tfp/tool/` (e.g. API one-shot). Symlinks at `outputs/latest_tfp_calibration_run` and `outputs/prev_tfp_calibration_run` point into `tfp/runs/`. Other top-level dirs (`benchmarks/`, `dict_calibration/`, `e2e/`, `reports/`, …) stay for non–file-pipeline harnesses.
+
+**Operator narrative fixture (tracked):** `tests/fixtures/tfp/input.txt` — long-form Russian clinical-style session text for TFP runs; do not relocate or overwrite without updating this line and any tooling that references it.
+
+**Recommended operator habit:** Use defaults under `outputs/tfp/runs/` or set **explicit** `-o` (e.g. `outputs/tfp/runs/my_experiment`) when you need a stable name. Standardize on **one** wrapper (`gena_tfp_bundle_run.py` for audit + schema + optional gold + gate) when comparing runs.
+
+**Input text (TFP file pipeline):** The engine sees **the file you pass** to `-i` / `--input` (plain text, `.md`, or `sessions[]` JSON). Pipeline forces `HESPERIA_DLCR_DOMAIN_PACK=tfp` unless `--no-dlcr-domain-pack` (see `00_manifest.json` → `flags`). There is no parallel “default sphere sentence” path for this CLI — your **input file is the session**.
+
+**What is not automatically in that same folder:**
+
+- **`10_` / `11_`** — Produced when you run **`gena_tfp_bundle_run`** post-steps (audit + gate), not by raw `run_tfp_file_pipeline` alone.
+- **`99_tfp_bundle_inspect.json`** — From **`tfp_pipeline_standard_run.py`** when `--inspect`, or inspection tooling on an existing bundle.
+- **API / one-shot sidecars** (`tfp_api_calibration_one_shot`, etc.) — Separate tool; separate `-o` directory unless you copy files yourself.
+- **E2E harness JSON** under repo `assets/artifacts/e2e/` (or similar) — **Different runners** (`run_e2e_all` and friends), not the file pipeline. Treat as **another product** unless a future consolidation tool copies or regenerates into your bundle (not part of baseline `run_tfp_file_pipeline` in this tree).
+
+**Consolidated “full dossier” artifacts** (e.g. `20_main_engine_full_context.json`, `21_hesperia_environment_snapshot.json`, optional `CONSOLIDATION_MANIFEST.json`, generated `e2e_snapshot/`) — when present in a bundle, they come from **additional** tools/commits layered on the file pipeline; they are **not** implied by `run_tfp_file_pipeline` alone. Check the Hesperia branch/tool that added them before assuming they exist in every checkout.
+
+---
+
+## A. Gena file bundle — numbered JSON artifacts (`run_tfp_file_pipeline` → `--out-dir`)
+
+Each row: **artifact**, **contents**, **application**, **needs**, **calibration**.
+
+### `00_manifest.json`
+
+- **Contents:** `run_id`, `repo_root`, `session_ids`, `non_empty_sessions`, `tfp_signal_calibration` (topology run params, `area_curve_map`, `curve_calibration_reference`, `dict_a_confidence_multiplier`), `flags` (pipeline toggles + `HESPERIA_DLCR_DOMAIN_PACK`, `HESPERIA_ANALYZE_DLCR_EVIDENCE`), `artifacts` path map, `triz_activation` path map, `errors`, `operational_envelope`, `scope_note`.
+- **Application:** Run provenance, automation (`gena_tfp_bundle_run`, CI), calibration sidecars aligned with `tfp_api_calibration_one_shot` output shape.
+- **Needs:** Successful pipeline start; written every run.
+- **Calibration:** Full knob set under `tfp_signal_calibration` — tune per `docs/specs/TFP_CALIBRATION_KNOBS_v0_1.md` (`session_topology_run_params`, `AREA_CURVE_MAP`, `CURVE_CALIBRATION_REFERENCE`, `CONFIDENCE_TYPE_MULTIPLIER`).
+
+### `01_structural_batch.json`
+
+- **Contents:** `structural_batch[]` — per-session rows from `run_structural_analysis_batch` (plane A: L1/L2 structural diagnostics, projected public payload shape), plus `session_count`, `operational_envelope` aggregate.
+- **Application:** Lexicon / L1 coverage review; cross-plane audit input (`tools/tfp_calibration_audit.py` reads first row L1 stats).
+- **Needs:** Non-`--skip-structural` run; `lexicon/curated` assets; session list drives batch row count (including empty-string sessions as batch positions allow).
+- **Calibration:** L1 attribution thresholds, calibration fallback behavior, dictionary coverage — see dynamics calibration specs and `lexical_markers.yaml` weights.
+
+### `02_session_tfp_stages.json`
+
+- **Contents:** `tfp_stages_enum`, `session_tfp_stages[]` (`session_id`, `tfp_stage`, `areas_top` from `analyze_session` + `detect_tfp_stage`), `session_speaker_aware[]` (membership defined strictly by `transcript_has_both_clinical_speakers` per session text; each included row carries speaker-aware areas, stage, flags), `operational_envelope`.
+- **Application:** Clinical stage labeling smoke; dialogue vs monologue behavior checks.
+- **Needs:** Non-`--skip-stages`; TFP family embedding load (`load_family_embedding_tfp`, empty dict on failure); session text.
+- **Calibration:** `per_concept_score_cap`, `use_log1p_concept_scores`, `evidence_volume_normalize`, negation window/multiplier, `normalize_scores` — these feed `analyze_session` area scores → stage detector.
+
+### `03_hex_microstructure_tfp.json`
+
+- **Contents:** Per session: `hits_l1_norm`, `hits_nonzero_families`, `microstructure_analytics` (engine, active slots, hotspots, tension front, propagation corridors, gravity, family alignment), `hex_option_a_summary` (Option A closure, `E_H`/`K_H`/`G_H`/compactness/`G_F`, matrix/PCH versions), `tfp_topology` (embedding load status, structure counts).
+- **Application:** Hex microphysics + TFP provenance for session text; research charts; sealed-stack comparison.
+- **Needs:** Non-`--skip-hex`; curated lexicon; production matrices via `load_production_matrices`.
+- **Calibration:** Hex dynamics coefficients in `HexFieldParams` inside `hex_microstructure_bundle_for_text`; marker→concept path feeding hits; PCH / matrix bundle versions are recorded, not tuned per session.
+
+### `04_dlcr_full.json`
+
+- **Contents:** Per session: full `run_dlcr_pipeline` body — `mode`, `preprocess_meta`, `policy_applied`, co-occurrence sketches, `segment_hex_geometry`, `resource_versions`, `canonical_text`, hit counts, `span_resolutions`, `concept_weights`, `hex_activation`, `hex_concentration`/`hex_dispersion`, `family_activation`, `area_activation`, `family_hits_288`, `degradation_flags`, `segment_trajectory`, plus `session_id`, `input` preview, `operational_envelope`.
+- **Application:** Dict-A/Dict-B clinical lexical resolution audit; DLCR regression (`tools/check_dlcr_regression.py`); concentration/dispersion metrics.
+- **Needs:** Non-`--skip-dlcr`; v0.6.0 JSONL dicts + policy (`dlcr_policy.yaml`, `domain_packs.yaml`). **Default:** pipeline exports `HESPERIA_DLCR_DOMAIN_PACK=tfp`. **Alternate:** `--no-dlcr-domain-pack` leaves pack selection to the existing process environment.
+- **Calibration:** `dict_a_max_accepted`, `hex_smooth_alpha`, resolver context window, sequential/cooc weights from merged policy; per-marker Dict-A `weight` in YAML; `CONFIDENCE_TYPE_MULTIPLIER` for attribution classes.
+
+### `05_sealed_multiscale.json`
+
+- **Contents:** Per session: `pipeline`, versions, `concept_layer` (registry, masses, fallbacks, interpretability trace sample), `hex_energy_trace`, `hex_activation_map` summary, `family_activation_vector`, `area_activation_vector`, `hotspot_map`, `contradiction_pressure`, `propagation_strength`, `narrative_density`, `innovation_index` (from `innovation_potential`), `hspr_index`, `hspr_components`, `product_signals` map. **Additional key `clinical_resolution_sidecar`:** included for truthy `HESPERIA_SEALED_DLCR_SIDECAR` (`1` / `true` / `yes` / `on`); excluded for every other env value / unset variable.
+- **Application:** v0.5 sealed multiscale chain for TFP text; product-signal research; calibration audit compares hex mass to other planes.
+- **Needs:** Non-`--skip-sealed`; same marker→concept path as shipping sealed stack; `use_triz_contradiction=False` in this pipeline call.
+- **Calibration:** Local hex microphysics params, energy mode, ring resistance mix, signal formulas inside `compute_product_signals`, HSPR composition; marker priors and uniform fallback behavior flagged in `concept_layer`.
+
+### `06_product_analyze.json`
+
+- **Contents:** Per session: `result` (minimal analyze), `extended` (full extended block), `input` preview, `with_r1_r4` flag at file level; `operational_envelope`.
+- **Application:** Parity with product `analyze()` path; projection-shaped output for tooling.
+- **Needs:** Non-`--skip-analyze`; same services as `runtime.pipeline.analyze.analyze`. **R1–R4 block:** included under `--with-r1-r4`; excluded under the default CLI flag set.
+- **Calibration:** Product projection and capability flags; truthy `HESPERIA_ANALYZE_DLCR_EVIDENCE` merges DLCR evidence into `analyze()`; manifest `flags` records the env string.
+
+### `07_session_kme.json`
+
+- **Contents:** Per session: KME clinical pipeline output passed through `apply_public_projection` (`session_id`, `input` preview, `report` dict).
+- **Application:** Knowledge Metrics Engine fingerprinting for clinical sessions.
+- **Needs:** `--with-kme`; successful `run_session_kme_pipeline`.
+- **Calibration:** KME primitive/derived definitions (fixed formulas); input text and lexicon drive values — tune upstream attribution, not KME math, for clinical sensitivity.
+
+### `08_triz_complete.json`
+
+- **Contents:** Per session: `triz_complete` from `run_triz_analysis_complete` (topology mode), built from clinical active graph derived from `analyze_session`; projected public wrapper.
+- **Application:** TRIZ stack research on session-derived concept graph.
+- **Needs:** `--with-triz`; embedding load; successful graph build.
+- **Calibration:** TRIZ pipeline weights and topology maps (`_activation_topology_maps`); concept activation thresholds inherited from session parser path.
+
+### `09_session_topology.json`
+
+- **Contents:** Top-level copies of `topology_run_params`, `area_curve_map`, `curve_calibration_reference`, `dict_a_confidence_multiplier`; `sessions[]` with `session_topology` (segments, per-segment concept scores, area curves, `curve_projection_meta` with `engine_params`, `lexical_controls`, dominance confidence, calibration bands).
+- **Application:** Time-resolved clinical topology; primary consumer for TRIZ topology activation; operator-facing curve review.
+- **Needs:** `--with-topology`; `run_session_topology` completes; segments capped to 12 in pipeline with truncation metadata on overflow.
+- **Calibration:** Primary surface for `area_competition`, `softmax_temperature`, `curve_smooth_alpha`, `curve_session_center`, `CURVE_CALIBRATION_REFERENCE` bands; CLI `--topology-params-json` merges overrides into `DEFAULT_SESSION_TOPOLOGY_RUN_PARAMS`.
+
+### `12_<session_slug>_<logical_name>.json` (flat files, one set per session)
+
+Logical names and payloads:
+
+| Logical name | Role |
+|--------------|------|
+| `concept_coactivation_graph.json` | Co-activation edges from segment concept pairs |
+| `family_contradiction_matrix.json` | Family-family contradiction scores |
+| `concept_clusters.json` | Concept cluster groupings |
+| `family_weights_sparse_v052.json` | Sparsified family weights (v052) |
+| `concept_contradictions_raw.json` | Raw contradiction list |
+| `concept_contradictions_classified.json` | Classified contradictions |
+| `triz_metrics_v1.json` | TRIZ metrics bundle |
+| `contradiction_hotspots.json` | Hotspot summary |
+| `innovation_clusters_enriched.json` | Enriched clusters |
+| `triz_dynamics.json` | Dynamics block |
+| `cross_plane_audit.json` | Cross-plane audit (dead-layer / fail signals) |
+
+- **Application:** TRIZ activation from topology (`docs/specs/TRIZ_TOPOLOGY_ACTIVATION_PIPELINE_v1.md`); manifest lists paths under `triz_activation`.
+- **Needs:** `--with-topology`; absence of `--skip-triz-activation`; topology rows that contain `_error` are excluded from activation (pipeline records errors instead). **TRIZ enrichment:** `--with-triz` → `triz_complete` taken from the matching `08_triz_complete.json` session row. **`triz_complete=None` (no `--with-triz`):** pipeline emits `12_*` artifacts using topology-only cluster sourcing.
+- **Calibration:** Inherits topology segment concept scores; family conflict base scores and `PREDEFINED_FAMILY_CONFLICTS` in `topology_activation_pipeline.py`; sparsification policy in family_weights v052 tool chain.
+
+---
+
+## B. Gena post-steps (same bundle directory)
+
+### `10_calibration_audit.json`
+
+- **Contents:** Cross-plane consistency score, `alarms`, `suspects`, `plane_notes` (structural L1, sealed hex mass, analyze coverage, stage areas), `operational_envelope`.
+- **Application:** Task 4 calibration audit (`tools/tfp_calibration_audit.py`); feed for release gate.
+- **Needs:** Bundle dir after `01`, `02`, `05`, `06` exist; audit script run.
+- **Calibration:** Inter-plane agreement thresholds are operational policy (see `docs/specs/output_calibration_contract_v1.md`).
+
+### `11_calibration_release_gate.json`
+
+- **Contents:** Gate profile result (`research_allow_degraded` | `internal_review` | `product_candidate` | `ship_blocking`), pass/fail, checks list, blocking reason, rollback hints, `operational_envelope`.
+- **Application:** Task 10 release discipline (`tools/calibration_release_gate.py` / `gena_tfp_bundle_run.py`).
+- **Needs:** `evaluate_bundle` reads `00_manifest.json` for standard profiles; profile `research_allow_degraded` follows the gate module’s missing-manifest rule. Schema validation result comes from `validate_tfp_bundle_schemas.py`. **Goldset count:** `--with-gold` → `gold_failed` integer from goldset runner; `--with-gold` absent → `gold_failed=None`.
+- **Calibration:** Profile choice is operational governance, not numeric tuning.
+
+### Schema validation (`tools/validate_tfp_bundle_schemas.py`)
+
+- **Contents:** Validates subset against `schemas/tfp_bundle/*.schema.json` (e.g. `01`, `10`, `11`, `operational_envelope`); produces no extra numbered artifact file.
+- **Application:** CI / Gena exit code 3 on failure (`gena_tfp_bundle_run` strict mode).
+- **Needs:** Bundle artifacts on disk.
+- **Calibration:** N/A (schema conformance).
+
+---
+
+## C. One-shot API + sidecar (`tools/tfp_api_calibration_one_shot.py` → `-o <dir>`)
+
+### `public_analyze_response.json`
+
+- **Contents:** Single `POST /analyze`-equivalent projected JSON (shipping handler).
+- **Application:** Product API parity snapshot next to research knobs.
+- **Needs:** Input text file; in-process TestClient or live HTTP per tool options.
+- **Calibration:** Standard product analysis path; no topology knob exposure in public JSON.
+
+### `tfp_signal_calibration.json`
+
+- **Contents:** Same fields as `00_manifest.json` → `tfp_signal_calibration` (topology defaults, area curve map, calibration reference bands, Dict-A confidence multipliers).
+- **Application:** Store operator knobs beside API output for diffing and audits.
+- **Needs:** Successful tool run.
+- **Calibration:** Identical knob set as manifest sidecar — `docs/specs/TFP_CALIBRATION_KNOBS_v0_1.md`.
+
+---
+
+## D. E2E artifacts (full stack runner) — TFP-tagged JSON
+
+These files are produced by **`run_e2e_all`** (and related harnesses), **not** by `run_tfp_file_pipeline`. They live under the E2E artifact layout for CI — **not** inside your file-pipeline `--out-dir` unless a separate step copies or regenerates them there (see §0).
+
+### `run_output_e2e_tfp_smoke.json`
+
+- **Contents:** `tfp_stages_enum`, `structural_batch`, `session_tfp_stages`, `session_hex_microstructure_tfp`, `speaker_aware_smoke` (fixed dialogue string, not per-file input). **`session_dlcr_bundles`:** included (per-session DLCR summaries) for environment truth set `HESPERIA_TFP_DLCR` ∈ {`1`,`true`,`yes`,`on`}; excluded from the JSON object for every other string value and for an unset variable.
+- **Application:** CI regression for Kernberg smoke sessions (`run_e2e_tfp_smoke` in `runtime/pipeline/run_e2e_all.py`).
+- **Needs:** Fixture `session_transcripts_smoke_english.json` or inline fallback sessions.
+- **Calibration:** Same as planes A/B/C above for structural, stage, hex, DLCR summaries.
+
+### `run_output_e2e_hex_microstructure_tfp.json`
+
+- **Contents:** `primary_bundle` (hex microstructure for primary E2E text), `tfp_smoke_session_bundles[]` (same hex bundle shape per smoke session).
+- **Application:** Dedicated hex+TFP microstructure artifact for E2E.
+- **Needs:** `run_e2e_hex_microstructure_tfp` invocation; curated assets.
+- **Calibration:** Same as `03_hex_microstructure_tfp.json` per-session contents.
+
+---
+
+## E. Summary — knob index (where to calibrate)
+
+| Area | Primary artifacts | Knob reference |
+|------|-------------------|----------------|
+| Session topology & curves | `00`, `09`, `12_*`, `tfp_signal_calibration.json` | `TFP_CALIBRATION_KNOBS_v0_1.md` → `session_topology_run_params`, `AREA_CURVE_MAP`, `CURVE_CALIBRATION_REFERENCE` |
+| Dict-A / lexical | `01`, `04`, `06` | Dict-A YAML weights, `CONFIDENCE_TYPE_MULTIPLIER`, DLCR policy merges |
+| Hex / sealed signals | `03`, `05` | Hex field params, microphysics, PCH/matrix versions, product signal formulas |
+| TRIZ | `08`, `12_*` | Activation topology maps, contradiction graph policy, v052 sparsify |
+| Governance | `10`, `11` | `output_calibration_contract_v1`, `calibration_release_gate_v1` |
+
+---
+
+*Generated for Gena TFP inventory. Module anchors: `runtime/pipeline/run_tfp_file_pipeline.py`, `research/clinical_tfp/session_topology.py`, `research/clinical_tfp/stage_detection.py`, `hesperia/engine/lexical_concept/pipeline.py`, `hesperia/engine/sealed_multiscale_stack.py`, `hesperia/extensions/triz/topology_activation_pipeline.py`.*

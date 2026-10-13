@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hesperia.local/schemas/cd_row_v1.json",
+  "title": "Hesperia Concept Dictionary row v1.0",
+  "type": "object",
+  "required": ["concept_id", "type", "activation", "constraints"],
+  "additionalProperties": true,
+  "properties": {
+    "concept_id": { "type": "string", "minLength": 1 },
+    "meta": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "version": { "type": "string" },
+        "status": { "enum": ["active", "experimental", "deprecated"] },
+        "author": { "type": "string" },
+        "created_at": { "type": "string" }
+      }
+    },
+    "type": { "enum": ["state", "action", "relation", "modifier"] },
+    "activation": {
+      "type": "object",
+      "required": ["base_weight", "cap", "saturation_k", "threshold"],
+      "properties": {
+        "base_weight": { "type": "number" },
+        "cap": { "type": "number", "minimum": 0 },
+        "saturation_k": { "type": "number" },
+        "threshold": { "type": "number" }
+      },
+      "additionalProperties": false
+    },
+    "constraints": {
+      "type": "object",
+      "required": ["requires", "excludes", "co_occurs"],
+      "properties": {
+        "requires": { "type": "array", "items": { "type": "string" }, "maxItems": 2 },
+        "excludes": { "type": "array", "items": { "type": "string" }, "maxItems": 2 },
+        "co_occurs": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "effects": {
+      "type": "object",
+      "properties": {
+        "amplifies": {
+          "type": "object",
+          "additionalProperties": { "type": "number", "minimum": 0, "maximum": 2 }
+        },
+        "inhibits": {
+          "type": "object",
+          "additionalProperties": { "type": "number", "minimum": 0, "maximum": 2 }
+        }
+      },
+      "additionalProperties": false
+    },
+    "structure": {
+      "type": "object",
+      "properties": {
+        "primary_area": { "type": "string" },
+        "secondary_areas": { "type": "array", "items": { "type": "string" } },
+        "family_bias": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "interaction": { "type": "object", "additionalProperties": true },
+    "temporal": { "type": "object", "additionalProperties": true },
+    "validation": {
+      "type": "object",
+      "properties": {
+        "min_evidence": { "type": "integer", "minimum": 0 },
+        "confidence_floor": { "type": "number" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,255 @@
+38_SPEC__V0_4_Layer5_Counter_Evidence_Trig_Reality_25_Variables_v1_0
+
+Project: HESPERIA
+Target: v0.4.x baseline (counter-evidence pressure + trigonometry reality checks)
+Date: 2026-02-24
+Status: Canonical
+
+References: 37_SPEC (Layer-4: R_pos, integrity, support index); 22_SPEC §13 (books non-voting); 00_GOVERNANCE_CHARTER__HESPERIA_v1_0 (epistemic integrity). Next: 39_SPEC (Layer-6 conceptual math & dynamic function).
+
+----------------------------------------------------------------------
+0. LAYER-5 CONTRACT (INVARIANT)
+----------------------------------------------------------------------
+
+  - 5A: Counter-evidence pressure. Measure structural opposition: anti-region retrieval (R_neg) and whether conclusion is contested. No semantic "book says wrong"; only structural anti-zone match and source overlap.
+  - 5B: Trigonometry reality checks. Prove geometry behaves like real math. If the engine uses angles, rotations, norms, distances—validate symmetry, non-negativity, identity, triangle inequality, sin²+cos², law of cosines, orthonormality. No fake precision.
+
+  Most "AI geometry" systems skip Layer-5 and then pretend angles and distances mean something. They don't, unless you prove they behave like real trig/metric math under stress.
+
+----------------------------------------------------------------------
+1. PREREQUISITES
+----------------------------------------------------------------------
+
+  5A (Counter-evidence):
+    R_pos   = top-K evidence chunks from positive-region query (dominant/active families). Same as R_B in Layer-4 when query is positive-region.
+    R_neg   = top-K evidence chunks from anti-region query (excluded neighbors / opposing families / complements).
+    antiFamilies = set of family IDs treated as structural opposites / anti-zone (frozen definition).
+    Each chunk: familyId, areaId (or areaOf(familyId)), checksum, rank.
+    From Layer-4: integrityPassRatio (INTEGRITY_CHECK_PASS_RATIO), evidenceSupportIndexBaseline (EVIDENCE_SUPPORT_INDEX_BASELINE = POS_SUPPORT_INDEX).
+    Config: MAX_SHORTFALL, MAX_CONTRADICTION.
+
+  5B (Trig):
+    vectors v, w in R^n (family-space or reduced space).
+    dot(v,w) = Σ v_i w_i.  norm(v) = sqrt(dot(v,v)).
+    angle(v,w): cosiRaw = dot(v,w)/(norm(v)*norm(w)+eps); clamp to [-1,1]; theta = acos(clamped). Angle in [0, π].
+    When triangle geometry is computed: sides a,b,c; included angle γ between a and b.
+    When rotation/orthonormal transform R is used: R applied to v; RᵀR vs I (Frobenius norm of RᵀR - I).
+    When distance d is used: sample pairs (x,y) and self (x,x).
+    EPS = numerical tolerance (e.g. 1e-9). Residuals and violation counts are deterministic.
+
+----------------------------------------------------------------------
+2. LAYER-5 VARIABLES (25)
+----------------------------------------------------------------------
+5A. Counter-evidence pressure (1–12)
+----------------------------------------------------------------------
+
+ 1. ANTI_REGION_SIZE
+    int ANTI_REGION_SIZE = |antiFamilies|;
+    How many families are treated as structural opposites / anti-zone.
+
+ 2. RETRIEVED_COUNT_NEG
+    int RETRIEVED_COUNT_NEG = |R_neg|;
+    Returned anti-region chunks count.
+
+ 3. NEG_SHORTFALL
+    int NEG_SHORTFALL = TOP_K - RETRIEVED_COUNT_NEG;
+    Anti-retrieval coverage weakness.
+
+ 4. NEG_UNIQUE_BOOKS
+    int NEG_UNIQUE_BOOKS = countDistinct(c.bookId for c in R_neg);
+    Anti-evidence source diversity.
+
+ 5. NEG_DUPLICATE_BOOK_RATIO
+    double NEG_DUPLICATE_BOOK_RATIO = 1.0 - ((double) NEG_UNIQUE_BOOKS / max(1, RETRIEVED_COUNT_NEG));
+    Concentration risk in anti-evidence.
+
+ 6. NEG_AREA_MATCH_RATIO
+    double NEG_AREA_MATCH_RATIO = count(c in R_neg where areaOf(c.familyId) == DOMINANT_AREA_B) / (double) max(1, RETRIEVED_COUNT_NEG);
+    Whether counter-evidence still sits inside the same area (bad sign structurally: anti-query returned dominant-area material).
+
+ 7. POS_NEG_BOOKSET_JACCARD
+    double POS_NEG_BOOKSET_JACCARD = jaccard(bookIds(R_pos), bookIds(R_neg));
+    If high: corpus is narrow or retrieval isn't discriminating.
+
+ 8. POS_NEG_CHUNK_JACCARD
+    double POS_NEG_CHUNK_JACCARD = jaccard(chunkIds(R_pos), chunkIds(R_neg));
+    If non-trivial: retrieval is unstable or duplicates exist.
+
+ 9. POS_SUPPORT_INDEX
+    double POS_SUPPORT_INDEX = evidenceSupportIndexBaseline;  // from Layer-4 (EVIDENCE_SUPPORT_INDEX_BASELINE)
+    Baseline support from "pro" evidence.
+
+10. NEG_SUPPORT_INDEX
+    double NEG_SUPPORT_INDEX = count(c in R_neg where c.familyId in antiFamilies) / (double) max(1, RETRIEVED_COUNT_NEG);
+    How "on-target" the counter-evidence is to anti-zone.
+
+11. CONTRADICTION_PRESSURE_SCORE
+    double CONTRADICTION_PRESSURE_SCORE = 0.55 * NEG_SUPPORT_INDEX + 0.25 * (1.0 - POS_SUPPORT_INDEX) + 0.20 * POS_NEG_BOOKSET_JACCARD;
+    Scalar pressure that conclusion is weak or contested by anti-zone material. Weights sum to 1.0.
+
+12. REALITY_GATE_COUNTER_EVIDENCE
+    boolean REALITY_GATE_COUNTER_EVIDENCE = (integrityPassRatio == 1.0) && (NEG_SHORTFALL <= MAX_SHORTFALL) && (CONTRADICTION_PRESSURE_SCORE <= MAX_CONTRADICTION);
+    Hard gate: if fail, mark output as structurally contested.
+
+----------------------------------------------------------------------
+5B. Trigonometry sanity checks (13–25)
+----------------------------------------------------------------------
+
+13. DOT_SYMMETRY_RESIDUAL
+    double DOT_SYMMETRY_RESIDUAL = |dot(v,w) - dot(w,v)|;
+    Dot product must be symmetric (numerical tolerance only).
+
+14. DOT_SELF_NONNEG_RESIDUAL
+    double DOT_SELF_NONNEG_RESIDUAL = max(0.0, -dot(v,v));
+    v·v must never be negative (except rounding noise).
+
+15. NORM_CONSISTENCY_RESIDUAL
+    double NORM_CONSISTENCY_RESIDUAL = |norm(v)*norm(v) - dot(v,v)|;
+    Internal numerical consistency of norm vs dot.
+
+16. COSI_CLAMP_VIOLATION_COUNT
+    int COSI_CLAMP_VIOLATION_COUNT = (cosiRaw < -1.0 || cosiRaw > 1.0) ? 1 : 0;
+    If acos input is ever outside [-1,1], math is unstable. cosiRaw = dot(v,w)/(|v||w|+eps) before clamp.
+
+17. ANGLE_RANGE_VIOLATION_COUNT
+    int ANGLE_RANGE_VIOLATION_COUNT = (theta < 0.0 || theta > π) ? 1 : 0;
+    Angle must be in [0, π].
+
+18. LAW_OF_COSINES_RESIDUAL
+    For triangle sides a,b,c with included angle γ between a and b: c² = a² + b² − 2ab cos γ.
+    double LAW_OF_COSINES_RESIDUAL = |c² - (a² + b² - 2*a*b*cos(γ))|;
+    When triangle geometry is computed in the run; else 0.0.
+
+19. SIN_COS_IDENTITY_RESIDUAL
+    double SIN_COS_IDENTITY_RESIDUAL = |sin²(θ) + cos²(θ) - 1.0|;
+    Basic trig identity drift check.
+
+20. ROTATION_NORM_PRESERVATION_RESIDUAL
+    If orthonormal transform R is applied: |Rv| = |v|.
+    double ROTATION_NORM_PRESERVATION_RESIDUAL = |norm(Rv) - norm(v)|;
+    When R is used in the run; else 0.0.
+
+21. ORTHONORMALITY_RESIDUAL_FROBENIUS
+    For matrix R: RᵀR ≈ I. Frobenius norm of (RᵀR - I).
+    double ORTHONORMALITY_RESIDUAL_FROBENIUS = frobeniusNorm(RᵀR - I);
+    When R is used; else 0.0.
+
+22. TRIANGLE_INEQUALITY_VIOLATION_COUNT
+    int TRIANGLE_INEQUALITY_VIOLATION_COUNT = (a+b<c || a+c<b || b+c<a) ? 1 : 0;
+    When triangle sides a,b,c are available; else 0. If violated: distances aren't a metric.
+
+23. METRIC_SYMMETRY_RESIDUAL
+    double METRIC_SYMMETRY_RESIDUAL = |d(x,y) - d(y,x)|;
+    Distance must be symmetric. Use max over sample pairs (x,y) when multiple; or single canonical pair.
+
+24. METRIC_IDENTITY_RESIDUAL
+    double METRIC_IDENTITY_RESIDUAL = |d(x,x)|;
+    Distance to self must be 0. Use max over sample points x when multiple; or single.
+
+25. REALITY_GATE_TRIG
+    boolean REALITY_GATE_TRIG =
+        DOT_SYMMETRY_RESIDUAL <= EPS
+        && DOT_SELF_NONNEG_RESIDUAL <= EPS
+        && NORM_CONSISTENCY_RESIDUAL <= EPS
+        && COSI_CLAMP_VIOLATION_COUNT == 0
+        && ANGLE_RANGE_VIOLATION_COUNT == 0
+        && LAW_OF_COSINES_RESIDUAL <= EPS
+        && SIN_COS_IDENTITY_RESIDUAL <= EPS
+        && ROTATION_NORM_PRESERVATION_RESIDUAL <= EPS
+        && ORTHONORMALITY_RESIDUAL_FROBENIUS <= EPS
+        && TRIANGLE_INEQUALITY_VIOLATION_COUNT == 0
+        && METRIC_SYMMETRY_RESIDUAL <= EPS
+        && METRIC_IDENTITY_RESIDUAL <= EPS;
+    If this fails, do not trust any angle/rotation/distance derived metrics.
+
+----------------------------------------------------------------------
+3. TELL-IT-LIKE-IT-IS
+----------------------------------------------------------------------
+
+  Most "AI geometry" systems skip Layer-5 and then pretend their angles and distances mean something. They don't, unless you prove they behave like real trig/metric math under stress.
+
+----------------------------------------------------------------------
+4. AUXILIARY
+----------------------------------------------------------------------
+
+  jaccard, bookIds(R), chunkIds(R): as in 37_SPEC.
+  frobeniusNorm(M): sqrt(sum over i,j of M[i][j]²).
+  When a check is "when X is used in the run": if the run does not compute X, the corresponding residual is 0 and the gate condition for that line is treated as true (0 <= EPS). So REALITY_GATE_TRIG is pass when all computed checks pass; unimplemented checks do not fail the gate.
+
+----------------------------------------------------------------------
+5. RELATION TO LAYER-4 AND BOOKS
+----------------------------------------------------------------------
+
+  Layer-5 consumes Layer-4 outputs (R_pos = R_B, integrityPassRatio, POS_SUPPORT_INDEX). It adds anti-region retrieval (R_neg) and trig/metric sanity. Books still do not vote (22_SPEC §13); counter-evidence is structural pressure only.
+
+----------------------------------------------------------------------
+6. JAVA-STYLE PSEUDOCODE (LAYER-5)
+----------------------------------------------------------------------
+
+// ----- 5A. Counter-evidence -----
+int ANTI_REGION_SIZE = antiFamilies.size();
+int RETRIEVED_COUNT_NEG = R_neg.size();
+int NEG_SHORTFALL = TOP_K - RETRIEVED_COUNT_NEG;
+
+Set<String> negBooks = new HashSet<>();
+for (Chunk c : R_neg) negBooks.add(c.bookId);
+int NEG_UNIQUE_BOOKS = negBooks.size();
+double NEG_DUPLICATE_BOOK_RATIO = 1.0 - ((double) NEG_UNIQUE_BOOKS / Math.max(1, RETRIEVED_COUNT_NEG));
+
+int negAreaMatch = 0;
+for (Chunk c : R_neg) if (areaOf(c.familyId) == DOMINANT_AREA_B) negAreaMatch++;
+double NEG_AREA_MATCH_RATIO = (double) negAreaMatch / Math.max(1, RETRIEVED_COUNT_NEG);
+
+Set<String> posBookIds = bookIds(R_pos), posChunkIds = chunkIds(R_pos);
+Set<String> negChunkIds = chunkIds(R_neg);
+double POS_NEG_BOOKSET_JACCARD = jaccard(posBookIds, negBooks);
+double POS_NEG_CHUNK_JACCARD = jaccard(posChunkIds, negChunkIds);
+
+double POS_SUPPORT_INDEX = EVIDENCE_SUPPORT_INDEX_BASELINE;  // from Layer-4
+int negSupportCount = 0;
+for (Chunk c : R_neg) if (antiFamilies.contains(c.familyId)) negSupportCount++;
+double NEG_SUPPORT_INDEX = (double) negSupportCount / Math.max(1, RETRIEVED_COUNT_NEG);
+
+double CONTRADICTION_PRESSURE_SCORE = 0.55 * NEG_SUPPORT_INDEX
+    + 0.25 * (1.0 - POS_SUPPORT_INDEX)
+    + 0.20 * POS_NEG_BOOKSET_JACCARD;
+
+boolean REALITY_GATE_COUNTER_EVIDENCE =
+    INTEGRITY_CHECK_PASS_RATIO == 1.0
+    && NEG_SHORTFALL <= MAX_SHORTFALL
+    && CONTRADICTION_PRESSURE_SCORE <= MAX_CONTRADICTION;
+
+// ----- 5B. Trig reality -----
+final double EPS = 1e-9;
+double DOT_SYMMETRY_RESIDUAL = Math.abs(dot(v, w) - dot(w, v));
+double DOT_SELF_NONNEG_RESIDUAL = Math.max(0.0, -dot(v, v));
+double NORM_CONSISTENCY_RESIDUAL = Math.abs(norm(v) * norm(v) - dot(v, v));
+
+double cosiRaw = dot(v, w) / (norm(v) * norm(w) + 1e-12);
+int COSI_CLAMP_VIOLATION_COUNT = (cosiRaw < -1.0 || cosiRaw > 1.0) ? 1 : 0;
+double theta = Math.acos(Math.max(-1.0, Math.min(1.0, cosiRaw)));
+int ANGLE_RANGE_VIOLATION_COUNT = (theta < 0.0 || theta > Math.PI) ? 1 : 0;
+
+double LAW_OF_COSINES_RESIDUAL = (triangleComputed)
+    ? Math.abs(c*c - (a*a + b*b - 2*a*b*Math.cos(gamma))) : 0.0;
+double SIN_COS_IDENTITY_RESIDUAL = Math.abs(Math.sin(theta)*Math.sin(theta) + Math.cos(theta)*Math.cos(theta) - 1.0);
+
+double ROTATION_NORM_PRESERVATION_RESIDUAL = (rotationUsed)
+    ? Math.abs(norm(Rv) - norm(v)) : 0.0;
+double ORTHONORMALITY_RESIDUAL_FROBENIUS = (rotationUsed)
+    ? frobeniusNorm(RtR_minus_I) : 0.0;
+
+int TRIANGLE_INEQUALITY_VIOLATION_COUNT = (triangleComputed && (a+b<c || a+c<b || b+c<a)) ? 1 : 0;
+double METRIC_SYMMETRY_RESIDUAL = Math.abs(d(x,y) - d(y,x));
+double METRIC_IDENTITY_RESIDUAL = Math.abs(d(x,x));
+
+boolean REALITY_GATE_TRIG =
+    DOT_SYMMETRY_RESIDUAL <= EPS && DOT_SELF_NONNEG_RESIDUAL <= EPS
+    && NORM_CONSISTENCY_RESIDUAL <= EPS && COSI_CLAMP_VIOLATION_COUNT == 0
+    && ANGLE_RANGE_VIOLATION_COUNT == 0 && LAW_OF_COSINES_RESIDUAL <= EPS
+    && SIN_COS_IDENTITY_RESIDUAL <= EPS && ROTATION_NORM_PRESERVATION_RESIDUAL <= EPS
+    && ORTHONORMALITY_RESIDUAL_FROBENIUS <= EPS && TRIANGLE_INEQUALITY_VIOLATION_COUNT == 0
+    && METRIC_SYMMETRY_RESIDUAL <= EPS && METRIC_IDENTITY_RESIDUAL <= EPS;
+
+----------------------------------------------------------------------
+END 38_SPEC

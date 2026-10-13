@@ -1,0 +1,18 @@
+{
+  "_comment": "REWEIGHT_PREVIEW IRC message body — applied=0 until 0.7.0 sandbox.",
+  "correlation_id": "cid-demo-063-001",
+  "preview": [
+    {
+      "parameter_key": "W_e:AGGRESSION->SELF_REGULATION",
+      "value_before": 0.12,
+      "value_after": 0.58,
+      "applied": 0
+    },
+    {
+      "parameter_key": "SHAME.expected_activation",
+      "value_before": 0.55,
+      "value_after": 0.48,
+      "applied": 0
+    }
+  ]
+}

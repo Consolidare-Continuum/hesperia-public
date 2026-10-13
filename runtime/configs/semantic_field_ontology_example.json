@@ -1,0 +1,38 @@
+{
+  "family_count": 4,
+  "families_per_area": 2,
+  "area_count": 2,
+
+  "ontology": {
+    "family_ids": ["A01", "A02", "A03", "A04"],
+    "relations": [["A01", "A02"], ["A02", "A03"], ["A03", "A04"]],
+    "contradictions": [["A01", "A04", 0.35]],
+    "resistance_priors": {"A01": 0.2, "A02": 0.25},
+    "resistance_default": 0.1
+  },
+
+  "alpha": 0.12,
+  "beta": 0.05,
+  "gamma": 0.15,
+  "delta": 0.35,
+  "mu": 0.01,
+  "dt": 1.0,
+  "epsilon": 0.0001,
+  "tau": 0.0001,
+  "clip_mode": true,
+  "time_now": 10.0,
+  "initial_mode": "uniform",
+
+  "documents": [
+    {
+      "source_family_id": "A02",
+      "source_strength": 1.0,
+      "coefficient": 1.0,
+      "quality": 1.0,
+      "mass": 1.0,
+      "timestamp": 0.0
+    }
+  ],
+
+  "max_steps": 40
+}

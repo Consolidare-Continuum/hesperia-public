@@ -1,0 +1,65 @@
+{
+  "system_version": "0.5.2",
+  "release_stage": "dynamic_integration",
+  "git_commit": "e1217ab65d009bfbc42f737bfc8cf8f6175ece0a",
+  "build_timestamp": "2026-03-26T08:50:13.637776+00:00",
+  "envelope_timestamp_utc": "2026-03-26T08:50:13Z",
+  "git_dirty": false,
+  "schema_version": "v1",
+  "calibration_profile_default": "default_v1",
+  "modules": {
+    "core": "included",
+    "engine": "included",
+    "projection": "included",
+    "api": "included",
+    "cli": "included",
+    "schemas": "included",
+    "version_system_support": "included",
+    "dynamics": "included_internal",
+    "triz": "optional",
+    "calibration": "internal",
+    "clinical": "excluded",
+    "research": "excluded",
+    "notebooks": "excluded",
+    "demos": "excluded"
+  },
+  "determinism_expected": true,
+  "determinism_verified": true,
+  "determinism_e2e_sha256": "59d89328f05771b4593356b638752faa84b4ec25b40c36d0a193bfafcdb86f49",
+  "extensions": {
+    "dynamics": {
+      "status": "canonical_extension",
+      "product_surface": "internal",
+      "python_package": "hesperia.extensions.dynamics"
+    },
+    "triz": {
+      "status": "canonical_extension",
+      "product_surface": "optional",
+      "python_package": "hesperia.extensions.triz"
+    },
+    "clinical_tfp": {
+      "status": "experimental",
+      "product_surface": "none",
+      "python_package": "research.clinical_tfp",
+      "note": "TFP / clinical test collateral \u2014 not baseline Engine Dynamics product."
+    }
+  },
+  "canonical_statement": "v0.5.1 is the governed enforcement baseline: architecture, boundaries, and behavior locked by CI, tests, and audit artifacts (Engine Dynamics sealed multiscale semantic physics).",
+  "shipping_api_routes": [
+    "GET /health",
+    "POST /analyze",
+    "POST /batch",
+    "POST /batch-analyze",
+    "POST /compare"
+  ],
+  "audit_artifacts": {
+    "audit_report": "audit_report.json",
+    "determinism_report": "determinism_report.json",
+    "system_seal": "system_seal.json",
+    "schema_validation_report": "schema_validation_report.json",
+    "test_report": "test_report.json",
+    "final_gate_status": "final_gate_status.json"
+  },
+  "seal_status": "PASS",
+  "pytest_quick_subset": false
+}

@@ -1,0 +1,17 @@
+modules:
+  - nlp.basic
+  - core.dict_a
+  - core.dict_b
+  - topology.core
+  - tfp
+  - metrics.base
+
+module_config:
+  nlp.basic:
+    stopwords: []
+  topology.core:
+    area_count: 12
+  metrics.base:
+    area_count: 12
+    family_count: 24
+

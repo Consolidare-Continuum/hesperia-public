@@ -1,0 +1,20 @@
+{
+  "version": "1",
+  "description": "Families under indices 10–11 for ten-area pack exclusion (grain=10 only). Default grain 12 keeps these families first-class.",
+  "reserved_area_internal_indices": [10, 11],
+  "applies_when": "HESPERIA_AREA_MATH_GRAIN=10",
+  "reserved_family_global_indices": [240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287],
+  "ranges_by_reserved_area": [
+    { "area_internal_index": 10, "family_global_start": 240, "family_global_end": 263, "count": 24 },
+    { "area_internal_index": 11, "family_global_start": 264, "family_global_end": 287, "count": 24 }
+  ],
+  "total_reserved_families": 48,
+  "requirements": {
+    "zero_anchors": true,
+    "zero_dict_mappings": true,
+    "zero_graph_nodes": true,
+    "zero_graph_edges": true,
+    "zero_public_labels": true,
+    "zero_calibration_hooks": true
+  }
+}

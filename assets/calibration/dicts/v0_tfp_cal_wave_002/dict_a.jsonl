@@ -1,0 +1,35 @@
+{"entry_id": "CAL-00001", "surface_form": "агрессия", "normalized_form": "агрессия", "match_type": "phrase", "candidate_concept_ids": ["B_A10_F15_001"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00002", "surface_form": "анализ", "normalized_form": "анализ", "match_type": "exact", "candidate_concept_ids": ["B_A10_F13_002"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00003", "surface_form": "возможность", "normalized_form": "возможность", "match_type": "exact", "candidate_concept_ids": ["B_A1_F10_002"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00004", "surface_form": "идентичности", "normalized_form": "идентичности", "match_type": "exact", "candidate_concept_ids": ["B_A10_F18_001"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00005", "surface_form": "лечение", "normalized_form": "лечение", "match_type": "exact", "candidate_concept_ids": ["B_A1_F18_002"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00006", "surface_form": "личностные расстройства", "normalized_form": "личностные расстройства", "match_type": "phrase", "candidate_concept_ids": ["B_A10_F18_001"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00007", "surface_form": "личность", "normalized_form": "личность", "match_type": "exact", "candidate_concept_ids": ["B_A10_F18_001"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00008", "surface_form": "может", "normalized_form": "может", "match_type": "exact", "candidate_concept_ids": ["B_A1_F16_002"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00009", "surface_form": "норма", "normalized_form": "норма", "match_type": "phrase", "candidate_concept_ids": ["B_A1_F10_002"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00010", "surface_form": "объектные отношения", "normalized_form": "объектные отношения", "match_type": "phrase", "candidate_concept_ids": ["B_A10_F17_001"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00011", "surface_form": "определение", "normalized_form": "определение", "match_type": "exact", "candidate_concept_ids": ["B_A10_F12_002"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00012", "surface_form": "отношение", "normalized_form": "отношение", "match_type": "exact", "candidate_concept_ids": ["B_A10_F17_001"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00013", "surface_form": "отношение к", "normalized_form": "отношение к", "match_type": "exact", "candidate_concept_ids": ["B_A10_F17_001"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00014", "surface_form": "отношения", "normalized_form": "отношения", "match_type": "exact", "candidate_concept_ids": ["B_A10_F17_001"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00015", "surface_form": "отношениях", "normalized_form": "отношениях", "match_type": "exact", "candidate_concept_ids": ["B_A10_F17_001"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00016", "surface_form": "патология", "normalized_form": "патология", "match_type": "phrase", "candidate_concept_ids": ["B_A1_F10_002"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00017", "surface_form": "пациент", "normalized_form": "пациент", "match_type": "exact", "candidate_concept_ids": ["B_A10_F1_001"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00018", "surface_form": "перенос", "normalized_form": "перенос", "match_type": "phrase", "candidate_concept_ids": ["B_A1_F10_002"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00019", "surface_form": "по отношению", "normalized_form": "по отношению", "match_type": "exact", "candidate_concept_ids": ["B_A10_F17_001"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00020", "surface_form": "поведение", "normalized_form": "поведение", "match_type": "exact", "candidate_concept_ids": ["B_A10_F15_001"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00021", "surface_form": "пограничное расстройство личности", "normalized_form": "пограничное расстройство личности", "match_type": "phrase", "candidate_concept_ids": ["B_A10_F18_002"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00022", "surface_form": "психотерапия", "normalized_form": "психотерапия", "match_type": "phrase", "candidate_concept_ids": ["B_A10_F24_002"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00023", "surface_form": "реальность", "normalized_form": "реальность", "match_type": "exact", "candidate_concept_ids": ["B_A1_F10_002"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00024", "surface_form": "способности", "normalized_form": "способности", "match_type": "exact", "candidate_concept_ids": ["B_A1_F10_002"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00025", "surface_form": "терапия", "normalized_form": "терапия", "match_type": "phrase", "candidate_concept_ids": ["B_A10_F12_001"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00026", "surface_form": "умение", "normalized_form": "умение", "match_type": "exact", "candidate_concept_ids": ["B_A1_F10_002"], "priority": 10, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00027", "surface_form": "пациенты", "normalized_form": "пациенты", "match_type": "phrase", "candidate_concept_ids": ["B_A10_F1_001"], "priority": 9, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00028", "surface_form": "способность", "normalized_form": "способность", "match_type": "phrase", "candidate_concept_ids": ["B_A1_F10_002"], "priority": 9, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00029", "surface_form": "отношения с", "normalized_form": "отношения с", "match_type": "phrase", "candidate_concept_ids": ["B_A10_F17_001"], "priority": 9, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00030", "surface_form": "отношению", "normalized_form": "отношению", "match_type": "phrase", "candidate_concept_ids": ["B_A10_F17_001"], "priority": 9, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00031", "surface_form": "пациентов", "normalized_form": "пациентов", "match_type": "phrase", "candidate_concept_ids": ["B_A10_F1_001"], "priority": 9, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00032", "surface_form": "пациентом", "normalized_form": "пациентом", "match_type": "phrase", "candidate_concept_ids": ["B_A10_F1_001"], "priority": 9, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00033", "surface_form": "течение", "normalized_form": "течение", "match_type": "phrase", "candidate_concept_ids": ["B_A1_F18_002"], "priority": 9, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00034", "surface_form": "возможно", "normalized_form": "возможно", "match_type": "phrase", "candidate_concept_ids": ["B_A1_F10_002"], "priority": 8, "version": "v0.6.0-cal"}
+{"entry_id": "CAL-00035", "surface_form": "в переносе", "normalized_form": "в переносе", "match_type": "phrase", "candidate_concept_ids": ["B_A1_F10_002"], "priority": 8, "version": "v0.6.0-cal"}

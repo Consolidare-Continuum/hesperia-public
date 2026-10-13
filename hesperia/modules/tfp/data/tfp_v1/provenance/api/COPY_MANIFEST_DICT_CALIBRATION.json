@@ -1,0 +1,9 @@
+{
+  "copied_at": "2026-03-28T17:32:30.963670+00:00",
+  "source": "outputs/dict_calibration",
+  "destination": "hesperia/modules/tfp/data/tfp_v1/provenance/api/runs/outputs_dict_calibration_mirror",
+  "file_count": 72,
+  "total_bytes": 276277509,
+  "redacted_text_files": 0,
+  "note": "TFP-DATA-T07 mirror; redaction best-effort per TFP_V1_PROVENANCE_API_POLICY.md; runs/ gitignored."
+}

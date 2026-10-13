@@ -1,0 +1,270 @@
+36_SPEC__V0_4_Layer3_Shadow_Divergence_25_Variables_v1_0
+
+Project: HESPERIA
+Target: v0.4.x baseline (shadow divergence instrumentation)
+Date: 2026-02-24
+Status: Canonical
+
+References: 34_SPEC (Layer-1), 35_SPEC (Layer-2), 24_SPEC__Shadow_Layer_v1_0 (shadow pipeline); 22_SPEC (resolution); 00_GOVERNANCE_CHARTER__HESPERIA_v1_0. Next: 37_SPEC (Layer-4 book evidence).
+
+----------------------------------------------------------------------
+0. LAYER-3 CONTRACT (INVARIANT)
+----------------------------------------------------------------------
+
+Layer-3 measures divergence between baseline (B) and shadow (S) runs only.
+
+  - No semantics
+  - No books
+  - Only comparison of two runs: B (base) and S (shadow)
+  - Deterministic deltas and similarity metrics
+  - Single scalar deviation score and hard acceptability gate
+
+It proves shadow is not "creative noise". It quantifies what changed: decision, region, spread, leakage, loops. It provides an enforceable gate so shadow can exist without corrupting baseline.
+
+----------------------------------------------------------------------
+1. PREREQUISITES (INPUTS)
+----------------------------------------------------------------------
+
+  Two complete runs:
+    B = baseline run (base traversal only).
+    S = shadow run (shadow pipeline executed after base).
+
+  For each run: full Layer-1 and Layer-2 outputs. Naming:
+    _B suffix = baseline (e.g. dominantFamily_B, hits_B, visited_B).
+    _S suffix = shadow.
+
+  FPA = FAMILIES_PER_AREA = F / A.
+
+  Governance parameters (frozen config):
+    SHADOW_MAX_DEVIATION       = upper bound for SHADOW_DEVIATION_SCORE (e.g. 0.25).
+    SHADOW_MAX_CROSS_AREA_DELTA = upper bound for |CROSS_AREA_RATIO_DELTA| (e.g. 0.10).
+    SHADOW_ALLOW_AREA_FLIP     = true if dominant-area change is acceptable; false to forbid.
+
+  When shadow pipeline did not run: SHADOW_ENABLED = false; all deltas and similarity metrics are undefined or set to 0 / identity per policy. This spec assumes both B and S exist when Layer-3 is evaluated.
+
+----------------------------------------------------------------------
+2. LAYER-3 SHADOW DIVERGENCE METRICS (25)
+----------------------------------------------------------------------
+
+ 1. SHADOW_ENABLED
+    boolean SHADOW_ENABLED = true;
+    Hard flag confirming shadow pipeline was executed (both B and S runs available).
+
+ 2. DOMINANT_FAMILY_CHANGED
+    boolean DOMINANT_FAMILY_CHANGED = (dominantFamily_S != dominantFamily_B);
+    Whether shadow selects a different top family.
+
+ 3. DOMINANT_AREA_CHANGED
+    boolean DOMINANT_AREA_CHANGED = (dominantArea_S != dominantArea_B);
+    where dominantArea_X = dominantFamily_X / FPA (or area[dominantFamily_X]). Whether shadow crosses area boundary at the top decision.
+
+ 4. DOMINANT_FAMILY_DELTA_HITS
+    int DOMINANT_FAMILY_DELTA_HITS = hits_S[dominantFamily_S] - hits_B[dominantFamily_B];
+    Net change in peak family mass (each side uses its own dominant family; not necessarily same family).
+
+ 5. DOMINANCE_RATIO_DELTA
+    double DOMINANCE_RATIO_DELTA = dominanceRatio_S - dominanceRatio_B;
+    Change in how concentrated the decision becomes.
+
+ 6. COVERAGE_RATIO_DELTA
+    double COVERAGE_RATIO_DELTA = coverageRatio_S - coverageRatio_B;
+    Whether shadow attributes more or fewer tokens (coverage).
+
+ 7. UNIQUE_FAMILIES_HIT_DELTA
+    int UNIQUE_FAMILIES_HIT_DELTA = uniqueFamilies_S - uniqueFamilies_B;
+    Change in activation breadth across families.
+
+ 8. AREA_SPREAD_DELTA
+    double AREA_SPREAD_DELTA = areaSpread_S - areaSpread_B;
+    Change in cross-area breadth.
+
+ 9. ENTROPY_DELTA
+    double ENTROPY_DELTA = normalizedEntropy_S - normalizedEntropy_B;
+    Shift toward diffusion (higher) or concentration (lower).
+
+10. GINI_DELTA
+    double GINI_DELTA = gini_S - gini_B;
+    Change in inequality of the activation distribution.
+
+11. ALTITUDE_MEAN_DELTA
+    double ALTITUDE_MEAN_DELTA = meanAltitudeGlobal_S - meanAltitudeGlobal_B;
+    Whether shadow picks "stronger" or "weaker" anchorings on average.
+
+12. ALTITUDE_DOMINANT_DELTA
+    double ALTITUDE_DOMINANT_DELTA = meanAltitudeDominant_S - meanAltitudeDominant_B;
+    Quality shift of the winning family evidence.
+
+13. TRAVERSAL_DEPTH_DELTA
+    int TRAVERSAL_DEPTH_DELTA = depthReached_S - depthReached_B;
+    Whether shadow propagates further (positive) or less.
+
+14. REACHABLE_NODES_DELTA
+    int REACHABLE_NODES_DELTA = reachableNodes_S - reachableNodes_B;
+    Net change in traversal footprint.
+
+15. MAX_DISTANCE_DELTA
+    int MAX_DISTANCE_DELTA = maxTraversalDistance_S - maxTraversalDistance_B;
+    Change in traversal radius.
+
+16. CROSS_AREA_RATIO_DELTA
+    double CROSS_AREA_RATIO_DELTA = crossAreaRatio_S - crossAreaRatio_B;
+    Whether shadow leaks more (positive) or less across areas.
+
+17. LOOP_DENSITY_DELTA
+    double LOOP_DENSITY_DELTA = loopDensity_S - loopDensity_B;
+    Whether shadow introduces more cyclic feedback (positive) or less.
+
+18. EDGE_UTILIZATION_DELTA
+    double EDGE_UTILIZATION_DELTA = edgeUtilizationRatio_S - edgeUtilizationRatio_B;
+    Change in traversal efficiency / structural usage.
+
+19. VISITED_JACCARD_SIMILARITY
+    double VISITED_JACCARD_SIMILARITY = |visited_B ∩ visited_S| / (|visited_B ∪ visited_S| + eps);
+    How similar the reached regions are. 1.0 = identical; 0.0 = disjoint. If union empty, define 1.0.
+
+20. VISITED_SYMMETRIC_DIFFERENCE_RATIO
+    double VISITED_SYMMETRIC_DIFFERENCE_RATIO = |visited_B △ visited_S| / (|visited_B ∪ visited_S| + eps);
+    How much the two runs disagree on region. 0.0 = identical; 1.0 = disjoint. If union empty, define 0.0.
+
+21. FAMILY_HIT_VECTOR_L1_DELTA
+    double FAMILY_HIT_VECTOR_L1_DELTA = hitVectorL1_S - hitVectorL1_B;
+    Change in total activation mass. Should usually be small if only traversal differs (same attribution input).
+
+22. HIT_VECTOR_COSINE_SIMILARITY
+    double HIT_VECTOR_COSINE_SIMILARITY = dot(hits_B, hits_S) / (norm_L2(hits_B) * norm_L2(hits_S) + 1e-12);
+    Directional similarity of the activation distributions. 1.0 = same direction; 0 = orthogonal.
+
+23. TOP_K_OVERLAP_RATIO
+    topK_B = topKFamilies(hits_B, K), topK_S = topKFamilies(hits_S, K);
+    double TOP_K_OVERLAP_RATIO = |topK_B ∩ topK_S| / (double) K;
+    Whether shadow changes what "matters most" at the top. K is fixed (e.g. 5 or 10). Tie-break for topK: by hits descending, then smaller family id.
+
+24. SHADOW_DEVIATION_SCORE
+    double SHADOW_DEVIATION_SCORE =
+        0.35 * (1.0 - HIT_VECTOR_COSINE_SIMILARITY)
+      + 0.35 * VISITED_SYMMETRIC_DIFFERENCE_RATIO
+      + 0.30 * Math.abs(DOMINANCE_RATIO_DELTA);
+    Single scalar measuring divergence magnitude. Bounded in [0, ~1]; deterministic. Weights sum to 1.0.
+
+25. SHADOW_ACCEPTABILITY_GATE
+    boolean SHADOW_ACCEPTABILITY_GATE =
+        SHADOW_DEVIATION_SCORE <= SHADOW_MAX_DEVIATION
+        && Math.abs(CROSS_AREA_RATIO_DELTA) <= SHADOW_MAX_CROSS_AREA_DELTA
+        && (DOMINANT_AREA_CHANGED ? SHADOW_ALLOW_AREA_FLIP : true);
+    Hard governance check: deviation allowed only inside predefined limits. If dominant area changed and SHADOW_ALLOW_AREA_FLIP is false, gate fails.
+
+----------------------------------------------------------------------
+3. WHAT LAYER-3 GIVES
+----------------------------------------------------------------------
+
+  Proves shadow is not "creative noise".
+  Quantifies what changed: decision, region, spread, leakage, loops.
+  Enforceable gate so shadow can exist without corrupting baseline.
+
+  Still no semantics. Still no books. Pure comparison math.
+
+----------------------------------------------------------------------
+4. AUXILIARY (DETERMINISTIC)
+----------------------------------------------------------------------
+
+  topKFamilies(hits, K): Sort families by (hits[f] descending, f ascending). Return the set of the first K family ids. If F < K, return all.
+
+  dot(hits_B, hits_S): sum_f hits_B[f] * hits_S[f].
+
+  norm_L2(hits): sqrt(sum_f hits[f]^2).
+
+  eps = 1e-9 or 1e-12 where used to avoid division by zero.
+
+----------------------------------------------------------------------
+5. RELATION TO LAYER-1, LAYER-2, SHADOW
+----------------------------------------------------------------------
+
+  Layer-3 consumes Layer-1 and Layer-2 outputs for both B and S. It does not replace 24_SPEC (Shadow Layer) or resolution; it instruments divergence and exposes SHADOW_ACCEPTABILITY_GATE for governance (e.g. Θ or post-run audit).
+
+----------------------------------------------------------------------
+6. JAVA-STYLE PSEUDOCODE (LAYER-3)
+----------------------------------------------------------------------
+
+// HESPERIA v0.4.x Layer-3 — Shadow Divergence (25 variables)
+// B = baseline run, S = shadow run. All deterministic.
+
+final double eps = 1e-12;
+final int FPA = F / A;
+
+boolean SHADOW_ENABLED = true;  // both runs present
+
+int dominantFamily_B = DOMINANT_FAMILY_ID_B;  // from Layer-1 B
+int dominantFamily_S = DOMINANT_FAMILY_ID_S;
+int dominantArea_B = dominantFamily_B / FPA;
+int dominantArea_S = dominantFamily_S / FPA;
+
+boolean DOMINANT_FAMILY_CHANGED = (dominantFamily_S != dominantFamily_B);
+boolean DOMINANT_AREA_CHANGED = (dominantArea_S != dominantArea_B);
+
+int DOMINANT_FAMILY_DELTA_HITS = hits_S[dominantFamily_S] - hits_B[dominantFamily_B];
+double DOMINANCE_RATIO_DELTA = dominanceRatio_S - dominanceRatio_B;
+double COVERAGE_RATIO_DELTA = coverageRatio_S - coverageRatio_B;
+int UNIQUE_FAMILIES_HIT_DELTA = uniqueFamilies_S - uniqueFamilies_B;
+double AREA_SPREAD_DELTA = areaSpread_S - areaSpread_B;
+double ENTROPY_DELTA = normalizedEntropy_S - normalizedEntropy_B;
+double GINI_DELTA = gini_S - gini_B;
+double ALTITUDE_MEAN_DELTA = meanAltitudeGlobal_S - meanAltitudeGlobal_B;
+double ALTITUDE_DOMINANT_DELTA = meanAltitudeDominant_S - meanAltitudeDominant_B;
+
+int TRAVERSAL_DEPTH_DELTA = depthReached_S - depthReached_B;
+int REACHABLE_NODES_DELTA = reachableNodes_S - reachableNodes_B;
+int MAX_DISTANCE_DELTA = maxTraversalDistance_S - maxTraversalDistance_B;
+double CROSS_AREA_RATIO_DELTA = crossAreaRatio_S - crossAreaRatio_B;
+double LOOP_DENSITY_DELTA = loopDensity_S - loopDensity_B;
+double EDGE_UTILIZATION_DELTA = edgeUtilizationRatio_S - edgeUtilizationRatio_B;
+
+Set<Integer> inter = new HashSet<>(visited_B);
+inter.retainAll(visited_S);
+Set<Integer> union = new HashSet<>(visited_B);
+union.addAll(visited_S);
+int unionSize = union.size();
+double VISITED_JACCARD_SIMILARITY = (unionSize > 0) ? (double) inter.size() / unionSize : 1.0;
+
+Set<Integer> symDiff = new HashSet<>(visited_B);
+symDiff.addAll(visited_S);
+symDiff.removeAll(inter);
+double VISITED_SYMMETRIC_DIFFERENCE_RATIO = (unionSize > 0) ? (double) symDiff.size() / unionSize : 0.0;
+
+double FAMILY_HIT_VECTOR_L1_DELTA = hitVectorL1_S - hitVectorL1_B;
+
+double dot = 0.0, normB = 0.0, normS = 0.0;
+for (int f = 0; f < F; f++) {
+    dot += hits_B[f] * hits_S[f];
+    normB += hits_B[f] * hits_B[f];
+    normS += hits_S[f] * hits_S[f];
+}
+double HIT_VECTOR_COSINE_SIMILARITY = dot / (Math.sqrt(normB) * Math.sqrt(normS) + eps);
+
+final int K = 10;  // config
+Set<Integer> topK_B = topKFamilies(hits_B, F, K);
+Set<Integer> topK_S = topKFamilies(hits_S, F, K);
+Set<Integer> topInter = new HashSet<>(topK_B);
+topInter.retainAll(topK_S);
+double TOP_K_OVERLAP_RATIO = (double) topInter.size() / K;
+
+double SHADOW_DEVIATION_SCORE =
+    0.35 * (1.0 - HIT_VECTOR_COSINE_SIMILARITY)
+  + 0.35 * VISITED_SYMMETRIC_DIFFERENCE_RATIO
+  + 0.30 * Math.abs(DOMINANCE_RATIO_DELTA);
+
+boolean SHADOW_ACCEPTABILITY_GATE =
+    SHADOW_DEVIATION_SCORE <= SHADOW_MAX_DEVIATION
+    && Math.abs(CROSS_AREA_RATIO_DELTA) <= SHADOW_MAX_CROSS_AREA_DELTA
+    && (!DOMINANT_AREA_CHANGED || SHADOW_ALLOW_AREA_FLIP);
+
+static Set<Integer> topKFamilies(int[] hits, int F, int K) {
+    List<int[]> list = new ArrayList<>();
+    for (int f = 0; f < F; f++) list.add(new int[]{ hits[f], f });
+    list.sort((a, b) -> a[0] != b[0] ? Integer.compare(b[0], a[0]) : Integer.compare(a[1], b[1]));
+    Set<Integer> out = new HashSet<>();
+    for (int i = 0; i < Math.min(K, list.size()); i++) out.add(list.get(i)[1]);
+    return out;
+}
+
+----------------------------------------------------------------------
+END 36_SPEC

@@ -1,0 +1,12 @@
+{
+  "_comment": "Dict A: lemma → list of { side_id, weight, map_code }. Max 3 seeds per lemma. side_id only — no family_id/area_id. Manual + assisted; do NOT auto-import full synsets.",
+  "justice": [
+    { "side_id": 0, "weight": 0.32, "map_code": "manual_equiv_v1" }
+  ],
+  "lie": [
+    { "side_id": 1000, "weight": 0.30, "map_code": "manual_equiv_v1" }
+  ],
+  "fairness": [
+    { "side_id": 0, "weight": 0.28, "map_code": "manual_equiv_v1" }
+  ]
+}

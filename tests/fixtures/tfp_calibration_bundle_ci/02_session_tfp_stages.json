@@ -1,0 +1,20 @@
+{
+  "run": "tfp_calibration_bundle_ci_fixture",
+  "session_tfp_stages": [
+    {
+      "session_id": "1-11-09-2023",
+      "areas_top": {
+        "A2": 0.42,
+        "A3": 0.28,
+        "A10": 0.15,
+        "A1": 0.05,
+        "A4": 0.04,
+        "A5": 0.03,
+        "A6": 0.01,
+        "A7": 0.01,
+        "A8": 0.005,
+        "A9": 0.005
+      }
+    }
+  ]
+}

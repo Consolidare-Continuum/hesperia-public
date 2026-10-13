@@ -1,0 +1,35 @@
+{
+  "version": "v060",
+  "matrix_id": "h_total_synthetic_fixture",
+  "space": "concept_id",
+  "description": "Minimal H_total for tests (two concepts + one coupling edge).",
+  "build_rules": {
+    "symmetric": true,
+    "bounded_min": -1.0,
+    "bounded_max": 1.0,
+    "default_missing_edge": 0.0
+  },
+  "normalization": {
+    "clip_abs_value": 1.0,
+    "post_build_symmetrize": true
+  },
+  "concept_index": ["B_A10_F10_001", "B_A1_F10_001"],
+  "diagonal": {
+    "B_A10_F10_001": 0.5,
+    "B_A1_F10_001": 0.5
+  },
+  "edges": [
+    {
+      "a": "B_A10_F10_001",
+      "b": "B_A1_F10_001",
+      "coupling": 0.1,
+      "inhibition": 0.0,
+      "value": 0.1,
+      "reason": "fixture_coupling"
+    }
+  ],
+  "provenance": {
+    "sources": [],
+    "build_method": "test_fixture"
+  }
+}

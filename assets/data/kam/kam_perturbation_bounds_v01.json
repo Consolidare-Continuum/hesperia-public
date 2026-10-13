@@ -1,0 +1,16 @@
+{
+  "version": "spec-v01-defaults",
+  "schema": "hesperia.kam_perturbation_bounds.v01",
+  "notes": "Ethan owns production bounds. This file ships SPEC-v01 defaults for offline / pre-0.7.0 inspect. Not a KAM theorem calibration.",
+  "epsilon_shadow": 0.05,
+  "epsilon_edge": 0.02,
+  "epsilon_bias": 0.05,
+  "tau_path": 0.7,
+  "tau_crit": 0.1,
+  "path_survival_uses": "SISR_min",
+  "band_thresholds": {
+    "structurally_robust_min": 0.75,
+    "conditionally_stable_min": 0.45
+  },
+  "active_perturbations_default": ["P2_shadow_context", "P3_edge_weight_epsilon"]
+}

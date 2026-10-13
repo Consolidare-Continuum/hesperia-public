@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hesperia://schemas/tfp_bundle/operational_envelope.schema.json",
+  "title": "TFP bundle operational envelope (Task 7)",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "status",
+    "anomaly_codes",
+    "severity",
+    "blocking",
+    "operator_message",
+    "recommended_next_check",
+    "taxonomy_version"
+  ],
+  "properties": {
+    "status": { "type": "string", "enum": ["ok", "degraded", "failed"] },
+    "anomaly_codes": { "type": "array", "items": { "type": "string" } },
+    "severity": { "type": "string", "enum": ["ok", "info", "warn", "error"] },
+    "blocking": { "type": "boolean" },
+    "operator_message": { "type": "string" },
+    "recommended_next_check": { "type": "string" },
+    "taxonomy_version": { "type": "string" }
+  }
+}

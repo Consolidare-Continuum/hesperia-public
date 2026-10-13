@@ -1,0 +1,240 @@
+{"text": "пациента", "lemma": "пациента", "pattern_type": "ngram", "freq": 1870, "source_doc": "1.md", "normalized": "пациент", "variants": ["пациент", "пациентов"]}
+{"text": "может", "lemma": "может", "pattern_type": "ngram", "freq": 1529, "source_doc": "1.md", "normalized": "может", "variants": ["может"]}
+{"text": "личности", "lemma": "личности", "pattern_type": "ngram", "freq": 1207, "source_doc": "1.md", "normalized": "личность", "variants": ["личность", "личности"]}
+{"text": "отношений", "lemma": "отношений", "pattern_type": "ngram", "freq": 1177, "source_doc": "1.md", "normalized": "отношение", "variants": ["отношение", "отношений"]}
+{"text": "пациентов", "lemma": "пациентов", "pattern_type": "ngram", "freq": 1034, "source_doc": "1.md", "normalized": "пациентов", "variants": []}
+{"text": "которые", "lemma": "которые", "pattern_type": "ngram", "freq": 1022, "source_doc": "1.md", "normalized": "которые", "variants": ["которые"]}
+{"text": "пациент", "lemma": "пациент", "pattern_type": "ngram", "freq": 969, "source_doc": "1.md", "normalized": "пациент", "variants": []}
+{"text": "более", "lemma": "более", "pattern_type": "ngram", "freq": 908, "source_doc": "1.md", "normalized": "более", "variants": ["более"]}
+{"text": "отношения", "lemma": "отношения", "pattern_type": "ngram", "freq": 849, "source_doc": "1.md", "normalized": "отношения", "variants": []}
+{"text": "время", "lemma": "время", "pattern_type": "ngram", "freq": 717, "source_doc": "1.md", "normalized": "время", "variants": ["время"]}
+{"text": "терапии", "lemma": "терапии", "pattern_type": "ngram", "freq": 693, "source_doc": "1.md", "normalized": "терапия", "variants": ["терапия", "терапии"]}
+{"text": "является", "lemma": "является", "pattern_type": "ngram", "freq": 682, "source_doc": "1.md", "normalized": "является", "variants": ["является"]}
+{"text": "чтобы", "lemma": "чтобы", "pattern_type": "ngram", "freq": 659, "source_doc": "1.md", "normalized": "чтобы", "variants": ["чтобы"]}
+{"text": "могут", "lemma": "могут", "pattern_type": "ngram", "freq": 652, "source_doc": "1.md", "normalized": "могут", "variants": ["могут"]}
+{"text": "объектных", "lemma": "объектных", "pattern_type": "ngram", "freq": 651, "source_doc": "1.md", "normalized": "объектный", "variants": ["объектный", "объектных"]}
+{"text": "жизни", "lemma": "жизни", "pattern_type": "ngram", "freq": 620, "source_doc": "1.md", "normalized": "жизнь", "variants": ["жизнь", "жизни"]}
+{"text": "можно", "lemma": "можно", "pattern_type": "ngram", "freq": 620, "source_doc": "1.md", "normalized": "возможность", "variants": ["можно", "возможно", "допустимо", "разрешено"]}
+{"text": "объектных отношений", "lemma": "объектных отношений", "pattern_type": "ngram", "freq": 601, "source_doc": "1.md", "normalized": "объектные отношения", "variants": ["объектных отношений", "объектные связи", "отношения с объектами"]}
+{"text": "образом", "lemma": "образом", "pattern_type": "ngram", "freq": 590, "source_doc": "1.md", "normalized": "способ", "variants": ["образом", "методом", "способом"]}
+{"text": "переноса", "lemma": "переноса", "pattern_type": "ngram", "freq": 585, "source_doc": "1.md", "normalized": "перенос", "variants": ["переноса", "перемещение", "трансфер"]}
+{"text": "аналитика", "lemma": "аналитика", "pattern_type": "ngram", "freq": 539, "source_doc": "1.md", "normalized": "анализ", "variants": ["аналитика", "анализ", "исследование"]}
+{"text": "терапевта", "lemma": "терапевта", "pattern_type": "ngram", "freq": 530, "source_doc": "1.md", "normalized": "терапия", "variants": ["терапевта", "терапия", "лечащий специалист"]}
+{"text": "который", "lemma": "который", "pattern_type": "ngram", "freq": 519, "source_doc": "1.md", "normalized": "который", "variants": ["который", "кто", "что"]}
+{"text": "переносе", "lemma": "переносе", "pattern_type": "ngram", "freq": 494, "source_doc": "1.md", "normalized": "перенос", "variants": ["переносе", "перемещение", "трансфер"]}
+{"text": "супер-эго", "lemma": "супер-эго", "pattern_type": "ngram", "freq": 491, "source_doc": "1.md", "normalized": "суперэго", "variants": ["супер-эго", "суперэго", "высшее я"]}
+{"text": "пациенты", "lemma": "пациенты", "pattern_type": "ngram", "freq": 481, "source_doc": "1.md", "normalized": "пациенты", "variants": ["пациенты", "клиенты", "обращающиеся"]}
+{"text": "а также", "lemma": "а также", "pattern_type": "ngram", "freq": 474, "source_doc": "1.md", "normalized": "и", "variants": ["а также", "и", "также"]}
+{"text": "поведения", "lemma": "поведения", "pattern_type": "ngram", "freq": 466, "source_doc": "1.md", "normalized": "поведение", "variants": ["поведения", "поведение", "действия"]}
+{"text": "поведение", "lemma": "поведение", "pattern_type": "ngram", "freq": 459, "source_doc": "1.md", "normalized": "поведение", "variants": ["поведение", "действие", "реакция"]}
+{"text": "других", "lemma": "других", "pattern_type": "ngram", "freq": 448, "source_doc": "1.md", "normalized": "другие", "variants": ["других", "другие", "остальные"]}
+{"text": "таким", "lemma": "таким", "pattern_type": "ngram", "freq": 435, "source_doc": "1.md", "normalized": "такой", "variants": ["таким", "такой", "подобным"]}
+{"text": "которая", "lemma": "которая", "pattern_type": "ngram", "freq": 430, "source_doc": "1.md", "normalized": "которая", "variants": ["которая", "кто", "что"]}
+{"text": "в переносе", "lemma": "в переносе", "pattern_type": "ngram", "freq": 418, "source_doc": "1.md", "normalized": "в переносе", "variants": ["в переносе"]}
+{"text": "отношениях", "lemma": "отношениях", "pattern_type": "ngram", "freq": 413, "source_doc": "1.md", "normalized": "отношениях", "variants": ["отношениях"]}
+{"text": "этого", "lemma": "этого", "pattern_type": "ngram", "freq": 412, "source_doc": "1.md", "normalized": "этого", "variants": ["этого"]}
+{"text": "терапевт", "lemma": "терапевт", "pattern_type": "ngram", "freq": 407, "source_doc": "1.md", "normalized": "терапевт", "variants": ["терапевт"]}
+{"text": "агрессии", "lemma": "агрессии", "pattern_type": "ngram", "freq": 394, "source_doc": "1.md", "normalized": "агрессии", "variants": ["агрессии"]}
+{"text": "отношению", "lemma": "отношению", "pattern_type": "ngram", "freq": 390, "source_doc": "1.md", "normalized": "отношению", "variants": ["отношению"]}
+{"text": "которых", "lemma": "которых", "pattern_type": "ngram", "freq": 390, "source_doc": "1.md", "normalized": "которых", "variants": ["которых"]}
+{"text": "и в", "lemma": "и в", "pattern_type": "ngram", "freq": 387, "source_doc": "1.md", "normalized": "и в", "variants": ["и в"]}
+{"text": "любви", "lemma": "любви", "pattern_type": "ngram", "freq": 386, "source_doc": "1.md", "normalized": "любви", "variants": ["любви"]}
+{"text": "по отношению", "lemma": "по отношению", "pattern_type": "ngram", "freq": 383, "source_doc": "1.md", "normalized": "по отношению", "variants": ["по отношению"]}
+{"text": "развития", "lemma": "развития", "pattern_type": "ngram", "freq": 379, "source_doc": "1.md", "normalized": "развития", "variants": ["развития"]}
+{"text": "матери", "lemma": "матери", "pattern_type": "ngram", "freq": 374, "source_doc": "1.md", "normalized": "матери", "variants": ["матери"]}
+{"text": "обычно", "lemma": "обычно", "pattern_type": "ngram", "freq": 369, "source_doc": "1.md", "normalized": "обычно", "variants": ["обычно"]}
+{"text": "то что", "lemma": "то что", "pattern_type": "ngram", "freq": 368, "source_doc": "1.md", "normalized": "то что", "variants": ["то что"]}
+{"text": "том что", "lemma": "том что", "pattern_type": "ngram", "freq": 364, "source_doc": "1.md", "normalized": "том что", "variants": ["том что"]}
+{"text": "характера", "lemma": "характера", "pattern_type": "ngram", "freq": 363, "source_doc": "1.md", "normalized": "характера", "variants": ["характера"]}
+{"text": "отношению к", "lemma": "отношению к", "pattern_type": "ngram", "freq": 360, "source_doc": "1.md", "normalized": "отношение к", "variants": ["по отношению к"]}
+{"text": "new york", "lemma": "new york", "pattern_type": "ngram", "freq": 357, "source_doc": "1.md", "normalized": "нью-йорк", "variants": []}
+{"text": "по отношению к", "lemma": "по отношению к", "pattern_type": "ngram", "freq": 356, "source_doc": "1.md", "normalized": "отношение к", "variants": ["отношению к"]}
+{"text": "в то", "lemma": "в то", "pattern_type": "ngram", "freq": 355, "source_doc": "1.md", "normalized": "в то", "variants": ["в том"]}
+{"text": "поскольку", "lemma": "поскольку", "pattern_type": "ngram", "freq": 349, "source_doc": "1.md", "normalized": "поскольку", "variants": []}
+{"text": "способность", "lemma": "способность", "pattern_type": "ngram", "freq": 347, "source_doc": "1.md", "normalized": "способность", "variants": []}
+{"text": "таких", "lemma": "таких", "pattern_type": "ngram", "freq": 345, "source_doc": "1.md", "normalized": "такие", "variants": []}
+{"text": "что он", "lemma": "что он", "pattern_type": "ngram", "freq": 338, "source_doc": "1.md", "normalized": "что он", "variants": []}
+{"text": "таким образом", "lemma": "таким образом", "pattern_type": "ngram", "freq": 335, "source_doc": "1.md", "normalized": "таким образом", "variants": []}
+{"text": "ситуации", "lemma": "ситуации", "pattern_type": "ngram", "freq": 330, "source_doc": "1.md", "normalized": "ситуация", "variants": []}
+{"text": "часто", "lemma": "часто", "pattern_type": "ngram", "freq": 329, "source_doc": "1.md", "normalized": "часто", "variants": []}
+{"text": "которое", "lemma": "которое", "pattern_type": "ngram", "freq": 326, "source_doc": "1.md", "normalized": "которое", "variants": []}
+{"text": "стороны", "lemma": "стороны", "pattern_type": "ngram", "freq": 321, "source_doc": "1.md", "normalized": "сторона", "variants": []}
+{"text": "случае", "lemma": "случае", "pattern_type": "ngram", "freq": 315, "source_doc": "1.md", "normalized": "случай", "variants": []}
+{"text": "реальности", "lemma": "реальности", "pattern_type": "ngram", "freq": 313, "source_doc": "1.md", "normalized": "реальность", "variants": []}
+{"text": "в том", "lemma": "в том", "pattern_type": "ngram", "freq": 313, "source_doc": "1.md", "normalized": "в то", "variants": []}
+{"text": "так и", "lemma": "так и", "pattern_type": "ngram", "freq": 313, "source_doc": "1.md", "normalized": "так и", "variants": ["так и"]}
+{"text": "психотерапии", "lemma": "психотерапии", "pattern_type": "ngram", "freq": 311, "source_doc": "1.md", "normalized": "психотерапия", "variants": ["психотерапия"]}
+{"text": "лечения", "lemma": "лечения", "pattern_type": "ngram", "freq": 307, "source_doc": "1.md", "normalized": "лечение", "variants": ["лечение"]}
+{"text": "пациенту", "lemma": "пациенту", "pattern_type": "ngram", "freq": 303, "source_doc": "1.md", "normalized": "пациент", "variants": ["пациенту", "пациентом"]}
+{"text": "патологии", "lemma": "патологии", "pattern_type": "ngram", "freq": 301, "source_doc": "1.md", "normalized": "патология", "variants": ["патология"]}
+{"text": "чувство", "lemma": "чувство", "pattern_type": "ngram", "freq": 300, "source_doc": "1.md", "normalized": "чувство", "variants": ["чувство"]}
+{"text": "после", "lemma": "после", "pattern_type": "ngram", "freq": 298, "source_doc": "1.md", "normalized": "после", "variants": ["после"]}
+{"text": "того что", "lemma": "того что", "pattern_type": "ngram", "freq": 296, "source_doc": "1.md", "normalized": "того что", "variants": ["того что"]}
+{"text": "особенно", "lemma": "особенно", "pattern_type": "ngram", "freq": 292, "source_doc": "1.md", "normalized": "особенно", "variants": ["особенно"]}
+{"text": "такие", "lemma": "такие", "pattern_type": "ngram", "freq": 291, "source_doc": "1.md", "normalized": "такие", "variants": ["такие"]}
+{"text": "объекта", "lemma": "объекта", "pattern_type": "ngram", "freq": 290, "source_doc": "1.md", "normalized": "объект", "variants": ["объект"]}
+{"text": "пациентом", "lemma": "пациентом", "pattern_type": "ngram", "freq": 289, "source_doc": "1.md", "normalized": "пациентом", "variants": []}
+{"text": "press", "lemma": "press", "pattern_type": "ngram", "freq": 289, "source_doc": "1.md", "normalized": "press", "variants": ["press"]}
+{"text": "нарциссической", "lemma": "нарциссической", "pattern_type": "ngram", "freq": 288, "source_doc": "1.md", "normalized": "нарциссическая", "variants": ["нарциссическая"]}
+{"text": "расстройства", "lemma": "расстройства", "pattern_type": "ngram", "freq": 286, "source_doc": "1.md", "normalized": "расстройство", "variants": ["расстройство"]}
+{"text": "которой", "lemma": "которой", "pattern_type": "ngram", "freq": 283, "source_doc": "1.md", "normalized": "которая", "variants": ["которая"]}
+{"text": "что я", "lemma": "что я", "pattern_type": "ngram", "freq": 276, "source_doc": "1.md", "normalized": "что я", "variants": []}
+{"text": "пациентов с", "lemma": "пациентов с", "pattern_type": "ngram", "freq": 275, "source_doc": "1.md", "normalized": "пациентов с", "variants": []}
+{"text": "чувства", "lemma": "чувства", "pattern_type": "ngram", "freq": 275, "source_doc": "1.md", "normalized": "чувства", "variants": []}
+{"text": "собой", "lemma": "собой", "pattern_type": "ngram", "freq": 275, "source_doc": "1.md", "normalized": "собой", "variants": []}
+{"text": "способности", "lemma": "способности", "pattern_type": "ngram", "freq": 272, "source_doc": "1.md", "normalized": "способности", "variants": []}
+{"text": "случаях", "lemma": "случаях", "pattern_type": "ngram", "freq": 272, "source_doc": "1.md", "normalized": "случаях", "variants": []}
+{"text": "сексуального", "lemma": "сексуального", "pattern_type": "ngram", "freq": 271, "source_doc": "1.md", "normalized": "сексуального", "variants": []}
+{"text": "пограничной", "lemma": "пограничной", "pattern_type": "ngram", "freq": 269, "source_doc": "1.md", "normalized": "пограничной", "variants": []}
+{"text": "другими", "lemma": "другими", "pattern_type": "ngram", "freq": 269, "source_doc": "1.md", "normalized": "другими", "variants": []}
+{"text": "должен", "lemma": "должен", "pattern_type": "ngram", "freq": 268, "source_doc": "1.md", "normalized": "должен", "variants": []}
+{"text": "например", "lemma": "например", "pattern_type": "ngram", "freq": 267, "source_doc": "1.md", "normalized": "например", "variants": []}
+{"text": "зрения", "lemma": "зрения", "pattern_type": "ngram", "freq": 265, "source_doc": "1.md", "normalized": "зрения", "variants": []}
+{"text": "интерпретации", "lemma": "интерпретации", "pattern_type": "ngram", "freq": 262, "source_doc": "1.md", "normalized": "интерпретации", "variants": []}
+{"text": "из-за", "lemma": "из-за", "pattern_type": "ngram", "freq": 262, "source_doc": "1.md", "normalized": "из-за", "variants": []}
+{"text": "наиболее", "lemma": "наиболее", "pattern_type": "ngram", "freq": 261, "source_doc": "1.md", "normalized": "наиболее", "variants": []}
+{"text": "времени", "lemma": "времени", "pattern_type": "ngram", "freq": 256, "source_doc": "1.md", "normalized": "времени", "variants": []}
+{"text": "может быть", "lemma": "может быть", "pattern_type": "ngram", "freq": 250, "source_doc": "1.md", "normalized": "возможно", "variants": ["может быть", "возможно"]}
+{"text": "о том", "lemma": "о том", "pattern_type": "ngram", "freq": 249, "source_doc": "1.md", "normalized": "касательно", "variants": ["о том", "касательно"]}
+{"text": "аналитик", "lemma": "аналитик", "pattern_type": "ngram", "freq": 248, "source_doc": "1.md", "normalized": "специалист", "variants": ["аналитик", "специалист"]}
+{"text": "такой", "lemma": "такой", "pattern_type": "ngram", "freq": 248, "source_doc": "1.md", "normalized": "подобный", "variants": ["такой", "подобный"]}
+{"text": "идентификации", "lemma": "идентификации", "pattern_type": "ngram", "freq": 243, "source_doc": "1.md", "normalized": "определение", "variants": ["идентификации", "определение"]}
+{"text": "_ _", "lemma": "_ _", "pattern_type": "ngram", "freq": 243, "source_doc": "Белл - Суицид.md", "normalized": "пауза", "variants": ["_ _", "пауза"]}
+{"text": "конфликтов", "lemma": "конфликтов", "pattern_type": "ngram", "freq": 241, "source_doc": "1.md", "normalized": "противоречий", "variants": ["конфликтов", "противоречий"]}
+{"text": "психоаналитической", "lemma": "психоаналитической", "pattern_type": "ngram", "freq": 239, "source_doc": "1.md", "normalized": "психоаналитической", "variants": ["психоаналитической"]}
+{"text": "я и", "lemma": "я и", "pattern_type": "ngram", "freq": 239, "source_doc": "1.md", "normalized": "я и", "variants": ["я и"]}
+{"text": "организации", "lemma": "организации", "pattern_type": "ngram", "freq": 237, "source_doc": "1.md", "normalized": "структуры", "variants": ["организации", "структуры"]}
+{"text": "_ _ _", "lemma": "_ _ _", "pattern_type": "ngram", "freq": 237, "source_doc": "Белл - Суицид.md", "normalized": "пауза", "variants": ["_ _ _", "пауза"]}
+{"text": "являются", "lemma": "являются", "pattern_type": "ngram", "freq": 235, "source_doc": "1.md", "normalized": "являются", "variants": ["являются"]}
+{"text": "фантазии", "lemma": "фантазии", "pattern_type": "ngram", "freq": 234, "source_doc": "1.md", "normalized": "воображения", "variants": ["фантазии", "воображения"]}
+{"text": "работе", "lemma": "работе", "pattern_type": "ngram", "freq": 234, "source_doc": "1.md", "normalized": "деятельности", "variants": ["работе", "деятельности"]}
+{"text": "постепенно", "lemma": "постепенно", "pattern_type": "ngram", "freq": 232, "source_doc": "1.md", "normalized": "постепенно", "variants": ["постепенно"]}
+{"text": "_ _ _ _", "lemma": "_ _ _ _", "pattern_type": "ngram", "freq": 231, "source_doc": "Белл - Суицид.md", "normalized": "пауза", "variants": ["_ _ _ _", "пауза"]}
+{"text": "сексуальной", "lemma": "сексуальной", "pattern_type": "ngram", "freq": 227, "source_doc": "1.md", "normalized": "сексуальная", "variants": ["сексуальной", "сексуальных", "сексуальные"]}
+{"text": "реакции", "lemma": "реакции", "pattern_type": "ngram", "freq": 227, "source_doc": "1.md", "normalized": "реакция", "variants": ["реакции"]}
+{"text": "точки", "lemma": "точки", "pattern_type": "ngram", "freq": 227, "source_doc": "1.md", "normalized": "точка", "variants": ["точки", "точки зрения"]}
+{"text": "_ _ _ _ _", "lemma": "_ _ _ _ _", "pattern_type": "ngram", "freq": 225, "source_doc": "Белл - Суицид.md", "normalized": "пауза", "variants": ["_ _ _ _ _"]}
+{"text": "то же", "lemma": "то же", "pattern_type": "ngram", "freq": 225, "source_doc": "1.md", "normalized": "то же", "variants": ["то же"]}
+{"text": "psychoanalytic", "lemma": "psychoanalytic", "pattern_type": "ngram", "freq": 224, "source_doc": "1.md", "normalized": "психоаналитический", "variants": ["psychoanalytic"]}
+{"text": "сексуальных", "lemma": "сексуальных", "pattern_type": "ngram", "freq": 224, "source_doc": "1.md", "normalized": "сексуальных", "variants": []}
+{"text": "уровне", "lemma": "уровне", "pattern_type": "ngram", "freq": 222, "source_doc": "1.md", "normalized": "уровень", "variants": ["уровне"]}
+{"text": "происходит", "lemma": "происходит", "pattern_type": "ngram", "freq": 220, "source_doc": "1.md", "normalized": "происходить", "variants": ["происходит"]}
+{"text": "точки зрения", "lemma": "точки зрения", "pattern_type": "ngram", "freq": 218, "source_doc": "1.md", "normalized": "точки зрения", "variants": []}
+{"text": "внимание", "lemma": "внимание", "pattern_type": "ngram", "freq": 213, "source_doc": "1.md", "normalized": "внимание", "variants": ["внимание"]}
+{"text": "качестве", "lemma": "качестве", "pattern_type": "ngram", "freq": 210, "source_doc": "1.md", "normalized": "качество", "variants": ["качестве"]}
+{"text": "нарциссических", "lemma": "нарциссических", "pattern_type": "ngram", "freq": 209, "source_doc": "1.md", "normalized": "нарциссический", "variants": ["нарциссических"]}
+{"text": "контексте", "lemma": "контексте", "pattern_type": "ngram", "freq": 208, "source_doc": "1.md", "normalized": "контекст", "variants": ["контексте"]}
+{"text": "в качестве", "lemma": "в качестве", "pattern_type": "ngram", "freq": 207, "source_doc": "1.md", "normalized": "в качестве", "variants": ["в качестве"]}
+{"text": "сексуальные", "lemma": "сексуальные", "pattern_type": "ngram", "freq": 203, "source_doc": "1.md", "normalized": "сексуальные", "variants": []}
+{"text": "тогда", "lemma": "тогда", "pattern_type": "ngram", "freq": 203, "source_doc": "1.md", "normalized": "тогда", "variants": ["тогда"]}
+{"text": "кроме", "lemma": "кроме", "pattern_type": "ngram", "freq": 201, "source_doc": "1.md", "normalized": "кроме", "variants": ["кроме"]}
+{"text": "пациента и", "lemma": "пациента и", "pattern_type": "ngram", "freq": 200, "source_doc": "1.md", "normalized": "пациент", "variants": ["пациента и", "пациент"]}
+{"text": "объектные", "lemma": "объектные", "pattern_type": "ngram", "freq": 199, "source_doc": "1.md", "normalized": "объектные", "variants": ["объектные"]}
+{"text": "объектные отношения", "lemma": "объектные отношения", "pattern_type": "ngram", "freq": 198, "source_doc": "1.md", "normalized": "объектные отношения", "variants": ["объектные отношения"]}
+{"text": "относительно", "lemma": "относительно", "pattern_type": "ngram", "freq": 198, "source_doc": "1.md", "normalized": "относительно", "variants": ["относительно"]}
+{"text": "структуры", "lemma": "структуры", "pattern_type": "ngram", "freq": 197, "source_doc": "1.md", "normalized": "структура", "variants": ["структуры", "структура"]}
+{"text": "of the", "lemma": "of the", "pattern_type": "ngram", "freq": 196, "source_doc": "1.md", "normalized": "of the", "variants": ["of the"]}
+{"text": "иногда", "lemma": "иногда", "pattern_type": "ngram", "freq": 196, "source_doc": "1.md", "normalized": "иногда", "variants": ["иногда"]}
+{"text": "затем", "lemma": "затем", "pattern_type": "ngram", "freq": 196, "source_doc": "1.md", "normalized": "затем", "variants": ["затем"]}
+{"text": "момент", "lemma": "момент", "pattern_type": "ngram", "freq": 195, "source_doc": "1.md", "normalized": "момент", "variants": ["момент"]}
+{"text": "в то же", "lemma": "в то же", "pattern_type": "ngram", "freq": 194, "source_doc": "1.md", "normalized": "в то же", "variants": ["в то же"]}
+{"text": "именно", "lemma": "именно", "pattern_type": "ngram", "freq": 194, "source_doc": "1.md", "normalized": "именно", "variants": ["именно"]}
+{"text": "объектом", "lemma": "объектом", "pattern_type": "ngram", "freq": 192, "source_doc": "1.md", "normalized": "объект", "variants": ["объектом", "объект"]}
+{"text": "степени", "lemma": "степени", "pattern_type": "ngram", "freq": 192, "source_doc": "1.md", "normalized": "степень", "variants": ["степени", "степень"]}
+{"text": "имеет", "lemma": "имеет", "pattern_type": "ngram", "freq": 192, "source_doc": "1.md", "normalized": "имеет", "variants": ["имеет"]}
+{"text": "смерти", "lemma": "смерти", "pattern_type": "ngram", "freq": 191, "source_doc": "1.md", "normalized": "смерти", "variants": ["смерть"]}
+{"text": "теперь", "lemma": "теперь", "pattern_type": "ngram", "freq": 191, "source_doc": "1.md", "normalized": "теперь", "variants": ["в настоящее время", "в данный момент"]}
+{"text": "другой", "lemma": "другой", "pattern_type": "ngram", "freq": 190, "source_doc": "1.md", "normalized": "другой", "variants": ["иной", "альтернативный"]}
+{"text": "развитие", "lemma": "развитие", "pattern_type": "ngram", "freq": 189, "source_doc": "1.md", "normalized": "развитие", "variants": ["прогресс", "эволюция"]}
+{"text": "менее", "lemma": "менее", "pattern_type": "ngram", "freq": 189, "source_doc": "1.md", "normalized": "менее", "variants": ["меньше", "уменьшено"]}
+{"text": "что в", "lemma": "что в", "pattern_type": "ngram", "freq": 189, "source_doc": "1.md", "normalized": "что в", "variants": ["в том, что", "в отношении"]}
+{"text": "полностью", "lemma": "полностью", "pattern_type": "ngram", "freq": 188, "source_doc": "1.md", "normalized": "полностью", "variants": ["в полном объеме", "совершенно"]}
+{"text": "женщин", "lemma": "женщин", "pattern_type": "ngram", "freq": 188, "source_doc": "1.md", "normalized": "женщин", "variants": ["женский", "женская"]}
+{"text": "защиты", "lemma": "защиты", "pattern_type": "ngram", "freq": 187, "source_doc": "1.md", "normalized": "защиты", "variants": ["оберег", "защита"]}
+{"text": "идентичности", "lemma": "идентичности", "pattern_type": "ngram", "freq": 186, "source_doc": "1.md", "normalized": "идентичности", "variants": ["самоидентификация", "личность"]}
+{"text": "матерью", "lemma": "матерью", "pattern_type": "ngram", "freq": 186, "source_doc": "1.md", "normalized": "матерью", "variants": ["мать", "родительница"]}
+{"text": "работы", "lemma": "работы", "pattern_type": "ngram", "freq": 186, "source_doc": "1.md", "normalized": "работы", "variants": ["деятельность", "труд"]}
+{"text": "жизнь", "lemma": "жизнь", "pattern_type": "ngram", "freq": 186, "source_doc": "1.md", "normalized": "жизнь", "variants": ["существование", "жизненный путь"]}
+{"text": "что она", "lemma": "что она", "pattern_type": "ngram", "freq": 185, "source_doc": "1.md", "normalized": "что она", "variants": ["что это", "что имеется в виду"]}
+{"text": "больше", "lemma": "больше", "pattern_type": "ngram", "freq": 185, "source_doc": "1.md", "normalized": "больше", "variants": ["более", "увеличено"]}
+{"text": "во время", "lemma": "во время", "pattern_type": "ngram", "freq": 184, "source_doc": "1.md", "normalized": "во время", "variants": ["в период", "в течение"]}
+{"text": "kernberg", "lemma": "kernberg", "pattern_type": "ngram", "freq": 183, "source_doc": "1.md", "normalized": "kernberg", "variants": []}
+{"text": "против", "lemma": "против", "pattern_type": "ngram", "freq": 183, "source_doc": "1.md", "normalized": "против", "variants": []}
+{"text": "со стороны", "lemma": "со стороны", "pattern_type": "ngram", "freq": 182, "source_doc": "1.md", "normalized": "со стороны", "variants": []}
+{"text": "примитивных", "lemma": "примитивных", "pattern_type": "ngram", "freq": 181, "source_doc": "1.md", "normalized": "примитивных", "variants": []}
+{"text": "желания", "lemma": "желания", "pattern_type": "ngram", "freq": 181, "source_doc": "1.md", "normalized": "желания", "variants": []}
+{"text": "будет", "lemma": "будет", "pattern_type": "ngram", "freq": 181, "source_doc": "1.md", "normalized": "будет", "variants": []}
+{"text": "исследования", "lemma": "исследования", "pattern_type": "ngram", "freq": 180, "source_doc": "1.md", "normalized": "исследования", "variants": []}
+{"text": "personality", "lemma": "personality", "pattern_type": "ngram", "freq": 180, "source_doc": "1.md", "normalized": "personality", "variants": []}
+{"text": "несколько", "lemma": "несколько", "pattern_type": "ngram", "freq": 180, "source_doc": "1.md", "normalized": "несколько", "variants": []}
+{"text": "другого", "lemma": "другого", "pattern_type": "ngram", "freq": 180, "source_doc": "1.md", "normalized": "другого", "variants": []}
+{"text": "мужчин", "lemma": "мужчин", "pattern_type": "ngram", "freq": 180, "source_doc": "1.md", "normalized": "мужчин", "variants": []}
+{"text": "же время", "lemma": "же время", "pattern_type": "ngram", "freq": 178, "source_doc": "1.md", "normalized": "же время", "variants": ["то же время"]}
+{"text": "то же время", "lemma": "то же время", "pattern_type": "ngram", "freq": 177, "source_doc": "1.md", "normalized": "то же время", "variants": []}
+{"text": "интеграции", "lemma": "интеграции", "pattern_type": "ngram", "freq": 177, "source_doc": "1.md", "normalized": "интеграции", "variants": []}
+{"text": "анализ", "lemma": "анализ", "pattern_type": "ngram", "freq": 177, "source_doc": "1.md", "normalized": "анализ", "variants": []}
+{"text": "аспекты", "lemma": "аспекты", "pattern_type": "ngram", "freq": 176, "source_doc": "1.md", "normalized": "аспекты", "variants": []}
+{"text": "подход", "lemma": "подход", "pattern_type": "ngram", "freq": 176, "source_doc": "1.md", "normalized": "подход", "variants": ["метод", "способ", "стратегия"]}
+{"text": "в том что", "lemma": "в том что", "pattern_type": "ngram", "freq": 175, "source_doc": "1.md", "normalized": "в том что", "variants": ["что касается", "в отношении"]}
+{"text": "интервью", "lemma": "интервью", "pattern_type": "ngram", "freq": 175, "source_doc": "1.md", "normalized": "интервью", "variants": ["беседа", "разговор"]}
+{"text": "часть", "lemma": "часть", "pattern_type": "ngram", "freq": 175, "source_doc": "1.md", "normalized": "часть", "variants": ["элемент", "составляющая"]}
+{"text": "в то же время", "lemma": "в то же время", "pattern_type": "ngram", "freq": 174, "source_doc": "1.md", "normalized": "в то же время", "variants": ["одновременно", "вместе с тем"]}
+{"text": "отношения с", "lemma": "отношения с", "pattern_type": "ngram", "freq": 174, "source_doc": "1.md", "normalized": "отношения с", "variants": ["взаимоотношения", "связь с"]}
+{"text": "течение", "lemma": "течение", "pattern_type": "ngram", "freq": 174, "source_doc": "1.md", "normalized": "течение", "variants": ["процесс", "период"]}
+{"text": "вопрос", "lemma": "вопрос", "pattern_type": "ngram", "freq": 174, "source_doc": "1.md", "normalized": "вопрос", "variants": ["проблема", "тема"]}
+{"text": "объект", "lemma": "объект", "pattern_type": "ngram", "freq": 173, "source_doc": "1.md", "normalized": "объект", "variants": ["предмет", "субъект"]}
+{"text": "в контексте", "lemma": "в контексте", "pattern_type": "ngram", "freq": 172, "source_doc": "1.md", "normalized": "в контексте", "variants": ["в рамках", "в условиях"]}
+{"text": "исследовать", "lemma": "исследовать", "pattern_type": "ngram", "freq": 172, "source_doc": "1.md", "normalized": "исследовать", "variants": ["изучать", "анализировать"]}
+{"text": "конфликты", "lemma": "конфликты", "pattern_type": "ngram", "freq": 172, "source_doc": "1.md", "normalized": "конфликты", "variants": ["противоречия", "разногласия"]}
+{"text": "отношение", "lemma": "отношение", "pattern_type": "ngram", "freq": 172, "source_doc": "1.md", "normalized": "отношение", "variants": ["взаимодействие", "состояние"]}
+{"text": "желание", "lemma": "желание", "pattern_type": "ngram", "freq": 172, "source_doc": "1.md", "normalized": "желание", "variants": ["стремление", "потребность"]}
+{"text": "в течение", "lemma": "в течение", "pattern_type": "ngram", "freq": 171, "source_doc": "1.md", "normalized": "в течение", "variants": ["на протяжении", "в процессе"]}
+{"text": "другим", "lemma": "другим", "pattern_type": "ngram", "freq": 171, "source_doc": "1.md", "normalized": "другим", "variants": ["иным", "другими"]}
+{"text": "перенос", "lemma": "перенос", "pattern_type": "ngram", "freq": 170, "source_doc": "1.md", "normalized": "перенос", "variants": []}
+{"text": "о том что", "lemma": "о том что", "pattern_type": "ngram", "freq": 169, "source_doc": "1.md", "normalized": "о том что", "variants": []}
+{"text": "которую", "lemma": "которую", "pattern_type": "ngram", "freq": 169, "source_doc": "1.md", "normalized": "которую", "variants": []}
+{"text": "любовь", "lemma": "любовь", "pattern_type": "ngram", "freq": 169, "source_doc": "1.md", "normalized": "любовь", "variants": []}
+{"text": "пограничных", "lemma": "пограничных", "pattern_type": "ngram", "freq": 168, "source_doc": "1.md", "normalized": "пограничных", "variants": []}
+{"text": "international", "lemma": "international", "pattern_type": "ngram", "freq": 166, "source_doc": "1.md", "normalized": "international", "variants": []}
+{"text": "поводу", "lemma": "поводу", "pattern_type": "ngram", "freq": 166, "source_doc": "1.md", "normalized": "поводу", "variants": []}
+{"text": "et al", "lemma": "et al", "pattern_type": "ngram", "freq": 166, "source_doc": "1.md", "normalized": "et al", "variants": []}
+{"text": "здесь", "lemma": "здесь", "pattern_type": "ngram", "freq": 166, "source_doc": "1.md", "normalized": "здесь", "variants": []}
+{"text": "и не", "lemma": "и не", "pattern_type": "ngram", "freq": 166, "source_doc": "1.md", "normalized": "и не", "variants": []}
+{"text": "организацией", "lemma": "организацией", "pattern_type": "ngram", "freq": 165, "source_doc": "1.md", "normalized": "организацией", "variants": []}
+{"text": "связи", "lemma": "связи", "pattern_type": "ngram", "freq": 165, "source_doc": "1.md", "normalized": "связи", "variants": []}
+{"text": "взаимоотношения", "lemma": "взаимоотношения", "pattern_type": "ngram", "freq": 164, "source_doc": "1.md", "normalized": "взаимоотношения", "variants": []}
+{"text": "возможность", "lemma": "возможность", "pattern_type": "ngram", "freq": 164, "source_doc": "1.md", "normalized": "возможность", "variants": []}
+{"text": "становится", "lemma": "становится", "pattern_type": "ngram", "freq": 164, "source_doc": "1.md", "normalized": "становится", "variants": []}
+{"text": "людей", "lemma": "людей", "pattern_type": "ngram", "freq": 164, "source_doc": "1.md", "normalized": "людей", "variants": []}
+{"text": "социальной", "lemma": "социальной", "pattern_type": "ngram", "freq": 163, "source_doc": "1.md", "normalized": "социальной", "variants": ["социальной"]}
+{"text": "исследование", "lemma": "исследование", "pattern_type": "ngram", "freq": 162, "source_doc": "1.md", "normalized": "исследование", "variants": ["исследование"]}
+{"text": "интернализованных", "lemma": "интернализованных", "pattern_type": "ngram", "freq": 161, "source_doc": "1.md", "normalized": "интернализованных", "variants": ["интернализованных"]}
+{"text": "человека", "lemma": "человека", "pattern_type": "ngram", "freq": 161, "source_doc": "1.md", "normalized": "человека", "variants": ["человека"]}
+{"text": "терапевтом", "lemma": "терапевтом", "pattern_type": "ngram", "freq": 160, "source_doc": "1.md", "normalized": "терапевтом", "variants": ["терапевтом"]}
+{"text": "перед", "lemma": "перед", "pattern_type": "ngram", "freq": 160, "source_doc": "1.md", "normalized": "перед", "variants": ["перед"]}
+{"text": "зависимости", "lemma": "зависимости", "pattern_type": "ngram", "freq": 159, "source_doc": "1.md", "normalized": "зависимости", "variants": ["зависимости"]}
+{"text": "не только", "lemma": "не только", "pattern_type": "ngram", "freq": 159, "source_doc": "1.md", "normalized": "не только", "variants": ["не только"]}
+{"text": "некоторые", "lemma": "некоторые", "pattern_type": "ngram", "freq": 159, "source_doc": "1.md", "normalized": "некоторые", "variants": ["некоторые"]}
+{"text": "помощью", "lemma": "помощью", "pattern_type": "ngram", "freq": 159, "source_doc": "1.md", "normalized": "помощью", "variants": ["помощью"]}
+{"text": "попытки", "lemma": "попытки", "pattern_type": "ngram", "freq": 159, "source_doc": "1.md", "normalized": "попытки", "variants": ["попытки"]}
+{"text": "тяжелой", "lemma": "тяжелой", "pattern_type": "ngram", "freq": 159, "source_doc": "1.md", "normalized": "тяжелой", "variants": ["тяжелой"]}
+{"text": "по поводу", "lemma": "по поводу", "pattern_type": "ngram", "freq": 158, "source_doc": "1.md", "normalized": "по поводу", "variants": ["по поводу"]}
+{"text": "в этом", "lemma": "в этом", "pattern_type": "ngram", "freq": 158, "source_doc": "1.md", "normalized": "в этом", "variants": ["в этом"]}
+{"text": "а не", "lemma": "а не", "pattern_type": "ngram", "freq": 158, "source_doc": "1.md", "normalized": "а не", "variants": ["а не"]}
+{"text": "сексуальное", "lemma": "сексуальное", "pattern_type": "ngram", "freq": 157, "source_doc": "1.md", "normalized": "сексуальное", "variants": ["сексуальное"]}
+{"text": "вовне", "lemma": "вовне", "pattern_type": "ngram", "freq": 157, "source_doc": "1.md", "normalized": "внешний", "variants": ["снаружи", "извне"]}
+{"text": "переживания", "lemma": "переживания", "pattern_type": "ngram", "freq": 154, "source_doc": "1.md", "normalized": "эмоции", "variants": ["чувства", "ощущения"]}
+{"text": "пациентами", "lemma": "пациентами", "pattern_type": "ngram", "freq": 154, "source_doc": "1.md", "normalized": "клиентами", "variants": ["больными", "людьми"]}
+{"text": "функции", "lemma": "функции", "pattern_type": "ngram", "freq": 154, "source_doc": "1.md", "normalized": "роль", "variants": ["задачи", "обязанности"]}
+{"text": "при этом", "lemma": "при этом", "pattern_type": "ngram", "freq": 153, "source_doc": "1.md", "normalized": "в этом контексте", "variants": ["в то же время", "одновременно"]}
+{"text": "расстройство", "lemma": "расстройство", "pattern_type": "ngram", "freq": 152, "source_doc": "1.md", "normalized": "проблема", "variants": ["нарушение", "трудность"]}
+{"text": "процессе", "lemma": "процессе", "pattern_type": "ngram", "freq": 152, "source_doc": "1.md", "normalized": "в ходе", "variants": ["в процессе", "в рамках"]}
+{"text": "лечение", "lemma": "лечение", "pattern_type": "ngram", "freq": 152, "source_doc": "1.md", "normalized": "терапия", "variants": ["исцеление", "помощь"]}
+{"text": "необходимо", "lemma": "необходимо", "pattern_type": "ngram", "freq": 151, "source_doc": "1.md", "normalized": "важно", "variants": ["нужно", "обязательно"]}
+{"text": "депрессии", "lemma": "депрессии", "pattern_type": "ngram", "freq": 151, "source_doc": "1.md", "normalized": "угнетение", "variants": ["подавленность", "депрессивное состояние"]}
+{"text": "american", "lemma": "american", "pattern_type": "ngram", "freq": 151, "source_doc": "1.md", "normalized": "американский", "variants": ["сша", "американец"]}
+{"text": "так что", "lemma": "так что", "pattern_type": "ngram", "freq": 151, "source_doc": "1.md", "normalized": "поэтому", "variants": ["в результате", "следовательно"]}
+{"text": "через", "lemma": "через", "pattern_type": "ngram", "freq": 150, "source_doc": "1.md", "normalized": "посредством", "variants": ["сквозь", "через"]}
+{"text": "способность к", "lemma": "способность к", "pattern_type": "ngram", "freq": 149, "source_doc": "1.md", "normalized": "умение", "variants": ["навык", "возможность"]}
+{"text": "личностной", "lemma": "личностной", "pattern_type": "ngram", "freq": 149, "source_doc": "1.md", "normalized": "индивидуальной", "variants": ["персональной", "личной"]}
+{"text": "возникает", "lemma": "возникает", "pattern_type": "ngram", "freq": 149, "source_doc": "1.md", "normalized": "появляется", "variants": ["формируется", "проявляется"]}

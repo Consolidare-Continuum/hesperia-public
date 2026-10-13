@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hesperia.local/schema/SI_metrics.schema.json",
+  "title": "HESPERIA SI_metrics",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "coverage",
+    "dominance",
+    "entropy",
+    "leakage",
+    "contradiction_pressure",
+    "stability",
+    "shadow_deviation",
+    "trust_tier"
+  ],
+  "properties": {
+    "coverage": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "dominance": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "entropy": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "leakage": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "contradiction_pressure": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "stability": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "shadow_deviation": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "trust_tier": {
+      "type": "string",
+      "enum": ["T0", "T1", "T2", "T3"]
+    }
+  }
+}

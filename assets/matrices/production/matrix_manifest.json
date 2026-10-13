@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "families": 288,
+  "hex_per_family": 12,
+  "total_hex_cells": 3456,
+  "note": "C_F encodes cross-area contradiction structure; L_F from canonical family stub adjacency.",
+  "files": {
+    "L_F": "L_F_v1.npy",
+    "C_F": "C_F_v1.npy",
+    "R_F": "R_F_v1.npy"
+  },
+  "optional_files": {
+    "L_H": null,
+    "C_H": null
+  }
+}

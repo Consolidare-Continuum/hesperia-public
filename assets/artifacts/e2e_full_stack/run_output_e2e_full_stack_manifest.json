@@ -1,0 +1,212 @@
+{
+  "artifact_count": 21,
+  "artifacts": [
+    {
+      "basename": "run_output_e2e_calibration_100_structural.json",
+      "bytes": 1427356,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_calibration_100_structural.json",
+      "sha256": "44ce56bfded1d0e6f896cc2272a742fffee4303296ea5c03c64c11cdbf53880b"
+    },
+    {
+      "basename": "run_output_e2e_calibration_100_summary.json",
+      "bytes": 1016,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_calibration_100_summary.json",
+      "sha256": "c6ea838faa389ad5522c73c2322193a80aa02fb04b82eef0c6a40dce0e328cea"
+    },
+    {
+      "basename": "run_output_e2e_capability_matrix.json",
+      "bytes": 30383,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_capability_matrix.json",
+      "sha256": "e4c44df2949beec0ac58a0bd087900833976830e7fd96c8749312451f23dc3a2"
+    },
+    {
+      "basename": "run_output_e2e_domain_metrics.json",
+      "bytes": 6534,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_domain_metrics.json",
+      "sha256": "ed7e9a087f386d835edc42abf26690aacf27576dc7957cfee79d365be5e0577e"
+    },
+    {
+      "basename": "run_output_e2e_field_calibration.json",
+      "bytes": 6920,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_field_calibration.json",
+      "sha256": "ff8202d2ebaccfb0808d599d7d74127120b70673fcf71dea09526a3a9a833ddd"
+    },
+    {
+      "basename": "run_output_e2e_field_calibration_best.json",
+      "bytes": 1504,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_field_calibration_best.json",
+      "sha256": "6c3e26c5eff7470cf262b9f633a770501f39bdf444452e1d48daff420bc0e461"
+    },
+    {
+      "basename": "run_output_e2e_field_calibration_topk.json",
+      "bytes": 2698,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_field_calibration_topk.json",
+      "sha256": "072b1e2b2edbf60d075120b14bfc7f8383fac8f441a9c9c0a0ff66bd432274d1"
+    },
+    {
+      "basename": "run_output_e2e_field_dynamics.json",
+      "bytes": 17088,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_field_dynamics.json",
+      "sha256": "95bb65d691508a99663f59b0bd633c595a24514e6d26394c1114ad26178e52ee"
+    },
+    {
+      "basename": "run_output_e2e_full_product_surface.json",
+      "bytes": 11689,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_full_product_surface.json",
+      "sha256": "314e2215a8d723eeda62a88aada44e0cbcfc3057e83650e8598ae5305ef3fb15"
+    },
+    {
+      "basename": "run_output_e2e_hex_microstructure_tfp.json",
+      "bytes": 57913,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_hex_microstructure_tfp.json",
+      "sha256": "b239569b9faafb4fb3b26a7aea1b7388e51ecc25a6812ebd4de694cbe57def72"
+    },
+    {
+      "basename": "run_output_e2e_l1_l9.json",
+      "bytes": 33379,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_l1_l9.json",
+      "sha256": "7c8249ba6bca7d29ab7fd2e81464299792fbeb059e20cd45a7e1de1f48914e3e"
+    },
+    {
+      "basename": "run_output_e2e_r1_r4.json",
+      "bytes": 15549,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_r1_r4.json",
+      "sha256": "34ad210b5e047a0edd6d08596fbfdc6ce844c03bb678784a92c33342c99c19b4"
+    },
+    {
+      "basename": "run_output_e2e_sealed_multiscale.json",
+      "bytes": 7712,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_sealed_multiscale.json",
+      "sha256": "17f49d42d1c22bd703b0f75cc9c8de56d84fe75453242b84e8960205131ceab3"
+    },
+    {
+      "basename": "run_output_e2e_semantic_field.json",
+      "bytes": 6967,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_semantic_field.json",
+      "sha256": "14d8a1f48b77d3861560328a0e270ac6c1105c55717f629d1922b272d50db365"
+    },
+    {
+      "basename": "run_output_e2e_sentence.json",
+      "bytes": 19080,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_sentence.json",
+      "sha256": "814559f662cc5f75ada5fec560fa1df87100a2a140163a39d303e690a1d73b90"
+    },
+    {
+      "basename": "run_output_e2e_session_kme.json",
+      "bytes": 1135,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_session_kme.json",
+      "sha256": "eaeee4b3fed3acaf012bd9c4366e7577e41ab9d8295aafdb515c435021eebf44"
+    },
+    {
+      "basename": "run_output_e2e_session_topology.json",
+      "bytes": 765,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_session_topology.json",
+      "sha256": "9f6b451c373c0a2dfa91df8ad7fda7148ffa127e9e4c4cab8ade93f0735da586"
+    },
+    {
+      "basename": "run_output_e2e_sphere_math_100.json",
+      "bytes": 42575,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_sphere_math_100.json",
+      "sha256": "4145c3dab60b82b52f5e301deda74c5a17ee8c74737d7b91bda4cff9bc30366d"
+    },
+    {
+      "basename": "run_output_e2e_sphere_math_values.json",
+      "bytes": 11445,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_sphere_math_values.json",
+      "sha256": "6386b0e101c03beca4d4b9d9ebeb5699d7e346ad48620218220cbba7df7c49f7"
+    },
+    {
+      "basename": "run_output_e2e_tfp_smoke.json",
+      "bytes": 557,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_tfp_smoke.json",
+      "sha256": "bed5de7a6ee5aa47ef8a4e3f93a7cfea2158119cce201df3f30d96a9cc8c2385"
+    },
+    {
+      "basename": "run_output_e2e_triz_complete.json",
+      "bytes": 6976,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_triz_complete.json",
+      "sha256": "9c8616152b7d4c274a4544d615f1a2b219220c7abd412eb8f3a46255e7a1a07c"
+    }
+  ],
+  "build_id": "hesperia_0.5.3_296581f37553_2026-03-26T11:28:43Z",
+  "calibration_batch_n": 100,
+  "calibration_profile": "default_v1",
+  "dynamics_env": true,
+  "errors": [],
+  "execution_flow_version": "e2e_v2",
+  "finished_utc": "2026-03-26T11:31:38.629208+00:00",
+  "input_text_preview": "Patient reports severe anxiety when considering work deadlines but also feels guilty resting. The team demands faster delivery while quality must not slip. Internal conflict between autonomy and compliance.",
+  "modules_used": [
+    "runtime.pipeline.run_e2e_all",
+    "runtime.pipeline.run_e2e_full_stack",
+    "runtime.services.analysis_service",
+    "tests.physics_validation",
+    "hesperia.system.system_seal"
+  ],
+  "ok": true,
+  "orchestration_mode": "E2E_FULL_STACK",
+  "out_dir": "assets/artifacts/e2e_full_stack",
+  "physics_validation_exit_code": 0,
+  "pipeline_version": "e2e_v2",
+  "run": "e2e_full_stack",
+  "schema_version": "v1",
+  "started_utc": "2026-03-26T11:28:43.778411+00:00",
+  "steps": [
+    {
+      "ok": true,
+      "outputs": 20,
+      "step": "run_e2e_all"
+    },
+    {
+      "ok": true,
+      "path": "assets/artifacts/e2e_full_stack/run_output_e2e_full_product_surface.json",
+      "step": "product_surface"
+    },
+    {
+      "exit_code": 0,
+      "ok": true,
+      "step": "physics_validation",
+      "tail": ""
+    },
+    {
+      "ok": true,
+      "status": "PASS",
+      "step": "system_seal"
+    }
+  ],
+  "system_seal": {
+    "calibration_profile": "default_v1",
+    "checks": {
+      "calibration": true,
+      "concept": true,
+      "energy": true,
+      "hex_dependency": true,
+      "matrices": true,
+      "pch": true,
+      "pipeline": true,
+      "product_truth": true,
+      "topology": true,
+      "validation": true
+    },
+    "hex_topology_sha256": "bc1e96fcb8d63ac585edcf0951a581b0954dbdb03b4c431bcd81e60197f9818b",
+    "matrix_bundle": "v1",
+    "notes": {
+      "calibration": "profile 'default_v1' matches on-disk bundle",
+      "concept": "explicit A_concept path active",
+      "energy": "strict-mode energy trace monotone",
+      "hex_dependency": "hex tensors required (ValueError as expected)",
+      "matrices": "production matrices bundle='v1'",
+      "pch": "P_CH nnz=72000 active non-uniform",
+      "pipeline": "canonical shipping modules do not invoke legacy sphere.pipeline",
+      "product_truth": "sample analyze output passes schema_guard + envelope",
+      "topology": "sha256=bc1e96fcb8d63ac5..",
+      "validation": "skipped (skip_physics_subprocess=True; run full seal via tools.system_seal)"
+    },
+    "pch_bundle": "v1",
+    "status": "PASS",
+    "timestamp_utc": "2026-03-26T11:31:38.621449+00:00",
+    "version": "0.5.3"
+  },
+  "system_seal_skip_physics_subprocess": true,
+  "system_version": "0.5.3"
+}

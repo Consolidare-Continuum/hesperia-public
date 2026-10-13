@@ -1,0 +1,21 @@
+{
+  "schema": "hesperia.h070.replay_benchmarks.v1",
+  "engine_flags": {
+    "engine_sha": "h070-fixture",
+    "replay_mode": "offline"
+  },
+  "statements": [
+    {"id": "tfp-01", "text": "Пациент проецирует агрессию на терапевта в момент интерпретации.", "tags": ["transference", "aggression"]},
+    {"id": "tfp-02", "text": "Splitting between idealized and devalued object representations is pronounced.", "tags": ["splitting"]},
+    {"id": "tfp-03", "text": "Primitive defenses dominate when affect tolerance is low.", "tags": ["defense"]},
+    {"id": "tfp-04", "text": "Countertransference irritation signals enactment risk.", "tags": ["countertransference"]},
+    {"id": "tfp-05", "text": "Self-regulation capacity appears compromised under stress.", "tags": ["self_regulation"]},
+    {"id": "tfp-06", "text": "Narcissistic vulnerability emerges when mirroring fails.", "tags": ["narcissism"]},
+    {"id": "tfp-07", "text": "Borderline organization: identity diffusion and impulsivity.", "tags": ["borderline"]},
+    {"id": "tfp-08", "text": "Therapeutic alliance strain after missed empathy.", "tags": ["alliance"]},
+    {"id": "tfp-09", "text": "Internalized bad object drives self-critical cascade.", "tags": ["internalization"]},
+    {"id": "tfp-10", "text": "Affect storm without symbolic elaboration.", "tags": ["affect"]},
+    {"id": "tfp-11", "text": "Reparation attempt follows depressive position shift.", "tags": ["reparation"]},
+    {"id": "tfp-12", "text": "Kernberg: transference interpretation targets here-and-now dyad.", "tags": ["kernberg"]}
+  ]
+}

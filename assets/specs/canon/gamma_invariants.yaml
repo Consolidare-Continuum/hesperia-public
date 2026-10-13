@@ -1,0 +1,52 @@
+# Gamma dynamic invariants v1 — runtime order, isolation, consistency.
+# Enforced across execution flow.
+
+version: 1
+invariants:
+  - invariant_id: GAMMA_001
+    name: layer_order_valid
+    enabled: true
+    severity: critical
+    rule: layers_executed_canonical_order
+
+  - invariant_id: GAMMA_002
+    name: no_upstream_mutation
+    enabled: true
+    severity: critical
+    rule: no_illegal_mutation_of_upstream
+
+  - invariant_id: GAMMA_003
+    name: raw_propagated_separation
+    enabled: true
+    severity: critical
+    rule: raw_propagated_artifacts_must_be_distinct
+
+  - invariant_id: GAMMA_004
+    name: area_sequence_values_valid
+    enabled: true
+    severity: critical
+    rule: area_sequence_values_in_0_11
+
+  - invariant_id: GAMMA_005
+    name: transition_matrix_sum_consistent
+    enabled: true
+    severity: high
+    rule: transition_matrix_sum_equals_transitions
+
+  - invariant_id: GAMMA_006
+    name: propagated_lengths_match_raw
+    enabled: true
+    severity: critical
+    rule: propagated_lengths_match_raw
+
+  - invariant_id: GAMMA_007
+    name: rule_registry_count_consistent
+    enabled: true
+    severity: high
+    rule: registry_count_matches_triggered_rules
+
+  - invariant_id: GAMMA_008
+    name: deterministic_flag_true
+    enabled: true
+    severity: critical
+    rule: deterministic_flag_true

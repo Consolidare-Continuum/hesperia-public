@@ -1,0 +1,23 @@
+# DLCR-HP resource bundle pins (v0.6.0 integration). See ETHAN-DLCR-INTEGRATION-RUNBOOK.md.
+dlcr_bundle: "v0.6.0"
+dict_a:
+  seed: "v0.6.0"
+  tfp: "v0.6.0-tfp"
+  tfp_ru: "v0.6.0_ru_tfp"
+  tfp_ru_stack: "v0.6.0_ru_tfp_stack"
+  tfp_ru_aligned: "v0.6.0_ru_tfp_corpus_align"
+dict_b:
+  seed: "v0.6.0"
+  tfp: "v0.6.0-tfp"
+  tfp_ru: "v0.6.0_ru_tfp"
+  tfp_ru_v060: "v0.6.0_ru_tfp_stack"
+normalization: "v0.6.0"
+resolver_rules: "v0.6.0"
+hex_topology: "bounded_hx_map_v1"
+aggregation: "v0.6.0"
+
+# tfp_corpus (Postgres) structural wiring -- see hesperia/modules/tfp/data/tfp_v1/postgres/README.md
+# for the full status. Same v0.6.9 label covers both the Postgres wiring (Phase 3/4a) and the
+# sealed calibration pack (assets/calibration/dicts/v0_6_9/, see root VERSION.yaml
+# tfp_module_v1) -- one checkpoint, not scattered v052_5/v052_6 internal counters.
+tfp_postgres_wiring: "v0.6.9"  # Phase 3 (normalized_sentence) + Phase 4a (concept_link) + Phase 4b (ACB, sealed+live)

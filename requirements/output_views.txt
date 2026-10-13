@@ -1,0 +1,9 @@
+# Hesperia HTML output / site builder (Django). Optional install: pip install -r requirements/output_views.txt
+# Does not ship with default runtime.txt — keep CI/shipping lean.
+# Django LTS: https://www.djangoproject.com/download/
+Django>=5.2.12,<5.3
+django-environ>=0.11.2,<0.13
+whitenoise>=6.6,<7
+PyYAML>=6.0,<7
+jsonschema>=4.23,<5
+Jinja2>=3.1,<4

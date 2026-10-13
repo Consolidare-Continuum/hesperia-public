@@ -1,0 +1,60 @@
+{
+  "alignment_summary": {
+    "area_match": false,
+    "contradiction_flags": [],
+    "drift_score": 0.53601,
+    "governance_delta": 0.03601,
+    "input_dominant_area_id": "A1",
+    "output_dominant_area_id": "A3",
+    "scope_on_task": true
+  },
+  "corpus_check": {
+    "corpus_snapshot_id": "hesperia-corpus-0.6.5-gold-fixture",
+    "has_retrieval_chunks": false,
+    "high_certainty_language": false,
+    "status": "supported"
+  },
+  "decision": "WARN",
+  "decision_reasons": [
+    "SEMANTIC_DRIFT"
+  ],
+  "mutation_check": {
+    "matched_patterns": [],
+    "mutation_attempt": false
+  },
+  "output_hash": "d16bfc0b6378a9a6849a00002a1805f637d78ab72d5be08e90e527c2f9be521e",
+  "output_trace": {
+    "contract_version": "v1.0",
+    "contradiction_flags": [],
+    "dominant_area_id": "A3",
+    "dominant_concept_id": "HESP-C0056",
+    "dominant_family_id": "family_056",
+    "governance": 0.0366,
+    "loopability": 0.0,
+    "obstacle_score": 0.9634,
+    "overlay_hint_applied": false,
+    "temp_relation_overlay_applied": false,
+    "tension_energy": 0.0,
+    "trace": [
+      {
+        "activation": 0.997268,
+        "area_id": "A3",
+        "concept_id": "HESP-C0056",
+        "confidence": 0.997405,
+        "family_id": "family_056",
+        "label": "review"
+      }
+    ],
+    "trace_content_hash": "c53651be0c93a027da2b80e17587a08bad3498b5229aa182ff105d2e8fec53ba",
+    "weak_signals": []
+  },
+  "policy_check": {
+    "risk_level": "high",
+    "violations": [],
+    "warnings": []
+  },
+  "reason_code_descriptions": {
+    "SEMANTIC_DRIFT": "Re-analyzed output dominant region differs from input route."
+  },
+  "schema": "hesperia.router_output_audit.v0_1"
+}

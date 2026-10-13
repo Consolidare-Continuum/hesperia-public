@@ -1,0 +1,129 @@
+34_SPEC N1 — L1 Normative Structure Profile Extension
+
+Version: v0.4.x-N1
+Scope: Deterministic Layer-1 enhancement (general-purpose, profile-driven)
+Depends on: 34_SPEC (L1 instrumentation)
+Applies to: Any "intended structural behavior" constraint, not LLM roles
+
+1. Objective
+
+Extend Layer-1 with normative, deterministic math that compares observed activation
+patterns to an externally defined Structure Profile. The profile represents the
+intended/allowed structural shape for a given context (task type, pipeline stage,
+policy, document class, system mode, etc.).
+
+Layer-1 remains input-bound and non-inferential: it does not decide which profile to use.
+
+2. Invariants
+
+- Fixed geometry: F = 288, A = 12
+- Altitude domain frozen: 0.0 ≤ altitude ≤ 1.0 (global invariant). ALT_NORM = ALT_MAX - ALT_MIN = 1.0. No floating altitude domain.
+- Deterministic computations only
+- Profile selection is external
+- No learning, fitting, clustering, or adaptive updates inside L1
+- No probabilistic steps; no LLM involvement required
+
+3. Profile Mode Explicit (No Implicit Detection)
+
+L1 output MUST include:
+- PROFILE_MODE_ACTIVE: bool
+  - False → 34_SPEC only (no profile supplied)
+  - True → 34_SPEC N1 metrics computed and valid
+Never infer profile mode by checking PCS or other derived fields; set from presence of profile input only.
+
+4. Responsibility: Who Defines Profiles
+
+Not Layer-1. Profiles are defined by the governing system and stored as versioned
+artifacts under profiles/STRUCTURE_PROFILE__<name>__v<k>.json.
+
+Layer-1 receives profile_id and the profile payload (or a reference resolved by caller).
+
+4a. L1 Profile Taxonomy (Canonical Set)
+
+Profiles are grouped by structural geometry intent. See profiles/TAXONOMY_v1.md.
+
+Canonical profiles MUST declare:
+- primary_axis ∈ {distribution, concentration, altitude, constraint, regression}
+- strictness_level ∈ {soft, medium, hard}
+
+This prevents uncontrolled profile sprawl. Non-canonical or one-off profiles may omit these; canonical envelopes must include them. L1 does not interpret these fields; they are metadata for governance and tooling.
+
+Minimal core set (frozen first): UNIFORM_ENVELOPE, BROAD_ANALYSIS_ENVELOPE, FOCUSED_DOMAIN_ENVELOPE, LOW_ALTITUDE_ENVELOPE, HIGH_ALTITUDE_ENVELOPE, HARD_BOUNDARY.
+
+5. New Required Input (when in profile mode)
+
+- profile_id: string
+- profile: StructureProfile (resolved externally OR supplied inline)
+
+If profile_id is omitted or profile unavailable, L1 runs in 34_SPEC-only mode (PROFILE_MODE_ACTIVE = False).
+
+6. StructureProfile Schema and Validation
+
+See sphere_rag/layers/structure_profile.py. Required: FEDV (length F), AEDV (length A).
+Optional: DENY_FAMILIES, ALLOW_FAMILIES, ALT_BAND, ALT_TARGET, budget caps, weights, penalty_mode, primary_axis, strictness_level (taxonomy; required for canonical profiles only).
+
+validate_profile() MUST enforce (hard fail; no warnings):
+- Σ FEDV ≈ 1 (tolerance fixed, e.g. 1e-9)
+- Σ AEDV ≈ 1
+- No negative weights
+- DENY_FAMILIES disjoint from ALLOW_FAMILIES
+- ALT_BAND min ≤ max
+- Budget caps in [0, 1]
+
+7. Zero-Weight Clarification (Critical)
+
+FEDV[f] = 0 does NOT imply forbidden. Only DENY_FAMILIES defines hard prohibition.
+Zero-weight families contribute to FPD normally. Hard exclusion requires DENY_FAMILIES.
+
+8. FPD/APD Normalization (Deterministic)
+
+FPD_MAX = APD_MAX = √2. Valid only if P and FEDV (resp. Q and AEDV) are valid distributions and L2 norm is used.
+Distance metric = L2 only. No future metric swapping allowed.
+
+9. Budget Violation Aggregation
+
+BVS = max(v_i) over applicable budget violations. Governance-grade: a single cap breach is not diluted.
+(Mean would be compensatory; not used.)
+
+10. New Metrics (Profile Mode)
+
+- FAMILY_PROFILE_DEVIATION (FPD), AREA_PROFILE_DEVIATION (APD)
+- FORBIDDEN_MASS_PENALTY (FMP), ALTITUDE_DEVIATION (ALTD), BUDGET_VIOLATION_SCORE (BVS)
+- PROFILE_CONFORMANCE_SCORE (PCS) in [0, 1]
+
+11. Output Contract
+
+When profile supplied (PROFILE_MODE_ACTIVE = True), L1 output MUST include:
+- PROFILE_MODE_ACTIVE, PROFILE_ID, PROFILE_VERSION, PROFILE_CHECKSUM
+- FPD, APD, PCS; FMP (if DENY_FAMILIES), ALTD (if altitude constraint), BVS (if budgets)
+34_SPEC 25 metrics unchanged.
+
+12. Deterministic Empty Case
+
+If attributed_tokens == 0 and profile is supplied:
+- FPD = 1, APD = 1, PCS = 0
+(No division-by-eps; behavior locked. No neutral-mode ambiguity.)
+
+13. Modes
+
+- Baseline (34_SPEC): no profile → PROFILE_MODE_ACTIVE = False; only 25 base metrics.
+- Profile (34_SPEC N1): profile supplied → PROFILE_MODE_ACTIVE = True; base + profile metrics.
+
+14. Governance and L7
+
+- Profiles: versioned; changes require checksum update, release note, test vectors.
+- L1 logs: profile_id, PROFILE_VERSION, PROFILE_CHECKSUM (in output).
+- L7 MUST log PROFILE_CHECKSUM in decision trace when PROFILE_MODE_ACTIVE.
+- Decision code 75 reserved permanently: PROFILE_CONFORMANCE_FAILURE. Never reuse.
+
+15. Minimal Compliance Tests
+
+Case A: perfect match → PCS ≥ 0.95
+Case B: strong mismatch → PCS ≤ 0.30
+Case C: deny-family hits → FMP > 0, PCS reduced
+Case D: altitude out of band → ALTD > 0, PCS reduced
+Case E: budget violation → BVS > 0
+
+Tests: sphere_rag/tests/test_layer_1_profile.py
+
+END 34_SPEC N1

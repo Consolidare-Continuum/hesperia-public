@@ -1,0 +1,90 @@
+# Layer-9 Logic Rules v1 — canonical declarative definition.
+# Deterministic rule-based reasoning over structural metrics.
+# Edit rules here; no thresholds in Python.
+
+version: 1
+rules:
+  - rule_id: RULE_001
+    name: structural_monotony
+    description: Low entropy indicates structurally narrow discourse.
+    enabled: true
+    priority: 100
+    severity: medium
+    diagnostic_code: STRUCTURAL_MONOTONY
+    diagnostic_message: Entropy below threshold suggests structurally narrow concentration.
+    conditions:
+      all:
+        - fact: entropy
+          op: lt
+          value: 0.35
+
+  - rule_id: RULE_002
+    name: governance_bias
+    description: High governance area share indicates governance-dominated structure.
+    enabled: true
+    priority: 90
+    severity: medium
+    diagnostic_code: GOVERNANCE_BIAS
+    diagnostic_message: Governance area share above threshold suggests governance-dominated discourse.
+    conditions:
+      all:
+        - fact: governance_area
+          op: gt
+          value: 0.35
+
+  - rule_id: RULE_003
+    name: rhetorical_instability
+    description: High curvature indicates unstable structural movement.
+    enabled: true
+    priority: 80
+    severity: high
+    diagnostic_code: RHETORICAL_INSTABILITY
+    diagnostic_message: Curvature above threshold indicates unstable structural movement.
+    conditions:
+      all:
+        - fact: curvature
+          op: gt
+          value: 1.20
+
+  - rule_id: RULE_004
+    name: low_coverage
+    description: Low coverage indicates insufficient structural spread.
+    enabled: true
+    priority: 70
+    severity: medium
+    diagnostic_code: LOW_COVERAGE
+    diagnostic_message: Coverage below threshold suggests insufficient structural spread.
+    conditions:
+      all:
+        - fact: coverage
+          op: lt
+          value: 0.60
+
+  - rule_id: RULE_005
+    name: volatile_movement
+    description: Low stability index indicates volatile structural movement.
+    enabled: true
+    priority: 60
+    severity: high
+    diagnostic_code: VOLATILE_MOVEMENT
+    diagnostic_message: Stability index below threshold indicates volatile structural movement.
+    conditions:
+      all:
+        - fact: stability_index
+          op: lt
+          value: 0.25
+
+  # CHI-016 — ported from diagnostic_rules monotony.unique_areas_max (Layer-9 SoT; not B6 runtime).
+  - rule_id: RULE_006
+    name: low_diversity
+    description: Few unique areas indicate structurally narrow activation diversity.
+    enabled: true
+    priority: 55
+    severity: medium
+    diagnostic_code: LOW_DIVERSITY
+    diagnostic_message: Unique active areas at or below monotony unique_areas_max suggests low diversity.
+    conditions:
+      all:
+        - fact: unique_areas
+          op: lte
+          value: 2

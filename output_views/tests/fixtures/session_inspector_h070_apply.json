@@ -1,0 +1,44 @@
+{
+  "schema_version": "session_inspector_v1",
+  "meta": {
+    "run_timestamp_utc": "2026-06-29T15:30:00Z",
+    "source_file": "h070_apply_fixture.json",
+    "source_label": "h070_apply_demo",
+    "modules_executed": ["tfp.v1", "h070.apply"],
+    "disclaimer_footer": "Pane 2 shows gate scores and diff only — no LLM justification."
+  },
+  "iterations": [
+    {
+      "iteration_id": "iter_h070_0",
+      "order": 0,
+      "parameters": {
+        "areas": {"AGGRESSION": 0.62},
+        "families": {"F_TFP": 0.41}
+      },
+      "sentences": [
+        {"id": "s0", "text": "Transference interpretation targets aggression toward self-regulation.", "order": 0}
+      ],
+      "audit": {"iteration": {}, "by_sentence": {}},
+      "h070_apply": {
+        "proposal_id": "prop-h070-demo-1",
+        "parent_sha": "abc123deadbeef",
+        "approval_id": "approval-demo-1",
+        "evidence_ids": ["chroma:doc:kernberg-01", "replay:tfp-03"],
+        "proposal": {
+          "id": "prop-h070-demo-1",
+          "action": "update_edge_weight",
+          "source": "AGGRESSION",
+          "target": "SELF_REGULATION",
+          "W_e_current": 0.0,
+          "W_e_proposed": 0.72
+        },
+        "parent_edges": {
+          "AGGRESSION->SELF_REGULATION": 0.0,
+          "A->B": 0.5
+        },
+        "baseline_incidents": 0,
+        "after_incidents": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Operator{% endblock %}
+{% block content %}
+<h1>Operator — output views</h1>
+<p class="lead">Site builder foundation for previews, reports, and client-facing HTML. JSON analysis API remains on FastAPI.</p>
+<dl class="meta">
+  <dt>Hesperia repo root</dt>
+  <dd><code>{{ hesperia_root }}</code></dd>
+</dl>
+<section class="cards">
+  <a class="card" href="{% url 'session_inspector' 'session_inspector_min' %}"><h2>Session Inspector</h2><p>Fixture-backed session + iteration panes (MVP).</p></a>
+  <a class="card" href="{% url 'client_preview' %}"><h2>Client preview</h2><p>Shell for branded / read-only deliverables.</p></a>
+  <a class="card" href="{% url 'artifact_sample' %}"><h2>E2E artifacts</h2><p>Sample listing under <code>assets/artifacts/e2e/</code>.</p></a>
+</section>
+{% endblock %}

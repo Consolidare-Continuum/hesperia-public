@@ -1,0 +1,3 @@
+8
+# TFP-REL-05 / TFP-TIGHT-05: reference wall-clock baseline (seconds) for run_tfp_phase_c_smoke.sh.
+# Fail if elapsed > baseline * HESPERIA_PHASE_C_LATENCY_RATIO_MAX (default 18).

@@ -1,0 +1,604 @@
+[
+  {
+    "entry_id": "STACK_SP_00001",
+    "match_type": "pattern",
+    "surface_form": "я репрезентации",
+    "normalized_form": "я репрезентации",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 69,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00002",
+    "match_type": "pattern",
+    "surface_form": "я репрезентаций",
+    "normalized_form": "я репрезентаций",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 69,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00003",
+    "match_type": "pattern",
+    "surface_form": "пустоты",
+    "normalized_form": "пустоты",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_IDENTITY_DIFFUSION"
+    ],
+    "priority": 67,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00004",
+    "match_type": "pattern",
+    "surface_form": "репрезентации я",
+    "normalized_form": "репрезентации я",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 63,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00005",
+    "match_type": "pattern",
+    "surface_form": "репрезентаций я",
+    "normalized_form": "репрезентаций я",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 62,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00006",
+    "match_type": "pattern",
+    "surface_form": "репрезентации я и",
+    "normalized_form": "репрезентации я и",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 60,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00007",
+    "match_type": "pattern",
+    "surface_form": "репрезентаций я и",
+    "normalized_form": "репрезентаций я и",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 57,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00008",
+    "match_type": "pattern",
+    "surface_form": "я репрезентацию",
+    "normalized_form": "я репрезентацию",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 49,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00009",
+    "match_type": "pattern",
+    "surface_form": "мне было",
+    "normalized_form": "мне было",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_DENIAL"
+    ],
+    "priority": 48,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00010",
+    "match_type": "pattern",
+    "surface_form": "пустота",
+    "normalized_form": "пустота",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_IDENTITY_DIFFUSION"
+    ],
+    "priority": 48,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00011",
+    "match_type": "pattern",
+    "surface_form": "пустоты и",
+    "normalized_form": "пустоты и",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_IDENTITY_DIFFUSION"
+    ],
+    "priority": 48,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00012",
+    "match_type": "pattern",
+    "surface_form": "репрезентациями я",
+    "normalized_form": "репрезентациями я",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 48,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00013",
+    "match_type": "pattern",
+    "surface_form": "репрезентациями я и",
+    "normalized_form": "репрезентациями я и",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 48,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00014",
+    "match_type": "pattern",
+    "surface_form": "я репрезентаций и",
+    "normalized_form": "я репрезентаций и",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 48,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00015",
+    "match_type": "pattern",
+    "surface_form": "я репрезентации и",
+    "normalized_form": "я репрезентации и",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 47,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00016",
+    "match_type": "pattern",
+    "surface_form": "я репрезентациями",
+    "normalized_form": "я репрезентациями",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 47,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00017",
+    "match_type": "pattern",
+    "surface_form": "плохих я",
+    "normalized_form": "плохих я",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_SPLITTING"
+    ],
+    "priority": 46,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00018",
+    "match_type": "pattern",
+    "surface_form": "я объект репрезентации",
+    "normalized_form": "я объект репрезентации",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 46,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00019",
+    "match_type": "pattern",
+    "surface_form": "идеального я",
+    "normalized_form": "идеального я",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION"
+    ],
+    "priority": 45,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00020",
+    "match_type": "pattern",
+    "surface_form": "репрезентацией я",
+    "normalized_form": "репрезентацией я",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 45,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00021",
+    "match_type": "pattern",
+    "surface_form": "репрезентацию я",
+    "normalized_form": "репрезентацию я",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 45,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00022",
+    "match_type": "pattern",
+    "surface_form": "я идеала",
+    "normalized_form": "я идеала",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION"
+    ],
+    "priority": 45,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00023",
+    "match_type": "pattern",
+    "surface_form": "я репрезентация",
+    "normalized_form": "я репрезентация",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 45,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00024",
+    "match_type": "pattern",
+    "surface_form": "между репрезентациями я",
+    "normalized_form": "между репрезентациями я",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 44,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00025",
+    "match_type": "pattern",
+    "surface_form": "плохих я и",
+    "normalized_form": "плохих я и",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_SPLITTING"
+    ],
+    "priority": 44,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00026",
+    "match_type": "pattern",
+    "surface_form": "плохого я",
+    "normalized_form": "плохого я",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_SPLITTING"
+    ],
+    "priority": 44,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00027",
+    "match_type": "pattern",
+    "surface_form": "хороших я",
+    "normalized_form": "хороших я",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_SPLITTING"
+    ],
+    "priority": 44,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00028",
+    "match_type": "pattern",
+    "surface_form": "хороших я и",
+    "normalized_form": "хороших я и",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_SPLITTING"
+    ],
+    "priority": 44,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00029",
+    "match_type": "pattern",
+    "surface_form": "чувство пустоты",
+    "normalized_form": "чувство пустоты",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_IDENTITY_DIFFUSION"
+    ],
+    "priority": 44,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00030",
+    "match_type": "pattern",
+    "surface_form": "внутренней пустоты",
+    "normalized_form": "внутренней пустоты",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_IDENTITY_DIFFUSION"
+    ],
+    "priority": 43,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00031",
+    "match_type": "pattern",
+    "surface_form": "и плохих я",
+    "normalized_form": "и плохих я",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_SPLITTING"
+    ],
+    "priority": 43,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00032",
+    "match_type": "pattern",
+    "surface_form": "ощущение пустоты",
+    "normalized_form": "ощущение пустоты",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_IDENTITY_DIFFUSION"
+    ],
+    "priority": 43,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00033",
+    "match_type": "pattern",
+    "surface_form": "полностью хороших я",
+    "normalized_form": "полностью хороших я",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_SPLITTING"
+    ],
+    "priority": 43,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00034",
+    "match_type": "pattern",
+    "surface_form": "пустоту",
+    "normalized_form": "пустоту",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_IDENTITY_DIFFUSION"
+    ],
+    "priority": 43,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00035",
+    "match_type": "pattern",
+    "surface_form": "репрезентация я",
+    "normalized_form": "репрезентация я",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 43,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00036",
+    "match_type": "pattern",
+    "surface_form": "что я плохо",
+    "normalized_form": "что я плохо",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_SPLITTING"
+    ],
+    "priority": 43,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00037",
+    "match_type": "pattern",
+    "surface_form": "я в отношениях",
+    "normalized_form": "я в отношениях",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 43,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00038",
+    "match_type": "pattern",
+    "surface_form": "я объект репрезентаций",
+    "normalized_form": "я объект репрезентаций",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 43,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00039",
+    "match_type": "pattern",
+    "surface_form": "я плохо",
+    "normalized_form": "я плохо",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_SPLITTING"
+    ],
+    "priority": 43,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00040",
+    "match_type": "pattern",
+    "surface_form": "я репрезентацией",
+    "normalized_form": "я репрезентацией",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 43,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00041",
+    "match_type": "pattern",
+    "surface_form": "я репрезентаций в",
+    "normalized_form": "я репрезентаций в",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 43,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00042",
+    "match_type": "pattern",
+    "surface_form": "агрессией я репрезентации",
+    "normalized_form": "агрессией я репрезентации",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 42,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00043",
+    "match_type": "pattern",
+    "surface_form": "влиянием я репрезентации",
+    "normalized_form": "влиянием я репрезентации",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 42,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00044",
+    "match_type": "pattern",
+    "surface_form": "внутренних репрезентаций я",
+    "normalized_form": "внутренних репрезентаций я",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 42,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00045",
+    "match_type": "pattern",
+    "surface_form": "дифференциация я репрезентаций",
+    "normalized_form": "дифференциация я репрезентаций",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "priority": 42,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00046",
+    "match_type": "pattern",
+    "surface_form": "и обесцененным я",
+    "normalized_form": "и обесцененным я",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "priority": 42,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00047",
+    "match_type": "pattern",
+    "surface_form": "и пустоты",
+    "normalized_form": "и пустоты",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_IDENTITY_DIFFUSION"
+    ],
+    "priority": 42,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00048",
+    "match_type": "pattern",
+    "surface_form": "идеализация своего я",
+    "normalized_form": "идеализация своего я",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "priority": 42,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00049",
+    "match_type": "pattern",
+    "surface_form": "идеального я и",
+    "normalized_form": "идеального я и",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION"
+    ],
+    "priority": 42,
+    "version": "v0.6.0_ru_tfp_stack"
+  },
+  {
+    "entry_id": "STACK_SP_00050",
+    "match_type": "pattern",
+    "surface_form": "идеальное я",
+    "normalized_form": "идеальное я",
+    "language": "ru",
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION"
+    ],
+    "priority": 42,
+    "version": "v0.6.0_ru_tfp_stack"
+  }
+]

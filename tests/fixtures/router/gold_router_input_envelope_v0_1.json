@@ -1,0 +1,111 @@
+{
+  "corpus_snapshot_id": "hesperia-corpus-0.6.5-gold-fixture",
+  "enabled_modules": [
+    "core",
+    "router"
+  ],
+  "engine_trace": {
+    "contract_version": "v1.0",
+    "contradiction_flags": [],
+    "dominant_area_id": "A1",
+    "dominant_concept_id": "synthetic_family_000",
+    "dominant_family_id": "family_000",
+    "governance": 0.00059,
+    "loopability": 1.2e-05,
+    "obstacle_score": 0.99941,
+    "overlay_hint_applied": false,
+    "temp_relation_overlay_applied": false,
+    "tension_energy": 3e-06,
+    "trace": [
+      {
+        "activation": 0.000535,
+        "area_id": "A1",
+        "concept_id": "synthetic_family_000",
+        "confidence": 0.000535,
+        "family_id": "family_000",
+        "label": "family_000"
+      },
+      {
+        "activation": 0.000535,
+        "area_id": "A1",
+        "concept_id": "synthetic_family_001",
+        "confidence": 0.000535,
+        "family_id": "family_001",
+        "label": "family_001"
+      },
+      {
+        "activation": 0.000535,
+        "area_id": "A1",
+        "concept_id": "synthetic_family_002",
+        "confidence": 0.000535,
+        "family_id": "family_002",
+        "label": "family_002"
+      },
+      {
+        "activation": 0.000535,
+        "area_id": "A1",
+        "concept_id": "synthetic_family_003",
+        "confidence": 0.000535,
+        "family_id": "family_003",
+        "label": "family_003"
+      },
+      {
+        "activation": 0.000535,
+        "area_id": "A1",
+        "concept_id": "synthetic_family_004",
+        "confidence": 0.000535,
+        "family_id": "family_004",
+        "label": "family_004"
+      },
+      {
+        "activation": 0.000535,
+        "area_id": "A1",
+        "concept_id": "synthetic_family_005",
+        "confidence": 0.000535,
+        "family_id": "family_005",
+        "label": "family_005"
+      },
+      {
+        "activation": 0.000535,
+        "area_id": "A1",
+        "concept_id": "synthetic_family_006",
+        "confidence": 0.000535,
+        "family_id": "family_006",
+        "label": "family_006"
+      },
+      {
+        "activation": 0.000535,
+        "area_id": "A1",
+        "concept_id": "synthetic_family_007",
+        "confidence": 0.000535,
+        "family_id": "family_007",
+        "label": "family_007"
+      }
+    ],
+    "trace_content_hash": "e8bd40531ea6d913484843291a6479367d76acea005a2541f4926417fe7bb0ca",
+    "weak_signals": []
+  },
+  "input_hash": "e2f3171503e2a41efe434f5b4eabbce537e636a00f10123d8d50e4005960d890",
+  "input_text": "TFP gold fixture: reflective mood sleep anxiety narrative for router envelope baseline.",
+  "logic_mapping": {
+    "dominant_area_id": "A1",
+    "dominant_concept_id": "synthetic_family_000",
+    "dominant_family_id": "family_000",
+    "source": "engine_analyze",
+    "trace_content_hash": "e8bd40531ea6d913484843291a6479367d76acea005a2541f4926417fe7bb0ca"
+  },
+  "policy_block": {
+    "governance": 0.00059,
+    "loopability": 1.2e-05,
+    "obstacle_score": 0.99941,
+    "risk_level": "high",
+    "source": "engine_analyze",
+    "tension_energy": 3e-06
+  },
+  "policy_snapshot_id": "HSR-V7-01",
+  "relation_context": {},
+  "retrieval_context": {},
+  "router_fingerprint": "38db886fb70829d8b911ab96b522e2f22b4d3b273ae73c9ab2614a9de298c952",
+  "router_version": "v7-router-0.1",
+  "schema": "hesperia.router_input_envelope.v0_1"
+}

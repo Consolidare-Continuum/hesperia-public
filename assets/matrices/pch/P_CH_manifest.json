@@ -1,0 +1,11 @@
+{
+  "version": "v1",
+  "n_concepts": 288,
+  "n_hex": 72000,
+  "n_hex_per_family": 250,
+  "decay": 0.12,
+  "nnz": 72000,
+  "sparsity": 0.00347222,
+  "normalization": "column_l1",
+  "file": "P_CH_v1.npz"
+}

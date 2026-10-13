@@ -1,0 +1,49 @@
+{
+  "_comment": "IRC ENGINE_ENVELOPE trace payload — operator full view. Demo IDs only.",
+  "schema": "hesperia.engine_run_envelope.v063",
+  "lang": "ru",
+  "correlation_id": "cid-demo-063-001",
+  "run_id": "550e8400-e29b-41d4-a716-446655440000",
+  "input": {
+    "text_ru": "Агрессия в семейной системе снижает способность к саморегуляции.",
+    "kind": "tfp_scientific_statement"
+  },
+  "engine": {
+    "hesperia_ref": "16286fa",
+    "tersagor_ref": "0149120",
+    "propagation_trace": [
+      {"hop": 0, "concept": "AGGRESSION", "area_id": "A09", "activation": 0.72},
+      {"hop": 1, "concept": "SELF_REGULATION", "area_id": "A04", "activation": 0.31}
+    ],
+    "areas": {"A09": 0.41, "A04": 0.22},
+    "families": {"F228": 0.38, "F105": 0.19},
+    "corpus_activations": [
+      {"concept_id": "AGGRESSION", "observed": 0.72, "expected": 0.85},
+      {"concept_id": "SHAME", "observed": 0.28, "expected": 0.55}
+    ],
+    "roads": [
+      {"hop": 0, "concept": "AGGRESSION"},
+      {"gtp_path_ids": ["hex-path-demo-1", "hex-path-demo-2"]}
+    ],
+    "interior_pov": {"step": 1, "surface": "family_boundary"},
+    "gtp_coherence": {"path_ids": ["hex-path-demo-1"], "psi": 0.67}
+  },
+  "ksi": {
+    "version": "0.1",
+    "incidents": [
+      {"type": "residual_high", "concept_id": "SHAME", "residual": -0.27}
+    ],
+    "missing_bridges": [
+      {"source": "AGGRESSION", "target": "SELF_REGULATION", "need_score": 0.81}
+    ],
+    "phi_trace": {
+      "AGGRESSION->SELF_REGULATION": {"W_e": 0.12, "R_e": 0.4, "phi_sat": 0.05}
+    }
+  },
+  "parameters": {
+    "W_e": [
+      {"edge": "AGGRESSION->SELF_REGULATION", "W_e": 0.12, "R_e": 0.4}
+    ],
+    "ksi_config_ref": "assets/data/ksi/ksi_config_v01.json"
+  }
+}

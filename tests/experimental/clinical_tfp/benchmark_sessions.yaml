@@ -1,0 +1,38 @@
+# HESPERIA — Benchmark sessions for regression / model validation
+# Fixed test sessions with known expected clinical interpretations.
+# Copyright © 2026 igareosh.com.
+
+sessions:
+  - session_id: bench_001
+    description: "Short aggression + persecutory"
+    text: |
+      Patient: Вы меня ненавидите.
+      Therapist: Что вы чувствуете?
+      Patient: Меня бесит это.
+    expected:
+      dominant_area: A4
+      defense_pattern: splitting
+      object_relation_pattern: persecutory_object
+      aggression_level: moderate
+      dlcr:
+        min_lexical_hits_accepted: 0
+        min_span_count: 0
+
+  - session_id: bench_002
+    description: "Neutral clarification"
+    text: |
+      Patient: Я думаю о прошлой неделе.
+      Therapist: Расскажите подробнее.
+      Patient: Было трудно.
+    expected:
+      aggression_level: low
+
+  - session_id: bench_003
+    description: "Object relations + defense"
+    text: |
+      Patient: Вы хороший, но они ужасные.
+      Therapist: Заметил противоречие.
+      Patient: Да, я так чувствую.
+    expected:
+      defense_pattern: splitting
+      object_relation_pattern: part_object

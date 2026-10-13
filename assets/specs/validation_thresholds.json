@@ -1,0 +1,21 @@
+{
+  "version": "1",
+  "description": "Thresholds for tests/physics_validation harness.",
+  "stability": {
+    "max_steps_family_field": 120,
+    "require_energy_non_increasing_strict": true
+  },
+  "sensitivity": {
+    "min_relative_change_outputs": 0.001,
+    "perturbation_scale": 0.05
+  },
+  "contradiction": {
+    "min_contradiction_pressure_conflict_fixture": 0.0001
+  },
+  "propagation": {
+    "min_hex_entropy_spread_fixture": 0.01
+  },
+  "reproducibility": {
+    "max_abs_diff_linf": 0.0
+  }
+}

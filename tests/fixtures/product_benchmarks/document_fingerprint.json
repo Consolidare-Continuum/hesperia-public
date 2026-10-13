@@ -1,0 +1,4 @@
+[
+  {"text": "Structured document with clear thread and linked sections.", "expected_pattern": "coherent"},
+  {"text": "Chaotic excerpt with abrupt jumps and unresolved fragments.", "expected_pattern": "fragmented"}
+]

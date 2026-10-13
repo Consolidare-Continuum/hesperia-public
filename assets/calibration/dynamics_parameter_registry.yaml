@@ -1,0 +1,191 @@
+# HESPERIA field dynamics — Class B registry (Phase 1 + Phase 2).
+# Spec: specs/dynamics/HESPERIA_DYNAMICS_CALIBRATION_SPEC_v0_1.md
+
+version: "0.5"
+modules:
+  phase1: hesperia.extensions.dynamics.state.Phase1Theta
+  phase2: hesperia.extensions.dynamics.state.Phase2Theta
+  phase3: hesperia.extensions.dynamics.state.Phase3Theta
+  phase4: hesperia.extensions.dynamics.state.Phase4Theta
+
+parameters:
+  lambda_a:
+    symbol: "λ_a"
+    meaning: "Area state decay (compact H6)"
+    range: [0.05, 0.6]
+    default: 0.35
+    code_field: lambda_a
+  gamma_f:
+    symbol: "γ_f"
+    meaning: "Injection gain from pipeline snapshot"
+    range: [0.1, 0.7]
+    default: 0.4
+    code_field: gamma_f
+  gamma_q:
+    symbol: "γ_q"
+    meaning: "Icosahedral neighbor diffusion gain"
+    range: [0.0, 0.4]
+    default: 0.15
+    code_field: gamma_q
+  gamma_p:
+    symbol: "γ_p"
+    meaning: "Area contradiction pressure penalty"
+    range: [0.0, 0.25]
+    default: 0.08
+    code_field: gamma_p
+  mu_a:
+    symbol: "μ_a"
+    meaning: "Area contradiction decay (H7)"
+    range: [0.1, 0.7]
+    default: 0.4
+    code_field: mu_a
+  delta_a:
+    symbol: "δ_a"
+    meaning: "Contradiction signal gain (TRIZ-driven)"
+    range: [0.05, 0.35]
+    default: 0.12
+    code_field: delta_a
+  rho_a:
+    symbol: "ρ_a"
+    meaning: "Resolution / bleed (Phase 1 stub)"
+    range: [0.0, 0.1]
+    default: 0.02
+    code_field: rho_a
+  lambda_c:
+    symbol: "λ_c"
+    meaning: "Concept mass decay (L2 stub)"
+    range: [0.1, 0.5]
+    default: 0.3
+    code_field: lambda_c
+  alpha_in:
+    symbol: "α_in"
+    meaning: "Concept mass injection gain"
+    range: [0.1, 0.5]
+    default: 0.25
+    code_field: alpha_in
+
+  # --- Phase 2 (L5) hesperia.extensions.dynamics.phase2.Phase2Theta ---
+  lambda_f:
+    symbol: "λ_f"
+    meaning: "Family field decay (H4)"
+    range: [0.15, 0.55]
+    default: 0.35
+    code_field: lambda_f
+  beta_x:
+    symbol: "β_x"
+    meaning: "Family hit injection (ĤX_f)"
+    range: [0.2, 0.6]
+    default: 0.42
+    code_field: beta_x
+  beta_intra:
+    symbol: "β_intra"
+    meaning: "Intra-area family mean reversion"
+    range: [0.0, 0.2]
+    default: 0.08
+    code_field: beta_intra
+  beta_area:
+    symbol: "β_area"
+    meaning: "Area feedback into families"
+    range: [0.0, 0.25]
+    default: 0.1
+    code_field: beta_area
+  beta_pf:
+    symbol: "β_pf"
+    meaning: "Family contradiction penalty on f_f"
+    range: [0.0, 0.12]
+    default: 0.06
+    code_field: beta_pf
+  mu_f:
+    symbol: "μ_f"
+    meaning: "Family contradiction decay (H5)"
+    range: [0.2, 0.6]
+    default: 0.4
+    code_field: mu_f
+  delta_f:
+    symbol: "δ_f"
+    meaning: "Area TRIZ signal → family pressure"
+    range: [0.05, 0.2]
+    default: 0.1
+    code_field: delta_f
+  rho_f:
+    symbol: "ρ_f"
+    meaning: "Family resolution bleed"
+    range: [0.0, 0.01]
+    default: 0.002
+    code_field: rho_f
+  area_hit_weight:
+    symbol: "w_hit"
+    meaning: "L6 blend: hit-area vs ĤF_a aggregate"
+    range: [0.2, 0.85]
+    default: 0.52
+    code_field: area_hit_weight
+
+  hex_cap:
+    meaning: "Max active family-proxy hex cells (env override HESPERIA_FIELD_DYNAMICS_HEX_CAP)"
+    range: [8, 288]
+    default: 128
+    code_field: hex_cap
+  lambda_h:
+    symbol: "λ_h"
+    meaning: "Hex field decay (H2 proxy)"
+    range: [0.15, 0.55]
+    default: 0.32
+    code_field: lambda_h
+  theta_c:
+    meaning: "Hex injection gain"
+    range: [0.2, 0.65]
+    default: 0.45
+    code_field: theta_c
+  theta_d:
+    meaning: "Hex neighbor diffusion"
+    range: [0.05, 0.35]
+    default: 0.18
+    code_field: theta_d
+  theta_p:
+    meaning: "Hex pressure penalty on x"
+    range: [0.0, 0.15]
+    default: 0.06
+    code_field: theta_p
+  mu_h:
+    meaning: "Hex contradiction decay"
+    range: [0.2, 0.55]
+    default: 0.38
+    code_field: mu_h
+  delta_h:
+    meaning: "Area TRIZ → hex pressure"
+    range: [0.03, 0.15]
+    default: 0.08
+    code_field: delta_h
+  rho_h:
+    meaning: "Hex resolution bleed"
+    range: [0.0, 0.005]
+    default: 0.001
+    code_field: rho_h
+  hex_hit_blend:
+    meaning: "Blend weight: hit vs hex field for downstream L5/L6 injection"
+    range: [0.2, 0.8]
+    default: 0.48
+    code_field: hex_hit_blend
+
+  gravity_epsilon:
+    meaning: "L8 cluster gravity → L6/L5 injection mix (Ethan §H8 proxy)"
+    range: [0.0, 0.2]
+    default: 0.055
+    code_field: gravity_epsilon
+  tau_front:
+    meaning: "|Δx| threshold for narrative front edge (H7-style)"
+    range: [0.03, 0.2]
+    default: 0.085
+    code_field: tau_front
+  ephemeral_cap:
+    meaning: "Top families for L8 when PHASE3 off"
+    range: [16, 288]
+    default: 96
+    code_field: ephemeral_cap
+
+  xi_scale:
+    symbol: "ξ_s"
+    meaning: "Ξ proxy boost scale (TRIZ rows → contradiction_signal_12); env HESPERIA_FIELD_DYNAMICS_XI_SCALE"
+    range: [0.0, 0.5]
+    default: 0.14
+    code_field: xi_scale

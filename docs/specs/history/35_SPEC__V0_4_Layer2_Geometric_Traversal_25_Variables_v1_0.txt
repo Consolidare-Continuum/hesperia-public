@@ -1,0 +1,302 @@
+35_SPEC__V0_4_Layer2_Geometric_Traversal_25_Variables_v1_0
+
+Project: HESPERIA
+Target: v0.4.x baseline math core (traversal instrumentation layer)
+Date: 2026-02-24
+Status: Canonical
+
+References: 34_SPEC (Layer-1), 22_SPEC (topology), 00_GOVERNANCE_CHARTER__HESPERIA_v1_0. Next: 36_SPEC (Layer-3 shadow divergence).
+
+----------------------------------------------------------------------
+0. LAYER-2 CONTRACT (INVARIANT)
+----------------------------------------------------------------------
+
+Layer-2 MUST NOT reinterpret meaning. It MUST measure movement inside geometry only.
+
+  - No semantics
+  - No books
+  - No shadow deviation
+  - Only traversal math on frozen topology
+
+All variables are deterministic and topology-bound. Layer-2 observes how signal propagates over the family graph; it does not assign meaning to families or areas.
+
+----------------------------------------------------------------------
+1. PREREQUISITES (INPUTS)
+----------------------------------------------------------------------
+
+  F, A, FAMILIES_PER_AREA  = as in Layer-1 (34_SPEC).
+  DOMINANT_FAMILY_ID        = from Layer-1 (anchor node for propagation).
+  DOMINANT_AREA_ID          = from Layer-1.
+  hits[f]                   = token count mapped to family f (for "active" and mass).
+
+  Pre-frozen family adjacency graph:
+    adjacency[f]            = set or list of neighbor family IDs for family f (undirected or directed; spec assumes symmetric for traversal).
+  Pre-frozen area structure:
+    area[f]                 = area ID for family f (0..A-1); DOMINANT_AREA_ID = area[DOMINANT_FAMILY_ID].
+  Traversal depth limit:
+    MAX_ALLOWED_DEPTH (D)   = maximum BFS depth (e.g. 5 or 8).
+
+  Traversal algorithm: BFS from TRAVERSAL_START_FAMILY up to depth D. A family is "visited" if reached in this BFS. Distance from start = BFS depth (0 = start). "Active" neighbor = neighbor n with hits[n] > 0.
+
+  Mass at depth: mass_at_depth[d] = sum(hits[f] for f at BFS depth d). initialMass = hits[start]. totalMassVisited = sum(hits[f] for f in visited).
+
+----------------------------------------------------------------------
+2. LAYER-2 GEOMETRIC TRAVERSAL METRICS (25)
+----------------------------------------------------------------------
+
+ 1. TRAVERSAL_START_FAMILY
+    int TRAVERSAL_START_FAMILY = DOMINANT_FAMILY_ID;
+    Anchor node for propagation.
+
+ 2. BASE_NEIGHBOR_COUNT
+    int BASE_NEIGHBOR_COUNT = adjacency[TRAVERSAL_START_FAMILY].size();
+    Direct geometric neighbors of the start node.
+
+ 3. ACTIVE_NEIGHBOR_COUNT
+    int ACTIVE_NEIGHBOR_COUNT = count(n in adjacency[start] where hits[n] > 0);
+    Signal resonance in immediate neighborhood (neighbors with nonzero attribution).
+
+ 4. NEIGHBOR_ACTIVATION_RATIO
+    double NEIGHBOR_ACTIVATION_RATIO = (double) ACTIVE_NEIGHBOR_COUNT / (BASE_NEIGHBOR_COUNT + eps);
+    Local propagation strength. eps = 1e-9.
+
+ 5. TRAVERSAL_DEPTH_REACHED
+    int TRAVERSAL_DEPTH_REACHED = max depth d such that mass_at_depth[d] > 0;
+    How far signal actually spread (by mass). If only start has mass, depth = 0.
+
+ 6. TOTAL_REACHABLE_NODES
+    int TOTAL_REACHABLE_NODES = count(unique families visited during BFS within D);
+    Geometric footprint size.
+
+ 7. REACH_RATIO
+    double REACH_RATIO = (double) TOTAL_REACHABLE_NODES / F;
+    Sphere coverage via traversal.
+
+ 8. MEAN_TRAVERSAL_DISTANCE
+    double MEAN_TRAVERSAL_DISTANCE = average(shortestPath(start, v) for v in visited);
+    Average graph distance of activated nodes from start. Exclude start or include as 0 per policy; this spec: include start so mean over all visited.
+
+ 9. MAX_TRAVERSAL_DISTANCE
+    int MAX_TRAVERSAL_DISTANCE = max(shortestPath(start, v) for v in visited);
+    Maximum propagation radius (same as TRAVERSAL_DEPTH_REACHED when BFS is unweighted).
+
+10. TRAVERSAL_RADIUS_RATIO
+    double TRAVERSAL_RADIUS_RATIO = (double) MAX_TRAVERSAL_DISTANCE / (MAX_ALLOWED_DEPTH + eps);
+    Normalized geometric reach.
+
+11. PATH_COUNT
+    int PATH_COUNT = number of distinct shortest paths from start to all visited nodes (sum over v of distinct shortest-path count from start to v, or count of BFS-tree edges if tree is unique);
+    Structural route diversity. When shortest paths are unique, PATH_COUNT = TOTAL_REACHABLE_NODES - 1 (tree edges). Otherwise define as count of edges in the union of all shortest-path trees.
+
+12. BRANCHING_FACTOR_MEAN
+    double BRANCHING_FACTOR_MEAN = average(adjacency[v].size() for v in visited);
+    Graph expansion characteristic over the visited set.
+
+13. LOCAL_CLUSTERING_COEFFICIENT
+    double LOCAL_CLUSTERING_COEFFICIENT = computeClustering(start);
+    Density of local graph triangle structure at start. Formula: (2 * triangles(start)) / (deg(start)*(deg(start)-1)); 0 if deg < 2.
+
+14. PROPAGATION_MASS_DECAY
+    double PROPAGATION_MASS_DECAY = mass_at_depth[TRAVERSAL_DEPTH_REACHED] / (mass_at_depth[TRAVERSAL_DEPTH_REACHED - 1] + eps);
+    Decay at deepest level. When TRAVERSAL_DEPTH_REACHED < 1, define as 1.0 (no decay) or N/A; this spec uses 1.0.
+
+15. MASS_RETENTION_RATIO
+    double MASS_RETENTION_RATIO = totalMassVisited / (initialMass + eps);
+    How much activation persists through traversal (visited mass vs seed mass).
+
+16. CROSS_AREA_TRAVERSAL_COUNT
+    int CROSS_AREA_TRAVERSAL_COUNT = count(v in visited where area[v] != DOMINANT_AREA_ID);
+    Cross-area leakage (visited families outside dominant area).
+
+17. CROSS_AREA_RATIO
+    double CROSS_AREA_RATIO = (double) CROSS_AREA_TRAVERSAL_COUNT / (TOTAL_REACHABLE_NODES + eps);
+    Geometric containment measure.
+
+18. AREA_BOUNDARY_CROSSINGS
+    int AREA_BOUNDARY_CROSSINGS = number of edges (u,v) in the BFS tree (or traversed edge set) such that area[u] != area[v];
+    Structural border interaction count.
+
+19. TRAVERSAL_COMPACTNESS
+    double TRAVERSAL_COMPACTNESS = (double) TOTAL_REACHABLE_NODES / (MAX_TRAVERSAL_DISTANCE + 1);
+    Density of visited region relative to radius.
+
+20. LOOP_COUNT
+    int LOOP_COUNT = count(cycles in traversal subgraph);
+    Presence of geometric feedback loops. Defined as: edges in induced subgraph on visited nodes minus (TOTAL_REACHABLE_NODES - 1). Minimum 0. (Each cycle adds one extra edge.)
+
+21. LOOP_DENSITY
+    double LOOP_DENSITY = (double) LOOP_COUNT / (TOTAL_REACHABLE_NODES + eps);
+    Cycle saturation of region.
+
+22. CENTRALITY_SHIFT
+    double CENTRALITY_SHIFT = abs(centrality(start) - meanCentrality(visited));
+    Deviation of start from structural center of visited set. Use degree centrality: centrality(v) = deg(v) / (F - 1) or deg(v) / max_deg for determinism.
+
+23. EDGE_UTILIZATION_RATIO
+    double EDGE_UTILIZATION_RATIO = usedEdges / (totalEdgesInInducedSubgraph + eps);
+    usedEdges = edges actually traversed (BFS tree edge count = TOTAL_REACHABLE_NODES - 1 when connected). totalEdgesInInducedSubgraph = number of edges in the induced subgraph on visited nodes (each edge between two visited nodes counted once).
+
+24. TRAVERSAL_SYMMETRY_INDEX
+    double TRAVERSAL_SYMMETRY_INDEX = variance(distance from start over visited nodes);
+    Directional bias of propagation; high variance = uneven spread.
+
+25. GEOMETRIC_STABILITY_INDEX
+    double GEOMETRIC_STABILITY_INDEX = MASS_RETENTION_RATIO * (1.0 - CROSS_AREA_RATIO) * (1.0 - LOOP_DENSITY);
+    Composite deterministic geometric stability. Clamp factors to [0,1] if needed.
+
+----------------------------------------------------------------------
+3. WHAT LAYER-2 GIVES
+----------------------------------------------------------------------
+
+  Layer-1 measured distribution shape.
+  Layer-2 measures movement inside topology.
+
+  You now know: Does signal stay local? Explode across sphere? Leak areas?
+  Loop? Decay? Compact or diffused?
+
+  Still no interpretation. Still no shadow. Still no books.
+  This is geometry reacting to math.
+
+----------------------------------------------------------------------
+4. AUXILIARY (DETERMINISTIC)
+----------------------------------------------------------------------
+
+  computeClustering(v): Let N = adjacency[v]. Count pairs (a,b) in N such that b in adjacency[a]. Triangles = that count / 2. deg = |N|. Return (deg < 2) ? 0.0 : (2.0 * triangles) / (deg * (deg - 1)).
+
+  degreeCentrality(v): deg(v) / (F - 1) or deg(v) for relative comparison. This spec: centrality(v) = adjacency[v].size() (raw degree); meanCentrality(visited) = sum(centrality(v))/|visited|.
+
+  shortestPath(start, v): BFS depth of v when starting from start (already computed during traversal).
+
+  Induced subgraph edges: For each unordered pair (u,v) in visited, if v in adjacency[u], count 1. totalEdgesInInducedSubgraph = that count (each edge once).
+
+----------------------------------------------------------------------
+5. RELATION TO LAYER-1 AND CORE MATH
+----------------------------------------------------------------------
+
+  Layer-2 consumes Layer-1 outputs (DOMINANT_FAMILY_ID, DOMINANT_AREA_ID) and the same hits[] used for attribution. It consumes frozen topology (adjacency, area). It does not replace resolution or Layer-1; it adds geometric traversal metrics. Runtime resolution remains in 22_SPEC.
+
+----------------------------------------------------------------------
+6. JAVA-STYLE PSEUDOCODE (LAYER-2)
+----------------------------------------------------------------------
+
+// HESPERIA v0.4.x Layer-2 — Geometric Traversal Metrics (25 variables)
+// Deterministic, topology-bound. No semantics, no books, no shadow.
+
+final double eps = 1e-9;
+int start = DOMINANT_FAMILY_ID;
+
+// BFS up to MAX_ALLOWED_DEPTH (store parent for boundary crossings)
+int[] depth = new int[F];
+int[] parent = new int[F];
+Arrays.fill(depth, -1);
+Arrays.fill(parent, -1);
+depth[start] = 0;
+Queue<Integer> q = new ArrayDeque<>();
+q.add(start);
+List<Integer> visited = new ArrayList<>();
+visited.add(start);
+double[] massAtDepth = new double[MAX_ALLOWED_DEPTH + 1];
+massAtDepth[0] = hits[start];
+
+while (!q.isEmpty()) {
+    int u = q.poll();
+    int d = depth[u];
+    if (d >= MAX_ALLOWED_DEPTH) continue;
+    for (int v : adjacency[u]) {
+        if (depth[v] == -1) {
+            depth[v] = d + 1;
+            parent[v] = u;
+            q.add(v);
+            visited.add(v);
+            massAtDepth[depth[v]] += hits[v];
+        }
+    }
+}
+
+int TRAVERSAL_START_FAMILY = start;
+int BASE_NEIGHBOR_COUNT = adjacency[start].size();
+int ACTIVE_NEIGHBOR_COUNT = 0;
+for (int n : adjacency[start]) if (hits[n] > 0) ACTIVE_NEIGHBOR_COUNT++;
+double NEIGHBOR_ACTIVATION_RATIO = (double) ACTIVE_NEIGHBOR_COUNT / (BASE_NEIGHBOR_COUNT + eps);
+
+int TRAVERSAL_DEPTH_REACHED = 0;
+for (int d = 0; d <= MAX_ALLOWED_DEPTH; d++)
+    if (massAtDepth[d] > 0) TRAVERSAL_DEPTH_REACHED = d;
+
+int TOTAL_REACHABLE_NODES = visited.size();
+double REACH_RATIO = (double) TOTAL_REACHABLE_NODES / F;
+
+double distSum = 0.0;
+int MAX_TRAVERSAL_DISTANCE = 0;
+for (int v : visited) {
+    int dist = depth[v];
+    distSum += dist;
+    if (dist > MAX_TRAVERSAL_DISTANCE) MAX_TRAVERSAL_DISTANCE = dist;
+}
+double MEAN_TRAVERSAL_DISTANCE = distSum / (TOTAL_REACHABLE_NODES + eps);
+double TRAVERSAL_RADIUS_RATIO = (double) MAX_TRAVERSAL_DISTANCE / (MAX_ALLOWED_DEPTH + eps);
+
+int PATH_COUNT = TOTAL_REACHABLE_NODES - 1;  // BFS tree edges when connected
+
+int branchSum = 0;
+for (int v : visited) branchSum += adjacency[v].size();
+double BRANCHING_FACTOR_MEAN = (double) branchSum / (TOTAL_REACHABLE_NODES + eps);
+
+double LOCAL_CLUSTERING_COEFFICIENT = computeClustering(adjacency, start, F);
+
+double PROPAGATION_MASS_DECAY = (TRAVERSAL_DEPTH_REACHED >= 1)
+    ? massAtDepth[TRAVERSAL_DEPTH_REACHED] / (massAtDepth[TRAVERSAL_DEPTH_REACHED - 1] + eps) : 1.0;
+
+double initialMass = hits[start];
+double totalMassVisited = 0.0;
+for (int v : visited) totalMassVisited += hits[v];
+double MASS_RETENTION_RATIO = totalMassVisited / (initialMass + eps);
+
+int CROSS_AREA_TRAVERSAL_COUNT = 0;
+for (int v : visited) if (area[v] != DOMINANT_AREA_ID) CROSS_AREA_TRAVERSAL_COUNT++;
+double CROSS_AREA_RATIO = (double) CROSS_AREA_TRAVERSAL_COUNT / (TOTAL_REACHABLE_NODES + eps);
+
+int AREA_BOUNDARY_CROSSINGS = 0;
+for (int v : visited)
+    if (parent[v] >= 0 && area[parent[v]] != area[v]) AREA_BOUNDARY_CROSSINGS++;
+
+double TRAVERSAL_COMPACTNESS = (double) TOTAL_REACHABLE_NODES / (MAX_TRAVERSAL_DISTANCE + 1);
+
+Set<Long> inducedEdges = new HashSet<>();
+for (int v : visited)
+    for (int u : adjacency[v])
+        if (visited.contains(u) && v < u) inducedEdges.add((long) v * F + u);
+int totalEdgesInInducedSubgraph = inducedEdges.size();
+int usedEdges = TOTAL_REACHABLE_NODES - 1;
+int LOOP_COUNT = Math.max(0, totalEdgesInInducedSubgraph - usedEdges);
+double LOOP_DENSITY = (double) LOOP_COUNT / (TOTAL_REACHABLE_NODES + eps);
+
+double centralityStart = adjacency[start].size();
+double centralitySum = 0.0;
+for (int v : visited) centralitySum += adjacency[v].size();
+double meanCentrality = centralitySum / (TOTAL_REACHABLE_NODES + eps);
+double CENTRALITY_SHIFT = Math.abs(centralityStart - meanCentrality);
+
+double EDGE_UTILIZATION_RATIO = (double) usedEdges / (totalEdgesInInducedSubgraph + eps);
+
+double distVarSum = 0.0;
+for (int v : visited) distVarSum += (depth[v] - MEAN_TRAVERSAL_DISTANCE) * (depth[v] - MEAN_TRAVERSAL_DISTANCE);
+double TRAVERSAL_SYMMETRY_INDEX = distVarSum / (TOTAL_REACHABLE_NODES + eps);
+
+double GEOMETRIC_STABILITY_INDEX = MASS_RETENTION_RATIO
+    * Math.max(0, 1.0 - CROSS_AREA_RATIO)
+    * Math.max(0, 1.0 - LOOP_DENSITY);
+
+static double computeClustering(Set<Integer>[] adjacency, int v, int F) {
+    Set<Integer> N = adjacency[v];
+    int deg = N.size();
+    if (deg < 2) return 0.0;
+    int triangles = 0;
+    for (int a : N)
+        for (int b : N)
+            if (a < b && adjacency[a].contains(b)) triangles++;
+    return (2.0 * triangles) / (deg * (deg - 1));
+}
+
+----------------------------------------------------------------------
+END 35_SPEC

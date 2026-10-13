@@ -1,0 +1,124 @@
+{
+  "schema_version": "session_inspector_v1",
+  "meta": {
+    "run_timestamp_utc": "2026-04-07T12:00:00Z",
+    "source_file": "live-tfp-analyze.json",
+    "source_label": "live-tfp-analyze",
+    "modules_executed": [
+      "tfp.v1"
+    ],
+    "module_versions": {
+      "tfp.v1": "0.5.6"
+    },
+    "calibration_dict_pack": null,
+    "analyze_profile": {
+      "area_math": 12,
+      "pack_areas": 12,
+      "dict_mode": "tfp_v1",
+      "structure_map": "assets/specs/canon/area_structure_tfp.yaml"
+    },
+    "session_id": "live-tfp-analyze"
+  },
+  "iterations": [
+    {
+      "iteration_id": "iter_0",
+      "order": 0,
+      "t_start_ms": 0,
+      "t_end_ms": 5000,
+      "wall_clock_iso": "2026-04-07T12:00:01Z",
+      "parameters": {
+        "areas": {
+          "A1": 0.7
+        },
+        "families": {
+          "F01": 0.3
+        },
+        "modules": {
+          "tfp.v1": {
+            "tfp_profile": {
+              "dominant": "test",
+              "confidence": 0.5
+            }
+          },
+          "tfp": {
+            "v1": {
+              "analyze_extended": {
+                "grain": 12,
+                "pack": 12,
+                "dict_mode": "tfp_v1",
+                "structure": "assets/specs/canon/area_structure_tfp.yaml"
+              }
+            }
+          }
+        },
+        "tfp_profile": {
+          "grain": 12,
+          "pack": 12,
+          "dict_mode": "tfp_v1",
+          "structure": "assets/specs/canon/area_structure_tfp.yaml"
+        }
+      },
+      "sentences": [
+        {
+          "id": "s0",
+          "text": "I feel stuck when the topic shifts.",
+          "order": 0
+        }
+      ],
+      "audit": {
+        "iteration": {},
+        "by_sentence": {}
+      }
+    },
+    {
+      "iteration_id": "iter_1",
+      "order": 1,
+      "t_start_ms": 5000,
+      "t_end_ms": 9000,
+      "wall_clock_iso": "2026-04-07T12:00:02Z",
+      "parameters": {
+        "areas": {
+          "A2": 0.4
+        },
+        "families": {
+          "F02": 0.6
+        },
+        "modules": {
+          "tfp.v1": {
+            "tfp_profile": {
+              "dominant": "other",
+              "confidence": 0.4
+            }
+          },
+          "tfp": {
+            "v1": {
+              "analyze_extended": {
+                "grain": 12,
+                "pack": 12,
+                "dict_mode": "tfp_v1",
+                "structure": "assets/specs/canon/area_structure_tfp.yaml"
+              }
+            }
+          }
+        },
+        "tfp_profile": {
+          "grain": 12,
+          "pack": 12,
+          "dict_mode": "tfp_v1",
+          "structure": "assets/specs/canon/area_structure_tfp.yaml"
+        }
+      },
+      "sentences": [
+        {
+          "id": "s1",
+          "text": "A second analytic turn for the mock session.",
+          "order": 0
+        }
+      ],
+      "audit": {
+        "iteration": {},
+        "by_sentence": {}
+      }
+    }
+  ]
+}

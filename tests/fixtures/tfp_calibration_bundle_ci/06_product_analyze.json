@@ -1,0 +1,20 @@
+{
+  "run": "tfp_calibration_bundle_ci_fixture",
+  "sessions": [
+    {
+      "session_id": "1-11-09-2023",
+      "extended": {
+        "attribution_coverage": 0.995
+      }
+    }
+  ],
+  "operational_envelope": {
+    "status": "ok",
+    "anomaly_codes": [],
+    "severity": "ok",
+    "blocking": false,
+    "operator_message": "",
+    "recommended_next_check": "",
+    "taxonomy_version": "1.0.0"
+  }
+}

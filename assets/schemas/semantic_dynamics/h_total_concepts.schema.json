@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hesperia.local/schemas/semantic_dynamics/h_total_concepts.schema.json",
+  "title": "H_total concept operator (sparse)",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "version",
+    "matrix_id",
+    "space",
+    "concept_index",
+    "diagonal",
+    "edges",
+    "build_rules",
+    "provenance"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "matrix_id": { "type": "string" },
+    "space": { "const": "concept_id" },
+    "description": { "type": "string" },
+    "concept_index": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "diagonal": {
+      "type": "object",
+      "additionalProperties": { "type": "number" }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["a", "b", "value", "coupling", "inhibition"],
+        "properties": {
+          "a": { "type": "string", "minLength": 1 },
+          "b": { "type": "string", "minLength": 1 },
+          "value": { "type": "number" },
+          "coupling": { "type": "number" },
+          "inhibition": { "type": "number" },
+          "reason": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "build_rules": {
+      "type": "object",
+      "required": ["symmetric", "bounded_min", "bounded_max", "default_missing_edge"],
+      "properties": {
+        "symmetric": { "type": "boolean" },
+        "bounded_min": { "type": "number" },
+        "bounded_max": { "type": "number" },
+        "default_missing_edge": { "type": "number" },
+        "diagonal_semantics": { "type": "string" },
+        "off_diagonal_positive": { "type": "string" },
+        "off_diagonal_negative": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "normalization": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["sources", "build_method"],
+      "properties": {
+        "sources": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "build_method": { "type": "string" },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": true
+    }
+  }
+}

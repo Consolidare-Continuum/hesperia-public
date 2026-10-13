@@ -1,0 +1,101 @@
+{
+  "_fixture_note": "TMX-15 gold fixture — minimal deterministic dataset for hex_matrix_viewer schema validation. 2 frames, 2 hexes each. Not production data.",
+  "_fixture_version": "1.0",
+  "frames": [
+    {
+      "t": 0.0,
+      "hexes": [
+        {
+          "id": "A01-F001-H00001",
+          "family_id": 0,
+          "area_id": 0,
+          "q": 0,
+          "r": 0,
+          "area_scores": [0.72, 0.04, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.02, 0.02, 0.02, 0.02],
+          "dominant_area": 0,
+          "dominance": 0.84,
+          "stability": 0.71,
+          "contradiction": 0.12,
+          "activation": 0.65
+        },
+        {
+          "id": "A02-F025-H00002",
+          "family_id": 24,
+          "area_id": 1,
+          "q": 1,
+          "r": 0,
+          "area_scores": [0.05, 0.68, 0.04, 0.03, 0.03, 0.03, 0.03, 0.03, 0.02, 0.02, 0.02, 0.02],
+          "dominant_area": 1,
+          "dominance": 0.79,
+          "stability": 0.62,
+          "contradiction": 0.18,
+          "activation": 0.58
+        }
+      ]
+    },
+    {
+      "t": 1.0,
+      "hexes": [
+        {
+          "id": "A01-F001-H00001",
+          "family_id": 0,
+          "area_id": 0,
+          "q": 0,
+          "r": 0,
+          "area_scores": [0.69, 0.06, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.02, 0.02, 0.02],
+          "dominant_area": 0,
+          "dominance": 0.81,
+          "stability": 0.68,
+          "contradiction": 0.14,
+          "activation": 0.63,
+          "prev_dominant_area": 0,
+          "delta_dominance": -0.03,
+          "delta_activation": -0.02,
+          "area_switched": false
+        },
+        {
+          "id": "A02-F025-H00002",
+          "family_id": 24,
+          "area_id": 1,
+          "q": 1,
+          "r": 0,
+          "area_scores": [0.07, 0.71, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.02, 0.01, 0.01, 0.01],
+          "dominant_area": 1,
+          "dominance": 0.82,
+          "stability": 0.64,
+          "contradiction": 0.16,
+          "activation": 0.60,
+          "prev_dominant_area": 1,
+          "delta_dominance": 0.03,
+          "delta_activation": 0.02,
+          "area_switched": false
+        }
+      ]
+    }
+  ],
+  "relations": {
+    "area_drift": [
+      {"area": 0, "drift": -0.031, "theme_marker": "anchor"},
+      {"area": 1, "drift": 0.025},
+      {"area": 2, "drift": 0.003},
+      {"area": 3, "drift": -0.008},
+      {"area": 4, "drift": 0.002},
+      {"area": 5, "drift": 0.001},
+      {"area": 6, "drift": 0.001},
+      {"area": 7, "drift": 0.000},
+      {"area": 8, "drift": 0.002},
+      {"area": 9, "drift": 0.001},
+      {"area": 10, "drift": 0.002},
+      {"area": 11, "drift": 0.002}
+    ],
+    "global_drift": 0.004,
+    "parity_note": "therapist parity within ±0.05 on areas 0-3"
+  },
+  "appear_disappear": {
+    "appeared": [
+      {"label": "A01-family-onset", "onset_frame": 0, "dominance_peak": 0.84}
+    ],
+    "disappeared": [],
+    "dominant_shift": "A01 stable anchor throughout"
+  }
+}

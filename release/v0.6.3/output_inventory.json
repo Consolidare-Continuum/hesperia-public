@@ -1,0 +1,12 @@
+{
+  "version": "0.6.3",
+  "examples_dir": "release/v0.6.3/examples/",
+  "artifacts": [
+    "example_analyze_shipping_output.json",
+    "example_engine_run_envelope_v063.json",
+    "example_teacher_response_v063.json",
+    "example_reweight_preview.json",
+    "example_irc_trace.jsonl",
+    "example_mysql_teacher_run_row.json"
+  ]
+}

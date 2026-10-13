@@ -1,0 +1,11 @@
+{
+  "system_version": "0.5.2",
+  "git_commit": "e1217ab65d009bfbc42f737bfc8cf8f6175ece0a",
+  "git_dirty": false,
+  "build_timestamp_utc": "2026-03-26T08:50:13.637776+00:00",
+  "envelope_timestamp_utc": "2026-03-26T08:50:13Z",
+  "builder_script": "tools/release/build_release_audit_v0_5_1.py",
+  "pytest_quick_subset": false,
+  "python": "3.10.12",
+  "platform": "linux"
+}

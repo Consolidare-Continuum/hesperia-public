@@ -1,0 +1,15 @@
+{
+  "active_graph": {
+    "nodes": {
+      "fiscal_align": {"hitCount": 4},
+      "social_align": {"hitCount": 4}
+    },
+    "edges": [
+      {"source": "fiscal_align", "target": "social_align", "type": "is_subdomain"}
+    ]
+  },
+  "topology": {
+    "concept_to_area": {"fiscal_align": 0, "social_align": 0},
+    "concept_to_family": {"fiscal_align": 0, "social_align": 1}
+  }
+}

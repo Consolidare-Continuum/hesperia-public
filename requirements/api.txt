@@ -1,0 +1,4 @@
+# Hesperia Analyze API (uvicorn + FastAPI)
+fastapi>=0.100,<1
+uvicorn[standard]>=0.22,<1
+pydantic>=2,<3

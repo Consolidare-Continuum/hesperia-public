@@ -1,0 +1,3 @@
+# COBALT optional runtime deps (CHROMA-2 query with matching embeddings).
+-r surface.txt
+chromadb>=1.5,<2

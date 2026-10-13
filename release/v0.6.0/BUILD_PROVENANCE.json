@@ -1,0 +1,13 @@
+{
+  "system_version": "0.6.0",
+  "generated_utc": "2026-05-28T13:44:59.661385+00:00",
+  "git_commit": "a7f244f63b2c9db646d1c79f53b0e97dc79cd96a",
+  "git_dirty": true,
+  "generator": "tools/release/build_release_baseline_v0_6_0.py",
+  "source_files": [
+    "VERSION.yaml",
+    "hesperia/system/capabilities.yaml",
+    "runtime/pipeline/run_e2e_all.py",
+    "tests/fixtures/release_v0_5_0/canonical_input.txt"
+  ]
+}

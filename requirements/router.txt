@@ -1,0 +1,5 @@
+# Hesperia V7 router — additional dependencies beyond shipping.txt
+# thinking_map_bridge.py consumes MCP JSON (no Python import), but
+# pin the package here for dev parity with brain MCP server.
+-r shipping.txt
+fpf-thinking-map==1.9.3

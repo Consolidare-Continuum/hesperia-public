@@ -1,0 +1,159 @@
+{
+  "exports": {
+    "tension_hotspots": [
+      {
+        "area": 0,
+        "hotspot_score": 1.0
+      },
+      {
+        "area": 1,
+        "hotspot_score": 1.0
+      },
+      {
+        "area": 2,
+        "hotspot_score": 1.0
+      },
+      {
+        "area": 3,
+        "hotspot_score": 1.0
+      },
+      {
+        "area": 4,
+        "hotspot_score": 0.85
+      },
+      {
+        "area": 6,
+        "hotspot_score": 0.85
+      }
+    ],
+    "triz_resolution_classes": [
+      {
+        "count": 1,
+        "triz_class": "counterbalance"
+      },
+      {
+        "count": 1,
+        "triz_class": "parameter_change"
+      },
+      {
+        "count": 1,
+        "triz_class": "segmentation"
+      }
+    ]
+  },
+  "product_metrics": {
+    "Policy Tension Score": 0.95
+  },
+  "report": {
+    "corpus_id": "policy_polarized_v1",
+    "dominant_triz_patterns": [
+      {
+        "count": 1,
+        "triz_class": "counterbalance"
+      },
+      {
+        "count": 1,
+        "triz_class": "parameter_change"
+      },
+      {
+        "count": 1,
+        "triz_class": "segmentation"
+      }
+    ],
+    "generated_at": "2026-03-18T08:03:03Z",
+    "global_tension_score": 0.95,
+    "summary_text": "Global tension score is 0.95. Top conflict cluster appears between 0 and 48. Dominant solution pattern: counterbalance.",
+    "top_conflict_clusters": [
+      {
+        "area_a": 0,
+        "area_b": 2,
+        "avg_score": 1.0,
+        "contradiction_count": 1,
+        "cross_area_factor": 2.0,
+        "family_a": 0,
+        "family_b": 48,
+        "hotspot_score": 2.0
+      },
+      {
+        "area_a": 1,
+        "area_b": 3,
+        "avg_score": 1.0,
+        "contradiction_count": 1,
+        "cross_area_factor": 2.0,
+        "family_a": 24,
+        "family_b": 72,
+        "hotspot_score": 2.0
+      },
+      {
+        "area_a": 4,
+        "area_b": 6,
+        "avg_score": 0.85,
+        "contradiction_count": 1,
+        "cross_area_factor": 2.0,
+        "family_a": 96,
+        "family_b": 144,
+        "hotspot_score": 1.7
+      }
+    ],
+    "top_cross_domain_conflicts": [
+      {
+        "adjacent_areas": false,
+        "area_a": 1,
+        "area_b": 3,
+        "area_cluster": [
+          1,
+          3
+        ],
+        "concept_a": "freedom",
+        "concept_b": "regulation",
+        "family_a": 24,
+        "family_b": 72,
+        "hex_a": null,
+        "hex_b": null,
+        "locality_score": 0.333333,
+        "same_area": false,
+        "score": 1.0,
+        "triz_class": "counterbalance"
+      },
+      {
+        "adjacent_areas": false,
+        "area_a": 0,
+        "area_b": 2,
+        "area_cluster": [
+          0,
+          2
+        ],
+        "concept_a": "growth",
+        "concept_b": "stability",
+        "family_a": 0,
+        "family_b": 48,
+        "hex_a": null,
+        "hex_b": null,
+        "locality_score": 0.333333,
+        "same_area": false,
+        "score": 1.0,
+        "triz_class": "parameter_change"
+      },
+      {
+        "adjacent_areas": false,
+        "area_a": 4,
+        "area_b": 6,
+        "area_cluster": [
+          4,
+          6
+        ],
+        "concept_a": "security",
+        "concept_b": "privacy",
+        "family_a": 96,
+        "family_b": 144,
+        "hex_a": null,
+        "hex_b": null,
+        "locality_score": 0.333333,
+        "same_area": false,
+        "score": 0.85,
+        "triz_class": "segmentation"
+      }
+    ]
+  },
+  "sku": "HSP-TRIZ-P1"
+}

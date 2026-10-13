@@ -1,0 +1,41 @@
+{
+  "system_version": "0.6.0",
+  "release_stage": "modular_tfp_mainline",
+  "release_kind": "sealed_baseline_without_dict_payloads",
+  "generated_utc": "2026-05-28T13:44:59.635905+00:00",
+  "git_commit": "a7f244f63b2c9db646d1c79f53b0e97dc79cd96a",
+  "git_dirty": true,
+  "schema_version": "v1",
+  "calibration_profile_default": "default_v1",
+  "dict_pack_expected_external": "v0_6_0_clr_v052_2",
+  "shipping_api_routes": [
+    "GET /health",
+    "POST /analyze",
+    "POST /compare",
+    "POST /batch",
+    "POST /batch-analyze"
+  ],
+  "bundle_payload_policy": {
+    "dict_payloads_included": false,
+    "corpus_payloads_included": false,
+    "chroma_state_included": false
+  },
+  "reference_output": {
+    "run": "structural_analysis",
+    "system_version": "0.6.0",
+    "schema_version": "v1",
+    "calibration_profile": "default_v1",
+    "build_id": "hesperia_0.6.0_a7f244f63b2c_2026-05-28T13:44:57Z"
+  },
+  "output_inventory_file": "output_inventory.json",
+  "release_docs": [
+    "RELEASE_SCOPE.md",
+    "RELEASE_CONTENTS.md",
+    "DICT_PREBUILD.md",
+    "CORPUS_AND_CHROMA.md",
+    "OUTPUT_SURFACE.md",
+    "DOCKER_BUNDLE.md",
+    "AGENTIC_INSTALL.md"
+  ],
+  "artifact_count_described": 19
+}

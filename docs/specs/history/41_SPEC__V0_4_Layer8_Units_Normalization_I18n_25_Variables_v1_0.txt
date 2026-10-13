@@ -1,0 +1,241 @@
+41_SPEC__V0_4_Layer8_Units_Normalization_I18n_25_Variables_v1_0
+
+Project: HESPERIA
+Target: v0.4.x baseline (units, normalization, internationalization)
+Date: 2026-02-24
+Status: Canonical
+
+References: 34_SPEC (L1) … 40_SPEC (L7); 00_GOVERNANCE_CHARTER__HESPERIA_v1_0. Human reference: 42_SPEC (Layer-9).
+
+----------------------------------------------------------------------
+0. LAYER-8 CONTRACT (INVARIANT)
+----------------------------------------------------------------------
+
+  Layer-8 does not introduce new math. It defines unit taxonomy, scaling policy, conversion functions, and canonical "report units" (SI_*) for every metric the stack emits. For every metric: raw (native), unitType, scaledPct if ratio-like, scaledU1000 if ratio-like, policy. This makes the whole stack internationally readable and comparable. Deterministic formatting for stable logs.
+
+----------------------------------------------------------------------
+1. PREREQUISITES
+----------------------------------------------------------------------
+
+  L1 .. L7 = outputs from Layers 1–7 (34_SPEC … 40_SPEC). All SI_* values are derived from L1–L7 using the conversion functions and policies below.
+
+----------------------------------------------------------------------
+2. LAYER-8 UNITS, NORMALIZATION, INTERNATIONALIZATION (25)
+----------------------------------------------------------------------
+A. Unit system enums and policies (1–5)
+----------------------------------------------------------------------
+
+ 1. UNIT_TYPE_ENUM
+    enum UnitType { COUNT, RATIO, PERCENT, U1000, RADIANS, SECONDS, BYTES, HASH, BOOLEAN, CODE }
+    Standard unit taxonomy for every emitted metric.
+
+ 2. SCALE_POLICY_ENUM
+    enum ScalePolicy { RAW, CLAMP_0_1, CLAMP_0_100, CLAMP_0_1000, ZSCORE, LOG10 }
+    How values are scaled for reporting.
+
+ 3. EPSILON_POLICY
+    double EPS = 1e-12;
+    Global numeric floor to avoid divide-by-zero and acos domain failures. Used in all conversions.
+
+ 4. CLAMP_POLICY
+    double clamp(double v, double lo, double hi) { return max(lo, min(hi, v)); }
+    Single clamp rule used everywhere. int version: clamp(i, lo, hi) for integer bounds.
+
+ 5. ROUNDING_POLICY
+    int DECIMALS_RATIO = 6;
+    int DECIMALS_PCT = 2;
+    int DECIMALS_U1000 = 0;
+    Deterministic formatting for stable logs.
+
+----------------------------------------------------------------------
+B. Canonical conversion functions (6–13)
+----------------------------------------------------------------------
+
+ 6. RATIO_TO_PCT
+    double ratioToPct(double r) { return clamp(r, 0.0, 1.0) * 100.0; }
+    Dimensionless ratio → percent (0..100).
+
+ 7. RATIO_TO_U1000
+    int ratioToU1000(double r) { return (int) round(clamp(r, 0.0, 1.0) * 1000.0); }
+    Ratio → 0..1000 reference units.
+
+ 8. PCT_TO_U1000
+    int pctToU1000(double pct) { return (int) round(clamp(pct, 0.0, 100.0) * 10.0); }
+    0..100% → 0..1000.
+
+ 9. U1000_TO_PCT
+    double u1000ToPct(int u) { return clamp(u, 0, 1000) / 10.0; }
+    0..1000 → percent.
+
+10. RAD_TO_DEG_OPTIONAL
+    double radToDeg(double rad) { return rad * (180.0 / π); }
+    Radians remain canonical; degrees optional for human display.
+
+11. SIGNED_DELTA_TO_U1000
+    int signedDeltaToU1000(double delta, double maxAbs) {
+      double d = clamp(delta / max(EPS, maxAbs), -1.0, 1.0);
+      return (int) round(500.0 + 500.0 * d);
+    }
+    500 = no change; <500 = negative delta; >500 = positive delta.
+
+12. SCORE_TO_U1000_CLAMP
+    int scoreToU1000(double score, double lo, double hi) {
+      double r = (score - lo) / max(EPS, (hi - lo));
+      return ratioToU1000(clamp(r, 0.0, 1.0));
+    }
+    Maps any bounded score into U1000.
+
+13. LOG_BOUNDED_TO_U1000
+    int logBoundedToU1000(double x, double xMax) {
+      double r = log10(1.0 + clamp(x, 0.0, xMax)) / log10(1.0 + xMax);
+      return ratioToU1000(r);
+    }
+    For heavy-tailed counts (tokens, nodes).
+
+----------------------------------------------------------------------
+C. Cross-layer canonical report units (14–25)
+----------------------------------------------------------------------
+
+  These are unit-wrapped outputs used everywhere (logs, APIs, dashboards). Source = layer; UnitType and scaled form as stated.
+
+14. SI_TOTAL_TOKENS_COUNT
+    Source: L1.TOTAL_TOKENS. UnitType: COUNT.
+    int SI_TOTAL_TOKENS_COUNT = L1.TOTAL_TOKENS;
+
+15. SI_COVERAGE (PCT + U1000)
+    Source: L1.COVERAGE_RATIO. UnitType: PERCENT, U1000.
+    double SI_COVERAGE_PCT = ratioToPct(L1.COVERAGE_RATIO);
+    int SI_COVERAGE_U1000 = ratioToU1000(L1.COVERAGE_RATIO);
+
+16. SI_DOMINANCE (PCT + U1000)
+    Source: L1.DOMINANCE_RATIO.
+    double SI_DOMINANCE_PCT = ratioToPct(L1.DOMINANCE_RATIO);
+    int SI_DOMINANCE_U1000 = ratioToU1000(L1.DOMINANCE_RATIO);
+
+17. SI_ENTROPY (U1000 + PCT)
+    Source: L1.NORMALIZED_FAMILY_ENTROPY (0..1).
+    int SI_ENTROPY_U1000 = ratioToU1000(L1.NORMALIZED_FAMILY_ENTROPY);
+    double SI_ENTROPY_PCT = ratioToPct(L1.NORMALIZED_FAMILY_ENTROPY);
+
+18. SI_GEOMETRIC_STABILITY (U1000 + PCT)
+    Source: L2.GEOMETRIC_STABILITY_INDEX (0..1).
+    int SI_GEOMETRIC_STABILITY_U1000 = ratioToU1000(L2.GEOMETRIC_STABILITY_INDEX);
+    double SI_GEOMETRIC_STABILITY_PCT = ratioToPct(L2.GEOMETRIC_STABILITY_INDEX);
+
+19. SI_AREA_LEAKAGE (PCT + U1000)
+    Source: L2.CROSS_AREA_RATIO. (Leakage is "bad", still a ratio.)
+    double SI_AREA_LEAKAGE_PCT = ratioToPct(L2.CROSS_AREA_RATIO);
+    int SI_AREA_LEAKAGE_U1000 = ratioToU1000(L2.CROSS_AREA_RATIO);
+
+20. SI_SHADOW_DEVIATION (U1000 + PCT)
+    Source: L3.SHADOW_DEVIATION_SCORE (expected 0..1-ish; clamp).
+    int SI_SHADOW_DEVIATION_U1000 = ratioToU1000(clamp(L3.SHADOW_DEVIATION_SCORE, 0.0, 1.0));
+    double SI_SHADOW_DEVIATION_PCT = ratioToPct(clamp(L3.SHADOW_DEVIATION_SCORE, 0.0, 1.0));
+
+21. SI_EVIDENCE_SUPPORT (U1000 + PCT)
+    Source: L4.EVIDENCE_SUPPORT_INDEX_BASELINE (0..1).
+    int SI_EVIDENCE_SUPPORT_U1000 = ratioToU1000(L4.EVIDENCE_SUPPORT_INDEX_BASELINE);
+    double SI_EVIDENCE_SUPPORT_PCT = ratioToPct(L4.EVIDENCE_SUPPORT_INDEX_BASELINE);
+
+22. SI_CONTRADICTION_PRESSURE (U1000 + PCT)
+    Source: L5.CONTRADICTION_PRESSURE_SCORE (0..1).
+    int SI_CONTRADICTION_PRESSURE_U1000 = ratioToU1000(L5.CONTRADICTION_PRESSURE_SCORE);
+    double SI_CONTRADICTION_PRESSURE_PCT = ratioToPct(L5.CONTRADICTION_PRESSURE_SCORE);
+
+23. SI_TRIG_REALITY_FLAG
+    Source: L5.REALITY_GATE_TRIG. UnitType: BOOLEAN.
+    boolean SI_TRIG_REALITY_FLAG = L5.REALITY_GATE_TRIG;
+
+24. SI_GLOBAL_STABILITY (U1000 + PCT)
+    Source: L6.GLOBAL_STABILITY_SCORE (0..1).
+    int SI_GLOBAL_STABILITY_U1000 = ratioToU1000(L6.GLOBAL_STABILITY_SCORE);
+    double SI_GLOBAL_STABILITY_PCT = ratioToPct(L6.GLOBAL_STABILITY_SCORE);
+
+25. SI_SYSTEM_CONFIDENCE (U1000 + PCT)
+    Source: L7.SYSTEM_CONFIDENCE_SCORE (0..1).
+    int SI_SYSTEM_CONFIDENCE_U1000 = ratioToU1000(L7.SYSTEM_CONFIDENCE_SCORE);
+    double SI_SYSTEM_CONFIDENCE_PCT = ratioToPct(L7.SYSTEM_CONFIDENCE_SCORE);
+
+----------------------------------------------------------------------
+3. PRACTICAL CONTRACT (WHAT YOU LOG EVERYWHERE)
+----------------------------------------------------------------------
+
+  For every metric you emit:
+    - raw (native)
+    - unitType (from UnitType enum)
+    - scaledPct if ratio-like
+    - scaledU1000 if ratio-like
+    - policy (CLAMP_0_1 / RAW / etc.)
+    - goodDirection (UP / DOWN / NEUTRAL) — optional but useful
+
+  Example record shape (Java POJO idea):
+    name: "COVERAGE_RATIO"
+    raw: 0.82341
+    unit: RATIO
+    pct: 82.34
+    u1000: 823
+    policy: CLAMP_0_1
+
+  This makes the whole stack internationally readable and comparable.
+
+----------------------------------------------------------------------
+4. RELATION TO LAYERS 1–7
+----------------------------------------------------------------------
+
+  Layer-8 consumes L1–L7 outputs only. It does not change any value; it wraps them in unit taxonomy and canonical scales (PCT, U1000, COUNT, BOOLEAN). All conversions are deterministic.
+
+----------------------------------------------------------------------
+5. JAVA-STYLE PSEUDOCODE (LAYER-8)
+----------------------------------------------------------------------
+
+enum UnitType { COUNT, RATIO, PERCENT, U1000, RADIANS, SECONDS, BYTES, HASH, BOOLEAN, CODE }
+enum ScalePolicy { RAW, CLAMP_0_1, CLAMP_0_100, CLAMP_0_1000, ZSCORE, LOG10 }
+
+final double EPS = 1e-12;
+static double clamp(double v, double lo, double hi) { return Math.max(lo, Math.min(hi, v)); }
+final int DECIMALS_RATIO = 6, DECIMALS_PCT = 2, DECIMALS_U1000 = 0;
+
+static double ratioToPct(double r) { return clamp(r, 0.0, 1.0) * 100.0; }
+static int ratioToU1000(double r) { return (int) Math.round(clamp(r, 0.0, 1.0) * 1000.0); }
+static int pctToU1000(double pct) { return (int) Math.round(clamp(pct, 0.0, 100.0) * 10.0); }
+static double u1000ToPct(int u) { return clamp((double) u, 0, 1000) / 10.0; }
+static double radToDeg(double rad) { return rad * (180.0 / Math.PI); }
+static int signedDeltaToU1000(double delta, double maxAbs) {
+  double d = clamp(delta / Math.max(EPS, maxAbs), -1.0, 1.0);
+  return (int) Math.round(500.0 + 500.0 * d);
+}
+static int scoreToU1000(double score, double lo, double hi) {
+  double r = (score - lo) / Math.max(EPS, (hi - lo));
+  return ratioToU1000(clamp(r, 0.0, 1.0));
+}
+static int logBoundedToU1000(double x, double xMax) {
+  double r = Math.log10(1.0 + clamp(x, 0.0, xMax)) / Math.log10(1.0 + xMax);
+  return ratioToU1000(r);
+}
+
+// SI_* report units
+int SI_TOTAL_TOKENS_COUNT = L1.TOTAL_TOKENS;
+double SI_COVERAGE_PCT = ratioToPct(L1.COVERAGE_RATIO);
+int SI_COVERAGE_U1000 = ratioToU1000(L1.COVERAGE_RATIO);
+double SI_DOMINANCE_PCT = ratioToPct(L1.DOMINANCE_RATIO);
+int SI_DOMINANCE_U1000 = ratioToU1000(L1.DOMINANCE_RATIO);
+int SI_ENTROPY_U1000 = ratioToU1000(L1.NORMALIZED_FAMILY_ENTROPY);
+double SI_ENTROPY_PCT = ratioToPct(L1.NORMALIZED_FAMILY_ENTROPY);
+int SI_GEOMETRIC_STABILITY_U1000 = ratioToU1000(L2.GEOMETRIC_STABILITY_INDEX);
+double SI_GEOMETRIC_STABILITY_PCT = ratioToPct(L2.GEOMETRIC_STABILITY_INDEX);
+double SI_AREA_LEAKAGE_PCT = ratioToPct(L2.CROSS_AREA_RATIO);
+int SI_AREA_LEAKAGE_U1000 = ratioToU1000(L2.CROSS_AREA_RATIO);
+int SI_SHADOW_DEVIATION_U1000 = ratioToU1000(clamp(L3.SHADOW_DEVIATION_SCORE, 0.0, 1.0));
+double SI_SHADOW_DEVIATION_PCT = ratioToPct(clamp(L3.SHADOW_DEVIATION_SCORE, 0.0, 1.0));
+int SI_EVIDENCE_SUPPORT_U1000 = ratioToU1000(L4.EVIDENCE_SUPPORT_INDEX_BASELINE);
+double SI_EVIDENCE_SUPPORT_PCT = ratioToPct(L4.EVIDENCE_SUPPORT_INDEX_BASELINE);
+int SI_CONTRADICTION_PRESSURE_U1000 = ratioToU1000(L5.CONTRADICTION_PRESSURE_SCORE);
+double SI_CONTRADICTION_PRESSURE_PCT = ratioToPct(L5.CONTRADICTION_PRESSURE_SCORE);
+boolean SI_TRIG_REALITY_FLAG = L5.REALITY_GATE_TRIG;
+int SI_GLOBAL_STABILITY_U1000 = ratioToU1000(L6.GLOBAL_STABILITY_SCORE);
+double SI_GLOBAL_STABILITY_PCT = ratioToPct(L6.GLOBAL_STABILITY_SCORE);
+int SI_SYSTEM_CONFIDENCE_U1000 = ratioToU1000(L7.SYSTEM_CONFIDENCE_SCORE);
+double SI_SYSTEM_CONFIDENCE_PCT = ratioToPct(L7.SYSTEM_CONFIDENCE_SCORE);
+
+----------------------------------------------------------------------
+END 41_SPEC

@@ -1,0 +1,10 @@
+{
+  "name": "document_fingerprint",
+  "profile_version": "v1",
+  "rule_profile": "llm_audit",
+  "enabled_metrics": ["tension", "stability"],
+  "thresholds": {
+    "tension": {"low": 0.25, "high": 0.6},
+    "stability": {"low": 0.45, "high": 0.75}
+  }
+}

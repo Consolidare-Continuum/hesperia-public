@@ -1,0 +1,94 @@
+{
+  "version": "1",
+  "description": "Public metric profiles. Only these metric ids/names may appear in public reports and API. Internal full set is not listed.",
+  "profiles": {
+    "commercial": {
+      "id": "commercial",
+      "label": "Commercial",
+      "metrics": [
+        "concentration_score",
+        "relation_spread_score",
+        "structural_divergence_score",
+        "confidence_score",
+        "evidence_count",
+        "macro_domain_vector",
+        "policy_family_counts",
+        "dominant_macro_domain",
+        "dominant_policy_family",
+        "entropy",
+        "coverage",
+        "trust_tier",
+        "decision_status_code",
+        "output_trust_tag"
+      ]
+    },
+    "demo": {
+      "id": "demo",
+      "label": "Demo",
+      "extends": "commercial",
+      "metrics": [
+        "concentration_score",
+        "relation_spread_score",
+        "structural_divergence_score",
+        "confidence_score",
+        "evidence_count",
+        "macro_domain_vector",
+        "policy_family_counts",
+        "dominant_macro_domain",
+        "dominant_policy_family",
+        "entropy",
+        "coverage",
+        "tension",
+        "loopability",
+        "trust_tier",
+        "decision_status_code",
+        "output_trust_tag",
+        "deviation_score",
+        "stability_indicator"
+      ]
+    },
+    "analyst": {
+      "id": "analyst",
+      "label": "Analyst (protected)",
+      "extends": "demo",
+      "metrics": [
+        "concentration_score",
+        "relation_spread_score",
+        "structural_divergence_score",
+        "confidence_score",
+        "evidence_count",
+        "macro_domain_vector",
+        "policy_family_counts",
+        "propagated_macro_domain_vector",
+        "propagated_policy_family_counts",
+        "dominant_macro_domain",
+        "dominant_policy_family",
+        "entropy",
+        "coverage",
+        "tension",
+        "loopability",
+        "trust_tier",
+        "decision_status_code",
+        "output_trust_tag",
+        "deviation_score",
+        "stability_indicator",
+        "leakage_pct",
+        "contradiction_pressure"
+      ]
+    },
+    "calibration_visible": {
+      "id": "calibration_visible",
+      "label": "Calibration knobs only",
+      "metrics": [
+        "activation_threshold",
+        "contradiction_strictness",
+        "evidence_minimum",
+        "family_sensitivity",
+        "similarity_tolerance",
+        "weak_signal_suppression"
+      ]
+    }
+  },
+  "internal_full": "NOT_EXPOSED",
+  "naming_sealing": "Public names only; no L1–L9, no formula ids, no topology terms (see MATH_NAMING_SEALING_POLICY)."
+}

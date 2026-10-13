@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prichindel.com/hesperia/schemas/router/router_prompt_envelope_v0_1.schema.json",
+  "title": "Hesperia v7 RouterPromptEnvelope",
+  "description": "Prompt-facing subset of RouterInputEnvelope. Ref: brain governance/SPEC-ETHAN-HESPERIA-V7-SEMANTICS-ROUTER-COMPLIANCE.md §6.2",
+  "type": "object",
+  "required": [
+    "schema",
+    "router_version",
+    "input_hash",
+    "router_fingerprint",
+    "engine_trace",
+    "logic_mapping",
+    "retrieval_context",
+    "relation_context",
+    "policy_block",
+    "corpus_snapshot_id",
+    "policy_snapshot_id",
+    "allowed_tasks",
+    "forbidden_actions",
+    "answer_instructions"
+  ],
+  "properties": {
+    "schema": { "const": "hesperia.router_prompt_envelope.v0_1" },
+    "router_version": { "type": "string", "pattern": "^v7-router-" },
+    "input_hash": { "type": "string", "minLength": 8 },
+    "router_fingerprint": { "type": "string", "minLength": 16 },
+    "engine_trace": { "type": "object", "additionalProperties": true },
+    "logic_mapping": { "type": "object", "additionalProperties": true },
+    "retrieval_context": { "type": "object", "additionalProperties": true },
+    "relation_context": { "type": "object", "additionalProperties": true },
+    "policy_block": { "type": "object", "additionalProperties": true },
+    "corpus_snapshot_id": { "type": "string", "minLength": 1 },
+    "policy_snapshot_id": { "type": "string", "minLength": 1 },
+    "allowed_tasks": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "forbidden_actions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "answer_instructions": { "type": "string", "minLength": 1 },
+    "evidence_references": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "calculable": { "type": "object", "additionalProperties": true },
+    "coherence_hints": { "type": "object", "additionalProperties": true }
+  },
+  "additionalProperties": false
+}

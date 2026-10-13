@@ -1,0 +1,12 @@
+{
+  "concept_id": "B_demo_02",
+  "segment_id": "seg_gold_002",
+  "support_tokens": 1,
+  "support_types": { "exact": 0, "alias": 0, "fuzzy": 1 },
+  "raw_support": 0.2,
+  "anchor_support": 0.0,
+  "support_ratio": 0.0,
+  "is_valid": false,
+  "rejection_reason": "fuzzy_only_disallowed",
+  "schema_version": "ba_validation_envelope.v1.0.0"
+}

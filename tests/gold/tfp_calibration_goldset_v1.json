@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "reference_bundle_hint": "CI default: `tests/fixtures/tfp_calibration_bundle_ci/` (synthetic, satisfies gold). Local engine proof: re-run `run_tfp_file_pipeline` on a transcript path (e.g. `tests/fixtures/clinical_tfp/tfp_ru_session_sample.md`); optional `HESPERIA_TFP_GOLD_BUNDLE_DIR` for ad-hoc runs.",
+  "raw_integrity_gold": [
+    {
+      "id": "RU-1-11-09-split-brain-regression",
+      "session_stem": "1-11-09-2023",
+      "forbidden_states": [
+        "structural_L1_zero_while_analyze_coverage_above_0_95_without_fallback",
+        "sealed_hex_mass_zero_while_analyze_coverage_above_0_9"
+      ],
+      "gold_reasoning_note": "This session historically showed lexicon marker path with zero hits (Cyrillic clinical prose) while analyze() used the v06 dense path with full coverage. Without L1 fallback and hex mass preservation, structural and sealed looked 'dead' while analyze looked healthy — an operational split-brain. After engine patches, these forbidden states must not hold."
+    }
+  ],
+  "aggregation_gold": [
+    {
+      "id": "RU-1-11-09-aggregation-post-fix",
+      "session_stem": "1-11-09-2023",
+      "expected_nonzero_planes": ["analyze", "stages", "sealed", "structural"],
+      "expected_sealed_hex_total_mass_min": 1e-9,
+      "expected_structural_l1_coverage_min": 0.99,
+      "expected_analyze_coverage_min": 0.99,
+      "expected_dominant_stage_areas_top3": ["A2", "A3", "A10"],
+      "gold_reasoning_note": "Session_parser areas_top for this transcript ranks A2, A3, A10 first. Sealed hex total_mass must be > 0 after microphysics fix. Structural L1 coverage should reach ~1.0 via sealed_family_activation_to_L1 fallback when markers are empty."
+    }
+  ],
+  "readability_gold": [
+    {
+      "id": "RU-1-11-09-readability-envelope",
+      "session_stem": "1-11-09-2023",
+      "require_operational_envelope_on_artifacts": ["01_structural_batch.json", "05_sealed_multiscale.json", "06_product_analyze.json"],
+      "forbid_blocking_anomalies_unless_research_profile": true,
+      "gold_reasoning_note": "Every bundle artifact root must carry explicit operational_envelope (Task 7). Blocking codes A001/A002 on this session after fixes should be absent unless intentionally running a pre-fix regression fixture."
+    }
+  ]
+}

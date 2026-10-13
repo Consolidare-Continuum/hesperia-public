@@ -1,0 +1,15 @@
+{
+  "system_version": "0.6.0",
+  "sealed": true,
+  "critical_checks": {
+    "version_authority": "pass",
+    "prod_code_only_shipping_context": "pass",
+    "portable_bundle": "pass",
+    "system_seal": "pass",
+    "dict_payloads_excluded": "pass",
+    "corpus_payloads_excluded": "pass",
+    "chroma_state_excluded": "pass"
+  },
+  "reasons_fail": [],
+  "note": "Baseline release is valid only as a code-and-contract package. Prepare dicts, corpus, and Chroma outside the bundle before runtime seal on target."
+}

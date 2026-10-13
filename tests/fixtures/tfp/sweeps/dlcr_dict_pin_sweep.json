@@ -1,0 +1,22 @@
+{
+  "sweep_id": "dlcr_dict_pin",
+  "goal": "Reproduce PC-001's DLCR structural dict-pin combo (HESPERIA_DLCR_STRUCTURAL + HESPERIA_CALIB_DICT_VERSION) as the tfp_param_sweep tool's first real validation run.",
+  "input": "tests/fixtures/tfp/input.txt",
+  "gate_profile": "internal_review",
+  "combos": [
+    {
+      "name": "baseline_both_unset",
+      "env": {},
+      "clear": ["HESPERIA_DLCR_STRUCTURAL", "HESPERIA_CALIB_DICT_VERSION"]
+    },
+    {
+      "name": "dlcr_on_dict_unset",
+      "env": {"HESPERIA_DLCR_STRUCTURAL": "1"},
+      "clear": ["HESPERIA_CALIB_DICT_VERSION"]
+    },
+    {
+      "name": "dlcr_on_dict_pinned",
+      "env": {"HESPERIA_DLCR_STRUCTURAL": "1", "HESPERIA_CALIB_DICT_VERSION": "v0_6_0_clr_v052_5"}
+    }
+  ]
+}

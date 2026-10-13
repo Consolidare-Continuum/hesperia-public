@@ -1,0 +1,43 @@
+# HESPERIA — Product runtime image (Task 4). Same slice as Dockerfile.shipping:
+# runtime + core + hesperia + assets (lexicon lives under assets/lexicon/ since the 2026-07-31
+# root consolidation) — no research/, notebooks, or demos copied into build context.
+#
+# docker build -f Dockerfile.product -t hesperia-product:latest .
+# (Use .dockerignore to exclude large non-product trees from the build context if needed.)
+
+FROM python:3.11-slim AS builder
+
+WORKDIR /build
+
+RUN apt-get update && apt-get install -y --no-install-recommends gcc \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt ./
+COPY requirements/ ./requirements/
+RUN pip install --no-cache-dir -r requirements/shipping.txt
+
+COPY runtime/   /build/runtime
+COPY core/      /build/core
+COPY hesperia/  /build/hesperia
+COPY assets/    /build/assets
+COPY VERSION.yaml /build/VERSION.yaml
+
+FROM python:3.11-slim AS final
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends curl \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY --from=builder /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+COPY --from=builder /build/runtime   /app/runtime
+COPY --from=builder /build/core      /app/core
+COPY --from=builder /build/hesperia  /app/hesperia
+COPY --from=builder /build/assets    /app/assets
+COPY --from=builder /build/VERSION.yaml /app/VERSION.yaml
+
+ENV PYTHONPATH=/app
+ENV HESPERIA_ASSETS_ROOT=/app
+EXPOSE 8000
+
+CMD ["python", "-m", "uvicorn", "runtime.shipping.api_main:app", "--host", "0.0.0.0", "--port", "8000"]

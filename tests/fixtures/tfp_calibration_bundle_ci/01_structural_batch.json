@@ -1,0 +1,33 @@
+{
+  "run": "tfp_calibration_bundle_ci_fixture",
+  "session_count": 1,
+  "structural_batch": [
+    {
+      "session_id": "1-11-09-2023",
+      "operational_envelope": {
+        "status": "ok",
+        "anomaly_codes": [],
+        "severity": "ok",
+        "blocking": false,
+        "operator_message": "",
+        "recommended_next_check": "",
+        "taxonomy_version": "1.0.0"
+      },
+      "payload": {
+        "L1": {
+          "ATTRIBUTED_TOKENS": 12,
+          "COVERAGE_RATIO": 1.0
+        }
+      }
+    }
+  ],
+  "operational_envelope": {
+    "status": "ok",
+    "anomaly_codes": [],
+    "severity": "ok",
+    "blocking": false,
+    "operator_message": "",
+    "recommended_next_check": "",
+    "taxonomy_version": "1.0.0"
+  }
+}

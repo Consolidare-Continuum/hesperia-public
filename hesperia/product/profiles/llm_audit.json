@@ -1,0 +1,10 @@
+{
+  "name": "llm_audit",
+  "profile_version": "v1",
+  "rule_profile": "llm_audit",
+  "enabled_metrics": ["tension", "stability", "loopability"],
+  "thresholds": {
+    "tension": {"low": 0.3, "high": 0.7},
+    "stability": {"low": 0.4, "high": 0.7}
+  }
+}

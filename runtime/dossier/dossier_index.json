@@ -1,0 +1,45 @@
+{
+  "dossiers": [
+    {
+      "checksum": "f5c315776e27b609457cddb3c907c416dfddd95a27cfe933dff5f4e0b63623ec",
+      "document_anomaly": null,
+      "engine_version": "6b385b2f66a8",
+      "generation_timestamp": "2026-03-11T19:07:14Z",
+      "path": "/tmp/batch_out/dossier_001.json",
+      "policy_mode": "STRUCTURE_PLUS_CONTEXT"
+    },
+    {
+      "checksum": "745dcabb09a6a07b59c6fed59c70795733b6dcc066f70847f7fd565d4c39a185",
+      "document_anomaly": null,
+      "engine_version": "6b385b2f66a8",
+      "generation_timestamp": "2026-03-11T19:07:14Z",
+      "path": "/tmp/batch_out/dossier_002.json",
+      "policy_mode": "STRUCTURE_PLUS_CONTEXT"
+    },
+    {
+      "checksum": "3debcbcb59580fac437d3976bbecd3f1280465e6d5731c48310d3d8d133bb4d5",
+      "document_anomaly": null,
+      "engine_version": "6b385b2f66a8",
+      "generation_timestamp": "2026-03-11T19:14:56Z",
+      "path": "/tmp/res_out/dossier_001.json",
+      "policy_mode": "STRUCTURE_PLUS_CONTEXT"
+    },
+    {
+      "checksum": "ffb9136ef74269822b7768a7655b7cd01833018ecbd6668b7af37d039cb6a284",
+      "document_anomaly": null,
+      "engine_version": "6b385b2f66a8",
+      "generation_timestamp": "2026-03-11T19:14:56Z",
+      "path": "/tmp/res_out/dossier_002.json",
+      "policy_mode": "STRUCTURE_PLUS_CONTEXT"
+    },
+    {
+      "checksum": "4e965d5c4f9b18df63b521e559a76426228bb4744bbc8ac19bc5f3f70939981a",
+      "document_anomaly": null,
+      "dossier_id": "4e965d5c4f9b",
+      "engine_version": "6b385b2f66a8",
+      "generation_timestamp": "2026-03-11T19:26:55Z",
+      "path": "/tmp/ca_out/dossier_4e965d5c4f9b.json",
+      "policy_mode": "STRUCTURE_PLUS_CONTEXT"
+    }
+  ]
+}

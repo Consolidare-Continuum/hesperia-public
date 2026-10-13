@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ title|default:"Hesperia" }}{% endblock %} — Hesperia</title>
+  <link rel="stylesheet" href="{% static 'output_views/css/site.css' %}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="{% url 'operator_home' %}">Hesperia</a>
+      <nav>
+        <a href="{% url 'operator_home' %}">Operator</a>
+        <a href="{% url 'sessions_index' %}">Sessions</a>
+        <a href="{% url 'session_inspector' 'session_inspector_min' %}">Inspector</a>
+        <a href="{% url 'client_preview' %}">Client preview</a>
+        <a href="{% url 'health' %}">Health (JSON)</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="site-footer wrap">
+    <p>HTML output surface · FastAPI JSON API unchanged · Django {{ django_version }}</p>
+  </footer>
+  {% block extra_js %}{% endblock %}
+</body>
+</html>

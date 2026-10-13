@@ -1,0 +1,11 @@
+{
+  "version": "0.6.3",
+  "status": "PASS",
+  "gate": "run_063_archive_e2e_gate.sh",
+  "archive_e2e": "PASS",
+  "system_seal": "PASS",
+  "dict_mode": "HESPERIA_DICT_CALIB_OFFLINE=1",
+  "excludes_prod_dicts": true,
+  "excludes_prod_corpus": true,
+  "timestamp_utc": "2026-06-14T13:00:53.943670+00:00"
+}

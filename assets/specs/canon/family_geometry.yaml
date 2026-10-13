@@ -1,0 +1,3170 @@
+version: 1
+families:
+- family_id: family_001
+  family_index: 0
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 0
+  boundary_class: edge
+  neighbor_families:
+  - 287
+  - 1
+  geometry_flags: []
+- family_id: family_002
+  family_index: 1
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 1
+  boundary_class: internal
+  neighbor_families:
+  - 0
+  - 2
+  geometry_flags: []
+- family_id: family_003
+  family_index: 2
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 2
+  boundary_class: internal
+  neighbor_families:
+  - 1
+  - 3
+  geometry_flags: []
+- family_id: family_004
+  family_index: 3
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 3
+  boundary_class: internal
+  neighbor_families:
+  - 2
+  - 4
+  geometry_flags: []
+- family_id: family_005
+  family_index: 4
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 4
+  boundary_class: internal
+  neighbor_families:
+  - 3
+  - 5
+  geometry_flags: []
+- family_id: family_006
+  family_index: 5
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 5
+  boundary_class: internal
+  neighbor_families:
+  - 4
+  - 6
+  geometry_flags: []
+- family_id: family_007
+  family_index: 6
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 6
+  boundary_class: internal
+  neighbor_families:
+  - 5
+  - 7
+  geometry_flags: []
+- family_id: family_008
+  family_index: 7
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 7
+  boundary_class: internal
+  neighbor_families:
+  - 6
+  - 8
+  geometry_flags: []
+- family_id: family_009
+  family_index: 8
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 8
+  boundary_class: internal
+  neighbor_families:
+  - 7
+  - 9
+  geometry_flags: []
+- family_id: family_010
+  family_index: 9
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 9
+  boundary_class: internal
+  neighbor_families:
+  - 8
+  - 10
+  geometry_flags: []
+- family_id: family_011
+  family_index: 10
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 10
+  boundary_class: internal
+  neighbor_families:
+  - 9
+  - 11
+  geometry_flags: []
+- family_id: family_012
+  family_index: 11
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 11
+  boundary_class: internal
+  neighbor_families:
+  - 10
+  - 12
+  geometry_flags: []
+- family_id: family_013
+  family_index: 12
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 12
+  boundary_class: internal
+  neighbor_families:
+  - 11
+  - 13
+  geometry_flags: []
+- family_id: family_014
+  family_index: 13
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 13
+  boundary_class: internal
+  neighbor_families:
+  - 12
+  - 14
+  geometry_flags: []
+- family_id: family_015
+  family_index: 14
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 14
+  boundary_class: internal
+  neighbor_families:
+  - 13
+  - 15
+  geometry_flags: []
+- family_id: family_016
+  family_index: 15
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 15
+  boundary_class: internal
+  neighbor_families:
+  - 14
+  - 16
+  geometry_flags: []
+- family_id: family_017
+  family_index: 16
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 16
+  boundary_class: internal
+  neighbor_families:
+  - 15
+  - 17
+  geometry_flags: []
+- family_id: family_018
+  family_index: 17
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 17
+  boundary_class: internal
+  neighbor_families:
+  - 16
+  - 18
+  geometry_flags: []
+- family_id: family_019
+  family_index: 18
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 18
+  boundary_class: internal
+  neighbor_families:
+  - 17
+  - 19
+  geometry_flags: []
+- family_id: family_020
+  family_index: 19
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 19
+  boundary_class: internal
+  neighbor_families:
+  - 18
+  - 20
+  geometry_flags: []
+- family_id: family_021
+  family_index: 20
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 20
+  boundary_class: internal
+  neighbor_families:
+  - 19
+  - 21
+  geometry_flags: []
+- family_id: family_022
+  family_index: 21
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 21
+  boundary_class: internal
+  neighbor_families:
+  - 20
+  - 22
+  geometry_flags: []
+- family_id: family_023
+  family_index: 22
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 22
+  boundary_class: internal
+  neighbor_families:
+  - 21
+  - 23
+  geometry_flags: []
+- family_id: family_024
+  family_index: 23
+  area_id: 0
+  local_position:
+    ring: 0
+    slot: 23
+  boundary_class: edge
+  neighbor_families:
+  - 22
+  - 24
+  geometry_flags: []
+- family_id: family_025
+  family_index: 24
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 0
+  boundary_class: edge
+  neighbor_families:
+  - 23
+  - 25
+  geometry_flags: []
+- family_id: family_026
+  family_index: 25
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 1
+  boundary_class: internal
+  neighbor_families:
+  - 24
+  - 26
+  geometry_flags: []
+- family_id: family_027
+  family_index: 26
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 2
+  boundary_class: internal
+  neighbor_families:
+  - 25
+  - 27
+  geometry_flags: []
+- family_id: family_028
+  family_index: 27
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 3
+  boundary_class: internal
+  neighbor_families:
+  - 26
+  - 28
+  geometry_flags: []
+- family_id: family_029
+  family_index: 28
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 4
+  boundary_class: internal
+  neighbor_families:
+  - 27
+  - 29
+  geometry_flags: []
+- family_id: family_030
+  family_index: 29
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 5
+  boundary_class: internal
+  neighbor_families:
+  - 28
+  - 30
+  geometry_flags: []
+- family_id: family_031
+  family_index: 30
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 6
+  boundary_class: internal
+  neighbor_families:
+  - 29
+  - 31
+  geometry_flags: []
+- family_id: family_032
+  family_index: 31
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 7
+  boundary_class: internal
+  neighbor_families:
+  - 30
+  - 32
+  geometry_flags: []
+- family_id: family_033
+  family_index: 32
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 8
+  boundary_class: internal
+  neighbor_families:
+  - 31
+  - 33
+  geometry_flags: []
+- family_id: family_034
+  family_index: 33
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 9
+  boundary_class: internal
+  neighbor_families:
+  - 32
+  - 34
+  geometry_flags: []
+- family_id: family_035
+  family_index: 34
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 10
+  boundary_class: internal
+  neighbor_families:
+  - 33
+  - 35
+  geometry_flags: []
+- family_id: family_036
+  family_index: 35
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 11
+  boundary_class: internal
+  neighbor_families:
+  - 34
+  - 36
+  geometry_flags: []
+- family_id: family_037
+  family_index: 36
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 12
+  boundary_class: internal
+  neighbor_families:
+  - 35
+  - 37
+  geometry_flags: []
+- family_id: family_038
+  family_index: 37
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 13
+  boundary_class: internal
+  neighbor_families:
+  - 36
+  - 38
+  geometry_flags: []
+- family_id: family_039
+  family_index: 38
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 14
+  boundary_class: internal
+  neighbor_families:
+  - 37
+  - 39
+  geometry_flags: []
+- family_id: family_040
+  family_index: 39
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 15
+  boundary_class: internal
+  neighbor_families:
+  - 38
+  - 40
+  geometry_flags: []
+- family_id: family_041
+  family_index: 40
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 16
+  boundary_class: internal
+  neighbor_families:
+  - 39
+  - 41
+  geometry_flags: []
+- family_id: family_042
+  family_index: 41
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 17
+  boundary_class: internal
+  neighbor_families:
+  - 40
+  - 42
+  geometry_flags: []
+- family_id: family_043
+  family_index: 42
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 18
+  boundary_class: internal
+  neighbor_families:
+  - 41
+  - 43
+  geometry_flags: []
+- family_id: family_044
+  family_index: 43
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 19
+  boundary_class: internal
+  neighbor_families:
+  - 42
+  - 44
+  geometry_flags: []
+- family_id: family_045
+  family_index: 44
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 20
+  boundary_class: internal
+  neighbor_families:
+  - 43
+  - 45
+  geometry_flags: []
+- family_id: family_046
+  family_index: 45
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 21
+  boundary_class: internal
+  neighbor_families:
+  - 44
+  - 46
+  geometry_flags: []
+- family_id: family_047
+  family_index: 46
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 22
+  boundary_class: internal
+  neighbor_families:
+  - 45
+  - 47
+  geometry_flags: []
+- family_id: family_048
+  family_index: 47
+  area_id: 1
+  local_position:
+    ring: 0
+    slot: 23
+  boundary_class: edge
+  neighbor_families:
+  - 46
+  - 24
+  geometry_flags: []
+- family_id: family_049
+  family_index: 48
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 0
+  boundary_class: edge
+  neighbor_families:
+  - 72
+  - 49
+  geometry_flags: []
+- family_id: family_050
+  family_index: 49
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 1
+  boundary_class: internal
+  neighbor_families:
+  - 48
+  - 50
+  geometry_flags: []
+- family_id: family_051
+  family_index: 50
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 2
+  boundary_class: internal
+  neighbor_families:
+  - 49
+  - 51
+  geometry_flags: []
+- family_id: family_052
+  family_index: 51
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 3
+  boundary_class: internal
+  neighbor_families:
+  - 50
+  - 52
+  geometry_flags: []
+- family_id: family_053
+  family_index: 52
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 4
+  boundary_class: internal
+  neighbor_families:
+  - 51
+  - 53
+  geometry_flags: []
+- family_id: family_054
+  family_index: 53
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 5
+  boundary_class: internal
+  neighbor_families:
+  - 52
+  - 54
+  geometry_flags: []
+- family_id: family_055
+  family_index: 54
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 6
+  boundary_class: internal
+  neighbor_families:
+  - 53
+  - 55
+  geometry_flags: []
+- family_id: family_056
+  family_index: 55
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 7
+  boundary_class: internal
+  neighbor_families:
+  - 54
+  - 56
+  geometry_flags: []
+- family_id: family_057
+  family_index: 56
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 8
+  boundary_class: internal
+  neighbor_families:
+  - 55
+  - 57
+  geometry_flags: []
+- family_id: family_058
+  family_index: 57
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 9
+  boundary_class: internal
+  neighbor_families:
+  - 56
+  - 58
+  geometry_flags: []
+- family_id: family_059
+  family_index: 58
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 10
+  boundary_class: internal
+  neighbor_families:
+  - 57
+  - 59
+  geometry_flags: []
+- family_id: family_060
+  family_index: 59
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 11
+  boundary_class: internal
+  neighbor_families:
+  - 58
+  - 60
+  geometry_flags: []
+- family_id: family_061
+  family_index: 60
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 12
+  boundary_class: internal
+  neighbor_families:
+  - 59
+  - 61
+  geometry_flags: []
+- family_id: family_062
+  family_index: 61
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 13
+  boundary_class: internal
+  neighbor_families:
+  - 60
+  - 62
+  geometry_flags: []
+- family_id: family_063
+  family_index: 62
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 14
+  boundary_class: internal
+  neighbor_families:
+  - 61
+  - 63
+  geometry_flags: []
+- family_id: family_064
+  family_index: 63
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 15
+  boundary_class: internal
+  neighbor_families:
+  - 62
+  - 64
+  geometry_flags: []
+- family_id: family_065
+  family_index: 64
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 16
+  boundary_class: internal
+  neighbor_families:
+  - 63
+  - 65
+  geometry_flags: []
+- family_id: family_066
+  family_index: 65
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 17
+  boundary_class: internal
+  neighbor_families:
+  - 64
+  - 66
+  geometry_flags: []
+- family_id: family_067
+  family_index: 66
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 18
+  boundary_class: internal
+  neighbor_families:
+  - 65
+  - 67
+  geometry_flags: []
+- family_id: family_068
+  family_index: 67
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 19
+  boundary_class: internal
+  neighbor_families:
+  - 66
+  - 68
+  geometry_flags: []
+- family_id: family_069
+  family_index: 68
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 20
+  boundary_class: internal
+  neighbor_families:
+  - 67
+  - 69
+  geometry_flags: []
+- family_id: family_070
+  family_index: 69
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 21
+  boundary_class: internal
+  neighbor_families:
+  - 68
+  - 70
+  geometry_flags: []
+- family_id: family_071
+  family_index: 70
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 22
+  boundary_class: internal
+  neighbor_families:
+  - 69
+  - 71
+  geometry_flags: []
+- family_id: family_072
+  family_index: 71
+  area_id: 2
+  local_position:
+    ring: 0
+    slot: 23
+  boundary_class: edge
+  neighbor_families:
+  - 70
+  - 72
+  geometry_flags: []
+- family_id: family_073
+  family_index: 72
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 0
+  boundary_class: edge
+  neighbor_families:
+  - 71
+  - 73
+  geometry_flags: []
+- family_id: family_074
+  family_index: 73
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 1
+  boundary_class: internal
+  neighbor_families:
+  - 72
+  - 74
+  geometry_flags: []
+- family_id: family_075
+  family_index: 74
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 2
+  boundary_class: internal
+  neighbor_families:
+  - 73
+  - 75
+  geometry_flags: []
+- family_id: family_076
+  family_index: 75
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 3
+  boundary_class: internal
+  neighbor_families:
+  - 74
+  - 76
+  geometry_flags: []
+- family_id: family_077
+  family_index: 76
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 4
+  boundary_class: internal
+  neighbor_families:
+  - 75
+  - 77
+  geometry_flags: []
+- family_id: family_078
+  family_index: 77
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 5
+  boundary_class: internal
+  neighbor_families:
+  - 76
+  - 78
+  geometry_flags: []
+- family_id: family_079
+  family_index: 78
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 6
+  boundary_class: internal
+  neighbor_families:
+  - 77
+  - 79
+  geometry_flags: []
+- family_id: family_080
+  family_index: 79
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 7
+  boundary_class: internal
+  neighbor_families:
+  - 78
+  - 80
+  geometry_flags: []
+- family_id: family_081
+  family_index: 80
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 8
+  boundary_class: internal
+  neighbor_families:
+  - 79
+  - 81
+  geometry_flags: []
+- family_id: family_082
+  family_index: 81
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 9
+  boundary_class: internal
+  neighbor_families:
+  - 80
+  - 82
+  geometry_flags: []
+- family_id: family_083
+  family_index: 82
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 10
+  boundary_class: internal
+  neighbor_families:
+  - 81
+  - 83
+  geometry_flags: []
+- family_id: family_084
+  family_index: 83
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 11
+  boundary_class: internal
+  neighbor_families:
+  - 82
+  - 84
+  geometry_flags: []
+- family_id: family_085
+  family_index: 84
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 12
+  boundary_class: internal
+  neighbor_families:
+  - 83
+  - 85
+  geometry_flags: []
+- family_id: family_086
+  family_index: 85
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 13
+  boundary_class: internal
+  neighbor_families:
+  - 84
+  - 86
+  geometry_flags: []
+- family_id: family_087
+  family_index: 86
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 14
+  boundary_class: internal
+  neighbor_families:
+  - 85
+  - 87
+  geometry_flags: []
+- family_id: family_088
+  family_index: 87
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 15
+  boundary_class: internal
+  neighbor_families:
+  - 86
+  - 88
+  geometry_flags: []
+- family_id: family_089
+  family_index: 88
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 16
+  boundary_class: internal
+  neighbor_families:
+  - 87
+  - 89
+  geometry_flags: []
+- family_id: family_090
+  family_index: 89
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 17
+  boundary_class: internal
+  neighbor_families:
+  - 88
+  - 90
+  geometry_flags: []
+- family_id: family_091
+  family_index: 90
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 18
+  boundary_class: internal
+  neighbor_families:
+  - 89
+  - 91
+  geometry_flags: []
+- family_id: family_092
+  family_index: 91
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 19
+  boundary_class: internal
+  neighbor_families:
+  - 90
+  - 92
+  geometry_flags: []
+- family_id: family_093
+  family_index: 92
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 20
+  boundary_class: internal
+  neighbor_families:
+  - 91
+  - 93
+  geometry_flags: []
+- family_id: family_094
+  family_index: 93
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 21
+  boundary_class: internal
+  neighbor_families:
+  - 92
+  - 94
+  geometry_flags: []
+- family_id: family_095
+  family_index: 94
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 22
+  boundary_class: internal
+  neighbor_families:
+  - 93
+  - 95
+  geometry_flags: []
+- family_id: family_096
+  family_index: 95
+  area_id: 3
+  local_position:
+    ring: 0
+    slot: 23
+  boundary_class: edge
+  neighbor_families:
+  - 94
+  - 96
+  geometry_flags: []
+- family_id: family_097
+  family_index: 96
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 0
+  boundary_class: edge
+  neighbor_families:
+  - 95
+  - 97
+  geometry_flags: []
+- family_id: family_098
+  family_index: 97
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 1
+  boundary_class: internal
+  neighbor_families:
+  - 96
+  - 98
+  geometry_flags: []
+- family_id: family_099
+  family_index: 98
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 2
+  boundary_class: internal
+  neighbor_families:
+  - 97
+  - 99
+  geometry_flags: []
+- family_id: family_100
+  family_index: 99
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 3
+  boundary_class: internal
+  neighbor_families:
+  - 98
+  - 100
+  geometry_flags: []
+- family_id: family_101
+  family_index: 100
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 4
+  boundary_class: internal
+  neighbor_families:
+  - 99
+  - 101
+  geometry_flags: []
+- family_id: family_102
+  family_index: 101
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 5
+  boundary_class: internal
+  neighbor_families:
+  - 100
+  - 102
+  geometry_flags: []
+- family_id: family_103
+  family_index: 102
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 6
+  boundary_class: internal
+  neighbor_families:
+  - 101
+  - 103
+  geometry_flags: []
+- family_id: family_104
+  family_index: 103
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 7
+  boundary_class: internal
+  neighbor_families:
+  - 102
+  - 104
+  geometry_flags: []
+- family_id: family_105
+  family_index: 104
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 8
+  boundary_class: internal
+  neighbor_families:
+  - 103
+  - 105
+  geometry_flags: []
+- family_id: family_106
+  family_index: 105
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 9
+  boundary_class: internal
+  neighbor_families:
+  - 104
+  - 106
+  geometry_flags: []
+- family_id: family_107
+  family_index: 106
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 10
+  boundary_class: internal
+  neighbor_families:
+  - 105
+  - 107
+  geometry_flags: []
+- family_id: family_108
+  family_index: 107
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 11
+  boundary_class: internal
+  neighbor_families:
+  - 106
+  - 108
+  geometry_flags: []
+- family_id: family_109
+  family_index: 108
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 12
+  boundary_class: internal
+  neighbor_families:
+  - 107
+  - 109
+  geometry_flags: []
+- family_id: family_110
+  family_index: 109
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 13
+  boundary_class: internal
+  neighbor_families:
+  - 108
+  - 110
+  geometry_flags: []
+- family_id: family_111
+  family_index: 110
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 14
+  boundary_class: internal
+  neighbor_families:
+  - 109
+  - 111
+  geometry_flags: []
+- family_id: family_112
+  family_index: 111
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 15
+  boundary_class: internal
+  neighbor_families:
+  - 110
+  - 112
+  geometry_flags: []
+- family_id: family_113
+  family_index: 112
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 16
+  boundary_class: internal
+  neighbor_families:
+  - 111
+  - 113
+  geometry_flags: []
+- family_id: family_114
+  family_index: 113
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 17
+  boundary_class: internal
+  neighbor_families:
+  - 112
+  - 114
+  geometry_flags: []
+- family_id: family_115
+  family_index: 114
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 18
+  boundary_class: internal
+  neighbor_families:
+  - 113
+  - 115
+  geometry_flags: []
+- family_id: family_116
+  family_index: 115
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 19
+  boundary_class: internal
+  neighbor_families:
+  - 114
+  - 116
+  geometry_flags: []
+- family_id: family_117
+  family_index: 116
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 20
+  boundary_class: internal
+  neighbor_families:
+  - 115
+  - 117
+  geometry_flags: []
+- family_id: family_118
+  family_index: 117
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 21
+  boundary_class: internal
+  neighbor_families:
+  - 116
+  - 118
+  geometry_flags: []
+- family_id: family_119
+  family_index: 118
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 22
+  boundary_class: internal
+  neighbor_families:
+  - 117
+  - 119
+  geometry_flags: []
+- family_id: family_120
+  family_index: 119
+  area_id: 4
+  local_position:
+    ring: 0
+    slot: 23
+  boundary_class: edge
+  neighbor_families:
+  - 118
+  - 120
+  geometry_flags: []
+- family_id: family_121
+  family_index: 120
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 0
+  boundary_class: edge
+  neighbor_families:
+  - 119
+  - 121
+  geometry_flags: []
+- family_id: family_122
+  family_index: 121
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 1
+  boundary_class: internal
+  neighbor_families:
+  - 120
+  - 122
+  geometry_flags: []
+- family_id: family_123
+  family_index: 122
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 2
+  boundary_class: internal
+  neighbor_families:
+  - 121
+  - 123
+  geometry_flags: []
+- family_id: family_124
+  family_index: 123
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 3
+  boundary_class: internal
+  neighbor_families:
+  - 122
+  - 124
+  geometry_flags: []
+- family_id: family_125
+  family_index: 124
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 4
+  boundary_class: internal
+  neighbor_families:
+  - 123
+  - 125
+  geometry_flags: []
+- family_id: family_126
+  family_index: 125
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 5
+  boundary_class: internal
+  neighbor_families:
+  - 124
+  - 126
+  geometry_flags: []
+- family_id: family_127
+  family_index: 126
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 6
+  boundary_class: internal
+  neighbor_families:
+  - 125
+  - 127
+  geometry_flags: []
+- family_id: family_128
+  family_index: 127
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 7
+  boundary_class: internal
+  neighbor_families:
+  - 126
+  - 128
+  geometry_flags: []
+- family_id: family_129
+  family_index: 128
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 8
+  boundary_class: internal
+  neighbor_families:
+  - 127
+  - 129
+  geometry_flags: []
+- family_id: family_130
+  family_index: 129
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 9
+  boundary_class: internal
+  neighbor_families:
+  - 128
+  - 130
+  geometry_flags: []
+- family_id: family_131
+  family_index: 130
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 10
+  boundary_class: internal
+  neighbor_families:
+  - 129
+  - 131
+  geometry_flags: []
+- family_id: family_132
+  family_index: 131
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 11
+  boundary_class: internal
+  neighbor_families:
+  - 130
+  - 132
+  geometry_flags: []
+- family_id: family_133
+  family_index: 132
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 12
+  boundary_class: internal
+  neighbor_families:
+  - 131
+  - 133
+  geometry_flags: []
+- family_id: family_134
+  family_index: 133
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 13
+  boundary_class: internal
+  neighbor_families:
+  - 132
+  - 134
+  geometry_flags: []
+- family_id: family_135
+  family_index: 134
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 14
+  boundary_class: internal
+  neighbor_families:
+  - 133
+  - 135
+  geometry_flags: []
+- family_id: family_136
+  family_index: 135
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 15
+  boundary_class: internal
+  neighbor_families:
+  - 134
+  - 136
+  geometry_flags: []
+- family_id: family_137
+  family_index: 136
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 16
+  boundary_class: internal
+  neighbor_families:
+  - 135
+  - 137
+  geometry_flags: []
+- family_id: family_138
+  family_index: 137
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 17
+  boundary_class: internal
+  neighbor_families:
+  - 136
+  - 138
+  geometry_flags: []
+- family_id: family_139
+  family_index: 138
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 18
+  boundary_class: internal
+  neighbor_families:
+  - 137
+  - 139
+  geometry_flags: []
+- family_id: family_140
+  family_index: 139
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 19
+  boundary_class: internal
+  neighbor_families:
+  - 138
+  - 140
+  geometry_flags: []
+- family_id: family_141
+  family_index: 140
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 20
+  boundary_class: internal
+  neighbor_families:
+  - 139
+  - 141
+  geometry_flags: []
+- family_id: family_142
+  family_index: 141
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 21
+  boundary_class: internal
+  neighbor_families:
+  - 140
+  - 142
+  geometry_flags: []
+- family_id: family_143
+  family_index: 142
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 22
+  boundary_class: internal
+  neighbor_families:
+  - 141
+  - 143
+  geometry_flags: []
+- family_id: family_144
+  family_index: 143
+  area_id: 5
+  local_position:
+    ring: 0
+    slot: 23
+  boundary_class: edge
+  neighbor_families:
+  - 142
+  - 119
+  geometry_flags: []
+- family_id: family_145
+  family_index: 144
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 0
+  boundary_class: edge
+  neighbor_families:
+  - 168
+  - 145
+  geometry_flags: []
+- family_id: family_146
+  family_index: 145
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 1
+  boundary_class: internal
+  neighbor_families:
+  - 144
+  - 146
+  geometry_flags: []
+- family_id: family_147
+  family_index: 146
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 2
+  boundary_class: internal
+  neighbor_families:
+  - 145
+  - 147
+  geometry_flags: []
+- family_id: family_148
+  family_index: 147
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 3
+  boundary_class: internal
+  neighbor_families:
+  - 146
+  - 148
+  geometry_flags: []
+- family_id: family_149
+  family_index: 148
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 4
+  boundary_class: internal
+  neighbor_families:
+  - 147
+  - 149
+  geometry_flags: []
+- family_id: family_150
+  family_index: 149
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 5
+  boundary_class: internal
+  neighbor_families:
+  - 148
+  - 150
+  geometry_flags: []
+- family_id: family_151
+  family_index: 150
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 6
+  boundary_class: internal
+  neighbor_families:
+  - 149
+  - 151
+  geometry_flags: []
+- family_id: family_152
+  family_index: 151
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 7
+  boundary_class: internal
+  neighbor_families:
+  - 150
+  - 152
+  geometry_flags: []
+- family_id: family_153
+  family_index: 152
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 8
+  boundary_class: internal
+  neighbor_families:
+  - 151
+  - 153
+  geometry_flags: []
+- family_id: family_154
+  family_index: 153
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 9
+  boundary_class: internal
+  neighbor_families:
+  - 152
+  - 154
+  geometry_flags: []
+- family_id: family_155
+  family_index: 154
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 10
+  boundary_class: internal
+  neighbor_families:
+  - 153
+  - 155
+  geometry_flags: []
+- family_id: family_156
+  family_index: 155
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 11
+  boundary_class: internal
+  neighbor_families:
+  - 154
+  - 156
+  geometry_flags: []
+- family_id: family_157
+  family_index: 156
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 12
+  boundary_class: internal
+  neighbor_families:
+  - 155
+  - 157
+  geometry_flags: []
+- family_id: family_158
+  family_index: 157
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 13
+  boundary_class: internal
+  neighbor_families:
+  - 156
+  - 158
+  geometry_flags: []
+- family_id: family_159
+  family_index: 158
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 14
+  boundary_class: internal
+  neighbor_families:
+  - 157
+  - 159
+  geometry_flags: []
+- family_id: family_160
+  family_index: 159
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 15
+  boundary_class: internal
+  neighbor_families:
+  - 158
+  - 160
+  geometry_flags: []
+- family_id: family_161
+  family_index: 160
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 16
+  boundary_class: internal
+  neighbor_families:
+  - 159
+  - 161
+  geometry_flags: []
+- family_id: family_162
+  family_index: 161
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 17
+  boundary_class: internal
+  neighbor_families:
+  - 160
+  - 162
+  geometry_flags: []
+- family_id: family_163
+  family_index: 162
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 18
+  boundary_class: internal
+  neighbor_families:
+  - 161
+  - 163
+  geometry_flags: []
+- family_id: family_164
+  family_index: 163
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 19
+  boundary_class: internal
+  neighbor_families:
+  - 162
+  - 164
+  geometry_flags: []
+- family_id: family_165
+  family_index: 164
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 20
+  boundary_class: internal
+  neighbor_families:
+  - 163
+  - 165
+  geometry_flags: []
+- family_id: family_166
+  family_index: 165
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 21
+  boundary_class: internal
+  neighbor_families:
+  - 164
+  - 166
+  geometry_flags: []
+- family_id: family_167
+  family_index: 166
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 22
+  boundary_class: internal
+  neighbor_families:
+  - 165
+  - 167
+  geometry_flags: []
+- family_id: family_168
+  family_index: 167
+  area_id: 6
+  local_position:
+    ring: 0
+    slot: 23
+  boundary_class: edge
+  neighbor_families:
+  - 166
+  - 168
+  geometry_flags: []
+- family_id: family_169
+  family_index: 168
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 0
+  boundary_class: edge
+  neighbor_families:
+  - 167
+  - 169
+  geometry_flags: []
+- family_id: family_170
+  family_index: 169
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 1
+  boundary_class: internal
+  neighbor_families:
+  - 168
+  - 170
+  geometry_flags: []
+- family_id: family_171
+  family_index: 170
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 2
+  boundary_class: internal
+  neighbor_families:
+  - 169
+  - 171
+  geometry_flags: []
+- family_id: family_172
+  family_index: 171
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 3
+  boundary_class: internal
+  neighbor_families:
+  - 170
+  - 172
+  geometry_flags: []
+- family_id: family_173
+  family_index: 172
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 4
+  boundary_class: internal
+  neighbor_families:
+  - 171
+  - 173
+  geometry_flags: []
+- family_id: family_174
+  family_index: 173
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 5
+  boundary_class: internal
+  neighbor_families:
+  - 172
+  - 174
+  geometry_flags: []
+- family_id: family_175
+  family_index: 174
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 6
+  boundary_class: internal
+  neighbor_families:
+  - 173
+  - 175
+  geometry_flags: []
+- family_id: family_176
+  family_index: 175
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 7
+  boundary_class: internal
+  neighbor_families:
+  - 174
+  - 176
+  geometry_flags: []
+- family_id: family_177
+  family_index: 176
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 8
+  boundary_class: internal
+  neighbor_families:
+  - 175
+  - 177
+  geometry_flags: []
+- family_id: family_178
+  family_index: 177
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 9
+  boundary_class: internal
+  neighbor_families:
+  - 176
+  - 178
+  geometry_flags: []
+- family_id: family_179
+  family_index: 178
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 10
+  boundary_class: internal
+  neighbor_families:
+  - 177
+  - 179
+  geometry_flags: []
+- family_id: family_180
+  family_index: 179
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 11
+  boundary_class: internal
+  neighbor_families:
+  - 178
+  - 180
+  geometry_flags: []
+- family_id: family_181
+  family_index: 180
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 12
+  boundary_class: internal
+  neighbor_families:
+  - 179
+  - 181
+  geometry_flags: []
+- family_id: family_182
+  family_index: 181
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 13
+  boundary_class: internal
+  neighbor_families:
+  - 180
+  - 182
+  geometry_flags: []
+- family_id: family_183
+  family_index: 182
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 14
+  boundary_class: internal
+  neighbor_families:
+  - 181
+  - 183
+  geometry_flags: []
+- family_id: family_184
+  family_index: 183
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 15
+  boundary_class: internal
+  neighbor_families:
+  - 182
+  - 184
+  geometry_flags: []
+- family_id: family_185
+  family_index: 184
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 16
+  boundary_class: internal
+  neighbor_families:
+  - 183
+  - 185
+  geometry_flags: []
+- family_id: family_186
+  family_index: 185
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 17
+  boundary_class: internal
+  neighbor_families:
+  - 184
+  - 186
+  geometry_flags: []
+- family_id: family_187
+  family_index: 186
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 18
+  boundary_class: internal
+  neighbor_families:
+  - 185
+  - 187
+  geometry_flags: []
+- family_id: family_188
+  family_index: 187
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 19
+  boundary_class: internal
+  neighbor_families:
+  - 186
+  - 188
+  geometry_flags: []
+- family_id: family_189
+  family_index: 188
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 20
+  boundary_class: internal
+  neighbor_families:
+  - 187
+  - 189
+  geometry_flags: []
+- family_id: family_190
+  family_index: 189
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 21
+  boundary_class: internal
+  neighbor_families:
+  - 188
+  - 190
+  geometry_flags: []
+- family_id: family_191
+  family_index: 190
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 22
+  boundary_class: internal
+  neighbor_families:
+  - 189
+  - 191
+  geometry_flags: []
+- family_id: family_192
+  family_index: 191
+  area_id: 7
+  local_position:
+    ring: 0
+    slot: 23
+  boundary_class: edge
+  neighbor_families:
+  - 190
+  - 192
+  geometry_flags: []
+- family_id: family_193
+  family_index: 192
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 0
+  boundary_class: edge
+  neighbor_families:
+  - 191
+  - 193
+  geometry_flags: []
+- family_id: family_194
+  family_index: 193
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 1
+  boundary_class: internal
+  neighbor_families:
+  - 192
+  - 194
+  geometry_flags: []
+- family_id: family_195
+  family_index: 194
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 2
+  boundary_class: internal
+  neighbor_families:
+  - 193
+  - 195
+  geometry_flags: []
+- family_id: family_196
+  family_index: 195
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 3
+  boundary_class: internal
+  neighbor_families:
+  - 194
+  - 196
+  geometry_flags: []
+- family_id: family_197
+  family_index: 196
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 4
+  boundary_class: internal
+  neighbor_families:
+  - 195
+  - 197
+  geometry_flags: []
+- family_id: family_198
+  family_index: 197
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 5
+  boundary_class: internal
+  neighbor_families:
+  - 196
+  - 198
+  geometry_flags: []
+- family_id: family_199
+  family_index: 198
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 6
+  boundary_class: internal
+  neighbor_families:
+  - 197
+  - 199
+  geometry_flags: []
+- family_id: family_200
+  family_index: 199
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 7
+  boundary_class: internal
+  neighbor_families:
+  - 198
+  - 200
+  geometry_flags: []
+- family_id: family_201
+  family_index: 200
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 8
+  boundary_class: internal
+  neighbor_families:
+  - 199
+  - 201
+  geometry_flags: []
+- family_id: family_202
+  family_index: 201
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 9
+  boundary_class: internal
+  neighbor_families:
+  - 200
+  - 202
+  geometry_flags: []
+- family_id: family_203
+  family_index: 202
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 10
+  boundary_class: internal
+  neighbor_families:
+  - 201
+  - 203
+  geometry_flags: []
+- family_id: family_204
+  family_index: 203
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 11
+  boundary_class: internal
+  neighbor_families:
+  - 202
+  - 204
+  geometry_flags: []
+- family_id: family_205
+  family_index: 204
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 12
+  boundary_class: internal
+  neighbor_families:
+  - 203
+  - 205
+  geometry_flags: []
+- family_id: family_206
+  family_index: 205
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 13
+  boundary_class: internal
+  neighbor_families:
+  - 204
+  - 206
+  geometry_flags: []
+- family_id: family_207
+  family_index: 206
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 14
+  boundary_class: internal
+  neighbor_families:
+  - 205
+  - 207
+  geometry_flags: []
+- family_id: family_208
+  family_index: 207
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 15
+  boundary_class: internal
+  neighbor_families:
+  - 206
+  - 208
+  geometry_flags: []
+- family_id: family_209
+  family_index: 208
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 16
+  boundary_class: internal
+  neighbor_families:
+  - 207
+  - 209
+  geometry_flags: []
+- family_id: family_210
+  family_index: 209
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 17
+  boundary_class: internal
+  neighbor_families:
+  - 208
+  - 210
+  geometry_flags: []
+- family_id: family_211
+  family_index: 210
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 18
+  boundary_class: internal
+  neighbor_families:
+  - 209
+  - 211
+  geometry_flags: []
+- family_id: family_212
+  family_index: 211
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 19
+  boundary_class: internal
+  neighbor_families:
+  - 210
+  - 212
+  geometry_flags: []
+- family_id: family_213
+  family_index: 212
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 20
+  boundary_class: internal
+  neighbor_families:
+  - 211
+  - 213
+  geometry_flags: []
+- family_id: family_214
+  family_index: 213
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 21
+  boundary_class: internal
+  neighbor_families:
+  - 212
+  - 214
+  geometry_flags: []
+- family_id: family_215
+  family_index: 214
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 22
+  boundary_class: internal
+  neighbor_families:
+  - 213
+  - 215
+  geometry_flags: []
+- family_id: family_216
+  family_index: 215
+  area_id: 8
+  local_position:
+    ring: 0
+    slot: 23
+  boundary_class: edge
+  neighbor_families:
+  - 214
+  - 207
+  geometry_flags: []
+- family_id: family_217
+  family_index: 216
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 0
+  boundary_class: edge
+  neighbor_families:
+  - 215
+  - 217
+  geometry_flags: []
+- family_id: family_218
+  family_index: 217
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 1
+  boundary_class: internal
+  neighbor_families:
+  - 216
+  - 218
+  geometry_flags: []
+- family_id: family_219
+  family_index: 218
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 2
+  boundary_class: internal
+  neighbor_families:
+  - 217
+  - 219
+  geometry_flags: []
+- family_id: family_220
+  family_index: 219
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 3
+  boundary_class: internal
+  neighbor_families:
+  - 218
+  - 220
+  geometry_flags: []
+- family_id: family_221
+  family_index: 220
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 4
+  boundary_class: internal
+  neighbor_families:
+  - 219
+  - 221
+  geometry_flags: []
+- family_id: family_222
+  family_index: 221
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 5
+  boundary_class: internal
+  neighbor_families:
+  - 220
+  - 222
+  geometry_flags: []
+- family_id: family_223
+  family_index: 222
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 6
+  boundary_class: internal
+  neighbor_families:
+  - 221
+  - 223
+  geometry_flags: []
+- family_id: family_224
+  family_index: 223
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 7
+  boundary_class: internal
+  neighbor_families:
+  - 222
+  - 224
+  geometry_flags: []
+- family_id: family_225
+  family_index: 224
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 8
+  boundary_class: internal
+  neighbor_families:
+  - 223
+  - 225
+  geometry_flags: []
+- family_id: family_226
+  family_index: 225
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 9
+  boundary_class: internal
+  neighbor_families:
+  - 224
+  - 226
+  geometry_flags: []
+- family_id: family_227
+  family_index: 226
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 10
+  boundary_class: internal
+  neighbor_families:
+  - 225
+  - 227
+  geometry_flags: []
+- family_id: family_228
+  family_index: 227
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 11
+  boundary_class: internal
+  neighbor_families:
+  - 226
+  - 228
+  geometry_flags: []
+- family_id: family_229
+  family_index: 228
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 12
+  boundary_class: internal
+  neighbor_families:
+  - 227
+  - 229
+  geometry_flags: []
+- family_id: family_230
+  family_index: 229
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 13
+  boundary_class: internal
+  neighbor_families:
+  - 228
+  - 230
+  geometry_flags: []
+- family_id: family_231
+  family_index: 230
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 14
+  boundary_class: internal
+  neighbor_families:
+  - 229
+  - 231
+  geometry_flags: []
+- family_id: family_232
+  family_index: 231
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 15
+  boundary_class: internal
+  neighbor_families:
+  - 230
+  - 232
+  geometry_flags: []
+- family_id: family_233
+  family_index: 232
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 16
+  boundary_class: internal
+  neighbor_families:
+  - 231
+  - 233
+  geometry_flags: []
+- family_id: family_234
+  family_index: 233
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 17
+  boundary_class: internal
+  neighbor_families:
+  - 232
+  - 234
+  geometry_flags: []
+- family_id: family_235
+  family_index: 234
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 18
+  boundary_class: internal
+  neighbor_families:
+  - 233
+  - 235
+  geometry_flags: []
+- family_id: family_236
+  family_index: 235
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 19
+  boundary_class: internal
+  neighbor_families:
+  - 234
+  - 236
+  geometry_flags: []
+- family_id: family_237
+  family_index: 236
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 20
+  boundary_class: internal
+  neighbor_families:
+  - 235
+  - 237
+  geometry_flags: []
+- family_id: family_238
+  family_index: 237
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 21
+  boundary_class: internal
+  neighbor_families:
+  - 236
+  - 238
+  geometry_flags: []
+- family_id: family_239
+  family_index: 238
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 22
+  boundary_class: internal
+  neighbor_families:
+  - 237
+  - 239
+  geometry_flags: []
+- family_id: family_240
+  family_index: 239
+  area_id: 9
+  local_position:
+    ring: 0
+    slot: 23
+  boundary_class: edge
+  neighbor_families:
+  - 238
+  - 217
+  geometry_flags: []
+- family_id: family_241
+  family_index: 240
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 0
+  boundary_class: edge
+  neighbor_families:
+  - 264
+  - 241
+  geometry_flags: []
+- family_id: family_242
+  family_index: 241
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 1
+  boundary_class: internal
+  neighbor_families:
+  - 240
+  - 242
+  geometry_flags: []
+- family_id: family_243
+  family_index: 242
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 2
+  boundary_class: internal
+  neighbor_families:
+  - 241
+  - 243
+  geometry_flags: []
+- family_id: family_244
+  family_index: 243
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 3
+  boundary_class: internal
+  neighbor_families:
+  - 242
+  - 244
+  geometry_flags: []
+- family_id: family_245
+  family_index: 244
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 4
+  boundary_class: internal
+  neighbor_families:
+  - 243
+  - 245
+  geometry_flags: []
+- family_id: family_246
+  family_index: 245
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 5
+  boundary_class: internal
+  neighbor_families:
+  - 244
+  - 246
+  geometry_flags: []
+- family_id: family_247
+  family_index: 246
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 6
+  boundary_class: internal
+  neighbor_families:
+  - 245
+  - 247
+  geometry_flags: []
+- family_id: family_248
+  family_index: 247
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 7
+  boundary_class: internal
+  neighbor_families:
+  - 246
+  - 248
+  geometry_flags: []
+- family_id: family_249
+  family_index: 248
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 8
+  boundary_class: internal
+  neighbor_families:
+  - 247
+  - 249
+  geometry_flags: []
+- family_id: family_250
+  family_index: 249
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 9
+  boundary_class: internal
+  neighbor_families:
+  - 248
+  - 250
+  geometry_flags: []
+- family_id: family_251
+  family_index: 250
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 10
+  boundary_class: internal
+  neighbor_families:
+  - 249
+  - 251
+  geometry_flags: []
+- family_id: family_252
+  family_index: 251
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 11
+  boundary_class: internal
+  neighbor_families:
+  - 250
+  - 252
+  geometry_flags: []
+- family_id: family_253
+  family_index: 252
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 12
+  boundary_class: internal
+  neighbor_families:
+  - 251
+  - 253
+  geometry_flags: []
+- family_id: family_254
+  family_index: 253
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 13
+  boundary_class: internal
+  neighbor_families:
+  - 252
+  - 254
+  geometry_flags: []
+- family_id: family_255
+  family_index: 254
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 14
+  boundary_class: internal
+  neighbor_families:
+  - 253
+  - 255
+  geometry_flags: []
+- family_id: family_256
+  family_index: 255
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 15
+  boundary_class: internal
+  neighbor_families:
+  - 254
+  - 256
+  geometry_flags: []
+- family_id: family_257
+  family_index: 256
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 16
+  boundary_class: internal
+  neighbor_families:
+  - 255
+  - 257
+  geometry_flags: []
+- family_id: family_258
+  family_index: 257
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 17
+  boundary_class: internal
+  neighbor_families:
+  - 256
+  - 258
+  geometry_flags: []
+- family_id: family_259
+  family_index: 258
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 18
+  boundary_class: internal
+  neighbor_families:
+  - 257
+  - 259
+  geometry_flags: []
+- family_id: family_260
+  family_index: 259
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 19
+  boundary_class: internal
+  neighbor_families:
+  - 258
+  - 260
+  geometry_flags: []
+- family_id: family_261
+  family_index: 260
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 20
+  boundary_class: internal
+  neighbor_families:
+  - 259
+  - 261
+  geometry_flags: []
+- family_id: family_262
+  family_index: 261
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 21
+  boundary_class: internal
+  neighbor_families:
+  - 260
+  - 262
+  geometry_flags: []
+- family_id: family_263
+  family_index: 262
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 22
+  boundary_class: internal
+  neighbor_families:
+  - 261
+  - 263
+  geometry_flags: []
+- family_id: family_264
+  family_index: 263
+  area_id: 10
+  local_position:
+    ring: 0
+    slot: 23
+  boundary_class: edge
+  neighbor_families:
+  - 262
+  - 264
+  geometry_flags: []
+- family_id: family_265
+  family_index: 264
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 0
+  boundary_class: edge
+  neighbor_families:
+  - 263
+  - 265
+  geometry_flags: []
+- family_id: family_266
+  family_index: 265
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 1
+  boundary_class: internal
+  neighbor_families:
+  - 264
+  - 266
+  geometry_flags: []
+- family_id: family_267
+  family_index: 266
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 2
+  boundary_class: internal
+  neighbor_families:
+  - 265
+  - 267
+  geometry_flags: []
+- family_id: family_268
+  family_index: 267
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 3
+  boundary_class: internal
+  neighbor_families:
+  - 266
+  - 268
+  geometry_flags: []
+- family_id: family_269
+  family_index: 268
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 4
+  boundary_class: internal
+  neighbor_families:
+  - 267
+  - 269
+  geometry_flags: []
+- family_id: family_270
+  family_index: 269
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 5
+  boundary_class: internal
+  neighbor_families:
+  - 268
+  - 270
+  geometry_flags: []
+- family_id: family_271
+  family_index: 270
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 6
+  boundary_class: internal
+  neighbor_families:
+  - 269
+  - 271
+  geometry_flags: []
+- family_id: family_272
+  family_index: 271
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 7
+  boundary_class: internal
+  neighbor_families:
+  - 270
+  - 272
+  geometry_flags: []
+- family_id: family_273
+  family_index: 272
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 8
+  boundary_class: internal
+  neighbor_families:
+  - 271
+  - 273
+  geometry_flags: []
+- family_id: family_274
+  family_index: 273
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 9
+  boundary_class: internal
+  neighbor_families:
+  - 272
+  - 274
+  geometry_flags: []
+- family_id: family_275
+  family_index: 274
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 10
+  boundary_class: internal
+  neighbor_families:
+  - 273
+  - 275
+  geometry_flags: []
+- family_id: family_276
+  family_index: 275
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 11
+  boundary_class: internal
+  neighbor_families:
+  - 274
+  - 276
+  geometry_flags: []
+- family_id: family_277
+  family_index: 276
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 12
+  boundary_class: internal
+  neighbor_families:
+  - 275
+  - 277
+  geometry_flags: []
+- family_id: family_278
+  family_index: 277
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 13
+  boundary_class: internal
+  neighbor_families:
+  - 276
+  - 278
+  geometry_flags: []
+- family_id: family_279
+  family_index: 278
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 14
+  boundary_class: internal
+  neighbor_families:
+  - 277
+  - 279
+  geometry_flags: []
+- family_id: family_280
+  family_index: 279
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 15
+  boundary_class: internal
+  neighbor_families:
+  - 278
+  - 280
+  geometry_flags: []
+- family_id: family_281
+  family_index: 280
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 16
+  boundary_class: internal
+  neighbor_families:
+  - 279
+  - 281
+  geometry_flags: []
+- family_id: family_282
+  family_index: 281
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 17
+  boundary_class: internal
+  neighbor_families:
+  - 280
+  - 282
+  geometry_flags: []
+- family_id: family_283
+  family_index: 282
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 18
+  boundary_class: internal
+  neighbor_families:
+  - 281
+  - 283
+  geometry_flags: []
+- family_id: family_284
+  family_index: 283
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 19
+  boundary_class: internal
+  neighbor_families:
+  - 282
+  - 284
+  geometry_flags: []
+- family_id: family_285
+  family_index: 284
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 20
+  boundary_class: internal
+  neighbor_families:
+  - 283
+  - 285
+  geometry_flags: []
+- family_id: family_286
+  family_index: 285
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 21
+  boundary_class: internal
+  neighbor_families:
+  - 284
+  - 286
+  geometry_flags: []
+- family_id: family_287
+  family_index: 286
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 22
+  boundary_class: internal
+  neighbor_families:
+  - 285
+  - 287
+  geometry_flags: []
+- family_id: family_288
+  family_index: 287
+  area_id: 11
+  local_position:
+    ring: 0
+    slot: 23
+  boundary_class: edge
+  neighbor_families:
+  - 286
+  - 0
+  geometry_flags: []

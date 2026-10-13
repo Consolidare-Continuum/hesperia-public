@@ -1,0 +1,14 @@
+{
+  "analyzed_corpus": "narrative_spillover_v1",
+  "commercial_relevance": "Useful for media, NGOs, think tanks, and policy desks",
+  "headline_signal": "Low tension profile (coherent corpus)",
+  "product": "Narrative Monitor",
+  "supporting_metrics": {
+    "cross_domain_conflicts": 0,
+    "global_tension_score": 0.0
+  },
+  "what_generic_methods_miss": "Keyword overlap misses typed conflict relations; unbounded graphs miss area-bounded propagation and blockage from contradiction pressure.",
+  "what_matters": "Structured cross-domain friction and resolution-class patterns, not raw term counts.",
+  "what_was_analyzed": "Corpus narrative_spillover_v1: active semantic graph + HESPERIA topology-bound TRIZ layer.",
+  "why_signal_found": "Tension index 0.0 from scored contradiction edges and family hotspots."
+}

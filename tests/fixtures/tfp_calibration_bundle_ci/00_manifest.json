@@ -1,0 +1,30 @@
+{
+  "run": "tfp_calibration_bundle_ci_fixture",
+  "version": "1.0.0",
+  "note": "Synthetic bundle for CI schema + goldset; not engine output.",
+  "sessions": ["1-11-09-2023"],
+  "flags": {
+    "with_topology": false
+  },
+  "tfp_signal_calibration": {
+    "config_version": "tfp_signal_calibration_v2",
+    "invariant_path_id": "tfp_invariant_activation_v2",
+    "loaded_config": {
+      "version": "tfp_signal_calibration_v2",
+      "hex_feedback_required": true
+    },
+    "inhibition_matrix": {
+      "version": "area_inhibition_matrix_tfp_v1",
+      "area_ids": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    }
+  },
+  "operational_envelope": {
+    "status": "ok",
+    "anomaly_codes": [],
+    "severity": "ok",
+    "blocking": false,
+    "operator_message": "",
+    "recommended_next_check": "",
+    "taxonomy_version": "1.0.0"
+  }
+}

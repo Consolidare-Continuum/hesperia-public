@@ -1,0 +1,281 @@
+{
+  "schema": "hspr_field_calibration_v1",
+  "spec_ref": "HSPR_CALIBRATION_INDEX_v1",
+  "matrices_provenance": "ontology",
+  "candidate_count": 4,
+  "best": {
+    "candidate": {
+      "alpha": 0.07,
+      "beta": 0.04,
+      "gamma": 0.02,
+      "delta": 0.32,
+      "mu": 0.0,
+      "dt": 1.0
+    },
+    "steps": 14,
+    "converged_numerical": false,
+    "converged_contradiction": false,
+    "energy_final": -0.31322,
+    "observables": {
+      "propagation_velocity": 0.012791,
+      "contradiction_load": 0.229071,
+      "diffusion_load": 0.055899,
+      "resistance_load": 0.126643,
+      "source_alignment": 1.0,
+      "stability_score": 0.987371,
+      "delta_norm_l2": 0.012791,
+      "pressure_norm_l1": 0.229071
+    },
+    "hspr_calibration_index": 0.827351,
+    "hspr_components": {
+      "stability": 0.987371,
+      "source_alignment": 0.5,
+      "energy": 1.0,
+      "contradiction": 0.813622,
+      "diffusion": 0.947061,
+      "resistance": 0.887592
+    },
+    "hspr_weights": {
+      "stability": 0.25,
+      "source_alignment": 0.25,
+      "energy": 0.15,
+      "contradiction": 0.15,
+      "diffusion": 0.1,
+      "resistance": 0.1
+    },
+    "field_final": [
+      1.0,
+      0.763571
+    ],
+    "source_vector": [
+      1.0,
+      0.0
+    ],
+    "area_field_final": [
+      1.0,
+      0.763571
+    ]
+  },
+  "top_k": [
+    {
+      "candidate": {
+        "alpha": 0.07,
+        "beta": 0.04,
+        "gamma": 0.02,
+        "delta": 0.32,
+        "mu": 0.0,
+        "dt": 1.0
+      },
+      "steps": 14,
+      "converged_numerical": false,
+      "converged_contradiction": false,
+      "energy_final": -0.31322,
+      "observables": {
+        "propagation_velocity": 0.012791,
+        "contradiction_load": 0.229071,
+        "diffusion_load": 0.055899,
+        "resistance_load": 0.126643,
+        "source_alignment": 1.0,
+        "stability_score": 0.987371,
+        "delta_norm_l2": 0.012791,
+        "pressure_norm_l1": 0.229071
+      },
+      "hspr_calibration_index": 0.827351,
+      "hspr_components": {
+        "stability": 0.987371,
+        "source_alignment": 0.5,
+        "energy": 1.0,
+        "contradiction": 0.813622,
+        "diffusion": 0.947061,
+        "resistance": 0.887592
+      },
+      "hspr_weights": {
+        "stability": 0.25,
+        "source_alignment": 0.25,
+        "energy": 0.15,
+        "contradiction": 0.15,
+        "diffusion": 0.1,
+        "resistance": 0.1
+      },
+      "field_final": [
+        1.0,
+        0.763571
+      ],
+      "source_vector": [
+        1.0,
+        0.0
+      ],
+      "area_field_final": [
+        1.0,
+        0.763571
+      ]
+    },
+    {
+      "candidate": {
+        "alpha": 0.07,
+        "beta": 0.04,
+        "gamma": 0.02,
+        "delta": 0.22,
+        "mu": 0.0,
+        "dt": 1.0
+      },
+      "steps": 14,
+      "converged_numerical": false,
+      "converged_contradiction": false,
+      "energy_final": -0.213164,
+      "observables": {
+        "propagation_velocity": 0.0132,
+        "contradiction_load": 0.227581,
+        "diffusion_load": 0.058273,
+        "resistance_load": 0.126038,
+        "source_alignment": 1.0,
+        "stability_score": 0.986972,
+        "delta_norm_l2": 0.0132,
+        "pressure_norm_l1": 0.227581
+      },
+      "hspr_calibration_index": 0.827235,
+      "hspr_components": {
+        "stability": 0.986972,
+        "source_alignment": 0.5,
+        "energy": 1.0,
+        "contradiction": 0.81461,
+        "diffusion": 0.944936,
+        "resistance": 0.888069
+      },
+      "hspr_weights": {
+        "stability": 0.25,
+        "source_alignment": 0.25,
+        "energy": 0.15,
+        "contradiction": 0.15,
+        "diffusion": 0.1,
+        "resistance": 0.1
+      },
+      "field_final": [
+        1.0,
+        0.758602
+      ],
+      "source_vector": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "candidate": {
+        "alpha": 0.11,
+        "beta": 0.04,
+        "gamma": 0.02,
+        "delta": 0.32,
+        "mu": 0.0,
+        "dt": 1.0
+      },
+      "steps": 14,
+      "converged_numerical": false,
+      "converged_contradiction": false,
+      "energy_final": -0.313478,
+      "observables": {
+        "propagation_velocity": 0.01244,
+        "contradiction_load": 0.255608,
+        "diffusion_load": 0.021896,
+        "resistance_load": 0.138076,
+        "source_alignment": 1.0,
+        "stability_score": 0.987713,
+        "delta_norm_l2": 0.01244,
+        "pressure_norm_l1": 0.255608
+      },
+      "hspr_calibration_index": 0.827117,
+      "hspr_components": {
+        "stability": 0.987713,
+        "source_alignment": 0.5,
+        "energy": 1.0,
+        "contradiction": 0.796427,
+        "diffusion": 0.978573,
+        "resistance": 0.878676
+      },
+      "hspr_weights": {
+        "stability": 0.25,
+        "source_alignment": 0.25,
+        "energy": 0.15,
+        "contradiction": 0.15,
+        "diffusion": 0.1,
+        "resistance": 0.1
+      },
+      "field_final": [
+        1.0,
+        0.852026
+      ],
+      "source_vector": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "candidate": {
+        "alpha": 0.11,
+        "beta": 0.04,
+        "gamma": 0.02,
+        "delta": 0.22,
+        "mu": 0.0,
+        "dt": 1.0
+      },
+      "steps": 14,
+      "converged_numerical": false,
+      "converged_contradiction": false,
+      "energy_final": -0.213424,
+      "observables": {
+        "propagation_velocity": 0.013094,
+        "contradiction_load": 0.254117,
+        "diffusion_load": 0.023392,
+        "resistance_load": 0.1374,
+        "source_alignment": 1.0,
+        "stability_score": 0.987076,
+        "delta_norm_l2": 0.013094,
+        "pressure_norm_l1": 0.254117
+      },
+      "hspr_calibration_index": 0.827009,
+      "hspr_components": {
+        "stability": 0.987076,
+        "source_alignment": 0.5,
+        "energy": 1.0,
+        "contradiction": 0.797374,
+        "diffusion": 0.977143,
+        "resistance": 0.879198
+      },
+      "hspr_weights": {
+        "stability": 0.25,
+        "source_alignment": 0.25,
+        "energy": 0.15,
+        "contradiction": 0.15,
+        "diffusion": 0.1,
+        "resistance": 0.1
+      },
+      "field_final": [
+        1.0,
+        0.847055
+      ],
+      "source_vector": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "include_all_results": false,
+  "all_results_count": 4,
+  "all_results_omitted": true,
+  "hspr_calibration_index_interpretation": {
+    "band": "usable",
+    "label": "0.70\u20130.85 usable / strong",
+    "hspr_calibration_index": 0.827351
+  },
+  "run": "e2e_field_calibration",
+  "system_version": "0.5.3",
+  "build_id": "hesperia_0.5.3_296581f37553_2026-03-26T11:26:15Z",
+  "schema_version": "v1",
+  "calibration_profile": "default_v1",
+  "run_id": "bd3411e9-9673-4139-80e6-fe9fd441e7f0",
+  "execution_flow_version": "e2e_v2",
+  "pipeline_version": "e2e_v2",
+  "orchestration_mode": "E2E_BATCH",
+  "modules_used": [
+    "runtime.semantic_field.run_field_calibration"
+  ]
+}

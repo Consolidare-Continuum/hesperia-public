@@ -1,0 +1,210 @@
+{
+  "artifact_count": 21,
+  "artifacts": [
+    {
+      "basename": "run_output_e2e_calibration_100_structural.json",
+      "bytes": 1420681,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_calibration_100_structural.json",
+      "sha256": "a733bdb6d9a84b195c74f8f2a8d220cc6c8d548dc1e8acdeae0c1c383ce5173b"
+    },
+    {
+      "basename": "run_output_e2e_calibration_100_summary.json",
+      "bytes": 941,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_calibration_100_summary.json",
+      "sha256": "f77a467ecdd764da659113ff5cde6bf5b34b7cf878d62695c86623314394e083"
+    },
+    {
+      "basename": "run_output_e2e_capability_matrix.json",
+      "bytes": 30931,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_capability_matrix.json",
+      "sha256": "e57c3bc52a7c0e0908e4c5e16d338025dc247aa9cc945bb40f74ce37ef20a5fc"
+    },
+    {
+      "basename": "run_output_e2e_domain_metrics.json",
+      "bytes": 6432,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_domain_metrics.json",
+      "sha256": "5cad3353020c24ce643f61080f1abe60564062ad242e7516af25c0cb86e7e434"
+    },
+    {
+      "basename": "run_output_e2e_field_calibration.json",
+      "bytes": 6845,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_field_calibration.json",
+      "sha256": "84e97f9b5f9d42729d6173de7c7f9cf27c41e1922792a9373930077bd6a3066c"
+    },
+    {
+      "basename": "run_output_e2e_field_calibration_best.json",
+      "bytes": 1429,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_field_calibration_best.json",
+      "sha256": "1d0c9f9b82996ef3b2c52c192bb4a14758d47d96c522d5e3f5d1ef845faa3866"
+    },
+    {
+      "basename": "run_output_e2e_field_calibration_topk.json",
+      "bytes": 2623,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_field_calibration_topk.json",
+      "sha256": "3c60a7563a848a32a2a2af16e3f4fe6f70db07a1bd19411f88a9bb1cf3bc7133"
+    },
+    {
+      "basename": "run_output_e2e_field_dynamics.json",
+      "bytes": 17084,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_field_dynamics.json",
+      "sha256": "5575f33ed559db944e015444c7a7c708e6d9171717f97de79b248e80aaddc971"
+    },
+    {
+      "basename": "run_output_e2e_full_product_surface.json",
+      "bytes": 11588,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_full_product_surface.json",
+      "sha256": "72ad91773a5f4a0a43633b472767fa28cb4f9891360cf72a53152047fd501458"
+    },
+    {
+      "basename": "run_output_e2e_hex_microstructure_tfp.json",
+      "bytes": 57838,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_hex_microstructure_tfp.json",
+      "sha256": "f1c7e8bb1b2c01616364ec5092b4b798c8663fc20949fcd90f17cf66a2746d12"
+    },
+    {
+      "basename": "run_output_e2e_l1_l9.json",
+      "bytes": 33288,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_l1_l9.json",
+      "sha256": "74108590fc58832a51b1aa805cc6c2d53be59ae73c8acf657ba5e46ea4307282"
+    },
+    {
+      "basename": "run_output_e2e_r1_r4.json",
+      "bytes": 10101,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_r1_r4.json",
+      "sha256": "70cf5823a954a55f8ca08a4b76623d4a283cca7f5f486653c97cf0e793f5c855"
+    },
+    {
+      "basename": "run_output_e2e_sealed_multiscale.json",
+      "bytes": 7631,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_sealed_multiscale.json",
+      "sha256": "c76280c3ce94351285a480afc9d13efc10f5ab0258390cea3e562dafed7d406e"
+    },
+    {
+      "basename": "run_output_e2e_semantic_field.json",
+      "bytes": 6892,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_semantic_field.json",
+      "sha256": "44e52adfb6ca33494bbc6dba1acfd1484650b6d4c668b40c95a3a700631e2bae"
+    },
+    {
+      "basename": "run_output_e2e_sentence.json",
+      "bytes": 12777,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_sentence.json",
+      "sha256": "b4c3d55c8c91c133acd1508c66f2718b71a3f89bf9c8d0df1fd1cf9069b1835a"
+    },
+    {
+      "basename": "run_output_e2e_session_kme.json",
+      "bytes": 794,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_session_kme.json",
+      "sha256": "4717d37419d9e10c9bb0827df99f7b3dbab3a58bc3d16a32162ded43161425f4"
+    },
+    {
+      "basename": "run_output_e2e_session_topology.json",
+      "bytes": 7858,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_session_topology.json",
+      "sha256": "ca2d9b2f37dec3ffec7c83bd1f400473c452849c4a41a16a62bf35b8b850ab50"
+    },
+    {
+      "basename": "run_output_e2e_sphere_math_100.json",
+      "bytes": 42302,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_sphere_math_100.json",
+      "sha256": "3fe86f281d946cf4c91ac405817723352dce6bbe49b1538a66d4d3e0da38e267"
+    },
+    {
+      "basename": "run_output_e2e_sphere_math_values.json",
+      "bytes": 11354,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_sphere_math_values.json",
+      "sha256": "b69d8c043f548951bfcafcc60cfba5433f206de20dda7cb2d264cd8cd5e94bb1"
+    },
+    {
+      "basename": "run_output_e2e_tfp_smoke.json",
+      "bytes": 63256,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_tfp_smoke.json",
+      "sha256": "eca003e4d35138bd2d6729ebfd4d58d68612faef7f3a30a51cc798f65e35eaa1"
+    },
+    {
+      "basename": "run_output_e2e_triz_complete.json",
+      "bytes": 6605,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_triz_complete.json",
+      "sha256": "291ddb800f4e5d2289c32f4f4a4264b73233611930a2126cdc944825c2d8d672"
+    }
+  ],
+  "build_id": "hesperia_0.5.1_e6b9a228d6ce_2026-03-26T07:39:30Z",
+  "calibration_batch_n": 100,
+  "calibration_profile": "default_v1",
+  "dynamics_env": true,
+  "errors": [],
+  "finished_utc": "2026-03-26T07:43:50.423840+00:00",
+  "input_text_preview": "Patient reports severe anxiety when considering work deadlines but also feels guilty resting. The team demands faster delivery while quality must not slip. Internal conflict between autonomy and compliance.",
+  "modules_used": [
+    "runtime.pipeline.run_e2e_all",
+    "runtime.pipeline.run_e2e_full_stack",
+    "runtime.services.analysis_service",
+    "tests.physics_validation",
+    "hesperia.system.system_seal"
+  ],
+  "ok": true,
+  "out_dir": "assets/artifacts/e2e_full_stack_debug",
+  "physics_validation_exit_code": 0,
+  "pipeline_version": "e2e_v2",
+  "run": "e2e_full_stack",
+  "schema_version": "v1",
+  "started_utc": "2026-03-26T07:39:30.458255+00:00",
+  "steps": [
+    {
+      "ok": true,
+      "outputs": 20,
+      "step": "run_e2e_all"
+    },
+    {
+      "ok": true,
+      "path": "assets/artifacts/e2e_full_stack_debug/run_output_e2e_full_product_surface.json",
+      "step": "product_surface"
+    },
+    {
+      "exit_code": 0,
+      "ok": true,
+      "step": "physics_validation",
+      "tail": ""
+    },
+    {
+      "ok": true,
+      "status": "PASS",
+      "step": "system_seal"
+    }
+  ],
+  "system_seal": {
+    "calibration_profile": "default_v1",
+    "checks": {
+      "calibration": true,
+      "concept": true,
+      "energy": true,
+      "hex_dependency": true,
+      "matrices": true,
+      "pch": true,
+      "pipeline": true,
+      "product_truth": true,
+      "topology": true,
+      "validation": true
+    },
+    "hex_topology_sha256": "bc1e96fcb8d63ac585edcf0951a581b0954dbdb03b4c431bcd81e60197f9818b",
+    "matrix_bundle": "v1",
+    "notes": {
+      "calibration": "profile 'default_v1' matches on-disk bundle",
+      "concept": "explicit A_concept path active",
+      "energy": "strict-mode energy trace monotone",
+      "hex_dependency": "hex tensors required (ValueError as expected)",
+      "matrices": "production matrices bundle='v1'",
+      "pch": "P_CH nnz=72000 active non-uniform",
+      "pipeline": "canonical shipping modules do not invoke legacy sphere.pipeline",
+      "product_truth": "sample analyze output passes schema_guard + envelope",
+      "topology": "sha256=bc1e96fcb8d63ac5..",
+      "validation": "skipped (skip_physics_subprocess=True; run full seal via tools.system_seal)"
+    },
+    "pch_bundle": "v1",
+    "status": "PASS",
+    "timestamp_utc": "2026-03-26T07:43:50.417477+00:00",
+    "version": "0.5.1"
+  },
+  "system_seal_skip_physics_subprocess": true,
+  "system_version": "0.5.1"
+}

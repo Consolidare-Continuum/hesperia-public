@@ -1,0 +1,47 @@
+{
+  "short_aggression_burst": {
+    "text": "attack blame attack now",
+    "expected_dominant_area": "A4",
+    "second_area_max": 0.08,
+    "min_top_gap": 0.5,
+    "hex_effect": "score_delta_only",
+    "momentum_aggression_monotonic": false
+  },
+  "long_repetitive_accusatory_segment": {
+    "text": "attack filler blame filler attack filler blame filler attack filler blame filler attack filler blame filler",
+    "expected_dominant_area": "A4",
+    "second_area_max": 0.08,
+    "min_top_gap": 0.35,
+    "hex_effect": "score_delta_only",
+    "length_inflation_max_delta_vs_short_dense": 0.02
+  },
+  "mixed_shame_control_segment": {
+    "text": "shame control control hold tension hold",
+    "expected_dominant_area": "A5",
+    "second_area_max": 0.18,
+    "min_top_gap": 0.1,
+    "hex_effect": "score_delta_only"
+  },
+  "affiliative_repair_segment": {
+    "text": "repair trust repair calm trust repair",
+    "expected_dominant_area": "A7",
+    "second_area_max": 0.04,
+    "min_top_gap": 0.55,
+    "hex_effect": "score_delta_only"
+  },
+  "escalation_over_3_segments_session": {
+    "text": "repair trust calm attack attack blame attack blame attack attack attack blame",
+    "expected_dominant_area": "A4",
+    "momentum_aggression_monotonic": true,
+    "repair_reduces_following_aggression": false
+  },
+  "rupture_then_repair_segment": {
+    "text": "rupture attack blame attack repair trust calm steady",
+    "expected_dominant_area": "A7",
+    "second_area_max": 0.23,
+    "min_top_gap": 0.1,
+    "hex_effect": "score_delta_only",
+    "momentum_aggression_monotonic": false,
+    "repair_reduces_following_aggression": true
+  }
+}

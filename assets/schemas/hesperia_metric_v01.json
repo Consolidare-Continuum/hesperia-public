@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hesperia.prichindel.local/schemas/hesperia_metric_v01.json",
+  "title": "HesperiaMetric meta block v0.1",
+  "description": "Runtime registry emitted when HESPERIA_METRIC_EMIT=1 (24_SPEC §10.1)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["hesperia_metric_version", "layers_active"],
+  "properties": {
+    "hesperia_metric_version": {
+      "type": "string",
+      "pattern": "^0\\.1\\.\\d+$"
+    },
+    "layers_active": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "area_sphere",
+          "family_graph",
+          "hex_graph",
+          "gcs_surface",
+          "ipow_volume",
+          "concept_graph",
+          "state_gram"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "area_sphere": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["radius", "coordinate_fingerprint"],
+      "properties": {
+        "radius": { "type": "number", "minimum": 0 },
+        "coordinate_fingerprint": { "type": "string", "minLength": 8 }
+      }
+    },
+    "gcs_surface": { "type": ["object", "null"] },
+    "ipow_volume": { "type": ["object", "null"] },
+    "anchor_map_id": { "type": ["string", "null"] },
+    "geodesic_sphere": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gcs_id", "nu", "hex_face_count", "pentagon_pole_count", "semantic_hex_count", "anchor_map_id"],
+      "properties": {
+        "gcs_id": { "type": "string" },
+        "nu": { "type": "integer", "minimum": 1 },
+        "hex_face_count": { "type": "integer" },
+        "pentagon_pole_count": { "type": "integer" },
+        "total_face_count": { "type": "integer" },
+        "semantic_hex_count": { "type": "integer" },
+        "delta_hex": { "type": "integer" },
+        "truth_unit_count_geodesic": { "type": "integer" },
+        "truth_unit_count_semantic": { "type": "integer" },
+        "delta_sides": { "type": "integer" },
+        "gcs_scale_sigma": { "type": "number" },
+        "gcs_mean_hex_per_family": { "type": "number" },
+        "gcs_mean_hex_per_area": { "type": "integer" },
+        "families_gcs_251": { "type": "integer" },
+        "families_gcs_250": { "type": "integer" },
+        "extra_hex_per_pentagon_pole": { "type": "integer" },
+        "anchor_map_id": { "type": "string" }
+      }
+    },
+    "interior_point_of_world_view": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["powv_point_zero", "powv_position", "powv_step"],
+      "properties": {
+        "powv_point_zero": { "type": "boolean" },
+        "powv_position": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "powv_step": { "type": "integer", "minimum": 0 },
+        "powv_distances_tier1": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 12,
+          "maxItems": 12
+        },
+        "powv_barycentric_areas": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 12,
+          "maxItems": 12
+        },
+        "iteration_interval_I2": { "type": ["number", "null"] },
+        "delta_powv_norm": { "type": "number", "minimum": 0 }
+      }
+    }
+  }
+}

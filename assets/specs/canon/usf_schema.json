@@ -1,0 +1,38 @@
+{
+  "usf_version": "1.0",
+  "document_id": "",
+  "source_metadata": {},
+  "raw_metrics": {
+    "area_vector": [],
+    "family_counts": [],
+    "family_peaks": [],
+    "dominant_area": 0,
+    "dominant_family": 0,
+    "entropy": 0.0,
+    "tension": 0.0,
+    "loopability": 0.0,
+    "coverage": 0.0
+  },
+  "dynamism_metrics": {
+    "trajectory": {},
+    "transition_matrix": [],
+    "curvature": 0.0,
+    "jump_rate": 0.0,
+    "stability_index": 0.0
+  },
+  "propagation_metrics": {
+    "propagated_area_vector": [],
+    "propagated_family_counts": []
+  },
+  "logic_outputs": {
+    "triggered_rules": [],
+    "logic_flags": [],
+    "structural_diagnostics": []
+  },
+  "provenance": {
+    "created_at": "",
+    "pipeline_version": "",
+    "input_hash": "",
+    "deterministic": true
+  }
+}

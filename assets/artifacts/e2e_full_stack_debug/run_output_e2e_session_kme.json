@@ -1,0 +1,18 @@
+{
+  "input": {
+    "text_preview": "Patient reports severe anxiety when considering work deadlines but also feels guilty resting. The team demands faster delivery while quality must not slip. Internal conflict between autonomy and compl...",
+    "length": 206
+  },
+  "_error": "cannot import name 'segment_session_text' from 'hesperia.nlp.session_topology' (/data/hesperia/hesperia/hesperia/nlp/session_topology.py)",
+  "sourceId": "e2e_session",
+  "system_version": "0.5.1",
+  "build_id": "hesperia_0.5.1_e6b9a228d6ce_2026-03-26T07:39:30Z",
+  "schema_version": "v1",
+  "calibration_profile": "default_v1",
+  "run_id": "7f9e484b-01cc-48f5-907f-6592fca9260e",
+  "pipeline_version": "e2e_v2",
+  "modules_used": [
+    "hesperia.engine.kme.clinical_bridge",
+    "hesperia.engine.kme.pipeline"
+  ]
+}

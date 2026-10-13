@@ -1,0 +1,31 @@
+# Product quality model (ISO/IEC 25010 SQuaRE form)
+
+Maps Hesperia's already-existing evidence onto SQuaRE's eight quality characteristics. This is a
+mapping exercise, not a new evaluation — every row cites a specific mechanism already verified
+elsewhere in this documentation program. Where a characteristic has no enforced, measured evidence
+today, that is stated plainly rather than filled with an aspirational claim.
+
+| SQuaRE characteristic | Sub-characteristics this maps to | Hesperia evidence |
+|---|---|---|
+| **Functional suitability** | Completeness, correctness, appropriateness | Guard triad (Sigma/Gamma/Theta) certifies output shape/order/governance before any result is trusted (`corners/guards.md`); 294 test files under `tests/` exercise this; per-layer output is source-verified against the restored `34_SPEC`–`42_SPEC` specs (`output_catalog.md`), not just internally self-consistent |
+| **Performance efficiency** | Time behavior, resource utilization, capacity | **No enforced, measured requirement exists today** (`REQUIREMENTS_SPECIFICATION.md` §3 states this explicitly). Do not claim a performance characteristic here without a citable benchmark. |
+| **Compatibility** | Co-existence, interoperability | Two independently-versioned response contracts (`/analyze` frozen legacy, `/product/interpret` current-governed) coexist without merging shapes — `ARCHITECTURE_DESCRIPTION.md` §6, `output_catalog.md` §0 |
+| **Usability** | Appropriateness recognizability, learnability, operability | `docs/ENGINE-ANALYZE-CONTRACT.md` (frozen contract, request/response examples); `docs/iso/OPERATOR_GUIDE.md` (current practical `/analyze` vs. `/product/interpret` guidance); `docs/foundations/agentic_orientation.md` for the agent-facing cold-start path that reduces naming/branch confusion before a change is made |
+| **Reliability** | Maturity, availability, fault tolerance, recoverability | Determinism guard (`core/guards/determinism.py`); energy-conservation tolerance `1e-6` (`core/math/core_math.py`, verified — `parameter_catalog.md` §3); shadow-run acceptability gate as a governed fault-tolerance mechanism, not just a metric (`corners/guards.md`, `NOVELTY_AND_POSITIONING.md` item 3) |
+| **Security** | Confidentiality, integrity, non-repudiation, accountability | `release/v0.6.0/RELEASE_SCOPE.md`'s explicit calibration-dict/corpus payload exclusion from public releases (proprietary-data confidentiality, `corners/release_governance.md`); `hesperia-0.6.3`'s fully data-free, runnable public archive is a concrete proof of engine-logic/proprietary-data separability (`00_INDEX.md`); `LEGAL_NOTICE.md` for licensing/access-control terms. **Process evidence (module install / entitlement):** real-licence gate L1–L6 and the operator’s ULIM Referat **348** (PDF under `docs/iso/evidence/`) — whitepapered in [`PURPOSE_AND_CYBER_SAFETY_STATEMENT.md`](PURPOSE_AND_CYBER_SAFETY_STATEMENT.md): Hesperia is cyber-safe **only under named evidence circumstances**, not by slogan or board status. **No formal threat model or pen-test evidence exists in this documentation program today** — do not overclaim security posture beyond what's cited here; do not claim ISO/NIS2/CISA certification. Additional process evidence: `specs/canon/fpf_bridge_v7_3_agentic_cursor_interface.md` §3 explicitly identifies a *new* exposure path (TFP-scoped evidence flowing into an external agent's context/logging boundary, a different boundary than Hesperia's own ephemeral internal LLM call) and requires a dedicated security review before any real (non-synthetic) data flows through it — the recognition that a new exposure path needs its own review, rather than being assumed safe by analogy, is itself the kind of accountability evidence this row can honestly cite. |
+| **Maintainability** | Modularity, reusability, analyzability, modifiability, testability | The `core/` vs. `sphere/` vs. `runtime/` split exists specifically so primitive math changes don't require re-validating the full pipeline contract (`corners/core_runtime.md`, `ARCHITECTURE_DESCRIPTION.md` §2); 294 test files provide testability surface; `docs/foundations/parameter_catalog.md`/`output_catalog.md` provide the analyzability surface this quality model itself depends on. `runtime/agentic_bridge/` (fpf_bridge_v7_3) is a further instance of the same modularity principle: a new consumer package added without modifying `sphere/fpf_bridge/` itself, reusing `bridge_to_llm_prompt()` directly rather than a second implementation (same "no duplicate client" rule `runtime/cobalt/` already established). `docs/foundations/agentic_orientation.md` adds a repo-maintainability guardrail at the documentation layer: the five-pass cold start exists specifically to stop branch/name/math drift from becoming code drift. |
+| **Portability** | Adaptability, installability, replaceability | `hesperia-0.6.3` GitHub archive ships as a fully data-free, independently runnable artifact — direct evidence the engine's logic is portable independent of proprietary calibration/corpus data (`eras/05_sealed_0.6.x.md`) |
+
+## Maintenance note
+
+This document is registered in `docs/iso/DOCUMENTATION_TRACEABILITY_MATRIX.md`. The "Performance
+efficiency" row remains incomplete without a citable benchmark. The "Security" row now cites
+**conditional** evidence-based install discipline (Referat 348 / L1–L6 / purpose statement) but
+still lacks a formal threat model or pen-test — do not inflate that gap into certification language.
+If a benchmark suite or threat model is later built, update those rows with a citation, the same way
+every other row already has one.
+
+## Navigation
+
+← [`docs/README.md`](../README.md) (start here) · [`DOCUMENTATION_TRACEABILITY_MATRIX.md`](DOCUMENTATION_TRACEABILITY_MATRIX.md) (master registry)
+Related: [`REQUIREMENTS_SPECIFICATION.md`](REQUIREMENTS_SPECIFICATION.md) (the requirements these characteristics evaluate against) · [`LIFECYCLE_PROCESS.md`](LIFECYCLE_PROCESS.md) (the process that produces the Maintainability/Reliability evidence cited here) · [`PURPOSE_AND_CYBER_SAFETY_STATEMENT.md`](PURPOSE_AND_CYBER_SAFETY_STATEMENT.md) (descriptions → purpose/cyber-safety statement) · [`../foundations/corners/guards.md`](../foundations/corners/guards.md) (Sigma/Gamma/Theta, cited in the Functional Suitability row)

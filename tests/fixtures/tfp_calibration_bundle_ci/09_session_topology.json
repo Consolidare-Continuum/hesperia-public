@@ -1,0 +1,10 @@
+{
+  "run": "tfp_calibration_bundle_ci_fixture",
+  "note": "Minimal topology artifact for main_engine_release_gate_v1 file_present + dynamics check (with_topology false in manifest).",
+  "sessions": [
+    {
+      "session_id": "1-11-09-2023",
+      "session_topology": {}
+    }
+  ]
+}

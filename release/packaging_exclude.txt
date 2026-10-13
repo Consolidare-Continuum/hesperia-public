@@ -1,0 +1,12 @@
+# HESPERIA sealed runtime — paths to exclude from public package (see RELEASE_CONTENT_POLICY_v1)
+docs/internal/
+legacy/docs/specs_history/
+legacy/
+__pycache__/
+*.pyc
+.pytest_cache/
+.git/
+assets/calibration/dicts/
+hesperia/modules/tfp/data/corpus/
+hesperia/modules/tfp/data/tfp_v1/corpus/
+outputs/

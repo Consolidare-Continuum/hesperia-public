@@ -1,0 +1,54 @@
+# Hesperia — repo layout contract (structural refresh; sealed line v0.5.1 — see release/v0.5.1/)
+# Copyright © 2026 igareosh.com. See LEGAL_NOTICE.md.
+# Machine-readable companion to REPO_STRUCTURE_POLICY.md and AGENTS.md.
+
+# Root is a closed set: 15 real directories + 1 symlink, formalized in
+# REPO_STRUCTURE_POLICY.md and enforced by tests/architecture/test_root_structure_locked.py.
+# Adding a 16th real directory requires updating both that policy doc and this manifest —
+# never a silent `mkdir` at root.
+
+active_paths:
+  - core
+  - hesperia
+  - runtime
+  - sphere
+  - tests
+  - tools
+  - assets
+  - release
+  - docs
+  - examples
+  - output_views
+  - requirements
+
+optional_extension_paths:
+  - hesperia/extensions/triz/deploy
+  - hesperia/extensions/triz/benchmarks
+  - examples/extensions/triz_demo
+  - tools/triz
+
+research_paths:
+  - research
+
+legacy_paths:
+  - legacy
+
+symlink_paths:
+  - spec  # -> assets/specs/canon; docstring-citation shorthand, not a real directory
+
+experimental_test_paths:
+  - tests/experimental/clinical_tfp
+
+fixture_paths:
+  - tests/fixtures/clinical_tfp
+
+generated_paths:
+  - outputs
+  - tmp
+
+notes:
+  - "Current sealed audit: release/v0.5.1/. Historical frozen bundle: release/v0.5.0/."
+  - "Clinical/TFP code: research/clinical_tfp; tests under tests/experimental/clinical_tfp; fixtures under tests/fixtures/clinical_tfp."
+  - "2026-07-31: configs/, data/, lexicon/, schemas/, specs/ folded into assets/{config,topology,lexicon,schemas,specs} (root-clutter reduction — none were Python import roots, all pure file-path data); scripts/ folded into tools/. `spec` symlink now points to assets/specs/canon."
+  - "legacy_paths' target (legacy/) is a recognized concept (tools/check_forbidden_zone_imports.py guards against `legacy.*` imports repo-wide) but not currently materialized as a directory — not one of the 15 real root directories until it exists."
+  - "2026-07-31: root formalized as a closed set (REPO_STRUCTURE_POLICY.md) — 15 real directories (active_paths 12 + research_paths 1 + generated_paths 2) + 1 symlink (spec). See test_root_structure_locked.py."

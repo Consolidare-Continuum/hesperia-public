@@ -1,0 +1,23 @@
+# Concept relation type weights (affects CI / conflict index)
+# Copyright © 2026 igareosh.com. See LEGAL_NOTICE.md.
+#
+# Different relation types have different strength; opposes is negative for conflict.
+
+version: 1
+domain: TFP_KERNBERG
+description: |
+  Веса типов связей между концептами. Влияют на метрику конфликта (CI).
+  Отрицательные веса (opposes) усиливают конфликтное поле.
+
+relation_weights:
+  activates: 1.0
+  co_occurs_with: 0.7
+  expresses: 0.6
+  defends_against: 0.5
+  observed_in: 0.5
+  part_of: 0.6
+  is_a: 0.6
+  opposes: -0.6
+
+# Default for unknown relation type
+default_weight: 0.5

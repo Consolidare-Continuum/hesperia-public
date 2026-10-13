@@ -1,0 +1,326 @@
+{
+  "input": {
+    "text_preview": "Patient reports severe anxiety when considering work deadlines but also feels guilty resting. The team demands faster delivery while quality must not slip. Internal conflict between autonomy and compl...",
+    "length": 206
+  },
+  "session_topology": {
+    "segments": [
+      {
+        "areas": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "A3": 0.0,
+          "A4": 0.0,
+          "A5": 0.0,
+          "A6": 0.0,
+          "A7": 0.0,
+          "A8": 0.0,
+          "A9": 0.0,
+          "A10": 0.0,
+          "A11": 0.0,
+          "A12": 0.0
+        },
+        "areas_raw": {
+          "A1": 0.0,
+          "A10": 0.0,
+          "A11": 0.0,
+          "A12": 0.0,
+          "A2": 0.0,
+          "A3": 0.0,
+          "A4": 0.0,
+          "A5": 0.0,
+          "A6": 0.0,
+          "A7": 0.0,
+          "A8": 0.0,
+          "A9": 0.0
+        },
+        "areas_inhibited": {
+          "A1": 0.0,
+          "A10": 0.0,
+          "A11": 0.0,
+          "A12": 0.0,
+          "A2": 0.0,
+          "A3": 0.0,
+          "A4": 0.0,
+          "A5": 0.0,
+          "A6": 0.0,
+          "A7": 0.0,
+          "A8": 0.0,
+          "A9": 0.0
+        },
+        "families": {},
+        "families_pre_hex": {},
+        "families_post_hex": {},
+        "concepts": {},
+        "concept_weights_raw": {},
+        "concept_weights_post_hex": {},
+        "hex_feedback_delta": {},
+        "invariant_activation": {
+          "path_id": "engine_invariant_activation_v2",
+          "config_version": "engine_signal_calibration_v2",
+          "inhibition_matrix_version": "area_inhibition_matrix_main_v1",
+          "area_softmax_temperature": 0.35,
+          "concept_cap": 5.5,
+          "log_normalization_enabled": true,
+          "segment_length_normalization": "inverse_sqrt_token_count",
+          "hex_feedback_active": true,
+          "hex_decay": 0.02,
+          "hex_smoothing_alpha": 0.52,
+          "token_count": 29,
+          "marker_count": 0,
+          "degradation_flags": [],
+          "semantic_state_operator_enabled": false
+        }
+      }
+    ],
+    "segments_stable": [
+      {
+        "areas": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "A3": 0.0,
+          "A4": 0.0,
+          "A5": 0.0,
+          "A6": 0.0,
+          "A7": 0.0,
+          "A8": 0.0,
+          "A9": 0.0,
+          "A10": 0.0,
+          "A11": 0.0,
+          "A12": 0.0
+        },
+        "areas_raw": {
+          "A1": 0.0,
+          "A10": 0.0,
+          "A11": 0.0,
+          "A12": 0.0,
+          "A2": 0.0,
+          "A3": 0.0,
+          "A4": 0.0,
+          "A5": 0.0,
+          "A6": 0.0,
+          "A7": 0.0,
+          "A8": 0.0,
+          "A9": 0.0
+        },
+        "areas_inhibited": {
+          "A1": 0.0,
+          "A10": 0.0,
+          "A11": 0.0,
+          "A12": 0.0,
+          "A2": 0.0,
+          "A3": 0.0,
+          "A4": 0.0,
+          "A5": 0.0,
+          "A6": 0.0,
+          "A7": 0.0,
+          "A8": 0.0,
+          "A9": 0.0
+        },
+        "families": {},
+        "families_pre_hex": {},
+        "families_post_hex": {},
+        "concepts": {},
+        "concept_weights_raw": {},
+        "concept_weights_post_hex": {},
+        "hex_feedback_delta": {},
+        "invariant_activation": {
+          "path_id": "engine_invariant_activation_v2",
+          "config_version": "engine_signal_calibration_v2",
+          "inhibition_matrix_version": "area_inhibition_matrix_main_v1",
+          "area_softmax_temperature": 0.35,
+          "concept_cap": 5.5,
+          "log_normalization_enabled": true,
+          "segment_length_normalization": "inverse_sqrt_token_count",
+          "hex_feedback_active": true,
+          "hex_decay": 0.02,
+          "hex_smoothing_alpha": 0.52,
+          "token_count": 29,
+          "marker_count": 0,
+          "degradation_flags": [],
+          "semantic_state_operator_enabled": false
+        },
+        "areas_final": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "A3": 0.0,
+          "A4": 0.0,
+          "A5": 0.0,
+          "A6": 0.0,
+          "A7": 0.0,
+          "A8": 0.0,
+          "A9": 0.0,
+          "A10": 0.0,
+          "A11": 0.0,
+          "A12": 0.0
+        }
+      }
+    ],
+    "transitions": [],
+    "area_curves": {
+      "aggression": [
+        0.0
+      ],
+      "anxiety": [
+        0.0
+      ],
+      "shame": [
+        0.0
+      ],
+      "control": [
+        0.0
+      ],
+      "identity_diffusion": [
+        0.0
+      ]
+    },
+    "area_curves_raw": {
+      "aggression": [
+        0.0
+      ],
+      "anxiety": [
+        0.0
+      ],
+      "shame": [
+        0.0
+      ],
+      "control": [
+        0.0
+      ],
+      "identity_diffusion": [
+        0.0
+      ]
+    },
+    "area_curves_stable": {
+      "aggression": [
+        0.0
+      ],
+      "anxiety": [
+        0.0
+      ],
+      "shame": [
+        0.0
+      ],
+      "control": [
+        0.0
+      ],
+      "identity_diffusion": [
+        0.0
+      ]
+    },
+    "aggression_curve": [
+      0.0
+    ],
+    "aggression_curve_raw": [
+      0.0
+    ],
+    "state_sequence": [
+      "A1"
+    ],
+    "defense_timeline": [
+      ""
+    ],
+    "area_curves_session_relative": {
+      "aggression": [
+        0.0
+      ],
+      "anxiety": [
+        0.0
+      ],
+      "shame": [
+        0.0
+      ],
+      "control": [
+        0.0
+      ],
+      "identity_diffusion": [
+        0.0
+      ]
+    },
+    "curve_projection_meta": {
+      "area_competition": "invariant_softmax",
+      "requested_area_competition": "softmax",
+      "requested_softmax_temperature": 1.0,
+      "softmax_temperature": 0.35,
+      "smooth": null,
+      "session_center": "mean_subtracted_per_named_curve",
+      "segment_dominance_confidence": [
+        0.35
+      ],
+      "segment_dominance_confidence_raw": [
+        0.35
+      ],
+      "segment_dominance_confidence_stable": [
+        0.35
+      ],
+      "temporal_momentum": {
+        "alpha1": 0.28,
+        "alpha2": 0.08
+      },
+      "area_curves_raw": {
+        "aggression": [
+          0.0
+        ],
+        "anxiety": [
+          0.0
+        ],
+        "shame": [
+          0.0
+        ],
+        "control": [
+          0.0
+        ],
+        "identity_diffusion": [
+          0.0
+        ]
+      },
+      "calibration_reference_bands": {
+        "low_tension": 0.2,
+        "conflict_active": 0.5,
+        "escalation": 0.8
+      },
+      "engine_params": {
+        "window_size": 80,
+        "normalize_scores": true,
+        "area_competition": "invariant_softmax",
+        "requested_area_competition": "softmax",
+        "softmax_temperature": 0.35,
+        "requested_softmax_temperature": 1.0,
+        "curve_smooth_alpha": null,
+        "curve_session_center": true,
+        "apply_token_negation": true,
+        "negation_window": 2,
+        "negation_multiplier": 0.5,
+        "per_concept_score_cap": 8.0,
+        "use_log1p_concept_scores": true,
+        "evidence_volume_normalize": true,
+        "include_curve_projection_meta": true
+      },
+      "area_curve_map": {
+        "aggression": "A4",
+        "anxiety": "A2",
+        "shame": "A7",
+        "control": "A5",
+        "identity_diffusion": "A9"
+      },
+      "lexical_controls": {
+        "apply_token_negation": true,
+        "negation_window": 2,
+        "negation_multiplier": 0.5,
+        "per_concept_score_cap": 8.0,
+        "use_log1p_concept_scores": true,
+        "evidence_volume_normalize": true
+      },
+      "note": "area_curves_raw are audit-only outputs from raw segment activations; area_curves and state_sequence use momentum-stabilized segment areas."
+    }
+  },
+  "system_version": "0.5.1",
+  "build_id": "hesperia_0.5.1_e6b9a228d6ce_2026-03-26T07:39:30Z",
+  "schema_version": "v1",
+  "calibration_profile": "default_v1",
+  "run_id": "7f9e484b-01cc-48f5-907f-6592fca9260e",
+  "pipeline_version": "e2e_v2",
+  "modules_used": [
+    "hesperia.tfp"
+  ]
+}

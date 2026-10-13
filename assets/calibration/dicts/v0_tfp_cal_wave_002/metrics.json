@@ -1,0 +1,124 @@
+{
+  "run": "dict_calibration_eval_v1",
+  "n_texts": 4,
+  "per_text": [
+    {
+      "lexical_hits_accepted": 26,
+      "lexical_hits_rejected": 7,
+      "concept_weights": {
+        "B_A10_F13_002": 7.0,
+        "B_A10_F17_001": 2.0,
+        "B_A10_F1_001": 9.0,
+        "B_A10_F24_002": 1.0,
+        "B_A1_F10_002": 4.0,
+        "B_A1_F16_002": 1.0,
+        "B_A1_F18_002": 2.0
+      },
+      "family_activation": {
+        "F1": 9.0,
+        "F10": 4.0,
+        "F13": 7.0,
+        "F16": 1.0,
+        "F17": 2.0,
+        "F18": 2.0,
+        "F24": 1.0
+      },
+      "hex_concentration": 0.346154,
+      "degradation_flags": [],
+      "unmapped_lexical_ratio_est": 0.9641
+    },
+    {
+      "lexical_hits_accepted": 19,
+      "lexical_hits_rejected": 4,
+      "concept_weights": {
+        "B_A10_F13_002": 4.0,
+        "B_A10_F17_001": 7.0,
+        "B_A10_F1_001": 2.0,
+        "B_A1_F10_002": 3.0,
+        "B_A1_F16_002": 2.0,
+        "B_A1_F18_002": 1.0
+      },
+      "family_activation": {
+        "F1": 2.0,
+        "F10": 3.0,
+        "F13": 4.0,
+        "F16": 2.0,
+        "F17": 7.0,
+        "F18": 1.0
+      },
+      "hex_concentration": 0.368421,
+      "degradation_flags": [],
+      "unmapped_lexical_ratio_est": 0.9718
+    },
+    {
+      "lexical_hits_accepted": 28,
+      "lexical_hits_rejected": 9,
+      "concept_weights": {
+        "B_A10_F13_002": 5.0,
+        "B_A10_F17_001": 6.0,
+        "B_A10_F1_001": 8.0,
+        "B_A10_F24_002": 1.0,
+        "B_A1_F10_002": 2.0,
+        "B_A1_F16_002": 5.0,
+        "B_A1_F18_002": 1.0
+      },
+      "family_activation": {
+        "F1": 8.0,
+        "F10": 2.0,
+        "F13": 5.0,
+        "F16": 5.0,
+        "F17": 6.0,
+        "F18": 1.0,
+        "F24": 1.0
+      },
+      "hex_concentration": 0.285714,
+      "degradation_flags": [],
+      "unmapped_lexical_ratio_est": 0.9636
+    },
+    {
+      "lexical_hits_accepted": 31,
+      "lexical_hits_rejected": 11,
+      "concept_weights": {
+        "B_A10_F13_002": 1.0,
+        "B_A10_F17_001": 4.0,
+        "B_A10_F1_001": 7.0,
+        "B_A10_F24_002": 5.0,
+        "B_A1_F10_002": 14.0
+      },
+      "family_activation": {
+        "F1": 7.0,
+        "F10": 14.0,
+        "F13": 1.0,
+        "F17": 4.0,
+        "F24": 5.0
+      },
+      "hex_concentration": 0.451613,
+      "degradation_flags": [],
+      "unmapped_lexical_ratio_est": 0.9448
+    }
+  ],
+  "aggregate": {
+    "concept_activation": {
+      "B_A10_F13_002": 17.0,
+      "B_A10_F17_001": 19.0,
+      "B_A10_F1_001": 26.0,
+      "B_A10_F24_002": 7.0,
+      "B_A1_F10_002": 23.0,
+      "B_A1_F16_002": 8.0,
+      "B_A1_F18_002": 4.0
+    },
+    "concept_entropy": 2.584071,
+    "family_activation": {
+      "F1": 26.0,
+      "F10": 23.0,
+      "F13": 17.0,
+      "F16": 8.0,
+      "F17": 19.0,
+      "F18": 4.0,
+      "F24": 7.0
+    },
+    "family_balance_gini_stub": 0.0,
+    "noise_ratio": 0.22963,
+    "unmapped_lexical_pct_mean": 96.1096
+  }
+}

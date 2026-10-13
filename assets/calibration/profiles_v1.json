@@ -1,0 +1,19 @@
+{
+  "bundle_version": "v1",
+  "description": "Governed dynamics parameters (semantic field family step). hex_field_reference nested key removed CHI-014-02 (unread; values lived only as dead reference).",
+  "profiles": {
+    "default_v1": {
+      "alpha": 0.1,
+      "beta": 0.05,
+      "gamma": 0.2,
+      "delta": 0.1,
+      "dt": 0.05,
+      "epsilon": 1e-6,
+      "tau": 1e-6,
+      "clip_mode": true
+    },
+    "v0_5_0": {
+      "alias_of": "default_v1"
+    }
+  }
+}

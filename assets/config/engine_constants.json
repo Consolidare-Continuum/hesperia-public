@@ -1,0 +1,31 @@
+{
+  "numeric": {
+    "eps": 1e-08,
+    "max_energy": 1.0,
+    "min_energy": 0.0,
+    "float_precision": 8
+  },
+  "operator": {
+    "decay_default": 0.05,
+    "coupling_alpha_default": 0.12,
+    "inhibition_alpha_default": 0.1,
+    "energy_conservation_tolerance": 1e-06
+  },
+  "propagation": {
+    "distance_decay_k": 0.55,
+    "cutoff_radius": 6
+  },
+  "resolver": {
+    "weight_relevance": 0.45,
+    "weight_specificity": 0.35,
+    "weight_locality": 0.2,
+    "context_overlap_norm": 5.0,
+    "specificity_norm": 10.0,
+    "priority_norm": 100.0,
+    "coherence_empirical_weight": 0.0
+  },
+  "dictionary": {
+    "confidence_threshold": 0.35,
+    "max_synonyms_per_concept": 24
+  }
+}

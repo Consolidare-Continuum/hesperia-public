@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hesperia.local/schema/public_audit_manifest.schema.json",
+  "title": "HESPERIA Public Audit Manifest",
+  "description": "Safe accountability record for a run. No internal layer ids, topology, or formula ids.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["engine_version", "run_timestamp", "output_checksum"],
+  "properties": {
+    "engine_version": { "type": "string", "description": "Engine/build version id." },
+    "public_ontology_version": { "type": "string", "description": "Public ontology version id." },
+    "calibration_profile_id": { "type": "string", "description": "Calibration profile used." },
+    "report_profile_id": { "type": "string", "description": "Report profile used." },
+    "input_manifest_id": { "type": "string", "description": "Opaque input reference (e.g. hash)." },
+    "run_timestamp": { "type": "string", "format": "date-time", "description": "When the run occurred." },
+    "output_checksum": { "type": "string", "description": "Checksum of public output." },
+    "evidence_count": { "type": "integer", "minimum": 0, "description": "Number of evidence entries." },
+    "public_metric_profile_id": { "type": "string", "enum": ["commercial", "demo", "analyst"], "description": "Which metric subset." }
+  }
+}

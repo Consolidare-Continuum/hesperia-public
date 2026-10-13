@@ -1,0 +1,29 @@
+# EXAMPLE ONLY — HESPERIA dynamics parameter registry fragment
+# See HESPERIA_DYNAMICS_CALIBRATION_SPEC_v0_1.md. Do not use as production defaults.
+
+lambda_area:
+  symbol: "λ_a"
+  layer: area_dynamics
+  meaning: "Area decay rate"
+  range: [0.01, 0.15]
+  default: 0.08
+  calibration_status: calibratable
+  sensitivity_class: high
+
+gamma_q:
+  symbol: "γ_q"
+  layer: area_dynamics
+  meaning: "Topological propagation gain (neighbor areas)"
+  range: [0.0, 0.5]
+  default: 0.2
+  calibration_status: calibratable
+  sensitivity_class: high
+
+lambda_concept:
+  symbol: "λ_c"
+  layer: concept_dynamics
+  meaning: "Concept decay"
+  range: [0.05, 0.30]
+  default: 0.12
+  calibration_status: calibratable
+  sensitivity_class: medium

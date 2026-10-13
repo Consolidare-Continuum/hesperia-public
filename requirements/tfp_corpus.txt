@@ -1,0 +1,3 @@
+# tfp_corpus Postgres access (hesperia/modules/tfp/data/tfp_v1/postgres/) — ingest.py,
+# corpus_grounding.py. Ref: governance/SPEC-ETHAN-TFP-CORPUS-POSTGRES.md.
+psycopg2-binary>=2.9,<3

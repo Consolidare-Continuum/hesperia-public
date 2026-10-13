@@ -1,0 +1,20 @@
+{
+  "anchor_map_id": "anchor_map_v1",
+  "gcs_id": "GCS_NU85_v0_1",
+  "family_slot_rule": "family_index_in_area_mod_6_eq_0",
+  "rule_description": "Families with family_index_in_area % 6 == 0 get 250 gcs slots; others get 251 with geodesic_extra_index 250",
+  "families_gcs_250": 48,
+  "families_gcs_251": 240,
+  "pentagon_pole_count": 12,
+  "extra_hex_per_pentagon_pole": 20,
+  "gcs_scale_sigma": 1.0033333333,
+  "semantic_hex_count": 72000,
+  "geodesic_hex_count": 72240,
+  "status": "FROZEN",
+  "frozen_option": "A",
+  "frozen_at": "2026-06-23",
+  "frozen_by": "igareosh",
+  "ipov_reconcile_ref": "tersagor_agent.hesperia.geometry.anchor_map.ANCHOR_MAP",
+  "spec_ref": "docs/specs/24_SPEC__Hesperia_Metric_and_Distance_v0_1.md",
+  "operator_freeze_ref": "METRIC-17 option A (mod-6 default)"
+}

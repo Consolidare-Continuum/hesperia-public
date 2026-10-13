@@ -1,0 +1,20 @@
+{
+  "input": {
+    "text_preview": "Patient reports severe anxiety when considering work deadlines but also feels guilty resting. The team demands faster delivery while quality must not slip. Internal conflict between autonomy and compl...",
+    "length": 206
+  },
+  "run": "e2e_session_topology",
+  "_skipped": "hesperia.tfp_unavailable",
+  "_error": "No module named 'hesperia.tfp'",
+  "system_version": "0.5.3",
+  "build_id": "hesperia_0.5.3_296581f37553_2026-03-26T11:28:43Z",
+  "schema_version": "v1",
+  "calibration_profile": "default_v1",
+  "run_id": "0597569d-15dd-4d9f-ba83-cd703b4ce062",
+  "execution_flow_version": "e2e_v2",
+  "pipeline_version": "e2e_v2",
+  "orchestration_mode": "E2E_BATCH",
+  "modules_used": [
+    "runtime.pipeline.run_e2e_all"
+  ]
+}

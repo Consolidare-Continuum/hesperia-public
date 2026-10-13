@@ -1,0 +1,21 @@
+{
+  "version": "lexical-stack-v1.0",
+  "tag": "lexical-stack-v1.0",
+  "frozen_at": "2026-02-23",
+  "repo_commit": "80394835a544ca9af963858a21cd71ce783fb1ec",
+  "sha256": {
+    "A_CORE_STAR_MAP_v1.json": "626830929886c8b1c1398a6523159942cceb759b044af3b0b5e32beb0641b3a7",
+    "B_SURFACE_LEX_FIELD_v1.json": "64f6ed4ecee04f997eb04344f6ef1902e3c85773c9c9978a75061c847f5057f0",
+    "guard_config_v1.json": "b9eb6fff594eba65bbf37821edb103908b700b5401a1db9ed354941fdcdd3370"
+  },
+  "sources": {
+    "oewn": "v2023.1",
+    "scowl": "2020.12.07",
+    "wiktionary": "latest"
+  },
+  "rules": [
+    "No automatic updates. All updates require version bump, change log, CI pass.",
+    "Dict A: side_id only; no family_id/area_id. Max 3 seeds per lemma; weight in (0, cap].",
+    "Dict B: alias grades A/B/C only; canonical_lemma must appear as grade A; no duplicate alias after normalization."
+  ]
+}

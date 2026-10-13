@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hesperia://schemas/tfp_bundle/11_calibration_release_gate.schema.json",
+  "title": "Calibration release gate decision",
+  "type": "object",
+  "required": ["run", "profile", "pass", "checks", "operational_envelope"],
+  "properties": {
+    "run": { "type": "string" },
+    "profile": { "type": "string" },
+    "pass": { "type": "boolean" },
+    "checks": { "type": "array" },
+    "blocking_reason": { "type": ["string", "null"] },
+    "rollback_advice": { "type": "string" },
+    "consistency_score_observed": { "type": "number" },
+    "operational_envelope": {
+      "type": "object",
+      "required": [
+        "status",
+        "anomaly_codes",
+        "severity",
+        "blocking",
+        "operator_message",
+        "recommended_next_check",
+        "taxonomy_version"
+      ]
+    }
+  }
+}

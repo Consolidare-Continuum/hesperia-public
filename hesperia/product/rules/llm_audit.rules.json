@@ -1,0 +1,15 @@
+{
+  "name": "llm_audit",
+  "version": "v1",
+  "rules": [
+    {
+      "if": {"tension_min": 0.7, "stability_max": 0.4},
+      "then": {"risk": "high", "pattern": "looping", "stability": "low", "confidence": 0.9}
+    },
+    {
+      "if": {"stability_min": 0.7},
+      "then": {"risk": "low", "pattern": "coherent", "stability": "high", "confidence": 0.85}
+    }
+  ],
+  "default": {"risk": "medium", "pattern": "fragmented", "stability": "medium", "confidence": 0.6}
+}

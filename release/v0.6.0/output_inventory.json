@@ -1,0 +1,137 @@
+{
+  "generated_utc": "2026-05-28T13:44:59.635051+00:00",
+  "artifact_root_example": "assets/artifacts/e2e_full_stack",
+  "outputs": [
+    {
+      "name": "run_output_e2e_sentence.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_sentence.json",
+      "bytes": 19080,
+      "sha256": "814559f662cc5f75ada5fec560fa1df87100a2a140163a39d303e690a1d73b90"
+    },
+    {
+      "name": "run_output_e2e_l1_l9.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_l1_l9.json",
+      "bytes": 33379,
+      "sha256": "7c8249ba6bca7d29ab7fd2e81464299792fbeb059e20cd45a7e1de1f48914e3e"
+    },
+    {
+      "name": "run_output_e2e_r1_r4.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_r1_r4.json",
+      "bytes": 15549,
+      "sha256": "34ad210b5e047a0edd6d08596fbfdc6ce844c03bb678784a92c33342c99c19b4"
+    },
+    {
+      "name": "run_output_e2e_calibration_100_structural.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_calibration_100_structural.json",
+      "bytes": 1427356,
+      "sha256": "44ce56bfded1d0e6f896cc2272a742fffee4303296ea5c03c64c11cdbf53880b"
+    },
+    {
+      "name": "run_output_e2e_calibration_100_summary.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_calibration_100_summary.json",
+      "bytes": 1016,
+      "sha256": "c6ea838faa389ad5522c73c2322193a80aa02fb04b82eef0c6a40dce0e328cea"
+    },
+    {
+      "name": "run_output_e2e_domain_metrics.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_domain_metrics.json",
+      "bytes": 6534,
+      "sha256": "ed7e9a087f386d835edc42abf26690aacf27576dc7957cfee79d365be5e0577e"
+    },
+    {
+      "name": "run_output_e2e_session_kme.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_session_kme.json",
+      "bytes": 1135,
+      "sha256": "eaeee4b3fed3acaf012bd9c4366e7577e41ab9d8295aafdb515c435021eebf44"
+    },
+    {
+      "name": "run_output_e2e_triz_complete.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_triz_complete.json",
+      "bytes": 6976,
+      "sha256": "9c8616152b7d4c274a4544d615f1a2b219220c7abd412eb8f3a46255e7a1a07c"
+    },
+    {
+      "name": "run_output_e2e_session_topology.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_session_topology.json",
+      "bytes": 765,
+      "sha256": "9f6b451c373c0a2dfa91df8ad7fda7148ffa127e9e4c4cab8ade93f0735da586"
+    },
+    {
+      "name": "run_output_e2e_tfp_smoke.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_tfp_smoke.json",
+      "bytes": 557,
+      "sha256": "bed5de7a6ee5aa47ef8a4e3f93a7cfea2158119cce201df3f30d96a9cc8c2385"
+    },
+    {
+      "name": "run_output_e2e_hex_microstructure_tfp.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_hex_microstructure_tfp.json",
+      "bytes": 57913,
+      "sha256": "b239569b9faafb4fb3b26a7aea1b7388e51ecc25a6812ebd4de694cbe57def72"
+    },
+    {
+      "name": "run_output_e2e_sealed_multiscale.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_sealed_multiscale.json",
+      "bytes": 7712,
+      "sha256": "17f49d42d1c22bd703b0f75cc9c8de56d84fe75453242b84e8960205131ceab3"
+    },
+    {
+      "name": "run_output_e2e_capability_matrix.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_capability_matrix.json",
+      "bytes": 30383,
+      "sha256": "e4c44df2949beec0ac58a0bd087900833976830e7fd96c8749312451f23dc3a2"
+    },
+    {
+      "name": "run_output_e2e_semantic_field.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_semantic_field.json",
+      "bytes": 6967,
+      "sha256": "14d8a1f48b77d3861560328a0e270ac6c1105c55717f629d1922b272d50db365"
+    },
+    {
+      "name": "run_output_e2e_field_calibration.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_field_calibration.json",
+      "bytes": 6920,
+      "sha256": "ff8202d2ebaccfb0808d599d7d74127120b70673fcf71dea09526a3a9a833ddd"
+    },
+    {
+      "name": "run_output_e2e_field_calibration_best.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_field_calibration_best.json",
+      "bytes": 1504,
+      "sha256": "6c3e26c5eff7470cf262b9f633a770501f39bdf444452e1d48daff420bc0e461"
+    },
+    {
+      "name": "run_output_e2e_field_calibration_topk.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_field_calibration_topk.json",
+      "bytes": 2698,
+      "sha256": "072b1e2b2edbf60d075120b14bfc7f8383fac8f441a9c9c0a0ff66bd432274d1"
+    },
+    {
+      "name": "run_output_e2e_field_dynamics.json",
+      "required_for_full_stack_example": true,
+      "example_path": "assets/artifacts/e2e_full_stack/run_output_e2e_field_dynamics.json",
+      "bytes": 17088,
+      "sha256": "95bb65d691508a99663f59b0bd633c595a24514e6d26394c1114ad26178e52ee"
+    },
+    {
+      "name": "run_output_e2e_dlcr.json",
+      "required_for_full_stack_example": false,
+      "example_path": null
+    }
+  ]
+}

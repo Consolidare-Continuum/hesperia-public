@@ -1,0 +1,310 @@
+{
+  "generated_at": "2026-03-30T10:53:07Z",
+  "dicts_root": "/data/hesperia/hesperia/assets/calibration/dicts",
+  "versions": {
+    "v0_6_0_clr_v052_5": {
+      "dict_a.jsonl": {
+        "rows": 10155,
+        "by_field": {
+          "match_type": {
+            "exact": 9588,
+            "phrase": 567
+          },
+          "version": {
+            "v0.6.0-cal": 10155
+          }
+        },
+        "notes": {
+          "status": "dict_a v0.6.0 schema has no `status` field; rows are not lifecycle-tagged in JSONL"
+        }
+      },
+      "dict_b.jsonl": {
+        "rows": 62316,
+        "by_field": {
+          "status": {
+            "active": 62316
+          },
+          "version": {
+            "v0_6_0_clr_v052_5": 62316
+          }
+        }
+      },
+      "dict_c.jsonl": {
+        "rows": 24000,
+        "by_field": {
+          "language": {
+            "en": 2402,
+            "mixed": 146,
+            "ru": 21452
+          },
+          "match_type": {
+            "exact_phrase": 24000
+          },
+          "status": {
+            "active": 24000
+          },
+          "token_count": {
+            "2": 14333,
+            "3": 9667
+          },
+          "version": {
+            "v0_6_0_clr_v052_5": 24000
+          }
+        }
+      },
+      "links.jsonl": {
+        "rows": 34155,
+        "by_field": {
+          "base_weight": {
+            "0.6": 10155,
+            "0.9": 24000
+          },
+          "match_type": {
+            "exact_phrase": 24000,
+            "exact_token": 10155
+          },
+          "source_dict": {
+            "A": 10155,
+            "C": 24000
+          },
+          "status": {
+            "active": 34155
+          },
+          "version": {
+            "v0_6_0_clr_v052_5": 34155
+          }
+        }
+      }
+    },
+    "v0_6_0_clr_v052_4": {
+      "dict_a.jsonl": {
+        "rows": 10155,
+        "by_field": {
+          "match_type": {
+            "exact": 9588,
+            "phrase": 567
+          },
+          "version": {
+            "v0.6.0-cal": 10155
+          }
+        },
+        "notes": {
+          "status": "dict_a v0.6.0 schema has no `status` field; rows are not lifecycle-tagged in JSONL"
+        }
+      },
+      "dict_b.jsonl": {
+        "rows": 62316,
+        "by_field": {
+          "status": {
+            "active": 62316
+          },
+          "version": {
+            "v0_6_0_clr_v052_4": 62316
+          }
+        }
+      },
+      "dict_c.jsonl": {
+        "rows": 24000,
+        "by_field": {
+          "language": {
+            "en": 24000
+          },
+          "match_type": {
+            "exact_phrase": 24000
+          },
+          "status": {
+            "active": 24000
+          },
+          "token_count": {
+            "2": 14333,
+            "3": 9667
+          },
+          "version": {
+            "v0_6_0_clr_v052_4": 24000
+          }
+        }
+      },
+      "links.jsonl": {
+        "rows": 34155,
+        "by_field": {
+          "base_weight": {
+            "0.6": 10155,
+            "0.9": 24000
+          },
+          "match_type": {
+            "exact_phrase": 24000,
+            "exact_token": 10155
+          },
+          "source_dict": {
+            "A": 10155,
+            "C": 24000
+          },
+          "status": {
+            "active": 34155
+          },
+          "version": {
+            "v0_6_0_clr_v052_4": 34155
+          }
+        }
+      }
+    },
+    "v0_6_0_clr_v052_3": {
+      "dict_a.jsonl": {
+        "rows": 10155,
+        "by_field": {
+          "match_type": {
+            "exact": 9588,
+            "phrase": 567
+          },
+          "version": {
+            "v0.6.0-cal": 10155
+          }
+        },
+        "notes": {
+          "status": "dict_a v0.6.0 schema has no `status` field; rows are not lifecycle-tagged in JSONL"
+        }
+      },
+      "dict_b.jsonl": {
+        "rows": 62316,
+        "by_field": {
+          "status": {
+            "active": 62316
+          },
+          "version": {
+            "v0_6_0_clr_v052_3": 62316
+          }
+        }
+      },
+      "dict_c.jsonl": {
+        "rows": 28809,
+        "by_field": {
+          "language": {
+            "en": 28809
+          },
+          "match_type": {
+            "exact_phrase": 28809
+          },
+          "status": {
+            "active": 28809
+          },
+          "token_count": {
+            "2": 17733,
+            "3": 11076
+          },
+          "version": {
+            "v0_6_0_clr_v052_3": 28809
+          }
+        }
+      },
+      "links.jsonl": {
+        "rows": 38964,
+        "by_field": {
+          "base_weight": {
+            "0.6": 10155,
+            "0.9": 28809
+          },
+          "match_type": {
+            "exact_phrase": 28809,
+            "exact_token": 10155
+          },
+          "source_dict": {
+            "A": 10155,
+            "C": 28809
+          },
+          "status": {
+            "active": 38964
+          },
+          "version": {
+            "v0_6_0_clr_v052_3": 38964
+          }
+        }
+      }
+    },
+    "v0_6_0_clr_v052_2": {
+      "dict_a.jsonl": {
+        "rows": 75371,
+        "by_field": {
+          "match_type": {
+            "exact": 73162,
+            "phrase": 2209
+          },
+          "version": {
+            "v0.6.0-cal": 75371
+          }
+        },
+        "notes": {
+          "status": "dict_a v0.6.0 schema has no `status` field; rows are not lifecycle-tagged in JSONL"
+        }
+      },
+      "dict_b.jsonl": {
+        "rows": 62316,
+        "by_field": {
+          "status": {
+            "active": 62316
+          },
+          "version": {
+            "v0.6.0": 4080,
+            "v0.6.0-tfp": 31148,
+            "v0.6.0_ru_tfp": 20116,
+            "v0.6.0_ru_tfp_stack": 6830,
+            "v0.6.0_tfp_expand": 142
+          }
+        }
+      },
+      "dict_c.jsonl": {
+        "absent": true
+      },
+      "links.jsonl": {
+        "rows": 75371,
+        "by_field": {
+          "match_type": {
+            "alias_reuse": 278,
+            "exact": 73162,
+            "fuzzy": 1931
+          }
+        }
+      }
+    },
+    "v0_tfp_cal_wave_002": {
+      "dict_a.jsonl": {
+        "rows": 35,
+        "by_field": {
+          "match_type": {
+            "exact": 17,
+            "phrase": 18
+          },
+          "version": {
+            "v0.6.0-cal": 35
+          }
+        },
+        "notes": {
+          "status": "dict_a v0.6.0 schema has no `status` field; rows are not lifecycle-tagged in JSONL"
+        }
+      },
+      "dict_b.jsonl": {
+        "rows": 17,
+        "by_field": {
+          "status": {
+            "active": 17
+          },
+          "version": {
+            "v0.6.0-tfp": 17
+          }
+        }
+      },
+      "dict_c.jsonl": {
+        "absent": true
+      },
+      "links.jsonl": {
+        "rows": 35,
+        "by_field": {
+          "match_type": {
+            "exact": 17,
+            "fuzzy": 9,
+            "pattern": 9
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "dict_c_analysis": {
+    "dict_c_path": "assets/calibration/dicts/v0_6_0_clr_v052_5/dict_c.jsonl",
+    "rows": 24000,
+    "language_field_counts": {
+      "ru": 21452,
+      "en": 2402,
+      "mixed": 146
+    },
+    "inferred_from_normalized_form_script": {
+      "ru": 21501,
+      "en": 2408,
+      "mixed": 81,
+      "und": 10
+    },
+    "rows_ru_script_but_language_field_en": 0,
+    "sample_mismatches": []
+  },
+  "sample_text_file": "tests/fixtures/tfp_calibration/extended_ru_natural_corpus_v1.txt",
+  "sample_text_heuristic_language": "ru",
+  "dict_c_language_field_dominant": "ru",
+  "text_vs_dict_c_field_mismatch": false
+}

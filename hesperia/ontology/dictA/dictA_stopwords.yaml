@@ -1,0 +1,24 @@
+# HESPERIA Dict-A — clinical stopwords (noise filter)
+# Частые слова, которые могут случайно активировать концепты.
+# Copyright © 2026 igareosh.com. See LEGAL_NOTICE.md.
+
+stopwords:
+  - хороший
+  - плохой
+  - всегда
+  - никогда
+  - очень
+  - просто
+  - самый
+  - такой
+  - этот
+  - какой
+  - какой-то
+  - something
+  - everything
+  - nothing
+  - always
+  - never
+  - very
+  - just
+  - really

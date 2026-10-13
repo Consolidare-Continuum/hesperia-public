@@ -1,0 +1,6 @@
+{"ts":"2026-06-14T13:00:00+00:00","channel":"#hesperia-teacher","type":"RUN_START","payload":{"correlation_id":"cid-demo-063-001","run_id":"550e8400-e29b-41d4-a716-446655440000","lang":"ru"}}
+{"ts":"2026-06-14T13:00:01+00:00","channel":"#hesperia-teacher","type":"ENGINE_ENVELOPE","payload":{"correlation_id":"cid-demo-063-001","schema":"hesperia.engine_run_envelope.v063","input":{"text_ru":"Агрессия в семейной системе…","kind":"tfp_scientific_statement"}}}
+{"ts":"2026-06-14T13:00:02+00:00","channel":"#hesperia-teacher","type":"TEACHER_REQUEST","payload":{"correlation_id":"cid-demo-063-001","incidents":[{"type":"residual_high","concept_id":"SHAME"}]}}
+{"ts":"2026-06-14T13:00:03+00:00","channel":"#hesperia-teacher","type":"TEACHER_RESPONSE","payload":{"schema":"hesperia.teacher_response.v063","proposals":[{"action":"update_edge_weight","confidence":0.84}]}}
+{"ts":"2026-06-14T13:00:03+00:00","channel":"#hesperia-teacher","type":"REWEIGHT_PREVIEW","payload":{"correlation_id":"cid-demo-063-001","preview":[{"parameter_key":"W_e:AGGRESSION->SELF_REGULATION","applied":0}]}}
+{"ts":"2026-06-14T13:00:04+00:00","channel":"#hesperia-teacher","type":"RUN_DONE","payload":{"correlation_id":"cid-demo-063-001","run_id":"550e8400-e29b-41d4-a716-446655440000","status":"stored"}}

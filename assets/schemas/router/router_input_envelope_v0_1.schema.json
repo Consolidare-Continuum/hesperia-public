@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prichindel.com/hesperia/schemas/router/router_input_envelope_v0_1.schema.json",
+  "title": "Hesperia v7 RouterInputEnvelope",
+  "description": "Pre-LLM deterministic router packet. Ref: brain governance/SPEC-ETHAN-HESPERIA-V7-SEMANTICS-ROUTER-COMPLIANCE.md §6.1",
+  "type": "object",
+  "required": [
+    "schema",
+    "router_version",
+    "input_hash",
+    "input_text",
+    "engine_trace",
+    "logic_mapping",
+    "retrieval_context",
+    "relation_context",
+    "policy_block",
+    "corpus_snapshot_id",
+    "policy_snapshot_id",
+    "router_fingerprint"
+  ],
+  "properties": {
+    "schema": { "const": "hesperia.router_input_envelope.v0_1" },
+    "router_version": { "type": "string", "pattern": "^v7-router-" },
+    "input_hash": { "type": "string", "minLength": 8 },
+    "input_text": { "type": "string" },
+    "engine_trace": {
+      "type": "object",
+      "description": "Core /analyze summary or context packet reference",
+      "additionalProperties": true
+    },
+    "calculable": { "type": "object", "additionalProperties": true },
+    "coherence_hints": { "type": "object", "additionalProperties": true },
+    "observability": {
+      "type": "object",
+      "description": "Read-only context_rag telemetry block (Class A)",
+      "additionalProperties": true
+    },
+    "gtp": {
+      "type": "object",
+      "description": "Optional GTP (General Thought Propagation) step block — hesperia.gtp_v0_1, see schemas/gtp/gtp_v0_1.schema.json. Absent unless HESPERIA_GTP_ENABLED=1 and a current_hex was supplied.",
+      "additionalProperties": true
+    },
+    "logic_mapping": {
+      "type": "object",
+      "description": "FPF bridge / fpf-thinking-map llm_prompt_state.logic",
+      "additionalProperties": true
+    },
+    "relation_context": {
+      "type": "object",
+      "description": "Replay/reflection/relation candidates when enabled",
+      "additionalProperties": true
+    },
+    "retrieval_context": {
+      "type": "object",
+      "description": "context_rag and/or COBALT evidence",
+      "additionalProperties": true
+    },
+    "policy_block": {
+      "type": "object",
+      "description": "Prohibitions, warnings, mode, risk; from thinking map gate_status",
+      "properties": {
+        "gate_status": { "type": "object", "additionalProperties": true },
+        "missing_evidence": { "type": "array", "items": { "type": "string" } },
+        "outcome_kind": { "type": "string" },
+        "risk_level": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "corpus_snapshot_id": { "type": "string", "minLength": 1 },
+    "policy_snapshot_id": { "type": "string", "minLength": 1 },
+    "router_fingerprint": { "type": "string", "minLength": 16 },
+    "enabled_modules": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    }
+  },
+  "additionalProperties": false
+}

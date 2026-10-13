@@ -1,0 +1,37 @@
+# LEVEL 15 — Graph calibration: propagation weights (reproducible)
+# Copyright © 2026 igareosh.com. See LEGAL_NOTICE.md.
+#
+# Zone weights, bridge weights, decay factors. Replace heuristics for reproducibility.
+# Load via sphere.topology.propagation_weights_loader or equivalent.
+
+version: 1
+domain: TFP_KERNBERG
+description: |
+  Фиксированные веса распространения активации по топологии семей.
+  Используются в activation_propagation.py.
+
+# ---------------------------------------------------------------------------
+# Zone weights (within-area spread)
+# center → inner_ring, inner_ring ↔ middle_ring, middle_ring ↔ outer_ring
+# ---------------------------------------------------------------------------
+zone_weights:
+  center_to_inner: 0.25
+  inner_to_middle: 0.18
+  middle_to_inner: 0.18
+  middle_to_outer: 0.12
+  outer_to_middle: 0.12
+
+# ---------------------------------------------------------------------------
+# Bridge weight (cross-area)
+# ---------------------------------------------------------------------------
+bridge_weight: 0.22
+
+# ---------------------------------------------------------------------------
+# Optional decay (per hop; for future multi-hop propagation)
+# ---------------------------------------------------------------------------
+decay_factor: 1.0   # no decay by default
+
+# ---------------------------------------------------------------------------
+# Concept → family boost (intra-family; already aggregated, optional scaling)
+# ---------------------------------------------------------------------------
+concept_to_family_multiplier: 1.0

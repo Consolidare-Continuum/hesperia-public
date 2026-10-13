@@ -1,0 +1,274 @@
+37_SPEC__V0_4_Layer4_Book_Evidence_25_Variables_v1_0
+
+Project: HESPERIA
+Target: v0.4.x baseline (book intersection & evidence instrumentation)
+Date: 2026-02-24
+Status: Canonical
+
+References: 21_SPEC (Books Evidence Cloud Non-Voting), 22_SPEC §13 (books post-resolution); 34_SPEC (Layer-1), 36_SPEC (Layer-3 B/S); 00_GOVERNANCE_CHARTER__HESPERIA_v1_0. Next: 38_SPEC (Layer-5 counter-evidence + trig reality).
+
+----------------------------------------------------------------------
+0. LAYER-4 CONTRACT (INVARIANT)
+----------------------------------------------------------------------
+
+Layer-4 is NOT "book says I'm right".
+
+Layer-4 is: given our structural decision, did deterministic retrieval return evidence whose frozen labels intersect our activated region, and is the evidence store intact?
+
+  - No semantic authority: books do not vote on family/area (21_SPEC, 22_SPEC).
+  - Only: retrieval counts, source diversity, family/area label match to dominant, coverage, entropy/Gini of evidence distribution, rank-weighted alignment, hit-evidence overlap, B vs S evidence similarity, integrity checks, support index, acceptability gate.
+  - All deterministic; retrieval mode frozen (e.g. LEX_BM25_V1).
+
+----------------------------------------------------------------------
+1. PREREQUISITES (INPUTS)
+----------------------------------------------------------------------
+
+  RETRIEVAL_MODE_ID   = frozen string (e.g. "LEX_BM25_V1") identifying deterministic retrieval.
+  TOP_K               = configured max chunks to return (K).
+  R_B                 = list/set of retrieved chunks for baseline run (after resolution).
+  R_S                 = list/set of retrieved chunks for shadow run.
+
+  Each chunk c has: c.bookId, c.familyId, c.chunkId (or stable id). areaOf(familyId) = area ID for that family (from frozen topology).
+
+  From Layer-1 (and run context):
+    DOMINANT_FAMILY_B, DOMINANT_AREA_B  = baseline dominant family and area.
+    DOMINANT_FAMILY_S, DOMINANT_AREA_S  = shadow (for shadow-side metrics).
+  activeFamilies_B    = { f : hits_B[f] > 0 }. familiesIn(R) = { c.familyId for c in R }.
+  checksumOK(c)       = true iff chunk c's checksum matches frozen store.
+
+  Governance parameters (frozen config):
+    MAX_SHORTFALL         = max allowed (TOP_K - retrieved_count) for baseline (e.g. 2).
+    MIN_SUPPORT          = min required EVIDENCE_SUPPORT_INDEX_BASELINE (e.g. 0.30).
+    MAX_DUP_BOOK_CONC    = max allowed DUPLICATE_BOOK_RATIO_BASELINE (e.g. 0.70).
+
+----------------------------------------------------------------------
+2. LAYER-4 BOOK INTERSECTION & EVIDENCE METRICS (25)
+----------------------------------------------------------------------
+
+ 1. RETRIEVAL_MODE_ID
+    String RETRIEVAL_MODE_ID = "LEX_BM25_V1";  // frozen enum
+    Identifies the deterministic retrieval mode.
+
+ 2. TOP_K
+    int TOP_K = K;
+    Configured max chunks returned.
+
+ 3. RETRIEVED_COUNT_BASELINE
+    int RETRIEVED_COUNT_BASELINE = |R_B|;
+    How many chunks were actually returned for baseline.
+
+ 4. RETRIEVED_COUNT_SHADOW
+    int RETRIEVED_COUNT_SHADOW = |R_S|;
+    Same for shadow.
+
+ 5. RETRIEVAL_SHORTFALL_BASELINE
+    int RETRIEVAL_SHORTFALL_BASELINE = TOP_K - RETRIEVED_COUNT_BASELINE;
+    If non-zero, index coverage is weak or filters too strict.
+
+ 6. RETRIEVAL_SHORTFALL_SHADOW
+    int RETRIEVAL_SHORTFALL_SHADOW = TOP_K - RETRIEVED_COUNT_SHADOW;
+    Shadow shortfall.
+
+ 7. UNIQUE_BOOKS_BASELINE
+    int UNIQUE_BOOKS_BASELINE = countDistinct(c.bookId for c in R_B);
+    Source diversity.
+
+ 8. UNIQUE_BOOKS_SHADOW
+    int UNIQUE_BOOKS_SHADOW = countDistinct(c.bookId for c in R_S);
+    Same for shadow.
+
+ 9. DUPLICATE_BOOK_RATIO_BASELINE
+    double DUPLICATE_BOOK_RATIO_BASELINE = 1.0 - ((double) UNIQUE_BOOKS_BASELINE / max(1, RETRIEVED_COUNT_BASELINE));
+    Concentration to a few books (risk of single-source bias).
+
+10. DUPLICATE_BOOK_RATIO_SHADOW
+    double DUPLICATE_BOOK_RATIO_SHADOW = 1.0 - ((double) UNIQUE_BOOKS_SHADOW / max(1, RETRIEVED_COUNT_SHADOW));
+    Same.
+
+11. FAMILY_MATCH_COUNT_BASELINE
+    int FAMILY_MATCH_COUNT_BASELINE = count(c in R_B where c.familyId == DOMINANT_FAMILY_B);
+    Direct match to dominant family.
+
+12. FAMILY_MATCH_RATIO_BASELINE
+    double FAMILY_MATCH_RATIO_BASELINE = (double) FAMILY_MATCH_COUNT_BASELINE / max(1, RETRIEVED_COUNT_BASELINE);
+    How "on-topic" evidence is to dominant family (structural only).
+
+13. AREA_MATCH_RATIO_BASELINE
+    double AREA_MATCH_RATIO_BASELINE = count(c in R_B where areaOf(c.familyId) == DOMINANT_AREA_B) / (double) max(1, RETRIEVED_COUNT_BASELINE);
+    Area-level alignment.
+
+14. TOP_K_FAMILY_COVERAGE_BASELINE
+    double TOP_K_FAMILY_COVERAGE_BASELINE = countDistinct(c.familyId in R_B) / (double) F;
+    How much of the family space the evidence touches (expected small for focused retrieval).
+
+15. EVIDENCE_ENTROPY_BASELINE
+    double EVIDENCE_ENTROPY_BASELINE = entropy(distribution of familyId over R_B) / log(F);
+    Evidence dispersion across families. entropy = -sum p*log(p) over family counts; natural log. If F <= 1 or no retrieval, 0.0.
+
+16. EVIDENCE_GINI_BASELINE
+    double EVIDENCE_GINI_BASELINE = gini(countsByFamily(R_B));
+    Evidence inequality across families. countsByFamily = map familyId to count of chunks; gini as in 34_SPEC.
+
+17. RANK_WEIGHTED_ALIGNMENT_BASELINE
+    w(r) = 1.0 / (r + 1);  r = 0-based rank.
+    double RANK_WEIGHTED_ALIGNMENT_BASELINE = sum(w(r) * indicator(areaOf(c.familyId) == DOMINANT_AREA_B) for c at rank r in R_B) / sum(w(r) for r in 0..|R_B|-1);
+    Whether top-ranked evidence aligns better than lower-ranked. If R_B empty, 0.0.
+
+18. HIT_EVIDENCE_OVERLAP_BASELINE
+    double HIT_EVIDENCE_OVERLAP_BASELINE = jaccard(activeFamilies_B, familiesIn(R_B));
+    Overlap between activated families and evidence families. jaccard(A,B) = |A∩B|/|A∪B|; if union empty, 1.0.
+
+19. HIT_EVIDENCE_OVERLAP_SHADOW
+    double HIT_EVIDENCE_OVERLAP_SHADOW = jaccard(activeFamilies_S, familiesIn(R_S));
+    Shadow overlap.
+
+20. EVIDENCE_JACCARD_BS
+    double EVIDENCE_JACCARD_BS = jaccard(chunkIds(R_B), chunkIds(R_S));
+    Whether baseline and shadow pull the same evidence (chunk-level).
+
+21. BOOKSET_JACCARD_BS
+    double BOOKSET_JACCARD_BS = jaccard(bookIds(R_B), bookIds(R_S));
+    Same, book-level.
+
+22. EVIDENCE_SHIFT_SCORE
+    double EVIDENCE_SHIFT_SCORE = 1.0 - EVIDENCE_JACCARD_BS;
+    Scalar for evidence divergence between B and S.
+
+23. INTEGRITY_CHECK_PASS_RATIO
+    R_union = R_B ∪ R_S (by chunk id).
+    double INTEGRITY_CHECK_PASS_RATIO = count(c in R_union where checksumOK(c)) / (double) max(1, |R_union|);
+    Hard integrity: chunk checksums match frozen store.
+
+24. EVIDENCE_SUPPORT_INDEX_BASELINE
+    double EVIDENCE_SUPPORT_INDEX_BASELINE = 0.45 * FAMILY_MATCH_RATIO_BASELINE + 0.35 * AREA_MATCH_RATIO_BASELINE + 0.20 * HIT_EVIDENCE_OVERLAP_BASELINE;
+    Single scalar: how well evidence supports the baseline activation (structural intersection only). Weights sum to 1.0.
+
+25. EVIDENCE_ACCEPTABILITY_GATE
+    boolean EVIDENCE_ACCEPTABILITY_GATE = (INTEGRITY_CHECK_PASS_RATIO == 1.0) && (RETRIEVAL_SHORTFALL_BASELINE <= MAX_SHORTFALL) && (EVIDENCE_SUPPORT_INDEX_BASELINE >= MIN_SUPPORT) && (DUPLICATE_BOOK_RATIO_BASELINE <= MAX_DUP_BOOK_CONC);
+    Governance gate: evidence is usable only if integrity + support thresholds pass.
+
+----------------------------------------------------------------------
+3. PRACTICAL TRUTH
+----------------------------------------------------------------------
+
+  Layer-4 is not "book says I'm right".
+  Layer-4 is: given our structural decision, did deterministic retrieval return evidence whose frozen labels intersect our activated region, and is the evidence store intact?
+
+----------------------------------------------------------------------
+4. AUXILIARY (DETERMINISTIC)
+----------------------------------------------------------------------
+
+  countsByFamily(R): For each c in R, count by c.familyId. Return map or array of counts per family.
+  entropy: -sum p*log(p) for p = count/total over families present; natural log.
+  gini: as in 34_SPEC (sorted counts).
+  jaccard(A,B): |A∩B| / |A∪B|; if union empty, define 1.0 for similarity.
+  chunkIds(R), bookIds(R): set of c.chunkId or c.bookId for c in R.
+
+----------------------------------------------------------------------
+5. RELATION TO BOOKS INVARIANT (22_SPEC §13)
+----------------------------------------------------------------------
+
+  Books retrieval runs only after resolution. Layer-4 instruments retrieval results; it does not feed back into resolution or metrics. I-Q2 unchanged: disabling books must not change resolution or Layer-1/2/3 metrics.
+
+----------------------------------------------------------------------
+6. JAVA-STYLE PSEUDOCODE (LAYER-4)
+----------------------------------------------------------------------
+
+// HESPERIA v0.4.x Layer-4 — Book Intersection & Evidence (25 variables)
+// Deterministic retrieval only. No semantic authority.
+
+String RETRIEVAL_MODE_ID = "LEX_BM25_V1";
+int TOP_K = K;
+
+int RETRIEVED_COUNT_BASELINE = R_B.size();
+int RETRIEVED_COUNT_SHADOW = R_S.size();
+int RETRIEVAL_SHORTFALL_BASELINE = TOP_K - RETRIEVED_COUNT_BASELINE;
+int RETRIEVAL_SHORTFALL_SHADOW = TOP_K - RETRIEVED_COUNT_SHADOW;
+
+Set<String> booksB = new HashSet<>(), booksS = new HashSet<>();
+for (Chunk c : R_B) booksB.add(c.bookId);
+for (Chunk c : R_S) booksS.add(c.bookId);
+int UNIQUE_BOOKS_BASELINE = booksB.size();
+int UNIQUE_BOOKS_SHADOW = booksS.size();
+
+double DUPLICATE_BOOK_RATIO_BASELINE = 1.0 - ((double) UNIQUE_BOOKS_BASELINE / Math.max(1, RETRIEVED_COUNT_BASELINE));
+double DUPLICATE_BOOK_RATIO_SHADOW = 1.0 - ((double) UNIQUE_BOOKS_SHADOW / Math.max(1, RETRIEVED_COUNT_SHADOW));
+
+int FAMILY_MATCH_COUNT_BASELINE = 0;
+for (Chunk c : R_B) if (c.familyId == DOMINANT_FAMILY_B) FAMILY_MATCH_COUNT_BASELINE++;
+double FAMILY_MATCH_RATIO_BASELINE = (double) FAMILY_MATCH_COUNT_BASELINE / Math.max(1, RETRIEVED_COUNT_BASELINE);
+
+int areaMatchB = 0;
+for (Chunk c : R_B) if (areaOf(c.familyId) == DOMINANT_AREA_B) areaMatchB++;
+double AREA_MATCH_RATIO_BASELINE = (double) areaMatchB / Math.max(1, RETRIEVED_COUNT_BASELINE);
+
+Set<Integer> familiesB = new HashSet<>();
+for (Chunk c : R_B) familiesB.add(c.familyId);
+double TOP_K_FAMILY_COVERAGE_BASELINE = (double) familiesB.size() / F;
+
+Map<Integer, Integer> countsByFam = new HashMap<>();
+for (Chunk c : R_B) countsByFam.merge(c.familyId, 1, Integer::sum);
+double EVIDENCE_ENTROPY_BASELINE = computeEntropy(countsByFam, F);
+double EVIDENCE_GINI_BASELINE = computeGini(countsByFam.values());
+
+double weightSum = 0.0, alignedSum = 0.0;
+for (int r = 0; r < R_B.size(); r++) {
+    double w = 1.0 / (r + 1);
+    weightSum += w;
+    if (areaOf(R_B.get(r).familyId) == DOMINANT_AREA_B) alignedSum += w;
+}
+double RANK_WEIGHTED_ALIGNMENT_BASELINE = (weightSum > 0) ? alignedSum / weightSum : 0.0;
+
+Set<Integer> activeB = new HashSet<>();
+for (int f = 0; f < F; f++) if (hits_B[f] > 0) activeB.add(f);
+double HIT_EVIDENCE_OVERLAP_BASELINE = jaccard(activeB, familiesB);
+
+Set<Integer> activeS = new HashSet<>();
+for (int f = 0; f < F; f++) if (hits_S[f] > 0) activeS.add(f);
+Set<Integer> familiesS = new HashSet<>();
+for (Chunk c : R_S) familiesS.add(c.familyId);
+double HIT_EVIDENCE_OVERLAP_SHADOW = jaccard(activeS, familiesS);
+
+Set<String> chunkIdsB = new HashSet<>(), chunkIdsS = new HashSet<>();
+for (Chunk c : R_B) chunkIdsB.add(c.chunkId);
+for (Chunk c : R_S) chunkIdsS.add(c.chunkId);
+double EVIDENCE_JACCARD_BS = jaccard(chunkIdsB, chunkIdsS);
+double BOOKSET_JACCARD_BS = jaccard(booksB, booksS);
+double EVIDENCE_SHIFT_SCORE = 1.0 - EVIDENCE_JACCARD_BS;
+
+Set<Chunk> R_union = new HashSet<>(R_B);
+R_union.addAll(R_S);
+int ok = 0;
+for (Chunk c : R_union) if (checksumOK(c)) ok++;
+double INTEGRITY_CHECK_PASS_RATIO = (R_union.isEmpty()) ? 1.0 : (double) ok / R_union.size();
+
+double EVIDENCE_SUPPORT_INDEX_BASELINE = 0.45 * FAMILY_MATCH_RATIO_BASELINE
+    + 0.35 * AREA_MATCH_RATIO_BASELINE
+    + 0.20 * HIT_EVIDENCE_OVERLAP_BASELINE;
+
+boolean EVIDENCE_ACCEPTABILITY_GATE =
+    INTEGRITY_CHECK_PASS_RATIO == 1.0
+    && RETRIEVAL_SHORTFALL_BASELINE <= MAX_SHORTFALL
+    && EVIDENCE_SUPPORT_INDEX_BASELINE >= MIN_SUPPORT
+    && DUPLICATE_BOOK_RATIO_BASELINE <= MAX_DUP_BOOK_CONC;
+
+static double jaccard(Set<?> A, Set<?> B) {
+    Set<Object> u = new HashSet<>(A); u.addAll(B);
+    if (u.isEmpty()) return 1.0;
+    Set<Object> i = new HashSet<>(A); i.retainAll(B);
+    return (double) i.size() / u.size();
+}
+static double computeEntropy(Map<Integer, Integer> counts, int F) {
+    int total = 0;
+    for (int n : counts.values()) total += n;
+    if (total == 0 || F <= 1) return 0.0;
+    double H = 0.0;
+    for (int n : counts.values()) {
+        double p = (double) n / total;
+        if (p > 0) H -= p * Math.log(p);
+    }
+    return H / Math.log(F);
+}
+
+----------------------------------------------------------------------
+END 37_SPEC

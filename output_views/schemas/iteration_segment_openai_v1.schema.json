@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hesperia.prichindel.com/schemas/iteration_segment_openai_v1.schema.json",
+  "title": "iteration_segment_openai_v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "prompt_pack_id",
+    "meta",
+    "iteration",
+    "parameters",
+    "sentences",
+    "audit"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^1\\."
+    },
+    "prompt_pack_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["run_timestamp_utc"],
+      "properties": {
+        "run_timestamp_utc": { "type": "string" },
+        "source_file": { "type": ["string", "null"] },
+        "source_label": { "type": ["string", "null"] },
+        "modules_executed": { "type": "array", "items": { "type": "string" } },
+        "module_versions": { "type": "object", "additionalProperties": { "type": "string" } },
+        "calibration_dict_pack": { "type": ["string", "object", "null"] },
+        "trace": { "type": ["array", "object", "null"] },
+        "disclaimer_footer": { "type": "string" }
+      }
+    },
+    "iteration": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["iteration_id", "order"],
+      "properties": {
+        "iteration_id": { "type": "string", "minLength": 1 },
+        "order": { "type": "integer", "minimum": 0 },
+        "t_start_ms": { "type": ["integer", "null"] },
+        "t_end_ms": { "type": ["integer", "null"] },
+        "wall_clock_iso": { "type": ["string", "null"] }
+      }
+    },
+    "parameters": { "type": "object", "additionalProperties": true },
+    "sentences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["id", "text", "order"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "text": { "type": "string" },
+          "order": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "audit": { "type": "object", "additionalProperties": true },
+    "messages": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role", "content"],
+        "properties": {
+          "role": { "type": "string", "enum": ["system", "user", "assistant", "developer"] },
+          "content": { "type": "string" }
+        }
+      }
+    }
+  }
+}

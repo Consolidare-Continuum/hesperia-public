@@ -1,0 +1,431 @@
+{
+  "units": [
+    {
+      "unit_id": "R1:sent_1",
+      "level": "R1",
+      "parent_id": null,
+      "token_count": 13,
+      "top_areas": [],
+      "top_families": [],
+      "SI_metrics": {
+        "coverage": 0.0,
+        "dominance": 0.0,
+        "entropy": 0.0,
+        "leakage": 1.0,
+        "contradiction_pressure": 0.4,
+        "stability": 0.0,
+        "shadow_deviation": 0.35,
+        "trust_tier": "T2"
+      },
+      "flags": {
+        "band": "spiky",
+        "decision_code": "ATTR_FAIL_NO_FAMILIES"
+      }
+    },
+    {
+      "unit_id": "R1:sent_2",
+      "level": "R1",
+      "parent_id": null,
+      "token_count": 10,
+      "top_areas": [
+        {
+          "coverage": 1.0,
+          "rank": 1
+        }
+      ],
+      "top_families": [
+        {
+          "coverage": 1.0,
+          "rank": 1
+        }
+      ],
+      "SI_metrics": {
+        "coverage": 1.0,
+        "dominance": 1.0,
+        "entropy": 0.0,
+        "leakage": 0.0,
+        "contradiction_pressure": 0.45,
+        "stability": 1.0,
+        "shadow_deviation": 0.0,
+        "trust_tier": "T0"
+      },
+      "flags": {
+        "band": "spiky",
+        "decision_code": "OK"
+      }
+    },
+    {
+      "unit_id": "R1:sent_3",
+      "level": "R1",
+      "parent_id": null,
+      "token_count": 6,
+      "top_areas": [
+        {
+          "coverage": 0.5,
+          "rank": 1
+        },
+        {
+          "coverage": 0.5,
+          "rank": 2
+        }
+      ],
+      "top_families": [
+        {
+          "coverage": 0.5,
+          "rank": 1
+        },
+        {
+          "coverage": 0.5,
+          "rank": 2
+        }
+      ],
+      "SI_metrics": {
+        "coverage": 1.0,
+        "dominance": 0.5,
+        "entropy": 0.1224,
+        "leakage": 0.0,
+        "contradiction_pressure": 0.45,
+        "stability": 0.8776,
+        "shadow_deviation": 0.0,
+        "trust_tier": "T0"
+      },
+      "flags": {
+        "band": "spiky",
+        "decision_code": "OK"
+      }
+    },
+    {
+      "unit_id": "R2:para_1",
+      "level": "R2",
+      "parent_id": null,
+      "token_count": 29,
+      "top_areas": [
+        {
+          "coverage": 0.666667,
+          "rank": 1
+        },
+        {
+          "coverage": 0.333333,
+          "rank": 2
+        }
+      ],
+      "top_families": [
+        {
+          "coverage": 0.333333,
+          "rank": 1
+        },
+        {
+          "coverage": 0.333333,
+          "rank": 2
+        },
+        {
+          "coverage": 0.333333,
+          "rank": 3
+        }
+      ],
+      "SI_metrics": {
+        "coverage": 0.999999,
+        "dominance": 0.333333,
+        "entropy": 0.194,
+        "leakage": 1e-06,
+        "contradiction_pressure": 0.45,
+        "stability": 0.806,
+        "shadow_deviation": 0.0,
+        "trust_tier": "T2"
+      },
+      "flags": {
+        "band": "stable",
+        "decision_code": "OK"
+      }
+    },
+    {
+      "unit_id": "R3:ch_1",
+      "level": "R3",
+      "parent_id": null,
+      "token_count": 29,
+      "top_areas": [
+        {
+          "coverage": 0.666667,
+          "rank": 1
+        },
+        {
+          "coverage": 0.333333,
+          "rank": 2
+        }
+      ],
+      "top_families": [
+        {
+          "coverage": 0.333333,
+          "rank": 1
+        },
+        {
+          "coverage": 0.333333,
+          "rank": 2
+        },
+        {
+          "coverage": 0.333333,
+          "rank": 3
+        }
+      ],
+      "SI_metrics": {
+        "coverage": 0.999999,
+        "dominance": 0.333333,
+        "entropy": 0.194,
+        "leakage": 1e-06,
+        "contradiction_pressure": 0.45,
+        "stability": 0.806,
+        "shadow_deviation": 0.0,
+        "trust_tier": "T2"
+      },
+      "flags": {
+        "band": "stable",
+        "decision_code": "OK"
+      }
+    },
+    {
+      "unit_id": "R4:book_1",
+      "level": "R4",
+      "parent_id": null,
+      "token_count": 29,
+      "top_areas": [
+        {
+          "coverage": 0.666667,
+          "rank": 1
+        },
+        {
+          "coverage": 0.333333,
+          "rank": 2
+        }
+      ],
+      "top_families": [
+        {
+          "coverage": 0.333333,
+          "rank": 1
+        },
+        {
+          "coverage": 0.333333,
+          "rank": 2
+        },
+        {
+          "coverage": 0.333333,
+          "rank": 3
+        }
+      ],
+      "SI_metrics": {
+        "coverage": 0.999999,
+        "dominance": 0.333333,
+        "entropy": 0.194,
+        "leakage": 1e-06,
+        "contradiction_pressure": 0.45,
+        "stability": 0.806,
+        "shadow_deviation": 0.0,
+        "trust_tier": "T2"
+      },
+      "flags": {
+        "band": "stable",
+        "decision_code": "OK"
+      }
+    }
+  ],
+  "book_profile": {
+    "book_id": "e2e",
+    "smoothing_model": "bootstrap_zero_expected_v0",
+    "level_averages": {
+      "R1": {
+        "token_count_total": 29,
+        "SI_means": {
+          "coverage": 0.551724,
+          "dominance": 0.448276,
+          "entropy": 0.025324,
+          "leakage": 0.448276,
+          "contradiction_pressure": 0.427586,
+          "stability": 0.5264,
+          "shadow_deviation": 0.156897
+        },
+        "SI_variances": {
+          "coverage": 0.247325,
+          "dominance": 0.1956,
+          "entropy": 0.002458,
+          "leakage": 0.247325,
+          "contradiction_pressure": 0.000618,
+          "stability": 0.227079,
+          "shadow_deviation": 0.030297
+        },
+        "SCI": 0.273545
+      },
+      "R2": {
+        "token_count_total": 29,
+        "SI_means": {
+          "coverage": 0.999999,
+          "dominance": 0.333333,
+          "entropy": 0.194,
+          "leakage": 1e-06,
+          "contradiction_pressure": 0.45,
+          "stability": 0.806,
+          "shadow_deviation": 0.0
+        },
+        "SI_variances": {
+          "coverage": 0.0,
+          "dominance": 0.0,
+          "entropy": 0.0,
+          "leakage": 0.0,
+          "contradiction_pressure": 0.0,
+          "stability": 0.0,
+          "shadow_deviation": 0.0
+        },
+        "SCI": 0.344666
+      },
+      "R3": {
+        "token_count_total": 29,
+        "SI_means": {
+          "coverage": 0.999999,
+          "dominance": 0.333333,
+          "entropy": 0.194,
+          "leakage": 1e-06,
+          "contradiction_pressure": 0.45,
+          "stability": 0.806,
+          "shadow_deviation": 0.0
+        },
+        "SI_variances": {
+          "coverage": 0.0,
+          "dominance": 0.0,
+          "entropy": 0.0,
+          "leakage": 0.0,
+          "contradiction_pressure": 0.0,
+          "stability": 0.0,
+          "shadow_deviation": 0.0
+        },
+        "SCI": 0.344666
+      },
+      "R4": {
+        "token_count_total": 29,
+        "SI_means": {
+          "coverage": 0.999999,
+          "dominance": 0.333333,
+          "entropy": 0.194,
+          "leakage": 1e-06,
+          "contradiction_pressure": 0.45,
+          "stability": 0.806,
+          "shadow_deviation": 0.0
+        },
+        "SI_variances": {
+          "coverage": 0.0,
+          "dominance": 0.0,
+          "entropy": 0.0,
+          "leakage": 0.0,
+          "contradiction_pressure": 0.0,
+          "stability": 0.0,
+          "shadow_deviation": 0.0
+        },
+        "SCI": 0.344666
+      }
+    },
+    "scale_deltas": {
+      "R1_to_R2": {
+        "delta_observed": {
+          "coverage": 0.448275,
+          "dominance": -0.114943,
+          "entropy": 0.168676,
+          "leakage": -0.448275,
+          "contradiction_pressure": 0.022414,
+          "stability": 0.2796,
+          "shadow_deviation": -0.156897
+        },
+        "delta_expected": {
+          "coverage": 0.0,
+          "dominance": 0.0,
+          "entropy": 0.0,
+          "leakage": 0.0,
+          "contradiction_pressure": 0.0,
+          "stability": 0.0,
+          "shadow_deviation": 0.0
+        },
+        "delta_deviation": {
+          "coverage": 0.448275,
+          "dominance": -0.114943,
+          "entropy": 0.168676,
+          "leakage": -0.448275,
+          "contradiction_pressure": 0.022414,
+          "stability": 0.2796,
+          "shadow_deviation": -0.156897
+        }
+      },
+      "R2_to_R3": {
+        "delta_observed": {
+          "coverage": 0.0,
+          "dominance": 0.0,
+          "entropy": 0.0,
+          "leakage": 0.0,
+          "contradiction_pressure": 0.0,
+          "stability": 0.0,
+          "shadow_deviation": 0.0
+        },
+        "delta_expected": {
+          "coverage": 0.0,
+          "dominance": 0.0,
+          "entropy": 0.0,
+          "leakage": 0.0,
+          "contradiction_pressure": 0.0,
+          "stability": 0.0,
+          "shadow_deviation": 0.0
+        },
+        "delta_deviation": {
+          "coverage": 0.0,
+          "dominance": 0.0,
+          "entropy": 0.0,
+          "leakage": 0.0,
+          "contradiction_pressure": 0.0,
+          "stability": 0.0,
+          "shadow_deviation": 0.0
+        }
+      },
+      "R3_to_R4": {
+        "delta_observed": {
+          "coverage": 0.0,
+          "dominance": 0.0,
+          "entropy": 0.0,
+          "leakage": 0.0,
+          "contradiction_pressure": 0.0,
+          "stability": 0.0,
+          "shadow_deviation": 0.0
+        },
+        "delta_expected": {
+          "coverage": 0.0,
+          "dominance": 0.0,
+          "entropy": 0.0,
+          "leakage": 0.0,
+          "contradiction_pressure": 0.0,
+          "stability": 0.0,
+          "shadow_deviation": 0.0
+        },
+        "delta_deviation": {
+          "coverage": 0.0,
+          "dominance": 0.0,
+          "entropy": 0.0,
+          "leakage": 0.0,
+          "contradiction_pressure": 0.0,
+          "stability": 0.0,
+          "shadow_deviation": 0.0
+        }
+      }
+    },
+    "turning_points": [],
+    "structural_signature": {
+      "stable_families": [
+        "F101",
+        "F110"
+      ],
+      "variance_profile": {},
+      "author_fingerprint": {}
+    }
+  },
+  "system_version": "0.5.1",
+  "build_id": "hesperia_0.5.1_e6b9a228d6ce_2026-03-26T07:39:30Z",
+  "schema_version": "v1",
+  "calibration_profile": "default_v1",
+  "run_id": "7f9e484b-01cc-48f5-907f-6592fca9260e",
+  "pipeline_version": "e2e_v2",
+  "modules_used": [
+    "runtime.pipeline.r1_r4_pipeline"
+  ]
+}

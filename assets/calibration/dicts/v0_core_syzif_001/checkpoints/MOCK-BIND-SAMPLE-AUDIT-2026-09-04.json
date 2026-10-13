@@ -1,0 +1,158 @@
+{
+  "n_sample": 25,
+  "n_high_or_exact": 25,
+  "pct_high": 100.0,
+  "caveat": "Mock SequenceMatcher bind \u2014 not LLM judgment; re-audit after live propose",
+  "rows": [
+    {
+      "concept_id": "core.truth.uncertainty",
+      "from": "uncertainty",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.order.roles",
+      "from": "roles",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.chaos.anomaly",
+      "from": "that many",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.freedom.consent",
+      "from": "one another",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.harm.hatred",
+      "from": "who had",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.control.gatekeeping",
+      "from": "have been",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.truth.evidence",
+      "from": "evidence",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.chaos.manias",
+      "from": "manias",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.control.statutes",
+      "from": "that does",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.order.review",
+      "from": "review",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.order.symmetry",
+      "from": "symmetry",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.freedom.privacy",
+      "from": "privacy",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.order.standard",
+      "from": "and what",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.creation.synthesis",
+      "from": "the social",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.freedom.consent",
+      "from": "only when",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.order.budgeting",
+      "from": "budgeting",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.creation.integration",
+      "from": "the great",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.chaos.emergence",
+      "from": "the presence",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.chaos.mutation",
+      "from": "that one",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.control.permit",
+      "from": "paper clip",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.truth.citation",
+      "from": "the situation",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.good.rehabilitation",
+      "from": "rehabilitation",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.chaos.emergence",
+      "from": "between the",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.destruction.removal",
+      "from": "the moral",
+      "score": 1.0,
+      "reason": "exact_id"
+    },
+    {
+      "concept_id": "core.chaos.commotion",
+      "from": "the common",
+      "score": 1.0,
+      "reason": "exact_id"
+    }
+  ]
+}

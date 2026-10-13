@@ -1,0 +1,29 @@
+{
+  "concept_id": "WITHDRAWAL",
+  "observed_j": 0.85,
+  "activations": {
+    "REJECTION": 0.1,
+    "FAILURE": 0.6,
+    "WITHDRAWAL": 0.85
+  },
+  "edges": [
+    {
+      "source": "REJECTION",
+      "target": "WITHDRAWAL",
+      "relation_type": "activates",
+      "w_e": 0.8
+    },
+    {
+      "source": "FAILURE",
+      "target": "WITHDRAWAL",
+      "relation_type": "activates",
+      "w_e": 0.3
+    }
+  ],
+  "ranked_causes": [
+    {"source": "REJECTION", "cause_score": 0.408},
+    {"source": "FAILURE", "cause_score": 0.153}
+  ],
+  "mirror_deficit": 0.697,
+  "expected_incident": "MIRROR_DEFICIT"
+}

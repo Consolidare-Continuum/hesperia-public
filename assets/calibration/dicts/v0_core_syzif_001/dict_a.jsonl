@@ -1,0 +1,1041 @@
+{"surface": "altruism", "concept_id": "core.good.altruism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "protection", "concept_id": "core.good.protection", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "healing", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "mercy", "concept_id": "core.good.mercy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "generosity", "concept_id": "core.good.generosity", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "mentorship", "concept_id": "core.good.mentorship", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "community", "concept_id": "core.good.community", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "hospitality", "concept_id": "core.good.hospitality", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "forgiveness", "concept_id": "core.good.forgiveness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "integrity", "concept_id": "core.good.integrity", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "gratitude", "concept_id": "core.good.gratitude", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "stewardship", "concept_id": "core.good.stewardship", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "solidarity", "concept_id": "core.good.solidarity", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "rehabilitation", "concept_id": "core.good.rehabilitation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "inclusion", "concept_id": "core.good.inclusion", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "fairness", "concept_id": "core.good.fairness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "conservation", "concept_id": "core.good.conservation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "education", "concept_id": "core.good.education", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "mediation", "concept_id": "core.care.medication", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "service", "concept_id": "core.good.service", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "safety", "concept_id": "core.good.safety", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "trust", "concept_id": "core.good.trust", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "compassion", "concept_id": "core.good.compassion", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "courage", "concept_id": "core.good.courage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "nursing", "concept_id": "core.care.nursing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "comfort", "concept_id": "core.care.comfort", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "medication", "concept_id": "core.good.mediation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "preservation", "concept_id": "core.care.preservation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "support", "concept_id": "core.care.support", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "accessibility", "concept_id": "core.care.accessibility", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "attendance", "concept_id": "core.care.attendance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "de-escalation", "concept_id": "core.care.de-escalation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "restore", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "shelter", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "help", "concept_id": "core.care.help", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "security", "concept_id": "core.care.security", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "volunteerism", "concept_id": "core.care.volunteerism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "aid", "concept_id": "core.care.aid", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "mentoring", "concept_id": "core.care.mentoring", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "kindness", "concept_id": "core.care.kindness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "responsibility", "concept_id": "core.care.responsibility", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "guardianship", "concept_id": "core.care.guardianship", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "standard", "concept_id": "core.order.standard", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "schedule", "concept_id": "core.order.schedule", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "governance", "concept_id": "core.order.governance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "access", "concept_id": "core.order.access", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "quality", "concept_id": "core.order.quality", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "documentation", "concept_id": "core.order.documentation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "change", "concept_id": "core.order.change", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "response", "concept_id": "core.order.response", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "risk", "concept_id": "core.order.risk", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "roles", "concept_id": "core.order.roles", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "versioning", "concept_id": "core.order.versioning", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "backups", "concept_id": "core.order.backups", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "budgeting", "concept_id": "core.order.budgeting", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "compliance", "concept_id": "core.order.compliance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "protocol", "concept_id": "core.order.protocol", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "checklists", "concept_id": "core.order.checklists", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "metrics", "concept_id": "core.order.metrics", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "playbooks", "concept_id": "core.order.playbooks", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "workflows", "concept_id": "core.order.workflows", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "symmetry", "concept_id": "core.order.symmetry", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "capacity", "concept_id": "core.order.capacity", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "directives", "concept_id": "core.order.directives", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "escalation", "concept_id": "core.order.escalation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "review", "concept_id": "core.order.review", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "safeguards", "concept_id": "core.control.safeguards", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "takedowns", "concept_id": "core.control.takedowns", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "isolation", "concept_id": "core.control.isolation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "entitlements", "concept_id": "core.control.entitlements", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "inspection", "concept_id": "core.control.inspection", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "permit", "concept_id": "core.control.permit", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "monitoring", "concept_id": "core.control.monitoring", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "revocation", "concept_id": "core.control.revocation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "gatekeeping", "concept_id": "core.control.gatekeeping", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "centralization", "concept_id": "core.control.centralization", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "price-controls", "concept_id": "core.control.price-controls", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "curfews", "concept_id": "core.control.curfews", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "hierarchy", "concept_id": "core.control.hierarchy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "quarantine", "concept_id": "core.control.quarantine", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "listing", "concept_id": "core.control.listing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "blocklist", "concept_id": "core.control.blocklist", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "moderation", "concept_id": "core.control.moderation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "statutes", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "oversight", "concept_id": "core.control.oversight", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "regulation", "concept_id": "core.control.regulation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "supervise", "concept_id": "core.control.supervise", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "register", "concept_id": "core.control.register", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "directing", "concept_id": "core.control.directing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "neglect", "concept_id": "core.indifference.neglect", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "ostracism", "concept_id": "core.indifference.ostracism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "dodging", "concept_id": "core.indifference.dodging", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "dehumanization", "concept_id": "core.indifference.dehumanization", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "bystanding", "concept_id": "core.indifference.bystanding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "callousness", "concept_id": "core.indifference.callousness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "withholding", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "buckpassing", "concept_id": "core.indifference.buckpassing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "neutrality", "concept_id": "core.indifference.neutrality", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "ghosting", "concept_id": "core.indifference.ghosting", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "stonewalling", "concept_id": "core.indifference.stonewalling", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "tokenism", "concept_id": "core.indifference.tokenism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "cynicism", "concept_id": "core.indifference.cynicism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "burnout", "concept_id": "core.indifference.burnout", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "complacency", "concept_id": "core.indifference.complacency", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "apathy", "concept_id": "core.indifference.apathy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "stalling", "concept_id": "core.indifference.stalling", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "exclusion", "concept_id": "core.indifference.exclusion", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "detachment", "concept_id": "core.indifference.detachment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "ignorance", "concept_id": "core.indifference.ignorance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "dumping", "concept_id": "core.indifference.dumping", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "negation", "concept_id": "core.indifference.negation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "dispassion", "concept_id": "core.indifference.dispassion", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "nonchalance", "concept_id": "core.indifference.nonchalance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "violence", "concept_id": "core.harm.violence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "exploitation", "concept_id": "core.harm.exploitation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "corruption", "concept_id": "core.harm.corruption", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "betrayal", "concept_id": "core.harm.betrayal", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "negligence", "concept_id": "core.harm.negligence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "oppression", "concept_id": "core.harm.oppression", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "sabotage", "concept_id": "core.harm.sabotage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "fraud", "concept_id": "core.harm.fraud", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "defamation", "concept_id": "core.harm.defamation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "addiction-harms", "concept_id": "core.harm.addiction-harms", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "pollution", "concept_id": "core.harm.pollution", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "waste", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "harassment", "concept_id": "core.harm.harassment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "hatred", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "vengeance", "concept_id": "core.harm.vengeance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "coercion", "concept_id": "core.harm.coercion", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "intimidation", "concept_id": "core.harm.intimidation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "injury", "concept_id": "core.harm.injury", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "predation", "concept_id": "core.harm.predation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "hazard", "concept_id": "core.harm.hazard", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "dereliction", "concept_id": "core.harm.dereliction", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "cronyism", "concept_id": "core.harm.cronyism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "ruthlessness", "concept_id": "core.harm.ruthlessness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "vandalism", "concept_id": "core.harm.vandalism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "decommissioning", "concept_id": "core.destruction.decommissioning", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "strike", "concept_id": "core.destruction.strike", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "refusal", "concept_id": "core.destruction.refusal", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "pruning", "concept_id": "core.destruction.pruning", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "culling", "concept_id": "core.destruction.culling", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "removal", "concept_id": "core.destruction.removal", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "dismantling", "concept_id": "core.destruction.dismantling", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "erasure", "concept_id": "core.destruction.erasure", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "neutralization", "concept_id": "core.destruction.neutralization", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "demolition", "concept_id": "core.destruction.demolition", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "invasion", "concept_id": "core.destruction.invasion", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "destroying", "concept_id": "core.destruction.destroying", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "death", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "aggression", "concept_id": "core.destruction.aggression", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "eradication", "concept_id": "core.destruction.eradication", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "damage", "concept_id": "core.destruction.damage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "shred", "concept_id": "core.destruction.shred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "unlearning", "concept_id": "core.destruction.unlearning", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "collapse", "concept_id": "core.destruction.collapse", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "devastation", "concept_id": "core.destruction.devastation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "splitting", "concept_id": "core.destruction.splitting", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "partition", "concept_id": "core.destruction.partition", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "decay", "concept_id": "core.destruction.decay", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "recalls", "concept_id": "core.destruction.recalls", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "swarming", "concept_id": "core.chaos.swarming", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "drift", "concept_id": "core.chaos.drift", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "ideation", "concept_id": "core.chaos.ideation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "divergence", "concept_id": "core.chaos.divergence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "disruption", "concept_id": "core.chaos.disruption", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "anomaly", "concept_id": "core.chaos.anomaly", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "emergence", "concept_id": "core.chaos.emergence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "volatility", "concept_id": "core.chaos.volatility", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "strife", "concept_id": "core.chaos.strife", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "outliers", "concept_id": "core.chaos.outliers", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "discord", "concept_id": "core.chaos.discord", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "subversion", "concept_id": "core.chaos.subversion", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "hijacking", "concept_id": "core.chaos.hijacking", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "turmoil", "concept_id": "core.chaos.turmoil", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "commotion", "concept_id": "core.chaos.commotion", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "mutation", "concept_id": "core.chaos.mutation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "instigation", "concept_id": "core.chaos.instigation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "manias", "concept_id": "core.chaos.manias", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "randomness", "concept_id": "core.chaos.randomness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "madness", "concept_id": "core.chaos.madness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "instability", "concept_id": "core.chaos.instability", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "confusion", "concept_id": "core.chaos.confusion", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "entropy", "concept_id": "core.chaos.entropy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "disorder", "concept_id": "core.chaos.disorder", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "autonomy", "concept_id": "core.freedom.autonomy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "consent", "concept_id": "core.freedom.consent", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "openness", "concept_id": "core.freedom.openness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "exit", "concept_id": "core.freedom.exit", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "entry", "concept_id": "core.freedom.entry", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "expression", "concept_id": "core.freedom.expression", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "privacy", "concept_id": "core.freedom.privacy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "mobility", "concept_id": "core.freedom.mobility", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "permissionless", "concept_id": "core.freedom.permissionless", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "association", "concept_id": "core.freedom.association", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "liberties", "concept_id": "core.freedom.liberties", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "sandbox-testing", "concept_id": "core.freedom.sandbox-testing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "experimentation", "concept_id": "core.freedom.experimentation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "representation", "concept_id": "core.freedom.representation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "choice", "concept_id": "core.freedom.choice", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "interoperability", "concept_id": "core.freedom.interoperability", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "transparency", "concept_id": "core.freedom.transparency", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "decentralization", "concept_id": "core.freedom.decentralization", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "pluralism", "concept_id": "core.freedom.pluralism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "tolerance", "concept_id": "core.freedom.tolerance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "whistleblowing", "concept_id": "core.freedom.whistleblowing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "laws", "concept_id": "core.freedom.laws", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "rights", "concept_id": "core.freedom.rights", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "fair", "concept_id": "core.freedom.fair", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "evidence", "concept_id": "core.truth.evidence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "measurement", "concept_id": "core.truth.measurement", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "reproducibility", "concept_id": "core.truth.reproducibility", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "auditability", "concept_id": "core.truth.auditability", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "citation", "concept_id": "core.truth.citation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "calibration", "concept_id": "core.truth.calibration", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "clarity", "concept_id": "core.truth.clarity", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "fallibilism", "concept_id": "core.truth.fallibilism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "verification", "concept_id": "core.truth.verification", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "signal", "concept_id": "core.truth.signal", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "validation", "concept_id": "core.truth.validation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "explainability", "concept_id": "core.truth.explainability", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "groundtruth", "concept_id": "core.truth.groundtruth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "traceability", "concept_id": "core.truth.traceability", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "definitions", "concept_id": "core.truth.definitions", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "taxonomy", "concept_id": "core.truth.taxonomy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "testing", "concept_id": "core.truth.testing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "methodology", "concept_id": "core.truth.methodology", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "consensus", "concept_id": "core.truth.consensus", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "uncertainty", "concept_id": "core.truth.uncertainty", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "invention", "concept_id": "core.creation.invention", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "design", "concept_id": "core.creation.design", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "craft", "concept_id": "core.creation.craft", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "cultivation", "concept_id": "core.creation.cultivation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "engineering", "concept_id": "core.creation.engineering", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "composition", "concept_id": "core.creation.composition", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "music-and-rhythm", "concept_id": "core.creation.music-and-rhythm", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "writing", "concept_id": "core.creation.writing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "entrepreneurship", "concept_id": "core.creation.entrepreneurship", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "fusion", "concept_id": "core.creation.fusion", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "toolmaking", "concept_id": "core.creation.toolmaking", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "discovery", "concept_id": "core.creation.discovery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "integration", "concept_id": "core.creation.integration", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "prototyping", "concept_id": "core.creation.prototyping", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "refactoring", "concept_id": "core.creation.refactoring", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "synthesis", "concept_id": "core.creation.synthesis", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "pattern-language", "concept_id": "core.creation.pattern-language", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "user-experience", "concept_id": "core.creation.user-experience", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "renovation", "concept_id": "core.creation.renovation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "production", "concept_id": "core.creation.production", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "growth", "concept_id": "core.creation.growth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "art", "concept_id": "core.creation.art", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "researching", "concept_id": "core.creation.researching", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "collaboration", "concept_id": "core.creation.collaboration", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "lies", "concept_id": "core.deceit.lies", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "propaganda", "concept_id": "core.deceit.propaganda", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "falsehood", "concept_id": "core.deceit.falsehood", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "concealment", "concept_id": "core.deceit.concealment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "forgery", "concept_id": "core.deceit.forgery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "invalid", "concept_id": "core.deceit.invalid", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "scapegoating", "concept_id": "core.deceit.scapegoating", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "gaslighting", "concept_id": "core.deceit.gaslighting", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "unbalance", "concept_id": "core.deceit.unbalance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "pseudostatistics", "concept_id": "core.deceit.pseudostatistics", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "plagiarism", "concept_id": "core.deceit.plagiarism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "clickbait", "concept_id": "core.deceit.clickbait", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "trickery", "concept_id": "core.deceit.trickery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "scams", "concept_id": "core.deceit.scams", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "mendacity", "concept_id": "core.deceit.mendacity", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "imposture", "concept_id": "core.deceit.imposture", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "subterfuge", "concept_id": "core.deceit.subterfuge", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "conspiracism", "concept_id": "core.deceit.conspiracism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "mislabeling", "concept_id": "core.deceit.mislabeling", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "duplicity", "concept_id": "core.deceit.duplicity", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "fraudulence", "concept_id": "core.deceit.fraudulence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "misattribution", "concept_id": "core.deceit.misattribution", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "chicanery", "concept_id": "core.deceit.chicanery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "hoaxes", "concept_id": "core.deceit.hoaxes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and the", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that the", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "for the", "concept_id": "core.care.comfort", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "from the", "concept_id": "core.creation.growth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "with the", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the same", "concept_id": "core.indifference.tokenism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "they are", "concept_id": "core.destruction.erasure", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the world", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "have been", "concept_id": "core.control.gatekeeping", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "for example", "concept_id": "core.order.compliance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the first", "concept_id": "core.good.trust", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "about the", "concept_id": "core.harm.sabotage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "all the", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that they", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "has been", "concept_id": "core.harm.harassment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the most", "concept_id": "core.truth.testing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the other", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "does not", "concept_id": "core.creation.design", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "are not", "concept_id": "core.creation.art", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "into the", "concept_id": "core.good.integrity", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "when the", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the design", "concept_id": "core.creation.design", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "there are", "concept_id": "core.destruction.erasure", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the new", "concept_id": "core.harm.ruthlessness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "did not", "concept_id": "core.chaos.drift", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "one the", "concept_id": "core.freedom.consent", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and that", "concept_id": "core.order.standard", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "was the", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "which the", "concept_id": "core.freedom.choice", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that are", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "rather than", "concept_id": "core.good.protection", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "they were", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "their own", "concept_id": "core.control.takedowns", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "not the", "concept_id": "core.creation.synthesis", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "more than", "concept_id": "core.control.moderation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "are the", "concept_id": "core.creation.art", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "than the", "concept_id": "core.order.change", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "out the", "concept_id": "core.truth.groundtruth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "new york", "concept_id": "core.order.workflows", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the way", "concept_id": "core.control.hierarchy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "not only", "concept_id": "core.creation.renovation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the problem", "concept_id": "core.order.roles", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "because the", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the time", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "was not", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "through the", "concept_id": "core.good.trust", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "would have", "concept_id": "core.good.courage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the game", "concept_id": "core.harm.vengeance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the case", "concept_id": "core.destruction.erasure", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "between the", "concept_id": "core.chaos.emergence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that was", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "part the", "concept_id": "core.creation.art", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and their", "concept_id": "core.creation.synthesis", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and then", "concept_id": "core.freedom.sandbox-testing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the process", "concept_id": "core.freedom.expression", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the market", "concept_id": "core.harm.harassment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the idea", "concept_id": "core.order.schedule", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the fact", "concept_id": "core.creation.refactoring", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the right", "concept_id": "core.control.oversight", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and its", "concept_id": "core.harm.vandalism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "over the", "concept_id": "core.control.oversight", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the very", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "among the", "concept_id": "core.order.change", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "fact that", "concept_id": "core.truth.citation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "within the", "concept_id": "core.creation.writing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "video games", "concept_id": "core.truth.evidence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that would", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the more", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "even the", "concept_id": "core.truth.evidence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and other", "concept_id": "core.chaos.randomness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that can", "concept_id": "core.chaos.mutation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "but also", "concept_id": "core.harm.betrayal", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "when they", "concept_id": "core.freedom.entry", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "during the", "concept_id": "core.care.nursing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the two", "concept_id": "core.good.protection", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "see also", "concept_id": "core.destruction.recalls", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and they", "concept_id": "core.indifference.apathy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the next", "concept_id": "core.indifference.detachment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "this book", "concept_id": "core.order.risk", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "there was", "concept_id": "core.good.stewardship", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "them the", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the best", "concept_id": "core.truth.testing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "what they", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the end", "concept_id": "core.destruction.shred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the famine", "concept_id": "core.harm.defamation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that this", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "under the", "concept_id": "core.truth.groundtruth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the whole", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that have", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "each other", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "while the", "concept_id": "core.harm.violence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the jews", "concept_id": "core.harm.ruthlessness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and not", "concept_id": "core.indifference.bystanding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "only the", "concept_id": "core.creation.synthesis", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "but not", "concept_id": "core.indifference.burnout", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "have the", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the product", "concept_id": "core.creation.production", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "they can", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "which they", "concept_id": "core.control.hierarchy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that there", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "they had", "concept_id": "core.destruction.shred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "use the", "concept_id": "core.good.trust", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "say that", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that had", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "could not", "concept_id": "core.good.community", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "its own", "concept_id": "core.destruction.invasion", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "because they", "concept_id": "core.care.security", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "not have", "concept_id": "core.indifference.nonchalance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the only", "concept_id": "core.truth.methodology", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "what the", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "where the", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "who are", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "some the", "concept_id": "core.order.symmetry", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the second", "concept_id": "core.good.protection", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the oppressed", "concept_id": "core.harm.oppression", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and more", "concept_id": "core.chaos.randomness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the economy", "concept_id": "core.freedom.autonomy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "mutual aid", "concept_id": "core.care.aid", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "gee page", "concept_id": "core.control.gatekeeping", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the system", "concept_id": "core.harm.ruthlessness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the early", "concept_id": "core.control.hierarchy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "this was", "concept_id": "core.creation.synthesis", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the future", "concept_id": "core.deceit.subterfuge", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the old", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "were not", "concept_id": "core.creation.renovation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "not just", "concept_id": "core.good.trust", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the poor", "concept_id": "core.care.help", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the state", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the person", "concept_id": "core.freedom.expression", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "then the", "concept_id": "core.indifference.detachment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the great", "concept_id": "core.creation.integration", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and this", "concept_id": "core.harm.vandalism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the last", "concept_id": "core.order.checklists", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the number", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "university press", "concept_id": "core.good.generosity", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "time the", "concept_id": "core.control.entitlements", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the real", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "you can", "concept_id": "core.good.education", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "like the", "concept_id": "core.freedom.liberties", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the men", "concept_id": "core.indifference.detachment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "much more", "concept_id": "core.freedom.choice", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "you are", "concept_id": "core.good.courage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and how", "concept_id": "core.control.takedowns", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and thus", "concept_id": "core.good.altruism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "upon the", "concept_id": "core.care.support", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and for", "concept_id": "core.order.standard", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "for their", "concept_id": "core.deceit.forgery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the use", "concept_id": "core.order.schedule", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "his own", "concept_id": "core.freedom.whistleblowing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "these are", "concept_id": "core.good.service", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the company", "concept_id": "core.indifference.complacency", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "police battalion", "concept_id": "core.chaos.ideation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "make the", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the one", "concept_id": "core.order.response", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "disruptive technologies", "concept_id": "core.chaos.disruption", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the human", "concept_id": "core.indifference.dehumanization", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that all", "concept_id": "core.indifference.stalling", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "time and", "concept_id": "core.order.standard", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that will", "concept_id": "core.indifference.stalling", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the latter", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and his", "concept_id": "core.harm.vandalism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "since the", "concept_id": "core.creation.synthesis", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "which are", "concept_id": "core.deceit.chicanery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "all these", "concept_id": "core.indifference.callousness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "were the", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "even though", "concept_id": "core.care.mentoring", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and even", "concept_id": "core.truth.evidence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "against the", "concept_id": "core.control.register", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "for this", "concept_id": "core.care.comfort", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "associated with", "concept_id": "core.freedom.association", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and what", "concept_id": "core.order.standard", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that has", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "for all", "concept_id": "core.destruction.recalls", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "design the", "concept_id": "core.creation.design", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that one", "concept_id": "core.chaos.mutation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "see the", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "this the", "concept_id": "core.control.register", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "how the", "concept_id": "core.creation.growth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the law", "concept_id": "core.care.help", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the development", "concept_id": "core.indifference.detachment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "who had", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "example the", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the result", "concept_id": "core.good.trust", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that not", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "both the", "concept_id": "core.harm.sabotage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "disk drive", "concept_id": "core.order.directives", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that were", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the general", "concept_id": "core.harm.vengeance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "they will", "concept_id": "core.indifference.stonewalling", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "also the", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "given the", "concept_id": "core.good.forgiveness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the village", "concept_id": "core.order.change", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "other hand", "concept_id": "core.freedom.tolerance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "end the", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that could", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "would not", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "but that", "concept_id": "core.chaos.mutation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "this way", "concept_id": "core.control.hierarchy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "you have", "concept_id": "core.good.courage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the social", "concept_id": "core.creation.synthesis", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the past", "concept_id": "core.truth.testing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "before the", "concept_id": "core.good.forgiveness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the united", "concept_id": "core.indifference.detachment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "there were", "concept_id": "core.creation.user-experience", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "them and", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and are", "concept_id": "core.order.standard", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "way that", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "may not", "concept_id": "core.chaos.manias", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "this chapter", "concept_id": "core.deceit.chicanery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "people and", "concept_id": "core.deceit.propaganda", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "world and", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the story", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the work", "concept_id": "core.order.workflows", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "reserve police", "concept_id": "core.good.service", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the player", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "made the", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "technology and", "concept_id": "core.truth.methodology", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "per cent", "concept_id": "core.control.permit", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "believe that", "concept_id": "core.harm.exploitation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "design and", "concept_id": "core.creation.design", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "many the", "concept_id": "core.chaos.madness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "open source", "concept_id": "core.destruction.erasure", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "with their", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the book", "concept_id": "core.order.playbooks", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "one another", "concept_id": "core.freedom.consent", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the word", "concept_id": "core.good.stewardship", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the following", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "view the", "concept_id": "core.order.review", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "people are", "concept_id": "core.freedom.tolerance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "united states", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "same time", "concept_id": "core.good.safety", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and was", "concept_id": "core.harm.vandalism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "but this", "concept_id": "core.chaos.outliers", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "was that", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "they may", "concept_id": "core.destruction.decay", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "what was", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "well the", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "way the", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the question", "concept_id": "core.truth.testing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the need", "concept_id": "core.harm.ruthlessness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "who have", "concept_id": "core.deceit.hoaxes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "design process", "concept_id": "core.creation.design", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "even when", "concept_id": "core.truth.evidence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "much the", "concept_id": "core.creation.music-and-rhythm", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "one that", "concept_id": "core.indifference.neutrality", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and with", "concept_id": "core.harm.vandalism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "around the", "concept_id": "core.truth.groundtruth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "technology the", "concept_id": "core.truth.methodology", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the computer", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "down the", "concept_id": "core.creation.growth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the basis", "concept_id": "core.creation.synthesis", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "human beings", "concept_id": "core.deceit.mislabeling", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the role", "concept_id": "core.order.roles", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "thus the", "concept_id": "core.good.trust", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and yet", "concept_id": "core.chaos.randomness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "change the", "concept_id": "core.order.change", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the present", "concept_id": "core.freedom.representation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "with its", "concept_id": "core.freedom.rights", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the order", "concept_id": "core.chaos.disorder", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "however the", "concept_id": "core.control.oversight", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "from their", "concept_id": "core.good.protection", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "our own", "concept_id": "core.harm.coercion", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that their", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "had the", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the battalion", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and have", "concept_id": "core.order.standard", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "will have", "concept_id": "core.destruction.collapse", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "less than", "concept_id": "core.control.listing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the technology", "concept_id": "core.truth.methodology", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "idea that", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "order police", "concept_id": "core.order.compliance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "disruptive technology", "concept_id": "core.chaos.disruption", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "other words", "concept_id": "core.good.stewardship", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "most the", "concept_id": "core.deceit.imposture", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and all", "concept_id": "core.harm.vandalism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the concept", "concept_id": "core.freedom.consent", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and some", "concept_id": "core.chaos.randomness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "life the", "concept_id": "core.freedom.liberties", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "used the", "concept_id": "core.order.schedule", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that you", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "should not", "concept_id": "core.good.solidarity", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "things that", "concept_id": "core.chaos.instability", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the history", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the house", "concept_id": "core.harm.ruthlessness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "only one", "concept_id": "core.indifference.nonchalance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the head", "concept_id": "core.destruction.shred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that many", "concept_id": "core.chaos.anomaly", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "means that", "concept_id": "core.destruction.devastation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the entire", "concept_id": "core.freedom.entry", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the city", "concept_id": "core.care.security", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the task", "concept_id": "core.creation.synthesis", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "people the", "concept_id": "core.indifference.neglect", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the situation", "concept_id": "core.truth.citation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the evolution", "concept_id": "core.harm.pollution", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "but there", "concept_id": "core.deceit.subterfuge", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "about how", "concept_id": "core.indifference.burnout", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the power", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and social", "concept_id": "core.chaos.anomaly", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the individual", "concept_id": "core.deceit.invalid", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "might have", "concept_id": "core.freedom.rights", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the nature", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "this case", "concept_id": "core.deceit.scams", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "user innovation", "concept_id": "core.creation.renovation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "consider the", "concept_id": "core.freedom.consent", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that people", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the point", "concept_id": "core.indifference.detachment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and many", "concept_id": "core.chaos.anomaly", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "lead users", "concept_id": "core.indifference.callousness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "not all", "concept_id": "core.chaos.anomaly", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the domain", "concept_id": "core.creation.toolmaking", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "world the", "concept_id": "core.chaos.disorder", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "just the", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the environment", "concept_id": "core.control.entitlements", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "they could", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the middle", "concept_id": "core.order.schedule", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "who were", "concept_id": "core.freedom.tolerance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the top", "concept_id": "core.care.help", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the user", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "think that", "concept_id": "core.chaos.instigation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "how they", "concept_id": "core.creation.growth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "find the", "concept_id": "core.good.fairness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the third", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the poverty", "concept_id": "core.good.integrity", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the action", "concept_id": "core.good.protection", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the information", "concept_id": "core.harm.defamation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "something that", "concept_id": "core.care.mentoring", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "case the", "concept_id": "core.freedom.consent", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and there", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and had", "concept_id": "core.order.standard", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "but when", "concept_id": "core.harm.ruthlessness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the average", "concept_id": "core.chaos.emergence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "about what", "concept_id": "core.harm.sabotage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the community", "concept_id": "core.good.community", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the main", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the value", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "get the", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the original", "concept_id": "core.truth.signal", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "they would", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "over time", "concept_id": "core.control.oversight", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "carried out", "concept_id": "core.truth.clarity", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "learning and", "concept_id": "core.destruction.unlearning", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "take the", "concept_id": "core.control.takedowns", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "parts the", "concept_id": "core.creation.art", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the basic", "concept_id": "core.creation.synthesis", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "when you", "concept_id": "core.freedom.entry", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the theory", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "jews were", "concept_id": "core.good.service", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "not yet", "concept_id": "core.freedom.entry", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "they not", "concept_id": "core.indifference.detachment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "for his", "concept_id": "core.good.forgiveness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that when", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "work the", "concept_id": "core.order.workflows", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the goal", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "very different", "concept_id": "core.truth.measurement", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "for that", "concept_id": "core.care.comfort", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "away from", "concept_id": "core.chaos.swarming", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "different from", "concept_id": "core.chaos.divergence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "argued that", "concept_id": "core.truth.auditability", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and can", "concept_id": "core.destruction.eradication", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "one can", "concept_id": "core.freedom.consent", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the total", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the former", "concept_id": "core.deceit.forgery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the answer", "concept_id": "core.freedom.tolerance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "with this", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "see that", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that these", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "life and", "concept_id": "core.chaos.ideation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "thinking about", "concept_id": "core.chaos.hijacking", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "this point", "concept_id": "core.control.isolation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "indeed the", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the wrong", "concept_id": "core.order.versioning", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the rest", "concept_id": "core.good.trust", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "outside the", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and one", "concept_id": "core.chaos.randomness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the sense", "concept_id": "core.order.response", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "been the", "concept_id": "core.truth.evidence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "understanding the", "concept_id": "core.truth.uncertainty", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "products and", "concept_id": "core.creation.production", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "with which", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "chapter the", "concept_id": "core.deceit.chicanery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "they did", "concept_id": "core.creation.synthesis", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "beyond the", "concept_id": "core.creation.synthesis", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the german", "concept_id": "core.creation.integration", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "toy story", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "village community", "concept_id": "core.good.community", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and also", "concept_id": "core.harm.vandalism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "after all", "concept_id": "core.destruction.recalls", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "across the", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "found the", "concept_id": "core.truth.groundtruth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the jewish", "concept_id": "core.creation.synthesis", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "new technologies", "concept_id": "core.truth.methodology", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "semiotic domain", "concept_id": "core.chaos.commotion", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "has the", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "are often", "concept_id": "core.good.protection", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "most important", "concept_id": "core.chaos.commotion", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "have not", "concept_id": "core.harm.harassment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "off the", "concept_id": "core.creation.growth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the price", "concept_id": "core.good.service", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "inch drives", "concept_id": "core.order.directives", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "value network", "concept_id": "core.care.volunteerism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "for many", "concept_id": "core.chaos.anomaly", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "this not", "concept_id": "core.creation.synthesis", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "throughout the", "concept_id": "core.truth.groundtruth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and from", "concept_id": "core.chaos.randomness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "back the", "concept_id": "core.order.backups", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the needs", "concept_id": "core.harm.ruthlessness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the public", "concept_id": "core.truth.reproducibility", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "found that", "concept_id": "core.truth.groundtruth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "all this", "concept_id": "core.good.altruism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "all that", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "these two", "concept_id": "core.truth.testing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "understand the", "concept_id": "core.truth.uncertainty", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "clear that", "concept_id": "core.truth.clarity", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "each the", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the group", "concept_id": "core.chaos.entropy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "more and", "concept_id": "core.control.moderation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "are all", "concept_id": "core.destruction.recalls", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the ability", "concept_id": "core.truth.traceability", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "course the", "concept_id": "core.good.courage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the common", "concept_id": "core.chaos.commotion", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "have had", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "for some", "concept_id": "core.deceit.forgery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and others", "concept_id": "core.chaos.randomness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "has not", "concept_id": "core.harm.harassment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "come from", "concept_id": "core.care.comfort", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the cost", "concept_id": "core.order.checklists", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "disgust and", "concept_id": "core.chaos.disruption", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that each", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "without the", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "place the", "concept_id": "core.indifference.apathy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "they must", "concept_id": "core.good.trust", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the family", "concept_id": "core.truth.traceability", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "for each", "concept_id": "core.deceit.forgery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the food", "concept_id": "core.deceit.falsehood", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "great deal", "concept_id": "core.good.gratitude", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "are also", "concept_id": "core.destruction.recalls", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "though the", "concept_id": "core.good.courage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the current", "concept_id": "core.truth.measurement", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "for them", "concept_id": "core.care.comfort", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "between and", "concept_id": "core.freedom.representation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "lead user", "concept_id": "core.control.register", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "with them", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "know that", "concept_id": "core.creation.growth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the importance", "concept_id": "core.indifference.ignorance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "out that", "concept_id": "core.truth.groundtruth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "even more", "concept_id": "core.truth.evidence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "work and", "concept_id": "core.order.workflows", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "until the", "concept_id": "core.control.quarantine", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "along with", "concept_id": "core.creation.growth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "using the", "concept_id": "core.care.nursing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the internet", "concept_id": "core.good.integrity", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the field", "concept_id": "core.care.help", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "product development", "concept_id": "core.creation.production", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the disk", "concept_id": "core.creation.synthesis", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "who has", "concept_id": "core.deceit.hoaxes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "fact the", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "form the", "concept_id": "core.care.comfort", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the solution", "concept_id": "core.control.isolation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "his her", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "with respect", "concept_id": "core.control.inspection", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "such the", "concept_id": "core.order.schedule", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "for its", "concept_id": "core.freedom.rights", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "information about", "concept_id": "core.creation.integration", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the film", "concept_id": "core.care.help", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "new product", "concept_id": "core.creation.production", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the project", "concept_id": "core.good.protection", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "said that", "concept_id": "core.care.aid", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that some", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "people with", "concept_id": "core.destruction.demolition", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "have seen", "concept_id": "core.deceit.hoaxes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "study the", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the beginning", "concept_id": "core.creation.engineering", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that our", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the dominant", "concept_id": "core.control.takedowns", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "with his", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "those that", "concept_id": "core.good.hospitality", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "more less", "concept_id": "core.good.forgiveness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "deal with", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and were", "concept_id": "core.order.standard", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the three", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "with each", "concept_id": "core.control.hierarchy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the designer", "concept_id": "core.creation.design", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "problem solving", "concept_id": "core.creation.prototyping", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "cultural models", "concept_id": "core.chaos.turmoil", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "ensure that", "concept_id": "core.destruction.erasure", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the object", "concept_id": "core.indifference.neglect", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the term", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the child", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the key", "concept_id": "core.deceit.trickery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "along the", "concept_id": "core.order.change", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "action the", "concept_id": "core.destruction.eradication", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "person who", "concept_id": "core.order.versioning", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "history the", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the face", "concept_id": "core.freedom.tolerance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the final", "concept_id": "core.truth.signal", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "struggle for", "concept_id": "core.deceit.subterfuge", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the organization", "concept_id": "core.control.centralization", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "science and", "concept_id": "core.deceit.concealment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and our", "concept_id": "core.order.standard", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the name", "concept_id": "core.care.attendance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "control the", "concept_id": "core.control.price-controls", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the problems", "concept_id": "core.order.roles", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "they also", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the model", "concept_id": "core.destruction.removal", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "whether the", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the natural", "concept_id": "core.indifference.detachment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the failure", "concept_id": "core.destruction.erasure", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "are more", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the day", "concept_id": "core.control.hierarchy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the left", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "carry out", "concept_id": "core.indifference.burnout", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the oppressor", "concept_id": "core.harm.oppression", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the mind", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "what are", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "this means", "concept_id": "core.control.entitlements", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and those", "concept_id": "core.chaos.randomness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "men the", "concept_id": "core.good.mentorship", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "search for", "concept_id": "core.creation.researching", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the actual", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "knowledge and", "concept_id": "core.harm.vengeance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "established firms", "concept_id": "core.deceit.pseudostatistics", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "talking about", "concept_id": "core.indifference.stalling", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "with other", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the standard", "concept_id": "core.order.standard", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "had not", "concept_id": "core.harm.harassment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "from which", "concept_id": "core.creation.growth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the learner", "concept_id": "core.freedom.tolerance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "image image", "concept_id": "core.destruction.damage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "image jpeg", "concept_id": "core.destruction.damage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "put the", "concept_id": "core.indifference.apathy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the ground", "concept_id": "core.truth.groundtruth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the sort", "concept_id": "core.care.support", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "are many", "concept_id": "core.destruction.removal", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "think about", "concept_id": "core.chaos.instability", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "terms the", "concept_id": "core.good.trust", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "better than", "concept_id": "core.harm.betrayal", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "which have", "concept_id": "core.deceit.chicanery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the policemen", "concept_id": "core.freedom.choice", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "years ago", "concept_id": "core.destruction.devastation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the leading", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that might", "concept_id": "core.freedom.rights", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the struggle", "concept_id": "core.deceit.subterfuge", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "percent the", "concept_id": "core.freedom.experimentation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "but rather", "concept_id": "core.control.quarantine", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "nature the", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the west", "concept_id": "core.truth.testing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "technologies and", "concept_id": "core.harm.vengeance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "have already", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "mean that", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the political", "concept_id": "core.destruction.demolition", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "why the", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "must have", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and has", "concept_id": "core.harm.vandalism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "now the", "concept_id": "core.creation.growth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "any other", "concept_id": "core.harm.sabotage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "how can", "concept_id": "core.deceit.chicanery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the many", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "know the", "concept_id": "core.creation.growth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "new technology", "concept_id": "core.truth.methodology", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "innovation and", "concept_id": "core.creation.renovation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the inch", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and political", "concept_id": "core.destruction.demolition", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "many other", "concept_id": "core.chaos.madness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "however that", "concept_id": "core.control.oversight", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the issue", "concept_id": "core.harm.ruthlessness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "show that", "concept_id": "core.creation.growth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that may", "concept_id": "core.chaos.anomaly", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that even", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "far from", "concept_id": "core.freedom.fair", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the course", "concept_id": "core.good.courage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the initial", "concept_id": "core.truth.definitions", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the table", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "exchange entitlement", "concept_id": "core.order.change", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "inch drive", "concept_id": "core.order.directives", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "semiotic domains", "concept_id": "core.chaos.commotion", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "shame and", "concept_id": "core.destruction.shred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "men and", "concept_id": "core.care.mentoring", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "not always", "concept_id": "core.chaos.anomaly", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "once again", "concept_id": "core.truth.uncertainty", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "where they", "concept_id": "core.control.hierarchy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that what", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "from one", "concept_id": "core.chaos.randomness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the presence", "concept_id": "core.chaos.emergence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the world's", "concept_id": "core.order.workflows", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the modern", "concept_id": "core.control.moderation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the medieval", "concept_id": "core.destruction.removal", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "technologies that", "concept_id": "core.harm.exploitation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that does", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the moral", "concept_id": "core.destruction.removal", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and values", "concept_id": "core.harm.vandalism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "model the", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the inner", "concept_id": "core.deceit.chicanery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "development the", "concept_id": "core.order.documentation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "called the", "concept_id": "core.indifference.callousness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "process the", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "users and", "concept_id": "core.chaos.subversion", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "need not", "concept_id": "core.indifference.neglect", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that his", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "dealing with", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the north", "concept_id": "core.indifference.detachment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "making the", "concept_id": "core.creation.toolmaking", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "although the", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and use", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and new", "concept_id": "core.chaos.randomness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "disk drives", "concept_id": "core.order.directives", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that such", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "what has", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "demand for", "concept_id": "core.indifference.dehumanization", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "side the", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "members the", "concept_id": "core.good.generosity", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "often the", "concept_id": "core.freedom.consent", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "how many", "concept_id": "core.chaos.anomaly", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the greatest", "concept_id": "core.creation.integration", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "for instance", "concept_id": "core.order.governance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "but even", "concept_id": "core.truth.evidence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and these", "concept_id": "core.creation.synthesis", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the previous", "concept_id": "core.freedom.expression", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "value networks", "concept_id": "core.care.volunteerism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "food and", "concept_id": "core.deceit.falsehood", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the traditional", "concept_id": "core.destruction.eradication", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "argue that", "concept_id": "core.control.regulation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and will", "concept_id": "core.harm.vandalism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "from his", "concept_id": "core.order.risk", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the notion", "concept_id": "core.creation.renovation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "about their", "concept_id": "core.harm.sabotage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the extent", "concept_id": "core.indifference.detachment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "has become", "concept_id": "core.harm.harassment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "point view", "concept_id": "core.order.review", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the context", "concept_id": "core.good.protection", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "being the", "concept_id": "core.order.budgeting", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the structure", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "more the", "concept_id": "core.care.comfort", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "from this", "concept_id": "core.creation.growth", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the late", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "become the", "concept_id": "core.indifference.detachment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "from its", "concept_id": "core.control.permit", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the subject", "concept_id": "core.truth.measurement", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the air", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the knowledge", "concept_id": "core.freedom.tolerance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and often", "concept_id": "core.freedom.sandbox-testing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "new and", "concept_id": "core.indifference.negation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "years the", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "paper clip", "concept_id": "core.control.permit", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "human dignity", "concept_id": "core.indifference.dehumanization", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "sense that", "concept_id": "core.freedom.representation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "for one", "concept_id": "core.deceit.forgery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "development and", "concept_id": "core.order.documentation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "things are", "concept_id": "core.freedom.transparency", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "far more", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "toward the", "concept_id": "core.good.stewardship", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "what you", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "but was", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "note that", "concept_id": "core.creation.integration", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "once the", "concept_id": "core.freedom.consent", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "processes and", "concept_id": "core.care.preservation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "poverty line", "concept_id": "core.good.protection", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the revolutionary", "concept_id": "core.control.revocation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the rst", "concept_id": "core.good.trust", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the mainstream", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "village communities", "concept_id": "core.good.community", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the level", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "too much", "concept_id": "core.freedom.autonomy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and make", "concept_id": "core.destruction.damage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "talk about", "concept_id": "core.indifference.burnout", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "who was", "concept_id": "core.deceit.hoaxes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and most", "concept_id": "core.chaos.randomness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "especially the", "concept_id": "core.order.escalation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "men who", "concept_id": "core.care.mentoring", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "together with", "concept_id": "core.good.generosity", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "together the", "concept_id": "core.freedom.tolerance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that time", "concept_id": "core.control.statutes", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "jews the", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "itself the", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the exchange", "concept_id": "core.order.change", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and you", "concept_id": "core.chaos.randomness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the oppressors", "concept_id": "core.harm.oppression", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "for new", "concept_id": "core.deceit.forgery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the body", "concept_id": "core.truth.methodology", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "needs and", "concept_id": "core.order.standard", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "from our", "concept_id": "core.care.comfort", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "basis for", "concept_id": "core.chaos.discord", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "could have", "concept_id": "core.good.courage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "shows that", "concept_id": "core.good.hospitality", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "nature and", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the life", "concept_id": "core.chaos.strife", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "not merely", "concept_id": "core.chaos.anomaly", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "again the", "concept_id": "core.indifference.apathy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the economic", "concept_id": "core.freedom.autonomy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the room", "concept_id": "core.freedom.autonomy", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "conceptual model", "concept_id": "core.deceit.concealment", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "new products", "concept_id": "core.creation.production", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "free revealing", "concept_id": "core.care.preservation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "something like", "concept_id": "core.care.mentoring", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "does the", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "one thing", "concept_id": "core.control.monitoring", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the door", "concept_id": "core.truth.methodology", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "later the", "concept_id": "core.freedom.liberties", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "problem the", "concept_id": "core.order.roles", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "with all", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "complex systems", "concept_id": "core.indifference.complacency", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "others the", "concept_id": "core.chaos.outliers", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "respect for", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the police", "concept_id": "core.freedom.choice", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "but one", "concept_id": "core.chaos.mutation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "problem and", "concept_id": "core.deceit.propaganda", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "systems and", "concept_id": "core.indifference.bystanding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the relative", "concept_id": "core.order.directives", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the land", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the principles", "concept_id": "core.freedom.tolerance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the correct", "concept_id": "core.harm.corruption", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the leaders", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "and therefore", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "was also", "concept_id": "core.harm.vandalism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "with some", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "argues that", "concept_id": "core.good.trust", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "not even", "concept_id": "core.truth.evidence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "that should", "concept_id": "core.indifference.withholding", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the business", "concept_id": "core.harm.ruthlessness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the legal", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the reason", "concept_id": "core.freedom.expression", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the area", "concept_id": "core.destruction.erasure", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "which can", "concept_id": "core.deceit.chicanery", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the core", "concept_id": "core.good.courage", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "much less", "concept_id": "core.harm.ruthlessness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "but what", "concept_id": "core.chaos.mutation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "there the", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the normal", "concept_id": "core.chaos.anomaly", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the others", "concept_id": "core.care.shelter", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the results", "concept_id": "core.good.trust", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the train", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "famine inquiry", "concept_id": "core.harm.injury", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "harvard business", "concept_id": "core.chaos.madness", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "operating system", "concept_id": "core.control.moderation", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "led the", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "are very", "concept_id": "core.order.review", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "people have", "concept_id": "core.freedom.tolerance", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "have found", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "think the", "concept_id": "core.destruction.strike", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "sense the", "concept_id": "core.creation.synthesis", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "are still", "concept_id": "core.destruction.aggression", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "ways which", "concept_id": "core.good.stewardship", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the purpose", "concept_id": "core.order.response", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "for more", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the opposite", "concept_id": "core.creation.composition", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "two years", "concept_id": "core.good.stewardship", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the small", "concept_id": "core.good.healing", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "when was", "concept_id": "core.harm.waste", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "structure the", "concept_id": "core.care.security", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "information and", "concept_id": "core.creation.integration", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "set the", "concept_id": "core.destruction.death", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the company's", "concept_id": "core.indifference.complacency", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "real world", "concept_id": "core.destruction.recalls", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "intellectual property", "concept_id": "core.freedom.interoperability", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "figure out", "concept_id": "core.indifference.burnout", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "concerned with", "concept_id": "core.freedom.consent", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "can also", "concept_id": "core.harm.vandalism", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "for such", "concept_id": "core.control.oversight", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "only when", "concept_id": "core.freedom.consent", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "can make", "concept_id": "core.order.change", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the different", "concept_id": "core.chaos.divergence", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "first the", "concept_id": "core.care.restore", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "the central", "concept_id": "core.freedom.decentralization", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "you know", "concept_id": "core.order.workflows", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}
+{"surface": "chapters and", "concept_id": "core.harm.hatred", "source": "mock_propose_anchor", "confidence": 1.0, "version": "v0_core_syzif_001"}

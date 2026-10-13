@@ -1,0 +1,10 @@
+{
+  "run": "hprom_02_v052_3_seal_v1",
+  "source_base": "/data/hesperia/hesperia/assets/calibration/dicts/v0_6_0_clr_v052_2",
+  "source_draft": "/data/hesperia/hesperia/outputs/reports/hdr_a10_migration_draft",
+  "output": "/data/hesperia/hesperia/assets/calibration/dicts/v0_6_0_clr_v052_4",
+  "dict_a_rows": 10155,
+  "dict_c_rows": 41260,
+  "dict_b_rows": 62316,
+  "links_rows": 51415
+}

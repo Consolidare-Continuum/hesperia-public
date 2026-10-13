@@ -1,0 +1,6262 @@
+[
+  {
+    "phrase": "идеализации",
+    "freq": 118,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация",
+    "freq": 107,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивание",
+    "freq": 53,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивания",
+    "freq": 50,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированных",
+    "freq": 47,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализацию",
+    "freq": 35,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализацией",
+    "freq": 28,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированные",
+    "freq": 28,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированного",
+    "freq": 21,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации и",
+    "freq": 19,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированным",
+    "freq": 19,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированными",
+    "freq": 17,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивать",
+    "freq": 16,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и обесценивания",
+    "freq": 15,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации в",
+    "freq": 13,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "к идеализации",
+    "freq": 13,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцениванию",
+    "freq": 13,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "с идеализированным",
+    "freq": 13,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированных и",
+    "freq": 12,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированных предшественников",
+    "freq": 12,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированных предшественников супер",
+    "freq": 12,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированных предшественников супер эго",
+    "freq": 12,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "обесценить",
+    "freq": 11,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "примитивная идеализация",
+    "freq": 11,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и обесценивание",
+    "freq": 10,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированный",
+    "freq": 10,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцененным",
+    "freq": 10,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивает",
+    "freq": 10,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "эротическая идеализация",
+    "freq": 10,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и идеализации",
+    "freq": 9,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцененные",
+    "freq": 8,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцениванием",
+    "freq": 8,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивании",
+    "freq": 8,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивают",
+    "freq": 8,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивающее",
+    "freq": 8,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "хорошие отношения",
+    "freq": 8,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация поверхности",
+    "freq": 7,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация поверхности тела",
+    "freq": 7,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированные и",
+    "freq": 7,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированные предшественники",
+    "freq": 7,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированные предшественники супер",
+    "freq": 7,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированные предшественники супер эго",
+    "freq": 7,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализированных и персекуторных",
+    "freq": 7,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцененными",
+    "freq": 7,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "плохих интернализованных объектных",
+    "freq": 7,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "плохих интернализованных объектных отношений",
+    "freq": 7,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "примитивной идеализацией",
+    "freq": 7,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "примитивной идеализации",
+    "freq": 7,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "такая идеализация",
+    "freq": 7,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "что идеализация",
+    "freq": 7,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализацией и",
+    "freq": 6,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализаций",
+    "freq": 6,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированного я",
+    "freq": 6,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированному",
+    "freq": 6,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализировать",
+    "freq": 6,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализируемых",
+    "freq": 6,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализирует",
+    "freq": 6,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "абсолютно плохих интернализованных объектных",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "абсолютно плохих интернализованных объектных отношений",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "и абсолютно плохих интернализованных объектных",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "и обесцененным",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации как",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированной",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированный образ",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированными и",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированных я",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "между идеализированными",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "между идеализированными и",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "нормальной идеализации",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцененный",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивание и",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивания и",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцениваются",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивающее поведение",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "самообесценивания",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "хорошие объектные",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "хорошие объектные отношения",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "хорошие отношения с",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "хороших отношений",
+    "freq": 5,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "в идеализации",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "защитная идеализация",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "защитной идеализации",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "защитную идеализацию",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и идеализация",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и обесценивать",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации и обесценивания",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализацию и",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация поверхности тела матери",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализированного объекта",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированного я объекта",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированное",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированных я и",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализируемого",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализируемой",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализируемыми",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеальных отношений",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идентификация отрицание",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_DENIAL",
+      "TFP_PROJECTIVE_IDENTIFICATION"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "на идеализированные",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "нарциссической идеализации",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "нормальная идеализация",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцененного",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивания аналитика",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивать и",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивающий",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "плохих я и объект репрезентаций",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "примитивной идеализацией и",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "проективная идентификация отрицание",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_DENIAL",
+      "TFP_PROJECTIVE_IDENTIFICATION"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "с идеализированными",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "само идеализация",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "хорошим отношениям",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "хороших объектных",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "хороших объектных отношений",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "хороших я и объект репрезентаций",
+    "freq": 4,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "в идеализацию",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "всемогущество и обесценивание",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и идеализацию",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и идеализированного",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и обесцененные",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и обесцениванием",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и обесценивают",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализацией объекта",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализацией объекта любви",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации тела",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализацию от",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация любимого",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация любимого объекта",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация может",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация тела",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация это",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализировал",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированного и",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированного я объекта в",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализированными и персекуторными",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированными предшественниками",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированными предшественниками супер",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированными предшественниками супер эго",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализированных и преследующих",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированных я и объект",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализированных я и объект репрезентаций",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализируемому",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализируемым",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализируются",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализирующий",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеальные отношения",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идентификация отрицание примитивная",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DENIAL",
+      "TFP_PROJECTIVE_IDENTIFICATION"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идентификация отрицание примитивная идеализация",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DENIAL",
+      "TFP_IDEALIZATION",
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 1.0,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "к хорошим отношениям",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "между идеализацией",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "между идеализированными и персекуторными",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "обесцененной",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивал",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивала",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивание других",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивание терапевта",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивающего",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивая",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценить и",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "отрицание примитивная идеализация",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DENIAL",
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "плохих объектных",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "плохих объектных отношений",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "проективная идентификация отрицание примитивная",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DENIAL",
+      "TFP_PROJECTIVE_IDENTIFICATION"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "проективная идентификация отрицание примитивная идеализация",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DENIAL",
+      "TFP_IDEALIZATION",
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 1.0,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "радикальном обесценивании",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "ранней идеализации",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "ранняя идеализация",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "расщепление проективная",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "расщепление проективная идентификация",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "расщепление проективная идентификация отрицание",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DENIAL",
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "расщепление проективная идентификация отрицание примитивная",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DENIAL",
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "романтической идеализации",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "с обесцененными",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "самообесцениванием",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "способность к идеализации",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "хороших отношений с",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "эротической идеализации",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "эротическую идеализацию",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "это идеализация",
+    "freq": 3,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "1988 о том что идеализация",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "абсолютно плохих объектных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "абсолютно плохих объектных отношений",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "аффективно заряженных объектных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_AFFECT_INSTABILITY",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "аффективное состояние включает интернализованные объектные",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_AFFECT_INSTABILITY",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "аффектов или теорией объектных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_AFFECT_INSTABILITY",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "аффектов или теорией объектных отношений",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_AFFECT_INSTABILITY",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "аффекты и объектные",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_AFFECT_INSTABILITY",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "аффекты и объектные отношения",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_AFFECT_INSTABILITY",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "бессознательного обесценивания",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "бессознательное обесценивание",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "быстрое обесценивание",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "в забвении и смерть идеализируется",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "в обесценивании",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "в обесценивании меня",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "в радикальном обесценивании",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "взаимная идеализация",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "влечения аффекты и объектные",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_AFFECT_INSTABILITY",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "влечения аффекты и объектные отношения",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_AFFECT_INSTABILITY",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "внешних отношений к идентификации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_PROJECTIVE_IDENTIFICATION"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "внешних отношений к идентификации с",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_PROJECTIVE_IDENTIFICATION"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "внутреннему хорошему или идеальному",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "внутреннему хорошему или идеальному объекту",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "всемогущественной само идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "всемогущественной само идеализации начинает",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "всемогущественной само идеализации начинает угрожать",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "грандиозным я и обесцененным",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "два типа переноса идеализирующий",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "два типа переноса идеализирующий и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "диссоциированных идеализированных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "диссоциированных идеализированных и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "диссоциированных идеализированных и персекуторных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "забвении и смерть идеализируется",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "забвении и смерть идеализируется как",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "защитная идеализация женщин",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "защитного обесценивания",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "защитной идеализацией",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "защитную идеализацию и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и идеализация поверхности",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и идеализация поверхности тела",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "и идеализированные",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и идеализированными",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и идеализированных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и идеальные объект репрезентации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "и интенсивность отношений",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_AFFECT_INSTABILITY",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и как эти пациенты обесценивают",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "и обесцененный",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и обесцененным аспектом",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и обесцененным я",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и обесценивания аналитика",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и обесценивать их",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и обесценивают работу",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и обесценивают работу аналитика",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "и обесценивают работу аналитика своим",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "и обесценивающе",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и обесценивающего",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и обесценивающего поведения",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и обесценивающее",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и обесценивающий",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и плохих я репрезентаций",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "и проективными идентификациями с хорошими",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "и смерть идеализируется",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "и смерть идеализируется как",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "и смерть идеализируется как решение",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализацией и обесцениванием",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализацией меня",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализацией этого",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации в отношениях",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации и превосходящей",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации и превосходящей силы",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализации и превосходящей силы деструктивного",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализации или",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации как части",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации начинает",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации начинает угрожать",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации начинает угрожать контакт",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализации начинает угрожать контакт с",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализации поверхности",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации поверхности тела",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации при",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации самости",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации так",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации так и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации человека",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализации что",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализаций и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализацию в",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализацию от абсолютно",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализацию поверхности",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация аналитика",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация в",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация всемогущественных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация всемогущественных деструктивных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация всемогущественных деструктивных частей",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализация всемогущественных деструктивных частей самости",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализация гетеросексуального",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация гетеросексуального объекта",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация гетеросексуального объекта любви",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализация гетеросексуального объекта любви в",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализация женщин",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация играет",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация играет центральную",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация играет центральную роль",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализация играет центральную роль но",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализация мужчиной",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация но",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация обесценивание",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация обесценивание и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация поддерживается",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация поддерживается всемогущественными",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация поддерживается всемогущественными интроективными",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализация поддерживается всемогущественными интроективными и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализация своего",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация своего я",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация служит",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализация является",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализировал и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированная",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированная фигура",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированного и преследующего",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированного я объекта в интрапсихическую",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализированное и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированному отцу",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированные и персекуторные",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированные и плохие",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированные и плохие преследующие",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализированные и плохие преследующие объекты",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализированные или",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированные отношения",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированные предшественники супер эго и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализированные репрезентации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированный образ моей",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированный образ моей жены",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализированным внутренним",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированным внутренним объектом",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированным образом",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированным объектом",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированными и преследующими",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированных и персекуторных интернализованных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализированных и персекуторных интернализованных объектных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализированных и персекуторных объектных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализированных и персекуторных объектных отношений",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализированных или",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированных объектных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированных объектных отношений",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированных отношений",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализированных предшественников супер эго в",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализированных предшественников супер эго идеализированных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализируемой женщины",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализируемом",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализируемому объекту",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализируемому объекту и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализируемый",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализируемыми отношениями",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализируемых и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализирует и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализируется",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализируется как",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализируется как решение",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализируется как решение всех",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализируется как решение всех проблем",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идеализирующие",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализирующий и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеализирующий и зеркальный",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеальные объект репрезентации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеальных отношений с",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идеальных отношениях",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идентификации с идеализированным",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идентификации с идеализированным внутренним",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идентификации с идеализированным внутренним объектом",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идентификация отрицание примитивная идеализация обесценивание",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DENIAL",
+      "TFP_DEVALUATION",
+      "TFP_IDEALIZATION",
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 1.0,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идентификациями с хорошими",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "идентификациями с хорошими объектами",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "идентификациями с хорошими объектами и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "или идеализированными",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "иллюзорный объект и возникает проективная",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_PROJECTIVE_IDENTIFICATION"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "имеет целью сохранение идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "имеет целью сохранение идеализации и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "имеющейся у пациента потребности обесценить",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "интенсивность отношений",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_AFFECT_INSTABILITY",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "к внутреннему хорошему или идеальному",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "к идеализации что",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "к идеализированному",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "к идеализируемому",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "к идеализируемому объекту",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "к идеализируемому объекту и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "к идентификации с идеализированным",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "к идентификации с идеализированным внутренним",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "к обесцениванию",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "к хорошим отношениям с",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "как защитную идеализацию",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "как защитную идеализацию и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "как идеализированные",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "как только всемогущественной само идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "как эти пациенты обесценивают",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "как эти пациенты обесценивают аналитика",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "которые могут формировать хорошие объектные",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "любящими или идеализированными",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "матерью как защитную идеализацию",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "матерью как защитную идеализацию и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "между идеализированными и преследующими",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "могут формировать хорошие объектные",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "могут формировать хорошие объектные отношения",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "мстительное обесценивание",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "на идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "на идеализации самости",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "на идеализированные и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "на отношение к внутреннему хорошему",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "на раннем этапе развития идеализированные",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "направленность к идеализируемому",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "направленность к идеализируемому объекту",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "направленность к идеализируемому объекту и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "нарциссическая идеализация",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "но идеализация",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "но имеет целью сохранение идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "но теперь это идеализация",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "но теперь это идеализация всемогущественных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "нормальной идеализации в",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "о том что идеализация",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "о том что идеализация поверхности",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "обесценен",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцененного я",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцененную",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцененные аспекты",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцененные я",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцененный образ",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцененный объект",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцененным аспектом",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцененным я",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцененными аспектами",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесцененными аспектами я",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивает его",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивание в",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивание значимых",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивание значимых других",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивание как",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивание мужчин",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивание по",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивании меня",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивания к",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивания пациента",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивания терапевта",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивать его",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивать и разрушать",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивать их",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивают аналитика",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивают аналитика и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивают аналитика и неохотно",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "обесценивают аналитика и неохотно отдают",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "обесценивают работу",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивают работу аналитика",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивают работу аналитика своим",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "обесценивают работу аналитика своим постоянным",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "обесцениваются или",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивающе",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивающего поведения",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивающее отношение",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивающее отношение пациента",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценивающее отношение пациента к",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "обесценивающие",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценил",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценить работу",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценить работу аналитика",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обесценить работу аналитика именно",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "обесценить работу аналитика именно тогда",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "обнаруживаем что опять само идеализация",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "обоюдно диссоциированных идеализированных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "обоюдно диссоциированных идеализированных и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "обоюдно диссоциированных идеализированных и персекуторных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "объект аффект",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_AFFECT_INSTABILITY",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "объект и возникает проективная",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_PROJECTIVE_IDENTIFICATION"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "объект и возникает проективная идентификация",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_PROJECTIVE_IDENTIFICATION"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "объектных отношений в активации аффектов",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_AFFECT_INSTABILITY",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "он идеализирует",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "он обесценил",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "они обесценивают",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "опять само идеализация",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "опять само идеализация играет",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "опять само идеализация играет центральную",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "основанная преимущественно на идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "основанная преимущественно на идеализации самости",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "от внешних отношений к идентификации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_PROJECTIVE_IDENTIFICATION"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "отношений к идентификации с идеализированным",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "отрицание примитивная идеализация обесценивание",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DENIAL",
+      "TFP_DEVALUATION",
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 1.0,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "отрицание примитивная идеализация обесценивание и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DENIAL",
+      "TFP_DEVALUATION",
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 1.0,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "отсутствие идеализированных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "отсутствие идеализированных предшественников",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "отсутствие идеализированных предшественников супер",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "отсутствие идеализированных предшественников супер эго",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "ощущаются любящими или идеализированными",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "патологической идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "пациента потребности обесценить",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "пациента потребности обесценить работу",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "пациента потребности обесценить работу аналитика",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "пациенты обесценивают",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "пациенты обесценивают аналитика",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "пациенты обесценивают аналитика и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "пациенты обесценивают аналитика и неохотно",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "переноса идеализирующий",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "переноса идеализирующий и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "переноса идеализирующий и зеркальный",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "плохие интернализованные объектные",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "плохие интернализованные объектные отношения",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "плохих я репрезентаций",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "плохое отношение",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "полное обесценивание",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "потенциально хороших отношений",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "потребности обесценить",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "потребности обесценить работу",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "потребности обесценить работу аналитика",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "потребности обесценить работу аналитика именно",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "предшественников супер эго идеализированных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "предшественников супер эго идеализированных я",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "преимущественно на идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "преимущественно на идеализации самости",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "примитивная идеализация обесценивание",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "примитивная идеализация обесценивание и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.95,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "проективными идентификациями с хорошими",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "проективными идентификациями с хорошими объектами",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "процесс обесценивания",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "процессов идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "процессов ранней идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "процессы идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "радикальное обесценивание",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "развития идеализированные",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "развития идеализированные и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "развития идеализированные и плохие",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "развития идеализированные и плохие преследующие",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "раннем этапе развития идеализированные",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "раннем этапе развития идеализированные и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "расщепление объектных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "расщепление объектных отношений",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "расщепление объектных отношений на",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "расщепления между идеализированными",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "расщепления между идеализированными и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "расщепления между идеализированными и персекуторными",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "расщепления проективной",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "расщепления проективной идентификации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_PROJECTIVE_IDENTIFICATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "расщепленными я и объект репрезентациями",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "расщепленных идеализированных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "расщепленных интернализованных объектных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "расщепленных интернализованных объектных отношений",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "расщепленных частичных объектных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "расщепленных частичных объектных отношений",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "роль но теперь это идеализация",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "с идеализированной",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "с идеализированным внутренним",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "с идеализированным внутренним объектом",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "с идеализированным образом",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "с идеализированным объектом",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "с матерью как защитную идеализацию",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "с примитивной идеализацией",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "само идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "само идеализации начинает",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "само идеализации начинает угрожать",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "само идеализации начинает угрожать контакт",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "само идеализация играет",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "само идеализация играет центральную",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "само идеализация играет центральную роль",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "само идеализация поддерживается",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "само идеализация поддерживается всемогущественными",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "само идеализация поддерживается всемогущественными интроективными",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "самообесценивания депрессии",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "самости основанная преимущественно на идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "свои чувства и обесценивают",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "свои чувства и обесценивают работу",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "сексуальную направленность к идеализируемому",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "сексуальную направленность к идеализируемому объекту",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "скрывают свои чувства и обесценивают",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "смерть идеализируется",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "смерть идеализируется как",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "смерть идеализируется как решение",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "смерть идеализируется как решение всех",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "сохранение идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "сохранение идеализации и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "сохранение идеализации и превосходящей",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "сохранение идеализации и превосходящей силы",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "сохранить хорошие отношения",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "сохранять хорошие отношения",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "способны к идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "супер эго идеализированных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "супер эго идеализированных я",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "супер эго идеализированных я и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "такого обесценивания",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "такую идеализацию",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "такую идеализацию от",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "такую идеализацию от абсолютно",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "теорией аффектов или теорией объектных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_AFFECT_INSTABILITY",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "теперь это идеализация",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "теперь это идеализация всемогущественных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "теперь это идеализация всемогущественных деструктивных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "типа переноса идеализирующий",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "типа переноса идеализирующий и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "типа переноса идеализирующий и зеркальный",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "только всемогущественной само идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "только всемогущественной само идеализации начинает",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "том что идеализация",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "том что идеализация поверхности",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "том что идеализация поверхности тела",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "у пациента потребности обесценить",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "у пациента потребности обесценить работу",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "формировать хорошие объектные",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "формировать хорошие объектные отношения",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "формировать хорошие объектные отношения ведущие",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "форму идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "хорошему или идеальному",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "хорошему или идеальному объекту",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "хорошему или идеальному объекту который",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "хорошие объектные отношения ведущие",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "хорошие объектные отношения ведущие к",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "хорошие объектные отношения находятся",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "хороший объект который",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "хорошим отношениям с",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "хороших и плохих я репрезентаций",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "хороших интернализованных объектных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "хороших интернализованных объектных отношений",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_OBJECT_RELATIONS",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "целью сохранение идеализации",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "целью сохранение идеализации и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "целью сохранение идеализации и превосходящей",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "чрезмерная идеализация",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "что идеализация поверхности",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "что идеализация поверхности тела",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "что идеализация поверхности тела матери",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "что опять само идеализация",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "что опять само идеализация играет",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "чувства и обесценивают",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "чувства и обесценивают работу",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "чувства и обесценивают работу аналитика",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "эго идеализированных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "эго идеализированных я",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "эго идеализированных я и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "эго идеализированных я и объект",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "эротической идеализацией",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "этапе развития идеализированные",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "этапе развития идеализированные и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "этапе развития идеализированные и плохие",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "эти пациенты обесценивают",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "эти пациенты обесценивают аналитика",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "эти пациенты обесценивают аналитика и",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "это идеализация всемогущественных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "это идеализация всемогущественных деструктивных",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "это идеализация всемогущественных деструктивных частей",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "этого ощущаются любящими или идеализированными",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_IDEALIZATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_variant"
+  },
+  {
+    "phrase": "я и обесцененным",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_DEVALUATION",
+      "TFP_SPLITTING"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  },
+  {
+    "phrase": "я объект аффект",
+    "freq": 2,
+    "candidate_concept_ids": [
+      "TFP_AFFECT_INSTABILITY",
+      "TFP_OBJECT_RELATIONS"
+    ],
+    "confidence_hint": 0.75,
+    "class_hint": "candidate_core"
+  }
+]

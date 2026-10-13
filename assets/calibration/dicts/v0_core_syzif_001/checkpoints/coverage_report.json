@@ -1,0 +1,10 @@
+{
+  "n_seed": 288,
+  "n_covered": 288,
+  "pct": 100.0,
+  "mode": "mock_openai_offline",
+  "confidence_tiers": {
+    "from_anchor": 1041,
+    "seed_label_c": 288
+  }
+}

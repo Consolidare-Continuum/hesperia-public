@@ -1,0 +1,11 @@
+{
+  "run": "structural_analysis",
+  "text_preview": "justice fairness",
+  "L7": {
+    "DECISION_STATUS_CODE": 0,
+    "OUTPUT_TRUST_TAG": "LOW"
+  },
+  "L9": {
+    "BRAND_WORD_TRUST": "FRAGILE"
+  }
+}

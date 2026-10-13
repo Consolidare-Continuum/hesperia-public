@@ -1,0 +1,15 @@
+{
+  "domain": "TFP_KERNBERG",
+  "language": "en",
+  "description": "Smoke test: English-only session snippets. Use with default assets when Russian lexicon is not yet available.",
+  "sessions": [
+    {
+      "session_id": "smoke_01",
+      "text": "Patient speaks about boundaries and trust. We discuss transfer and counter-transference. Order and fairness in the relationship."
+    },
+    {
+      "session_id": "smoke_02",
+      "text": "Identity and integration. Reality and fantasy. Harm and protection. Kernberg and structural organization."
+    }
+  ]
+}

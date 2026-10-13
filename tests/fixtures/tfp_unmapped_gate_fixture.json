@@ -1,0 +1,9 @@
+{
+  "description": "Fixed totals for TFP-ENF-03 CI gate — sum(unmapped_counts) / total_tokens must stay <= max_unmapped_mass_fraction",
+  "total_tokens": 1000,
+  "unmapped_counts": {
+    "token_a": 12,
+    "token_b": 8
+  },
+  "max_unmapped_mass_fraction": 0.03
+}

@@ -1,0 +1,214 @@
+40_SPEC__V0_4_Layer7_Cross_Layer_Interactions_Limits_Aggregates_25_Variables_v1_0
+
+Project: HESPERIA
+Target: v0.4.x baseline (cross-layer interactions, limits, aggregates)
+Date: 2026-02-24
+Status: Canonical
+
+References: 34_SPEC (L1) … 39_SPEC (L6); 00_GOVERNANCE_CHARTER__HESPERIA_v1_0. Report units: 41_SPEC (Layer-8).
+
+----------------------------------------------------------------------
+0. LAYER-7 CONTRACT (INVARIANT)
+----------------------------------------------------------------------
+
+  Layer-7 defines when to trust each layer. It enforces limits so shadow and evidence cannot corrupt the core. It provides cross-layer alignment (structure ↔ geometry ↔ evidence ↔ counter-evidence ↔ stability). It outputs one status code, one confidence scalar, and one trust tag suitable for pipelines and logs.
+
+  All 25 variables are deterministic and derived from Layers 1–6 outputs plus frozen governance parameters.
+
+----------------------------------------------------------------------
+1. PREREQUISITES
+----------------------------------------------------------------------
+
+  L1 .. L6 = outputs from 34_SPEC (Layer-1), 35_SPEC (Layer-2), 36_SPEC (Layer-3), 37_SPEC (Layer-4), 38_SPEC (Layer-5), 39_SPEC (Layer-6). Notation: L1.COVERAGE_RATIO, L2.TOTAL_REACHABLE_NODES, L3.SHADOW_ENABLED, L4.INTEGRITY_CHECK_PASS_RATIO, L5.REALITY_GATE_TRIG, L5.REALITY_GATE_COUNTER_EVIDENCE, L6.LYAPUNOV_ESTIMATE, etc.
+
+  visited_B = set of family IDs reached in baseline traversal (Layer-2 B). FPA = FAMILIES_PER_AREA = F / A.
+
+  EVIDENCE_SUPPORT_INDEX_SHADOW: when L3.SHADOW_ENABLED, same formula as L4.EVIDENCE_SUPPORT_INDEX_BASELINE applied to shadow run (R_S, DOMINANT_FAMILY_S, DOMINANT_AREA_S, activeFamilies_S). When !L3.SHADOW_ENABLED, use 0.0 for alignment delta.
+
+  Frozen governance / config:
+    MIN_COVERAGE_RATIO   = min L1.COVERAGE_RATIO for trust (e.g. 0.10).
+    EPS_INT              = tolerance for integer/float accounting (e.g. 1e-6).
+    SHADOW_MAX_DEVIATION = as in 36_SPEC.
+    MAX_CONTRADICTION    = as in 38_SPEC.
+    MAX_CROSS_AREA_RATIO = max allowed L2.CROSS_AREA_RATIO (e.g. 0.50).
+    MAX_LYAPUNOV         = upper bound for acceptable L6.LYAPUNOV_ESTIMATE (e.g. 2.0).
+    HIGH_CONF            = threshold for OUTPUT_TRUST_TAG "HIGH" (e.g. 0.70).
+    MED_CONF             = threshold for "MED" (e.g. 0.40).
+
+----------------------------------------------------------------------
+2. LAYER-7 CROSS-LAYER INTERACTIONS, LIMITS, AGGREGATES (25)
+----------------------------------------------------------------------
+A. Cross-layer consistency (1–10)
+----------------------------------------------------------------------
+
+ 1. CONSIST_COVERAGE_MIN_GATE
+    boolean CONSIST_COVERAGE_MIN_GATE = (L1.COVERAGE_RATIO >= MIN_COVERAGE_RATIO);
+    If fail: everything above is low-trust.
+
+ 2. CONSIST_ATTRIBUTION_MASS_EQUALITY
+    boolean CONSIST_ATTRIBUTION_MASS_EQUALITY = (|L1.FAMILY_HIT_VECTOR_L1 - L1.ATTRIBUTED_TOKENS| <= EPS_INT);
+    Sanity: accounting must balance (Layer-1 invariant).
+
+ 3. CONSIST_TRAVERSAL_NONEMPTY_WHEN_ATTRIBUTED
+    boolean CONSIST_TRAVERSAL_NONEMPTY_WHEN_ATTRIBUTED = (L1.ATTRIBUTED_TOKENS == 0) ? (L2.TOTAL_REACHABLE_NODES == 0) : (L2.TOTAL_REACHABLE_NODES > 0);
+    Traversal cannot be "empty" if there is signal.
+
+ 4. CONSIST_DOMINANT_FAMILY_IN_TRAVERSAL
+    boolean CONSIST_DOMINANT_FAMILY_IN_TRAVERSAL = visited_B.contains(L1.DOMINANT_FAMILY_ID);
+    If fail: traversal anchor logic is broken.
+
+ 5. CONSIST_AREA_MAPPING
+    boolean CONSIST_AREA_MAPPING = (L1.DOMINANT_AREA_ID == (L1.DOMINANT_FAMILY_ID / FPA));
+    Avoid silent area indexing bugs.
+
+ 6. CONSIST_EVIDENCE_INTEGRITY_HARD
+    boolean CONSIST_EVIDENCE_INTEGRITY_HARD = (L4.INTEGRITY_CHECK_PASS_RATIO == 1.0);
+    If fail: evidence metrics are invalid.
+
+ 7. CONSIST_SHADOW_DELTA_ONLY_IF_SHADOW
+    boolean CONSIST_SHADOW_DELTA_ONLY_IF_SHADOW = (!L3.SHADOW_ENABLED) ? (L3.SHADOW_DEVIATION_SCORE == 0.0) : true;
+    Prevents fake deltas when shadow is off.
+
+ 8. CONSIST_TRIG_REQUIRED_FOR_ANGLE_METRICS
+    boolean CONSIST_TRIG_REQUIRED_FOR_ANGLE_METRICS = L5.REALITY_GATE_TRIG;
+    If fail: any angle/rotation/distance-derived metrics are not trusted.
+
+ 9. CONSIST_COUNTER_EVIDENCE_VALID
+    boolean CONSIST_COUNTER_EVIDENCE_VALID = L5.REALITY_GATE_COUNTER_EVIDENCE;
+    If fail: contradiction pressure is unknown (missing data).
+
+10. CONSIST_STABILITY_REGIME_VALID
+    boolean CONSIST_STABILITY_REGIME_VALID = !Double.isNaN(L6.LYAPUNOV_ESTIMATE) && !Double.isInfinite(L6.LYAPUNOV_ESTIMATE);
+    Prevents unstable math from polluting aggregates.
+
+----------------------------------------------------------------------
+B. Cross-layer limitation variables (11–18)
+----------------------------------------------------------------------
+
+11. TRUST_TIER
+    int TRUST_TIER = (!CONSIST_COVERAGE_MIN_GATE) ? 0 : (!CONSIST_EVIDENCE_INTEGRITY_HARD) ? 1 : (!L5.REALITY_GATE_TRIG) ? 2 : 3;
+    0 = weak input, 1 = evidence corrupted, 2 = math sanity failed, 3 = full trust.
+
+12. MAX_ALLOWABLE_SHADOW_DEVIATION
+    double MAX_ALLOWABLE_SHADOW_DEVIATION = SHADOW_MAX_DEVIATION;
+    Frozen governance cap.
+
+13. SHADOW_WITHIN_LIMITS
+    boolean SHADOW_WITHIN_LIMITS = L3.SHADOW_ACCEPTABILITY_GATE;
+    Shadow is allowed only if within limits.
+
+14. MAX_ALLOWABLE_CONTRADICTION
+    double MAX_ALLOWABLE_CONTRADICTION = MAX_CONTRADICTION;
+    Frozen limit for counter-evidence pressure.
+
+15. CONTRADICTION_WITHIN_LIMITS
+    boolean CONTRADICTION_WITHIN_LIMITS = (L5.CONTRADICTION_PRESSURE_SCORE <= MAX_ALLOWABLE_CONTRADICTION);
+    If false: output must be marked "contested".
+
+16. MAX_AREA_LEAKAGE
+    double MAX_AREA_LEAKAGE = MAX_CROSS_AREA_RATIO;
+    Frozen constraint on traversal leakage.
+
+17. AREA_LEAKAGE_WITHIN_LIMITS
+    boolean AREA_LEAKAGE_WITHIN_LIMITS = (L2.CROSS_AREA_RATIO <= MAX_AREA_LEAKAGE);
+    Containment constraint.
+
+18. MAX_CHAOS_LEVEL
+    double MAX_CHAOS_LEVEL = MAX_LYAPUNOV;
+    Upper bound for acceptable sensitivity (Lyapunov).
+
+----------------------------------------------------------------------
+C. Cross-layer alignment variables (19–22)
+----------------------------------------------------------------------
+
+19. STRUCTURE_EVIDENCE_ALIGNMENT
+    double STRUCTURE_EVIDENCE_ALIGNMENT = 0.60 * L4.EVIDENCE_SUPPORT_INDEX_BASELINE + 0.40 * L2.GEOMETRIC_STABILITY_INDEX;
+    Do geometry and evidence agree?
+
+20. SHADOW_EVIDENCE_ALIGNMENT_DELTA
+    double SHADOW_EVIDENCE_ALIGNMENT_DELTA = (L4.EVIDENCE_SUPPORT_INDEX_SHADOW - L4.EVIDENCE_SUPPORT_INDEX_BASELINE);
+    Does shadow improve evidence support or degrade it? When !L3.SHADOW_ENABLED, use 0.0.
+
+21. SHADOW_JUSTIFICATION_SCORE
+    double SHADOW_JUSTIFICATION_SCORE = (SHADOW_WITHIN_LIMITS ? 1.0 : 0.0) * max(0.0, SHADOW_EVIDENCE_ALIGNMENT_DELTA) * (1.0 - L3.SHADOW_DEVIATION_SCORE);
+    Shadow is only "worth it" if it improves support while deviating little.
+
+22. CONTRADICTION_ADJUSTED_SUPPORT
+    double CONTRADICTION_ADJUSTED_SUPPORT = L4.EVIDENCE_SUPPORT_INDEX_BASELINE * (1.0 - L5.CONTRADICTION_PRESSURE_SCORE);
+    Support discounted by counter-evidence pressure. Clamp to [0, 1] if needed.
+
+----------------------------------------------------------------------
+D. Aggregated "one number" outputs (23–25)
+----------------------------------------------------------------------
+
+23. SYSTEM_CONFIDENCE_SCORE
+    double SYSTEM_CONFIDENCE_SCORE = (TRUST_TIER / 3.0) * L1.STRUCTURAL_STABILITY_INDEX * L2.GEOMETRIC_STABILITY_INDEX * CONTRADICTION_ADJUSTED_SUPPORT * L6.GLOBAL_STABILITY_SCORE;
+    Single scalar confidence, grounded in gates. Bounded in [0, 1] when each factor is in [0, 1].
+
+24. DECISION_STATUS_CODE
+    int DECISION_STATUS_CODE =
+        (!CONSIST_COVERAGE_MIN_GATE) ? 10 :           // insufficient input coverage
+        (!CONSIST_EVIDENCE_INTEGRITY_HARD) ? 20 :     // evidence corrupted/missing
+        (!AREA_LEAKAGE_WITHIN_LIMITS) ? 30 :          // traversal leakage too high
+        (!SHADOW_WITHIN_LIMITS) ? 40 :                // shadow out of bounds
+        (!CONTRADICTION_WITHIN_LIMITS) ? 50 :         // contested by anti-evidence
+        (!L5.REALITY_GATE_TRIG) ? 60 :                // trig/metric sanity failed
+        (L6.LYAPUNOV_ESTIMATE > MAX_CHAOS_LEVEL) ? 70 : // chaotic regime
+        0;                                            // OK
+    Deterministic operational status for downstream logic.
+
+25. OUTPUT_TRUST_TAG
+    String OUTPUT_TRUST_TAG = (DECISION_STATUS_CODE == 0 && SYSTEM_CONFIDENCE_SCORE >= HIGH_CONF) ? "HIGH" : (DECISION_STATUS_CODE == 0 && SYSTEM_CONFIDENCE_SCORE >= MED_CONF) ? "MED" : "LOW";
+    Human-readable trust label, driven by the math.
+
+----------------------------------------------------------------------
+3. WHAT LAYER-7 COMPLETES
+----------------------------------------------------------------------
+
+  Defines when to trust each layer. Enforces limits so shadow and evidence cannot corrupt the core. Provides cross-layer alignment (structure ↔ geometry ↔ evidence ↔ counter-evidence ↔ stability). Outputs one status code + one confidence scalar + one trust tag suitable for pipelines and logs.
+
+----------------------------------------------------------------------
+4. RELATION TO LAYERS 1–6
+----------------------------------------------------------------------
+
+  Layer-7 consumes only outputs from Layers 1–6 and frozen config. It does not replace any layer; it aggregates and gates. DECISION_STATUS_CODE and OUTPUT_TRUST_TAG are the canonical operational outputs for the full stack.
+
+----------------------------------------------------------------------
+5. JAVA-STYLE PSEUDOCODE (LAYER-7)
+----------------------------------------------------------------------
+
+// A. Cross-layer consistency
+boolean CONSIST_COVERAGE_MIN_GATE = (L1.COVERAGE_RATIO >= MIN_COVERAGE_RATIO);
+boolean CONSIST_ATTRIBUTION_MASS_EQUALITY = Math.abs(L1.FAMILY_HIT_VECTOR_L1 - L1.ATTRIBUTED_TOKENS) <= EPS_INT;
+boolean CONSIST_TRAVERSAL_NONEMPTY_WHEN_ATTRIBUTED = (L1.ATTRIBUTED_TOKENS == 0) ? (L2.TOTAL_REACHABLE_NODES == 0) : (L2.TOTAL_REACHABLE_NODES > 0);
+boolean CONSIST_DOMINANT_FAMILY_IN_TRAVERSAL = visited_B.contains(L1.DOMINANT_FAMILY_ID);
+boolean CONSIST_AREA_MAPPING = (L1.DOMINANT_AREA_ID == (L1.DOMINANT_FAMILY_ID / FPA));
+boolean CONSIST_EVIDENCE_INTEGRITY_HARD = (L4.INTEGRITY_CHECK_PASS_RATIO == 1.0);
+boolean CONSIST_SHADOW_DELTA_ONLY_IF_SHADOW = (!L3.SHADOW_ENABLED) ? (L3.SHADOW_DEVIATION_SCORE == 0.0) : true;
+boolean CONSIST_TRIG_REQUIRED_FOR_ANGLE_METRICS = L5.REALITY_GATE_TRIG;
+boolean CONSIST_COUNTER_EVIDENCE_VALID = L5.REALITY_GATE_COUNTER_EVIDENCE;
+boolean CONSIST_STABILITY_REGIME_VALID = !Double.isNaN(L6.LYAPUNOV_ESTIMATE) && !Double.isInfinite(L6.LYAPUNOV_ESTIMATE);
+
+// B. Limits
+int TRUST_TIER = (!CONSIST_COVERAGE_MIN_GATE) ? 0 : (!CONSIST_EVIDENCE_INTEGRITY_HARD) ? 1 : (!L5.REALITY_GATE_TRIG) ? 2 : 3;
+double MAX_ALLOWABLE_SHADOW_DEVIATION = SHADOW_MAX_DEVIATION;
+boolean SHADOW_WITHIN_LIMITS = L3.SHADOW_ACCEPTABILITY_GATE;
+double MAX_ALLOWABLE_CONTRADICTION = MAX_CONTRADICTION;
+boolean CONTRADICTION_WITHIN_LIMITS = (L5.CONTRADICTION_PRESSURE_SCORE <= MAX_ALLOWABLE_CONTRADICTION);
+double MAX_AREA_LEAKAGE = MAX_CROSS_AREA_RATIO;
+boolean AREA_LEAKAGE_WITHIN_LIMITS = (L2.CROSS_AREA_RATIO <= MAX_AREA_LEAKAGE);
+double MAX_CHAOS_LEVEL = MAX_LYAPUNOV;
+
+// C. Alignment
+double STRUCTURE_EVIDENCE_ALIGNMENT = 0.60 * L4.EVIDENCE_SUPPORT_INDEX_BASELINE + 0.40 * L2.GEOMETRIC_STABILITY_INDEX;
+double SHADOW_EVIDENCE_ALIGNMENT_DELTA = L4_EVIDENCE_SUPPORT_INDEX_SHADOW - L4.EVIDENCE_SUPPORT_INDEX_BASELINE;  // 0 when !SHADOW_ENABLED
+double SHADOW_JUSTIFICATION_SCORE = (SHADOW_WITHIN_LIMITS ? 1.0 : 0.0) * Math.max(0.0, SHADOW_EVIDENCE_ALIGNMENT_DELTA) * (1.0 - L3.SHADOW_DEVIATION_SCORE);
+double CONTRADICTION_ADJUSTED_SUPPORT = L4.EVIDENCE_SUPPORT_INDEX_BASELINE * (1.0 - L5.CONTRADICTION_PRESSURE_SCORE);
+
+// D. Aggregates
+double SYSTEM_CONFIDENCE_SCORE = (TRUST_TIER / 3.0) * L1.STRUCTURAL_STABILITY_INDEX * L2.GEOMETRIC_STABILITY_INDEX * CONTRADICTION_ADJUSTED_SUPPORT * L6.GLOBAL_STABILITY_SCORE;
+int DECISION_STATUS_CODE = (!CONSIST_COVERAGE_MIN_GATE) ? 10 : (!CONSIST_EVIDENCE_INTEGRITY_HARD) ? 20 : (!AREA_LEAKAGE_WITHIN_LIMITS) ? 30 : (!SHADOW_WITHIN_LIMITS) ? 40 : (!CONTRADICTION_WITHIN_LIMITS) ? 50 : (!L5.REALITY_GATE_TRIG) ? 60 : (L6.LYAPUNOV_ESTIMATE > MAX_CHAOS_LEVEL) ? 70 : 0;
+String OUTPUT_TRUST_TAG = (DECISION_STATUS_CODE == 0 && SYSTEM_CONFIDENCE_SCORE >= HIGH_CONF) ? "HIGH" : (DECISION_STATUS_CODE == 0 && SYSTEM_CONFIDENCE_SCORE >= MED_CONF) ? "MED" : "LOW";
+
+----------------------------------------------------------------------
+END 40_SPEC

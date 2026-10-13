@@ -1,0 +1,20 @@
+{
+  "hesperia_metric_version": "0.1.0",
+  "layers_active": ["area_sphere", "hex_graph", "state_gram"],
+  "area_sphere": {
+    "radius": 1.0,
+    "coordinate_fingerprint": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3"
+  },
+  "gcs_surface": null,
+  "ipow_volume": null,
+  "anchor_map_id": "anchor_map_v1",
+  "interior_point_of_world_view": {
+    "powv_point_zero": true,
+    "powv_position": [0.0, 0.0, 0.0],
+    "powv_step": 0,
+    "powv_distances_tier1": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+    "powv_barycentric_areas": [0.08333333333333333, 0.08333333333333333, 0.08333333333333333, 0.08333333333333333, 0.08333333333333333, 0.08333333333333333, 0.08333333333333333, 0.08333333333333333, 0.08333333333333333, 0.08333333333333333, 0.08333333333333333, 0.08333333333333333],
+    "iteration_interval_I2": null,
+    "delta_powv_norm": 0.0
+  }
+}

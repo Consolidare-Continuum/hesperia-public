@@ -1,0 +1,265 @@
+# LEVEL 9 — Фразовые маркеры Dict-A (биграммы / триграммы)
+# Психодинамические сигналы, выраженные фразами. Copyright © 2026 igareosh.com.
+version: 1
+domain: TFP_KERNBERG
+language: ru
+description: "Фразовые маркеры: splitting, persecutory object, projective identification, dependency."
+
+entries:
+  # --- Splitting (A3_F1, rascheplenie) ---
+  - marker: "сначала хороший"
+    concept_id: B_A3_F1_002
+    language: ru
+    weight: 0.9
+  - marker: "теперь плохой"
+    concept_id: B_A3_F1_002
+    language: ru
+    weight: 0.9
+  - marker: "потом плохой"
+    concept_id: B_A3_F1_002
+    language: ru
+    weight: 0.9
+  - marker: "всегда хороший"
+    concept_id: B_A3_F1_002
+    language: ru
+    weight: 0.8
+  - marker: "сразу плохой"
+    concept_id: B_A3_F1_002
+    language: ru
+    weight: 0.8
+  - marker: "полностью хороший"
+    concept_id: B_A3_F1_001
+    language: ru
+    weight: 0.85
+  - marker: "полностью плохой"
+    concept_id: B_A3_F1_001
+    language: ru
+    weight: 0.85
+  - marker: "либо идеал"
+    concept_id: B_A3_F2_001
+    language: ru
+    weight: 0.8
+  - marker: "либо враг"
+    concept_id: B_A3_F2_001
+    language: ru
+    weight: 0.8
+  # --- Persecutory object (A2_F2, A2_F3) ---
+  - marker: "вы меня предали"
+    concept_id: B_A2_F2_002
+    language: ru
+    weight: 1.0
+  - marker: "вы специально"
+    concept_id: B_A2_F2_002
+    language: ru
+    weight: 0.95
+  - marker: "вы намеренно"
+    concept_id: B_A2_F2_002
+    language: ru
+    weight: 0.95
+  - marker: "вы хотите навредить"
+    concept_id: B_A2_F2_002
+    language: ru
+    weight: 1.0
+  - marker: "меня предали"
+    concept_id: B_A2_F2_002
+    language: ru
+    weight: 0.9
+  - marker: "все против"
+    concept_id: B_A2_F2_002
+    language: ru
+    weight: 0.85
+  - marker: "все хотят навредить"
+    concept_id: B_A2_F2_002
+    language: ru
+    weight: 0.95
+  - marker: "он меня предал"
+    concept_id: B_A2_F2_002
+    language: ru
+    weight: 0.9
+  - marker: "она предала"
+    concept_id: B_A2_F2_002
+    language: ru
+    weight: 0.9
+  - marker: "угрожаете мне"
+    concept_id: B_A2_F2_002
+    language: ru
+    weight: 0.9
+  # --- Projective attribution / projective identification (A3_F4, A3_F5) ---
+  - marker: "вы специально это сделали"
+    concept_id: B_A3_F4_002
+    language: ru
+    weight: 1.0
+  - marker: "это вы виноваты"
+    concept_id: B_A3_F5_002
+    language: ru
+    weight: 0.95
+  - marker: "ваша вина"
+    concept_id: B_A3_F5_002
+    language: ru
+    weight: 0.9
+  - marker: "вы виноваты в"
+    concept_id: B_A3_F5_002
+    language: ru
+    weight: 0.95
+  - marker: "вы заставили меня"
+    concept_id: B_A3_F5_001
+    language: ru
+    weight: 0.9
+  - marker: "из-за вас"
+    concept_id: B_A3_F4_001
+    language: ru
+    weight: 0.85
+  - marker: "по вашей вине"
+    concept_id: B_A3_F4_001
+    language: ru
+    weight: 0.9
+  - marker: "вы делаете это"
+    concept_id: B_A3_F4_002
+    language: ru
+    weight: 0.85
+  - marker: "вы атакуете меня"
+    concept_id: B_A3_F4_002
+    language: ru
+    weight: 0.95
+  - marker: "нападаете на меня"
+    concept_id: B_A3_F4_002
+    language: ru
+    weight: 0.9
+  # --- Idealization / devaluation (A3_F2) ---
+  - marker: "вы единственный"
+    concept_id: B_A3_F2_002
+    language: ru
+    weight: 0.9
+  - marker: "идеальный терапевт"
+    concept_id: B_A3_F2_002
+    language: ru
+    weight: 0.9
+  - marker: "бесполезный терапевт"
+    concept_id: B_A3_F2_003
+    language: ru
+    weight: 0.9
+  - marker: "ничего не понимаете"
+    concept_id: B_A3_F2_003
+    language: ru
+    weight: 0.85
+  - marker: "не способны помочь"
+    concept_id: B_A3_F2_003
+    language: ru
+    weight: 0.85
+  - marker: "раньше был хорошим"
+    concept_id: B_A3_F2_001
+    language: ru
+    weight: 0.9
+  - marker: "теперь ничего не стоит"
+    concept_id: B_A3_F2_003
+    language: ru
+    weight: 0.85
+  # --- Dependency / bond (A2_F4, A10) ---
+  - marker: "не могу без вас"
+    concept_id: B_A2_F4_004
+    language: ru
+    weight: 0.9
+  - marker: "боюсь потерять"
+    concept_id: B_A2_F4_004
+    language: ru
+    weight: 0.9
+  - marker: "нужен мне"
+    concept_id: B_A2_F4_004
+    language: ru
+    weight: 0.85
+  - marker: "не бросайте меня"
+    concept_id: B_A2_F4_002
+    language: ru
+    weight: 0.95
+  - marker: "вы меня покинете"
+    concept_id: B_A2_F4_002
+    language: ru
+    weight: 0.9
+  - marker: "оставьте меня"
+    concept_id: B_A2_F4_002
+    language: ru
+    weight: 0.85
+  - marker: "зависим от вас"
+    concept_id: B_A2_F4_004
+    language: ru
+    weight: 0.9
+  - marker: "без вас не справлюсь"
+    concept_id: B_A2_F4_004
+    language: ru
+    weight: 0.95
+  # --- Aggression / rage (A4) ---
+  - marker: "ненавижу вас"
+    concept_id: B_A4_F2_003
+    language: ru
+    weight: 0.95
+  - marker: "хочу уничтожить"
+    concept_id: B_A4_F1_002
+    language: ru
+    weight: 0.9
+  - marker: "сильная злость"
+    concept_id: B_A4_F1_001
+    language: ru
+    weight: 0.9
+  - marker: "вызывает ярость"
+    concept_id: B_A4_F1_001
+    language: ru
+    weight: 0.9
+  - marker: "в бешенстве"
+    concept_id: B_A4_F1_001
+    language: ru
+    weight: 0.85
+  - marker: "не могу сдержать гнев"
+    concept_id: B_A4_F1_001
+    language: ru
+    weight: 0.9
+  # --- Identity / self (A2_F5) ---
+  - marker: "не знаю кто я"
+    concept_id: B_A2_F5_001
+    language: ru
+    weight: 0.95
+  - marker: "разный в разных"
+    concept_id: B_A2_F5_001
+    language: ru
+    weight: 0.85
+  - marker: "противоречивые чувства"
+    concept_id: B_A2_F6_002
+    language: ru
+    weight: 0.85
+  # --- Reparation / guilt (A4_F9, A2_F6) ---
+  - marker: "простите меня"
+    concept_id: B_A4_F9_004
+    language: ru
+    weight: 0.9
+  - marker: "я виноват"
+    concept_id: B_A4_F9_001
+    language: ru
+    weight: 0.9
+  - marker: "причинил боль"
+    concept_id: B_A4_F9_001
+    language: ru
+    weight: 0.9
+  - marker: "хочу загладить"
+    concept_id: B_A2_F6_003
+    language: ru
+    weight: 0.9
+  # --- More splitting / good-bad ---
+  - marker: "сначала был хорошим"
+    concept_id: B_A3_F1_002
+    language: ru
+    weight: 0.95
+  - marker: "теперь стал плохим"
+    concept_id: B_A3_F1_002
+    language: ru
+    weight: 0.95
+  - marker: "то идеал то"
+    concept_id: B_A3_F2_001
+    language: ru
+    weight: 0.85
+  - marker: "вы то хороший"
+    concept_id: B_A3_F1_002
+    language: ru
+    weight: 0.9
+  - marker: "вы то плохой"
+    concept_id: B_A3_F1_002
+    language: ru
+    weight: 0.9

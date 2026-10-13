@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prichindel.com/hesperia/schemas/router/router_output_audit_v0_1.schema.json",
+  "title": "Hesperia v7 RouterOutputAudit",
+  "description": "Post-LLM audit packet. Ref: sphere/router/audit.py",
+  "type": "object",
+  "required": [
+    "schema",
+    "output_hash",
+    "output_trace",
+    "alignment_summary",
+    "corpus_check",
+    "policy_check",
+    "mutation_check",
+    "decision",
+    "decision_reasons"
+  ],
+  "properties": {
+    "schema": { "const": "hesperia.router_output_audit.v0_1" },
+    "output_hash": { "type": "string", "minLength": 16 },
+    "output_trace": { "type": "object", "additionalProperties": true },
+    "alignment_summary": { "type": "object", "additionalProperties": true },
+    "corpus_check": { "type": "object", "additionalProperties": true },
+    "policy_check": { "type": "object", "additionalProperties": true },
+    "mutation_check": { "type": "object", "additionalProperties": true },
+    "decision": {
+      "type": "string",
+      "enum": ["ALLOW", "WARN", "REVIEW_REQUIRED", "BLOCK"]
+    },
+    "decision_reasons": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "reason_code_descriptions": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

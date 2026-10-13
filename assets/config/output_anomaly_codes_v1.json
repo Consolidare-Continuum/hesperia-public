@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0",
+  "codes": {
+    "A001_NO_ATTRIBUTION": {
+      "severity_default": "error",
+      "blocking_default": true,
+      "summary": "Lexicon marker path attributed zero tokens (L1 ATTRIBUTED_TOKENS==0) without documented fallback."
+    },
+    "A002_UPSTREAM_NONZERO_DOWNSTREAM_ZERO": {
+      "severity_default": "error",
+      "blocking_default": true,
+      "summary": "Sealed concept/prior mass present but hex or family aggregate total mass collapsed to zero."
+    },
+    "A003_THRESHOLD_OVERKILL": {
+      "severity_default": "warn",
+      "blocking_default": false,
+      "summary": "Numeric values clipped or rounded away by thresholds while upstream signal exists."
+    },
+    "A004_PROFILE_MISMATCH": {
+      "severity_default": "warn",
+      "blocking_default": false,
+      "summary": "Calibration profile / registry expectation does not match emitted scale or field set."
+    },
+    "A005_SCALE_CONTRACT_VIOLATION": {
+      "severity_default": "error",
+      "blocking_default": true,
+      "summary": "Value outside declared contract range for its semantic_type (see output_metric_registry_v1)."
+    },
+    "A006_READABILITY_LAYER_MISSING": {
+      "severity_default": "info",
+      "blocking_default": false,
+      "summary": "Readable band / display block absent for a metric that requires it under active profile."
+    },
+    "A007_CROSS_PLANE_INCONSISTENCY": {
+      "severity_default": "warn",
+      "blocking_default": false,
+      "summary": "Structural/sealed/analyze disagree beyond gold tolerance (coverage, mass, ranks)."
+    },
+    "G004_MISSING_BUNDLE_MANIFEST": {
+      "severity_default": "error",
+      "blocking_default": true,
+      "summary": "00_manifest.json missing from bundle directory; cannot evaluate release gate (non-research profiles)."
+    }
+  }
+}

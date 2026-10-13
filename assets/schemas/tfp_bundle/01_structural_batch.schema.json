@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hesperia://schemas/tfp_bundle/01_structural_batch.schema.json",
+  "title": "TFP file pipeline 01_structural_batch (subset)",
+  "type": "object",
+  "required": ["run", "structural_batch", "operational_envelope"],
+  "properties": {
+    "run": { "type": "string" },
+    "session_count": { "type": "integer" },
+    "structural_batch": { "type": "array", "items": { "type": "object" } },
+    "operational_envelope": {
+      "type": "object",
+      "required": [
+        "status",
+        "anomaly_codes",
+        "severity",
+        "blocking",
+        "operator_message",
+        "recommended_next_check",
+        "taxonomy_version"
+      ]
+    }
+  }
+}

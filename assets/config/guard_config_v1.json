@@ -1,0 +1,88 @@
+{
+  "version": "v0.3.0",
+  "contract_spec": "22_SPEC__V0_3_Core_Math_Contract_v1_0",
+  "side_id_format": "int",
+
+  "numerics": {
+    "eps": 1e-9,
+    "energy_cap": 1.0,
+    "energy_conservation_tolerance": 1e-6
+  },
+
+  "fusion": {
+    "alpha": 0.65,
+    "require_normalization": true,
+    "allow_single_source_fallback": true
+  },
+
+  "centroid": {
+    "K_max": 5,
+    "activation_threshold_eta": 0.02,
+    "tie_break_policy": "side_id_ascending"
+  },
+
+  "traversal": {
+    "lambda": 0.55,
+    "decay": 0.04,
+    "steps": 8,
+    "enforce_row_stochastic_W": true,
+    "self_loop_if_no_outgoing": true,
+    "conservation_check_stage": "pre_decay"
+  },
+
+  "shadow": {
+    "enabled": true,
+    "max_shadow_hops": 2,
+    "shadow_penalty_k": 0.40,
+    "require_trigger_condition": true,
+    "non_creation_enforced": true,
+    "k_shadow_perturb": 0.06
+  },
+
+  "ambiguity": {
+    "delta_gap": 0.08,
+    "penalty_k": 0.35,
+    "penalty_curve": "quadratic",
+    "degrade_if_below_delta": true
+  },
+
+  "core_thinness": {
+    "tau_core": 0.25,
+    "penalty_k": 0.30,
+    "degrade_if_below_tau": true
+  },
+
+  "dispersion": {
+    "penalty_k": 0.25,
+    "entropy_log_base": "natural",
+    "normalize_entropy": true
+  },
+
+  "guard_penalty": {
+    "k_guard": 0.30,
+    "hard_stop_on_theta_reject": true,
+    "log_all_guard_events": true
+  },
+
+  "obstacle_score": {
+    "w_decay": 0.50,
+    "w_guard": 0.30,
+    "w_shadow": 0.20,
+    "loss_clamped": true
+  },
+
+  "books": {
+    "must_not_affect_metrics": true,
+    "ci_ab_test_required": true,
+    "retrieval_stage": "post_resolution_only"
+  },
+
+  "failure_policy": {
+    "F1_schema_violation": "hard_stop",
+    "F2_authority_breach": "hard_stop",
+    "F3_topology_breach": "hard_stop",
+    "F4_coherence_breach": "hard_stop",
+    "F5_degenerate_activation": "degraded_state",
+    "F6_shadow_overuse": "degraded_state"
+  }
+}

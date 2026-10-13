@@ -1,0 +1,56 @@
+{
+  "mode": "HESPERIA_CALIB_MOCK_OPENAI",
+  "n_props": 12,
+  "sample": [
+    {
+      "concept_id": "core.good.altruism",
+      "labels": [
+        "altruism"
+      ],
+      "from_lexical": [
+        "altruism"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "concept_id": "core.good.protection",
+      "labels": [
+        "protection"
+      ],
+      "from_lexical": [
+        "protection"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "concept_id": "core.good.trust",
+      "labels": [
+        "truth"
+      ],
+      "from_lexical": [
+        "truth"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "concept_id": "core.destruction.strike",
+      "labels": [
+        "justice"
+      ],
+      "from_lexical": [
+        "justice"
+      ],
+      "confidence": 0.615
+    },
+    {
+      "concept_id": "core.order.change",
+      "labels": [
+        "care"
+      ],
+      "from_lexical": [
+        "care"
+      ],
+      "confidence": 0.6
+    }
+  ]
+}

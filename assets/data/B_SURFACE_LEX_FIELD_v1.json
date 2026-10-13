@@ -1,0 +1,19 @@
+{
+  "_comment": "Dict B: side_id (or string code) → { canonical_lemma, aliases: [ { alias, grade } ] }. Grade A=canonical, B=synonym same synset, C=inflection/variant. No meaning from definitions.",
+  "0": {
+    "canonical_lemma": "justice",
+    "aliases": [
+      { "alias": "justice", "grade": "A" },
+      { "alias": "fairness", "grade": "B" },
+      { "alias": "justness", "grade": "C" }
+    ]
+  },
+  "1000": {
+    "canonical_lemma": "lie",
+    "aliases": [
+      { "alias": "lie", "grade": "A" },
+      { "alias": "falsehood", "grade": "B" },
+      { "alias": "lying", "grade": "C" }
+    ]
+  }
+}

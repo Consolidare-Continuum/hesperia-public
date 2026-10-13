@@ -1,0 +1,213 @@
+{
+  "generated_utc": "2026-03-19T15:25:52.180344+00:00",
+  "spec_files": [
+    {
+      "path": "specs/CANONICAL_INDEX.md",
+      "sha256": "16f9001d25ef1cb37066aa6538eb50d5a99cc9aac96b1bb189c5c2883cfb096c"
+    },
+    {
+      "path": "specs/INVENTORY.md",
+      "sha256": "cd16f2058faad37c3c4d172dde1fbe136fc10fa7718ce4da0c3df76956bd10c9"
+    },
+    {
+      "path": "specs/README.md",
+      "sha256": "b0a9f768dd0c997153b7a4ce682673ebf72df6ef32c472e5f94ba0c5dccc11be"
+    },
+    {
+      "path": "specs/architecture/FAMILY_EMBEDDING.md",
+      "sha256": "36ea40edd86ba0b14d904f268ec6a6bb774a3ae0c7cf95cfff43caa7a57bbefa"
+    },
+    {
+      "path": "specs/architecture/HISTORICAL-SPECS.md",
+      "sha256": "c9906deb228c066d040db0f51e91e8306fdcf0f8a3e0fd5251e2d21001ca73b0"
+    },
+    {
+      "path": "specs/architecture/LEVEL14_CLINICAL_ACTIVE_GRAPH.md",
+      "sha256": "53a5aa9721650b3e100ffa2ab0dd5fd5a899212452f749b67a6b35c891b81b41"
+    },
+    {
+      "path": "specs/architecture/LEVEL15_CALIBRATION_AND_SPARSIFICATION.md",
+      "sha256": "563291899248e675d40378db8034d555718c10f7585f0370b559a536289ee174"
+    },
+    {
+      "path": "specs/architecture/LEVEL1_AREA_STRUCTURE.md",
+      "sha256": "643d4b12ae7b764e42b78c981baebf3888c20e4685a62da96c0a31e47ba6a1d0"
+    },
+    {
+      "path": "specs/architecture/LEVEL2_FAMILY_STRUCTURE.md",
+      "sha256": "b2b6d7560349d36352bf5c31c85f7ae21fedf9ba61db36456e74fe484d41bbe4"
+    },
+    {
+      "path": "specs/architecture/LEVEL4_DICT_A_LEXICAL_MARKERS.md",
+      "sha256": "afde3cea232f68347ca25f3ee0e7cdfcd2164f4075049a459c47d87ebc0ef5c9"
+    },
+    {
+      "path": "specs/architecture/dossier_schema_v1.md",
+      "sha256": "e0dc259728dd0c654e4d11424f4ce4e85e5fd2284b43e88a902abd5ddc8e928a"
+    },
+    {
+      "path": "specs/calibration/README.md",
+      "sha256": "41353b09cb5ec007029989e91035653f366a6e9ba66bdb3fa3663dcaace805f7"
+    },
+    {
+      "path": "specs/calibration/calibration_system.md",
+      "sha256": "8109b7aba1c10201b444085700ede2b71b5e200dc686d5357adec7520e91c4f3"
+    },
+    {
+      "path": "specs/calibration/hspr_index.md",
+      "sha256": "cd81076163c037a2c729b94b3a9fa0829bc01c6fd97087acba4d2ff1500c03b9"
+    },
+    {
+      "path": "specs/calibration_protocol.md",
+      "sha256": "54144b555b6f731134dac8dda5ea64f5f086e28b54c117c6e07ce625b4edc9d1"
+    },
+    {
+      "path": "specs/canon/README.md",
+      "sha256": "fd67b1d65ea29c85b98e929981aeebea7b74cd5a0156d779c5a4c6d0e4abdc1b"
+    },
+    {
+      "path": "specs/canon/hex_family_bridge.md",
+      "sha256": "974a881f267b4413cf423701642ae600aaa087bd79288e4f98aab746f93aa3f0"
+    },
+    {
+      "path": "specs/canon/hex_microphysics_canon.md",
+      "sha256": "9fe486ae2d51fd7545434c002275ba107d97f5438bf11c5889d034d991481111"
+    },
+    {
+      "path": "specs/canon/hspr_calibration_index.md",
+      "sha256": "40ddb03c6faeb84b9770a12899ce15b0abcefdc8fd093c23daae7f302da571ff"
+    },
+    {
+      "path": "specs/canon/product_signal_layer.md",
+      "sha256": "7fd30c019345712c0ffb34de500ae625c6aef20adb9727e29f7cb99526cfd4f0"
+    },
+    {
+      "path": "specs/canon/prolog_rule_grammar.md",
+      "sha256": "c0b7f999939c8d37ac1542b239d64062c789ce9133e664b80b0faf9da92ba8a2"
+    },
+    {
+      "path": "specs/canon/semantic_field_canon.md",
+      "sha256": "715838a9095ea3617834a3e7f9aa36481e0b4979936de9b14ffaeedf34c9f241"
+    },
+    {
+      "path": "specs/canon/topology_graph_weights.md",
+      "sha256": "c940028fcef85138da1620d481ea878aba2aa5fbd8d1c9da26c888668421b2e8"
+    },
+    {
+      "path": "specs/core/README.md",
+      "sha256": "db461c42d4db1845770205147a1c0e1e00652193b124dc5f64f78d321a6edd3e"
+    },
+    {
+      "path": "specs/core/area_aggregation.md",
+      "sha256": "f8744441a89b2878f53af0b5b46c3290cd1eb481edb418264e51f04e01eae56b"
+    },
+    {
+      "path": "specs/core/family_aggregation.md",
+      "sha256": "da794f3dc2d5b3ef42582e6a38aff1106c81e0082ab4a53bbd6e85efed713d47"
+    },
+    {
+      "path": "specs/core/hex_microphysics_canon.md",
+      "sha256": "47af99bc34e3ff20dca402bd5fe102dff0924e6144cdf99664ba0f77d83596da"
+    },
+    {
+      "path": "specs/core/product_observables.md",
+      "sha256": "28b3311a0c697e31c5c29d1efa3599033352e776eb66a35d45a32a611f650f7b"
+    },
+    {
+      "path": "specs/core/system_architecture.md",
+      "sha256": "6d30cd6afe59d121e60b761634e3b247a4a009c1c0841f3fd5cc93fb4b9a48cc"
+    },
+    {
+      "path": "specs/dynamics/DYNAMICS_EQUATION_INDEX.md",
+      "sha256": "d473dd86ad9a05a2dae652c078ba1849da32832e4c30c64c4cf68508df8e2624"
+    },
+    {
+      "path": "specs/dynamics/ETHAN_SEMANTIC_FIELD_DYNAMICS_SPEC.md",
+      "sha256": "30f6ee2af56a968a50ed9f3de9e388de7c2fd9f18e74cc69bbcdd520b891452d"
+    },
+    {
+      "path": "specs/dynamics/FIELD_MATRIX_BUILDERS_v1.md",
+      "sha256": "6de40d7c1db4aa58b8dc76c9ad3b4be5500e1fcc59c24b99fd9dcfa52f209cbd"
+    },
+    {
+      "path": "specs/dynamics/HESPERIA_DYNAMICS_CALIBRATION_SPEC_v0_1.md",
+      "sha256": "879e25757a120f8e8ff34b21173d4cfe75c8770562dcbf424f25b4574759d9cc"
+    },
+    {
+      "path": "specs/dynamics/HSPR_CALIBRATION_INDEX_v1.md",
+      "sha256": "8f0529917c7ff93a736d208b497afa6bbfca1c1669259201a3361edb82a18af2"
+    },
+    {
+      "path": "specs/dynamics/SEMANTIC_FIELD_EQUATIONS_v1.md",
+      "sha256": "89c307045ebdb7698a7b127a8b4f320790f0846e03fcef9c1f07be217adeea7a"
+    },
+    {
+      "path": "specs/dynamics/semantic_field_dynamics.md",
+      "sha256": "5384208d83c1ad49cfd0f5b4823d18b10dc8916763762b79ae9f156c297ce4a7"
+    },
+    {
+      "path": "specs/release/releases/HESPERIA_v0_5_ENGINE_DYNAMICS_RELEASE.md",
+      "sha256": "48c98cc004f47f53e6b6cb720de075dec93af7e7660a735c6096f3f46e7a841a"
+    },
+    {
+      "path": "specs/release/releases/hesperia-engine-dynamics-v0.5.md",
+      "sha256": "9e00fd35b6218425c5d668c952adc490f6602493010e12675a3ffcf5c4a1b098"
+    },
+    {
+      "path": "specs/release/releases/hesperia-v0.2.md",
+      "sha256": "30d580f1dd08dc8e633d27d7608d8fff8cc9c2719838bbe216fd8bfc55940063"
+    },
+    {
+      "path": "specs/schema/public_output_schema.md",
+      "sha256": "590f3399e71a41f4a09213ece027f69ff3cab152c3ddf7dca081a9994d18d30b"
+    },
+    {
+      "path": "specs/schemas/r1_r4/README.md",
+      "sha256": "ea37d45239451ddb6f00f3aeb99e30470bccb23f3be5f6eedcea1ce0ff13aab6"
+    },
+    {
+      "path": "specs/system/versioning_and_governance.md",
+      "sha256": "2431aad6cb4e4d7fbf0c69c9cf619774b4c5e81eb4399843eeb877896406b772"
+    },
+    {
+      "path": "specs/triz/contradiction_engine.md",
+      "sha256": "c154ae0b143b1a1f938321d24c7646fe2b66f71233dcdf2cc4ed29e73a975534"
+    },
+    {
+      "path": "specs/triz/innovation_metrics.md",
+      "sha256": "e15dba478a9e4d0c8c2c4ab6866f8311c07e6f942b40162c10f6cd97a8d84ce0"
+    },
+    {
+      "path": "spec/README.md",
+      "sha256": "fd67b1d65ea29c85b98e929981aeebea7b74cd5a0156d779c5a4c6d0e4abdc1b"
+    },
+    {
+      "path": "spec/hex_family_bridge.md",
+      "sha256": "974a881f267b4413cf423701642ae600aaa087bd79288e4f98aab746f93aa3f0"
+    },
+    {
+      "path": "spec/hex_microphysics_canon.md",
+      "sha256": "9fe486ae2d51fd7545434c002275ba107d97f5438bf11c5889d034d991481111"
+    },
+    {
+      "path": "spec/hspr_calibration_index.md",
+      "sha256": "40ddb03c6faeb84b9770a12899ce15b0abcefdc8fd093c23daae7f302da571ff"
+    },
+    {
+      "path": "spec/product_signal_layer.md",
+      "sha256": "7fd30c019345712c0ffb34de500ae625c6aef20adb9727e29f7cb99526cfd4f0"
+    },
+    {
+      "path": "spec/prolog_rule_grammar.md",
+      "sha256": "c0b7f999939c8d37ac1542b239d64062c789ce9133e664b80b0faf9da92ba8a2"
+    },
+    {
+      "path": "spec/semantic_field_canon.md",
+      "sha256": "715838a9095ea3617834a3e7f9aa36481e0b4979936de9b14ffaeedf34c9f241"
+    },
+    {
+      "path": "spec/topology_graph_weights.md",
+      "sha256": "c940028fcef85138da1620d481ea878aba2aa5fbd8d1c9da26c888668421b2e8"
+    }
+  ]
+}

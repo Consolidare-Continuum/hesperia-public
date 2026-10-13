@@ -1,0 +1,70 @@
+{
+  "dict_c_analysis": {
+    "dict_c_path": "/data/hesperia/hesperia/assets/calibration/dicts/v0_6_0_clr_v052_4/dict_c.jsonl",
+    "rows": 24000,
+    "language_field_counts": {
+      "en": 24000
+    },
+    "inferred_from_normalized_form_script": {
+      "ru": 21501,
+      "en": 2408,
+      "mixed": 81,
+      "und": 10
+    },
+    "rows_ru_script_but_language_field_en": 21501,
+    "sample_mismatches": [
+      {
+        "entry_id": "C_CAL-75346",
+        "normalized_form": "значительная доля пограничных",
+        "language_field": "en",
+        "inferred_from_script": "ru"
+      },
+      {
+        "entry_id": "C_CAL-75347",
+        "normalized_form": "доля пограничных пациентов",
+        "language_field": "en",
+        "inferred_from_script": "ru"
+      },
+      {
+        "entry_id": "C_CAL-75348",
+        "normalized_form": "или другому диагнозу",
+        "language_field": "en",
+        "inferred_from_script": "ru"
+      },
+      {
+        "entry_id": "C_CAL-75349",
+        "normalized_form": "интерпретация относится к",
+        "language_field": "en",
+        "inferred_from_script": "ru"
+      },
+      {
+        "entry_id": "C_CAL-75350",
+        "normalized_form": "кафедра психиатрии медицинского",
+        "language_field": "en",
+        "inferred_from_script": "ru"
+      },
+      {
+        "entry_id": "C_CAL-75351",
+        "normalized_form": "кафедра психиатрии в",
+        "language_field": "en",
+        "inferred_from_script": "ru"
+      },
+      {
+        "entry_id": "C_CAL-75352",
+        "normalized_form": "исследование бессознательных процессов",
+        "language_field": "en",
+        "inferred_from_script": "ru"
+      },
+      {
+        "entry_id": "C_CAL-75353",
+        "normalized_form": "бессознательных процессов пациента",
+        "language_field": "en",
+        "inferred_from_script": "ru"
+      }
+    ]
+  },
+  "sample_text_file": "tests/fixtures/tfp_calibration/extended_ru_natural_corpus_v1.txt",
+  "sample_text_heuristic_language": "ru",
+  "dict_c_language_field_dominant": "en",
+  "text_vs_dict_c_field_mismatch": true
+}

@@ -1,0 +1,29 @@
+# HESPERIA TRIZ MVP — minimal deploy profile
+services:
+  api:
+    build:
+      context: ../../../..
+      dockerfile: hesperia/extensions/triz/deploy/Dockerfile.api
+    ports:
+      - "8080:8080"
+    environment:
+      - HESPERIA_API_KEY=${HESPERIA_API_KEY:-}
+      - TRIZ_ENABLE_COMPARE=${TRIZ_ENABLE_COMPARE:-true}
+      - TRIZ_ENABLE_EXPORT=${TRIZ_ENABLE_EXPORT:-true}
+      - TRIZ_ENABLE_BENCHMARKS=${TRIZ_ENABLE_BENCHMARKS:-false}
+      - TRIZ_ENABLE_DEMO_MODE=${TRIZ_ENABLE_DEMO_MODE:-false}
+      - TRIZ_DEPLOY_MODE=${TRIZ_DEPLOY_MODE:-dev}
+    volumes:
+      - triz_outputs:/data/outputs
+      - triz_logs:/data/logs
+  worker:
+    image: python:3.11-slim
+    command: ["sleep", "infinity"]
+    volumes:
+      - triz_outputs:/data/outputs
+    environment:
+      - TRIZ_DEPLOY_MODE=${TRIZ_DEPLOY_MODE:-dev}
+
+volumes:
+  triz_outputs:
+  triz_logs:

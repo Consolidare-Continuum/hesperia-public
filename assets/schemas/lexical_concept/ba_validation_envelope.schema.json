@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hesperia.schemas.lexical_concept.ba_validation_envelope.v1_0_0",
+  "title": "B↔A validation envelope (HC-01)",
+  "description": "Per-segment provenance for concept activation after A→B linking; aligns with resolver/DLCR traces. Ref: ETHAN-HESPERIA-CONTROL-LAYER-V1-TASKING.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "concept_id",
+    "segment_id",
+    "support_tokens",
+    "support_types",
+    "raw_support",
+    "anchor_support",
+    "support_ratio",
+    "is_valid",
+    "rejection_reason",
+    "schema_version"
+  ],
+  "properties": {
+    "concept_id": { "type": "string", "pattern": "^B_" },
+    "segment_id": { "type": "string", "pattern": "^seg_" },
+    "support_tokens": { "type": "integer", "minimum": 0 },
+    "support_types": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["exact", "alias", "fuzzy"],
+      "properties": {
+        "exact": { "type": "integer", "minimum": 0 },
+        "alias": { "type": "integer", "minimum": 0 },
+        "fuzzy": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "raw_support": { "type": "number" },
+    "anchor_support": { "type": "number" },
+    "support_ratio": { "type": "number", "minimum": 0, "maximum": 1 },
+    "is_valid": { "type": "boolean" },
+    "rejection_reason": { "type": ["string", "null"] },
+    "schema_version": { "const": "ba_validation_envelope.v1.0.0" }
+  }
+}

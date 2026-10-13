@@ -1,0 +1,22 @@
+# HESPERIA — Central clinical configuration
+# Thresholds, weights, window sizes. Copyright © 2026 igareosh.com.
+
+# Activation thresholds (used by KME / clinical_bridge when calibration not overridden)
+activation_threshold: 0.01
+area_active_threshold: 0.05
+
+# Session segmentation
+window_utterances: 5
+words_per_segment: 500
+
+# Safety: minimum evidence threshold (avoid over-activation / false conclusions)
+minimum_evidence_threshold: 0.02
+min_markers_for_interpretation: 1
+
+# Weights (speaker, optional)
+patient_marker_weight: 1.0
+therapist_marker_weight: 0.5
+
+# N-gram marker range
+ngram_min: 2
+ngram_max: 5

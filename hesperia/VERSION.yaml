@@ -1,0 +1,138 @@
+# Hesperia Engine Dynamics — canonical system version (single source of truth).
+# All public outputs MUST trace to these fields + build_id (injected at runtime).
+# Copyright © 2026 igareosh.com. See LEGAL_NOTICE.md.
+
+system_version: "1.0.0"
+release_stage: "commercial_licence_sealed"
+# First released product under exact commercial licence CC-HES-LIC-1.0 (2026-10-13).
+# Engine lineage remains the 0.7.2 modular train; component pins below keep that lineage.
+engine_lineage: "0.7.2"
+
+commercial_licence:
+  instrument: "CC-HES-LIC-1.0"
+  instrument_path: "docs/iso/CC-HES-LIC-1.0.md"
+  sealed: true
+  sealed_utc: "2026-10-13"
+  product_version: "1.0.0"
+  legal_epoch: "NIS2-2022-2555+Referat-348+L1-L6"
+  legal_epoch_passed: true
+  # NIS2 = post-research discipline only — NOT certification of Hesperia or CC_.
+  nis2_citation: "Directive (EU) 2022/2555"
+  nis2_role: "post_research_discipline"
+  referat: "348"
+  hspr_default_module: true
+  tfp_forever_free: true
+  paid_regulator: "hspr_120_books_matrix_postgres"
+
+components:
+  core_engine: "0.7.2"
+  dynamics: "0.6.3"
+  triz: "0.6.3"
+  clinical: "0.6.3-modular"
+  calibration: "0.7.2"
+  router: "v7-router-0.1"
+  # fpf_bridge was never tracked here despite corners/fpf_bridge.md status "IMPLEMENTED, v7,
+  # 2026-06-27" — added now for the same reason it got committed to git now: not sealed yet,
+  # but real, and not tracking it risked the same "forgotten" outcome as the uncommitted state.
+  fpf_bridge: "v7.2-v7.4"  # sealed with 0.7.0; flag-gated modules remain opt-in
+
+schema:
+  public_output: "v1"
+  internal_graph: "v1"
+
+pipelines:
+  e2e: "e2e_v2"
+  structural: "structural_v1"
+  api: "api_v1"
+  triz: "triz_v1"
+
+# Governed interaction matrices (L_F, C_F, R_F) under assets/matrices/production/
+# Concept→Hex P_CH under assets/matrices/pch/
+matrices:
+  production_bundle: "v1"
+  pch_bundle: "v1"
+
+# Governed calibration profiles: assets/calibration/profiles_{bundle}.json
+calibration:
+  profile_bundle: "v1"
+  active_profile: "default_v1"
+
+defaults:
+  calibration_profile: "default_v1"
+  # Pinned dict pack dir under assets/calibration/dicts/<name>/ (TFP-GATE-A0; validate_version_consistency checks existence).
+  # Must match tfp_module_v1.pinned_calibration_dict_pack below (validator enforces it) -- kept in
+  # lockstep, updated 2026-08-20 to the same v0_6_9 promotion.
+  active_calibration_dict_pack: "v0_6_9"
+
+tfp_module_v1:
+  # NOTE 2026-08-20: this block's YAML key and data_layout value both stay the literal string
+  # "tfp_v1" on purpose -- hesperia/modules/tfp/seal.py does doc.get("tfp_module_v1"), and
+  # tools/validate_version_consistency.py hard-asserts data_layout == "tfp_v1" (TFP-DATA-T17).
+  # Renaming either breaks real code, not just a label. The milestone/version fields below are
+  # the actual "TFP v2, 0.7.0" promotion -- see milestone_note.
+  milestone: "TFP v2"
+  milestone_version: "0.7.0"
+  seal_requested: true
+  pinned_calibration_dict_pack: "v0_6_9"
+  data_layout: "tfp_v1"
+  milestone_note: >
+    2026-08-20: promoted to TFP v2 / 0.7.0 -- the v0_6_9 alignment+taxonomy-cleanup work below
+    is complete, verified, live, and stable across four same-day production cutovers with zero
+    regressions. This is the semantic project milestone; data_layout/the block key stay "tfp_v1"
+    as a structural identifier the validator and seal.py depend on, not a version claim.
+  # 2026-08-19/20: v0_6_9 = old v0_6_0_clr_v052_5 (10155 dict_a entries) + gpt-4o-mini ACB
+  # alignment (983 entries) + gpt-5-mini ACB alignment, confidence>=0.7 only (1853 of 2773 --
+  # the two runs disagreed on 78% of overlapping phrases, correlated cleanly with confidence,
+  # so only the reliable tier got merged) + collapsed the "aspect 2..5" taxonomy over-split
+  # (79 concepts removed, 283->204 remaining -- confirmed via dict_c/links/loose-dict_a
+  # provenance that the only "evidence" for these was either a synthetic self-referential row
+  # or a single word too generic to specifically indicate one sub-concept, not real
+  # distinguishing signal) + collapsed TFP_CLUSTER_005 (a duplicate-labeled lexical-cluster
+  # artifact, same class as the aspect-N case -- 204->203). Concept coverage 134 -> 187 ->
+  # 203/203 -- every concept in the current catalog has real lexical coverage. Live on
+  # hesperia-analyze-tfp (:18881) via systemd override + restart, verified via a real request
+  # after every cutover (four total). Full 11-session regression run before each cutover: 11/11
+  # pass every time, zero regressions across all four changes.
+  #
+  # 2026-08-20: the 8-group duplicate-label item above reviewed (Chiron). 5 groups were
+  # coincidental label collisions between unrelated catalog regions (C-10xx "core" scheme vs
+  # TFP_*; the B_A10_F*_002 "first-word-of-parent" truncation convention) -- renamed 8 concepts
+  # to disambiguate (C-1003/1008/1009 append concept_id, B_A10_F15/16/17/6/7_002 append
+  # family_id), no semantic change. 2 groups (identity_diffusion, splitting_cluster) had real
+  # distinct content on both members -- left alone. dict_b.jsonl also deduped in the same pass:
+  # 61765 rows -> 203 (one row per concept_id; _merge_dict_b already collapsed to first-row-wins
+  # at load time, so this was inert file bloat, not a behavior change). One collapse
+  # (TFP_CLUSTER_007/009/012/013 into 006/004) was attempted, then reverted same session after
+  # live verification (router-inquire face=tfp) surfaced a richer legacy registry
+  # (assets/data/engine_dynamics_v060/dict_b/dict_b_tfp.jsonl) showing these concepts have real
+  # alt_labels/related_concept_ids (parent TFP_DENIAL/TFP_DEVALUATION) that never got promoted
+  # into the live dict_a.jsonl matcher -- not noise. Full pytest suite (~470 tests) run before
+  # and after: identical 21 pre-existing failures both times (baseline drifted 15->21 since
+  # 2026-08-19, unrelated to this change), including test_dlcr_pipeline_v1_gold_digests passing
+  # unchanged. Live :18880/:18881 restarted and reverified via a real router-inquire call after
+  # the fix and again after the revert. Real next candidate, not yet built: promote the legacy
+  # registry's alt_labels for TFP_CLUSTER_004/005/006/007/009/012/013 into dict_a.jsonl, and add
+  # the missing TFP_DENIAL root concept to the sealed pack. Full detail:
+  # docs/recipes/chiron_tweaks/BACKLOG.md, dated section "2026-08-20 -- duplicate-label concept
+  # group review".
+
+# Filled at runtime by hesperia.system.version (never commit secrets here)
+build:
+  timestamp: null
+  git_commit: null
+
+apply:
+  version: "0.7.0"
+  gate_chain: "G1-G9"
+  allowlist:
+    - update_edge_weight
+  phase2_allowlist:
+    - add_edge
+
+archive:
+  github_release: "0.7.1"
+  public_archive_placeholder_dict_pack: "archive_063_minimal"
+  excludes_prod_dicts: true
+  excludes_prod_corpus: true
+  e2e_mode: "offline_fixture"
+  tersagor_integration_ref: "igareosh/tersagor@0149120"

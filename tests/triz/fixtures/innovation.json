@@ -1,0 +1,15 @@
+{
+  "label": "innovation",
+  "active_graph": {
+    "nodes": {"n1": {"hitCount": 3}, "n2": {"hitCount": 3}, "n3": {"hitCount": 3}},
+    "edges": [
+      {"source": "n1", "target": "n2", "type": "relates"},
+      {"source": "n2", "target": "n3", "type": "relates"},
+      {"source": "n1", "target": "n3", "type": "relates"}
+    ]
+  },
+  "topology": {
+    "concept_to_area": {"n1": 0, "n2": 3, "n3": 7},
+    "concept_to_family": {"n1": 0, "n2": 72, "n3": 168}
+  }
+}

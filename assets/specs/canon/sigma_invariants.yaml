@@ -1,0 +1,132 @@
+# Sigma static invariants v1 — structural bounds, shape, mapping integrity.
+# Enforced before deeper execution continues.
+
+version: 1
+invariants:
+  - invariant_id: SIGMA_001
+    name: area_vector_len_12
+    enabled: true
+    severity: critical
+    type: shape
+    target: raw_metrics.area_vector
+    rule: length_equals
+    expected: 12
+
+  - invariant_id: SIGMA_002
+    name: family_counts_len_288
+    enabled: true
+    severity: critical
+    type: shape
+    target: raw_metrics.family_counts
+    rule: length_equals
+    expected: 288
+
+  - invariant_id: SIGMA_003
+    name: adjacency_matrix_12x12
+    enabled: true
+    severity: critical
+    type: shape
+    target: topology.adjacency_matrix
+    rule: matrix_12x12
+    optional_target: true
+
+  - invariant_id: SIGMA_004
+    name: adjacency_symmetric
+    enabled: true
+    severity: critical
+    type: topology
+    target: topology.adjacency_matrix
+    rule: symmetric
+    optional_target: true
+
+  - invariant_id: SIGMA_005
+    name: propagated_area_vector_len_12
+    enabled: true
+    severity: critical
+    type: shape
+    target: propagation_metrics.propagated_area_vector
+    rule: length_equals
+    expected: 12
+
+  - invariant_id: SIGMA_006
+    name: propagated_family_counts_len_288
+    enabled: true
+    severity: critical
+    type: shape
+    target: propagation_metrics.propagated_family_counts
+    rule: length_equals
+    expected: 288
+
+  - invariant_id: SIGMA_007
+    name: transition_matrix_12x12
+    enabled: true
+    severity: critical
+    type: shape
+    target: dynamism_metrics.transition_matrix
+    rule: matrix_12x12
+
+  - invariant_id: SIGMA_008
+    name: family_to_area_mapping_288
+    enabled: true
+    severity: critical
+    type: mapping
+    target: topology.family_to_area
+    rule: length_equals
+    expected: 288
+    optional_target: true
+
+  - invariant_id: SIGMA_009
+    name: area_vector_no_nan
+    enabled: true
+    severity: critical
+    type: value
+    target: raw_metrics.area_vector
+    rule: no_nan
+
+  - invariant_id: SIGMA_010
+    name: family_counts_non_negative
+    enabled: true
+    severity: critical
+    type: value
+    target: raw_metrics.family_counts
+    rule: non_negative
+
+  - invariant_id: SIGMA_011
+    name: coverage_in_01
+    enabled: true
+    severity: critical
+    type: value
+    target: raw_metrics.coverage
+    rule: in_closed_01
+
+  - invariant_id: SIGMA_012
+    name: jump_rate_in_01
+    enabled: true
+    severity: high
+    type: value
+    target: dynamism_metrics.jump_rate
+    rule: scalar_or_object_in_01
+
+  - invariant_id: SIGMA_013
+    name: stability_index_in_01
+    enabled: true
+    severity: high
+    type: value
+    target: dynamism_metrics.stability_index
+    rule: in_closed_01
+
+  - invariant_id: SIGMA_014
+    name: loopability_in_01
+    enabled: true
+    severity: high
+    type: value
+    target: raw_metrics.loopability
+    rule: in_closed_01
+
+  - invariant_id: SIGMA_015
+    name: area_ids_in_0_11
+    enabled: true
+    severity: critical
+    type: value
+    target: raw_metrics.dominant_area
+    rule: area_id_valid

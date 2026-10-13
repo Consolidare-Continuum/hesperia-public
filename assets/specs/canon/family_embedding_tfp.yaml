@@ -1,0 +1,200 @@
+# HESPERIA — Family embedding (two-scale geometry)
+# Copyright © 2026 igareosh.com. See LEGAL_NOTICE.md.
+#
+# Areas are icosahedral vertices; families are local lattices inside each area.
+# 24 families per area: 1 center + 6 inner_ring + 8 middle_ring + 9 outer_ring.
+# Cross-area traversal happens through bridge families only.
+#
+# Pilot: A2, A3, A4, A10. Expand to all 10 operational areas in Step 4.
+# Do not flatten 240 families onto the sphere — family index remains nested under area.
+
+version: 1
+domain: TFP_KERNBERG
+language: ru
+description: |
+  Иерархия: вершина икосаэдра → область → локальное поле семей (24) → концепт/гекс.
+  Глобальный граф областей + локальные решётки семей + мосты между областями.
+
+geometry_model: two_scale
+scale_1: global_icosahedral_graph  # area-to-area
+scale_2: local_family_lattice       # within-area, 24 positions per area
+
+# ---------------------------------------------------------------------------
+# Pilot areas: A2, A3, A4, A10. Local arrangement 1 + 6 + 8 + 9 = 24.
+# Family IDs are local within area (F1..F24). Composite id = area_id + "_F" + local index.
+# ---------------------------------------------------------------------------
+
+A2:  # Объектные отношения (Object Relations)
+  center:
+    - F3   # Диада Я–Объект — core integrative
+  inner_ring:
+    - F1   # Репрезентации Я
+    - F2   # Репрезентации объекта
+    - F4   # Аффективная связь внутри диады
+    - F5   # Диффузия идентичности (bridge)
+    - F6   # Консолидация идентичности
+    - F7   # Постоянство объекта
+  middle_ring:
+    - F8   # Интеграция хороших и плохих объектов
+    - F9
+    - F10
+    - F11
+    - F12
+    - F13
+    - F14
+    - F15
+  outer_ring:
+    - F16
+    - F17
+    - F18
+    - F19
+    - F20
+    - F21
+    - F22
+    - F23
+    - F24
+
+A3:  # Защитные операции (Defensive Operations)
+  center:
+    - F1   # Расщепление — structurally central primitive defense (Kernberg)
+  inner_ring:
+    - F2   # splitting of object
+    - F3   # idealization/devaluation switching
+    - F5   # projection
+    - F6   # projective identification (bridge)
+    - F11  # denial
+    - F14  # repression
+  middle_ring:
+    - F9
+    - F10
+    - F12
+    - F13
+    - F15
+    - F16
+    - F17
+    - F18
+  outer_ring:
+    - F4
+    - F7
+    - F8
+    - F19
+    - F20
+    - F21
+    - F22
+    - F23
+    - F24
+
+A4:  # Агрессия (Aggression)
+  center:
+    - F3   # Core aggression / rage expression
+  inner_ring:
+    - F1
+    - F2
+    - F4
+    - F5
+    - F6
+    - F7
+  middle_ring:
+    - F8
+    - F9
+    - F10
+    - F11
+    - F12
+    - F13
+    - F14
+    - F15
+  outer_ring:
+    - F16
+    - F17
+    - F18
+    - F19
+    - F20
+    - F21
+    - F22
+    - F23
+    - F24
+
+A10: # Процесс лечения (Treatment Process)
+  center:
+    - F3   # Therapeutic process core / contract
+  inner_ring:
+    - F1
+    - F2
+    - F4
+    - F5
+    - F6
+    - F7
+  middle_ring:
+    - F8
+    - F9
+    - F10
+    - F11
+    - F12
+    - F13
+    - F14
+    - F15
+  outer_ring:
+    - F16
+    - F17
+    - F18
+    - F19
+    - F20
+    - F21
+    - F22
+    - F23
+    - F24
+
+# ---------------------------------------------------------------------------
+# Cross-area bridges. Traversal between areas occurs through these families only.
+# Format: from/to = composite id area_id + "_F" + local family index (e.g. A2_F14).
+# ---------------------------------------------------------------------------
+bridges:
+  # A2 ↔ A3 (object relations ↔ defenses)
+  - from: A2_F5
+    to: A3_F1
+    type: activates
+  - from: A2_F5
+    to: A3_F6
+    type: co_occurs_with
+  - from: A3_F1
+    to: A2_F5
+    type: activates
+  - from: A3_F6
+    to: A2_F3
+    type: activates
+  # A3 ↔ A4 (defenses ↔ aggression)
+  - from: A3_F4
+    to: A4_F1
+    type: co_occurs_with
+  - from: A3_F6
+    to: A4_F1
+    type: activates
+  - from: A2_F3
+    to: A4_F3
+    type: activates
+  # A4 ↔ A10 (aggression ↔ treatment process)
+  - from: A4_F1
+    to: A10_F4
+    type: observed_in
+  - from: A4_F5
+    to: A10_F4
+    type: activates
+  - from: A10_F4
+    to: A4_F1
+    type: defends_against
+  # A2 ↔ A10
+  - from: A2_F5
+    to: A10_F5
+    type: observed_in
+  - from: A10_F6
+    to: A2_F6
+    type: activates
+
+# ---------------------------------------------------------------------------
+# Zone semantics (for propagation and interpretation)
+# ---------------------------------------------------------------------------
+zones:
+  center:    "Core structural; most load-bearing."
+  inner_ring: "Structural families; medium neighborhood."
+  middle_ring: "Relational extensions; derived organizations."
+  outer_ring: "Peripheral; specialized or phenomenological."

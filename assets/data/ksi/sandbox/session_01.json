@@ -1,0 +1,13 @@
+{
+  "session_id": "sandbox_gold_01",
+  "version": "0.1",
+  "concept_activations": {
+    "concept_altruism_001": 0.82,
+    "concept_care_002": 0.65,
+    "concept_boundary_003": 0.12
+  },
+  "incoming_edges": [
+    {"from": "concept_care_002", "to": "concept_altruism_001", "relation_type": "activates", "w_e": 0.7}
+  ],
+  "labels": {"concept_altruism_001": "Altruism", "concept_care_002": "Care", "concept_boundary_003": "Boundary"}
+}

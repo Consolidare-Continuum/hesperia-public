@@ -1,0 +1,283 @@
+{% extends "base.html" %}
+{% block title %}Session Inspector{% endblock %}
+{% block content %}
+<div class="wrap inspector-page">
+  <header class="insp-top">
+    <h1>Session Inspector</h1>
+    <p class="insp-disclaimer muted">{{ disclaimer }}</p>
+  </header>
+
+  <section class="insp-meta-bar" aria-label="Run header">
+    <dl class="insp-meta">
+      <div><dt>Run (UTC)</dt><dd>{{ meta.run_timestamp_utc|default:"—" }}</dd></div>
+      <div><dt>Source file</dt><dd>{{ meta.source_file|default:meta.source_label|default:"—" }}</dd></div>
+      <div><dt>Modules</dt><dd>{% if meta.modules_executed %}{{ meta.modules_executed|join:", " }}{% else %}—{% endif %}</dd></div>
+    </dl>
+  </section>
+
+  <section class="insp-toolbar" aria-label="Iteration selector">
+    <form class="insp-iter-form" method="get" action="">
+      <label class="insp-label" for="iteration">Iteration</label>
+      <select name="iteration" id="iteration" class="insp-select" autocomplete="off" onchange="this.form.submit()">
+        {% for opt in iterations %}
+        <option value="{{ opt.order }}" {% if opt.order == current_order %}selected{% endif %}>Iteration {{ opt.order }} — {{ opt.label }}</option>
+        {% endfor %}
+      </select>
+    </form>
+    <p class="insp-deeplink muted">Deep link: <code>?iteration={{ current_order }}&amp;sentence={{ active_sentence_id }}</code></p>
+    <p class="insp-matrix-nav"><a class="btn btn-secondary" href="/hex-matrix/?session={{ session_id }}&amp;tier=T2">Timeline matrix →</a></p>
+  </section>
+
+  {% if export_segment %}
+  <section class="insp-export" aria-label="OpenAI segment export">
+    <h2 class="insp-export-title">OpenAI segment</h2>
+    <p class="muted insp-export-hint">Full <code>iteration_segment_openai_v1</code> including <code>messages</code> for Chat Completions.</p>
+    <dialog id="pii-export-dialog" class="pii-dialog" aria-labelledby="pii-dlg-title">
+      <h2 id="pii-dlg-title" class="pii-dlg-heading">Before you export</h2>
+      <p class="pii-dlg-body">Source labels, file names, and client text in this bundle <strong>may contain identifiers or sensitive content</strong>. Only copy or download if your workflow and agreements allow sharing this data outside your controlled environment.</p>
+      <p class="muted small">Interpretive use of exports may implicate license and policy — see Hesperia <code>LEGAL_NOTICE.md</code> and <code>docs/output_views/LICENSE-EXPORT-NOTE.md</code>.</p>
+      <label class="pii-remember"><input type="checkbox" id="pii-remember-session" /> Don’t show this again for this browser session</label>
+      <div class="dlg-actions">
+        <button type="button" class="btn btn-secondary" id="pii-cancel">Cancel</button>
+        <button type="button" class="btn" id="pii-continue">Continue export</button>
+      </div>
+    </dialog>
+    <div class="insp-export-actions">
+      <button type="button" class="btn" id="btn-copy-segment">Copy OpenAI segment (JSON)</button>
+      <a class="btn btn-link" id="btn-download-segment" href="{% url 'inspector_export_segment' session_id %}?iteration={{ current_order }}" download="segment.json" data-export-url="{% url 'inspector_export_segment' session_id %}?iteration={{ current_order }}">Download segment.json</a>
+    </div>
+    {% if openai_proxy_enabled %}
+    <form class="insp-proxy-form" method="post" action="{% url 'inspector_openai_proxy' session_id %}">
+      {% csrf_token %}
+      <input type="hidden" name="iteration" value="{{ current_order }}" />
+      <button type="submit" class="btn btn-secondary">Send via server proxy (feature flag)</button>
+    </form>
+    <p class="muted small">Proxy is off by default; set <code>HESPERIA_OUTPUT_VIEWS_OPENAI_PROXY=1</code> and <code>OPENAI_API_KEY</code>. Rate-limited per IP.</p>
+    {% endif %}
+    {{ export_segment|json_script:"segment-export-data" }}
+  </section>
+  {% endif %}
+
+  <section class="insp-strip" aria-label="Areas and families">
+    <div class="insp-strip-block">
+      <strong>Areas</strong>
+      {% for k,v in areas.items %}
+      <span class="chip" title="{{ k }}">{{ k }} <span class="chip-val">{{ v }}</span></span>
+      {% empty %}<span class="muted">—</span>{% endfor %}
+    </div>
+    <div class="insp-strip-block">
+      <strong>Families</strong>
+      {% for k,v in families.items %}
+      <span class="chip" title="{{ k }}">{{ k }} <span class="chip-val">{{ v }}</span></span>
+      {% empty %}<span class="muted">—</span>{% endfor %}
+    </div>
+    <div class="insp-strip-block">
+      <strong>Relations</strong>
+      {% if relations_summary %}
+        <ul class="insp-relations-list">
+          {% for line in relations_summary %}<li>{{ line }}</li>{% endfor %}
+        </ul>
+      {% else %}
+        <span class="muted">No area/family scalars in this iteration.</span>
+      {% endif %}
+    </div>
+  </section>
+
+  <div class="insp-grid">
+    <section class="pane pane-a" aria-label="Sourced text" role="region">
+      <h2 class="pane-title">Pane A — Sourced text</h2>
+      <div class="pane-body">
+        {% for s in sentences %}
+        <p class="sent-line{% if s.id == active_sentence_id %} is-active{% endif %}">
+          <a class="sent-link" href="?iteration={{ current_order }}&amp;sentence={{ s.id|urlencode }}"><span data-sid="{{ s.id }}">{{ s.text }}</span></a>
+        </p>
+        {% empty %}
+        <p class="muted">No sentences.</p>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="pane pane-b" aria-label="Parameters" role="region">
+      <h2 class="pane-title">Pane B — Parameters</h2>
+      <div class="pane-body">
+        <details class="param-details" open>
+          <summary>Core vectors</summary>
+          <dl class="kv">
+            <dt>areas</dt><dd>{% if areas %}{{ areas|length }} keys{% else %}—{% endif %}</dd>
+            <dt>families</dt><dd>{% if families %}{{ families|length }} keys{% else %}—{% endif %}</dd>
+            <dt>metrics</dt><dd>{% if metrics %}{{ metrics|length }} keys{% else %}—{% endif %}</dd>
+          </dl>
+        </details>
+        <details class="param-details" open>
+          <summary>TFP profile (grain / pack / dict_mode / structure)</summary>
+          <dl class="kv">
+            <dt>grain</dt><dd>{{ tfp_grain|default:"—" }}</dd>
+            <dt>pack</dt><dd>{{ tfp_pack|default:"—" }}</dd>
+            <dt>dict_mode</dt><dd>{{ tfp_dict_mode|default:"—" }}</dd>
+            <dt>structure</dt><dd><code class="mono">{{ tfp_structure|default:"—" }}</code></dd>
+          </dl>
+        </details>
+        {% if modules_json %}
+        <details class="param-details" open>
+          <summary>TFP module</summary>
+          <pre class="mono-block" aria-label="modules JSON">{{ modules_json }}</pre>
+        </details>
+        {% endif %}
+        <details class="param-details">
+          <summary>Full parameters JSON</summary>
+          <pre class="mono-block" aria-label="parameters JSON">{{ parameters_json }}</pre>
+        </details>
+      </div>
+    </section>
+
+    <section class="pane pane-c" aria-label="Audit" role="region">
+      <h2 class="pane-title">Pane C — Audit</h2>
+      <div class="pane-body">
+        {% if has_sentence_audit %}
+          <p class="muted">Sentence-scoped audit present (bundle-defined).</p>
+        {% endif %}
+        {% if audit_iteration_json %}
+          <details class="param-details" open>
+            <summary>Iteration audit</summary>
+            <pre class="mono-block" aria-label="audit iteration JSON">{{ audit_iteration_json }}</pre>
+          </details>
+        {% endif %}
+        {% if audit_planes_json %}
+          <details class="param-details" open>
+            <summary>Pipeline planes (structural / sealed / analyze)</summary>
+            <pre class="mono-block" aria-label="audit planes JSON">{{ audit_planes_json }}</pre>
+          </details>
+        {% endif %}
+        {% if not has_audit_planes_or_iteration and not has_sentence_audit %}
+          <p class="muted">Engine did not supply <code>audit.planes</code> or iteration audit for this bundle. If you expect traces, regenerate from a full <code>run_tfp_file_pipeline</code> output.</p>
+        {% elif not has_sentence_audit and has_audit_planes_or_iteration %}
+          <p class="muted small">No per-sentence audit rows; iteration/plane summaries above are from the pipeline bundle.</p>
+        {% endif %}
+      </div>
+    </section>
+  </div>
+
+  {% if pane2 %}
+  <section class="pane pane-d insp-pane2" aria-label="Apply gate state" role="region">
+    <h2 class="pane-title">Pane 2 — Apply gates (0.7.0)</h2>
+    <div class="pane-body">
+      <p class="pane2-phase"><strong>Phase:</strong> <code>{{ pane2.phase }}</code> · <strong>Status:</strong> {{ pane2.status|default:"—" }}</p>
+      <ol class="pane2-timeline" aria-label="Gate state machine">
+        {% for step in pane2.timeline %}
+        <li class="pane2-step pane2-step--{{ step.status }}">{{ step.name }}</li>
+        {% endfor %}
+      </ol>
+      <dl class="kv pane2-kv">
+        <dt>Proposal</dt><dd>{{ pane2.proposal_id }}</dd>
+        <dt>Action</dt><dd>{{ pane2.action }}</dd>
+        <dt>Parent SHA</dt><dd class="mono">{{ pane2.parent_sha }}</dd>
+        {% if pane2.approval_id %}<dt>Approval</dt><dd class="mono">{{ pane2.approval_id }}</dd>{% endif %}
+        {% if pane2.sandbox_id %}<dt>Sandbox</dt><dd class="mono">{{ pane2.sandbox_id }}</dd>{% endif %}
+        {% if pane2.canonical_hash %}<dt>Canonical hash</dt><dd class="mono">{{ pane2.canonical_hash }}</dd>{% endif %}
+      </dl>
+      {% if pane2.diff_hunks %}
+      <details class="param-details" open>
+        <summary>Diff (deterministic hunks)</summary>
+        <pre class="mono-block" aria-label="apply diff">{{ pane2.diff_json }}</pre>
+      </details>
+      {% endif %}
+      {% if pane2.scores %}
+      <details class="param-details" open>
+        <summary>Scores (no LLM prose)</summary>
+        <pre class="mono-block" aria-label="scores">{{ pane2.scores_json }}</pre>
+      </details>
+      {% endif %}
+      {% if pane2.evidence_ids %}
+      <p class="pane2-evidence"><strong>Evidence IDs:</strong> {% for eid in pane2.evidence_ids %}<code>{{ eid }}</code>{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+      {% endif %}
+      {% if pane2.rollback_artifact %}
+      <p class="pane2-rollback"><strong>Rollback artifact:</strong> <code class="mono">{{ pane2.rollback_artifact }}</code></p>
+      {% endif %}
+      {% if pane2.error %}<p class="pane2-error muted">Rejected: {{ pane2.error }}</p>{% endif %}
+    </div>
+  </section>
+  {% endif %}
+</div>
+{% endblock %}
+{% block extra_js %}
+{% if export_segment %}
+<script>
+(function () {
+  var STORAGE_KEY = "hesperia_pii_export_ok";
+  var btn = document.getElementById("btn-copy-segment");
+  var el = document.getElementById("segment-export-data");
+  var dlg = document.getElementById("pii-export-dialog");
+  var dl = document.getElementById("btn-download-segment");
+  if (!dlg) return;
+
+  function piiAcked() {
+    try {
+      return sessionStorage.getItem(STORAGE_KEY) === "1";
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function rememberIfChecked() {
+    var cb = document.getElementById("pii-remember-session");
+    if (cb && cb.checked) {
+      try { sessionStorage.setItem(STORAGE_KEY, "1"); } catch (e) {}
+    }
+  }
+
+  function closeDlg() {
+    if (dlg.open) dlg.close();
+  }
+
+  var pending = null;
+
+  function runCopy() {
+    if (!btn || !el) return;
+    var text = el.textContent || "";
+    navigator.clipboard.writeText(text).then(function () {
+      btn.textContent = "Copied";
+      setTimeout(function () { btn.textContent = "Copy OpenAI segment (JSON)"; }, 2000);
+    }).catch(function () {
+      btn.textContent = "Copy failed";
+    });
+  }
+
+  function runDownload() {
+    if (!dl) return;
+    var url = dl.getAttribute("data-export-url") || dl.getAttribute("href");
+    if (url) window.location.href = url;
+  }
+
+  function withPiiGate(action) {
+    if (piiAcked()) {
+      if (action === "copy") runCopy();
+      else if (action === "download") runDownload();
+      return;
+    }
+    pending = action;
+    dlg.showModal();
+  }
+
+  document.getElementById("pii-cancel").addEventListener("click", function () {
+    pending = null;
+    closeDlg();
+  });
+  document.getElementById("pii-continue").addEventListener("click", function () {
+    rememberIfChecked();
+    var a = pending;
+    pending = null;
+    closeDlg();
+    if (a === "copy") runCopy();
+    else if (a === "download") runDownload();
+  });
+
+  if (btn) btn.addEventListener("click", function () { withPiiGate("copy"); });
+  if (dl) dl.addEventListener("click", function (ev) {
+    if (piiAcked()) return;
+    ev.preventDefault();
+    withPiiGate("download");
+  });
+})();
+</script>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,12 @@
+{
+  "system_version": "0.6.0",
+  "bundle_kind": "docker_shipping_bundle",
+  "generated_utc": "2026-05-28T12:06:35.190291+00:00",
+  "image_tag": "hesperia-api:0.6.0",
+  "dockerfile": "Dockerfile.shipping",
+  "requirements_file": "requirements/shipping.txt",
+  "tarball": "hesperia-api-v0.6.0.tar",
+  "tar_sha256": "a75ec5dcc65c44f9d5b50aa292a46569c371088efdaa85b537d17dbca08208da",
+  "verification_file": "docker_bundle_verification.json",
+  "note_file": "DOCKER_BUNDLE.md"
+}

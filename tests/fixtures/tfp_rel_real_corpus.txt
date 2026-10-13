@@ -1,0 +1,18 @@
+# TFP-TIGHT-01: deterministic corpus from real dict_a normalized_form (sorted, stable).
+# One garbage line keeps unmapped > 0; cap HESPERIA_REL_REAL_UNMAPPED_RATE_MAX default 0.65 (phase 2).
+# Phase 3 prod target <0.4 — see docs/governance/TFP_UNMAPPED_RATE_PHASES.md.
+1964 я подчеркивал что проективная
+1988 о том что идеализация
+borderline personality disorder
+narcissistic personality
+narcissistic personality disorder
+абсолютно плохих интернализованных объектных
+абсолютно плохих интернализованных объектных отношений
+абсолютно плохих объектных отношений
+абсолютно хорошие и абсолютно
+абсолютно хорошие и абсолютно плохие
+абсолютно хороших и абсолютно
+абсолютно хороших и абсолютно плохих
+агрессивное отношение в переносе
+агрессивное поведение по отношению
+xxxxunknownword123 zzz

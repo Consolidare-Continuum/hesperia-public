@@ -1,0 +1,5 @@
+{
+  "live_face_core": false,
+  "reason": "OPENAI_API_KEY absent; operator mandated without openai key",
+  "d_weight_live": false
+}

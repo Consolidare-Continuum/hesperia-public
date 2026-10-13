@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hesperia.schemas.lexical_concept.resolver_output.v0_6_0",
+  "title": "Resolver Output Span",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "source_text_span",
+    "source_char_start",
+    "source_char_end",
+    "normalized_span",
+    "candidate_concepts",
+    "candidate_scores",
+    "winning_concept_id",
+    "winning_reason_codes",
+    "rejected_reason_codes",
+    "rule_trace",
+    "mode",
+    "version"
+  ],
+  "properties": {
+    "source_text_span": {
+      "type": "string"
+    },
+    "source_char_start": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "source_char_end": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "normalized_span": {
+      "type": "string"
+    },
+    "lexical_entry_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "candidate_concepts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "candidate_scores": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number"
+      }
+    },
+    "winning_concept_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "winning_reason_codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rejected_reason_codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rule_trace": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "candidates_detail": {
+          "type": "array"
+        },
+        "tie_break_rule": {
+          "type": "string"
+        }
+      }
+    },
+    "unresolved_reason": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  }
+}
+

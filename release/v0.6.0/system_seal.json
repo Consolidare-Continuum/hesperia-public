@@ -1,0 +1,33 @@
+{
+  "calibration_profile": "default_v1",
+  "checks": {
+    "calibration": true,
+    "concept": true,
+    "energy": true,
+    "matrices": true,
+    "pch": true,
+    "product_truth": true,
+    "topology": true,
+    "validation": true,
+    "dependency_guard": true,
+    "shipping_path": true
+  },
+  "hex_topology_sha256": "bc1e96fcb8d63ac585edcf0951a581b0954dbdb03b4c431bcd81e60197f9818b",
+  "matrix_bundle": "v1",
+  "notes": {
+    "calibration": "profile 'default_v1' matches on-disk bundle",
+    "concept": "explicit A_concept path active",
+    "energy": "strict-mode energy trace monotone",
+    "matrices": "production matrices bundle='v1'",
+    "pch": "P_CH nnz=72000 active non-uniform",
+    "product_truth": "sample analyze output passes schema_guard + envelope",
+    "topology": "sha256=bc1e96fcb8d63ac5..",
+    "validation": "tests/physics_validation passed",
+    "dependency_guard": "required tensors enforced (ValueError as expected)",
+    "shipping_path": "canonical shipping modules do not invoke legacy pipeline entrypoints"
+  },
+  "pch_bundle": "v1",
+  "status": "PASS",
+  "timestamp_utc": "2026-05-28T11:42:49.162548+00:00",
+  "version": "0.6.0"
+}

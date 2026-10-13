@@ -1,0 +1,23 @@
+{
+  "version": "1",
+  "description": "Optional ten-area module ontology map (macro_domain_0…9). Default core grain is 12 areas (GOOD…DECEIT). Active when HESPERIA_AREA_MATH_GRAIN=10 (or legacy HESPERIA_TEN_AREA_MODULE=1) — not default core identity.",
+  "default_core_areas": 12,
+  "classifier_env": "HESPERIA_AREA_MATH_GRAIN",
+  "ten_area_module_area_count": 10,
+  "public_macro_domain_count": 10,
+  "public_policy_family_count": 240,
+  "macro_domain_ids": ["macro_domain_0", "macro_domain_1", "macro_domain_2", "macro_domain_3", "macro_domain_4", "macro_domain_5", "macro_domain_6", "macro_domain_7", "macro_domain_8", "macro_domain_9"],
+  "policy_family_id_prefix": "policy_family_",
+  "policy_family_index_range": { "start": 0, "end_exclusive": 240 },
+  "key_mapping": {
+    "area_vector": "macro_domain_vector",
+    "family_counts": "policy_family_counts",
+    "dominant_area": "dominant_macro_domain",
+    "dominant_family": "dominant_policy_family",
+    "propagated_area_vector": "propagated_macro_domain_vector",
+    "propagated_family_counts": "propagated_policy_family_counts",
+    "corrected_area_vector": "corrected_macro_domain_vector",
+    "corrected_family_counts": "corrected_policy_family_counts"
+  },
+  "forbidden_in_public": ["side_id", "hex", "hexagon", "sphere", "topology", "area_sequence", "family_sequence", "area_id", "family_id", "reserved", "internal_index"]
+}

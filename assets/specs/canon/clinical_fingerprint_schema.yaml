@@ -1,0 +1,40 @@
+# Stable KME fingerprint format (version compatibility)
+# Copyright © 2026 igareosh.com. See LEGAL_NOTICE.md.
+#
+# Fixes dimensions and hash so versions remain comparable.
+
+version: 1
+description: |
+  Формат отпечатка KME для клинического пайплайна.
+  Изменение размерностей ломает совместимость distance / trajectory.
+
+# ---------------------------------------------------------------------------
+# Dimensions
+# ---------------------------------------------------------------------------
+primitive_metrics: 6
+derived_metrics: 35
+fingerprint_vector: 41   # primitives + derived
+
+# Primitive order (canonical)
+primitive_order:
+  - LD
+  - COH
+  - NC
+  - PR
+  - PV
+  - CI
+
+# Derived: 35 metrics in canonical order (see hesperia.engine.kme.fingerprint.builder DERIVED_ORDER)
+# fingerprint_vector = primitive_order + derived_order
+
+# ---------------------------------------------------------------------------
+# Hash
+# ---------------------------------------------------------------------------
+vector_hash: sha256   # of canonical serialized vector
+
+# ---------------------------------------------------------------------------
+# Metadata fields in fingerprint object
+# ---------------------------------------------------------------------------
+fingerprint_version: hesperia_fp_v0_1
+domain_release: ""
+source_id: ""

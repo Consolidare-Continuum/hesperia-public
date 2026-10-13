@@ -1,0 +1,18 @@
+{
+  "schema_version": "hex_family_weights_v1",
+  "default_mode": "singleton_primary_family",
+  "hexes_per_family": 250,
+  "families_total": 288,
+  "description": "Default: each hex cell maps with unit mass to its owning family. Optional soft membership via exemplar_overrides.",
+  "hex_id_format": "A{area_1based}_F{family_in_area_1based}_H{hex_in_family_1based}",
+  "exemplar_overrides": [
+    {
+      "hex_id": "A3_F12_H05",
+      "comment": "Bridge split across adjacent families (global indices 59 and 60 for area 3, F12→fam index 11 in area)",
+      "family_weights": {
+        "59": 0.7,
+        "60": 0.3
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+HESPERIA 1.0.0 — PUBLIC SOURCE DISCLOSURE
+Licensed under CC-HES-LIC-1.0 (Hesperia Commercial Module Licence 1.0)
+
+Copyright (c) 2026 Societatea cu Răspundere Limitată „CONSOLIDARE CONTINUUM”
+(„CONSOLIDARE CONTINUUM” S.R.L.), IDNO 1026023120076, Republic of Moldova.
+All rights reserved.
+
+This repository is published source-visible. It is NOT open source and is NOT
+offered under MIT, Apache, GPL or any other OSI-approved licence.
+
+Governing instrument: docs/iso/CC-HES-LIC-1.0.md (sealed 2026-10-13 for
+Hesperia 1.0.0). Commercial terms, SKUs and module entitlement are defined
+there exclusively:
+- hesperia.modules.default and HSPR: licenced (Class A) under CC-HES-LIC-1.0.
+- hesperia.modules.tfp: forever free (Class B) as stated in CC-HES-LIC-1.0 §2.
+- Paid modules: unlock only through CC-HES-LIC-1.0 entitlement.
+
+Public visibility of this repository grants no rights beyond the following,
+absent a separate written agreement with CONSOLIDARE CONTINUUM S.R.L.:
+
+Permitted, absent such written agreement:
+- academic inspection and study
+- internal technical evaluation of the repository
+- review of architectural concepts and system design
+
+Not permitted, absent such written agreement:
+- reproduction of the architecture in whole or in part
+- creation of derivative architectures or systems based on this design
+- commercial or production use of the architecture or its structural concepts
+- redistribution or republication of the architecture documentation
+- implementation of systems derived from or substantially based on this design
+
+THERE IS NO IMPLIED LICENSE BEYOND THE PERMITTED USES ABOVE. THE SOFTWARE IS
+PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+
+Third-party works: the syzif reference corpus is not included in this
+repository; only its bibliography is published
+(hesperia/modules/default/corpus/SYZIF-BIBLIOGRAPHY.md). Works listed there
+remain the property of their respective rights holders.
+
+Contact: consolidare_continuum@proton.me

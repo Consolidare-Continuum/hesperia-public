@@ -1,0 +1,59 @@
+# HESPERIA Dict-A — фразовые паттерны переноса (TFP)
+# regex-паттерны по тексту; weight 1.5 — ключевой слой для object relations / splitting
+# Copyright © 2026 igareosh.com. See LEGAL_NOTICE.md.
+
+- pattern: "ты .* ненавид"
+  concept_id: B_A2_F3_002
+  weight: 1.5
+
+- pattern: "вы .* ненавид"
+  concept_id: B_A2_F3_002
+  weight: 1.5
+
+- pattern: "вам .* все равно"
+  concept_id: B_A2_F5_003
+  weight: 1.4
+
+- pattern: "вам .* пофиг"
+  concept_id: B_A2_F5_003
+  weight: 1.4
+
+- pattern: "вы меня не понимаете"
+  concept_id: B_A2_F5_002
+  weight: 1.5
+
+- pattern: "вы специально"
+  concept_id: B_A2_F3_002
+  weight: 1.5
+
+- pattern: "ты меня ненавидишь"
+  concept_id: B_A2_F3_002
+  weight: 1.5
+
+- pattern: "вы меня ненавидите"
+  concept_id: B_A2_F3_002
+  weight: 1.5
+
+- pattern: "меня .* ненавид"
+  concept_id: B_A2_F3_002
+  weight: 1.4
+
+- pattern: "просто ненавид"
+  concept_id: B_A2_F3_002
+  weight: 1.4
+
+- pattern: "обесценива"
+  concept_id: B_A3_F2_001
+  weight: 1.5
+
+- pattern: "идеализир"
+  concept_id: B_A3_F1_001
+  weight: 1.5
+
+- pattern: "расщепл"
+  concept_id: B_A3_F1_002
+  weight: 1.5
+
+- pattern: "проективн"
+  concept_id: B_A3_F5_001
+  weight: 1.5

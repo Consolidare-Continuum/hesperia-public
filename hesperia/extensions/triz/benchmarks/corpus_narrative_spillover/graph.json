@@ -1,0 +1,19 @@
+{
+  "active_graph": {
+    "nodes": {
+      "security_n": {"hitCount": 6},
+      "migration_n": {"hitCount": 5},
+      "labor_n": {"hitCount": 5},
+      "fiscal_n": {"hitCount": 4}
+    },
+    "edges": [
+      {"source": "security_n", "target": "migration_n", "type": "relates"},
+      {"source": "migration_n", "target": "labor_n", "type": "relates"},
+      {"source": "labor_n", "target": "fiscal_n", "type": "relates"}
+    ]
+  },
+  "topology": {
+    "concept_to_area": {"security_n": 0, "migration_n": 1, "labor_n": 3, "fiscal_n": 4},
+    "concept_to_family": {"security_n": 0, "migration_n": 25, "labor_n": 75, "fiscal_n": 100}
+  }
+}

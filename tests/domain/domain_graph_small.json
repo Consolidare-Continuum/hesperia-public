@@ -1,0 +1,16 @@
+{
+  "nodes": [
+    {"conceptId": "a"},
+    {"conceptId": "b"},
+    {"conceptId": "c"},
+    {"conceptId": "d"},
+    {"conceptId": "e"}
+  ],
+  "edges": [
+    {"sourceConceptId": "a", "targetConceptId": "b", "relationType": "rel"},
+    {"sourceConceptId": "b", "targetConceptId": "c", "relationType": "rel"},
+    {"sourceConceptId": "c", "targetConceptId": "d", "relationType": "rel"},
+    {"sourceConceptId": "d", "targetConceptId": "e", "relationType": "rel"},
+    {"sourceConceptId": "a", "targetConceptId": "c", "relationType": "rel"}
+  ]
+}

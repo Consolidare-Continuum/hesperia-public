@@ -1,0 +1,18 @@
+{
+  "version": "1",
+  "description": "Hex placement slots and side_id ranges for ten-area pack exclusion (grain=10). Under default grain 12, reserve_loader.is_reserved_* returns false — CREATION/DECEIT are first-class.",
+  "reserved_area_internal_indices": [10, 11],
+  "applies_when": "HESPERIA_AREA_MATH_GRAIN=10",
+  "reserved_family_global_indices_range": { "start": 240, "end_inclusive": 287 },
+  "hexes_per_family": 250,
+  "sides_per_hex": 6,
+  "reserved_side_id_range": { "start_inclusive": 360000, "end_inclusive": 431999 },
+  "total_reserved_hexes": 12000,
+  "total_reserved_sides": 72000,
+  "rules": {
+    "coordinates_preserved": "Structural indices (area, family_local, hex_local, side_local) remain defined for reserved region.",
+    "values_nulled_or_sealed": "No runtime population; no semantic values; slots exist but are inert.",
+    "inaccessible_runtime_population": true,
+    "inaccessible_public_output": true
+  }
+}

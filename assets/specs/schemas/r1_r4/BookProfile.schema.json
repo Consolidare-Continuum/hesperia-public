@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hesperia.local/schema/BookProfile.schema.json",
+  "title": "HESPERIA Book Profile (R1–R4 composite)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "book_id",
+    "level_averages",
+    "scale_deltas",
+    "turning_points",
+    "structural_signature"
+  ],
+  "properties": {
+    "book_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "level_averages": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["R1", "R2", "R3", "R4"],
+      "properties": {
+        "R1": { "$ref": "#/$defs/level_summary" },
+        "R2": { "$ref": "#/$defs/level_summary" },
+        "R3": { "$ref": "#/$defs/level_summary" },
+        "R4": { "$ref": "#/$defs/level_summary" }
+      }
+    },
+    "scale_deltas": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["R1_to_R2", "R2_to_R3", "R3_to_R4"],
+      "properties": {
+        "R1_to_R2": { "$ref": "#/$defs/delta_summary" },
+        "R2_to_R3": { "$ref": "#/$defs/delta_summary" },
+        "R3_to_R4": { "$ref": "#/$defs/delta_summary" }
+      }
+    },
+    "turning_points": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/turning_point" }
+    },
+    "structural_signature": {
+      "$ref": "#/$defs/structural_signature"
+    }
+  },
+  "$defs": {
+    "level_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "token_count_total",
+        "SI_means",
+        "SI_variances",
+        "SCI"
+      ],
+      "properties": {
+        "token_count_total": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "SI_means": { "$ref": "#/$defs/si_means" },
+        "SI_variances": { "$ref": "#/$defs/si_variances" },
+        "SCI": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      }
+    },
+    "si_means": {
+      "description": "Weighted mean of SI_metrics at this level; each in [0,1]",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "coverage",
+        "dominance",
+        "entropy",
+        "leakage",
+        "contradiction_pressure",
+        "stability",
+        "shadow_deviation"
+      ],
+      "properties": {
+        "coverage": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "dominance": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "entropy": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "leakage": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "contradiction_pressure": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "stability": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "shadow_deviation": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+      }
+    },
+    "si_variances": {
+      "description": "Weighted variance of SI_metrics at this level; each in [0,0.25] (safe cap; variance of [0,1] r.v. ≤ 0.25)",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "coverage",
+        "dominance",
+        "entropy",
+        "leakage",
+        "contradiction_pressure",
+        "stability",
+        "shadow_deviation"
+      ],
+      "properties": {
+        "coverage": { "type": "number", "minimum": 0.0, "maximum": 0.25 },
+        "dominance": { "type": "number", "minimum": 0.0, "maximum": 0.25 },
+        "entropy": { "type": "number", "minimum": 0.0, "maximum": 0.25 },
+        "leakage": { "type": "number", "minimum": 0.0, "maximum": 0.25 },
+        "contradiction_pressure": { "type": "number", "minimum": 0.0, "maximum": 0.25 },
+        "stability": { "type": "number", "minimum": 0.0, "maximum": 0.25 },
+        "shadow_deviation": { "type": "number", "minimum": 0.0, "maximum": 0.25 }
+      }
+    },
+    "delta_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "delta_observed",
+        "delta_expected",
+        "delta_deviation"
+      ],
+      "properties": {
+        "delta_observed": { "$ref": "#/$defs/si_delta" },
+        "delta_expected": {
+          "$ref": "#/$defs/si_delta",
+          "description": "Theoretical smoothing change; fill with 0.0 until H2/H1 (theoretical_smoothing_change) is locked."
+        },
+        "delta_deviation": { "$ref": "#/$defs/si_delta" }
+      }
+    },
+    "si_delta": {
+      "description": "Delta values per metric (may be negative); unbounded for observed and deviation",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "coverage",
+        "dominance",
+        "entropy",
+        "leakage",
+        "contradiction_pressure",
+        "stability",
+        "shadow_deviation"
+      ],
+      "properties": {
+        "coverage": { "type": "number" },
+        "dominance": { "type": "number" },
+        "entropy": { "type": "number" },
+        "leakage": { "type": "number" },
+        "contradiction_pressure": { "type": "number" },
+        "stability": { "type": "number" },
+        "shadow_deviation": { "type": "number" }
+      }
+    },
+    "turning_point": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["chapter_id", "delta_type", "magnitude"],
+      "properties": {
+        "chapter_id": { "type": "string", "minLength": 1 },
+        "delta_type": {
+          "type": "string",
+          "enum": ["dominance_shift", "entropy_jump"]
+        },
+        "magnitude": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      }
+    },
+    "structural_signature": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stable_families", "variance_profile", "author_fingerprint"],
+      "properties": {
+        "stable_families": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^F\\d+$" }
+        },
+        "variance_profile": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "author_fingerprint": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      }
+    }
+  }
+}

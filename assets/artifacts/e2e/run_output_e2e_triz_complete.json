@@ -1,0 +1,224 @@
+{
+  "raw_text": {
+    "text_preview": "Justice and fairness support social order. Harm and conflict reduce trust.",
+    "length": 74
+  },
+  "triz_complete": {
+    "atomic_metrics": {
+      "contradiction_count": 0,
+      "contradiction_density": 0.0,
+      "contradiction_scores": [],
+      "cross_area_contradiction_rate": 0.0,
+      "triz_class_distribution": {
+        "counterbalance": 0.0,
+        "dynamic_adaptation": 0.0,
+        "parameter_change": 0.0,
+        "segmentation": 0.0
+      },
+      "contradiction_hotspots": [],
+      "innovation_score": 0.0,
+      "innovation_score_mean": 0.0,
+      "innovation_cluster_count": 0,
+      "innovation_clusters_detail": [],
+      "innovation_pressure": 0.0,
+      "narrative_penetration": 0.0,
+      "propagation_velocity": 0.0,
+      "spillover_strength": 0.0,
+      "narrative_stability": 1.0,
+      "narrative_route_length": 0,
+      "area_activation": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0
+      },
+      "family_activation": {},
+      "domain_coupling": {
+        "aggregate_cross_area_edge_rate": 0.0
+      },
+      "semantic_pressure": 0.0,
+      "activation_energy": 0.0,
+      "propagation_resistance": 1.0,
+      "concept_mass": 0.0
+    },
+    "commercial_intelligence": {
+      "schema_version": "commercial_intelligence_v1",
+      "core_signals": {
+        "policy_tension_index": 0.0,
+        "policy_coherence_score": 1.0,
+        "innovation_radar_peak_score": 0.0,
+        "innovation_pressure_index": 0.0,
+        "narrative_penetration_score": 0.0,
+        "narrative_spillover_index": 0.0,
+        "system_tension_index": 0.0,
+        "cross_area_contradiction_rate": 0.0,
+        "activation_energy": 0.0
+      },
+      "policy_contradiction_products": {
+        "policy_tension_index": 0.0,
+        "policy_coherence_score": 1.0,
+        "policy_conflict_map": {
+          "hotspot_ranking": [],
+          "family_conflict_density": [],
+          "cross_area_conflicts": {
+            "cross_area_contradiction_rate": 0.0,
+            "estimated_cross_area_pairs": 0
+          }
+        },
+        "regulatory_conflict_detector": {
+          "incompatible_regulation_pairs_count": 0,
+          "contradiction_pairs": []
+        }
+      },
+      "innovation_intelligence_products": {
+        "innovation_radar": {
+          "cluster_ranking": [],
+          "cluster_count": 0
+        },
+        "innovation_pressure_index": 0.0,
+        "cross_domain_opportunity_detector": {
+          "bridging_clusters": []
+        },
+        "idea_novelty_scores": []
+      },
+      "narrative_intelligence_products": {
+        "narrative_penetration_score": 0.0,
+        "narrative_propagation_speed": 0.0,
+        "narrative_spillover_index": 0.0,
+        "narrative_stability_score": 1.0,
+        "narrative_route_length": 0
+      },
+      "system_stability_products": {
+        "system_tension_index": 0.0,
+        "domain_coupling_map": {},
+        "aggregate_cross_area_edge_rate": 0.0,
+        "structural_instability_detector": {
+          "unstable_structure_flag": false,
+          "contradiction_density": 0.0,
+          "contradiction_cluster_count": 0
+        }
+      },
+      "comparative_intelligence_products": {
+        "note": "Apply compare_triz_corpora(previous_dm, current_dm) for strategy_divergence, innovation_momentum, narrative_shift.",
+        "compare_endpoint": "/api/v1/triz/compare"
+      },
+      "monitoring_products_schema": {
+        "narrative_monitoring_dashboard": {
+          "tracks": [
+            "penetration",
+            "propagation_velocity",
+            "narrative_stability"
+          ],
+          "series": "time_series_of_core_signals"
+        },
+        "policy_evolution_tracker": {
+          "tracks": [
+            "contradiction_density",
+            "policy_coherence_score",
+            "policy_tension_index"
+          ]
+        },
+        "innovation_landscape_monitor": {
+          "tracks": [
+            "innovation_cluster_count",
+            "innovation_pressure_index",
+            "cluster_radar_peaks"
+          ]
+        }
+      }
+    },
+    "contradictions": [],
+    "csv_exports": {
+      "area_hotspots.csv": {
+        "byte_length": 20
+      },
+      "contradictions.csv": {
+        "byte_length": 110
+      },
+      "innovation_clusters.csv": {
+        "byte_length": 85
+      },
+      "narrative_routes.csv": {
+        "byte_length": 22
+      },
+      "narrative_strongest_paths.csv": {
+        "byte_length": 41
+      }
+    },
+    "innovation_clusters": [],
+    "narratives": [
+      {
+        "narrative_id": "e2e_narrative",
+        "activated_areas": [],
+        "penetration": 0.0,
+        "velocity": 0.333333,
+        "consistency_profile": 0.0
+      }
+    ],
+    "reports": {
+      "contradiction_report": {
+        "global_tension_index": 0.0,
+        "top_conflict_areas": [],
+        "top_conflict_families": [],
+        "persistent_contradictions": [],
+        "triz_classes": []
+      },
+      "innovation_report": {
+        "innovation_pressure_index": 0.0,
+        "top_clusters": [],
+        "rare_combinations": [],
+        "cross_area_reach": [],
+        "consistency_profile": 0.0
+      },
+      "narrative_report": {
+        "narrative_id": "e2e_narrative",
+        "penetration": 0.0,
+        "velocity": 0.333333,
+        "consistency_profile": 0.0,
+        "dominant_routes": [],
+        "blocked_areas": [],
+        "spillover_targets": []
+      },
+      "meta_synthesis": {
+        "meta_area_11_equivalent": {
+          "channel": "meta_area_11_system_control",
+          "signal_quality": 0.0,
+          "contradiction_count": 0,
+          "propagation_stability": 0.0,
+          "coverage_completeness": 0.0,
+          "mean_contradiction_pressure": 0.0
+        },
+        "meta_area_12_equivalent": {
+          "channel": "meta_area_12_cross_domain",
+          "strongest_contradictions": [],
+          "strongest_innovation_clusters": [],
+          "strongest_narrative_spillovers": []
+        }
+      }
+    }
+  },
+  "input": {
+    "text_preview": "Justice and fairness support social order. Harm and conflict reduce trust.",
+    "length": 74
+  },
+  "system_version": "0.5.3",
+  "build_id": "hesperia_0.5.3_296581f37553_2026-03-26T11:26:15Z",
+  "schema_version": "v1",
+  "calibration_profile": "default_v1",
+  "run_id": "bd3411e9-9673-4139-80e6-fe9fd441e7f0",
+  "execution_flow_version": "e2e_v2",
+  "pipeline_version": "e2e_v2",
+  "orchestration_mode": "E2E_BATCH",
+  "modules_used": [
+    "hesperia.extensions.triz.pipeline",
+    "hesperia.nlp.session_parser"
+  ]
+}

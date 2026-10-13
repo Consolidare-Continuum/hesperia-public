@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["stability", "risk", "pattern", "confidence"],
+  "properties": {
+    "stability": { "type": "string", "enum": ["low", "medium", "high"] },
+    "risk": { "type": "string", "enum": ["low", "medium", "high"] },
+    "pattern": { "type": "string", "enum": ["looping", "fragmented", "coherent"] },
+    "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+  }
+}

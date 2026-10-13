@@ -1,0 +1,735 @@
+
+we introduce all this to hesperia to make it work eventualy. All terms all methods.
+
+# Deterministic Word-to-Concept Mapping in a Hesperia-Style Hierarchy and the Role of a 72k Hex Layer
+
+## Problem framing and why science text “works better”
+
+You’re describing an architecture where text is converted into structured “maps” (activation or evidence patterns) across a hierarchy: **wording → concepts → families → areas**, with an intermediate **hex substrate** used to stabilize, spread, and shape the signal before it is aggregated upward.
+
+A blunt reality: the hard part is not “families” or “areas.” Those are *designed* (you can specify them). The hard part is *deterministically* converting messy natural language (especially spoken, informal speech) into stable **concept evidence** that is (a) precise enough to be meaningful and (b) consistent enough to be used as raw_text to dynamics instead of as random noise.
+
+Science/technical text often behaves better under dictionary/ontology-driven pipelines because it is more likely to use **domain-stable terminology** and because many domains already have **controlled vocabularies** and hierarchical term systems. In biomedicine, for example, literature is indexed with **MeSH** (a controlled, hierarchical thesaurus), and the same surface string can be systematically mapped (or disambiguated) against curated concept inventories. citeturn15search20turn15search19
+
+## What “deterministic” must mean in practice
+
+Determinism here can’t just mean “no ML.” It must mean:
+
+1. **One raw_text → one output** under fixed versioned resources (lexicons, ontologies, rules, and tie-breakers).
+2. **Explainable trace**: for every concept hit, you can show *which span matched which rule* and *why one sense won over alternatives*.
+3. **Regression-testable behavior**: new dictionary entries shouldn’t silently change prior classifications unless intended (this is how LIWC-style systems remain operationally useful across versions). citeturn14view0turn13search6
+
+A strong anchor example is **LIWC**: it processes text word-by-word, matches to dictionary entries (including word stems), and increments one or more categories per match. That is deterministic by design, and it demonstrates the core idea of “preset families/categories + wired dictionary.” citeturn14view0turn17view1turn13search6
+
+The catch: LIWC categories are “close enough” because it accepts that a word can map to multiple categories (e.g., “cried” increments several), and it is *statistics-first* (category rates, not perfect semantic truth). citeturn14view0turn17view1  
+If you want concept-level truth (or clean family/area attribution) for free speech, you must add **disambiguation and phrase handling**.
+
+## Closing the wording → concept gap deterministically
+
+### Controlled concept inventory plus SKOS/ontology discipline
+
+The cleanest deterministic bridge is: treat “concepts” as **explicit identifiers** in a controlled scheme, and treat “wording” as one of many **lexical labels** that can point to those concepts.
+
+This is exactly the problem space addressed by the knowledge-organization community: **concept schemes**, hierarchical relations (broader/narrower), and explicit mapping relations like “exact match” vs “close match.” The **entity["organization","World Wide Web Consortium","standards body"] SKOS** model is a practical reference point because it formalizes:
+- a concept as an idea/meaning unit,
+- preferred/alternative/hidden labels (synonyms, spelling variants),
+- and relations between concepts plus cross-scheme mapping properties. citeturn6search3turn6search1
+
+That structure is exactly what you need if your “families” and “areas” are higher-level groupings: you want **lexical labels → concept IDs → broader concept IDs → family/area membership**.
+
+### Deterministic candidate generation: don’t start with single words
+
+Single-word mapping is where ambiguity lives. Your deterministic execution_flow should be **phrase-first, then word fallback**:
+
+- Identify candidate spans (n-grams, noun phrases, key patterns).
+- Prefer the **longest match** in your lexicon (“structural interview” should beat “structural” + “interview”).
+- Only if no span matches, fall back to single tokens/stems.
+
+This is not optional: multiword expressions are known to be a core pain point in NLP precisely because meaning regularly crosses word boundaries (“pain in the neck” is literally the canonical example). citeturn15search10turn15search16
+
+### Deterministic normalization layer: make surface forms boring
+
+Before any concept lookup, apply a strictly deterministic normalization execution_flow:
+
+- Unicode normalization, case-folding, punctuation policy (define it; don’t wing it).
+- Tokenization plus a **conservative** contraction policy for speech (“I’m” → “I” + “am”).
+- Lemmatization or stemming (rule-based or frozen-model; but freeze the toolchain versions).
+- Domain normalization tables (“PTSD” ↔ “post-traumatic stress disorder”, etc.).
+
+LIWC explicitly supports word stems via * (e.g., hungr*) to capture morphological families deterministically; that idea generalizes cleanly to your concept lexicon as well. citeturn17view1turn14view0
+
+### Deterministic disambiguation: you need a tie-break system that is *part of the architecture*
+
+Once lexical lookup returns multiple possible concepts, you must disambiguate. If you don’t, your higher layers (hex → family → area) will be driven by arbitrary noise and your “maps” will not be stable.
+
+A practical deterministic approach is **knowledge-based word sense disambiguation (WSD)**:
+
+- WSD is explicitly defined as selecting the intended meaning of a word in context. citeturn7search21turn7search6
+- Classic dictionary-based WSD begins with comparing overlaps between context words and sense definitions (the Lesk family of methods). citeturn22search36turn8search12
+- A known improvement is to use a semantic network like **WordNet** so that overlap can be expanded along semantic relations rather than being limited to short gloss text. The adapted Lesk line of work is based on exactly this idea. citeturn22search14turn7search0
+
+**WordNet** itself is built around synsets: sets of cognitive synonyms, each representing a distinct concept, connected via semantic relations. citeturn7search0turn7search5  
+That is a near-direct analogue of what you want: “surface strings → concept(s) → relations → higher grouping.”
+
+A deterministic scoring + tie-break recipe that works in practice:
+
+- **Match strength**: exact phrase match > lemma match > stem match > fuzzy match.
+- **Context overlap** (Lesk-like): overlap between local context tokens and (a) concept definition text, (b) concept synonyms, (c) related concept labels. citeturn22search36turn22search14
+- **Hierarchy coherence**: prefer candidates whose families/areas are already “activated” by other nearby unambiguous hits (this is deterministic if you define the window and weights).
+- **Specificity bias**: if two candidates tie, choose the more specific concept (deeper in the hierarchy).
+- **Stable priors**: if still tied, choose a fixed default ordering (frequency priors are allowed if fixed and versioned).
+
+This is not “probabilistic learning.” It’s deterministic ranking under fixed weights.
+
+### Deterministic “flexible matching” for domain terminology (why scientific text is easier)
+
+In technical domains, robust matching is often built by combining:
+- shallow parsing / noun phrase extraction,
+- then flexible string matching against a controlled concept inventory.
+
+A concrete example: compute MEDLINE at scale by extracting noun phrases and matching them to **UMLS Metathesaurus** names using flexible matching techniques. citeturn15search19  
+Even when coverage isn’t complete, the method is systematic: you can see which strings matched which concepts, and which did not (exactly what a deterministic audit trail needs). citeturn15search19turn15search20
+
+For your use case (random speech), you essentially have to build an equivalent “controlled vocabulary + matching + disambiguation” layer—but tuned to **colloquial paraphrase**, **disfluency**, and **metaphor**.
+
+## Building “maps” of relation once you have concept evidence
+
+Once text is converted into concept-level evidence, you can build measurable “maps” in several deterministic ways—some lexical/statistical, some graph/dynamic.
+
+### Text-to-concept salience: TF‑IDF-style weighting
+
+If you want “relation to a certain text,” you usually want **salience**: which concepts are characteristic of this text relative to others. The classic deterministic baseline is TF‑IDF. citeturn15search3turn15search0  
+This gives you stable per-concept weights that can feed downstream projections (concept → hex → family → area) without requiring any learning.
+
+### Concept-to-concept association: PMI and co-occurrence structure
+
+If you want “maps of words/concepts and their relations,” you typically want association measures. Pointwise Mutual Information (PMI) is a standard, deterministic association score used in lexicography and collocation discovery. citeturn15search4turn15search9  
+This becomes especially useful for:
+- finding stable concept pairs that co-occur in a domain,
+- building deterministic edges in your concept graph,
+- and supporting disambiguation (“which meaning is consistent with nearby concepts?”).
+
+### Hierarchical projections to families and areas
+
+Once concept hits are stable, projecting upward is straightforward if:
+- each concept has one or more family memberships,
+- families roll up into areas via explicit mappings.
+
+This is essentially how hierarchical category systems work in tools like LIWC (lower-level categories nesting into broader ones), but you’d be doing it at a concept-graph level rather than a wordlist level. citeturn17view1turn14view0
+
+The key reliability point: **don’t let “family” be the first semantic decision point.**  
+Family should be a projection of concept evidence, not a replacement for concept evidence. Otherwise, any ambiguity at the word level leaks upward and becomes “family drift.”
+
+## The 72k hex layer: what it is good for in a Hesperia-style system
+
+A hex substrate is not decoration. It can be the difference between:
+- a brittle “bag of words → category counts” execution_flow, and
+- a stable multiscale semantic field that supports smoothing, locality, and trajectories.
+
+Because your question explicitly calls out “72k cells,” the practical question is: what do you *buy* with that resolution?
+
+### Why hex grids are used at all
+
+Hex grids are popular for measurement because neighbor relationships are uniform: each hex has a single “type” of adjacency and equal neighbor distance, simplifying smoothing and gradient-style operations compared to square grids (which have edge-neighbors and corner-neighbors at different distances). citeturn8search2turn8search10  
+
+This is a core design motivation behind **H3**, a hexagonal hierarchical indexing system built at entity["company","Uber","rideshare company"]: it explicitly highlights hexagon neighbor uniformity and the benefits for measurement/smoothing over gradients. citeturn8search2turn8search13
+
+image_group{"layout":"carousel","aspect_ratio":"16:9","query":["hexagonal grid adjacency neighbors diagram","Uber H3 hexagonal hierarchical spatial index grid","hex grid diffusion smoothing visualization"],"num_per_query":1}
+
+### What a 72k-cell layer can do that families/areas can’t
+
+At a high level, a hex layer can serve four distinct purposes, and you can use all four simultaneously.
+
+**Local smoothing / denoising (stability for noisy speech)**  
+Free speech is sparse and messy. A hex layer lets you spread activation locally (“semantic heat”) so that small lexical perturbations don’t massively change which region is activated. This is the same logic as diffusion on networks: with adjacency matrix \(A\), degree matrix \(D\), Laplacian \(L = D - A\), diffusion dynamics can be written in forms like \(\frac{dc}{dt} = -\alpha Lc\). citeturn21search4turn21search37  
+That matters because it turns “spiky hits” into “regions,” and regions are what stable higher-level classification likes.
+
+**Microstate capacity (sub-structure inside a family)**  
+Families (and areas) are coarse. A 72k substrate offers room for:
+- sub-concepts,
+- stylistic variants,
+- intensity variations,
+- and “neighboring-but-not-identical” meanings
+to live near each other without collapsing into one family bin.
+
+In practice, you use this to avoid the classic failure mode of lexicon classifiers: everything becomes “some category,” but you can’t tell whether it’s the same type of evidence or just the same bucket.
+
+**Trajectory features (classification beyond word counts)**  
+If each text (or speech segment) induces a sequence of activations over the hex layer, you can compute deterministic “movement” features:
+- how concentrated vs diffuse the activation is,
+- how fast it shifts between regions,
+- whether it stabilizes into a basin (interpretation/integration-like behavior) or remains scattered (chaotic-like behavior).
+
+This is where your hex layer becomes useful for staged classification goals (your TFP example). It’s not that the hex layer “knows TFP.” It’s that it supports *time-structured features* that are hard to represent in families/areas alone.
+
+For context, **TFP (Transference-Focused Psychotherapy)** is typically described as a structured psychodynamic treatment approach; clinical trials and reviews describe it as manualized and structured, and it has been studied in randomized controlled designs. citeturn16search0turn16search4turn16search2  
+So if your “TFP test” is about classifying speech into therapy-relevant categories or stages, trajectory-style features are a rational target (more principled than raw word counts).
+
+**Deterministic indexing/bucketing (geometry as a stable hash)**  
+A hex grid can also be used as a deterministic bucketing scheme: concepts map into hex cells (or small neighborhoods) based on fixed rules (e.g., concept ID hashing + topology constraints + family anchors). The point is not cryptography; the point is repeatable spatial organization that supports neighborhood operations.
+
+H3 demonstrates this general idea in geospatial form: points/areas map into stable hex cells which can then be aggregated, compacted, and used for neighborhood queries. citeturn8search13turn8search7turn8search10  
+In Hesperia, the analogous value is: stable indexing makes it easy to define deterministic “locality,” “rings,” and “distance” between semantic cells.
+
+## Practical blueprint: how to implement the gap-filling without fooling yourself
+
+A workable deterministic architecture usually needs three explicit artifacts (versioned, testable) plus one discipline:
+
+### Lexical-concept wiring artifact
+
+A “dictionary” is not just a wordlist. It should be a structured lexicon with:
+
+- Multiword entries (preferred).
+- Synonym sets (alt labels).
+- “Hidden labels” for misspellings/transcription variants (SKOS explicitly supports hidden labels as a concept). citeturn6search1turn6search3
+- Explicit negative patterns (to block false friends).
+- Explicit concept IDs (not strings).
+
+This is the lesson from LIWC: counting works when dictionary entries are curated, assigned to categories, and include stems; you adopt the same discipline but attach entries to concept IDs. citeturn17view1turn14view0
+
+### Deterministic resolver artifact
+
+Implement a resolver that outputs, for each matched span:
+
+- span boundaries,
+- candidate concepts,
+- chosen concept,
+- score breakdown,
+- and applied tie-break rules.
+
+Then test it like you would test a compiler.
+
+### Calibration corpus and regression tests
+
+You need a curated set of short texts where you *know* the intended concept mappings (even if only for a subset of spans). Without this, you can’t tell if your hex/family dynamics are “working” or just amplifying garbage.
+
+This is also why scientific text looks “better”: established corpora + controlled vocabularies make it easier to define what “correct mapping” even means. citeturn15search20turn15search19
+
+### Ontology discipline for families/areas
+
+Use an explicit knowledge-organization pattern (SKOS-like is fine) so you can answer:
+
+- Which concept belongs to which family?
+- Are family relations broader/narrower or associative?
+- Are cross-family relations allowed and how are they weighted?
+
+This prevents the “everything is related to everything” problem, which kills deterministic classification because it makes the mapping underconstrained. citeturn6search1turn6search3
+
+## Bottom-line answers to your two questions
+
+Your core problem is not “how do I align words to families?” It’s “how do I map *phrases in context* to *stable concept IDs* deterministically.” The most reliable deterministic approach is:
+
+- build a controlled concept inventory with disciplined lexical labels (SKOS-style),
+- do phrase-first matching with deterministic normalization,
+- apply knowledge-based disambiguation (WordNet/WSD-style) with explicit scoring and tie-breaks,
+- and only then project to families/areas and let the hex substrate smooth/shape the signal. citeturn6search3turn7search0turn7search21turn22search14turn14view0turn17view1
+
+For the 72k hex layer: its practical purpose is to provide **microstate capacity and locality** so you can do deterministic smoothing, region formation, and trajectory-based features—things that are either impossible or extremely brittle if you jump straight from concept hits to families/areas. Hex grids are specifically attractive because neighbor relationships are uniform and support clean smoothing/diffusion-style operations; this is a well-established motivation in hex-grid indexing systems like H3. citeturn8search2turn8search10turn8search13turn21search4turn21search37
+
+
+I’m turning that into HESPERIA terms, not generic NLP talk. The main job is to separate what becomes fixed infrastructure from what becomes tunable policy.
+
+Thought for 7s
+Yes. This should be introduced into HESPERIA as a formal subsystem, not as loose theory.
+
+Call it what it is:
+
+Deterministic Lexical-Concept Resolution Layer
+sitting between raw text raw_text and HESPERIA structural activation.
+
+The correct chain is:
+
+text/span → normalized lexical form → candidate concepts → resolved concept IDs → hex activation → family rollup → area rollup → dynamics/interpretation
+
+Not:
+
+text → family guess
+
+That shortcut is exactly how systems become vague, unstable, and useless.
+
+What this becomes inside HESPERIA
+You already have the upper structure:
+
+Areas
+
+Families
+
+Hex substrate
+
+higher-order aggregation logic
+
+What was missing is the bridge layer between wording and concept.
+This new material fills that gap.
+
+So HESPERIA needs these explicit modules:
+
+1. Lexical Normalization Layer
+Purpose: make wording boring and repeatable.
+
+It should handle:
+
+case normalization
+
+punctuation policy
+
+tokenization policy
+
+lemmatization/stemming
+
+abbreviation expansion
+
+transcription normalization for speech-like raw_text
+
+phrase boundary rules
+
+This layer must be frozen and versioned.
+No hidden behavior.
+
+2. Concept Inventory Layer
+This is the real core.
+
+Each concept must have:
+
+stable concept_id
+
+preferred label
+
+alternative labels
+
+hidden labels / misspellings / transcript variants
+
+phrase patterns
+
+definition text
+
+family membership
+
+area membership
+
+related concepts
+
+exclusion rules if needed
+
+This is basically your Dict A / Dict B bridge discipline.
+
+Practical split:
+
+Dict A = lexical markers, wording forms, phrase triggers, surface evidence
+
+Dict B = concepts, semantic nodes, structural meaning units
+
+So:
+
+Dict A entry → candidate Dict B concept(s)
+
+Then resolver decides which one survives.
+
+That is the missing deterministic middle.
+
+3. Deterministic Resolver
+This is the engine that converts wording into concept hits.
+
+It must do:
+
+phrase-first matching
+
+longest-span priority
+
+exact match over lemma match over stem match
+
+local context scoring
+
+coherence scoring with nearby already-resolved concepts
+
+specificity bias
+
+final tie-break ordering
+
+Output must be auditable per span.
+
+For every hit HESPERIA should be able to say:
+
+source text span
+
+normalized span
+
+candidate concepts
+
+winning concept
+
+why it won
+
+confidence score or deterministic score vector
+
+which rule fired
+
+Without this, you do not have a real semantic system. You have category theater.
+
+4. Hex Projection Layer
+This is where HESPERIA becomes HESPERIA rather than a dictionary counter.
+
+Once concept IDs are resolved, they should not jump directly to family/area counts.
+They should project into the 72k hex layer first.
+
+That layer gives you four things the hierarchy alone cannot:
+
+a. Microstructure
+Two concepts in one family are not identical.
+Hexes let nearby meanings live near each other without collapsing.
+
+b. Smoothing
+Speech and messy text are noisy.
+Hex adjacency lets activation spread locally and stabilize weak evidence.
+
+c. State geometry
+You can measure:
+
+concentration
+
+dispersion
+
+cluster shape
+
+drift
+
+persistence
+
+transitions
+
+That matters for dynamic interpretation.
+
+d. Deterministic topology
+Hexes give stable neighborhoods, rings, distance, gradients, and basin behavior.
+
+So the 72k layer is not cosmetic.
+It is the semantic field where concept evidence becomes structured state.
+
+What the 72k hex layer should mean in HESPERIA
+You asked specifically what it is for.
+
+Here is the practical answer.
+
+It is not a storage gimmick
+It should not be “72k cells because big number nice.”
+
+It is a semantic microstate substrate
+Each hex is a bounded semantic address space.
+
+A hex may represent:
+
+a microconcept zone
+
+a subfamily niche
+
+a relation corridor between concepts
+
+an intensity/state slot
+
+a trajectory waypoint for evolving text activation
+
+In plain language:
+families are provinces, concepts are named settlements, hexes are terrain cells.
+
+You need terrain if you want movement, spread, clustering, and shape.
+
+Without terrain, everything is a label table.
+
+What should map to hexes
+Not raw words.
+
+That would be a mistake.
+
+Map resolved concept IDs to hex anchors or hex neighborhoods.
+
+Recommended model:
+
+each concept has a primary hex anchor
+
+optionally a small fixed neighborhood footprint
+
+related concepts are placed near each other by design, not accident
+
+families occupy broad hex territories
+
+areas occupy macro-regions across the substrate
+
+So the hierarchy and the hex layer must agree structurally.
+
+That means:
+
+concept placement is not random
+
+family borders are meaningful
+
+neighboring hexes reflect semantic adjacency
+
+cross-family bridges are deliberate and sparse
+
+This is where governance matters. Otherwise the grid turns into arbitrary decoration.
+
+What methods should HESPERIA formally absorb
+From your pasted material, the methods worth introducing are these:
+
+Keep
+controlled concept inventory
+
+phrase-first matching
+
+deterministic normalization
+
+lexical variants / hidden labels
+
+explicit concept IDs
+
+deterministic candidate scoring
+
+context-based disambiguation
+
+hierarchy coherence scoring
+
+specificity tie-breaks
+
+salience weighting
+
+co-occurrence association measures
+
+diffusion/smoothing on hex topology
+
+trajectory features over segmented text
+
+Do not absorb blindly
+generic ontology fashion talk without structural enforcement
+
+fuzzy matching that changes behavior unpredictably
+
+probabilistic disambiguation that cannot be audited
+
+bag-of-words family classification as primary mechanism
+
+uncontrolled synonym expansion
+
+Those are the usual shortcuts that rot systems.
+
+HESPERIA-native formalization
+I would define this as a new internal stack:
+
+Layer L0 — Raw_text Normalization
+Raw text to canonical tokens/spans.
+
+Layer L1 — Lexical Evidence
+Dict A markers, phrase patterns, lexical triggers.
+
+Layer L2 — Concept Resolution
+Dict B concepts, candidate competition, deterministic winner selection.
+
+Layer L3 — Hex Projection
+Resolved concept signal mapped into 72k cells.
+
+Layer L4 — Hex Dynamics
+Spread, damping, neighborhood reinforcement, cluster emergence.
+
+Layer L5 — Structural Aggregation
+Hex to Family, Family to Area, plus cross-family relation summaries.
+
+Layer L6 — Interpretation
+Classification, profile shape, test outputs, reports, comparative runs.
+
+That is a proper HESPERIA execution_flow.
+
+What to build first
+Do not try to solve all NLP at once. That is the classic way to wreck a good structure.
+
+Build in this order:
+
+Phase 1 — Freeze concept discipline
+Define:
+
+concept schema
+
+family linkage schema
+
+area linkage schema
+
+lexical entry schema
+
+resolver output schema
+
+Until this exists, everything else is handwaving.
+
+Phase 2 — Build a small deterministic resolver
+Use one domain first.
+Since you are already thinking in TFP terms, that is acceptable.
+
+Start with:
+
+100–300 concepts
+
+5–15 lexical forms each
+
+phrase-first rules
+
+explicit exclusions
+
+deterministic score formula
+
+Phase 3 — Map concepts into a small tested hex region
+Not the full 72k yet.
+
+Take one bounded semantic region and prove:
+
+nearby concepts behave sensibly
+
+smoothing improves stability
+
+aggregation upward remains interpretable
+
+Phase 4 — Add trajectory features
+Segment text by sentence or turn.
+Measure movement across hex zones.
+
+That is where speech measurement starts becoming meaningfully structural.
+
+Phase 5 — Scale to full substrate
+Only after local proofs hold.
+
+Hard truth about science text vs random speech
+Your pasted text is correct on one core point:
+
+science text works better because terminology is narrower, more stable, and less metaphorical.
+
+Random speech is worse because it contains:
+
+ambiguity
+
+incomplete syntax
+
+pronouns without anchors
+
+idioms
+
+drift
+
+sarcasm
+
+emotional substitution
+
+vague reference
+
+So HESPERIA should not pretend one mechanism solves both equally.
+
+Better model:
+
+technical/scientific mode = high precision lexical-concept mapping
+
+speech/clinical mode = stronger normalization, more phrase handling, more context competition, more smoothing, more trajectory emphasis
+
+Same architecture, different dictionaries and policies.
+
+What this means for Dict A and Dict B
+This is the cleanest interpretation in HESPERIA terms:
+
+Dict A
+Surface evidence layer.
+Contains:
+
+words
+
+stems
+
+phrases
+
+lexical patterns
+
+transcript variants
+
+colloquial forms
+
+red-flag phrases
+
+negation-sensitive patterns
+
+Dict B
+Concept layer.
+Contains:
+
+semantic units
+
+definitions
+
+hierarchy
+
+relations
+
+family/area memberships
+
+disambiguation clues
+
+exclusions
+
+anchor hexes
+
+Then:
+
+Dict A does not classify. Dict A proposes.
+Dict B does not guess words. Dict B receives resolved evidence.
+
+That separation is healthy.
+
+What success looks like
+A proper HESPERIA run should eventually produce outputs like:
+
+matched spans
+
+rejected spans
+
+concept activations
+
+concept competition logs
+
+hex field image/state
+
+dominant family regions
+
+area profile
+
+transition path across segments
+
+stability metrics
+
+comparison between texts or sessions
+
+That is real instrumentation.
+
+Not “we found some relevant words.”
+
+Bottom line
+Yes, introduce all of it, but structurally.
+
+Not as references.
+Not as ideas.
+As a formal deterministic subsystem.
+
+The key decision is this:
+
+HESPERIA must treat wording-to-concept resolution as its own first-class engine.
+
+Once you do that:
+
+Dict A becomes meaningful
+
+Dict B becomes actionable
+
+the 72k hex layer gains real purpose
+
+family and area aggregation stop being guesswork
+
+speech classification becomes hard but tractable
+
+The single most important rule:
+
+Do not allow raw wording to activate families directly unless routed through resolved concept evidence or an explicitly marked fallback path.
+
+That one rule will save the architecture from semantic sludge.
+
+I can turn this next into a HESPERIA-spec style document with sections:
+Purpose, Architecture, Data Structures, Resolver Logic, Hex Role, Failure Modes, Implementation Order.

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hesperia.schemas.lexical_concept.analyze_lexical_evidence_dlcr.v0_6_0",
+  "title": "Analyze extended — lexical_evidence_dlcr (PO-02)",
+  "description": "Subset of DLCR pipeline exposed on analyze() when HESPERIA_ANALYZE_DLCR_EVIDENCE=1. Span objects match resolver_output (without audit) for stable tooling keys.",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "analysis_text_fingerprint": { "type": ["string", "null"] },
+    "lexical_hits_accepted": { "type": "integer", "minimum": 0 },
+    "lexical_hits_rejected": { "type": "integer", "minimum": 0 },
+    "span_resolution_count": { "type": "integer", "minimum": 0 },
+    "resource_versions": { "type": "object", "additionalProperties": { "type": "string" } },
+    "winning_concept_ids_sample": {
+      "type": "array",
+      "items": { "type": ["string", "null"] }
+    },
+    "evidence_spans": {
+      "type": "array",
+      "description": "Bounded copy of span_resolutions; each item uses the same required keys as resolver_output.schema.json except audit.",
+      "items": { "$ref": "resolver_output.schema.json" }
+    },
+    "evidence_spans_max": { "type": "integer", "minimum": 1 },
+    "_error": { "type": "string" }
+  }
+}

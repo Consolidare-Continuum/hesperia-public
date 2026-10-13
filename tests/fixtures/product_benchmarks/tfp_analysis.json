@@ -1,0 +1,5 @@
+[
+  {"text": "Narrative remains stable with reflective and coherent emotional framing.", "expected_pattern": "coherent"},
+  {"text": "Session oscillates with recurring loops and escalating conflict cues.", "expected_pattern": "looping"},
+  {"text": "Narrative fragments with partial disconnected segments.", "expected_pattern": "fragmented"}
+]

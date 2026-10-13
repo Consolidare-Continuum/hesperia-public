@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<h1>{{ title }}</h1>
+<p><code>{{ root_display }}</code></p>
+{% if artifacts %}
+<ul class="artifact-list">
+  {% for name in artifacts %}
+  <li><code>{{ name }}</code></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="muted">No JSON files found (path missing or empty).</p>
+{% endif %}
+{% endblock %}

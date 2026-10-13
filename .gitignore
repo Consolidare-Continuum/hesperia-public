@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+.venv/
+.venv_v040/
+.venv_v040_build/
+*.egg-info/
+.eggs/
+dist/
+build/
+release/*.tar
+release/*.tar.gz
+release/v*/hesperia-api-v*.tar
+release/*.bin
+*.log
+*.tmp
+
+# Env and secrets (deliverables repo = no internals)
+.env
+.env.*
+!.env.example
+*.key
+keys/
+
+# Cursor / local dev (not for origin)
+.cursor/
+*.cursor*
+
+# Generated run trees (Task 2 — see GENERATED_ARTIFACT_POLICY.md)
+outputs/*
+!outputs/.gitkeep
+!outputs/README.md
+
+# Local release audit scratch (never commit)
+_release_tmp/
+
+# Data and logs (tracked: legacy/assets/data/* historical dumps; active: assets/data/*)
+
+# E2E: commit assets/artifacts/e2e/run_output_e2e_*.json after run (see docs/E2E_RUN_ORDER.md).
+# Local-only full dynamics bundle:
+assets/artifacts/e2e_full_deliverables/
+# Local session notes (relocate from repo root if present)
+research/reports/_noone_local/
+
+# Local-only research tree (session notes, corpus drafts, background PDF text): never publish / GitHub.
+# Canonical product corpus inputs live under assets/data/ when promoted.
+research/_noone_local/
+
+# dict_a RU raw JSONL exceeds GitHub 100MB/file limit; regenerate via
+#   python3 tools/run_tfp_dict_build_full_artifacts_v060.py --write
+assets/data/engine_dynamics_v060/dict_a/_raw/*.jsonl
+hesperia_lex/raw/
+hesperia_lex/processed/
+hesperia_lex/logs/
+
+# TFP CI fixture: gate CLI may write this during local/CI runs (regenerate anytime)
+tests/fixtures/tfp_calibration_bundle_ci/11_calibration_release_gate.json
+
+# Task 6 seal inventory (regenerate: python3 tools/seal_phase0_inventory.py)
+tmp/*
+!tmp/.gitkeep
+
+# OS and editors
+.DS_Store
+*.swp
+*.swo
+*~
+Thumbs.db
+
+# prod: no committed outputs markdown
+outputs/**/*.md
+openai_api_key.txt

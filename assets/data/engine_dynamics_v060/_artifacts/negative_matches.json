@@ -1,0 +1,56 @@
+[
+  {
+    "entry_id": "STACK_NEG_001",
+    "phrase": "расщепление атома",
+    "surface_form": "расщепление атома",
+    "negative_patterns": [
+      "*"
+    ],
+    "candidate_concept_ids": []
+  },
+  {
+    "entry_id": "STACK_NEG_002",
+    "phrase": "проекция луча",
+    "surface_form": "проекция луча",
+    "negative_patterns": [
+      "*"
+    ],
+    "candidate_concept_ids": []
+  },
+  {
+    "entry_id": "STACK_NEG_003",
+    "phrase": "перенос данных",
+    "surface_form": "перенос данных",
+    "negative_patterns": [
+      "*"
+    ],
+    "candidate_concept_ids": []
+  },
+  {
+    "entry_id": "STACK_NEG_004",
+    "phrase": "отрицание доступа",
+    "surface_form": "отрицание доступа",
+    "negative_patterns": [
+      "*"
+    ],
+    "candidate_concept_ids": []
+  },
+  {
+    "entry_id": "STACK_NEG_005",
+    "phrase": "объект программирования",
+    "surface_form": "объект программирования",
+    "negative_patterns": [
+      "*"
+    ],
+    "candidate_concept_ids": []
+  },
+  {
+    "entry_id": "STACK_NEG_006",
+    "phrase": "поляризация света",
+    "surface_form": "поляризация света",
+    "negative_patterns": [
+      "*"
+    ],
+    "candidate_concept_ids": []
+  }
+]

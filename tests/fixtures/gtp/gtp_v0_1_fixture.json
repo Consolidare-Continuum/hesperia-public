@@ -1,0 +1,35 @@
+{
+  "_fixture_input": {
+    "text": "this includes and overlaps partially with something",
+    "current_hex": { "area_id": 0, "global_id": 3, "hex_index": 10 },
+    "powv_position": [0.3, -0.2, 0.15]
+  },
+  "schema": "hesperia.gtp_v0_1",
+  "hex_rotation": 0,
+  "current_hex": {
+    "area_id": 0,
+    "global_id": 3,
+    "hex_index": 10
+  },
+  "thought_imprint": {
+    "fired_sides": [0, 3],
+    "fired_operators": ["INCLUDES", "OVERLAPS"]
+  },
+  "imprint_difference": {
+    "area_shifted": false,
+    "family_shifted": false,
+    "new_fired_sides": [0, 3]
+  },
+  "coherence": {
+    "psi_abs": 0.3905124837953327,
+    "psi_ent": 5.447829884378813,
+    "psi_align": 0.7203453831468053,
+    "vector_dim": 300
+  },
+  "gtpa": {
+    "next_hex": { "area_id": 10, "global_id": 243, "hex_index": 10 },
+    "exit_side": 0,
+    "hex_rotation": 0,
+    "score": 3.3205988755856453
+  }
+}

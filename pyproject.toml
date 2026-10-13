@@ -1,0 +1,27 @@
+# Hesperia Engine Dynamics — Canonical Release v0.6
+# Copyright © 2026 igareosh.com. See LEGAL_NOTICE.md.
+# Must match VERSION.yaml system_version (tests enforce alignment).
+
+[project]
+name = "hesperia-engine-dynamics"
+version = "1.0.0"
+description = "Hesperia Engine Dynamics — v7 router fusion milestone (v0.6.5)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Restricted Research Disclosure — see LEGAL_NOTICE.md" }
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+]
+
+[project.optional-dependencies]
+dict-calibration = [
+    "openai>=1.40.0",
+    "spacy>=3.7.0",
+]
+
+[project.urls]
+Documentation = "https://github.com/igareosh/hesperia/blob/main/docs/HESPERIA_v0_5_ENGINE_DYNAMICS.md"
+
+[project.scripts]
+hesperia = "runtime.shipping.cli_main:main"

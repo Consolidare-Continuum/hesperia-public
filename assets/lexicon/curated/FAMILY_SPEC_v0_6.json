@@ -1,0 +1,2306 @@
+[
+  {
+    "family_id": 0,
+    "label": "Altruism",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Altruism, good"
+  },
+  {
+    "family_id": 1,
+    "label": "Generosity",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Generosity, good"
+  },
+  {
+    "family_id": 2,
+    "label": "Compassion",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Compassion, good"
+  },
+  {
+    "family_id": 3,
+    "label": "Mercy",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Mercy, good"
+  },
+  {
+    "family_id": 4,
+    "label": "Forgiveness",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Forgiveness, good"
+  },
+  {
+    "family_id": 5,
+    "label": "Gratitude",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Gratitude, good"
+  },
+  {
+    "family_id": 6,
+    "label": "Integrity",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Integrity, good"
+  },
+  {
+    "family_id": 7,
+    "label": "Reliability",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Reliability, good"
+  },
+  {
+    "family_id": 8,
+    "label": "Courage",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Courage, good"
+  },
+  {
+    "family_id": 9,
+    "label": "Loyalty",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Loyalty, good"
+  },
+  {
+    "family_id": 10,
+    "label": "Solidarity",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Solidarity, good"
+  },
+  {
+    "family_id": 11,
+    "label": "Fairness",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Fairness, good"
+  },
+  {
+    "family_id": 12,
+    "label": "Justice",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Justice, good"
+  },
+  {
+    "family_id": 13,
+    "label": "Respect",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Respect, good"
+  },
+  {
+    "family_id": 14,
+    "label": "Trust-building",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Trust-building, good"
+  },
+  {
+    "family_id": 15,
+    "label": "Service",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Service, good"
+  },
+  {
+    "family_id": 16,
+    "label": "Stewardship",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Stewardship, good"
+  },
+  {
+    "family_id": 17,
+    "label": "Responsibility",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Responsibility, good"
+  },
+  {
+    "family_id": 18,
+    "label": "Reconciliation",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Reconciliation, good"
+  },
+  {
+    "family_id": 19,
+    "label": "Inclusion",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Inclusion, good"
+  },
+  {
+    "family_id": 20,
+    "label": "Community-building",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Community-building, good"
+  },
+  {
+    "family_id": 21,
+    "label": "Mentorship",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Mentorship, good"
+  },
+  {
+    "family_id": 22,
+    "label": "Protection",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Protection, good"
+  },
+  {
+    "family_id": 23,
+    "label": "Care-giving",
+    "core_definition": "Moral good, virtue, and prosocial orientation.",
+    "positive_axis": "selflessness, virtue, reciprocity",
+    "negative_axis": "selfishness, harm, neglect",
+    "central_examples": "Care-giving, good"
+  },
+  {
+    "family_id": 24,
+    "label": "Nurturing",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Nurturing, care"
+  },
+  {
+    "family_id": 25,
+    "label": "Compassionate-response",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Compassionate-response, care"
+  },
+  {
+    "family_id": 26,
+    "label": "Comfort-and-soothing",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Comfort-and-soothing, care"
+  },
+  {
+    "family_id": 27,
+    "label": "De-escalation",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "De-escalation, care"
+  },
+  {
+    "family_id": 28,
+    "label": "Listening-and-attention",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Listening-and-attention, care"
+  },
+  {
+    "family_id": 29,
+    "label": "Emotional-support",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Emotional-support, care"
+  },
+  {
+    "family_id": 30,
+    "label": "Practical-assistance",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Practical-assistance, care"
+  },
+  {
+    "family_id": 31,
+    "label": "Shelter-and-safety-net",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Shelter-and-safety-net, care"
+  },
+  {
+    "family_id": 32,
+    "label": "Health-support",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Health-support, care"
+  },
+  {
+    "family_id": 33,
+    "label": "Recovery-support",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Recovery-support, care"
+  },
+  {
+    "family_id": 34,
+    "label": "Accessibility-support",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Accessibility-support, care"
+  },
+  {
+    "family_id": 35,
+    "label": "Inclusion-support",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Inclusion-support, care"
+  },
+  {
+    "family_id": 36,
+    "label": "Guardianship-and-trusteeship",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Guardianship-and-trusteeship, care"
+  },
+  {
+    "family_id": 37,
+    "label": "Ongoing-check-ins",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Ongoing-check-ins, care"
+  },
+  {
+    "family_id": 38,
+    "label": "Hospitality-and-welcome",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Hospitality-and-welcome, care"
+  },
+  {
+    "family_id": 39,
+    "label": "Relational-repair",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Relational-repair, care"
+  },
+  {
+    "family_id": 40,
+    "label": "Mentoring-and-guidance",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Mentoring-and-guidance, care"
+  },
+  {
+    "family_id": 41,
+    "label": "Community-care",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Community-care, care"
+  },
+  {
+    "family_id": 42,
+    "label": "Volunteerism",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Volunteerism, care"
+  },
+  {
+    "family_id": 43,
+    "label": "Protection-of-vulnerable",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Protection-of-vulnerable, care"
+  },
+  {
+    "family_id": 44,
+    "label": "Responsibility-taking",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Responsibility-taking, care"
+  },
+  {
+    "family_id": 45,
+    "label": "Safeguarding-duties",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Safeguarding-duties, care"
+  },
+  {
+    "family_id": 46,
+    "label": "Restoration-care",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "Restoration-care, care"
+  },
+  {
+    "family_id": 47,
+    "label": "End-of-life-and-grief-care",
+    "core_definition": "Nurturing, support, and protection of the vulnerable.",
+    "positive_axis": "support, comfort, safety",
+    "negative_axis": "neglect, coldness, abandonment",
+    "central_examples": "End-of-life-and-grief-care, care"
+  },
+  {
+    "family_id": 48,
+    "label": "Structure",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Structure, order"
+  },
+  {
+    "family_id": 49,
+    "label": "Stability",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Stability, order"
+  },
+  {
+    "family_id": 50,
+    "label": "Predictability",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Predictability, order"
+  },
+  {
+    "family_id": 51,
+    "label": "Coordination",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Coordination, order"
+  },
+  {
+    "family_id": 52,
+    "label": "Role-clarity",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Role-clarity, order"
+  },
+  {
+    "family_id": 53,
+    "label": "Governance",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Governance, order"
+  },
+  {
+    "family_id": 54,
+    "label": "Compliance",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Compliance, order"
+  },
+  {
+    "family_id": 55,
+    "label": "Procedures",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Procedures, order"
+  },
+  {
+    "family_id": 56,
+    "label": "Protocols",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Protocols, order"
+  },
+  {
+    "family_id": 57,
+    "label": "Standards",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Standards, order"
+  },
+  {
+    "family_id": 58,
+    "label": "Risk-management",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Risk-management, order"
+  },
+  {
+    "family_id": 59,
+    "label": "Capacity-planning",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Capacity-planning, order"
+  },
+  {
+    "family_id": 60,
+    "label": "Quality-assurance",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Quality-assurance, order"
+  },
+  {
+    "family_id": 61,
+    "label": "Documentation-discipline",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Documentation-discipline, order"
+  },
+  {
+    "family_id": 62,
+    "label": "Record-keeping",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Record-keeping, order"
+  },
+  {
+    "family_id": 63,
+    "label": "Scheduling",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Scheduling, order"
+  },
+  {
+    "family_id": 64,
+    "label": "Prioritization",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Prioritization, order"
+  },
+  {
+    "family_id": 65,
+    "label": "Escalation-paths",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Escalation-paths, order"
+  },
+  {
+    "family_id": 66,
+    "label": "Monitoring-routines",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Monitoring-routines, order"
+  },
+  {
+    "family_id": 67,
+    "label": "Redundancy-and-backups",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Redundancy-and-backups, order"
+  },
+  {
+    "family_id": 68,
+    "label": "Budget-discipline",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Budget-discipline, order"
+  },
+  {
+    "family_id": 69,
+    "label": "Access-structure",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Access-structure, order"
+  },
+  {
+    "family_id": 70,
+    "label": "Version-control",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Version-control, order"
+  },
+  {
+    "family_id": 71,
+    "label": "Change-management",
+    "core_definition": "Structure, stability, and governance.",
+    "positive_axis": "structure, rules, predictability",
+    "negative_axis": "chaos, arbitrariness, neglect",
+    "central_examples": "Change-management, order"
+  },
+  {
+    "family_id": 72,
+    "label": "Oversight",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Oversight, control"
+  },
+  {
+    "family_id": 73,
+    "label": "Enforcement",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Enforcement, control"
+  },
+  {
+    "family_id": 74,
+    "label": "Gatekeeping",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Gatekeeping, control"
+  },
+  {
+    "family_id": 75,
+    "label": "Licensing",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Licensing, control"
+  },
+  {
+    "family_id": 76,
+    "label": "Monitoring",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Monitoring, control"
+  },
+  {
+    "family_id": 77,
+    "label": "Takedowns-and-removals",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Takedowns-and-removals, control"
+  },
+  {
+    "family_id": 78,
+    "label": "Quarantine-and-isolation",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Quarantine-and-isolation, control"
+  },
+  {
+    "family_id": 79,
+    "label": "Centralization",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Centralization, control"
+  },
+  {
+    "family_id": 80,
+    "label": "Access-restrictions",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Access-restrictions, control"
+  },
+  {
+    "family_id": 81,
+    "label": "Permission-systems",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Permission-systems, control"
+  },
+  {
+    "family_id": 82,
+    "label": "Revocation",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Revocation, control"
+  },
+  {
+    "family_id": 83,
+    "label": "Sanctions",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Sanctions, control"
+  },
+  {
+    "family_id": 84,
+    "label": "Curfews-and-limits",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Curfews-and-limits, control"
+  },
+  {
+    "family_id": 85,
+    "label": "Price-and-rate-controls",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Price-and-rate-controls, control"
+  },
+  {
+    "family_id": 86,
+    "label": "Censorship",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Censorship, control"
+  },
+  {
+    "family_id": 87,
+    "label": "Moderation",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Moderation, control"
+  },
+  {
+    "family_id": 88,
+    "label": "Blocklists-and-allowlists",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Blocklists-and-allowlists, control"
+  },
+  {
+    "family_id": 89,
+    "label": "Inspection-and-audit",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Inspection-and-audit, control"
+  },
+  {
+    "family_id": 90,
+    "label": "Registration",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Registration, control"
+  },
+  {
+    "family_id": 91,
+    "label": "Supervision",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Supervision, control"
+  },
+  {
+    "family_id": 92,
+    "label": "Statutory-rules",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Statutory-rules, control"
+  },
+  {
+    "family_id": 93,
+    "label": "Eligibility-criteria",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Eligibility-criteria, control"
+  },
+  {
+    "family_id": 94,
+    "label": "Priority-queues",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Priority-queues, control"
+  },
+  {
+    "family_id": 95,
+    "label": "Safety-constraints",
+    "core_definition": "Oversight, enforcement, and restriction.",
+    "positive_axis": "oversight, compliance, boundaries",
+    "negative_axis": "anarchy, evasion, rebellion",
+    "central_examples": "Safety-constraints, control"
+  },
+  {
+    "family_id": 96,
+    "label": "Neglect",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Neglect, indifference"
+  },
+  {
+    "family_id": 97,
+    "label": "Bystanding",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Bystanding, indifference"
+  },
+  {
+    "family_id": 98,
+    "label": "Callousness",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Callousness, indifference"
+  },
+  {
+    "family_id": 99,
+    "label": "Withholding-help",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Withholding-help, indifference"
+  },
+  {
+    "family_id": 100,
+    "label": "Buckpassing",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Buckpassing, indifference"
+  },
+  {
+    "family_id": 101,
+    "label": "Ghosting-and-avoidance",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Ghosting-and-avoidance, indifference"
+  },
+  {
+    "family_id": 102,
+    "label": "Stonewalling",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Stonewalling, indifference"
+  },
+  {
+    "family_id": 103,
+    "label": "Tokenism",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Tokenism, indifference"
+  },
+  {
+    "family_id": 104,
+    "label": "Cynicism",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Cynicism, indifference"
+  },
+  {
+    "family_id": 105,
+    "label": "Burnout-numbness",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Burnout-numbness, indifference"
+  },
+  {
+    "family_id": 106,
+    "label": "Complacency",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Complacency, indifference"
+  },
+  {
+    "family_id": 107,
+    "label": "Apathy",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Apathy, indifference"
+  },
+  {
+    "family_id": 108,
+    "label": "Stalling",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Stalling, indifference"
+  },
+  {
+    "family_id": 109,
+    "label": "Exclusion",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Exclusion, indifference"
+  },
+  {
+    "family_id": 110,
+    "label": "Detachment",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Detachment, indifference"
+  },
+  {
+    "family_id": 111,
+    "label": "Ignorance-maintained",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Ignorance-maintained, indifference"
+  },
+  {
+    "family_id": 112,
+    "label": "Information-dumping",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Information-dumping, indifference"
+  },
+  {
+    "family_id": 113,
+    "label": "Dehumanization",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Dehumanization, indifference"
+  },
+  {
+    "family_id": 114,
+    "label": "Nonchalance",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Nonchalance, indifference"
+  },
+  {
+    "family_id": 115,
+    "label": "Fatalism",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Fatalism, indifference"
+  },
+  {
+    "family_id": 116,
+    "label": "Moral-disengagement",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Moral-disengagement, indifference"
+  },
+  {
+    "family_id": 117,
+    "label": "Instrumentalization-of-people",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Instrumentalization-of-people, indifference"
+  },
+  {
+    "family_id": 118,
+    "label": "Indifference-to-risk",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Indifference-to-risk, indifference"
+  },
+  {
+    "family_id": 119,
+    "label": "Indifference-to-harm",
+    "core_definition": "Neglect, detachment, and withholding engagement.",
+    "positive_axis": "detachment, non-interference",
+    "negative_axis": "engagement, responsibility, care",
+    "central_examples": "Indifference-to-harm, indifference"
+  },
+  {
+    "family_id": 120,
+    "label": "Violence",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Violence, harm"
+  },
+  {
+    "family_id": 121,
+    "label": "Exploitation",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Exploitation, harm"
+  },
+  {
+    "family_id": 122,
+    "label": "Corruption",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Corruption, harm"
+  },
+  {
+    "family_id": 123,
+    "label": "Betrayal",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Betrayal, harm"
+  },
+  {
+    "family_id": 124,
+    "label": "Negligence",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Negligence, harm"
+  },
+  {
+    "family_id": 125,
+    "label": "Oppression",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Oppression, harm"
+  },
+  {
+    "family_id": 126,
+    "label": "Sabotage",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Sabotage, harm"
+  },
+  {
+    "family_id": 127,
+    "label": "Fraud",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Fraud, harm"
+  },
+  {
+    "family_id": 128,
+    "label": "Defamation",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Defamation, harm"
+  },
+  {
+    "family_id": 129,
+    "label": "Harassment",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Harassment, harm"
+  },
+  {
+    "family_id": 130,
+    "label": "Hatred",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Hatred, harm"
+  },
+  {
+    "family_id": 131,
+    "label": "Vengeance",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Vengeance, harm"
+  },
+  {
+    "family_id": 132,
+    "label": "Coercion",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Coercion, harm"
+  },
+  {
+    "family_id": 133,
+    "label": "Intimidation",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Intimidation, harm"
+  },
+  {
+    "family_id": 134,
+    "label": "Injury",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Injury, harm"
+  },
+  {
+    "family_id": 135,
+    "label": "Predation",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Predation, harm"
+  },
+  {
+    "family_id": 136,
+    "label": "Hazard",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Hazard, harm"
+  },
+  {
+    "family_id": 137,
+    "label": "Ruthlessness",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Ruthlessness, harm"
+  },
+  {
+    "family_id": 138,
+    "label": "Abuse of power",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Abuse of power, harm"
+  },
+  {
+    "family_id": 139,
+    "label": "Systemic harm",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Systemic harm, harm"
+  },
+  {
+    "family_id": 140,
+    "label": "Resource stripping",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Resource stripping, harm"
+  },
+  {
+    "family_id": 141,
+    "label": "Environmental harm",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Environmental harm, harm"
+  },
+  {
+    "family_id": 142,
+    "label": "Self-harm patterns",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Self-harm patterns, harm"
+  },
+  {
+    "family_id": 143,
+    "label": "Social breakdown",
+    "core_definition": "Violence, exploitation, and damage to others.",
+    "positive_axis": "coercion, injury, abuse",
+    "negative_axis": "care, protection, healing",
+    "central_examples": "Social breakdown, harm"
+  },
+  {
+    "family_id": 144,
+    "label": "Decommissioning",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Decommissioning, destruction"
+  },
+  {
+    "family_id": 145,
+    "label": "Pruning",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Pruning, destruction"
+  },
+  {
+    "family_id": 146,
+    "label": "Culling",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Culling, destruction"
+  },
+  {
+    "family_id": 147,
+    "label": "Dismantling",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Dismantling, destruction"
+  },
+  {
+    "family_id": 148,
+    "label": "Disassembly",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Disassembly, destruction"
+  },
+  {
+    "family_id": 149,
+    "label": "Erasure-of-records",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Erasure-of-records, destruction"
+  },
+  {
+    "family_id": 150,
+    "label": "Neutralization-of-threats",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Neutralization-of-threats, destruction"
+  },
+  {
+    "family_id": 151,
+    "label": "Demolition",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Demolition, destruction"
+  },
+  {
+    "family_id": 152,
+    "label": "Aggression",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Aggression, destruction"
+  },
+  {
+    "family_id": 153,
+    "label": "Eradication",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Eradication, destruction"
+  },
+  {
+    "family_id": 154,
+    "label": "Damage",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Damage, destruction"
+  },
+  {
+    "family_id": 155,
+    "label": "Collapse",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Collapse, destruction"
+  },
+  {
+    "family_id": 156,
+    "label": "Devastation",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Devastation, destruction"
+  },
+  {
+    "family_id": 157,
+    "label": "Shredding-and-wiping",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Shredding-and-wiping, destruction"
+  },
+  {
+    "family_id": 158,
+    "label": "Partition-and-splitting",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Partition-and-splitting, destruction"
+  },
+  {
+    "family_id": 159,
+    "label": "Controlled-burns",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Controlled-burns, destruction"
+  },
+  {
+    "family_id": 160,
+    "label": "Sunsetting-systems",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Sunsetting-systems, destruction"
+  },
+  {
+    "family_id": 161,
+    "label": "Recall-and-withdrawal",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Recall-and-withdrawal, destruction"
+  },
+  {
+    "family_id": 162,
+    "label": "Unlearning-harmful-patterns",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Unlearning-harmful-patterns, destruction"
+  },
+  {
+    "family_id": 163,
+    "label": "Asset-stripping",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Asset-stripping, destruction"
+  },
+  {
+    "family_id": 164,
+    "label": "Sabotage-destruction",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Sabotage-destruction, destruction"
+  },
+  {
+    "family_id": 165,
+    "label": "Scorched-earth-actions",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Scorched-earth-actions, destruction"
+  },
+  {
+    "family_id": 166,
+    "label": "Decay-and-erosion",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Decay-and-erosion, destruction"
+  },
+  {
+    "family_id": 167,
+    "label": "Abandonment",
+    "core_definition": "Demolition, erasure, and removal.",
+    "positive_axis": "removal, demolition, erasure",
+    "negative_axis": "creation, preservation, repair",
+    "central_examples": "Abandonment, destruction"
+  },
+  {
+    "family_id": 168,
+    "label": "Unpredictability",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Unpredictability, chaos"
+  },
+  {
+    "family_id": 169,
+    "label": "Instability",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Instability, chaos"
+  },
+  {
+    "family_id": 170,
+    "label": "Flux",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Flux, chaos"
+  },
+  {
+    "family_id": 171,
+    "label": "Turbulence",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Turbulence, chaos"
+  },
+  {
+    "family_id": 172,
+    "label": "Overload",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Overload, chaos"
+  },
+  {
+    "family_id": 173,
+    "label": "Conflict-swarms",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Conflict-swarms, chaos"
+  },
+  {
+    "family_id": 174,
+    "label": "Uncoordinated-change",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Uncoordinated-change, chaos"
+  },
+  {
+    "family_id": 175,
+    "label": "Cascading-failure",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Cascading-failure, chaos"
+  },
+  {
+    "family_id": 176,
+    "label": "Breakdown-of-rules",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Breakdown-of-rules, chaos"
+  },
+  {
+    "family_id": 177,
+    "label": "Signal-noise",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Signal-noise, chaos"
+  },
+  {
+    "family_id": 178,
+    "label": "Information-overflow",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Information-overflow, chaos"
+  },
+  {
+    "family_id": 179,
+    "label": "Rumor-spread",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Rumor-spread, chaos"
+  },
+  {
+    "family_id": 180,
+    "label": "Spontaneous-mobilization",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Spontaneous-mobilization, chaos"
+  },
+  {
+    "family_id": 181,
+    "label": "Crowd-dynamics",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Crowd-dynamics, chaos"
+  },
+  {
+    "family_id": 182,
+    "label": "Volatility",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Volatility, chaos"
+  },
+  {
+    "family_id": 183,
+    "label": "Fragmentation",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Fragmentation, chaos"
+  },
+  {
+    "family_id": 184,
+    "label": "Strife",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Strife, chaos"
+  },
+  {
+    "family_id": 185,
+    "label": "Subversion-of-order",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Subversion-of-order, chaos"
+  },
+  {
+    "family_id": 186,
+    "label": "Hijacking-processes",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Hijacking-processes, chaos"
+  },
+  {
+    "family_id": 187,
+    "label": "Manias-and-panics",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Manias-and-panics, chaos"
+  },
+  {
+    "family_id": 188,
+    "label": "Ad-hoc-workarounds",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Ad-hoc-workarounds, chaos"
+  },
+  {
+    "family_id": 189,
+    "label": "Rogue-actors",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Rogue-actors, chaos"
+  },
+  {
+    "family_id": 190,
+    "label": "System-drift",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "System-drift, chaos"
+  },
+  {
+    "family_id": 191,
+    "label": "Entropy-build-up",
+    "core_definition": "Instability, unpredictability, and breakdown.",
+    "positive_axis": "flux, disruption, disorder",
+    "negative_axis": "order, stability, control",
+    "central_examples": "Entropy-build-up, chaos"
+  },
+  {
+    "family_id": 192,
+    "label": "Autonomy",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Autonomy, freedom"
+  },
+  {
+    "family_id": 193,
+    "label": "Consent",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Consent, freedom"
+  },
+  {
+    "family_id": 194,
+    "label": "Expression",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Expression, freedom"
+  },
+  {
+    "family_id": 195,
+    "label": "Privacy",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Privacy, freedom"
+  },
+  {
+    "family_id": 196,
+    "label": "Mobility",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Mobility, freedom"
+  },
+  {
+    "family_id": 197,
+    "label": "Association",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Association, freedom"
+  },
+  {
+    "family_id": 198,
+    "label": "Choice",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Choice, freedom"
+  },
+  {
+    "family_id": 199,
+    "label": "Pluralism",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Pluralism, freedom"
+  },
+  {
+    "family_id": 200,
+    "label": "Tolerance",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Tolerance, freedom"
+  },
+  {
+    "family_id": 201,
+    "label": "Experimentation",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Experimentation, freedom"
+  },
+  {
+    "family_id": 202,
+    "label": "Innovation-space",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Innovation-space, freedom"
+  },
+  {
+    "family_id": 203,
+    "label": "Decentralization",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Decentralization, freedom"
+  },
+  {
+    "family_id": 204,
+    "label": "Interoperability",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Interoperability, freedom"
+  },
+  {
+    "family_id": 205,
+    "label": "Open-access",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Open-access, freedom"
+  },
+  {
+    "family_id": 206,
+    "label": "Whistleblowing-space",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Whistleblowing-space, freedom"
+  },
+  {
+    "family_id": 207,
+    "label": "Dissent-protection",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Dissent-protection, freedom"
+  },
+  {
+    "family_id": 208,
+    "label": "Minority-protection",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Minority-protection, freedom"
+  },
+  {
+    "family_id": 209,
+    "label": "Due-process",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Due-process, freedom"
+  },
+  {
+    "family_id": 210,
+    "label": "Non-discrimination",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Non-discrimination, freedom"
+  },
+  {
+    "family_id": 211,
+    "label": "Information-access",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Information-access, freedom"
+  },
+  {
+    "family_id": 212,
+    "label": "Transparency-claims",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Transparency-claims, freedom"
+  },
+  {
+    "family_id": 213,
+    "label": "Exit-options",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Exit-options, freedom"
+  },
+  {
+    "family_id": 214,
+    "label": "Entry-opportunities",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Entry-opportunities, freedom"
+  },
+  {
+    "family_id": 215,
+    "label": "Sandboxing",
+    "core_definition": "Autonomy, choice, and absence of coercion.",
+    "positive_axis": "choice, consent, liberty",
+    "negative_axis": "coercion, restriction, captivity",
+    "central_examples": "Sandboxing, freedom"
+  },
+  {
+    "family_id": 216,
+    "label": "Accuracy",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Accuracy, truth"
+  },
+  {
+    "family_id": 217,
+    "label": "Evidence",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Evidence, truth"
+  },
+  {
+    "family_id": 218,
+    "label": "Reasoning",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Reasoning, truth"
+  },
+  {
+    "family_id": 219,
+    "label": "Objectivity",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Objectivity, truth"
+  },
+  {
+    "family_id": 220,
+    "label": "Clarity",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Clarity, truth"
+  },
+  {
+    "family_id": 221,
+    "label": "Disclosure",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Disclosure, truth"
+  },
+  {
+    "family_id": 222,
+    "label": "Scrutiny",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Scrutiny, truth"
+  },
+  {
+    "family_id": 223,
+    "label": "Verification",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Verification, truth"
+  },
+  {
+    "family_id": 224,
+    "label": "Reliability-of-sources",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Reliability-of-sources, truth"
+  },
+  {
+    "family_id": 225,
+    "label": "Coherence",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Coherence, truth"
+  },
+  {
+    "family_id": 226,
+    "label": "Completeness",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Completeness, truth"
+  },
+  {
+    "family_id": 227,
+    "label": "Honesty-in-reporting",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Honesty-in-reporting, truth"
+  },
+  {
+    "family_id": 228,
+    "label": "Traceability",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Traceability, truth"
+  },
+  {
+    "family_id": 229,
+    "label": "Transparency-of-methods",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Transparency-of-methods, truth"
+  },
+  {
+    "family_id": 230,
+    "label": "Uncertainty-awareness",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Uncertainty-awareness, truth"
+  },
+  {
+    "family_id": 231,
+    "label": "Plural-evidence",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Plural-evidence, truth"
+  },
+  {
+    "family_id": 232,
+    "label": "Error-correction",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Error-correction, truth"
+  },
+  {
+    "family_id": 233,
+    "label": "Review-and-critique",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Review-and-critique, truth"
+  },
+  {
+    "family_id": 234,
+    "label": "Methodological-soundness",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Methodological-soundness, truth"
+  },
+  {
+    "family_id": 235,
+    "label": "Replicability",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Replicability, truth"
+  },
+  {
+    "family_id": 236,
+    "label": "Open-debate",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Open-debate, truth"
+  },
+  {
+    "family_id": 237,
+    "label": "Grounded-definitions",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Grounded-definitions, truth"
+  },
+  {
+    "family_id": 238,
+    "label": "Classification-discipline",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Classification-discipline, truth"
+  },
+  {
+    "family_id": 239,
+    "label": "Measurement-discipline",
+    "core_definition": "Accuracy, evidence, and transparency.",
+    "positive_axis": "accuracy, verification, disclosure",
+    "negative_axis": "lies, obfuscation, fabrication",
+    "central_examples": "Measurement-discipline, truth"
+  },
+  {
+    "family_id": 240,
+    "label": "Lies",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Lies, deceit"
+  },
+  {
+    "family_id": 241,
+    "label": "Propaganda",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Propaganda, deceit"
+  },
+  {
+    "family_id": 242,
+    "label": "Misinformation",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Misinformation, deceit"
+  },
+  {
+    "family_id": 243,
+    "label": "Disinformation",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Disinformation, deceit"
+  },
+  {
+    "family_id": 244,
+    "label": "Concealment",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Concealment, deceit"
+  },
+  {
+    "family_id": 245,
+    "label": "Forgery",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Forgery, deceit"
+  },
+  {
+    "family_id": 246,
+    "label": "Scapegoating",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Scapegoating, deceit"
+  },
+  {
+    "family_id": 247,
+    "label": "Gaslighting",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Gaslighting, deceit"
+  },
+  {
+    "family_id": 248,
+    "label": "Statistical-abuse",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Statistical-abuse, deceit"
+  },
+  {
+    "family_id": 249,
+    "label": "Plagiarism",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Plagiarism, deceit"
+  },
+  {
+    "family_id": 250,
+    "label": "Manipulative-framing",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Manipulative-framing, deceit"
+  },
+  {
+    "family_id": 251,
+    "label": "Scams",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Scams, deceit"
+  },
+  {
+    "family_id": 252,
+    "label": "Imposture",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Imposture, deceit"
+  },
+  {
+    "family_id": 253,
+    "label": "Subterfuge",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Subterfuge, deceit"
+  },
+  {
+    "family_id": 254,
+    "label": "Conspiracism",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Conspiracism, deceit"
+  },
+  {
+    "family_id": 255,
+    "label": "Mislabeling",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Mislabeling, deceit"
+  },
+  {
+    "family_id": 256,
+    "label": "Duplicity",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Duplicity, deceit"
+  },
+  {
+    "family_id": 257,
+    "label": "Fraudulence",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Fraudulence, deceit"
+  },
+  {
+    "family_id": 258,
+    "label": "Misattribution",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Misattribution, deceit"
+  },
+  {
+    "family_id": 259,
+    "label": "Hoaxes",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Hoaxes, deceit"
+  },
+  {
+    "family_id": 260,
+    "label": "Astroturfing",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Astroturfing, deceit"
+  },
+  {
+    "family_id": 261,
+    "label": "False-balance",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "False-balance, deceit"
+  },
+  {
+    "family_id": 262,
+    "label": "Selective-disclosure",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Selective-disclosure, deceit"
+  },
+  {
+    "family_id": 263,
+    "label": "Data-fabrication",
+    "core_definition": "Lies, concealment, and manipulation.",
+    "positive_axis": "concealment, misrepresentation",
+    "negative_axis": "honesty, transparency, integrity",
+    "central_examples": "Data-fabrication, deceit"
+  },
+  {
+    "family_id": 264,
+    "label": "Imagination",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Imagination, creation"
+  },
+  {
+    "family_id": 265,
+    "label": "Ideation",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Ideation, creation"
+  },
+  {
+    "family_id": 266,
+    "label": "Design-thinking",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Design-thinking, creation"
+  },
+  {
+    "family_id": 267,
+    "label": "Invention",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Invention, creation"
+  },
+  {
+    "family_id": 268,
+    "label": "Prototyping",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Prototyping, creation"
+  },
+  {
+    "family_id": 269,
+    "label": "Craft-and-making",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Craft-and-making, creation"
+  },
+  {
+    "family_id": 270,
+    "label": "Engineering-solutions",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Engineering-solutions, creation"
+  },
+  {
+    "family_id": 271,
+    "label": "System-design",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "System-design, creation"
+  },
+  {
+    "family_id": 272,
+    "label": "Synthesis",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Synthesis, creation"
+  },
+  {
+    "family_id": 273,
+    "label": "Integration",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Integration, creation"
+  },
+  {
+    "family_id": 274,
+    "label": "Refinement",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Refinement, creation"
+  },
+  {
+    "family_id": 275,
+    "label": "Pattern-finding",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Pattern-finding, creation"
+  },
+  {
+    "family_id": 276,
+    "label": "Renovation-and-upgrades",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Renovation-and-upgrades, creation"
+  },
+  {
+    "family_id": 277,
+    "label": "Entrepreneurial-building",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Entrepreneurial-building, creation"
+  },
+  {
+    "family_id": 278,
+    "label": "Collaboration-in-making",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Collaboration-in-making, creation"
+  },
+  {
+    "family_id": 279,
+    "label": "Co-creation-with-users",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Co-creation-with-users, creation"
+  },
+  {
+    "family_id": 280,
+    "label": "Artistic-expression",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Artistic-expression, creation"
+  },
+  {
+    "family_id": 281,
+    "label": "Music-and-rhythm",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Music-and-rhythm, creation"
+  },
+  {
+    "family_id": 282,
+    "label": "Storytelling-and-writing",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Storytelling-and-writing, creation"
+  },
+  {
+    "family_id": 283,
+    "label": "Research-and-discovery",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Research-and-discovery, creation"
+  },
+  {
+    "family_id": 284,
+    "label": "Experiment-design",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Experiment-design, creation"
+  },
+  {
+    "family_id": 285,
+    "label": "Tool-building",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Tool-building, creation"
+  },
+  {
+    "family_id": 286,
+    "label": "Production-systems",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Production-systems, creation"
+  },
+  {
+    "family_id": 287,
+    "label": "Growth-and-expansion",
+    "core_definition": "Building, invention, and growth.",
+    "positive_axis": "building, design, synthesis",
+    "negative_axis": "destruction, stagnation, neglect",
+    "central_examples": "Growth-and-expansion, creation"
+  }
+]

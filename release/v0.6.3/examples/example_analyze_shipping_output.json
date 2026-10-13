@@ -1,0 +1,79 @@
+{
+  "_comment": "Example POST /analyze style result (offline fixture dict). Out of context demo.",
+  "lang": "ru",
+  "input": {
+    "text_ru": "Агрессия в семейной системе снижает способность к саморегуляции и усиливает защитные механизмы при нарушении границ.",
+    "kind": "tfp_scientific_statement"
+  },
+  "minimal": {
+    "dominant_area": 9,
+    "dominant_family": 228,
+    "governance": 0.3703759734164436,
+    "loopability": 0.9223034414740152,
+    "tension_energy": 0.1723970962870158,
+    "obstacle_score": 0.1689697716405083,
+    "constraint_status": 0.3703759734164436,
+    "structural_recurrence": 0.9223034414740152,
+    "resistance_index": 0.1689697716405083
+  },
+  "extended_summary": {
+    "family_vector_len": 288,
+    "dict_b_keys": [
+      "coherence_index",
+      "entropy_area",
+      "exclusion_conflict_energy"
+    ],
+    "matched_tokens": 15
+  },
+  "engine_api_v1": {
+    "area_vector": [
+      0.08333333,
+      0.08333333,
+      0.08333333,
+      0.08333333,
+      0.08333333,
+      0.08333333,
+      0.08333333,
+      0.08333333,
+      0.08333333,
+      0.08333333,
+      0.08333333,
+      0.08333333
+    ],
+    "family_vector": [
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667,
+      0.04166667
+    ],
+    "dominant_area": 0,
+    "dominant_family": 0,
+    "tension": 0.0,
+    "loopability": 1.0,
+    "stability": 1.0,
+    "failure_flags": [],
+    "schema_version": "hesperia.result.v1",
+    "fingerprint": "7ea0e6e772c38ee7e0b3b0e34518672d05776ece5879bd3e4b7ed10eb13687bb",
+    "deterministic_hash": "31f3b2f07dabed603197e6f7415242e939a047409c5d475dba8586bd2b0657ee"
+  }
+}

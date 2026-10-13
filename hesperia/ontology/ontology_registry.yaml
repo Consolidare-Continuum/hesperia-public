@@ -1,0 +1,22 @@
+# HESPERIA — Ontology Governance Layer
+# Versioning, change tracking, deprecation. Critical for research reproducibility.
+# Copyright © 2026 igareosh.com. See LEGAL_NOTICE.md.
+
+ontology_version: tfp_v1
+dictA_version: "1.0"
+dictB_version: "1.0"
+relations_version: "1.0"
+families_version: "1.0"
+areas_version: "1.0"
+# Canonical concept axis (markers → A_concept): hesperia/ontology/concepts_registry.yaml
+concepts_registry_version: "1"
+
+# Change tracking: list of changes (optional)
+# change_log:
+#   - date: "2026-03-01"
+#     component: dictA
+#     change: "Added colloquial markers"
+# deprecation_rules:
+#   - component: dictA
+#     deprecated_versions: []
+#     min_supported: "1.0"

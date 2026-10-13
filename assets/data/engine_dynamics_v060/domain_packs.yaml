@@ -1,0 +1,22 @@
+# Ethan PO-30 — switchable domain packs (same engine, different policy + dict paths).
+active_pack: default
+packs:
+  default:
+    note: Base dlcr_policy.yaml only
+  scientific:
+    dict_a_max_accepted: 80
+    hex_smooth_alpha: 0.0
+  clinical_speech:
+    dict_a_max_accepted: 120
+    hex_smooth_alpha: 0.08
+  tfp:
+    dict_a_max_accepted: 120
+    hex_smooth_alpha: 0.06
+    # 2026-08-19: contradiction_grounding_zero_lex_share failed 10/10 real sessions --
+    # root cause was max_accepted truncating by document position, starving family
+    # coverage on later-discussed topics. Round-robins the cap across families instead.
+    # docs/recipes/chiron_tweaks/BACKLOG.md has the evidence.
+    dict_a_family_diversity: true
+  psychodynamic:
+    dict_a_max_accepted: 100
+    hex_smooth_alpha: 0.07

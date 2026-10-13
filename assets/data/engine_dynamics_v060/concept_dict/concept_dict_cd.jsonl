@@ -1,0 +1,1 @@
+{"concept_id": "*", "type": "state", "activation": {"base_weight": 1.0, "cap": 2.0, "saturation_k": 1.0, "threshold": 0.0}, "constraints": {"requires": [], "excludes": [], "co_occurs": []}, "effects": {"amplifies": {}, "inhibits": {}}, "structure": {"primary_area": "", "secondary_areas": [], "family_bias": []}}

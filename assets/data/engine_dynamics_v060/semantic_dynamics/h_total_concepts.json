@@ -1,0 +1,414 @@
+{
+  "version": "v060",
+  "matrix_id": "h_total_concepts",
+  "space": "concept_id",
+  "description": "Deterministic bounded semantic propagation operator over concept activations.",
+  "build_rules": {
+    "symmetric": true,
+    "bounded_min": -1.0,
+    "bounded_max": 1.0,
+    "default_missing_edge": 0.0,
+    "diagonal_semantics": "self_retention",
+    "off_diagonal_positive": "semantic_coupling",
+    "off_diagonal_negative": "competitive_inhibition"
+  },
+  "normalization": {
+    "row_balance_target": 1.0,
+    "clip_abs_value": 1.0,
+    "post_build_symmetrize": true
+  },
+  "concept_index": [
+    "C-1001",
+    "C-1002",
+    "C-1003",
+    "C-1004",
+    "C-1005",
+    "C-1006",
+    "C-1007",
+    "C-1008",
+    "C-1009",
+    "C-1010"
+  ],
+  "diagonal": {
+    "C-1001": 0.55,
+    "C-1002": 0.55,
+    "C-1003": 0.45,
+    "C-1004": 0.55,
+    "C-1005": 0.55,
+    "C-1006": 0.55,
+    "C-1007": 0.55,
+    "C-1008": 0.55,
+    "C-1009": 0.55,
+    "C-1010": 0.45
+  },
+  "edges": [
+    {
+      "a": "C-1001",
+      "b": "C-1002",
+      "coupling": 0.4,
+      "inhibition": 0.0,
+      "value": 0.4,
+      "reason": "same_family"
+    },
+    {
+      "a": "C-1001",
+      "b": "C-1003",
+      "coupling": 0.366667,
+      "inhibition": 0.0,
+      "value": 0.366667,
+      "reason": "same_family"
+    },
+    {
+      "a": "C-1001",
+      "b": "C-1004",
+      "coupling": 0.05,
+      "inhibition": 0.0244,
+      "value": 0.0256,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1001",
+      "b": "C-1005",
+      "coupling": 0.04,
+      "inhibition": 0.0244,
+      "value": 0.0156,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1001",
+      "b": "C-1006",
+      "coupling": 0.033333,
+      "inhibition": 0.0231,
+      "value": 0.010233,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1001",
+      "b": "C-1007",
+      "coupling": 0.028571,
+      "inhibition": 0.0218,
+      "value": 0.006771,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1001",
+      "b": "C-1008",
+      "coupling": 0.025,
+      "inhibition": 0.0231,
+      "value": 0.0019,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1001",
+      "b": "C-1009",
+      "coupling": 0.022222,
+      "inhibition": 0.0231,
+      "value": -0.000878,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1001",
+      "b": "C-1010",
+      "coupling": 0.02,
+      "inhibition": 0.0244,
+      "value": -0.0044,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1002",
+      "b": "C-1003",
+      "coupling": 0.4,
+      "inhibition": 0.0,
+      "value": 0.4,
+      "reason": "same_family"
+    },
+    {
+      "a": "C-1002",
+      "b": "C-1004",
+      "coupling": 0.066667,
+      "inhibition": 0.0231,
+      "value": 0.043567,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1002",
+      "b": "C-1005",
+      "coupling": 0.05,
+      "inhibition": 0.0231,
+      "value": 0.0269,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1002",
+      "b": "C-1006",
+      "coupling": 0.04,
+      "inhibition": 0.0231,
+      "value": 0.0169,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1002",
+      "b": "C-1007",
+      "coupling": 0.033333,
+      "inhibition": 0.0218,
+      "value": 0.011533,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1002",
+      "b": "C-1008",
+      "coupling": 0.028571,
+      "inhibition": 0.0231,
+      "value": 0.005471,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1002",
+      "b": "C-1009",
+      "coupling": 0.025,
+      "inhibition": 0.0231,
+      "value": 0.0019,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1002",
+      "b": "C-1010",
+      "coupling": 0.022222,
+      "inhibition": 0.0231,
+      "value": -0.000878,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1003",
+      "b": "C-1004",
+      "coupling": 0.1,
+      "inhibition": 0.0244,
+      "value": 0.0756,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1003",
+      "b": "C-1005",
+      "coupling": 0.066667,
+      "inhibition": 0.0244,
+      "value": 0.042267,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1003",
+      "b": "C-1006",
+      "coupling": 0.05,
+      "inhibition": 0.0231,
+      "value": 0.0269,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1003",
+      "b": "C-1007",
+      "coupling": 0.04,
+      "inhibition": 0.0218,
+      "value": 0.0182,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1003",
+      "b": "C-1008",
+      "coupling": 0.033333,
+      "inhibition": 0.0231,
+      "value": 0.010233,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1003",
+      "b": "C-1009",
+      "coupling": 0.028571,
+      "inhibition": 0.0231,
+      "value": 0.005471,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1003",
+      "b": "C-1010",
+      "coupling": 0.025,
+      "inhibition": 0.0257,
+      "value": -0.0007,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1004",
+      "b": "C-1005",
+      "coupling": 0.4,
+      "inhibition": 0.0,
+      "value": 0.4,
+      "reason": "same_family"
+    },
+    {
+      "a": "C-1004",
+      "b": "C-1006",
+      "coupling": 0.066667,
+      "inhibition": 0.0231,
+      "value": 0.043567,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1004",
+      "b": "C-1007",
+      "coupling": 0.05,
+      "inhibition": 0.0218,
+      "value": 0.0282,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1004",
+      "b": "C-1008",
+      "coupling": 0.04,
+      "inhibition": 0.0231,
+      "value": 0.0169,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1004",
+      "b": "C-1009",
+      "coupling": 0.033333,
+      "inhibition": 0.0231,
+      "value": 0.010233,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1004",
+      "b": "C-1010",
+      "coupling": 0.028571,
+      "inhibition": 0.0244,
+      "value": 0.004171,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1005",
+      "b": "C-1006",
+      "coupling": 0.1,
+      "inhibition": 0.0231,
+      "value": 0.0769,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1005",
+      "b": "C-1007",
+      "coupling": 0.066667,
+      "inhibition": 0.0218,
+      "value": 0.044867,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1005",
+      "b": "C-1008",
+      "coupling": 0.05,
+      "inhibition": 0.0231,
+      "value": 0.0269,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1005",
+      "b": "C-1009",
+      "coupling": 0.04,
+      "inhibition": 0.0231,
+      "value": 0.0169,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1005",
+      "b": "C-1010",
+      "coupling": 0.033333,
+      "inhibition": 0.0244,
+      "value": 0.008933,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1006",
+      "b": "C-1007",
+      "coupling": 0.4,
+      "inhibition": 0.0,
+      "value": 0.4,
+      "reason": "same_family"
+    },
+    {
+      "a": "C-1006",
+      "b": "C-1008",
+      "coupling": 0.066667,
+      "inhibition": 0.0231,
+      "value": 0.043567,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1006",
+      "b": "C-1009",
+      "coupling": 0.05,
+      "inhibition": 0.0231,
+      "value": 0.0269,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1006",
+      "b": "C-1010",
+      "coupling": 0.04,
+      "inhibition": 0.0231,
+      "value": 0.0169,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1007",
+      "b": "C-1008",
+      "coupling": 0.1,
+      "inhibition": 0.0218,
+      "value": 0.0782,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1007",
+      "b": "C-1009",
+      "coupling": 0.066667,
+      "inhibition": 0.0218,
+      "value": 0.044867,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1007",
+      "b": "C-1010",
+      "coupling": 0.05,
+      "inhibition": 0.0218,
+      "value": 0.0282,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1008",
+      "b": "C-1009",
+      "coupling": 0.4,
+      "inhibition": 0.0,
+      "value": 0.4,
+      "reason": "same_family"
+    },
+    {
+      "a": "C-1008",
+      "b": "C-1010",
+      "coupling": 0.066667,
+      "inhibition": 0.0231,
+      "value": 0.043567,
+      "reason": "cross_area"
+    },
+    {
+      "a": "C-1009",
+      "b": "C-1010",
+      "coupling": 0.1,
+      "inhibition": 0.0231,
+      "value": 0.0769,
+      "reason": "cross_area"
+    }
+  ],
+  "provenance": {
+    "sources": [
+      "assets/data/engine_dynamics_v060/dict_b/dict_b_seed.jsonl",
+      "assets/data/engine_dynamics_v060/semantic_dynamics/area_inhibition_matrix_main_v1.json"
+    ],
+    "build_method": "deterministic_rule_compilation",
+    "notes": "Built via tools/build_h_total_concepts.py; see provenance_inputs in build log."
+  }
+}

@@ -1,0 +1,151 @@
+# HESPERIA — CI verification for sealed runtime gate.
+# Runs on main and on PRs targeting main. Blocks merge if checks fail.
+#
+# Checks:
+#   - tools/validate_version_consistency.py (VERSION.yaml vs pyproject + mirror file)
+#   - tools/check_import_boundary.py      (no forbidden imports in public runtime)
+#   - tools/sealing_scan.py               (no reflective terms in public tree)
+#   - tools/verify_public_api_snapshot.py (canonical schema == frozen snapshot)
+#   - tools/check_forbidden_zone_imports.py (no research/legacy in strict trees)
+#   - tools/validate_shipping_surface.py    (runtime/shipping import allowlist)
+#   - tools/audit_shipping_allowlist.py       (allowlist prefixes used + creep cap)
+#   - tools/check_engine_projection_boundary.py (no core.projection outside engine/projection/)
+#   - tools/check_core_default_tfp_boundary.py (DEFAULT/core/syzif ≠ TFP catalog/prompt)
+#
+# Prod release repo is igareosh/hesperia itself (was Atomic-Commits-Team, abandoned 2026-07-26):
+# no docs/ tree — import-graph drift and dead-weight budget run on this repo only
+# (see tools/ci/verify_prod_code_only.sh).
+
+name: Sealed runtime gate
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  # pull_request removed: merged PR #26 pins merge commit 13511d45 (presanitized);
+  # re-runs cannot pick up history rewrite. Gate runs on push to main only.
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONHASHSEED: "0"
+      HESPERIA_STRICT_DETERMINISM: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies (if needed for imports + pytest)
+        run: |
+          if [ -f requirements.txt ]; then pip install --quiet -r requirements.txt; fi
+          pip install --quiet pytest
+
+      - name: Version authority (VERSION.yaml vs pyproject)
+        run: python3 tools/validate_version_consistency.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Import boundary check
+        run: python3 tools/check_import_boundary.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Sealing scan
+        run: python3 tools/sealing_scan.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Public API schema snapshot (no drift)
+        run: python3 tools/verify_public_api_snapshot.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Forbidden zone imports (research / legacy)
+        run: python3 tools/check_forbidden_zone_imports.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: research/_noone_local path literal gate (TFP module data)
+        run: python3 tools/check_research_noone_local_literals.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Shipping surface allowlist
+        run: python3 tools/validate_shipping_surface.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Shipping allowlist audit (strict + creep cap)
+        run: python3 tools/audit_shipping_allowlist.py --strict-unused --max-total-prefixes 12
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Engine projection boundary (layer rule)
+        run: python3 tools/check_engine_projection_boundary.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Core/module boundary (frozen kernel)
+        run: python3 tools/check_core_module_boundary.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Core-default vs TFP calibration boundary (no silent TFP in DEFAULT)
+        run: |
+          python3 tools/check_core_default_tfp_boundary.py
+          python3 -m pytest tests/dict_calibration/test_domain_seal.py -q --tb=short
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: CORE-D2 core calibration-pack gate (independent contract)
+        run: |
+          python3 tools/core_calibration_pack_gate.py --help
+          python3 -m pytest tests/dict_calibration/test_core_pack_gate.py -q --tb=short
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: DLCR regression gate
+        run: python3 tools/check_dlcr_regression.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: DLCR test pack
+        run: python3 -m pytest tests/lexical_concept -q --tb=short
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Modularity contract gate (API + language + guard)
+        run: |
+          python3 -m pytest tests/test_engine_api_v1.py tests/test_engine_language_contract.py -q --tb=short
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Pytest integrity (spine trace, semantic, guards, schema snapshot)
+        run: |
+          python3 -m pytest tests/test_env_determinism.py \
+            tests/test_runtime_spine_integrity.py \
+            tests/test_semantic_output_signature.py tests/test_guard_invariants_locked.py \
+            tests/test_tool_contracts_locked.py tests/test_public_api_snapshot.py \
+            tests/test_calibration_release_gate.py tests/test_output_anomalies.py \
+            tests/test_output_trace.py tests/test_bundle_schema_validation.py \
+            tests/test_tfp_concept_invariants_enf.py tests/test_tfp_cd_delta_enf.py tests/test_tfp_unmapped_gate_enf.py \
+            tests/test_tfp_rel_realism_enf.py \
+            tests/test_tfp_module_v1_dlcr_golds.py tests/test_tfp_module_v1_public_surface.py \
+            tests/test_tfp_module_v1_seal.py \
+            tests/test_tfp_v1_data_layout.py \
+            -q --tb=short
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: TFP calibration bundle (schema + goldset + gate smoke)
+        run: |
+          python3 tools/validate_tfp_bundle_schemas.py --bundle-dir tests/fixtures/tfp_calibration_bundle_ci
+          python3 tools/run_tfp_calibration_goldset.py --bundle-dir tests/fixtures/tfp_calibration_bundle_ci
+          python3 tools/calibration_release_gate.py --bundle-dir tests/fixtures/tfp_calibration_bundle_ci \
+            --profile internal_review --skip-schema --skip-gold
+        env:
+          PYTHONPATH: ${{ github.workspace }}

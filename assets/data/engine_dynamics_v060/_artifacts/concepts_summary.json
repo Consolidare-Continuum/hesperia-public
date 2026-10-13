@@ -1,0 +1,1417 @@
+[
+  {
+    "concept_id": "TFP_OBJECT_RELATIONS",
+    "label": "object_relations",
+    "lexical_support_count": 1035
+  },
+  {
+    "concept_id": "TFP_SPLITTING",
+    "label": "splitting",
+    "lexical_support_count": 509
+  },
+  {
+    "concept_id": "TFP_IDEALIZATION",
+    "label": "idealization",
+    "lexical_support_count": 271
+  },
+  {
+    "concept_id": "TFP_PROJECTIVE_IDENTIFICATION",
+    "label": "projective_identification",
+    "lexical_support_count": 125
+  },
+  {
+    "concept_id": "TFP_AFFECT_INSTABILITY",
+    "label": "affect_instability",
+    "lexical_support_count": 114
+  },
+  {
+    "concept_id": "TFP_DEVALUATION",
+    "label": "devaluation",
+    "lexical_support_count": 83
+  },
+  {
+    "concept_id": "TFP_IDENTITY_DIFFUSION",
+    "label": "identity_diffusion",
+    "lexical_support_count": 47
+  },
+  {
+    "concept_id": "TFP_DENIAL",
+    "label": "denial",
+    "lexical_support_count": 36
+  },
+  {
+    "concept_id": "TFP_POLARIZATION",
+    "label": "polarization",
+    "lexical_support_count": 3
+  },
+  {
+    "concept_id": "B_A10_F10_001",
+    "label": "Разрывы альянса",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F10_002",
+    "label": "Разрывы",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F10_003",
+    "label": "Разрывы альянса — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F10_004",
+    "label": "Разрывы альянса — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F10_005",
+    "label": "Разрывы альянса — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F10_006",
+    "label": "Разрывы альянса — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F11_001",
+    "label": "Восстановление альянса",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F11_002",
+    "label": "Восстановление",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F11_003",
+    "label": "Восстановление альянса — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F11_004",
+    "label": "Восстановление альянса — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F11_005",
+    "label": "Восстановление альянса — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F11_006",
+    "label": "Восстановление альянса — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F12_001",
+    "label": "Сопротивление терапии",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F12_002",
+    "label": "Сопротивление",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F12_003",
+    "label": "Сопротивление терапии — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F12_004",
+    "label": "Сопротивление терапии — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F12_005",
+    "label": "Сопротивление терапии — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F12_006",
+    "label": "Сопротивление терапии — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F13_001",
+    "label": "Стагнация процесса",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F13_002",
+    "label": "Стагнация",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F13_003",
+    "label": "Стагнация процесса — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F13_004",
+    "label": "Стагнация процесса — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F13_005",
+    "label": "Стагнация процесса — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F13_006",
+    "label": "Стагнация процесса — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F14_001",
+    "label": "Прорывные изменения",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F14_002",
+    "label": "Прорывные",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F14_003",
+    "label": "Прорывные изменения — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F14_004",
+    "label": "Прорывные изменения — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F14_005",
+    "label": "Прорывные изменения — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F14_006",
+    "label": "Прорывные изменения — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F15_001",
+    "label": "Изменения поведения",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F15_002",
+    "label": "Изменения",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F15_003",
+    "label": "Изменения поведения — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F15_004",
+    "label": "Изменения поведения — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F15_005",
+    "label": "Изменения поведения — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F15_006",
+    "label": "Изменения поведения — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F16_001",
+    "label": "Изменения аффектов",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F16_002",
+    "label": "Изменения",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F16_003",
+    "label": "Изменения аффектов — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F16_004",
+    "label": "Изменения аффектов — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F16_005",
+    "label": "Изменения аффектов — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F16_006",
+    "label": "Изменения аффектов — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F17_001",
+    "label": "Изменения отношений",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F17_002",
+    "label": "Изменения",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F17_003",
+    "label": "Изменения отношений — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F17_004",
+    "label": "Изменения отношений — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F17_005",
+    "label": "Изменения отношений — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F17_006",
+    "label": "Изменения отношений — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F18_001",
+    "label": "Структурные изменения личности",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F18_002",
+    "label": "Структурные",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F18_003",
+    "label": "Структурные изменения",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F18_004",
+    "label": "Структурные изменения личности — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F18_005",
+    "label": "Структурные изменения личности — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F18_006",
+    "label": "Структурные изменения личности — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F19_001",
+    "label": "Фазы терапии",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F19_002",
+    "label": "Фазы",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F19_003",
+    "label": "Фазы терапии — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F19_004",
+    "label": "Фазы терапии — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F19_005",
+    "label": "Фазы терапии — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F19_006",
+    "label": "Фазы терапии — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F1_001",
+    "label": "Терапевтический контракт",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F1_002",
+    "label": "Терапевтический",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F1_003",
+    "label": "Терапевтический контракт — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F1_004",
+    "label": "Терапевтический контракт — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F1_005",
+    "label": "Терапевтический контракт — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F1_006",
+    "label": "Терапевтический контракт — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F20_001",
+    "label": "Подготовка завершения",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F20_002",
+    "label": "Подготовка",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F20_003",
+    "label": "Подготовка завершения — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F20_004",
+    "label": "Подготовка завершения — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F20_005",
+    "label": "Подготовка завершения — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F20_006",
+    "label": "Подготовка завершения — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F21_001",
+    "label": "Завершение терапии",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F21_002",
+    "label": "Завершение",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F21_003",
+    "label": "Завершение терапии — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F21_004",
+    "label": "Завершение терапии — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F21_005",
+    "label": "Завершение терапии — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F21_006",
+    "label": "Завершение терапии — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F22_001",
+    "label": "Оценка результата",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F22_002",
+    "label": "Оценка",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F22_003",
+    "label": "Оценка результата — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F22_004",
+    "label": "Оценка результата — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F22_005",
+    "label": "Оценка результата — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F22_006",
+    "label": "Оценка результата — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F23_001",
+    "label": "Долгосрочное наблюдение",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F23_002",
+    "label": "Долгосрочное",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F23_003",
+    "label": "Долгосрочное наблюдение — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F23_004",
+    "label": "Долгосрочное наблюдение — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F23_005",
+    "label": "Долгосрочное наблюдение — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F23_006",
+    "label": "Долгосрочное наблюдение — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F24_001",
+    "label": "Интеграция изменений",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F24_002",
+    "label": "Интеграция",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F24_003",
+    "label": "Интеграция изменений — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F24_004",
+    "label": "Интеграция изменений — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F24_005",
+    "label": "Интеграция изменений — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F24_006",
+    "label": "Интеграция изменений — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F2_001",
+    "label": "Информированное согласие",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F2_002",
+    "label": "Информированное",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F2_003",
+    "label": "Информированное согласие — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F2_004",
+    "label": "Информированное согласие — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F2_005",
+    "label": "Информированное согласие — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F2_006",
+    "label": "Информированное согласие — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F3_001",
+    "label": "Установление сеттинга",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F3_002",
+    "label": "Установление",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F3_003",
+    "label": "Установление сеттинга — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F3_004",
+    "label": "Установление сеттинга — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F3_005",
+    "label": "Установление сеттинга — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F3_006",
+    "label": "Установление сеттинга — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F4_001",
+    "label": "Поддержание сеттинга",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F4_002",
+    "label": "Поддержание",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F4_003",
+    "label": "Поддержание сеттинга — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F4_004",
+    "label": "Поддержание сеттинга — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F4_005",
+    "label": "Поддержание сеттинга — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F4_006",
+    "label": "Поддержание сеттинга — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F5_001",
+    "label": "Контроль безопасности",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F5_002",
+    "label": "Контроль",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F5_003",
+    "label": "Контроль безопасности — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F5_004",
+    "label": "Контроль безопасности — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F5_005",
+    "label": "Контроль безопасности — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F5_006",
+    "label": "Контроль безопасности — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F6_001",
+    "label": "Управление суицидальным риском",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F6_002",
+    "label": "Управление",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F6_003",
+    "label": "Управление суицидальным",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F6_004",
+    "label": "Управление суицидальным риском — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F6_005",
+    "label": "Управление суицидальным риском — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F6_006",
+    "label": "Управление суицидальным риском — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F7_001",
+    "label": "Управление acting-out",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F7_002",
+    "label": "Управление",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F7_003",
+    "label": "Управление acting-out — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F7_004",
+    "label": "Управление acting-out — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F7_005",
+    "label": "Управление acting-out — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F7_006",
+    "label": "Управление acting-out — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F8_001",
+    "label": "Кризисные интервенции",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F8_002",
+    "label": "Кризисные",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F8_003",
+    "label": "Кризисные интервенции — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F8_004",
+    "label": "Кризисные интервенции — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F8_005",
+    "label": "Кризисные интервенции — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F8_006",
+    "label": "Кризисные интервенции — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F9_001",
+    "label": "Формирование альянса",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F9_002",
+    "label": "Формирование",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F9_003",
+    "label": "Формирование альянса — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F9_004",
+    "label": "Формирование альянса — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F9_005",
+    "label": "Формирование альянса — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A10_F9_006",
+    "label": "Формирование альянса — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F10_001",
+    "label": "Потребность в зависимости",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F10_002",
+    "label": "Потребность",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F10_003",
+    "label": "Потребность в",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F10_004",
+    "label": "Потребность в зависимости — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F10_005",
+    "label": "Потребность в зависимости — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F10_006",
+    "label": "Потребность в зависимости — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F11_001",
+    "label": "Импульсы привязанности",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F11_002",
+    "label": "Импульсы",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F11_003",
+    "label": "Импульсы привязанности — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F11_004",
+    "label": "Импульсы привязанности — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F11_005",
+    "label": "Импульсы привязанности — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F11_006",
+    "label": "Импульсы привязанности — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F12_001",
+    "label": "Сексуальное возбуждение",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F12_002",
+    "label": "Сексуальное",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F12_003",
+    "label": "Сексуальное возбуждение — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F12_004",
+    "label": "Сексуальное возбуждение — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F12_005",
+    "label": "Сексуальное возбуждение — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F12_006",
+    "label": "Сексуальное возбуждение — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F13_001",
+    "label": "Телесное удовольствие",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F13_002",
+    "label": "Телесное",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F13_003",
+    "label": "Телесное удовольствие — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F13_004",
+    "label": "Телесное удовольствие — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F13_005",
+    "label": "Телесное удовольствие — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F13_006",
+    "label": "Телесное удовольствие — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F14_001",
+    "label": "Конфликт либидо и агрессии",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F14_002",
+    "label": "Конфликт",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F14_003",
+    "label": "Конфликт либидо",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F14_004",
+    "label": "Конфликт либидо и агрессии — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F14_005",
+    "label": "Конфликт либидо и агрессии — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F14_006",
+    "label": "Конфликт либидо и агрессии — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F15_001",
+    "label": "Импульсивная разрядка",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F15_002",
+    "label": "Импульсивная",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F15_003",
+    "label": "Импульсивная разрядка — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F15_004",
+    "label": "Импульсивная разрядка — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F15_005",
+    "label": "Импульсивная разрядка — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F15_006",
+    "label": "Импульсивная разрядка — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F16_001",
+    "label": "Торможение влечений",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F16_002",
+    "label": "Торможение",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F16_003",
+    "label": "Торможение влечений — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F16_004",
+    "label": "Торможение влечений — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F16_005",
+    "label": "Торможение влечений — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F16_006",
+    "label": "Торможение влечений — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F17_001",
+    "label": "Аффективная заразительность",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F17_002",
+    "label": "Аффективная",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F17_003",
+    "label": "Аффективная заразительность — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F17_004",
+    "label": "Аффективная заразительность — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F17_005",
+    "label": "Аффективная заразительность — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F17_006",
+    "label": "Аффективная заразительность — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F18_001",
+    "label": "Усиление аффекта",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F18_002",
+    "label": "Усиление",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F18_003",
+    "label": "Усиление аффекта — аспект 2",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F18_004",
+    "label": "Усиление аффекта — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F18_005",
+    "label": "Усиление аффекта — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F18_006",
+    "label": "Усиление аффекта — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F19_001",
+    "label": "Стыд и вина",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F19_002",
+    "label": "Стыд",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F19_003",
+    "label": "Стыд и",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F19_004",
+    "label": "Стыд и вина — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F19_005",
+    "label": "Стыд и вина — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F19_006",
+    "label": "Стыд и вина — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F1_001",
+    "label": "Первичные аффективные системы",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F1_002",
+    "label": "Первичные",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F1_003",
+    "label": "Первичные аффективные",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F1_004",
+    "label": "Первичные аффективные системы — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F1_005",
+    "label": "Первичные аффективные системы — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F1_006",
+    "label": "Первичные аффективные системы — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F20_001",
+    "label": "Зависть как аффект",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F20_002",
+    "label": "Зависть",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F20_003",
+    "label": "Зависть как",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F20_004",
+    "label": "Зависть как аффект — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F20_005",
+    "label": "Зависть как аффект — аспект 4",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F20_006",
+    "label": "Зависть как аффект — аспект 5",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F21_001",
+    "label": "Тревога и страх",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F21_002",
+    "label": "Тревога",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F21_003",
+    "label": "Тревога и",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "B_A1_F21_004",
+    "label": "Тревога и страх — аспект 3",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "C-1001",
+    "label": "identity diffusion",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "C-1002",
+    "label": "primitive defense",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "C-1003",
+    "label": "splitting",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "C-1004",
+    "label": "abandonment panic",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "C-1005",
+    "label": "object constancy",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "C-1006",
+    "label": "affect storm",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "C-1007",
+    "label": "emptiness",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "C-1008",
+    "label": "idealization",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "C-1009",
+    "label": "devaluation",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "C-1010",
+    "label": "self harm urge",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_AFFECTIVE_STORMS",
+    "label": "affective storms",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_ANTISOCIAL_FEATURES",
+    "label": "antisocial features",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_BORDERLINE_PERSONALITY",
+    "label": "borderline personality organization",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_CLUSTER_001",
+    "label": "Corpus lexical bundle (object_relations)",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_CLUSTER_002",
+    "label": "Corpus lexical bundle (projective_identification)",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_CLUSTER_003",
+    "label": "Corpus lexical bundle (identity_diffusion)",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_CLUSTER_004",
+    "label": "Corpus lexical bundle (devaluation)",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_CLUSTER_005",
+    "label": "Corpus lexical bundle (devaluation)",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_CLUSTER_006",
+    "label": "Corpus lexical bundle (denial)",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_CLUSTER_007",
+    "label": "Corpus lexical bundle (denial)",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_CLUSTER_008",
+    "label": "Corpus lexical bundle (polarization)",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_CLUSTER_009",
+    "label": "Corpus lexical bundle (denial)",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_CLUSTER_010",
+    "label": "Corpus lexical bundle (idealization)",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_CLUSTER_011",
+    "label": "Corpus lexical bundle (identity_diffusion)",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_CLUSTER_012",
+    "label": "Corpus lexical bundle (devaluation)",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_CLUSTER_013",
+    "label": "Corpus lexical bundle (devaluation)",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_CLUSTER_014",
+    "label": "Corpus lexical bundle (splitting)",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_CLUSTER_015",
+    "label": "Corpus lexical bundle (splitting)",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_COUNTERTRANSFERENCE",
+    "label": "countertransference",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_DISSOCIATION",
+    "label": "dissociation",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_ENVIOUS_TAKING",
+    "label": "envious taking",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_ENVY",
+    "label": "envy",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_IMPULSE_RAGE",
+    "label": "impulsive rage",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_INTROJECTION",
+    "label": "introjection",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_MALIGNANT_NARCISSISM",
+    "label": "malignant narcissism",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_NARCISSISTIC_PERSONALITY",
+    "label": "narcissistic personality organization",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_NEGATIVE_THERAPEUTIC_REACTION",
+    "label": "negative therapeutic reaction",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_OMNIPOTENT_CONTROL",
+    "label": "omnipotent control",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_ORAL_DEPENDENCY",
+    "label": "oral dependency",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_PARANOID_FEATURES",
+    "label": "paranoid features",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_PARTIAL_DRIVE_DERIVATIVE",
+    "label": "partial drive derivative",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_PRIMITIVE_DEVALUATION",
+    "label": "primitive devaluation",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_PRIMITIVE_ENVY",
+    "label": "primitive envy",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_PRIMITIVE_GRATITUDE",
+    "label": "primitive gratitude",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_PRIMITIVE_IDEALIZATION",
+    "label": "primitive idealization",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_REPRESENTATION_OBJECT",
+    "label": "object representation",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_REPRESENTATION_SELF",
+    "label": "self representation",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_SEXUALIZATION",
+    "label": "sexualization",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_SPLITTING_OFF_AGGRESSION",
+    "label": "splitting off aggression",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_SUPEREGO_INTEGRATION",
+    "label": "superego integration",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_THERAPEUTIC_ALLIANCE",
+    "label": "therapeutic alliance",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_TRANSFERENCE",
+    "label": "transference",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_WITHDRAWAL",
+    "label": "withdrawal",
+    "lexical_support_count": 0
+  },
+  {
+    "concept_id": "TFP_WORKING_THROUGH",
+    "label": "working through",
+    "lexical_support_count": 0
+  }
+]

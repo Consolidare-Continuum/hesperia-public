@@ -1,0 +1,68 @@
+{
+  "exports": {
+    "rare_concept_clusters": [
+      {
+        "cluster_id": "c0000",
+        "concepts": [
+          "agri_water",
+          "defense_tel",
+          "q_sense"
+        ],
+        "contradiction_density": 0.0,
+        "innovation_score": 0.0,
+        "propagation_reach": 1.0,
+        "rarity": 0.0
+      }
+    ],
+    "reach_stability": {
+      "reach": [
+        1.0
+      ],
+      "stability": 0.0
+    }
+  },
+  "product_metrics": {
+    "Innovation Pressure Score": 0.0
+  },
+  "report": {
+    "corpus_id": "innovation_sparse_v1",
+    "generated_at": "2026-03-18T08:03:03Z",
+    "innovation_pressure_score": 0.0,
+    "rare_clusters": [
+      {
+        "cluster_id": "c0000",
+        "concepts": [
+          "agri_water",
+          "defense_tel",
+          "q_sense"
+        ],
+        "contradiction_density": 0.0,
+        "innovation_score": 0.0,
+        "propagation_reach": 1.0,
+        "rarity": 0.0
+      }
+    ],
+    "spread_summary": [
+      {
+        "cluster_id": "c0000",
+        "reach": 1.0
+      }
+    ],
+    "strongest_clusters": [
+      {
+        "cluster_id": "c0000",
+        "concepts": [
+          "agri_water",
+          "defense_tel",
+          "q_sense"
+        ],
+        "contradiction_density": 0.0,
+        "innovation_score": 0.0,
+        "propagation_reach": 1.0,
+        "rarity": 0.0
+      }
+    ],
+    "summary_text": "Innovation pressure score 0.00. 1 rare combination clusters identified for review."
+  },
+  "sku": "HSP-TRIZ-I1"
+}

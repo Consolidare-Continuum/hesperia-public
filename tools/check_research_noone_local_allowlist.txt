@@ -1,0 +1,15 @@
+# Paths (repo-relative) allowed to contain the substring "research/_noone_local" until ingest tools are rewired (TFP-DATA-T11 phase 2).
+tools/build_release_bundle.py
+tools/build_tfp_ru_corpus_clean.py
+tools/gen_corpus_md_tree_ru.py
+tools/gen_tfp_data_t02_inventory.py
+tools/migrate_research_tfp_to_module_tfp_v1.sh
+tools/noone2_corpus_ingest.py
+tools/noone_sessions_ingest.py
+tools/normalize_noone_local_speaker_prefixes.py
+tools/openai_calibration_1_normalize.py
+tools/post_cold_lexical_markers_align.py
+tools/run_tfp_dict_build_full_artifacts_v060.py
+tools/tfp4_corpus_full_ingest.py
+tools/tfp4_text_to_md_ingest.py
+tools/check_research_noone_local_allowlist.txt

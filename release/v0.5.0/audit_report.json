@@ -1,0 +1,222 @@
+{
+  "generated_utc": "2026-03-19T08:42:29.797367+00:00",
+  "version_authority": {
+    "pass": true,
+    "VERSION_yaml_system_version": "0.5.0",
+    "pyproject_version": "0.5.0",
+    "note": "Must both be 0.5.0 for seal"
+  },
+  "projection_enforcement": {
+    "pass": true,
+    "module_audit": {
+      "dockerfiles_copy_research": false,
+      "analysis_service_uses_project_to_public": true,
+      "pass_exclusion": true
+    },
+    "bypass_scan": {
+      "pass": true,
+      "gpt_uses_structural_service_not_raw_analyze": true,
+      "shipping_api_no_direct_projection_import": true,
+      "details": "Shipping/API must delegate to analysis_service (projection inside service)."
+    }
+  },
+  "internal_leak_scan": {
+    "pass": true,
+    "checks": [
+      {
+        "artifact": "e2e_reference",
+        "pass": true,
+        "error": null
+      },
+      {
+        "artifact": "compare",
+        "pass": true,
+        "error": null
+      },
+      {
+        "artifact": "batch",
+        "pass": true,
+        "error": null
+      }
+    ]
+  },
+  "public_endpoint_restrictions": {
+    "pass": true,
+    "allowed": [
+      "GET /health",
+      "POST /analyze",
+      "POST /batch",
+      "POST /batch-analyze",
+      "POST /compare"
+    ],
+    "observed_routes": [
+      "GET /health",
+      "POST /analyze",
+      "POST /batch",
+      "POST /batch-analyze",
+      "POST /compare"
+    ],
+    "violations": []
+  },
+  "module_inclusion_exclusion": {
+    "pass": true,
+    "dockerfiles_copy_research": false,
+    "note": "Product Dockerfiles must not COPY research/; analysis_service must use project_to_public."
+  },
+  "spec_compliance": {
+    "tier1_specs": {
+      "all_tier1_present": true,
+      "subsystems": [
+        {
+          "path": "specs/schema/public_output_schema.md",
+          "status": "aligned"
+        },
+        {
+          "path": "specs/system/versioning_and_governance.md",
+          "status": "aligned"
+        },
+        {
+          "path": "specs/core/system_architecture.md",
+          "status": "aligned"
+        },
+        {
+          "path": "specs/canon/hex_microphysics_canon.md",
+          "status": "aligned"
+        },
+        {
+          "path": "specs/canon/semantic_field_canon.md",
+          "status": "aligned"
+        },
+        {
+          "path": "specs/canon/hex_family_bridge.md",
+          "status": "aligned"
+        },
+        {
+          "path": "specs/canon/product_signal_layer.md",
+          "status": "aligned"
+        },
+        {
+          "path": "specs/canon/hspr_calibration_index.md",
+          "status": "aligned"
+        },
+        {
+          "path": "specs/core/family_aggregation.md",
+          "status": "aligned"
+        },
+        {
+          "path": "specs/core/area_aggregation.md",
+          "status": "aligned"
+        },
+        {
+          "path": "specs/dynamics/HESPERIA_DYNAMICS_CALIBRATION_SPEC_v0_1.md",
+          "status": "aligned"
+        },
+        {
+          "path": "specs/triz/contradiction_engine.md",
+          "status": "aligned"
+        },
+        {
+          "path": "docs/TOPOLOGY_INVARIANTS.md",
+          "status": "aligned"
+        }
+      ]
+    },
+    "implementation_hints": {
+      "implementation_paths": [
+        {
+          "component": "projection_gate",
+          "path": "hesperia/engine/projection/public_projection.py",
+          "present": true
+        },
+        {
+          "component": "analysis_service",
+          "path": "runtime/services/analysis_service.py",
+          "present": true
+        },
+        {
+          "component": "schema_guard",
+          "path": "runtime/shipping/schema_guard.py",
+          "present": true
+        },
+        {
+          "component": "hex_engine",
+          "path": "hesperia/engine/hex_dynamics.py",
+          "present": true
+        },
+        {
+          "component": "kme",
+          "path": "hesperia/engine/kme",
+          "present": true
+        },
+        {
+          "component": "extensions_dynamics",
+          "path": "hesperia/extensions/dynamics",
+          "present": true
+        },
+        {
+          "component": "extensions_triz",
+          "path": "hesperia/extensions/triz",
+          "present": true
+        }
+      ]
+    },
+    "pass": true
+  },
+  "calibration": {
+    "default_calibration_profile": "v0_5_0",
+    "version_yaml_defaults_ok": true,
+    "registry_spec_paths_found": [
+      "specs/dynamics/HSPR_CALIBRATION_INDEX_v1.md",
+      "specs/calibration/calibration_system.md",
+      "specs/canon/hspr_calibration_index.md"
+    ],
+    "pass": true,
+    "note": "Magic-number audit is manual; profiles must stay named in VERSION.yaml."
+  },
+  "security_runtime_sanity": {
+    "gpt_api_bearer_gate": true,
+    "gpt_rate_limit": true,
+    "shipping_rate_limit": true,
+    "max_input_chars": true,
+    "shipping_schema_validate": true,
+    "pass": true
+  },
+  "extensions_status": {
+    "source": "EXTENSION_STATUS.yaml",
+    "extensions": {
+      "dynamics": {
+        "status": "canonical_extension",
+        "product_surface": "internal",
+        "python_package": "hesperia.extensions.dynamics"
+      },
+      "triz": {
+        "status": "canonical_extension",
+        "product_surface": "optional",
+        "python_package": "hesperia.extensions.triz"
+      },
+      "clinical_tfp": {
+        "status": "experimental",
+        "product_surface": "none",
+        "python_package": "research.clinical_tfp",
+        "note": "TFP / clinical test collateral \u2014 not baseline Engine Dynamics product."
+      }
+    }
+  },
+  "determinism_summary": {
+    "pass": true,
+    "canonical_sha256": "648f910f0998e4ece8d0505b5eb5e49552d56a990bd341e46f5578c07ee6c8ee",
+    "report_file": "determinism_report.json"
+  },
+  "schema_validation_summary": {
+    "pass": true,
+    "report_file": "schema_validation_report.json"
+  },
+  "pytest": {
+    "pass": true,
+    "report_file": "test_report.json"
+  },
+  "seal_decision": {
+    "may_tag_v0_5_0": true,
+    "reasons_fail": []
+  }
+}

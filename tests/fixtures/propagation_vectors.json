@@ -1,0 +1,7 @@
+{
+  "area_vector_len": 12,
+  "family_counts_len": 288,
+  "samples": [
+    { "area_vector": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] }
+  ]
+}

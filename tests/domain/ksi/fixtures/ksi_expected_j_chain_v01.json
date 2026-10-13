@@ -1,0 +1,47 @@
+{
+  "version": "0.1",
+  "edges": [
+    {
+      "source": "FAILURE",
+      "target": "SHAME",
+      "relation_type": "activates",
+      "w_e": 0.8,
+      "q_e": 1.0,
+      "s_e": 1.0,
+      "c_e": 1.0,
+      "p_e": 1.0,
+      "d_e": 1.0,
+      "k_e": 0.0
+    },
+    {
+      "source": "SHAME",
+      "target": "WITHDRAWAL",
+      "relation_type": "activates",
+      "w_e": 0.5,
+      "q_e": 1.0,
+      "s_e": 1.0,
+      "c_e": 1.0,
+      "p_e": 1.0,
+      "d_e": 1.0,
+      "k_e": 0.0
+    }
+  ],
+  "activations": {
+    "FAILURE": 1.0,
+    "SHAME": 0.8,
+    "WITHDRAWAL": 0.0
+  },
+  "concept_primary_area": {
+    "FAILURE": "interpersonal_regulation",
+    "SHAME": "interpersonal_regulation",
+    "WITHDRAWAL": "interpersonal_regulation"
+  },
+  "expected_by_concept": [
+    { "concept_id": "SHAME", "expected_j": 0.8 },
+    { "concept_id": "WITHDRAWAL", "expected_j": 0.4 }
+  ],
+  "area_rollup": {
+    "area_id": "interpersonal_regulation",
+    "expected_area": 1.0
+  }
+}

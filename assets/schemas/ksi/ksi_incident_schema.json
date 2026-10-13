@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prichindel.com/hesperia/schemas/ksi_incident_schema.json",
+  "title": "KSI incident bundle item",
+  "type": "object",
+  "required": [
+    "incident_type",
+    "concept_id"
+  ],
+  "properties": {
+    "incident_type": {
+      "type": "string",
+      "enum": [
+        "DEAD_CONCEPT",
+        "DEAD_ROUTE",
+        "OVER_ACTIVATED",
+        "UNDER_EXPLAINED_ACTIVATION",
+        "UNDER_ACTIVATED",
+        "MIRROR_DEFICIT",
+        "ROUTING_CONFLICT",
+        "MISSING_BRIDGE",
+        "COHERENT"
+      ]
+    },
+    "concept_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_concept_id": {
+      "type": "string"
+    },
+    "target_concept_id": {
+      "type": "string"
+    },
+    "expected": {
+      "type": "number"
+    },
+    "observed": {
+      "type": "number"
+    },
+    "residual": {
+      "type": "number"
+    },
+    "mirror_deficit": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "bridge_need_score": {
+      "type": "number"
+    },
+    "context_area": {
+      "type": "string"
+    },
+    "incoming_edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source",
+          "type"
+        ],
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "W_e": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "R_e": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "active_concepts_in_session": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

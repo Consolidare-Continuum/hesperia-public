@@ -1,0 +1,1009 @@
+Below is a **plain-text full spec** you can paste into the repo and then split into Codex tasks.
+
+```txt
+HESPERIA SPEC
+Deterministic Lexical-Concept Resolution and Hex Projection Layer
+Version: v0.6.0-draft1
+Status: Proposed
+Scope: Normative
+Owner: HESPERIA core
+Depends on: existing Area/Family structure, existing structural aggregation, existing deterministic output discipline
+
+====================================================================
+0. TITLE
+====================================================================
+
+Deterministic Lexical-Concept Resolution and Hex Projection Layer
+(DLCR-HP)
+
+====================================================================
+1. PURPOSE
+====================================================================
+
+This spec defines the missing deterministic subsystem between raw text
+wording and HESPERIA structural activation.
+
+The subsystem exists to solve one concrete problem:
+
+raw wording must not activate families or areas directly except through
+resolved concept evidence or an explicitly marked fallback path.
+
+The subsystem introduces a first-class engine for:
+
+- deterministic raw_text normalization
+- lexical evidence extraction via Dict A
+- candidate concept resolution via Dict B
+- concept-to-hex projection into the 72k substrate
+- local hex dynamics
+- controlled upward aggregation into Family and Area levels
+
+This layer is required because wording is noisy, concepts are not the
+same as words, and family/area activation must be a projection of
+resolved meaning rather than a guess from surface forms. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}
+
+====================================================================
+2. NON-GOALS
+====================================================================
+
+This spec does NOT attempt to:
+
+- solve general natural language understanding
+- use opaque probabilistic models as the primary semantic mechanism
+- replace the existing HESPERIA upper structure
+- allow uncontrolled synonym expansion
+- allow bag-of-words family classification as primary mechanism
+- treat the 72k hex grid as decorative storage
+
+The subsystem is deterministic infrastructure, not generic NLP fashion. :contentReference[oaicite:2]{index=2}
+
+====================================================================
+3. ARCHITECTURAL DECISION
+====================================================================
+
+The correct HESPERIA chain SHALL be:
+
+text/span
+-> normalized lexical form
+-> candidate concepts
+-> resolved concept IDs
+-> hex activation
+-> family rollup
+-> area rollup
+-> interpretation / reporting
+
+The following shortcut is FORBIDDEN as primary path:
+
+text -> family guess
+
+Reason:
+family must be a projection of concept evidence, not the first semantic
+decision point. Otherwise ambiguity leaks upward and becomes family drift. :contentReference[oaicite:3]{index=3} :contentReference[oaicite:4]{index=4}
+
+====================================================================
+4. LAYER STACK
+====================================================================
+
+HESPERIA SHALL implement the following stack:
+
+L0  Raw_text Normalization
+L1  Lexical Evidence
+L2  Concept Resolution
+L3  Hex Projection
+L4  Hex Dynamics
+L5  Structural Aggregation
+L6  Interpretation
+
+Definitions:
+
+L0:
+raw text converted into canonical tokens, spans, and phrase candidates
+
+L1:
+Dict A markers, phrase patterns, lexical triggers, negative patterns
+
+L2:
+Dict B concept competition and deterministic winner selection
+
+L3:
+resolved concept signal mapped into fixed hex anchors / neighborhoods
+
+L4:
+spread, damping, reinforcement, concentration, dispersion, drift features
+
+L5:
+hex -> Family, Family -> Area, plus relation summaries
+
+L6:
+classification, reports, comparisons, profiles, test outputs
+
+This layer model is normative. :contentReference[oaicite:5]{index=5} :contentReference[oaicite:6]{index=6}
+
+====================================================================
+5. FUNDAMENTAL RULES
+====================================================================
+
+R1.
+One raw_text under fixed versioned resources SHALL produce one output.
+
+R2.
+Every matched span SHALL be auditable.
+
+R3.
+Dict A SHALL propose; Dict B SHALL resolve.
+
+R4.
+Raw wording SHALL NOT directly activate families or areas except through
+a clearly marked compatibility fallback mode.
+
+R5.
+Phrase-first matching SHALL take precedence over token-first guessing.
+
+R6.
+Exact match SHALL outrank lemma match; lemma match SHALL outrank stem
+match; stem match SHALL outrank pattern-only match.
+
+R7.
+Hex projection SHALL occur before family/area aggregation.
+
+R8.
+Hex placement SHALL be designed, not random.
+
+R9.
+Any resource change affecting Dict A, Dict B, resolver rules, or hex
+placement SHALL trigger regression tests.
+
+R10.
+All tie-breaks SHALL be stable and versioned.
+
+These rules are required for determinism and auditability. :contentReference[oaicite:7]{index=7} :contentReference[oaicite:8]{index=8}
+
+====================================================================
+6. DATA MODEL OVERVIEW
+====================================================================
+
+The subsystem SHALL use two principal dictionaries:
+
+Dict A = lexical evidence layer
+Dict B = concept layer
+
+Practical split:
+
+Dict A:
+surface wording, phrase triggers, variants, patterns, exclusions
+
+Dict B:
+concept IDs, definitions, hierarchy, family/area linkage, disambiguation
+clues, relations, hex anchors
+
+This separation is mandatory. Dict A does not classify. Dict B does not
+guess words. :contentReference[oaicite:9]{index=9} :contentReference[oaicite:10]{index=10}
+
+====================================================================
+7. DICT A NORMATIVE SCHEMA
+====================================================================
+
+Each Dict A entry SHALL contain:
+
+- entry_id
+- surface_form
+- normalized_form
+- language
+- match_type
+- candidate_concept_ids
+- priority
+- version
+
+Recommended required fields:
+
+- lemma
+- domain_tags
+- scope_rules
+- negative_patterns
+
+Optional fields:
+
+- hidden_labels
+- transcript_variants
+- misspellings
+- colloquial_forms
+- phrase_window_rules
+- negation_sensitive
+- notes
+
+Allowed match_type values:
+
+- exact
+- phrase
+- lemma
+- stem
+- pattern
+
+Field definitions:
+
+entry_id
+stable unique lexical evidence identifier
+
+surface_form
+literal wording form as curated
+
+normalized_form
+canonical representation after L0 normalization
+
+language
+language code for the entry
+
+match_type
+matching rule type
+
+candidate_concept_ids
+one or more Dict B concept IDs proposed by this lexical form
+
+priority
+fixed integer used in deterministic ranking among same-level lexical hits
+
+version
+resource version tag
+
+scope_rules
+restrictions on where the entry may fire, such as phrase boundaries,
+proximity conditions, domain mode, or speaker/text type
+
+negative_patterns
+blocking patterns to prevent false friends
+
+Normative rule:
+multiword entries SHALL be supported as first-class entries.
+
+Normative rule:
+Dict A entries MAY propose multiple candidate concepts.
+They SHALL NOT directly decide family or area activation.
+
+====================================================================
+8. DICT B NORMATIVE SCHEMA
+====================================================================
+
+Each Dict B concept SHALL contain:
+
+- concept_id
+- preferred_label
+- definition
+- family_ids
+- area_ids
+- specificity_rank
+- status
+- version
+
+Recommended required fields:
+
+- alt_labels
+- hidden_labels
+- related_concept_ids
+- exclusion_concept_ids
+- resolver_clues
+- hex_anchor
+- hex_footprint_policy
+
+Optional fields:
+
+- broader_concept_id
+- narrower_concept_ids
+- associative_relation_ids
+- domain_modes
+- notes
+
+Field definitions:
+
+concept_id
+stable concept identifier used across the entire engine
+
+preferred_label
+canonical human-readable name
+
+definition
+controlled concept meaning statement
+
+family_ids
+one or more linked HESPERIA family identifiers
+
+area_ids
+one or more linked HESPERIA area identifiers
+
+specificity_rank
+stable depth/specificity number used in tie-breaks
+
+status
+draft / active / deprecated / blocked
+
+resolver_clues
+explicit cues for disambiguation in context
+
+hex_anchor
+primary semantic hex location
+
+hex_footprint_policy
+rule defining local projection pattern
+
+Normative rule:
+family and area linkage SHALL follow concept identity, not precede it.
+
+Normative rule:
+cross-family membership SHALL be allowed only if explicitly declared.
+
+Normative rule:
+concept IDs SHALL be stable across versions except through controlled
+deprecation/migration.
+
+====================================================================
+9. L0 INPUT NORMALIZATION
+====================================================================
+
+Purpose:
+make wording boring, repeatable, and versioned. :contentReference[oaicite:11]{index=11}
+
+L0 SHALL define and freeze:
+
+- unicode normalization
+- case normalization
+- punctuation policy
+- tokenization policy
+- sentence segmentation
+- contraction handling
+- abbreviation expansion
+- transcript cleanup
+- lemmatization policy
+- stemming policy if used
+- phrase candidate generation rules
+
+L0 output SHALL include:
+
+- canonical text
+- token list
+- span boundaries
+- sentence boundaries
+- phrase candidate spans
+- normalization audit markers
+
+Normative rules:
+
+N1.
+Normalization SHALL be deterministic and versioned.
+
+N2.
+No hidden online service or unpinned model dependency is allowed inside L0.
+
+N3.
+Speech-like inputs MAY apply stronger transcript normalization under an
+explicit mode, but the mode SHALL be visible in audit output.
+
+N4.
+L0 SHALL preserve enough span mapping to trace normalized forms back to
+original character offsets.
+
+====================================================================
+10. L1 LEXICAL EVIDENCE EXTRACTION
+====================================================================
+
+Purpose:
+convert normalized wording into candidate lexical evidence hits.
+
+L1 SHALL perform:
+
+- phrase-first matching
+- longest-span priority
+- exact / lemma / stem / pattern matching under fixed order
+- overlap handling
+- negative-pattern filtering
+- scope-rule validation
+
+Match precedence SHALL be:
+
+1. exact phrase
+2. longest phrase
+3. exact token
+4. lemma
+5. stem
+6. pattern
+
+Normative rules:
+
+E1.
+Longer valid multiword evidence SHALL outrank shorter overlapping evidence.
+
+E2.
+Overlapping hits SHALL be resolved deterministically.
+
+E3.
+Rejected lexical hits SHALL remain visible in audit logs.
+
+E4.
+L1 output SHALL contain candidate_concept_ids but SHALL NOT choose the
+winning concept.
+
+====================================================================
+11. L2 CONCEPT RESOLUTION
+====================================================================
+
+Purpose:
+resolve lexical evidence into stable concept IDs.
+
+L2 is the core semantic bridge. :contentReference[oaicite:12]{index=12}
+
+For each lexical hit/span, the resolver SHALL evaluate candidate concepts
+using deterministic scoring components.
+
+Mandatory scoring components:
+
+- lexical match strength
+- span length / phrase priority
+- local context overlap
+- coherence with nearby already-resolved concepts
+- specificity bias
+- exclusion penalties
+- fixed priors / stable default ordering
+
+Resolver precedence principles:
+
+- phrase-first
+- longest-span priority
+- exact over lemma over stem
+- context-based disambiguation
+- coherence scoring with nearby concepts
+- specificity bias
+- final stable tie-break ordering
+
+These principles are mandatory. :contentReference[oaicite:13]{index=13} :contentReference[oaicite:14]{index=14}
+
+Example deterministic score template:
+
+score_total =
+  lexical_score
++ context_score
++ coherence_score
++ specificity_bonus
+- exclusion_penalty
++ stable_prior
+
+Exact numeric weights SHALL be versioned and externally visible.
+
+Normative rules:
+
+C1.
+Given identical normalized raw_text and identical resources, the same winner
+SHALL always be selected.
+
+C2.
+If two candidates remain tied after all explicit scores, a fixed stable
+ordering SHALL break the tie.
+
+C3.
+All rejected candidates SHALL remain visible in audit output.
+
+C4.
+Resolver output SHALL include applied rules and score breakdown.
+
+C5.
+No black-box probabilistic disambiguation is allowed as primary mechanism.
+
+====================================================================
+12. L2 OUTPUT CONTRACT PER SPAN
+====================================================================
+
+For each resolved or unresolved span, output SHALL include:
+
+- source_text_span
+- source_char_start
+- source_char_end
+- normalized_span
+- lexical_entry_ids
+- candidate_concepts
+- candidate_scores
+- winning_concept_id
+- winning_reason_codes
+- rejected_reason_codes
+- rule_trace
+- mode
+- version
+
+If unresolved, winning_concept_id SHALL be null and unresolved_reason
+SHALL be present.
+
+This audit discipline is mandatory. :contentReference[oaicite:15]{index=15}
+
+====================================================================
+13. HEX LAYER PURPOSE
+====================================================================
+
+The 72k hex layer SHALL be treated as semantic microstate substrate,
+not as cosmetic storage. :contentReference[oaicite:16]{index=16}
+
+It exists to provide:
+
+- microstructure
+- local smoothing / denoising
+- deterministic topology
+- state geometry for dynamic measurement
+
+Operational meaning:
+
+families are provinces
+concepts are named settlements
+hexes are terrain cells
+
+Without terrain, there is no movement, spread, clustering, drift, or
+shape. :contentReference[oaicite:17]{index=17}
+
+====================================================================
+14. L3 CONCEPT-TO-HEX PROJECTION
+====================================================================
+
+Purpose:
+project resolved concept evidence into the hex substrate before
+structural aggregation.
+
+Normative rules:
+
+H1.
+Raw words SHALL NOT map to hexes directly as semantic units.
+Resolved concept IDs SHALL map to hexes.
+
+H2.
+Each active concept SHALL have one primary hex anchor.
+
+H3.
+A concept MAY project to a small fixed neighborhood footprint if declared
+by policy.
+
+H4.
+Related concepts SHALL be placed near each other by design.
+
+H5.
+Families SHALL occupy broad territories.
+Areas SHALL occupy macro-regions.
+
+H6.
+Cross-family semantic bridges SHALL be deliberate and sparse.
+
+H7.
+Hex placement SHALL be governed by explicit topology rules.
+
+These are mandatory architectural rules. :contentReference[oaicite:18]{index=18}
+
+Projection output SHALL include:
+
+- concept_id
+- hex_anchor
+- activated_hexes
+- activation_weights
+- footprint_policy_id
+- projection_trace
+
+====================================================================
+15. HEX TOPOLOGY AND DESIGN CONSTRAINTS
+====================================================================
+
+The substrate SHALL support:
+
+- adjacency queries
+- ring queries
+- distance queries
+- neighborhood diffusion
+- boundary-aware projection
+- reserved / blocked zones if governance requires
+
+Topology design SHALL ensure:
+
+- neighboring hexes reflect semantic adjacency
+- family borders are meaningful
+- relation corridors are explicit
+- semantic basins and gradients can be measured
+
+The substrate SHALL NOT become arbitrary decoration. :contentReference[oaicite:19]{index=19}
+
+====================================================================
+16. L4 HEX DYNAMICS
+====================================================================
+
+Purpose:
+stabilize noisy evidence and expose structure over time or segments.
+
+Mandatory dynamic capabilities:
+
+- local spread
+- damping
+- neighborhood reinforcement
+- persistence / decay
+- concentration measurement
+- dispersion measurement
+- cluster emergence
+- drift measurement
+- transition measurement
+
+This is required because speech and messy text are noisy, and hex
+adjacency provides uniform locality useful for smoothing and gradient-like
+operations. :contentReference[oaicite:20]{index=20} :contentReference[oaicite:21]{index=21}
+
+L4 MAY use deterministic diffusion-style operations over the adjacency
+graph, but all parameters SHALL be fixed, versioned, and auditable.
+
+Example feature outputs:
+
+- peak_region
+- concentration_index
+- dispersion_index
+- cluster_count
+- dominant_corridor
+- drift_distance
+- persistence_score
+- transition_events
+
+====================================================================
+17. L5 STRUCTURAL AGGREGATION
+====================================================================
+
+Purpose:
+convert hex state into Family and Area structural summaries.
+
+Normative rule:
+aggregation SHALL consume hex state, not raw wording and not unresolved
+lexical hits.
+
+L5 SHALL compute at minimum:
+
+- concept activation summary
+- family activation vector
+- area activation vector
+- cross-family relation signals
+- uncertainty / degradation markers
+
+Normative rules:
+
+S1.
+Family activation SHALL be derived from concept/hex evidence.
+
+S2.
+Area activation SHALL be derived from family/hex evidence.
+
+S3.
+Compatibility fallback mode, if present, SHALL be clearly marked in
+output and SHALL NOT be the default.
+
+====================================================================
+18. L6 INTERPRETATION
+====================================================================
+
+Purpose:
+produce product/report level outputs from structural state.
+
+Examples:
+
+- matched spans
+- rejected spans
+- concept activations
+- concept competition logs
+- hex state summaries
+- dominant family regions
+- area profile
+- transition path across segments
+- stability metrics
+- comparison between texts or sessions
+
+These outputs are the target instrumentation model. :contentReference[oaicite:22]{index=22} :contentReference[oaicite:23]{index=23}
+
+====================================================================
+19. SCIENTIFIC MODE VS SPEECH/CLINICAL MODE
+====================================================================
+
+HESPERIA SHALL support at least two policy modes under one architecture:
+
+A. technical/scientific mode
+- narrower terminology
+- higher precision lexical-concept mapping
+- less smoothing
+- stronger exact phrase priority
+
+B. speech/clinical mode
+- stronger normalization
+- more phrase handling
+- more context competition
+- more smoothing
+- more trajectory emphasis
+
+Reason:
+science text behaves better because terminology is more stable.
+Random speech is more ambiguous, incomplete, idiomatic, and drifting. :contentReference[oaicite:24]{index=24}
+
+Normative rule:
+mode differences SHALL change policies/resources, not core architecture.
+
+====================================================================
+20. ASSOCIATION AND SALIENCE METHODS
+====================================================================
+
+The subsystem MAY use deterministic association/salience methods to
+support interpretation and resolver quality, provided they are fixed and
+auditable.
+
+Allowed examples:
+
+- TF-IDF-style salience weighting
+- PMI / co-occurrence association
+- fixed-frequency priors
+- hierarchy-aware coherence boosts
+
+These methods SHALL support, not replace, deterministic concept
+resolution. :contentReference[oaicite:25]{index=25}
+
+====================================================================
+21. FAILURE MODES
+====================================================================
+
+The system SHALL explicitly detect and expose the following failure modes:
+
+- unresolved span
+- overlapping lexical conflict
+- conflicting concept tie beyond allowed threshold
+- missing concept anchor
+- missing family linkage
+- missing area linkage
+- blocked by negative pattern
+- degraded fallback activation
+- incompatible mode/resource selection
+- regression drift detected
+
+Failure markers SHALL appear in audit output.
+
+====================================================================
+22. OUTPUT CONTRACTS
+====================================================================
+
+Two output classes SHALL exist:
+
+A. internal-rich audit output
+B. public-safe summarized output
+
+A. internal-rich audit output SHALL include:
+- normalization trace
+- lexical hits
+- rejected lexical hits
+- candidate concepts
+- score breakdowns
+- winner decisions
+- hex projection trace
+- hex dynamics summary
+- family and area vectors
+- degradation and failure flags
+
+B. public-safe output SHALL include:
+- deterministic summaries
+- selected structural indicators
+- optional compact matched concept lists
+- version tags
+- no sensitive internal scoring unless enabled
+
+Normative rule:
+the public-safe output SHALL be derivable from internal output, not
+generated by a separate semantic path.
+
+====================================================================
+23. VERSIONING
+====================================================================
+
+The following SHALL be versioned independently and jointly referenceable:
+
+- Dict A version
+- Dict B version
+- normalization version
+- resolver rule version
+- hex topology version
+- aggregation version
+- output schema version
+
+Each run SHALL emit:
+
+- engine_version
+- resource_versions
+- mode
+- deterministic_signature
+
+====================================================================
+24. REGRESSION AND CALIBRATION
+====================================================================
+
+The subsystem SHALL be tested like a compiler, not like vague analytics. :contentReference[oaicite:26]{index=26} :contentReference[oaicite:27]{index=27}
+
+Mandatory test artifacts:
+
+- gold concept mapping corpus
+- ambiguity corpus
+- phrase-priority corpus
+- overlap conflict corpus
+- speech-noise corpus
+- hex projection corpus
+- family rollup corpus
+
+Minimum release gate requirements:
+
+G1.
+Known gold cases SHALL retain expected concept winners unless explicitly
+version-changed.
+
+G2.
+Phrase-first precedence SHALL be verified.
+
+G3.
+Stable tie-break ordering SHALL be verified.
+
+G4.
+No concept may be emitted without valid family linkage unless marked
+degraded.
+
+G5.
+No resolved concept may be emitted without valid hex anchor unless marked
+degraded.
+
+G6.
+Regression diffs SHALL be reviewable.
+
+====================================================================
+25. IMPLEMENTATION PHASES
+====================================================================
+
+Phase 1 - Freeze schema discipline
+Deliver:
+- lexical entry schema
+- concept schema
+- family linkage schema
+- area linkage schema
+- resolver output schema
+
+Phase 2 - Build small deterministic resolver
+Start with one bounded domain, recommended:
+TFP / clinical concept pack
+Initial target:
+- 100-300 concepts
+- 5-15 lexical forms each
+- explicit exclusions
+- deterministic score formula
+
+Phase 3 - Map into bounded hex region
+Do not scale to full 72k immediately.
+Prove:
+- nearby concepts behave sensibly
+- smoothing improves stability
+- aggregation remains interpretable
+
+Phase 4 - Add segment trajectory features
+Segment by sentence, turn, or paragraph and measure movement across hex zones.
+
+Phase 5 - Scale to full substrate
+Scale only after local proofs and regression discipline hold.
+
+This implementation order is normative guidance. :contentReference[oaicite:28]{index=28} :contentReference[oaicite:29]{index=29}
+
+====================================================================
+26. REPO PLACEMENT
+====================================================================
+
+Recommended structure:
+
+specs/canon/lexical_concept/
+  SPEC__DLCR_HP_Master_v0_6_0.txt
+  SPEC__Dict_A_Schema_v0_6_0.txt
+  SPEC__Dict_B_Schema_v0_6_0.txt
+  SPEC__Normalization_v0_6_0.txt
+  SPEC__Resolver_v0_6_0.txt
+  SPEC__Hex_Projection_v0_6_0.txt
+  SPEC__Hex_Dynamics_v0_6_0.txt
+  SPEC__Audit_Output_v0_6_0.txt
+  SPEC__Calibration_Regression_v0_6_0.txt
+
+schemas/lexical_concept/
+  dict_a.schema.json
+  dict_b.schema.json
+  resolver_output.schema.json
+
+core/lexical/
+  normalization.*
+  matcher.*
+
+core/resolver/
+  resolver.*
+  tiebreaks.*
+  score_rules.*
+
+core/hexmap/
+  anchor_registry.*
+  projection.*
+  topology.*
+
+core/sequence/
+  segmentation.*
+  trajectory.*
+
+tests/lexical_concept/
+  test_normalization.*
+  test_matcher.*
+  test_resolver.*
+  test_projection.*
+  test_regression.*
+
+assets/data/engine_dynamics_v060/
+  dict_a/
+  dict_b/
+  corpora/
+  anchors/
+  baselines/
+
+====================================================================
+27. REQUIRED CODEX TASK LINE
+====================================================================
+
+The following task line SHALL guide future Codex tickets:
+
+1. Create master spec files and schemas.
+2. Implement Dict A validator.
+3. Implement Dict B validator.
+4. Implement deterministic normalization.
+5. Implement phrase-first matcher.
+6. Implement deterministic resolver with audit trace.
+7. Build first bounded concept pack.
+8. Implement concept-to-hex projection.
+9. Implement hex dynamics.
+10. Implement family/area adapter from hex state.
+11. Implement regression corpus and CI gate.
+12. Add compatibility fallback mode and explicit degradation flags.
+
+====================================================================
+28. ACCEPTANCE CRITERIA FOR v0.6.0 FIRST SHIP
+====================================================================
+
+The subsystem SHALL be considered minimally shippable when all are true:
+
+- raw wording no longer directly activates families by default
+- Dict A and Dict B schemas are frozen and validated
+- normalization is deterministic and versioned
+- phrase-first lexical matching works
+- resolver produces auditable per-span output
+- first concept pack exists and passes gold tests
+- resolved concepts map to bounded hex anchors
+- hex state aggregates upward into family/area vectors
+- regression gate blocks silent drift
+- public-safe output remains deterministic
+
+====================================================================
+29. HARD PROHIBITIONS
+====================================================================
+
+The following are prohibited as default engine behavior:
+
+- direct word-to-family activation
+- uncontrolled fuzzy synonym expansion
+- hidden online resolution services
+- unversioned lexical resources
+- untracked manual concept winner overrides
+- random or ad hoc hex placement
+- non-auditable primary disambiguation
+- silent regression drift
+
+====================================================================
+30. BOTTOM LINE
+====================================================================
+
+HESPERIA SHALL treat wording-to-concept resolution as a first-class
+engine.
+
+Once this rule is enforced:
+
+- Dict A becomes meaningful
+- Dict B becomes actionable
+- the 72k hex layer gains real purpose
+- family and area aggregation stop being guesswork
+- speech classification becomes difficult but structurally tractable
+
+Single most important rule:
+
+Do not allow raw wording to activate families directly unless routed
+through resolved concept evidence or an explicitly marked fallback path. :contentReference[oaicite:30]{index=30}
+```
+
+Next, the clean move is to split this into **10 smaller spec files + 12 Codex tasks** with exact file names and acceptance blocks.

@@ -1,0 +1,41 @@
+{
+  "generated_utc": "2026-03-19T08:42:29.797367+00:00",
+  "schema_path_repo_relative": "schemas/public/public_output_schema.json",
+  "schema_release_copy": "schema.json",
+  "validator": "jsonschema Draft202012Validator + envelope minimum + schema_guard tree walk",
+  "results": [
+    {
+      "artifact": "analyze_e2e_reference",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "artifact": "compare_envelope",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "artifact": "batch_envelope",
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "leak_scan_schema_guard": [
+    {
+      "artifact": "e2e_reference",
+      "pass": true,
+      "error": null
+    },
+    {
+      "artifact": "compare",
+      "pass": true,
+      "error": null
+    },
+    {
+      "artifact": "batch",
+      "pass": true,
+      "error": null
+    }
+  ],
+  "overall_pass": true
+}

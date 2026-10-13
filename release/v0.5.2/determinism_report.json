@@ -1,0 +1,16 @@
+{
+  "generated_utc": "2026-03-26T08:50:13.637776+00:00",
+  "canonical_input_fixture": "tests/fixtures/release_v0_5_0/canonical_input.txt",
+  "input_sha256": "2be9cf52481f84967bc560437e8a5e37040508fe60796b351a2644eaae8058ac",
+  "input_length_chars": 25,
+  "command": "/usr/bin/python3 tools/release/build_release_audit_v0_5_1.py",
+  "environment_note": "Set HESPERIA_RELEASE_BUILD_TIMESTAMP + HESPERIA_GIT_COMMIT (via script) for reproducible build_id.",
+  "serialization": "json.dumps(..., sort_keys=True, ensure_ascii=False); floats rounded to 10 dp before hash",
+  "raw_byte_identical_across_runs": true,
+  "canonical_sha256_run1": "59d89328f05771b4593356b638752faa84b4ec25b40c36d0a193bfafcdb86f49",
+  "canonical_sha256_run2": "59d89328f05771b4593356b638752faa84b4ec25b40c36d0a193bfafcdb86f49",
+  "canonical_sha256_run3": "59d89328f05771b4593356b638752faa84b4ec25b40c36d0a193bfafcdb86f49",
+  "hash_match": true,
+  "pass": true,
+  "failure_reason": null
+}

@@ -1,0 +1,301 @@
+{
+  "generated_utc": "2026-03-26T08:50:16.085486+00:00",
+  "spec_files": [
+    {
+      "path": "specs/CANONICAL_INDEX.md",
+      "sha256": "1f941cbb651264e6c1a9bca4d38b78405a85f4563549db347a3193cda4df35fc"
+    },
+    {
+      "path": "specs/INVENTORY.md",
+      "sha256": "627bd045eb7c0d2cba53b04ea5d6953449f0d1d70331221f5cbecd0866ea215b"
+    },
+    {
+      "path": "specs/README.md",
+      "sha256": "405fdc1d3b2dfc05d5db2bb48bf50103714ace9f9d4d70d40d58eda420c9918f"
+    },
+    {
+      "path": "specs/architecture/FAMILY_EMBEDDING.md",
+      "sha256": "a784c8581f1fd4cf3ecabdd553c505f6f895f138fd0ac65f715756575d3a5173"
+    },
+    {
+      "path": "specs/architecture/HISTORICAL-SPECS.md",
+      "sha256": "c9906deb228c066d040db0f51e91e8306fdcf0f8a3e0fd5251e2d21001ca73b0"
+    },
+    {
+      "path": "specs/architecture/LEVEL14_CLINICAL_ACTIVE_GRAPH.md",
+      "sha256": "0de3d10eb5ce08e8846a745cd0de2352e1977d4e6741a0ae01703f99ac3f0546"
+    },
+    {
+      "path": "specs/architecture/LEVEL15_CALIBRATION_AND_SPARSIFICATION.md",
+      "sha256": "a58c3acbecb58abd2e83fe6a36739ed9e9439c407d56ee2ca7d69abf679a7c57"
+    },
+    {
+      "path": "specs/architecture/LEVEL1_AREA_STRUCTURE.md",
+      "sha256": "643d4b12ae7b764e42b78c981baebf3888c20e4685a62da96c0a31e47ba6a1d0"
+    },
+    {
+      "path": "specs/architecture/LEVEL2_FAMILY_STRUCTURE.md",
+      "sha256": "b2b6d7560349d36352bf5c31c85f7ae21fedf9ba61db36456e74fe484d41bbe4"
+    },
+    {
+      "path": "specs/architecture/LEVEL4_DICT_A_LEXICAL_MARKERS.md",
+      "sha256": "075f904103c44609d8b545189407bcf179062ca36ad6d5351194a31ce9b0adb4"
+    },
+    {
+      "path": "specs/architecture/dossier_schema_v1.md",
+      "sha256": "9f81712c229f61210745f0ff22d088df3b66a6ce73d7b4c54122a22a65784c0d"
+    },
+    {
+      "path": "specs/calibration/README.md",
+      "sha256": "41353b09cb5ec007029989e91035653f366a6e9ba66bdb3fa3663dcaace805f7"
+    },
+    {
+      "path": "specs/calibration/calibration_system.md",
+      "sha256": "3a347ef22c38bda77a2d75cb5aed107b93cfeed96429fbf11be7d9fd9556ea04"
+    },
+    {
+      "path": "specs/calibration/hspr_index.md",
+      "sha256": "6c4e21524be7dcb1f6d380c4925e7891fcacfcadf11fb09523dd39ffbc3842d9"
+    },
+    {
+      "path": "specs/calibration_protocol.md",
+      "sha256": "54144b555b6f731134dac8dda5ea64f5f086e28b54c117c6e07ce625b4edc9d1"
+    },
+    {
+      "path": "specs/canon/README.md",
+      "sha256": "fd67b1d65ea29c85b98e929981aeebea7b74cd5a0156d779c5a4c6d0e4abdc1b"
+    },
+    {
+      "path": "specs/canon/hex_family_bridge.md",
+      "sha256": "974a881f267b4413cf423701642ae600aaa087bd79288e4f98aab746f93aa3f0"
+    },
+    {
+      "path": "specs/canon/hex_microphysics_canon.md",
+      "sha256": "9fe486ae2d51fd7545434c002275ba107d97f5438bf11c5889d034d991481111"
+    },
+    {
+      "path": "specs/canon/hspr_calibration_index.md",
+      "sha256": "40ddb03c6faeb84b9770a12899ce15b0abcefdc8fd093c23daae7f302da571ff"
+    },
+    {
+      "path": "specs/canon/lexical_concept/README.md",
+      "sha256": "4c6a2240b0f9896374f4b1616deab3df808f1262aca83b24aac819793e54c3fd"
+    },
+    {
+      "path": "specs/canon/lexical_concept/SPEC__72k_Phased_Scale_v0_6_0.md",
+      "sha256": "cfeb2086f2151efde5f5441580a97034d8e0c3d827b720610d1a67259181b713"
+    },
+    {
+      "path": "specs/canon/lexical_concept/SPEC__Audit_Output_v0_6_0.md",
+      "sha256": "5019f2c9c8bb370683dc25775e698654713f364d92f67630e589f8a77587eb93"
+    },
+    {
+      "path": "specs/canon/lexical_concept/SPEC__Calibration_Regression_v0_6_0.md",
+      "sha256": "6b9dadd70057c59257b1e323332d552206154014a8e8fad9be99a80aed3a597f"
+    },
+    {
+      "path": "specs/canon/lexical_concept/SPEC__DLCR_HP_Master_v0_6_0.md",
+      "sha256": "57c37f44a461461c2c9ca5d94c163120609b203b0eb8c355f1480b255f1a80e8"
+    },
+    {
+      "path": "specs/canon/lexical_concept/SPEC__Dict_A_Schema_v0_6_0.md",
+      "sha256": "0bff85d41eb469586998c6510ad1e8027756bc2a14e916560ecb5ad436968877"
+    },
+    {
+      "path": "specs/canon/lexical_concept/SPEC__Dict_B_Schema_v0_6_0.md",
+      "sha256": "1ec84de951d345e644c61bf03abe03235e73a296c64cea03705d416e1b98fe9f"
+    },
+    {
+      "path": "specs/canon/lexical_concept/SPEC__Hex_Dynamics_v0_6_0.md",
+      "sha256": "b59765159038ab51f5f152c2c49c0d8512f4e7ab5582dfdedb9fe9045fa06e10"
+    },
+    {
+      "path": "specs/canon/lexical_concept/SPEC__Hex_Projection_v0_6_0.md",
+      "sha256": "8140382de3648a2ff089460631954406e602c0df95f45ae23da6af081ca3d3db"
+    },
+    {
+      "path": "specs/canon/lexical_concept/SPEC__Normalization_v0_6_0.md",
+      "sha256": "9970ebf1266ab6a53550b4b39e22ebe11102a3b598012aedfce0b4e7247efc0c"
+    },
+    {
+      "path": "specs/canon/lexical_concept/SPEC__Resolver_v0_6_0.md",
+      "sha256": "7e245572e0ed8b95ec69d11d2fff2761a889e6abae156e7918ba2a451e18943d"
+    },
+    {
+      "path": "specs/canon/product_signal_layer.md",
+      "sha256": "7fd30c019345712c0ffb34de500ae625c6aef20adb9727e29f7cb99526cfd4f0"
+    },
+    {
+      "path": "specs/canon/prolog_rule_grammar.md",
+      "sha256": "c0b7f999939c8d37ac1542b239d64062c789ce9133e664b80b0faf9da92ba8a2"
+    },
+    {
+      "path": "specs/canon/semantic_field_canon.md",
+      "sha256": "20205dab4154415ce07de86117a148f0098ec41049312348bbe746a993ad8c0b"
+    },
+    {
+      "path": "specs/canon/topology_graph_weights.md",
+      "sha256": "c940028fcef85138da1620d481ea878aba2aa5fbd8d1c9da26c888668421b2e8"
+    },
+    {
+      "path": "specs/core/README.md",
+      "sha256": "c0ab8efc5a6f753541ee24b9c00176eaa173ab7abf3e102aef60b1a857d729a0"
+    },
+    {
+      "path": "specs/core/area_aggregation.md",
+      "sha256": "b31ecaac6e007df3670fa19db0877af07fcff0ea7274f2e48b8dd54dff865650"
+    },
+    {
+      "path": "specs/core/family_aggregation.md",
+      "sha256": "da794f3dc2d5b3ef42582e6a38aff1106c81e0082ab4a53bbd6e85efed713d47"
+    },
+    {
+      "path": "specs/core/hex_microphysics_canon.md",
+      "sha256": "0b67b43b12e14866a50e31f104106019b475064d7f5bda7c4fe99189a094090d"
+    },
+    {
+      "path": "specs/core/product_observables.md",
+      "sha256": "39fe3a9e8b34d4b28f7de1468f377f92a00bf3ae5a879942083d46b4f073b1e8"
+    },
+    {
+      "path": "specs/core/system_architecture.md",
+      "sha256": "be130ad493792314278ff4471f37dffffbe8d42406728f74b6aa2c2fdb9f5e9f"
+    },
+    {
+      "path": "specs/dynamics/DYNAMICS_EQUATION_INDEX.md",
+      "sha256": "e8327dd51cc2db3fa350e97c83955c932cee20701b41d71aa1af82eca77a5667"
+    },
+    {
+      "path": "specs/dynamics/ETHAN_SEMANTIC_FIELD_DYNAMICS_SPEC.md",
+      "sha256": "d52f9808983505a029198a5341a541d58b7f15c801e2315042f3bacc027b65cd"
+    },
+    {
+      "path": "specs/dynamics/FIELD_MATRIX_BUILDERS_v1.md",
+      "sha256": "deff53d9ee50454c51aaf30d26a05783eef3dbd19e41fdd2fdfbd00401a04399"
+    },
+    {
+      "path": "specs/dynamics/HESPERIA_DYNAMICS_CALIBRATION_SPEC_v0_1.md",
+      "sha256": "323705ed27ccc91f2b0b062ef0dd5cb0b74a3e115a3d60912f350f54b2fbbd87"
+    },
+    {
+      "path": "specs/dynamics/HSPR_CALIBRATION_INDEX_v1.md",
+      "sha256": "8f0529917c7ff93a736d208b497afa6bbfca1c1669259201a3361edb82a18af2"
+    },
+    {
+      "path": "specs/dynamics/SEMANTIC_FIELD_EQUATIONS_v1.md",
+      "sha256": "89c307045ebdb7698a7b127a8b4f320790f0846e03fcef9c1f07be217adeea7a"
+    },
+    {
+      "path": "specs/dynamics/semantic_field_dynamics.md",
+      "sha256": "5384208d83c1ad49cfd0f5b4823d18b10dc8916763762b79ae9f156c297ce4a7"
+    },
+    {
+      "path": "specs/release/releases/HESPERIA_v0_5_ENGINE_DYNAMICS_RELEASE.md",
+      "sha256": "73bd9d5889f57e662b7cb04e2d2cd6e4a8bb6dc0d6bb3f39ee6ba2bdce1a34e8"
+    },
+    {
+      "path": "specs/release/releases/hesperia-engine-dynamics-v0.5.md",
+      "sha256": "9e00fd35b6218425c5d668c952adc490f6602493010e12675a3ffcf5c4a1b098"
+    },
+    {
+      "path": "specs/release/releases/hesperia-v0.2.md",
+      "sha256": "118f85962d2e749d94669b48d3ce71cfd5a583370d1cf830c828b997e79953d3"
+    },
+    {
+      "path": "specs/schema/public_output_schema.md",
+      "sha256": "590f3399e71a41f4a09213ece027f69ff3cab152c3ddf7dca081a9994d18d30b"
+    },
+    {
+      "path": "specs/schemas/r1_r4/README.md",
+      "sha256": "b658476cd1c00fd3425273bb543663058fd4e7544453be0ca6c47f457b3ab44f"
+    },
+    {
+      "path": "specs/system/versioning_and_governance.md",
+      "sha256": "2431aad6cb4e4d7fbf0c69c9cf619774b4c5e81eb4399843eeb877896406b772"
+    },
+    {
+      "path": "specs/triz/contradiction_engine.md",
+      "sha256": "c154ae0b143b1a1f938321d24c7646fe2b66f71233dcdf2cc4ed29e73a975534"
+    },
+    {
+      "path": "specs/triz/innovation_metrics.md",
+      "sha256": "9f0055a8d19e12994dbd8320c55800a41642f50ad4a2ab7bc575ae2436553408"
+    },
+    {
+      "path": "spec/README.md",
+      "sha256": "fd67b1d65ea29c85b98e929981aeebea7b74cd5a0156d779c5a4c6d0e4abdc1b"
+    },
+    {
+      "path": "spec/hex_family_bridge.md",
+      "sha256": "974a881f267b4413cf423701642ae600aaa087bd79288e4f98aab746f93aa3f0"
+    },
+    {
+      "path": "spec/hex_microphysics_canon.md",
+      "sha256": "9fe486ae2d51fd7545434c002275ba107d97f5438bf11c5889d034d991481111"
+    },
+    {
+      "path": "spec/hspr_calibration_index.md",
+      "sha256": "40ddb03c6faeb84b9770a12899ce15b0abcefdc8fd093c23daae7f302da571ff"
+    },
+    {
+      "path": "spec/lexical_concept/README.md",
+      "sha256": "4c6a2240b0f9896374f4b1616deab3df808f1262aca83b24aac819793e54c3fd"
+    },
+    {
+      "path": "spec/lexical_concept/SPEC__72k_Phased_Scale_v0_6_0.md",
+      "sha256": "cfeb2086f2151efde5f5441580a97034d8e0c3d827b720610d1a67259181b713"
+    },
+    {
+      "path": "spec/lexical_concept/SPEC__Audit_Output_v0_6_0.md",
+      "sha256": "5019f2c9c8bb370683dc25775e698654713f364d92f67630e589f8a77587eb93"
+    },
+    {
+      "path": "spec/lexical_concept/SPEC__Calibration_Regression_v0_6_0.md",
+      "sha256": "6b9dadd70057c59257b1e323332d552206154014a8e8fad9be99a80aed3a597f"
+    },
+    {
+      "path": "spec/lexical_concept/SPEC__DLCR_HP_Master_v0_6_0.md",
+      "sha256": "57c37f44a461461c2c9ca5d94c163120609b203b0eb8c355f1480b255f1a80e8"
+    },
+    {
+      "path": "spec/lexical_concept/SPEC__Dict_A_Schema_v0_6_0.md",
+      "sha256": "0bff85d41eb469586998c6510ad1e8027756bc2a14e916560ecb5ad436968877"
+    },
+    {
+      "path": "spec/lexical_concept/SPEC__Dict_B_Schema_v0_6_0.md",
+      "sha256": "1ec84de951d345e644c61bf03abe03235e73a296c64cea03705d416e1b98fe9f"
+    },
+    {
+      "path": "spec/lexical_concept/SPEC__Hex_Dynamics_v0_6_0.md",
+      "sha256": "b59765159038ab51f5f152c2c49c0d8512f4e7ab5582dfdedb9fe9045fa06e10"
+    },
+    {
+      "path": "spec/lexical_concept/SPEC__Hex_Projection_v0_6_0.md",
+      "sha256": "8140382de3648a2ff089460631954406e602c0df95f45ae23da6af081ca3d3db"
+    },
+    {
+      "path": "spec/lexical_concept/SPEC__Normalization_v0_6_0.md",
+      "sha256": "9970ebf1266ab6a53550b4b39e22ebe11102a3b598012aedfce0b4e7247efc0c"
+    },
+    {
+      "path": "spec/lexical_concept/SPEC__Resolver_v0_6_0.md",
+      "sha256": "7e245572e0ed8b95ec69d11d2fff2761a889e6abae156e7918ba2a451e18943d"
+    },
+    {
+      "path": "spec/product_signal_layer.md",
+      "sha256": "7fd30c019345712c0ffb34de500ae625c6aef20adb9727e29f7cb99526cfd4f0"
+    },
+    {
+      "path": "spec/prolog_rule_grammar.md",
+      "sha256": "c0b7f999939c8d37ac1542b239d64062c789ce9133e664b80b0faf9da92ba8a2"
+    },
+    {
+      "path": "spec/semantic_field_canon.md",
+      "sha256": "20205dab4154415ce07de86117a148f0098ec41049312348bbe746a993ad8c0b"
+    },
+    {
+      "path": "spec/topology_graph_weights.md",
+      "sha256": "c940028fcef85138da1620d481ea878aba2aa5fbd8d1c9da26c888668421b2e8"
+    }
+  ]
+}

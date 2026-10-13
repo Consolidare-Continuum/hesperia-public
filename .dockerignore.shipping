@@ -1,0 +1,16 @@
+# Use with: docker build -f Dockerfile.shipping ...
+# Rename to .dockerignore or use build_shipping.sh which copies this as .dockerignore
+.git
+.gitignore
+*.pyc
+__pycache__
+.pytest_cache
+*.md
+docs/
+legacy/
+tests/
+tools/
+dist/
+release/*.tar
+release/*.zip
+hesperia-eval/

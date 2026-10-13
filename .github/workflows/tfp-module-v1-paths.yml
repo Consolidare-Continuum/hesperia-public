@@ -1,0 +1,48 @@
+# TFP-V1-03: mandatory checks when TFP module or calibration dict paths change.
+name: TFP module v1 path gate
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "hesperia/modules/tfp/**"
+      - "assets/calibration/dicts/**"
+  push:
+    branches: [main]
+    paths:
+      - "hesperia/modules/tfp/**"
+      - "assets/calibration/dicts/**"
+
+jobs:
+  tfp-v1-paths:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONHASHSEED: "0"
+      PYTHONPATH: ${{ github.workspace }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then pip install --quiet -r requirements.txt; fi
+          pip install --quiet pytest pyyaml jsonschema
+
+      - name: Version authority
+        run: python3 tools/validate_version_consistency.py
+
+      - name: research path literal gate
+        run: python3 tools/check_research_noone_local_literals.py
+
+      - name: DLCR regression gate
+        run: python3 tools/check_dlcr_regression.py
+
+      - name: TFP module v1 pytest
+        run: |
+          python3 -m pytest tests/test_tfp_module_v1_dlcr_golds.py \
+            tests/test_tfp_module_v1_public_surface.py tests/test_tfp_module_v1_seal.py \
+            tests/test_tfp_v1_data_layout.py -q --tb=short

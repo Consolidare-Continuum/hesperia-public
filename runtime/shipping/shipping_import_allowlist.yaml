@@ -1,0 +1,19 @@
+# HESPERIA — Allowed non-stdlib imports under runtime/shipping/*.py
+# Copyright © 2026 igareosh.com. See LEGAL_NOTICE.md.
+#
+# Validated by: python3 tools/validate_shipping_surface.py
+# Stdlib: any component in sys.stdlib_module_names (Python 3.10+) plus __future__.
+
+version: 1
+
+allowed_repo_prefixes:
+  - hesperia.system
+  - runtime.services
+  - runtime.shipping
+  - runtime.artifact_writer
+  - core.projection
+
+allowed_third_party_prefixes:
+  - fastapi
+  - pydantic
+  - uvicorn

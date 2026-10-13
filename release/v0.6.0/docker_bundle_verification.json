@@ -1,0 +1,51 @@
+{
+  "system_version": "0.6.0",
+  "generated_utc": "2026-05-28T12:06:35.189531+00:00",
+  "image_tag": "hesperia-api:0.6.0",
+  "image_id": "sha256:23d3170e437fe71079a6dc183d7e964681b5b9b8755d53049e61651c852dd9d9",
+  "docker_run_container_id": "900859e8989037cf6e1eb0de2e2203b80196c1a6a0ddd8aafef4a1cda7b2886b",
+  "health_ok": true,
+  "health_note": "health ok",
+  "version_payload": {
+    "version": "0.6.0",
+    "commit": "unknown",
+    "build": "unknown"
+  },
+  "analyze_ok": true,
+  "analyze_note": "public envelope ok",
+  "fail_reason": "",
+  "analyze_keys": [
+    "run",
+    "text_preview",
+    "execution_flow",
+    "pipeline_version",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "usf",
+    "multiscale_signals",
+    "diagnostics",
+    "system_version",
+    "build_id",
+    "schema_version",
+    "calibration_profile",
+    "execution_flow_version",
+    "orchestration_mode"
+  ],
+  "forbidden_dirs_absent": {
+    "docs": true,
+    "tests": true,
+    "legacy": true,
+    "research": true,
+    "outputs": true
+  },
+  "tar_name": "hesperia-api-v0.6.0.tar",
+  "tar_sha256": "a75ec5dcc65c44f9d5b50aa292a46569c371088efdaa85b537d17dbca08208da",
+  "logs_tail": "INFO:     172.17.0.1:33534 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     172.17.0.1:33546 - \"GET /version HTTP/1.1\" 200 OK\nINFO:     172.17.0.1:33558 - \"POST /analyze HTTP/1.1\" 200 OK\nINFO:     Started server process [1]\nINFO:     Waiting for application startup.\nHESPERIA runtime initialized\nversion: 0.6.0\nmode: sealed_evaluator\nINFO:     Application startup complete.\nINFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)\n"
+}

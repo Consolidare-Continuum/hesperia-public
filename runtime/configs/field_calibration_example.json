@@ -1,0 +1,46 @@
+{
+  "family_count": 2,
+  "families_per_area": 1,
+  "area_count": 2,
+
+  "adjacency_matrix": [[0.0, 1.0], [1.0, 0.0]],
+  "resistance_vector": [0.1, 0.1],
+  "contradiction_matrix": [[0.0, 0.2], [0.2, 0.0]],
+
+  "initial_field": [0.0, 0.0],
+
+  "documents": [
+    {
+      "source_vector": [1.0, 0.0],
+      "coefficient": 1.0,
+      "quality": 1.0,
+      "mass": 1.0,
+      "timestamp": 0.0
+    }
+  ],
+
+  "parameter_grid": {
+    "alpha": [0.05, 0.1, 0.2],
+    "beta": [0.01, 0.05],
+    "gamma": [0.05, 0.1],
+    "delta": [0.2, 0.4],
+    "mu": [0.0, 0.01],
+    "dt": [1.0]
+  },
+
+  "max_steps": 30,
+  "epsilon": 0.00001,
+  "tau": 0.00001,
+  "clip_mode": true,
+  "top_k": 10,
+  "include_all_results": false,
+
+  "hspr_weights": {
+    "consistency": 0.25,
+    "source_alignment": 0.25,
+    "energy": 0.15,
+    "contradiction": 0.15,
+    "diffusion": 0.1,
+    "resistance": 0.1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "run": "compare",
+  "text1_preview": "justice and fairness",
+  "text2_preview": "order and harm",
+  "result1_trust": "LOW",
+  "result2_trust": "LOW",
+  "dominant_match": false,
+  "confidence_delta": "same"
+}

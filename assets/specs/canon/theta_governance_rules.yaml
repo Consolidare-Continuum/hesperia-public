@@ -1,0 +1,77 @@
+# Theta governance rules v1 — canonical output eligibility.
+# Gates release/build state; no free-form eval.
+
+version: 1
+rules:
+  - rule_id: THETA_001
+    name: canonical_output_requires_sigma_and_gamma_pass
+    enabled: true
+    severity: critical
+    condition:
+      all:
+        - fact: sigma_passed
+          op: eq
+          value: true
+        - fact: gamma_passed
+          op: eq
+          value: true
+    action: approve_canonical
+    message: "Canonical output requires Sigma and Gamma pass."
+
+  - rule_id: THETA_002
+    name: no_canonical_if_raw_metrics_mutated
+    enabled: true
+    severity: critical
+    condition:
+      all:
+        - fact: raw_artifact_mutation
+          op: eq
+          value: false
+    action: approve_canonical
+    message: "No canonical output if raw metrics were mutated."
+    fail_message: "Raw structural artifacts differ from locked measurement snapshots."
+
+  - rule_id: THETA_003
+    name: required_artifacts_present
+    enabled: true
+    severity: critical
+    condition:
+      all:
+        - fact: has_usf
+          op: eq
+          value: true
+        - fact: has_raw_metrics
+          op: eq
+          value: true
+        - fact: has_logic_outputs
+          op: eq
+          value: true
+        - fact: has_provenance
+          op: eq
+          value: true
+    action: approve_canonical
+    message: "Required artifacts (USF, raw_metrics, logic_outputs, provenance) must be present."
+
+  - rule_id: THETA_004
+    name: placeholder_layer10_non_canonical_interpretation
+    enabled: true
+    severity: medium
+    condition:
+      any:
+        - fact: layer10_placeholder
+          op: eq
+          value: true
+    action: flag_non_canonical_interpretation
+    message: "Placeholder Layer-10 cannot upgrade output to canonical narrative truth."
+
+  - rule_id: THETA_005
+    name: deterministic_required_for_canonical
+    enabled: true
+    severity: critical
+    condition:
+      all:
+        - fact: deterministic
+          op: eq
+          value: true
+    action: approve_canonical
+    message: "Deterministic flag must be true for canonical output."

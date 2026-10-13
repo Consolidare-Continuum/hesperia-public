@@ -1,0 +1,31 @@
+{"concept_id": "B_A10_F17_001", "labels": ["Изменения отношений"], "from_lexical": ["отношение", "отношения"], "confidence": 0.9}
+{"concept_id": "B_A10_F18_001", "labels": ["Структурные изменения личности"], "from_lexical": ["личность"], "confidence": 0.8}
+{"concept_id": "B_A10_F12_001", "labels": ["Сопротивление терапии"], "from_lexical": ["терапия"], "confidence": 0.7}
+{"concept_id": "B_A10_F15_001", "labels": ["Изменения поведения"], "from_lexical": ["поведение"], "confidence": 0.6}
+{"concept_id": "B_A10_F19_001", "labels": ["Фазы терапии"], "from_lexical": ["терапия"], "confidence": 0.5}
+{"concept_id": "B_A10_F1_001", "labels": ["Терапевтический контракт"], "from_lexical": ["пациент"], "confidence": 0.4}
+{"concept_id": "tfp.domain.analysis", "labels": ["Анализ"], "from_lexical": ["анализ"], "confidence": 0.3}
+{"concept_id": "tfp.domain.transfer", "labels": ["Перенос"], "from_lexical": ["перенос"], "confidence": 0.3}
+{"concept_id": "tfp.domain.superego", "labels": ["Суперэго"], "from_lexical": ["суперэго"], "confidence": 0.3}
+{"concept_id": "tfp.domain.possibility", "labels": ["Возможность"], "from_lexical": ["возможность"], "confidence": 0.3}
+{"concept_id": "tfp.domain.object_relations", "labels": ["Объектные отношения"], "from_lexical": ["объектные отношения"], "confidence": 0.3}
+{"concept_id": "tfp.domain.time", "labels": ["Время"], "from_lexical": ["время"], "confidence": 0.3}
+{"concept_id": "tfp.domain.lifespan", "labels": ["Жизнь"], "from_lexical": ["жизнь"], "confidence": 0.3}
+{"concept_id": "tfp.domain.patients", "labels": ["Пациенты"], "from_lexical": ["пациенты"], "confidence": 0.3}
+{"concept_id": "tfp.domain.patients_single", "labels": ["Пациент"], "from_lexical": ["пациент"], "confidence": 0.3}
+{"concept_id": "tfp.domain.can", "labels": ["Могут"], "from_lexical": ["могут"], "confidence": 0.3}
+{"concept_id": "tfp.domain.can_single", "labels": ["Может"], "from_lexical": ["может"], "confidence": 0.3}
+{"concept_id": "tfp.domain.object", "labels": ["Объектный"], "from_lexical": ["объектный"], "confidence": 0.3}
+{"concept_id": "tfp.domain.method", "labels": ["Способ"], "from_lexical": ["способ"], "confidence": 0.3}
+{"concept_id": "B_A10_F17_001", "labels": ["Изменения отношений"], "from_lexical": ["отношениях", "по отношению", "отношение к", "отношение к"], "confidence": 0.9}
+{"concept_id": "tfp.domain.psychotherapy", "labels": ["психотерапия"], "from_lexical": ["психотерапия"], "confidence": 1.0}
+{"concept_id": "tfp.domain.patient", "labels": ["пациент"], "from_lexical": ["пациент"], "confidence": 1.0}
+{"concept_id": "tfp.domain.narcissistic_disorder", "labels": ["нарциссическая расстройство"], "from_lexical": ["нарциссическая", "расстройство"], "confidence": 1.0}
+{"concept_id": "tfp.domain.feelings", "labels": ["чувства"], "from_lexical": ["чувство", "чувства"], "confidence": 1.0}
+{"concept_id": "tfp.domain.pathology", "labels": ["патология"], "from_lexical": ["патология"], "confidence": 1.0}
+{"concept_id": "tfp.domain.reality", "labels": ["реальность"], "from_lexical": ["реальность"], "confidence": 1.0}
+{"concept_id": "tfp.domain.treatment", "labels": ["лечение"], "from_lexical": ["лечение"], "confidence": 1.0}
+{"concept_id": "tfp.domain.object", "labels": ["объект"], "from_lexical": ["объект"], "confidence": 1.0}
+{"concept_id": "tfp.domain.patients_with", "labels": ["пациентов с"], "from_lexical": ["пациентов с"], "confidence": 1.0}
+{"concept_id": "tfp.domain.ability", "labels": ["способности"], "from_lexical": ["способности"], "confidence": 1.0}
+{"concept_id": "tfp.domain.definition", "labels": ["определение"], "from_lexical": ["определение"], "confidence": 0.9}

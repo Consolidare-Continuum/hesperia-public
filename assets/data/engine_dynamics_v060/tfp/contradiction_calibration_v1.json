@@ -1,0 +1,48 @@
+{
+  "version": "v0.5.8",
+  "profile_name": "cb-contradiction-v1",
+  "activation": {
+    "pressure_normalization_mode": "max",
+    "pressure_smooth_compression": 1.0,
+    "family_contradiction_influence": 1.0,
+    "area_contradiction_influence": 1.0,
+    "dynamic_inhibition_influence": 1.0
+  },
+  "uncertainty": {
+    "confidence_floor": 0.0,
+    "confidence_sensitivity": 1.0,
+    "fuzzy_penalty_influence": 1.0,
+    "ambiguity_penalty_influence": 1.0
+  },
+  "negation_inhibition": {
+    "negated_opposition_activation_weight": 1.0,
+    "inhibited_opposition_activation_weight": 1.0,
+    "inhibited_opposition_latent_weight": 1.0,
+    "coactive_opposition_latent_weight": 1.0
+  },
+  "family": {
+    "family_fragmentation_influence": 1.0,
+    "family_bridge_influence": 1.0,
+    "same_family_conflict_diagonal_weight": 1.0
+  },
+  "topology": {
+    "segment_contradiction_influence": 1.0,
+    "momentum_attenuation_influence": 1.0,
+    "transition_pressure_influence": 1.0
+  },
+  "feedback": {
+    "token_risk_influence": 1.0,
+    "concept_risk_influence": 1.0,
+    "pair_risk_influence": 1.0,
+    "recurrence_influence": 1.0
+  },
+  "release_gating": {
+    "pass_threshold": 0.85,
+    "qualified_pass_threshold": 0.65
+  },
+  "constraints": {
+    "allow_negative_influence": false,
+    "max_global_influence": 2.0,
+    "require_trace_visible_config": true
+  }
+}

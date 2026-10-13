@@ -1,0 +1,13 @@
+{
+  "version": "1",
+  "description": "Optional ten-area module packing: indices excluded from the 10-area pack (CREATION/DECEIT slots in sealed 12-order). Default core grain is still 12 — these indices are first-class there.",
+  "reserved_indices": [10, 11],
+  "reserved": [
+    { "reserve_id": "AREA_11", "internal_index": 10 },
+    { "reserve_id": "AREA_12", "internal_index": 11 }
+  ],
+  "ten_area_module_area_count": 10,
+  "default_core_areas": 12,
+  "total_internal_areas": 12,
+  "policy": "Default core/module = 12. Ten-area module (optional) packs indices 0–9 and excludes 10–11 via this registry; math geometry AREAS=12 unchanged."
+}

@@ -1,0 +1,18 @@
+{
+  "active_graph": {
+    "nodes": {
+      "q_sense": {"hitCount": 3},
+      "agri_water": {"hitCount": 3},
+      "defense_tel": {"hitCount": 3}
+    },
+    "edges": [
+      {"source": "q_sense", "target": "agri_water", "type": "relates"},
+      {"source": "agri_water", "target": "defense_tel", "type": "relates"},
+      {"source": "q_sense", "target": "defense_tel", "type": "relates"}
+    ]
+  },
+  "topology": {
+    "concept_to_area": {"q_sense": 0, "agri_water": 4, "defense_tel": 8},
+    "concept_to_family": {"q_sense": 0, "agri_water": 96, "defense_tel": 192}
+  }
+}

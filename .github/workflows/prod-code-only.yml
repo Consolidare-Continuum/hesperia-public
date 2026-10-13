@@ -1,0 +1,13 @@
+name: prod-code-only
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify prod tree has no dev documentation
+        run: bash tools/ci/verify_prod_code_only.sh . --shipping-context

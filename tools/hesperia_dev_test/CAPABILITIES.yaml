@@ -1,0 +1,34 @@
+# HESPERIA — hesperia-dev-test capability registry. Copyright © 2026 igareosh.com.
+# Growth surface (Colombo Bench-0 design §4.7): new capability = new check id + gold field(s) +
+# pytest node. Bench-0 itself never gains an "interpret this meaning" check — see
+# operational/assignments/COLOMBO-HESPERIA-DEV-TEST-BENCH0-DESIGN-2026-07-26.md (brain repo).
+
+bench0:
+  version: v0_1
+  corpus: bench0_latin
+  gold_path: gold/bench0_v0_1.json
+  module: tools.hesperia_dev_test.bench0
+  checks:
+    - http_status
+    - determinism
+    - schema_ground_truth
+    - schema_gap_report
+    - schema_inspect_slice
+    - engine_authored_true
+    - vector_lengths_288_12
+    - float_finite
+    - activation_range
+    - l1_scalar_allowlist
+    - identity_system_version
+    - alphabet_fingerprint_gold
+    - gap_id_set_gold
+    - mcp_fastapi_parity
+  deferred_lanes:
+    - lane_digit
+    - lane_bool
+    - lane_index
+    - lane_diacritic_known_behavior
+    - timing_sla
+    - double_analyze_observation
+  law: "New capability = new check id + gold field(s) + pytest node. Bench-0 never gains an 'interpret this meaning' check."
+  re_gold: "Explicit Felix/Ethan step only (system_version or sealed-measurement change) — never a silent CI overwrite."

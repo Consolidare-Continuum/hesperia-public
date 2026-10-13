@@ -1,0 +1,197 @@
+42_SPEC__V0_4_Layer9_Human_Reference_Brand_Treatment_25_Variables_v1_0
+
+Project: HESPERIA
+Target: v0.4.x baseline (human reference & brand treatment)
+Date: 2026-02-24
+Status: Canonical
+
+References: 41_SPEC (Layer-8: SI_*); 40_SPEC (L7), 36_SPEC (L3), 37_SPEC (L4); 00_GOVERNANCE_CHARTER__HESPERIA_v1_0.
+
+----------------------------------------------------------------------
+0. LAYER-9 CONTRACT (INVARIANT)
+----------------------------------------------------------------------
+
+  Layer-9 provides a consistent "dashboard language" that does not lie. Standard U1000 bands (critical/weak/fair/good/strong/excellent), directionalization (high-is-good vs low-is-good), human "pillars" (branded categories), one-word tags (TRUSTED/USABLE/TENTATIVE/FRAGILE/BLOCKED, etc.), and deterministic action flags (require more input, evidence rebuild, governance review, allow human summary). No narrative generation; only deterministic labels and flags. All 25 variables are derived from L3, L4, L7 and Layer-8 SI_*.
+
+----------------------------------------------------------------------
+1. PREREQUISITES
+----------------------------------------------------------------------
+
+  L3, L4, L7 = outputs from 36_SPEC, 37_SPEC, 40_SPEC. SI_* = report units from 41_SPEC (Layer-8). MAX_SHORTFALL = from Layer-4 config. clamp(u, 0, 1000) for int u. All bands and thresholds are frozen (deterministic).
+
+----------------------------------------------------------------------
+2. LAYER-9 HUMAN REFERENCE & BRAND TREATMENT (25)
+----------------------------------------------------------------------
+A. Standard bands for U1000 (1–6)
+----------------------------------------------------------------------
+
+  All bands are deterministic cutoffs on U1000 (0..1000). Exactly one band is true per u.
+
+ 1. BAND_0_CRITICAL
+    boolean BAND_0_CRITICAL = (u < 200);
+    Label: "critical".
+
+ 2. BAND_1_WEAK
+    boolean BAND_1_WEAK = (u >= 200 && u < 400);
+    Label: "weak".
+
+ 3. BAND_2_FAIR
+    boolean BAND_2_FAIR = (u >= 400 && u < 600);
+    Label: "fair".
+
+ 4. BAND_3_GOOD
+    boolean BAND_3_GOOD = (u >= 600 && u < 800);
+    Label: "good".
+
+ 5. BAND_4_STRONG
+    boolean BAND_4_STRONG = (u >= 800 && u < 950);
+    Label: "strong".
+
+ 6. BAND_5_EXCELLENT
+    boolean BAND_5_EXCELLENT = (u >= 950);
+    Label: "excellent".
+
+----------------------------------------------------------------------
+B. Good-direction mapping (7–10)
+----------------------------------------------------------------------
+
+ 7. DIRECTIONALIZE_HIGH_IS_GOOD
+    int directionalScoreHighGood(int u) { return clamp(u, 0, 1000); }
+    Use as-is when high is good.
+
+ 8. DIRECTIONALIZE_LOW_IS_GOOD
+    int directionalScoreLowGood(int u) { return 1000 - clamp(u, 0, 1000); }
+    Invert for leakage, contradiction, deviation (human-facing "good" = low bad metric).
+
+ 9. DIRECTION_MAP_AREA_LEAKAGE
+    int AREA_CONTAINMENT_U1000 = directionalScoreLowGood(SI_AREA_LEAKAGE_U1000);
+    Containment is the human-facing good (low leakage → high containment).
+
+10. DIRECTION_MAP_CONTRADICTION
+    int CONSISTENCY_U1000 = directionalScoreLowGood(SI_CONTRADICTION_PRESSURE_U1000);
+    Lower contradiction → higher consistency.
+
+----------------------------------------------------------------------
+C. Human pillars (11–16)
+----------------------------------------------------------------------
+
+  Branded categories built from Layer-8 U1000 (directionalized where needed). All pillars in 0..1000.
+
+11. PILLAR_INPUT_QUALITY_U1000
+    int PILLAR_INPUT_QUALITY_U1000 = (int) round(0.60 * SI_COVERAGE_U1000 + 0.40 * SI_DOMINANCE_U1000);
+    Is the input structurally readable and decisive?
+
+12. PILLAR_GEOMETRY_U1000
+    int PILLAR_GEOMETRY_U1000 = (int) round(0.70 * SI_GEOMETRIC_STABILITY_U1000 + 0.30 * AREA_CONTAINMENT_U1000);
+    Is the traversal stable and contained?
+
+13. PILLAR_EVIDENCE_U1000
+    int PILLAR_EVIDENCE_U1000 = SI_EVIDENCE_SUPPORT_U1000;
+    How supportive is evidence.
+
+14. PILLAR_CONSISTENCY_U1000
+    int PILLAR_CONSISTENCY_U1000 = (int) round(0.60 * CONSISTENCY_U1000 + 0.40 * (1000 - SI_ENTROPY_U1000));
+    Internal coherence and low dispersion. Clamp to [0, 1000].
+
+15. PILLAR_STABILITY_U1000
+    int PILLAR_STABILITY_U1000 = SI_GLOBAL_STABILITY_U1000;
+    System dynamic stability.
+
+16. PILLAR_GOVERNANCE_U1000
+    int PILLAR_GOVERNANCE_U1000 = (L7.DECISION_STATUS_CODE == 0) ? 1000 : clamp(1000 - 10 * L7.DECISION_STATUS_CODE, 0, 1000);
+    Pass/fail and severity mapping of status codes.
+
+----------------------------------------------------------------------
+D. Branded one-word outputs (17–21)
+----------------------------------------------------------------------
+
+  One word, deterministic, human-readable. No narrative.
+
+17. BRAND_WORD_TRUST
+    String BRAND_WORD_TRUST = (L7.DECISION_STATUS_CODE != 0) ? "BLOCKED" : (SI_SYSTEM_CONFIDENCE_U1000 >= 850) ? "TRUSTED" : (SI_SYSTEM_CONFIDENCE_U1000 >= 650) ? "USABLE" : (SI_SYSTEM_CONFIDENCE_U1000 >= 450) ? "TENTATIVE" : "FRAGILE";
+    Based on system confidence + governance.
+
+18. BRAND_WORD_EVIDENCE
+    String BRAND_WORD_EVIDENCE = (SI_EVIDENCE_SUPPORT_U1000 >= 800) ? "SUPPORTED" : (SI_EVIDENCE_SUPPORT_U1000 >= 600) ? "BACKED" : (SI_EVIDENCE_SUPPORT_U1000 >= 400) ? "THIN" : "UNSUPPORTED";
+
+19. BRAND_WORD_CONTRADICTION
+    String BRAND_WORD_CONTRADICTION = (CONSISTENCY_U1000 >= 800) ? "CONSISTENT" : (CONSISTENCY_U1000 >= 600) ? "MIXED" : (CONSISTENCY_U1000 >= 400) ? "CONTESTED" : "CONTRADICTED";
+    Uses directional consistency (low contradiction = high consistency).
+
+20. BRAND_WORD_GEOMETRY
+    String BRAND_WORD_GEOMETRY = (PILLAR_GEOMETRY_U1000 >= 800) ? "CONTAINED" : (PILLAR_GEOMETRY_U1000 >= 600) ? "STABLE" : (PILLAR_GEOMETRY_U1000 >= 400) ? "DIFFUSE" : "CHAOTIC";
+
+21. BRAND_WORD_SHADOW
+    String BRAND_WORD_SHADOW = (!L3.SHADOW_ENABLED) ? "OFF" : (!L3.SHADOW_ACCEPTABILITY_GATE) ? "REJECTED" : (L7.SHADOW_JUSTIFICATION_SCORE > 0.0) ? "JUSTIFIED" : "NEUTRAL";
+
+----------------------------------------------------------------------
+E. Action flags (22–25)
+----------------------------------------------------------------------
+
+  Deterministic "what to do" indicators. No narrative.
+
+22. ACTION_REQUIRE_MORE_INPUT
+    boolean ACTION_REQUIRE_MORE_INPUT = (SI_COVERAGE_U1000 < 500);
+    Coverage too low.
+
+23. ACTION_REQUIRE_EVIDENCE_REBUILD
+    boolean ACTION_REQUIRE_EVIDENCE_REBUILD = (L4.INTEGRITY_CHECK_PASS_RATIO < 1.0) || (L4.RETRIEVAL_SHORTFALL_BASELINE > MAX_SHORTFALL);
+    Evidence store or retrieval problem.
+
+24. ACTION_REQUIRE_GOVERNANCE_REVIEW
+    boolean ACTION_REQUIRE_GOVERNANCE_REVIEW = (L7.DECISION_STATUS_CODE != 0) || (SI_SYSTEM_CONFIDENCE_U1000 < 450);
+    Do not ship the result as advice.
+
+25. ACTION_ALLOW_HUMAN_SUMMARY
+    boolean ACTION_ALLOW_HUMAN_SUMMARY = (L7.DECISION_STATUS_CODE == 0) && (SI_SYSTEM_CONFIDENCE_U1000 >= 650) && SI_TRIG_REALITY_FLAG;
+    Only then allow "human-friendly explanation" text to be generated.
+
+----------------------------------------------------------------------
+3. WHAT LAYER-9 GIVES
+----------------------------------------------------------------------
+
+  A consistent dashboard language that does not lie. One-word tags: TRUSTED / USABLE / TENTATIVE / FRAGILE / BLOCKED. Pillars you can brand and show to humans. Clear action flags (input / evidence / governance / allow summary).
+
+----------------------------------------------------------------------
+4. RELATION TO LAYERS 7–8
+----------------------------------------------------------------------
+
+  Layer-9 consumes L3, L4, L7 and Layer-8 SI_* only. It does not change any underlying metric; it adds bands, directionalization, pillars, brand words, and action flags for human reference and UI.
+
+----------------------------------------------------------------------
+5. JAVA-STYLE PSEUDOCODE (LAYER-9)
+----------------------------------------------------------------------
+
+// A. Bands (u = any U1000 value)
+boolean BAND_0_CRITICAL = (u < 200);
+boolean BAND_1_WEAK = (u >= 200 && u < 400);
+boolean BAND_2_FAIR = (u >= 400 && u < 600);
+boolean BAND_3_GOOD = (u >= 600 && u < 800);
+boolean BAND_4_STRONG = (u >= 800 && u < 950);
+boolean BAND_5_EXCELLENT = (u >= 950);
+
+static int directionalScoreHighGood(int u) { return clamp(u, 0, 1000); }
+static int directionalScoreLowGood(int u) { return 1000 - clamp(u, 0, 1000); }
+int AREA_CONTAINMENT_U1000 = directionalScoreLowGood(SI_AREA_LEAKAGE_U1000);
+int CONSISTENCY_U1000 = directionalScoreLowGood(SI_CONTRADICTION_PRESSURE_U1000);
+
+int PILLAR_INPUT_QUALITY_U1000 = (int) Math.round(0.60 * SI_COVERAGE_U1000 + 0.40 * SI_DOMINANCE_U1000);
+int PILLAR_GEOMETRY_U1000 = (int) Math.round(0.70 * SI_GEOMETRIC_STABILITY_U1000 + 0.30 * AREA_CONTAINMENT_U1000);
+int PILLAR_EVIDENCE_U1000 = SI_EVIDENCE_SUPPORT_U1000;
+int PILLAR_CONSISTENCY_U1000 = (int) Math.round(0.60 * CONSISTENCY_U1000 + 0.40 * (1000 - SI_ENTROPY_U1000));
+int PILLAR_STABILITY_U1000 = SI_GLOBAL_STABILITY_U1000;
+int PILLAR_GOVERNANCE_U1000 = (L7.DECISION_STATUS_CODE == 0) ? 1000 : clamp(1000 - 10 * L7.DECISION_STATUS_CODE, 0, 1000);
+
+String BRAND_WORD_TRUST = (L7.DECISION_STATUS_CODE != 0) ? "BLOCKED" : (SI_SYSTEM_CONFIDENCE_U1000 >= 850) ? "TRUSTED" : (SI_SYSTEM_CONFIDENCE_U1000 >= 650) ? "USABLE" : (SI_SYSTEM_CONFIDENCE_U1000 >= 450) ? "TENTATIVE" : "FRAGILE";
+String BRAND_WORD_EVIDENCE = (SI_EVIDENCE_SUPPORT_U1000 >= 800) ? "SUPPORTED" : (SI_EVIDENCE_SUPPORT_U1000 >= 600) ? "BACKED" : (SI_EVIDENCE_SUPPORT_U1000 >= 400) ? "THIN" : "UNSUPPORTED";
+String BRAND_WORD_CONTRADICTION = (CONSISTENCY_U1000 >= 800) ? "CONSISTENT" : (CONSISTENCY_U1000 >= 600) ? "MIXED" : (CONSISTENCY_U1000 >= 400) ? "CONTESTED" : "CONTRADICTED";
+String BRAND_WORD_GEOMETRY = (PILLAR_GEOMETRY_U1000 >= 800) ? "CONTAINED" : (PILLAR_GEOMETRY_U1000 >= 600) ? "STABLE" : (PILLAR_GEOMETRY_U1000 >= 400) ? "DIFFUSE" : "CHAOTIC";
+String BRAND_WORD_SHADOW = (!L3.SHADOW_ENABLED) ? "OFF" : (!L3.SHADOW_ACCEPTABILITY_GATE) ? "REJECTED" : (L7.SHADOW_JUSTIFICATION_SCORE > 0.0) ? "JUSTIFIED" : "NEUTRAL";
+
+boolean ACTION_REQUIRE_MORE_INPUT = (SI_COVERAGE_U1000 < 500);
+boolean ACTION_REQUIRE_EVIDENCE_REBUILD = (L4.INTEGRITY_CHECK_PASS_RATIO < 1.0) || (L4.RETRIEVAL_SHORTFALL_BASELINE > MAX_SHORTFALL);
+boolean ACTION_REQUIRE_GOVERNANCE_REVIEW = (L7.DECISION_STATUS_CODE != 0) || (SI_SYSTEM_CONFIDENCE_U1000 < 450);
+boolean ACTION_ALLOW_HUMAN_SUMMARY = (L7.DECISION_STATUS_CODE == 0) && (SI_SYSTEM_CONFIDENCE_U1000 >= 650) && SI_TRIG_REALITY_FLAG;
+
+----------------------------------------------------------------------
+END 42_SPEC

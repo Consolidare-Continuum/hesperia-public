@@ -1,0 +1,19 @@
+{
+  "_comment": "Shape of hesperia.hesperia_teacher_run after persist_teach_run()",
+  "run_id": "550e8400-e29b-41d4-a716-446655440000",
+  "correlation_id": "cid-demo-063-001",
+  "lang": "ru",
+  "input_kind": "tfp_scientific_statement",
+  "status": "stored",
+  "irc_channel": "#hesperia-teacher",
+  "hesperia_git_sha": "16286fa",
+  "tersagor_git_sha": "0149120",
+  "proposal_status": "pending",
+  "tables_touched": [
+    "hesperia_teacher_run",
+    "hesperia_edge_snapshot",
+    "hesperia_activation_snapshot",
+    "hesperia_proposal",
+    "hesperia_reweight_event"
+  ]
+}

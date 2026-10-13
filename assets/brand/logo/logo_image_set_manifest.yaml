@@ -1,0 +1,108 @@
+# HESPERIA logo image set — ingestion manifest
+schema_version: 1
+asset_family: hesperia_logo
+updated: 2026-05-27
+
+canonical_descriptions:
+  v1: docs/brand/logo/HESPERIA_LOGO_CANONICAL_VISUAL_DESCRIPTION_v1.md
+  v1_2: docs/brand/logo/HESPERIA_LOGO_CANONICAL_VISUAL_DESCRIPTION_v1_2.md
+
+# ready: canonical v1 baseline + exploration set committed (2026-05-27)
+ingestion_status: ready
+
+policy:
+  canonical_lockup: monochrome_only
+  colored_exploration: deferred  # neon/cyan-magenta — not brand lockup until reviewed
+
+images:
+  - path: images/canonical/hesperia_logo_v1_baseline.png
+    variant_id: primary_monochrome_raster
+    role: canonical
+    status: approved_baseline
+    sha256: 16b31b083d2d411eac16db4fdd1a08f581a4195d75afab448038d97f99e07fba
+    notes: v1 baseline — black/white/grey; matches description v1; no color lockup
+
+  - path: images/exploration/monochrome/gemini_outline_perfect_geometry.jpeg
+    variant_id: construction_blueprint
+    role: exploration
+    sha256: 82aba5579746923db20e76b949b0121c1cb6519bb64b4cc5d3d5c0dd71c143ac
+    notes: Thin guides, 60-degree hints — reference for vector trace
+
+  - path: images/exploration/monochrome/gemini_sketching_1.jpeg
+    variant_id: construction_blueprint
+    role: exploration
+    sha256: 384480c66656d5cf069d2c68f928e703de57f14f303261fb050d741c7c828cde
+
+  - path: images/exploration/monochrome/sketch_1.png
+    variant_id: construction_blueprint
+    role: exploration
+    sha256: 8661d30e4a5ad89f53a50737464095c92c946dfb322f61adbc8c05952154d52f
+
+  - path: images/exploration/monochrome/best_idea_sketching_1.png
+    variant_id: primary_monochrome_raster
+    role: exploration
+    sha256: 934a68382961e573dae8a8e20282eb2463347e2f7ff9f9c3803bad051bff6c97
+    notes: Monochrome sketch iteration
+
+  - path: images/exploration/monochrome/idea_best.png
+    variant_id: primary_monochrome_raster
+    role: exploration
+    sha256: 8382aa3df25020a6be4a656c37ad4b4e57a7a56ea450f4ca600c7c813a839641
+
+  - path: images/exploration/monochrome/try_1_not_bad.png
+    variant_id: primary_monochrome_raster
+    role: exploration
+    sha256: 4ce0d37bf3e56b70d467fe093b2c6d65298c52266f1990634486d1c4f1a2b7df
+
+  - path: images/exploration/colored_deferred/sketch_colored_1.jpeg
+    variant_id: digital_premium_gradient
+    role: exploration_deferred
+    sha256: 0abd3b650ed3fa117a28b3063624a572404a0cb987fe8c5dc82b86b30827cb8b
+    notes: Neon gradient — not canonical; duplicate sketch_colored_2 dropped at ingest
+
+  - path: images/exploration/colored_deferred/gemini_vision_1.png
+    variant_id: digital_premium_gradient
+    role: exploration_deferred
+    sha256: d2675471612b58a30112a7fe84786660586e46ffc7a51df46d3f875d554f85b8
+
+  - path: images/exploration/colored_deferred/gemini_vision_2.jpeg
+    variant_id: digital_premium_gradient
+    role: exploration_deferred
+    sha256: 0d58b575c5b14b0dc960f05780642d3beb2d9e511ee864a2495e72a046167c32
+
+  - path: images/exploration/colored_deferred/gemini_vision_3.jpeg
+    variant_id: digital_premium_gradient
+    role: exploration_deferred
+    sha256: 475603065dcf1b5b882079e3fedfb770802b42389c322135dde9030aa753620c
+
+  - path: images/exploration/colored_deferred/magic_drift.jpeg
+    variant_id: digital_premium_gradient
+    role: exploration_deferred
+    sha256: cac028d026ad8a2974498293295ee2e33d185658d9aa1f37983db7fdd9b276ae
+
+variants_expected:
+  - id: primary_monochrome_vector
+    role: canonical
+    format: [svg, pdf]
+    notes: Black-and-white vector; must work without color — not yet committed
+  - id: primary_monochrome_raster
+    role: canonical
+    format: [png]
+    notes: High-res export of monochrome mark — baseline landed (v1)
+  - id: construction_blueprint
+    role: secondary
+    format: [svg, png]
+    notes: Thin guides, 60-degree hints, optional arcs — not primary lockup
+  - id: digital_premium_gradient
+    role: marketing
+    format: [png, svg]
+    notes: Cyan/blue/violet/magenta; hero and pitch only — deferred in colored_deferred/
+  - id: favicon_app_icon
+    role: product
+    format: [png, ico]
+    notes: Simplified readable at small sizes
+
+ingestion:
+  chroma_layer: null
+  tags: [hesperia, brand, logo, visual_identity]
+  source_drop: brain .cache_to_sort_out sorted 2026-05-27

@@ -1,0 +1,11 @@
+{"entry_id":"A-1001","surface_form":"identity diffusion","normalized_form":"identity diffusion","match_type":"phrase","candidate_concept_ids":["C-1001"],"priority":10,"version":"v0.6.0"}
+{"entry_id":"A-1002","surface_form":"primitive defense","normalized_form":"primitive defense","match_type":"phrase","candidate_concept_ids":["C-1002"],"priority":10,"version":"v0.6.0"}
+{"entry_id":"A-1003","surface_form":"splitting","normalized_form":"splitting","match_type":"exact","candidate_concept_ids":["C-1003"],"priority":9,"version":"v0.6.0"}
+{"entry_id":"A-1004","surface_form":"abandonment panic","normalized_form":"abandonment panic","match_type":"phrase","candidate_concept_ids":["C-1004"],"priority":10,"version":"v0.6.0"}
+{"entry_id":"A-1005","surface_form":"object constancy","normalized_form":"object constancy","match_type":"phrase","candidate_concept_ids":["C-1005"],"priority":10,"version":"v0.6.0"}
+{"entry_id":"A-1006","surface_form":"affect storm","normalized_form":"affect storm","match_type":"phrase","candidate_concept_ids":["C-1006"],"priority":8,"version":"v0.6.0"}
+{"entry_id":"A-1007","surface_form":"emptiness","normalized_form":"emptiness","match_type":"exact","candidate_concept_ids":["C-1007"],"priority":7,"version":"v0.6.0"}
+{"entry_id":"A-1008","surface_form":"idealization","normalized_form":"idealization","match_type":"exact","candidate_concept_ids":["C-1008"],"priority":7,"version":"v0.6.0"}
+{"entry_id":"A-1009","surface_form":"devaluation","normalized_form":"devaluation","match_type":"exact","candidate_concept_ids":["C-1009"],"priority":7,"version":"v0.6.0"}
+{"entry_id":"A-1010","surface_form":"self harm urge","normalized_form":"self harm urge","match_type":"phrase","candidate_concept_ids":["C-1010"],"priority":10,"version":"v0.6.0"}
+

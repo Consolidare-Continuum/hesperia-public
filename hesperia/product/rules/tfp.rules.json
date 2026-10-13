@@ -1,0 +1,15 @@
+{
+  "name": "tfp_analysis",
+  "version": "v1",
+  "rules": [
+    {
+      "if": {"tension_min": 0.65, "loopability_min": 0.7},
+      "then": {"risk": "high", "pattern": "looping", "stability": "low", "confidence": 0.88}
+    },
+    {
+      "if": {"stability_min": 0.75, "tension_max": 0.35},
+      "then": {"risk": "low", "pattern": "coherent", "stability": "high", "confidence": 0.84}
+    }
+  ],
+  "default": {"risk": "medium", "pattern": "fragmented", "stability": "medium", "confidence": 0.58}
+}

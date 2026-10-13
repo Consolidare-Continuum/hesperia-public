@@ -1,0 +1,382 @@
+{
+  "source_tree": "/home/igareosh/tfp/4/text",
+  "ingest_true_count": 40,
+  "entries": [
+    {
+      "path_under_tfp4": "text/FV Москва  TFP-подростки 2020.pptx",
+      "basename": "FV Москва  TFP-подростки 2020.pptx",
+      "sha256": "28d1b13c8a9e45207f644755fa963773c095bc571b09c5a6a50c5059b66aa989",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Implicit communication - Doering ПЕРЕВОД.pptx",
+      "basename": "Implicit communication - Doering ПЕРЕВОД.pptx",
+      "sha256": "34d76be81da261290451b83e7758bb56ee5ed0396a47156f43613b828704a795",
+      "ingest_to_md": false,
+      "corpus_equivalent_md": "background/Doering - Implicit Communication RUS.md",
+      "note": "corpus_md_exists"
+    },
+    {
+      "path_under_tfp4": "text/Moscow 2020 BPO DID and Gender Identity RUS.pptx",
+      "basename": "Moscow 2020 BPO DID and Gender Identity RUS.pptx",
+      "sha256": "b5211dcfea7227315e84891739d7a567fa28373b083528f51f53e95627d0e249",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": "review_overlap_background_TFP_Moscow_Workshop_Dec_2020"
+    },
+    {
+      "path_under_tfp4": "text/Narcissism - Doering for translation RUS ENG.pptx",
+      "basename": "Narcissism - Doering for translation RUS ENG.pptx",
+      "sha256": "c11c643cdcef751302aae79fb955ab058b9278ced65924674bc36f5cbf504c33",
+      "ingest_to_md": false,
+      "corpus_equivalent_md": "background/Doering - Narcissism RUS ENG.md",
+      "note": "corpus_md_exists"
+    },
+    {
+      "path_under_tfp4": "text/STIPO-R Training - February 2019 RUS.pptx",
+      "basename": "STIPO-R Training - February 2019 RUS.pptx",
+      "sha256": "6987f1c767655be1bf209ed95c8e9591732e27dc58249aecc5e60a1a009d086d",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/TFP раздаточный материал к семинару_Введение в TFP_..pdf",
+      "basename": "TFP раздаточный материал к семинару_Введение в TFP_..pdf",
+      "sha256": "ebcc46171ddca737b6699d441a16ff206d53832509149e9fe49135df4ceafd34",
+      "ingest_to_md": false,
+      "corpus_equivalent_md": "2_cleaned/TFP - Введение раздаточный материал.md",
+      "note": "corpus_md_exists"
+    },
+    {
+      "path_under_tfp4": "text/stipo.docx",
+      "basename": "stipo.docx",
+      "sha256": "ab7cf29295990c75cc0fe86cd4e6e63eaccfdf2c81b8bc28ab6abea95c4c2e70",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/stipo_form.docx",
+      "basename": "stipo_form.docx",
+      "sha256": "e255b1c292d4f14aad3b95932c0ec7d6e0e23e26b23444d2b9c220a7f4a65849",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Бриттон Эдип на депрессивной позиции.docx",
+      "basename": "Бриттон Эдип на депрессивной позиции.docx",
+      "sha256": "9d573df229dc3ace97abdabdb12e5530d6a554f088253c97c65007411f7c60f2",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Бриттон.До и после депрессивной позиции.docx",
+      "basename": "Бриттон.До и после депрессивной позиции.docx",
+      "sha256": "a89585bbcc759e2973309f3713773ff50ae59e4ef6bff830835994563e9b1857",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Бриттон.Нарциссизм и нарциссические расстройства.docx",
+      "basename": "Бриттон.Нарциссизм и нарциссические расстройства.docx",
+      "sha256": "78bdf2c0f4ce5b30b382d16f1a822866b8c7096c45209c679a9eb3a9132ca063",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Бриттон.Утерянная связь родительская сексуальность в Эдиповом комплексе.docx",
+      "basename": "Бриттон.Утерянная связь родительская сексуальность в Эдиповом комплексе.docx",
+      "sha256": "9e6922f0da2fa0a0b204553f1e038b9fc040c70050a28bc518aca65771a8f3a7",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Грин - Работа негатива.docx",
+      "basename": "Грин - Работа негатива.docx",
+      "sha256": "ed075dbedebf9e5999c458849adb0f4ee351eecdc1211c329b8023d4bdc659b0",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Гротштейн - Расщепление и проективная идентификация/Гротштейн - Расщепление и проективная идентификация.docx",
+      "basename": "Гротштейн - Расщепление и проективная идентификация.docx",
+      "sha256": "1519262bcb852d7f98bfa1eac05b8b39fbaf2626efe87cbc3632e6a03d22e197",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Гротштейн - Расщепление и проективная идентификация/Гротштейн - Расщепление и проективная идентификация.pdf",
+      "basename": "Гротштейн - Расщепление и проективная идентификация.pdf",
+      "sha256": "502b1f5b8989b0231d8057eeeadf536e9842456447f599c31bedae9af37fdf48",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/ДРИ ТФП.docx",
+      "basename": "ДРИ ТФП.docx",
+      "sha256": "6d344a6948f4080e0e3fc91f218b1548d84d04c3809ede1edfe099e6d8fa23cc",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Дени - Контрперенос рифы и отклонения RU/Дени - Контрперенос рифы и отклонения.docx",
+      "basename": "Дени - Контрперенос рифы и отклонения.docx",
+      "sha256": "d6e54657fe91d617ccf1091cbeffa713d81bdfb51e42c95a0e26790d54414c80",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Дени - Контрперенос рифы и отклонения RU/Дени - Контрперенос рифы и отклонения.pdf",
+      "basename": "Дени - Контрперенос рифы и отклонения.pdf",
+      "sha256": "d66e9ec11611a3e8d13eaf3bfd397b315ed2bd7b182e57aff5915e82b9e7263d",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Джойс МакДугалл Театр души.doc",
+      "basename": "Джойс МакДугалл Театр души.doc",
+      "sha256": "0d894f5cf8c4fab984956b6415fdf4eca5e39d5d0bb67bad84c243c0eccee60d",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Йоманс НРЛ Часть 3.ppt",
+      "basename": "Йоманс НРЛ Часть 3.ppt",
+      "sha256": "d44dd992422c7167f1032d5266c27fd9aaf309851e910f108cfc0df677691411",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Йоманс НРЛ Часть 4.ppt",
+      "basename": "Йоманс НРЛ Часть 4.ppt",
+      "sha256": "846872030c991e25d0b6e6116a8452267df37cd77a1f406a0ac4289a593cf4b5",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Йоманс НРЛ Часть 5.ppt",
+      "basename": "Йоманс НРЛ Часть 5.ppt",
+      "sha256": "ab44b10ccddf012533d07a0021dbb31d830ab410963485bd79ab2b311c13aeee",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Йоманс НРЛ часть 1.ppt",
+      "basename": "Йоманс НРЛ часть 1.ppt",
+      "sha256": "39674cd45a046f81ffa8d648e6cbf7ddb6dc99aebbed4030f27c003e24756e44",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Йоманс НРЛ часть 2.ppt",
+      "basename": "Йоманс НРЛ часть 2.ppt",
+      "sha256": "63f9b3fe03aff03759b05039fddfdb8f622806ffb24821b727f22ea97c407f2c",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Йоманс НРЛ.pptx",
+      "basename": "Йоманс НРЛ.pptx",
+      "sha256": "782075a092895d4f98ad93eccc86a38a535e6e17fa0e7bbaa7c4060c511167e5",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Кернберг 2014.docx",
+      "basename": "Кернберг 2014.docx",
+      "sha256": "696e27e3b534e0f69d546214025f551d0c55ae4885a782e6cacddb8211be7008",
+      "ingest_to_md": false,
+      "corpus_equivalent_md": "2_cleaned/Кернберг - Обзор лечения тяжелой нарциссической патологии 2014.md",
+      "note": "corpus_md_exists"
+    },
+    {
+      "path_under_tfp4": "text/Клиническая оценочная решетка - текст частично поврежден OCR.docx",
+      "basename": "Клиническая оценочная решетка - текст частично поврежден OCR.docx",
+      "sha256": "b5af58a7a3359441d101f8fa37d5bdfbfc3e6f3d995937b9941e07bb34f9ee65",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Кляйн - Зависть и благодарность и другие работы 1955-1963.docx",
+      "basename": "Кляйн - Зависть и благодарность и другие работы 1955-1963.docx",
+      "sha256": "87b836e3ba7e5e769fac1f6396fccbe9f0c82a63612f8e0334d2cec03d47162c",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Макдугалл Джойс - Театры тела.pdf",
+      "basename": "Макдугалл Джойс - Театры тела.pdf",
+      "sha256": "4481043007640d722fb2d2893592fa2beba1485bc1aed424f53f8d2909f3d8fe",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Мельцер - Мозаика Я жизнь без боли (ЭЛ психоаналитический процесс).docx",
+      "basename": "Мельцер - Мозаика Я жизнь без боли (ЭЛ психоаналитический процесс).docx",
+      "sha256": "116a716fbe3545f48067b565ef157569b68f4489463726c0e3cae747844d4af4",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Москва Ключевые элементы ТФП 2019.pptx",
+      "basename": "Москва Ключевые элементы ТФП 2019.pptx",
+      "sha256": "94cafd361f304dd025b149458a7acd031c8076d018a1313661bb90b0b2188b44",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Москва НАРЦИССИЗМ и АНТИСОЦИАЛЬНОСТЬ Йоманс 2020 RUS.pptx",
+      "basename": "Москва НАРЦИССИЗМ и АНТИСОЦИАЛЬНОСТЬ Йоманс 2020 RUS.pptx",
+      "sha256": "5b0712b1cf92b3e48243e106d5f2869fa13c106e4df9ce2835765338b335849c",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Москва НАРЦИССИЗМ и АНТИСОЦИАЛЬНОСТЬ Йоманс ноябрь 2019.pptx",
+      "basename": "Москва НАРЦИССИЗМ и АНТИСОЦИАЛЬНОСТЬ Йоманс ноябрь 2019.pptx",
+      "sha256": "1dab74903f8c8dac50c7413fad7d018501f04d74543995994a3afe93451db97e",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Москва Неспособность отправиться в самостоятельное плавание 2020.pptx",
+      "basename": "Москва Неспособность отправиться в самостоятельное плавание 2020.pptx",
+      "sha256": "74264f443d838ec793cce67a4a54c4af7ebb7409d148861781975f80c550fc95",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Москва О супервизии 2019 ГОТОВО edited.pptx",
+      "basename": "Москва О супервизии 2019 ГОТОВО edited.pptx",
+      "sha256": "f453dc3a3bd5268bc06c365ab6852c25cadf541fdcf90831d83ba68e5ff72f16",
+      "ingest_to_md": false,
+      "corpus_equivalent_md": "text/Москва О супервизии 2019 ГОТОВО.pptx",
+      "note": "dedupe_prefer_unedited_pptx"
+    },
+    {
+      "path_under_tfp4": "text/Москва О супервизии 2019 ГОТОВО.pptx",
+      "basename": "Москва О супервизии 2019 ГОТОВО.pptx",
+      "sha256": "82ad9f94b92b695ea5ea2c3956b64ae4f75f175a3693597c20fb60d64f790b19",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Практически неизлечимый нарциссический пациент.docx",
+      "basename": "Практически неизлечимый нарциссический пациент.docx",
+      "sha256": "e96de2a51406872cafc6308799cddee8d54db87ff404c317428f314de42020a1",
+      "ingest_to_md": false,
+      "corpus_equivalent_md": "2_cleaned/Практически неизлечимый нарциссический пациент.md",
+      "note": "corpus_md_exists"
+    },
+    {
+      "path_under_tfp4": "text/РУКОВОДСТВО ПО ИНТЕРВЬЮ STIPO.docx",
+      "basename": "РУКОВОДСТВО ПО ИНТЕРВЬЮ STIPO.docx",
+      "sha256": "9eb732d4c92dd9e2eadd246619bf9b792bb62ba200684a41fca86788cd51740a",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Розенберг - Мазохизм смерти и мазохизм-хранитель жизни.docx",
+      "basename": "Розенберг - Мазохизм смерти и мазохизм-хранитель жизни.docx",
+      "sha256": "af97635eca830fe524587a6061c7aad74bbe91bdcef13096e5134169e4246f1a",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Стайнер.Интерпретативные разыгрывания и аналитический сеттинг.docx",
+      "basename": "Стайнер.Интерпретативные разыгрывания и аналитический сеттинг.docx",
+      "sha256": "79df463a990bc5a39bb23ec64841eb5d67959cb16fd777ac364402cf7eebeb3f",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/ТФП подростки.docx",
+      "basename": "ТФП подростки.docx",
+      "sha256": "fbc37f6ac9c03b754ac016f6c35e1a65d213ad7181f38a91c58b0d546e42365a",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/ТФП при ПРЛ - клиническое руководство (Clarkin Yeomans Kernberg).docx",
+      "basename": "ТФП при ПРЛ - клиническое руководство (Clarkin Yeomans Kernberg).docx",
+      "sha256": "9963eac4142d774dffccde333f0ddea61ab955949d4f95e9e784a1f97d4b7222",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Фельдман. Эдипов комплекс и его проявления во внутреннем мире  и терапевтической ситуации.docx",
+      "basename": "Фельдман. Эдипов комплекс и его проявления во внутреннем мире  и терапевтической ситуации.docx",
+      "sha256": "89ba6de4d2c773cce7afba3d3e441d41431178c5d269965c5383c7d4489fa0ce",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Форма подсчета.docx",
+      "basename": "Форма подсчета.docx",
+      "sha256": "e255b1c292d4f14aad3b95932c0ec7d6e0e23e26b23444d2b9c220a7f4a65849",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Хиншельвуд - Кляйнианский клинический практикум от теории к практике.docx",
+      "basename": "Хиншельвуд - Кляйнианский клинический практикум от теории к практике.docx",
+      "sha256": "586aade0919ac2cc8fe3e5e2d1a057a5463dee68babb3ecf7d3db7ac1191f0c9",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/Хиншельвуд - Контрперенос и живые моменты.docx",
+      "basename": "Хиншельвуд - Контрперенос и живые моменты.docx",
+      "sha256": "023d4664512b7ad146da825d71c2ed45d6637815f8819be6272b7f62af656405",
+      "ingest_to_md": true,
+      "corpus_equivalent_md": null,
+      "note": null
+    },
+    {
+      "path_under_tfp4": "text/дифдиагностика.docx",
+      "basename": "дифдиагностика.docx",
+      "sha256": "fe1279a565fc026fc826d090842efe30332ee6bd8bdf3170db64d4a75af23da3",
+      "ingest_to_md": false,
+      "corpus_equivalent_md": "2_cleaned/Дифференциальная диагностика.md",
+      "note": "corpus_md_exists"
+    }
+  ]
+}

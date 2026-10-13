@@ -1,0 +1,17 @@
+{
+  "version": "0.1.0",
+  "description": "R_e multipliers per relation type (KSI spec section 4.3 draft)",
+  "default_unlisted": 0.5,
+  "coefficients": {
+    "activates": 1.0,
+    "expresses": 0.8,
+    "co_occurs_with": 0.6,
+    "observed_in": 0.5,
+    "defends_against": 0.4,
+    "opposes": -0.7,
+    "requires": 0.9,
+    "family_bias": 0.55,
+    "inhibits": -0.6,
+    "*": 0.5
+  }
+}

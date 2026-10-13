@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prichindel.com/hesperia/schemas/engine_run_envelope_v063.json",
+  "title": "Hesperia 0.6.3 engine run envelope",
+  "type": "object",
+  "required": ["schema", "lang", "correlation_id", "run_id", "input", "engine", "ksi", "parameters"],
+  "properties": {
+    "schema": { "const": "hesperia.engine_run_envelope.v063" },
+    "lang": { "type": "string", "enum": ["ru"] },
+    "correlation_id": { "type": "string" },
+    "run_id": { "type": "string" },
+    "input": {
+      "type": "object",
+      "required": ["text_ru", "kind"],
+      "properties": {
+        "text_ru": { "type": "string" },
+        "kind": { "type": "string" }
+      }
+    },
+    "engine": { "type": "object" },
+    "ksi": { "type": "object" },
+    "parameters": { "type": "object" }
+  }
+}

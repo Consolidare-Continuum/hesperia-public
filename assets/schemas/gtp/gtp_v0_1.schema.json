@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prichindel.com/hesperia/schemas/gtp/gtp_v0_1.schema.json",
+  "title": "Hesperia GTP v0.1 step result",
+  "description": "General Thought Propagation step output (sphere.topology.gtp.pipeline.gtp_step_to_dict). Ref: docs/brain-export/operational/assignments/HESPERIA-FORMALIZATION-GENERAL-THOUGHT-PROPAGATION-v0_1.md (23_SPEC__) §11, §13.",
+  "type": "object",
+  "required": [
+    "schema",
+    "hex_rotation",
+    "current_hex",
+    "thought_imprint",
+    "imprint_difference",
+    "coherence",
+    "gtpa"
+  ],
+  "properties": {
+    "schema": { "const": "hesperia.gtp_v0_1" },
+    "hex_rotation": { "type": "integer", "minimum": 0, "maximum": 5 },
+    "current_hex": { "$ref": "#/$defs/hex_cell" },
+    "thought_imprint": {
+      "type": "object",
+      "required": ["fired_sides", "fired_operators"],
+      "properties": {
+        "fired_sides": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0, "maximum": 5 }
+        },
+        "fired_operators": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/logical_operator" }
+        }
+      }
+    },
+    "imprint_difference": {
+      "type": "object",
+      "required": ["area_shifted", "family_shifted", "new_fired_sides"],
+      "properties": {
+        "area_shifted": { "type": "boolean" },
+        "family_shifted": { "type": "boolean" },
+        "new_fired_sides": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0, "maximum": 5 }
+        }
+      }
+    },
+    "coherence": {
+      "type": "object",
+      "required": ["psi_abs", "psi_ent", "psi_align", "vector_dim"],
+      "properties": {
+        "psi_abs": { "type": "number", "minimum": 0 },
+        "psi_ent": { "type": "number", "minimum": 0 },
+        "psi_align": { "type": "number" },
+        "vector_dim": { "const": 300 }
+      }
+    },
+    "gtpa": {
+      "type": "object",
+      "required": ["next_hex", "exit_side", "hex_rotation", "score"],
+      "properties": {
+        "next_hex": { "$ref": "#/$defs/hex_cell" },
+        "exit_side": { "type": "integer", "minimum": 0, "maximum": 5 },
+        "hex_rotation": { "type": "integer", "minimum": 0, "maximum": 5 },
+        "score": { "type": "number" }
+      }
+    }
+  },
+  "$defs": {
+    "hex_cell": {
+      "type": "object",
+      "required": ["area_id", "global_id", "hex_index"],
+      "properties": {
+        "area_id": { "type": "integer", "minimum": 0, "maximum": 11 },
+        "global_id": { "type": "integer", "minimum": 0, "maximum": 287 },
+        "hex_index": { "type": "integer", "minimum": 0, "maximum": 249 }
+      }
+    },
+    "logical_operator": {
+      "type": "string",
+      "enum": ["INCLUDES", "NOT_INCLUDES", "SUBSUMES", "OVERLAPS", "DISJOINT", "EQUIVALENT"]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+[
+  {"text": "The argument is coherent and follows evidence with stable conclusions.", "expected_risk": "low"},
+  {"text": "The answer loops contradictions and repeats unsupported claims.", "expected_risk": "high"},
+  {"text": "Mixed quality reasoning with partial support and some drift.", "expected_risk": "medium"}
+]

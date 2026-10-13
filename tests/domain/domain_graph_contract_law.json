@@ -1,0 +1,11 @@
+{
+  "nodes": [
+    {"conceptId": "contract_law"},
+    {"conceptId": "legal_obligation"},
+    {"conceptId": "law"}
+  ],
+  "edges": [
+    {"sourceConceptId": "contract_law", "targetConceptId": "law", "relationType": "is_subdomain"},
+    {"sourceConceptId": "contract_law", "targetConceptId": "legal_obligation", "relationType": "defines"}
+  ]
+}

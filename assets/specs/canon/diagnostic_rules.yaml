@@ -1,0 +1,28 @@
+# Diagnostic detector rules v1 — thresholds and enable/disable.
+# Deterministic; no hidden hardcoded thresholds outside this spec (fallbacks documented in code).
+
+version: 1
+
+anomaly:
+  enabled: true
+  zero_signal_enabled: true
+  ultra_sparse_coverage_threshold: 0.02
+  excessive_jump_threshold: 0.60
+  transition_concentration_threshold: 0.75
+  metric_bounds_check_enabled: true
+
+monotony:
+  enabled: true
+  entropy_threshold: 0.35
+  coverage_threshold: 0.20
+  dominant_area_share_threshold: 0.65
+  stability_high_threshold: 0.70
+  unique_areas_max: 2
+
+instability:
+  enabled: true
+  curvature_threshold: 1.20
+  severe_curvature_threshold: 1.50
+  jump_rate_threshold: 0.30
+  severe_jump_rate_threshold: 0.50
+  low_stability_threshold: 0.15

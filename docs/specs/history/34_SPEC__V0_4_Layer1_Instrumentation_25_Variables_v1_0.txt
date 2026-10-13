@@ -1,0 +1,320 @@
+34_SPEC__V0_4_Layer1_Instrumentation_25_Variables_v1_0
+
+Project: HESPERIA
+Target: v0.4.x baseline math core (instrumentation layer)
+Date: 2026-02-24
+Status: Canonical
+
+References: 22_SPEC__V0_3_Core_Math_Contract_v1_0 (runtime resolution); 00_GOVERNANCE_CHARTER__HESPERIA_v1_0 (epistemic integrity, determinism). Next: 35_SPEC (Layer-2), 36_SPEC (Layer-3), 37_SPEC (Layer-4 book evidence).
+
+----------------------------------------------------------------------
+0. LAYER-1 CONTRACT (INVARIANT)
+----------------------------------------------------------------------
+
+The first instrumentation layer MUST contain only variables that are:
+
+  - Deterministic
+  - Reproducible
+  - Input-bound
+  - No probabilistic semantics
+  - No LLM weighting
+  - No shadow deviation
+
+No variable in this layer may depend on: sampling, temperature, embeddings at runtime, books retrieval, or shadow traversal. This layer is pure observation over attribution outputs and structural inputs.
+
+----------------------------------------------------------------------
+1. PREREQUISITES (INPUTS)
+----------------------------------------------------------------------
+
+All definitions assume:
+
+  F                 = total families (e.g. 288)
+  A                 = total areas (e.g. 12)
+  FAMILIES_PER_AREA = F / A (e.g. 24)
+
+  N                 = number of normalized input tokens (tokens.size())
+  hits[f]           = token count mapped to family f (f in 0..F-1)
+  altitudeSum[f]    = sum of altitudes for family f
+  altitude          in [0, 1] per token (structural strength)
+
+Attribution produces hits[] and altitudeSum[] from Dict A / Dict B (or equivalent); Layer-1 reads these and the token list only.
+
+----------------------------------------------------------------------
+2. LAYER-1 INSTRUMENTATION VARIABLES (25)
+----------------------------------------------------------------------
+
+ 1. TOTAL_TOKENS
+    int TOTAL_TOKENS = tokens.size();
+    Count of normalized input tokens.
+
+ 2. ATTRIBUTED_TOKENS
+    int ATTRIBUTED_TOKENS = sum(hits[f] for all f);
+    Number of tokens successfully mapped to Dict A or B.
+
+ 3. COVERAGE_RATIO
+    double COVERAGE_RATIO = (double) ATTRIBUTED_TOKENS / TOTAL_TOKENS;
+    Fraction of input structurally recognized. If TOTAL_TOKENS == 0, define as 0.0.
+
+ 4. UNIQUE_FAMILIES_HIT
+    int UNIQUE_FAMILIES_HIT = count(f where hits[f] > 0);
+    Number of distinct families activated.
+
+ 5. FAMILY_ACTIVATION_DENSITY
+    double FAMILY_ACTIVATION_DENSITY = (double) UNIQUE_FAMILIES_HIT / F;
+    Sphere coverage density across families.
+
+ 6. FAMILY_HIT_VECTOR_L1
+    double FAMILY_HIT_VECTOR_L1 = sum(hits[f] for all f);
+    Total raw activation mass. MUST equal ATTRIBUTED_TOKENS (invariant).
+
+ 7. FAMILY_HIT_VECTOR_L2
+    double FAMILY_HIT_VECTOR_L2 = sqrt(sum(hits[f] * hits[f] for all f));
+    L2 norm of hit vector; concentration measure of activation distribution.
+
+ 8. MAX_FAMILY_HITS
+    int MAX_FAMILY_HITS = max(hits[f] for all f);
+    Peak family activation.
+
+ 9. DOMINANT_FAMILY_ID
+    int DOMINANT_FAMILY_ID = argmax(hits[f]); tie-break: smallest f.
+    Family with highest activation.
+
+10. DOMINANT_AREA_ID
+    int DOMINANT_AREA_ID = DOMINANT_FAMILY_ID / FAMILIES_PER_AREA;
+    Area of dominant family.
+
+11. DOMINANCE_RATIO
+    double DOMINANCE_RATIO = (double) MAX_FAMILY_HITS / (ATTRIBUTED_TOKENS + eps);
+    Strength of dominant family vs total mass. eps = 1e-9 to avoid div by zero.
+
+12. MEAN_ALTITUDE_GLOBAL
+    double MEAN_ALTITUDE_GLOBAL = sum(altitudeSum[f] for all f) / (ATTRIBUTED_TOKENS + eps);
+    Average structural altitude across all activations.
+
+13. MEAN_ALTITUDE_DOMINANT
+    double MEAN_ALTITUDE_DOMINANT = altitudeSum[DOMINANT_FAMILY_ID] / (hits[DOMINANT_FAMILY_ID] + eps);
+    Altitude quality of dominant family.
+
+14. ALTITUDE_VARIANCE_GLOBAL
+    double ALTITUDE_VARIANCE_GLOBAL = variance(all individual altitudes);
+    Dispersion of semantic strength. Variance = E[(x - mean)^2]; require full altitude sample or per-family decomposition (see §4).
+
+15. FAMILY_ENTROPY
+    p[f] = hits[f] / (ATTRIBUTED_TOKENS + eps);
+    double FAMILY_ENTROPY = -sum(p[f] * log(p[f]) for all f where p[f] > 0);
+    Distribution uncertainty across families. Natural log.
+
+16. NORMALIZED_FAMILY_ENTROPY
+    double NORMALIZED_FAMILY_ENTROPY = FAMILY_ENTROPY / log(F);
+    Entropy normalized to sphere size. Cap at 1.0 if F == 1.
+
+17. GINI_COEFFICIENT
+    double GINI_COEFFICIENT = computeGini(hits[]);
+    Inequality of activation distribution. See §4 for formula.
+
+18. UNIQUE_AREAS_HIT / AREA_SPREAD
+    int UNIQUE_AREAS_HIT = count(unique area IDs from families f where hits[f] > 0);
+    double AREA_SPREAD = (double) UNIQUE_AREAS_HIT / A;
+    Cross-area distribution breadth.
+
+19. AREA_DOMINANCE_RATIO
+    double AREA_DOMINANCE_RATIO = hits_in_area(DOMINANT_AREA_ID) / (ATTRIBUTED_TOKENS + eps);
+    hits_in_area(a) = sum(hits[f] for f in FamiliesOfArea[a]).
+
+20. SECONDARY_FAMILY_RATIO
+    int SECOND_MAX = secondMax(hits[]);
+    double SECONDARY_FAMILY_RATIO = (double) SECOND_MAX / (MAX_FAMILY_HITS + eps);
+    Competition intensity vs dominant.
+
+21. SIGNAL_TO_NOISE_RATIO
+    double SIGNAL_TO_NOISE_RATIO = MAX_FAMILY_HITS / (ATTRIBUTED_TOKENS - MAX_FAMILY_HITS + eps);
+    Dominant mass vs remainder.
+
+22. SPARSITY_INDEX
+    double SPARSITY_INDEX = 1.0 - FAMILY_ACTIVATION_DENSITY;
+    How empty the sphere remains (fraction of families with zero hits).
+
+23. TOKEN_REDUNDANCY_RATIO
+    double TOKEN_REDUNDANCY_RATIO = 1.0 - ((double) UNIQUE_FAMILIES_HIT / (ATTRIBUTED_TOKENS + eps));
+    Repetition vs dispersion; high when many tokens map to few families.
+
+24. ALTITUDE_WEIGHTED_MASS
+    double ALTITUDE_WEIGHTED_MASS = sum(hits[f] * (altitudeSum[f] / (hits[f] + eps)) for all f where hits[f] > 0);
+    Mass weighted by per-family mean altitude (semantic strength).
+
+25. STRUCTURAL_STABILITY_INDEX
+    double STRUCTURAL_STABILITY_INDEX = DOMINANCE_RATIO * (1.0 - NORMALIZED_FAMILY_ENTROPY);
+    Composite deterministic stability score. Range [0, 1]; high = clear dominant, low entropy.
+
+----------------------------------------------------------------------
+3. WHAT THIS LAYER IS
+----------------------------------------------------------------------
+
+  Fully deterministic.  Pure math.  No interpretation.  No shadow.
+  No books.  No LLM.  No probabilistic drift.
+
+  It provides: distribution shape, concentration, spread, stability,
+  structural quality, coverage, dominance, conflict, redundancy.
+
+  This is a real instrumentation layer. Not theory.
+
+----------------------------------------------------------------------
+4. AUXILIARY FUNCTIONS (DETERMINISTIC)
+----------------------------------------------------------------------
+
+  computeGini(hits[]):
+    Let n = F, total = sum(hits[f]).
+    If total <= 0, return 0.0.
+    Sort hits ascending (or use rank-order formula).
+    Gini = 1 - (2 / (n * total)) * sum_{i=0}^{n-1} (n - i) * hits_sorted[i].
+    (Standard univariate Gini from sorted non-negative values.)
+
+  secondMax(hits[]):
+    Find max M = max(hits[f]). Then secondMax = max(hits[f] for f where hits[f] < M).
+    If no second value (all equal to M), use 0 or M depending on policy; this spec uses
+    "second largest distinct value"; if all equal, secondMax = M (so ratio 1.0).
+
+  variance(all individual altitudes):
+    If altitude is stored per token: mean = sum(altitudes)/count, variance = sum((a - mean)^2)/count.
+    If only altitudeSum[f] and hits[f] available: use per-family mean m_f = altitudeSum[f]/hits[f],
+    then global mean mu = MEAN_ALTITUDE_GLOBAL, and
+    variance = sum_f ( hits[f] * (m_f - mu)^2 ) / ATTRIBUTED_TOKENS (within-family variance
+    component only; for full variance would need per-token altitudes).
+
+  eps = 1e-9 throughout to avoid division by zero.
+
+----------------------------------------------------------------------
+5. RELATION TO CORE MATH (22_SPEC)
+----------------------------------------------------------------------
+
+  Layer-1 consumes the same attribution outputs that feed surface energy
+  (or equivalent): token→family mapping and altitudes. It does NOT replace
+  resolution (dominant family/area, metrics, penalties). It observes.
+  Runtime resolution remains in 22_SPEC; Layer-1 is the canonical
+  observability surface for v0.4.x baseline.
+
+----------------------------------------------------------------------
+6. JAVA-STYLE PSEUDOCODE (LAYER-1)
+----------------------------------------------------------------------
+
+// HESPERIA v0.4.x Layer-1 Instrumentation — 25 variables
+// Deterministic, reproducible, input-bound. No LLM, no shadow, no books.
+// Inputs: tokens.size(), hits[0..F-1], altitudeSum[0..F-1], F, A.
+
+final int F = 288;
+final int A = 12;
+final int FAMILIES_PER_AREA = F / A;
+final double eps = 1e-9;
+
+int TOTAL_TOKENS = tokens.size();
+int ATTRIBUTED_TOKENS = 0;
+for (int f = 0; f < F; f++) ATTRIBUTED_TOKENS += hits[f];
+
+double COVERAGE_RATIO = (TOTAL_TOKENS > 0)
+    ? (double) ATTRIBUTED_TOKENS / TOTAL_TOKENS : 0.0;
+
+int UNIQUE_FAMILIES_HIT = 0;
+for (int f = 0; f < F; f++) if (hits[f] > 0) UNIQUE_FAMILIES_HIT++;
+
+double FAMILY_ACTIVATION_DENSITY = (double) UNIQUE_FAMILIES_HIT / F;
+
+double FAMILY_HIT_VECTOR_L1 = (double) ATTRIBUTED_TOKENS;  // invariant
+
+double l2Sum = 0.0;
+for (int f = 0; f < F; f++) l2Sum += hits[f] * hits[f];
+double FAMILY_HIT_VECTOR_L2 = Math.sqrt(l2Sum);
+
+int MAX_FAMILY_HITS = 0;
+int DOMINANT_FAMILY_ID = 0;
+for (int f = 0; f < F; f++) {
+    if (hits[f] > MAX_FAMILY_HITS) {
+        MAX_FAMILY_HITS = hits[f];
+        DOMINANT_FAMILY_ID = f;
+    }
+}
+int DOMINANT_AREA_ID = DOMINANT_FAMILY_ID / FAMILIES_PER_AREA;
+
+double DOMINANCE_RATIO = (double) MAX_FAMILY_HITS / (ATTRIBUTED_TOKENS + eps);
+
+double altSumGlobal = 0.0;
+for (int f = 0; f < F; f++) altSumGlobal += altitudeSum[f];
+double MEAN_ALTITUDE_GLOBAL = altSumGlobal / (ATTRIBUTED_TOKENS + eps);
+
+double MEAN_ALTITUDE_DOMINANT = (hits[DOMINANT_FAMILY_ID] > 0)
+    ? altitudeSum[DOMINANT_FAMILY_ID] / hits[DOMINANT_FAMILY_ID] : 0.0;
+
+// ALTITUDE_VARIANCE_GLOBAL: if per-token altitudes available, use them;
+// else use per-family decomposition: sum_f hits[f]*(m_f - mu)^2 / N
+double mu = MEAN_ALTITUDE_GLOBAL;
+double varSum = 0.0;
+for (int f = 0; f < F; f++) {
+    if (hits[f] > 0) {
+        double mf = altitudeSum[f] / hits[f];
+        varSum += hits[f] * (mf - mu) * (mf - mu);
+    }
+}
+double ALTITUDE_VARIANCE_GLOBAL = varSum / (ATTRIBUTED_TOKENS + eps);
+
+double FAMILY_ENTROPY = 0.0;
+for (int f = 0; f < F; f++) {
+    double p = hits[f] / (ATTRIBUTED_TOKENS + eps);
+    if (p > 0) FAMILY_ENTROPY -= p * Math.log(p);
+}
+double NORMALIZED_FAMILY_ENTROPY = (F > 1)
+    ? FAMILY_ENTROPY / Math.log(F) : 0.0;
+
+double GINI_COEFFICIENT = computeGini(hits, F);
+
+Set<Integer> areasHit = new HashSet<>();
+for (int f = 0; f < F; f++)
+    if (hits[f] > 0) areasHit.add(f / FAMILIES_PER_AREA);
+int UNIQUE_AREAS_HIT = areasHit.size();
+double AREA_SPREAD = (double) UNIQUE_AREAS_HIT / A;
+
+int hitsInDomArea = 0;
+for (int f = DOMINANT_AREA_ID * FAMILIES_PER_AREA;
+     f < (DOMINANT_AREA_ID + 1) * FAMILIES_PER_AREA && f < F; f++)
+    hitsInDomArea += hits[f];
+double AREA_DOMINANCE_RATIO = (double) hitsInDomArea / (ATTRIBUTED_TOKENS + eps);
+
+int SECOND_MAX = secondMax(hits, F, MAX_FAMILY_HITS);
+double SECONDARY_FAMILY_RATIO = (double) SECOND_MAX / (MAX_FAMILY_HITS + eps);
+
+double SIGNAL_TO_NOISE_RATIO = MAX_FAMILY_HITS
+    / (ATTRIBUTED_TOKENS - MAX_FAMILY_HITS + eps);
+
+double SPARSITY_INDEX = 1.0 - FAMILY_ACTIVATION_DENSITY;
+
+double TOKEN_REDUNDANCY_RATIO = 1.0
+    - ((double) UNIQUE_FAMILIES_HIT / (ATTRIBUTED_TOKENS + eps));
+
+double ALTITUDE_WEIGHTED_MASS = 0.0;
+for (int f = 0; f < F; f++) {
+    if (hits[f] > 0)
+        ALTITUDE_WEIGHTED_MASS += hits[f] * (altitudeSum[f] / (hits[f] + eps));
+}
+
+double STRUCTURAL_STABILITY_INDEX
+    = DOMINANCE_RATIO * (1.0 - NORMALIZED_FAMILY_ENTROPY);
+
+// --- Helpers ---
+static double computeGini(int[] hits, int n) {
+    long total = 0;
+    for (int i = 0; i < n; i++) total += hits[i];
+    if (total <= 0) return 0.0;
+    int[] sorted = hits.clone();
+    Arrays.sort(sorted);
+    double cum = 0.0;
+    for (int i = 0; i < n; i++)
+        cum += (n - i) * (double) sorted[i];
+    return 1.0 - (2.0 * cum) / (n * total);
+}
+static int secondMax(int[] hits, int n, int firstMax) {
+    int second = 0;
+    for (int i = 0; i < n; i++)
+        if (hits[i] < firstMax && hits[i] > second) second = hits[i];
+    return (second > 0) ? second : firstMax;  // if all equal, ratio 1.0
+}
+
+----------------------------------------------------------------------
+END 34_SPEC

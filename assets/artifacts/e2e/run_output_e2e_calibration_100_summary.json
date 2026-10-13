@@ -1,0 +1,38 @@
+{
+  "build_id": "hesperia_0.5.3_296581f37553_2026-03-26T11:26:15Z",
+  "by_input_domain": {
+    "conflict_power": 20,
+    "economic_exchange": 20,
+    "identity_culture": 20,
+    "social_cohesion": 20,
+    "technical_systems": 20
+  },
+  "calibration_profile": "default_v1",
+  "dominant_area_histogram": {
+    "0": 100
+  },
+  "dominant_area_top": {
+    "0": 100
+  },
+  "dominant_family_top": {
+    "0": 100
+  },
+  "execution_flow_version": "e2e_v2",
+  "limit_applied": 100,
+  "mean_L1_coverage_ratio": 0.687762,
+  "mean_L1_structural_stability": 0.41065,
+  "orchestration_mode": "E2E_BATCH",
+  "pipeline_version": "e2e_v2",
+  "run": "e2e_calibration_batch_summary",
+  "schema_version": "v1",
+  "sentence_count": 100,
+  "source_file": "tools/calibration/data/calibration_100_sentences.json",
+  "system_version": "0.5.3",
+  "total_tokens_max": 8,
+  "total_tokens_mean": 5.56,
+  "total_tokens_min": 4,
+  "run_id": "bd3411e9-9673-4139-80e6-fe9fd441e7f0",
+  "modules_used": [
+    "run_e2e_calibration_batch_artifacts"
+  ]
+}

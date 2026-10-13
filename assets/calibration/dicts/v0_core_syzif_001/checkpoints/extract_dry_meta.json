@@ -1,0 +1,82 @@
+{
+  "n_docs": 119,
+  "n_rows_freq_ge_2": 3613301,
+  "n_ngram": 3613257,
+  "n_modal": 44,
+  "discarded_singletons_approx": 35778113,
+  "elapsed_s": 364.5,
+  "mode": "ngram+modal_online_min_freq_2_no_spacy",
+  "propose_batches_est_batch40": 90333,
+  "top10": [
+    {
+      "text": "the",
+      "lemma": "the",
+      "pattern_type": "ngram",
+      "freq": 909739,
+      "source_doc": "1 Hiding from humanity - Martha C. Nussbaum.md"
+    },
+    {
+      "text": "of",
+      "lemma": "of",
+      "pattern_type": "ngram",
+      "freq": 564957,
+      "source_doc": "1 Hiding from humanity - Martha C. Nussbaum.md"
+    },
+    {
+      "text": "and",
+      "lemma": "and",
+      "pattern_type": "ngram",
+      "freq": 395607,
+      "source_doc": "1 Hiding from humanity - Martha C. Nussbaum.md"
+    },
+    {
+      "text": "to",
+      "lemma": "to",
+      "pattern_type": "ngram",
+      "freq": 391574,
+      "source_doc": "1 Hiding from humanity - Martha C. Nussbaum.md"
+    },
+    {
+      "text": "in",
+      "lemma": "in",
+      "pattern_type": "ngram",
+      "freq": 308601,
+      "source_doc": "1 Hiding from humanity - Martha C. Nussbaum.md"
+    },
+    {
+      "text": "that",
+      "lemma": "that",
+      "pattern_type": "ngram",
+      "freq": 214814,
+      "source_doc": "1 Hiding from humanity - Martha C. Nussbaum.md"
+    },
+    {
+      "text": "is",
+      "lemma": "is",
+      "pattern_type": "ngram",
+      "freq": 203707,
+      "source_doc": "1 Hiding from humanity - Martha C. Nussbaum.md"
+    },
+    {
+      "text": "it",
+      "lemma": "it",
+      "pattern_type": "ngram",
+      "freq": 128794,
+      "source_doc": "1 Hiding from humanity - Martha C. Nussbaum.md"
+    },
+    {
+      "text": "for",
+      "lemma": "for",
+      "pattern_type": "ngram",
+      "freq": 120651,
+      "source_doc": "1 Hiding from humanity - Martha C. Nussbaum.md"
+    },
+    {
+      "text": "of the",
+      "lemma": "of the",
+      "pattern_type": "ngram",
+      "freq": 120454,
+      "source_doc": "1 Hiding from humanity - Martha C. Nussbaum.md"
+    }
+  ]
+}

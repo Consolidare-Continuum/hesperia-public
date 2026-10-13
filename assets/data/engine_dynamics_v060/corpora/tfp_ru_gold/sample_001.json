@@ -1,0 +1,4 @@
+{
+  "text": "примитивное расщепление хорошего и плохого объекта в переносе",
+  "expected_concepts": ["TFP_SPLITTING", "TFP_TRANSFERENCE"]
+}

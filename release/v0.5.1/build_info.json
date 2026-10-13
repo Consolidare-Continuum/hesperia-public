@@ -1,0 +1,36 @@
+{
+  "system_version": "0.5.1",
+  "build_date_utc": "2026-03-19T15:25:50.158862+00:00",
+  "envelope_timestamp_utc": "2026-03-19T18:00:00Z",
+  "git_commit": "342f3f00467e0c09b59d95e7573afa3e3a40d68b",
+  "git_dirty": false,
+  "python": "3.10.12",
+  "platform": "linux",
+  "dependency_lock": {
+    "requirements_fingerprint_sha256": "a424149507179d8c3dfac33eaca5a68eb07731d202ad0a4ea0f786387d5680d1",
+    "files": [
+      "requirements.txt",
+      "requirements/runtime.txt"
+    ]
+  },
+  "execution_commands": [
+    "/usr/bin/python3 tools/release/build_release_audit_v0_5_1.py",
+    "canonical_input_fixture=tests/fixtures/release_v0_5_0/canonical_input.txt"
+  ],
+  "determinism": {
+    "generated_utc": "2026-03-19T15:25:50.158862+00:00",
+    "canonical_input_fixture": "tests/fixtures/release_v0_5_0/canonical_input.txt",
+    "input_sha256": "2be9cf52481f84967bc560437e8a5e37040508fe60796b351a2644eaae8058ac",
+    "input_length_chars": 25,
+    "command": "/usr/bin/python3 tools/release/build_release_audit_v0_5_1.py",
+    "environment_note": "Set HESPERIA_RELEASE_BUILD_TIMESTAMP + HESPERIA_GIT_COMMIT (via script) for reproducible build_id.",
+    "serialization": "json.dumps(..., sort_keys=True, ensure_ascii=False); floats rounded to 10 dp before hash",
+    "raw_byte_identical_across_runs": true,
+    "canonical_sha256_run1": "548303ba9b3118706558afa15e0f3e464b2d13c5add5fce0775a200f88029afa",
+    "canonical_sha256_run2": "548303ba9b3118706558afa15e0f3e464b2d13c5add5fce0775a200f88029afa",
+    "canonical_sha256_run3": "548303ba9b3118706558afa15e0f3e464b2d13c5add5fce0775a200f88029afa",
+    "hash_match": true,
+    "pass": true,
+    "failure_reason": null
+  }
+}

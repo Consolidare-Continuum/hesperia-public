@@ -1,0 +1,9 @@
+# DLCR default policy (Ethan PO-13 baseline). Override per env / domain pack.
+dict_a_max_accepted: null
+# Hex dynamics: optional extra smoothing after decay (0 = off)
+hex_smooth_alpha: 0.0
+# Resolver: use label/context overlap in window (chars each side)
+resolver_context_window: 48
+# 0 = off (keeps gold corpora stable); raise for PO-23 experiments
+sequential_association_weight: 0.0
+cooc_window: 4

@@ -1,0 +1,22 @@
+# HESPERIA — canonical concept registry (structural physics pipeline).
+# Copyright © 2026 igareosh.com. See LEGAL_NOTICE.md.
+#
+# Dict A / Dict B lemmas resolve to a **concept_index** in [0, n_concept).
+# Family aggregation for mesoscale fields is **derived** from A_concept (v0.5: 1:1 with family channel).
+
+registry_version: "1"
+schema_id: concepts_registry_v1
+n_concept: 288
+
+# v0.5 structural closure: attribution familyGlobal is treated as concept_index; linked_family identical.
+identity_mapping:
+  concept_index_equals_family_channel: true
+  linked_family_equals_concept_index: true
+
+concept_id_format: "HESP-C{index:04d}"
+
+metadata:
+  description: >
+    Markers → concept activation A_concept ∈ R^{288}; family hits are the explicit projection
+    family_m[c] = A_concept[c] under identity (no direct markers→family shortcut in sealed path).
+  topology_ref: core.topology.invariant_catalog.TOTAL_FAMILIES

@@ -1,0 +1,106 @@
+{
+  "schema": "hspr_field_calibration_topk_v1",
+  "top_k": [
+    {
+      "candidate": {
+        "alpha": 0.07,
+        "beta": 0.04,
+        "gamma": 0.02,
+        "delta": 0.32,
+        "mu": 0.0,
+        "dt": 1.0
+      },
+      "hspr_calibration_index": 0.827351,
+      "hspr_components": {
+        "stability": 0.987371,
+        "source_alignment": 0.5,
+        "energy": 1.0,
+        "contradiction": 0.813622,
+        "diffusion": 0.947061,
+        "resistance": 0.887592
+      },
+      "converged_numerical": false,
+      "converged_contradiction": false,
+      "energy_final": -0.31322,
+      "steps": 14
+    },
+    {
+      "candidate": {
+        "alpha": 0.07,
+        "beta": 0.04,
+        "gamma": 0.02,
+        "delta": 0.22,
+        "mu": 0.0,
+        "dt": 1.0
+      },
+      "hspr_calibration_index": 0.827235,
+      "hspr_components": {
+        "stability": 0.986972,
+        "source_alignment": 0.5,
+        "energy": 1.0,
+        "contradiction": 0.81461,
+        "diffusion": 0.944936,
+        "resistance": 0.888069
+      },
+      "converged_numerical": false,
+      "converged_contradiction": false,
+      "energy_final": -0.213164,
+      "steps": 14
+    },
+    {
+      "candidate": {
+        "alpha": 0.11,
+        "beta": 0.04,
+        "gamma": 0.02,
+        "delta": 0.32,
+        "mu": 0.0,
+        "dt": 1.0
+      },
+      "hspr_calibration_index": 0.827117,
+      "hspr_components": {
+        "stability": 0.987713,
+        "source_alignment": 0.5,
+        "energy": 1.0,
+        "contradiction": 0.796427,
+        "diffusion": 0.978573,
+        "resistance": 0.878676
+      },
+      "converged_numerical": false,
+      "converged_contradiction": false,
+      "energy_final": -0.313478,
+      "steps": 14
+    },
+    {
+      "candidate": {
+        "alpha": 0.11,
+        "beta": 0.04,
+        "gamma": 0.02,
+        "delta": 0.22,
+        "mu": 0.0,
+        "dt": 1.0
+      },
+      "hspr_calibration_index": 0.827009,
+      "hspr_components": {
+        "stability": 0.987076,
+        "source_alignment": 0.5,
+        "energy": 1.0,
+        "contradiction": 0.797374,
+        "diffusion": 0.977143,
+        "resistance": 0.879198
+      },
+      "converged_numerical": false,
+      "converged_contradiction": false,
+      "energy_final": -0.213424,
+      "steps": 14
+    }
+  ],
+  "system_version": "0.5.1",
+  "build_id": "hesperia_0.5.1_e6b9a228d6ce_2026-03-26T07:39:30Z",
+  "schema_version": "v1",
+  "calibration_profile": "default_v1",
+  "run_id": "7f9e484b-01cc-48f5-907f-6592fca9260e",
+  "pipeline_version": "e2e_v2",
+  "modules_used": [
+    "runtime.semantic_field.run_field_calibration"
+  ]
+}

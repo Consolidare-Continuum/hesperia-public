@@ -1,0 +1,7 @@
+{
+  "n_windows": 45243,
+  "n_pairs_raw": 18964,
+  "n_rows_ge5": 9076,
+  "docs": 119,
+  "mode": "label_window_cooc_offline"
+}

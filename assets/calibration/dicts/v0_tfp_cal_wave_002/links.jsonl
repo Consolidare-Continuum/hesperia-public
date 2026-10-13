@@ -1,0 +1,35 @@
+{"lexical": "агрессия", "concept_id": "B_A10_F15_001", "match_type": "pattern", "priority": 1.0}
+{"lexical": "анализ", "concept_id": "B_A10_F13_002", "match_type": "exact", "priority": 1.0}
+{"lexical": "возможность", "concept_id": "B_A1_F10_002", "match_type": "exact", "priority": 1.0}
+{"lexical": "идентичности", "concept_id": "B_A10_F18_001", "match_type": "exact", "priority": 1.0}
+{"lexical": "лечение", "concept_id": "B_A1_F18_002", "match_type": "exact", "priority": 1.0}
+{"lexical": "личностные расстройства", "concept_id": "B_A10_F18_001", "match_type": "pattern", "priority": 1.0}
+{"lexical": "личность", "concept_id": "B_A10_F18_001", "match_type": "exact", "priority": 1.0}
+{"lexical": "может", "concept_id": "B_A1_F16_002", "match_type": "exact", "priority": 1.0}
+{"lexical": "норма", "concept_id": "B_A1_F10_002", "match_type": "pattern", "priority": 1.0}
+{"lexical": "объектные отношения", "concept_id": "B_A10_F17_001", "match_type": "pattern", "priority": 1.0}
+{"lexical": "определение", "concept_id": "B_A10_F12_002", "match_type": "exact", "priority": 1.0}
+{"lexical": "отношение", "concept_id": "B_A10_F17_001", "match_type": "exact", "priority": 1.0}
+{"lexical": "отношение к", "concept_id": "B_A10_F17_001", "match_type": "exact", "priority": 1.0}
+{"lexical": "отношения", "concept_id": "B_A10_F17_001", "match_type": "exact", "priority": 1.0}
+{"lexical": "отношениях", "concept_id": "B_A10_F17_001", "match_type": "exact", "priority": 1.0}
+{"lexical": "патология", "concept_id": "B_A1_F10_002", "match_type": "pattern", "priority": 1.0}
+{"lexical": "пациент", "concept_id": "B_A10_F1_001", "match_type": "exact", "priority": 1.0}
+{"lexical": "перенос", "concept_id": "B_A1_F10_002", "match_type": "pattern", "priority": 1.0}
+{"lexical": "по отношению", "concept_id": "B_A10_F17_001", "match_type": "exact", "priority": 1.0}
+{"lexical": "поведение", "concept_id": "B_A10_F15_001", "match_type": "exact", "priority": 1.0}
+{"lexical": "пограничное расстройство личности", "concept_id": "B_A10_F18_002", "match_type": "pattern", "priority": 1.0}
+{"lexical": "психотерапия", "concept_id": "B_A10_F24_002", "match_type": "pattern", "priority": 1.0}
+{"lexical": "реальность", "concept_id": "B_A1_F10_002", "match_type": "exact", "priority": 1.0}
+{"lexical": "способности", "concept_id": "B_A1_F10_002", "match_type": "exact", "priority": 1.0}
+{"lexical": "терапия", "concept_id": "B_A10_F12_001", "match_type": "pattern", "priority": 1.0}
+{"lexical": "умение", "concept_id": "B_A1_F10_002", "match_type": "exact", "priority": 1.0}
+{"lexical": "пациенты", "concept_id": "B_A10_F1_001", "match_type": "fuzzy", "priority": 0.9333}
+{"lexical": "способность", "concept_id": "B_A1_F10_002", "match_type": "fuzzy", "priority": 0.9091}
+{"lexical": "отношения с", "concept_id": "B_A10_F17_001", "match_type": "fuzzy", "priority": 0.9}
+{"lexical": "отношению", "concept_id": "B_A10_F17_001", "match_type": "fuzzy", "priority": 0.8889}
+{"lexical": "пациентов", "concept_id": "B_A10_F1_001", "match_type": "fuzzy", "priority": 0.875}
+{"lexical": "пациентом", "concept_id": "B_A10_F1_001", "match_type": "fuzzy", "priority": 0.875}
+{"lexical": "течение", "concept_id": "B_A1_F18_002", "match_type": "fuzzy", "priority": 0.8571}
+{"lexical": "возможно", "concept_id": "B_A1_F10_002", "match_type": "fuzzy", "priority": 0.8421}
+{"lexical": "в переносе", "concept_id": "B_A1_F10_002", "match_type": "fuzzy", "priority": 0.8235}

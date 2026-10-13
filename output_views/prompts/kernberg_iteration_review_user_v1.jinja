@@ -1,0 +1,16 @@
+{# T09 — User message: structured payload is JSON-serialized in Python (T12 safe). #}
+prompt_pack: {{ prompt_pack_id }}
+
+## Iteration segment (full JSON)
+```json
+{{ segment_json_text }}
+```
+
+## Client text (JSON string excerpt; same as sentences joined in tooling)
+{{ client_text_json }}
+
+## Parameter summary (tabular)
+{{ parameters_summary_lines }}
+
+## Instructions
+Given ONLY the JSON and text above, provide a Kernberg/TFP-aligned interpretive review for THIS iteration: confirm / deny / interpret the consistency of the structured outputs with relevant TFP constructs. Note limitations of computational scoring. Do not give treatment advice.

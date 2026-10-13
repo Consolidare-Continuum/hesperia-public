@@ -1,0 +1,655 @@
+{
+  "existing_concepts": 268,
+  "new_candidates": 15,
+  "accepted_new_concepts": 15,
+  "merged_into_existing": 0,
+  "rejected_clusters": 4,
+  "_expansion_meta": {
+    "clusters_built_pre_filter": 19,
+    "generic_reject": 4,
+    "skipped_empty_signature": 0,
+    "skipped_cap": 0,
+    "stripped_prior_TFP_CLUSTER_rows": 15,
+    "max_new_cap": 45,
+    "version": "v0.6.0_tfp_expand"
+  },
+  "_artifact_cluster_audit": {
+    "accepted": [
+      {
+        "cluster_id": "CLU_этих отношений_807",
+        "top_phrases": [
+          "объектных",
+          "объектных отношений",
+          "по отношению",
+          "по отношению к",
+          "объектные",
+          "объектные отношения",
+          "репрезентаций",
+          "интернализованных объектных",
+          "в отношениях",
+          "интернализованных объектных отношений",
+          "репрезентации",
+          "объект репрезентаций"
+        ],
+        "size": 807,
+        "mapped_to": "TFP_CLUSTER_001",
+        "action": "new_concept",
+        "primary_parent": "TFP_OBJECT_RELATIONS"
+      },
+      {
+        "cluster_id": "CLU_идентификации_152",
+        "top_phrases": [
+          "идентификации",
+          "идентификация",
+          "идентификации с",
+          "идентификацию",
+          "проективной",
+          "проективной идентификации",
+          "проективная",
+          "проективная идентификация",
+          "идентификацию с",
+          "идентификация с",
+          "идентификацией",
+          "проективную"
+        ],
+        "size": 152,
+        "mapped_to": "TFP_CLUSTER_002",
+        "action": "new_concept",
+        "primary_parent": "TFP_PROJECTIVE_IDENTIFICATION"
+      },
+      {
+        "cluster_id": "CLU_идентичности_66",
+        "top_phrases": [
+          "идентичности",
+          "идентичность",
+          "диффузной",
+          "идентичности и",
+          "диффузной идентичности",
+          "диффузная",
+          "половой идентичности",
+          "идентичностью",
+          "эго идентичности",
+          "диффузная идентичность",
+          "диффузной идентичности и",
+          "идентичность и"
+        ],
+        "size": 66,
+        "mapped_to": "TFP_CLUSTER_003",
+        "action": "new_concept",
+        "primary_parent": "TFP_IDENTITY_DIFFUSION"
+      },
+      {
+        "cluster_id": "CLU_обесценивание_12",
+        "top_phrases": [
+          "обесценивание",
+          "и обесценивание",
+          "обесцениванием",
+          "обесценивают",
+          "обесценивание и",
+          "обесцениваются",
+          "всемогущество и обесценивание",
+          "и обесцениванием",
+          "и обесценивают",
+          "обесценивание других",
+          "обесценивание терапевта",
+          "самообесцениванием"
+        ],
+        "size": 12,
+        "mapped_to": "TFP_CLUSTER_004",
+        "action": "new_concept",
+        "primary_parent": "TFP_DEVALUATION"
+      },
+      {
+        "cluster_id": "CLU_обесценивания_9",
+        "top_phrases": [
+          "обесценивания",
+          "и обесценивания",
+          "презрения",
+          "обесценивания и",
+          "самообесценивания",
+          "и презрения",
+          "идеализации и обесценивания",
+          "обесценивания аналитика",
+          "презрения к"
+        ],
+        "size": 9,
+        "mapped_to": "TFP_CLUSTER_005",
+        "action": "new_concept",
+        "primary_parent": "TFP_DEVALUATION"
+      },
+      {
+        "cluster_id": "CLU_отрицание_13",
+        "top_phrases": [
+          "отрицание",
+          "отрицанием",
+          "и отрицание",
+          "идентификация отрицание",
+          "проективная идентификация отрицание",
+          "идентификация отрицание примитивная",
+          "идентификация отрицание примитивная идеализация",
+          "отрицание примитивная",
+          "отрицание примитивная идеализация",
+          "проективная идентификация отрицание примитивная",
+          "проективная идентификация отрицание примитивная идеализация",
+          "расщепление проективная идентификация отрицание"
+        ],
+        "size": 13,
+        "mapped_to": "TFP_CLUSTER_006",
+        "action": "new_concept",
+        "primary_parent": "TFP_DENIAL"
+      },
+      {
+        "cluster_id": "CLU_не было_8",
+        "top_phrases": [
+          "не было",
+          "мне было",
+          "меня не было",
+          "не было бы",
+          "у меня не было",
+          "не было ли",
+          "него не было",
+          "у него не было"
+        ],
+        "size": 8,
+        "mapped_to": "TFP_CLUSTER_007",
+        "action": "new_concept",
+        "primary_parent": "TFP_DENIAL"
+      },
+      {
+        "cluster_id": "CLU_полюсе_9",
+        "top_phrases": [
+          "колебания",
+          "колебания между",
+          "полюсе",
+          "на одном полюсе",
+          "одном полюсе",
+          "полюс",
+          "полюса",
+          "быстрые колебания",
+          "колебаниями"
+        ],
+        "size": 9,
+        "mapped_to": "TFP_CLUSTER_008",
+        "action": "new_concept",
+        "primary_parent": "TFP_POLARIZATION"
+      },
+      {
+        "cluster_id": "CLU_отрицания_5",
+        "top_phrases": [
+          "отрицания",
+          "и отрицания",
+          "или отрицания",
+          "защитного отрицания",
+          "отрицания и"
+        ],
+        "size": 5,
+        "mapped_to": "TFP_CLUSTER_009",
+        "action": "new_concept",
+        "primary_parent": "TFP_DENIAL"
+      },
+      {
+        "cluster_id": "CLU_восхищении_9",
+        "top_phrases": [
+          "восхищении",
+          "в восхищении",
+          "потребность в восхищении",
+          "в восхищении и",
+          "в восхищении со",
+          "в восхищении со стороны",
+          "восхищении и",
+          "восхищении со",
+          "восхищении со стороны"
+        ],
+        "size": 9,
+        "mapped_to": "TFP_CLUSTER_010",
+        "action": "new_concept",
+        "primary_parent": "TFP_IDEALIZATION"
+      },
+      {
+        "cluster_id": "CLU_пустоты_5",
+        "top_phrases": [
+          "пустоты",
+          "пустоты и",
+          "чувство пустоты",
+          "внутренней пустоты",
+          "ощущение пустоты"
+        ],
+        "size": 5,
+        "mapped_to": "TFP_CLUSTER_011",
+        "action": "new_concept",
+        "primary_parent": "TFP_IDENTITY_DIFFUSION"
+      },
+      {
+        "cluster_id": "CLU_презрение_5",
+        "top_phrases": [
+          "презрение",
+          "и презрение",
+          "презрением",
+          "презрение и",
+          "презрение к"
+        ],
+        "size": 5,
+        "mapped_to": "TFP_CLUSTER_012",
+        "action": "new_concept",
+        "primary_parent": "TFP_DEVALUATION"
+      },
+      {
+        "cluster_id": "CLU_обесцененным_4",
+        "top_phrases": [
+          "обесцененным",
+          "обесцененными",
+          "и обесцененным",
+          "с обесцененными"
+        ],
+        "size": 4,
+        "mapped_to": "TFP_CLUSTER_013",
+        "action": "new_concept",
+        "primary_parent": "TFP_DEVALUATION"
+      },
+      {
+        "cluster_id": "CLU_расщеплении_3",
+        "top_phrases": [
+          "расщеплении",
+          "на расщеплении",
+          "основанные на расщеплении"
+        ],
+        "size": 3,
+        "mapped_to": "TFP_CLUSTER_014",
+        "action": "new_concept",
+        "primary_parent": "TFP_SPLITTING"
+      },
+      {
+        "cluster_id": "CLU_расщепленных_3",
+        "top_phrases": [
+          "расщепленных",
+          "диссоциированных или расщепленных",
+          "или расщепленных"
+        ],
+        "size": 3,
+        "mapped_to": "TFP_CLUSTER_015",
+        "action": "new_concept",
+        "primary_parent": "TFP_SPLITTING"
+      }
+    ],
+    "rejected": [
+      {
+        "cluster_id": "CLU_восхищается_1",
+        "top_phrases": [
+          "восхищается"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 5,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_восхищалась_1",
+        "top_phrases": [
+          "восхищалась"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 3,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_восхищался_1",
+        "top_phrases": [
+          "восхищался"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 4,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_вспышками_2",
+        "top_phrases": [
+          "вспышками",
+          "вспышкам"
+        ],
+        "size": 2,
+        "distinct_entries": 2,
+        "frequency_sum": 8,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_диффузным_1",
+        "top_phrases": [
+          "диффузным"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 3,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_интенсивную_1",
+        "top_phrases": [
+          "интенсивную"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 14,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_интенсивный_2",
+        "top_phrases": [
+          "интенсивный",
+          "интенсивный и"
+        ],
+        "size": 2,
+        "distinct_entries": 2,
+        "frequency_sum": 12,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_колебаний_1",
+        "top_phrases": [
+          "колебаний"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 9,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_не признавал_1",
+        "top_phrases": [
+          "не признавал"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 4,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_не признавая_1",
+        "top_phrases": [
+          "не признавая"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 3,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_обесцененного_1",
+        "top_phrases": [
+          "обесцененного"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 4,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_обесцененной_1",
+        "top_phrases": [
+          "обесцененной"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 3,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_обесцененные_2",
+        "top_phrases": [
+          "обесцененные",
+          "и обесцененные"
+        ],
+        "size": 2,
+        "distinct_entries": 2,
+        "frequency_sum": 11,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_обесцененный_1",
+        "top_phrases": [
+          "обесцененный"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 5,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_обесценивает_1",
+        "top_phrases": [
+          "обесценивает"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 10,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_обесценивал_2",
+        "top_phrases": [
+          "обесценивал",
+          "обесценивала"
+        ],
+        "size": 2,
+        "distinct_entries": 2,
+        "frequency_sum": 6,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_обесценивании_2",
+        "top_phrases": [
+          "обесценивании",
+          "радикальном обесценивании"
+        ],
+        "size": 2,
+        "distinct_entries": 2,
+        "frequency_sum": 11,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_обесцениванию_1",
+        "top_phrases": [
+          "обесцениванию"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 13,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_обесценивающего_1",
+        "top_phrases": [
+          "обесценивающего"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 3,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_обесценивающее_2",
+        "top_phrases": [
+          "обесценивающее",
+          "обесценивающее поведение"
+        ],
+        "size": 2,
+        "distinct_entries": 2,
+        "frequency_sum": 13,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_обесценивающий_1",
+        "top_phrases": [
+          "обесценивающий"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 4,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_обесценивая_1",
+        "top_phrases": [
+          "обесценивая"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 3,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_обесценить_2",
+        "top_phrases": [
+          "обесценить",
+          "обесценить и"
+        ],
+        "size": 2,
+        "distinct_entries": 2,
+        "frequency_sum": 14,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_отрицании_2",
+        "top_phrases": [
+          "отрицании",
+          "в отрицании"
+        ],
+        "size": 2,
+        "distinct_entries": 2,
+        "frequency_sum": 12,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_отрицанию_1",
+        "top_phrases": [
+          "отрицанию"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 7,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_пустота_1",
+        "top_phrases": [
+          "пустота"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 8,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_пустоту_1",
+        "top_phrases": [
+          "пустоту"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 3,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_расщеплению_1",
+        "top_phrases": [
+          "расщеплению"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 5,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_расщепленными_1",
+        "top_phrases": [
+          "расщепленными"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 3,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_репрезентирует_1",
+        "top_phrases": [
+          "репрезентирует"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 3,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_репрезентируют_1",
+        "top_phrases": [
+          "репрезентируют"
+        ],
+        "size": 1,
+        "distinct_entries": 1,
+        "frequency_sum": 5,
+        "reason": "too_few_member_phrases_need_3"
+      },
+      {
+        "cluster_id": "CLU_настроение_208",
+        "top_phrases": [
+          "аффектов",
+          "аффекты",
+          "аффективных",
+          "аффекта",
+          "интенсивной",
+          "аффективные",
+          "аффективной",
+          "аффект"
+        ],
+        "size": 208,
+        "frequency_sum": 1981,
+        "reason": "generic_or_stopword_heavy_cluster"
+      },
+      {
+        "cluster_id": "CLU_хорошую_170",
+        "top_phrases": [
+          "расщепления",
+          "хорошо",
+          "хорошие",
+          "расщепление",
+          "хороших",
+          "плохих",
+          "хорошего",
+          "хорошим"
+        ],
+        "size": 170,
+        "frequency_sum": 1370,
+        "reason": "generic_or_stopword_heavy_cluster"
+      },
+      {
+        "cluster_id": "CLU_восхищения_157",
+        "top_phrases": [
+          "идеализации",
+          "идеализация",
+          "совершенно",
+          "идеализированных",
+          "идеализацию",
+          "идеала",
+          "идеализацией",
+          "идеализированные"
+        ],
+        "size": 157,
+        "frequency_sum": 1366,
+        "reason": "generic_or_stopword_heavy_cluster"
+      },
+      {
+        "cluster_id": "CLU_обесценивать_3",
+        "top_phrases": [
+          "обесценивать",
+          "и обесценивать",
+          "обесценивать и"
+        ],
+        "size": 3,
+        "frequency_sum": 24,
+        "reason": "generic_or_stopword_heavy_cluster"
+      }
+    ],
+    "rejected_pre_expand_truncated": false
+  }
+}
