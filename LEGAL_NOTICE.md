@@ -3,7 +3,7 @@
 **Copyright © 2026 Societatea cu Răspundere Limitată „CONSOLIDARE CONTINUUM”**  
 **(„CONSOLIDARE CONTINUUM” S.R.L.)** — IDNO **1026023120076**, Republic of Moldova.
 
-**All rights reserved. Proprietary.**
+**All rights reserved. Semi-proprietary: source-visible and commercially licensed under CC-HES-LIC-1.0 (see LICENSE). Not open source.**
 
 ## Ownership
 
@@ -27,15 +27,11 @@ Earlier notices in this repository naming igareosh.com or Platonov Igor in a per
 
 ## Repository role
 
-This is the **development** repository (`igareosh/hesperia`). The gated production repository is `Consolidare-Continuum/hesperia`. Both are owned by CONSOLIDARE CONTINUUM S.R.L.; this repo's license/access terms below (Restricted Research Disclosure) govern this dev checkout specifically.
+This is the **public source-visible release** of Hesperia. Development and production repositories are private and owned by CONSOLIDARE CONTINUUM S.R.L.; this repository's terms are those of `LICENSE`.
 
 ## License Status
 
-This repository and its architectural materials are provided under a **Restricted Research Disclosure License**.
-
-The contents are made available for **inspection and reference purposes only**.
-
-No rights to reproduce, redistribute, or implement the architecture are granted except with **explicit written permission** from CONSOLIDARE CONTINUUM S.R.L.
+This repository is published **source-visible** under **CC-HES-LIC-1.0** (Hesperia Commercial Module Licence 1.0; see `LICENSE` and `docs/iso/CC-HES-LIC-1.0.md`). It is **semi-proprietary**: the source can be read, studied and evaluated by anyone, no NDA is required, and use of the architecture beyond the permitted uses below needs a commercial licence or other written agreement with CONSOLIDARE CONTINUUM S.R.L.
 
 ## Restrictions
 
@@ -57,7 +53,7 @@ The materials may be used **solely** for:
 - internal technical evaluation of the repository  
 - review of architectural concepts and system design  
 
-No rights to implementation, reproduction, redistribution, or derivative development are granted.
+No rights to implementation, reproduction, redistribution, or derivative development are granted by public visibility alone; those require a licence under CC-HES-LIC-1.0 or a separate written agreement.
 
 ## Reference Architecture Scope
 
